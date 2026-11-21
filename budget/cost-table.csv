@@ -1,0 +1,67 @@
+category,model,settings,credits_raw,credits_numeric,source,source_note,plan
+image,Soul 2.0,1.5K 或 2K，9:16,0.12,0.12,account-estimate,帳戶估價,plan/monthly-usage-and-content-strategy.md
+image,Soul Cinema,2K，9:16,0.12,0.12,account-estimate,帳戶估價,plan/monthly-usage-and-content-strategy.md
+image,GPT Image 2.6,low，1K,0.75,0.75,account-estimate,帳戶估價,plan/monthly-usage-and-content-strategy.md
+image,Seedream 5.0 Lite,預設,1,1,account-estimate,帳戶估價,plan/monthly-usage-and-content-strategy.md
+image,FLUX.2 Pro,1K,1,1,account-estimate,帳戶估價,plan/monthly-usage-and-content-strategy.md
+image,Grok Image,預設，9:16,1,1,account-estimate,帳戶估價,plan/monthly-usage-and-content-strategy.md
+image,Nano Banana 2,1K,1.5,1.5,account-estimate,帳戶估價,plan/monthly-usage-and-content-strategy.md
+image,Nano Banana 2,2K,2,2,account-estimate,帳戶估價,plan/monthly-usage-and-content-strategy.md
+image,Nano Banana Pro,1K 或 2K,2,2,account-estimate,帳戶估價,plan/monthly-usage-and-content-strategy.md
+image,FLUX 3 Image,1K,2,2,account-estimate,帳戶估價,plan/monthly-usage-and-content-strategy.md
+image,Kling Image 4.0,2K,2,2,account-estimate,帳戶估價,plan/monthly-usage-and-content-strategy.md
+image,GPT Image 2.6,high，2K,2,2,account-estimate,帳戶估價,plan/monthly-usage-and-content-strategy.md
+image,Seedream 5.0 Pro,預設,2.5,2.5,account-estimate,帳戶估價,plan/monthly-usage-and-content-strategy.md
+image,FLUX.2 Max,1K,4,4,account-estimate,帳戶估價,plan/monthly-usage-and-content-strategy.md
+image,Nano Banana Pro,4K,4,4,account-estimate,帳戶估價,plan/monthly-usage-and-content-strategy.md
+image,Soul ID 訓練,一次性,25,25,official-page,官方頁面,plan/monthly-usage-and-content-strategy.md
+video,Wan 3.0,5 秒，480p,3.75,3.75,account-estimate,帳戶估價,plan/monthly-usage-and-content-strategy.md
+video,Grok Video 1.5 Lite,5 秒，720p,5,5,account-estimate,帳戶估價,plan/monthly-usage-and-content-strategy.md
+video,Seedance 2.0 Mini,5 秒，720p,5,5,account-estimate,帳戶估價,plan/monthly-usage-and-content-strategy.md
+video,Wan 3.0 / Wan 2.7,5 秒，720p,7.5,7.5,account-estimate,帳戶估價,plan/monthly-usage-and-content-strategy.md
+video,Kling 4.0 Flash,5 秒，720p,7.5,7.5,account-estimate,帳戶估價,plan/monthly-usage-and-content-strategy.md
+video,Kling 3.0 Turbo,5 秒,7.5,7.5,account-estimate,帳戶估價,plan/monthly-usage-and-content-strategy.md
+video,Kling 3.0,5 秒，預設解析度,10,10,account-estimate,帳戶估價,plan/monthly-usage-and-content-strategy.md
+video,Veo 3.1 Lite,8 秒,12,12,account-estimate,帳戶估價,plan/monthly-usage-and-content-strategy.md
+video,Kling 4.0,5 秒，720p,12.5,12.5,account-estimate,帳戶估價,plan/monthly-usage-and-content-strategy.md
+video,Wan 3.0 Prime,5 秒，720p,13.75,13.75,account-estimate,帳戶估價,plan/monthly-usage-and-content-strategy.md
+video,Wan 3.0,5 秒 1080p，或 10 秒 720p,15,15,account-estimate,帳戶估價,plan/monthly-usage-and-content-strategy.md
+video,Kling 4.0,5 秒，1080p,18.75,18.75,account-estimate,帳戶估價,plan/monthly-usage-and-content-strategy.md
+video,Grok Video 1.5,5 秒，720p,22.5,22.5,account-estimate,帳戶估價,plan/monthly-usage-and-content-strategy.md
+video,Seedance 2.0,5 秒，720p,22.5,22.5,account-estimate,帳戶估價,plan/monthly-usage-and-content-strategy.md
+video,Kling 4.0,10 秒，720p,25,25,account-estimate,帳戶估價,plan/monthly-usage-and-content-strategy.md
+video,Seedance 2.5 Flash,5 秒,25,25,account-estimate,帳戶估價,plan/monthly-usage-and-content-strategy.md
+video,Cinema Studio 3.0,5 秒，720p，無音訊,25,25,account-estimate,帳戶估價,plan/monthly-usage-and-content-strategy.md
+video,Wan 3.0 Prime,5 秒，1080p,27.5,27.5,account-estimate,帳戶估價,plan/monthly-usage-and-content-strategy.md
+video,FLUX 3 Video,5 秒，720p,30,30,account-estimate,帳戶估價,plan/monthly-usage-and-content-strategy.md
+video,Veo 3.1 Fast,8 秒，basic,32,32,account-estimate,帳戶估價,plan/monthly-usage-and-content-strategy.md
+video,Seedance 2.5,5 秒，720p,35,35,account-estimate,帳戶估價,plan/monthly-usage-and-content-strategy.md
+video,Cinema Studio 4.0,5 秒，720p,35,35,account-estimate,帳戶估價,plan/monthly-usage-and-content-strategy.md
+video,Marketing Studio,12 秒，720p，含音訊,60,60,account-estimate,帳戶估價,plan/monthly-usage-and-content-strategy.md
+video,Seedance 2.0,5 秒，1080p,60,60,account-estimate,帳戶估價,plan/monthly-usage-and-content-strategy.md
+video,Seedance 2.5,10 秒，720p,70,70,account-estimate,帳戶估價,plan/monthly-usage-and-content-strategy.md
+video,Seedance 2.5,5 秒，1080p,80,80,account-estimate,帳戶估價,plan/monthly-usage-and-content-strategy.md
+video,Cinema Studio 4.0,5 秒，1080p,80,80,account-estimate,帳戶估價,plan/monthly-usage-and-content-strategy.md
+video,Veo 3.1 Preview,8 秒，high,80,80,account-estimate,帳戶估價,plan/monthly-usage-and-content-strategy.md
+video,Seedance 2.0,5 秒，4K,110,110,account-estimate,帳戶估價,plan/monthly-usage-and-content-strategy.md
+video,Veo 3.1 Preview,8 秒，ultra,120,120,account-estimate,帳戶估價,plan/monthly-usage-and-content-strategy.md
+video,Marketing Studio,12 秒，1080p，含音訊,156,156,account-estimate,帳戶估價,plan/monthly-usage-and-content-strategy.md
+video,Seedance 2.5,10 秒，1080p,160,160,account-estimate,帳戶估價,plan/monthly-usage-and-content-strategy.md
+video,Cinema Studio 4.0,30 秒，720p,210,210,account-estimate,帳戶估價,plan/monthly-usage-and-content-strategy.md
+video,Genjutsu Lite,15 秒，720p,32,32,official-page,官方頁面,plan/monthly-usage-and-content-strategy.md
+audio-lipsync-post,Seed Audio 1.0,語音預設,0.2,0.2,account-estimate,帳戶估價,plan/monthly-usage-and-content-strategy.md
+audio-lipsync-post,ByteDance 圖像放大,2K 或 4K，固定費率,2,2,account-estimate,帳戶估價,plan/monthly-usage-and-content-strategy.md
+audio-lipsync-post,Kling Lipsync,5 秒，720p,2,2,official-page,官方頁面,plan/monthly-usage-and-content-strategy.md
+audio-lipsync-post,Kling Speak,2 秒，720p,2,2,official-page,官方頁面,plan/monthly-usage-and-content-strategy.md
+audio-lipsync-post,Wan 2.5 Speak,5 秒，480p,約 6,6,official-page,官方頁面,plan/monthly-usage-and-content-strategy.md
+audio-lipsync-post,Sync Lipsync 3,2 秒，預設,7.2,7.2,account-estimate,帳戶估價,plan/monthly-usage-and-content-strategy.md
+audio-lipsync-post,Wan 2.5 Speak Fast,5 秒，720p,9,9,official-page,官方頁面,plan/monthly-usage-and-content-strategy.md
+audio-lipsync-post,Wan 2.5 Speak Fast,5 秒，1080p,12,12,official-page,官方頁面,plan/monthly-usage-and-content-strategy.md
+audio-lipsync-post,Infinite Talk,2 秒，720p,12,12,official-page,官方頁面,plan/monthly-usage-and-content-strategy.md
+audio-lipsync-post,Higgsfield Speak 2.0,5 秒，720p,約 14,14,official-page,官方頁面,plan/monthly-usage-and-content-strategy.md
+audio-lipsync-post,Sync Lipsync 3,5 秒，預設,18,18,account-estimate,帳戶估價,plan/monthly-usage-and-content-strategy.md
+audio-lipsync-post,Sync Lipsync 3,2 秒，4K 30fps,18,18,official-page,官方頁面,plan/monthly-usage-and-content-strategy.md
+audio-lipsync-post,Wan 2.5 Speak,5 秒，1080p,約 20,20,official-page,官方頁面,plan/monthly-usage-and-content-strategy.md
+audio-lipsync-post,ByteDance 影片放大,2K，未帶來源影片,2,2,estimate,估計,plan/monthly-usage-and-content-strategy.md
+audio-lipsync-post,ByteDance 影片放大,4K，帶 5 秒時長參數，未帶來源影片,4,4,estimate,估計,plan/monthly-usage-and-content-strategy.md
+audio-lipsync-post,Higgsfield Intone,對話頭像，需音訊參考,以生成鍵為準,,estimate,估計,plan/monthly-usage-and-content-strategy.md
