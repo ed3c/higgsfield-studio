@@ -1,0 +1,4 @@
+treatment,name_zh,name_en,seconds,video,upscale,vo,total_with_15pct,portfolio_total,contest
+J1,非同步,ASYNC,62,746.0,44.0,3.6,913,600,safe-if-replaced
+J2,洗碗工,THE DISHWASHER,90,922.0,48.0,1.2,1117,726,portfolio-only
+J3,棋盤,THE BOARD,75,704.0,40.0,1.2,857,545,portfolio-only

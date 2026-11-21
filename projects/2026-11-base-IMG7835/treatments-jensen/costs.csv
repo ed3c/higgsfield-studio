@@ -1,0 +1,35 @@
+treatment,shot,start_s,end_s,source,tool,credits,credits_portfolio
+J1,A1,0,15,00:00–00:15（A→B）,Genjutsu Lite 720p,64.0,0.0
+J1,I1,4,7,插入,Cinema Studio 4.0 720p,70.0,70.0
+J1,I2,11,14,插入,Cinema Studio 4.0 720p,70.0,70.0
+J1,A2,15,30,00:15–00:30（B→C）,Genjutsu Lite 720p,64.0,0.0
+J1,I3,22,26,插入,Cinema Studio 4.0 720p,70.0,70.0
+J1,A3,30,45,00:30–00:45（D→E，含 00:41.2 全黑）,Genjutsu Lite 720p,64.0,0.0
+J1,I4,32,35,插入,Cinema Studio 4.0 720p,70.0,70.0
+J1,I5,36,39,插入,Cinema Studio 4.0 720p,70.0,70.0
+J1,I6,41,43,插入（全黑中的頻閃）,Cinema Studio 4.0 720p,70.0,70.0
+J1,A4,45,58,00:45–00:58（E→F）,Genjutsu Lite 720p,64.0,0.0
+J1,I7,50,53,插入,Cinema Studio 4.0 720p,70.0,70.0
+J1,T1,58,62,剪輯,剪輯軟體,0.0,0.0
+J2,D1,0,6,新鏡,Cinema Studio 4.0 720p,84.0,84.0
+J2,D2,6,12,新鏡,Cinema Studio 4.0 720p,84.0,84.0
+J2,D3,12,22,00:00–00:10（A）,Genjutsu Lite 720p,64.0,0.0
+J2,D4,22,28,新鏡,Cinema Studio 4.0 720p,84.0,84.0
+J2,D5,28,37,00:21–00:30（C）,Genjutsu Lite 720p,64.0,0.0
+J2,D6,37,42,新鏡,Cinema Studio 4.0 720p,70.0,70.0
+J2,D7,42,52,00:30–00:40（D）,Genjutsu Lite 720p,64.0,0.0
+J2,D8,52,59,新鏡,Cinema Studio 4.0 720p,98.0,98.0
+J2,D9,59,66,00:40–00:47（E）,Genjutsu Lite 720p,64.0,0.0
+J2,D10,66,72,新鏡,Cinema Studio 4.0 720p,84.0,84.0
+J2,D11,72,83,00:47–00:58（F）,Genjutsu Lite 720p,64.0,0.0
+J2,D12,83,90,新鏡,Cinema Studio 4.0 720p,98.0,98.0
+J3,B1,0,5,新鏡,Cinema Studio 4.0 720p,70.0,70.0
+J3,B2,5,15,00:00–00:10（A）,Genjutsu Lite 720p,64.0,0.0
+J3,B3,15,20,新鏡,Cinema Studio 4.0 720p,70.0,70.0
+J3,B4,20,25,新鏡,Cinema Studio 4.0 720p,70.0,70.0
+J3,B5,25,30,新鏡,Cinema Studio 4.0 720p,70.0,70.0
+J3,B6,30,45,00:21–00:36（C+D）,Genjutsu Lite 720p,64.0,0.0
+J3,B7,45,52,00:39–00:46（E）,Genjutsu Lite 720p,64.0,0.0
+J3,B8,52,57,新鏡,Cinema Studio 4.0 720p,70.0,70.0
+J3,B9,57,68,00:47–00:58（F）,Genjutsu Lite 720p,64.0,0.0
+J3,B10,68,75,新鏡,Cinema Studio 4.0 720p,98.0,98.0

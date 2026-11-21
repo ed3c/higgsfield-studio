@@ -1,0 +1,594 @@
+{
+  "premise": "原片裡站在發光水箱下的人＝追光的人。水箱是光、是 GPU、也是洗碗槽。全部用寓言和符號，不出現任何真實人物的臉或逼真肖像、不出現真實商標；人物名一律不寫出，政治人物只用顏色化的棋子、面具、空講台和字幕裡的聲音。",
+  "sakamoto_rules": [
+    {
+      "principle": "async 不同步",
+      "source": "async 訪談",
+      "rule": "每個地區是一條獨立循環，長度用質數秒（台灣 7、美國 11、以色列 13、深圳 5、歐洲 17、日本 19），彼此永不對拍；插入鏡不剪在拍點上。全片只有一個同步點：原片 00:41.2 的全黑，所有聲部同時停。"
+    },
+    {
+      "principle": "SN/M：聲音、噪音、音樂的比例",
+      "source": "async 訪談",
+      "rule": "每幕標出 S:N:M 比例。開場以物件聲為主（夜市炒鍋、洗碗水、伺服器風扇），配樂 M 最後才加、而且越到權力中心越少。"
+    },
+    {
+      "principle": "田野錄音",
+      "source": "async 訪談、Coda",
+      "rule": "每個地區一段 AI 生成的「田野錄音」當底：夜市、肯塔基蟲鳴與拖把水桶、Denny's 杯盤、沙漠風、深圳廠房、空蕩的歌劇院、海邊。比賽規定要 AI 音訊，所以不用實錄。"
+    },
+    {
+      "principle": "海嘯鋼琴：被自然調音",
+      "source": "async 訪談",
+      "rule": "鋼琴從乾淨的平均律開始，權力越集中走音越多；日本段用泡水鋼琴音色，缺鍵、不準。走音量就是世界秩序失衡的刻度。"
+    },
+    {
+      "principle": "聲音的結束／不消散的聲音",
+      "source": "Coda、Seeing Sound Hearing Time",
+      "rule": "鏡頭在聲音衰減完才切，不在動作完成時切。全片底下有一條永不消散的正弦嗡聲（GPU 的熱），片尾所有聲音都退掉只剩它。"
+    },
+    {
+      "principle": "〈Life, Life〉一段文字、十種語言",
+      "source": "async 訪談",
+      "rule": "同一句旁白由台語、英語、希伯來語、華語、俄語、德語、日語的 AI 聲音輪流念，疊成巴別塔；權力人物不說話，他們的話只以字幕出現。"
+    },
+    {
+      "principle": "YMO 反諷的自我東方主義",
+      "source": "Pitchfork、CINRA",
+      "rule": "台灣與深圳段先故意用西方眼中的東亞霓虹刻板印象（燈籠、霓虹、機器人），下一拍立刻拆穿：鏡頭拉開是真實的生活或廠房。"
+    },
+    {
+      "principle": "〈戰場上的快樂聖誕〉東西並置",
+      "source": "Film Comment、MusicRadar",
+      "rule": "原創四音五聲動機（鐘、類甘美朗音色）放在西方延伸和弦上；動機在每個地區換一種音色重現，最後回到台灣時只剩動機、沒有和弦。旋律必須原創，不可近似原曲。"
+    },
+    {
+      "principle": "more trees",
+      "source": "sitesakamoto.com",
+      "rule": "結尾讓水箱的水落下變成雨、落進樹林：算力的代價回到自然，作為收束意象。"
+    }
+  ],
+  "treatments": [
+    {
+      "id": "J1",
+      "zh": "非同步",
+      "en": "ASYNC",
+      "recommended": true,
+      "contest": "safe-if-replaced",
+      "contest_note": "比賽版：用 Genjutsu 把 Neon 換成虛構的人，所有權力人物只以物件與字幕存在；作品集版可保留 Neon 本人。",
+      "logline_zh": "一個人在一盞光底下站了 58 秒；同一時間，夜市、美國、聖地、深圳、棋盤上的三個王，和被擠到邊上的歐洲與日本，各自用自己的節拍爭這盞光。",
+      "logline_en": "A man stands under one light for 58 seconds. Meanwhile a night market, America, a holy land, Shenzhen, three kings on a chessboard, and a sidelined Europe and Japan fight over that light, each in its own time.",
+      "structure": "原片一鏡到底是主幹，幾乎 1:1 使用（00:00–00:58）；六個地區是六條不同步的插入循環。00:41.2 的全黑是全片唯一同步點：三個王在那 1.3 秒的頻閃裡出現。背景兩個剪影＝歐洲與日本，被走出畫面。",
+      "spine": "Genjutsu Lite 四段（00:00–00:15、00:15–00:30、00:30–00:45、00:45–00:58）換人換景；作品集版直接用原片，只加插入鏡。",
+      "shots": [
+        {
+          "id": "A1",
+          "t": [
+            0,
+            15
+          ],
+          "src": "00:00–00:15（A→B）",
+          "zh": "他背手抬頭、再低頭；水箱是一整片夜市燈泡天棚，地上光紋是油鍋反光。",
+          "tool": "genjutsu",
+          "region": "台灣夜市",
+          "vo": [
+            "光，是從夜市開始的。",
+            "The light started at a night market."
+          ]
+        },
+        {
+          "id": "I1",
+          "t": [
+            4,
+            7
+          ],
+          "src": "插入",
+          "zh": "夜市攤位一排燈泡，每顆燈泡裡一個小小的運算核心在亮；一個 10 歲男孩的舊行李箱放在攤位旁。",
+          "tool": "cs4",
+          "region": "台灣夜市"
+        },
+        {
+          "id": "I2",
+          "t": [
+            11,
+            14
+          ],
+          "src": "插入",
+          "zh": "美國：深夜餐館的洗碗槽，水面上同樣的光紋；一顆桌球從水面彈起。",
+          "tool": "cs4",
+          "region": "美國",
+          "vo": [
+            "他學會的第一件事，是把盤子洗乾淨。",
+            "The first thing he learned was to wash the dishes clean."
+          ]
+        },
+        {
+          "id": "A2",
+          "t": [
+            15,
+            30
+          ],
+          "src": "00:15–00:30（B→C）",
+          "zh": "他看著地上的水紋，舉起右手伸向光。",
+          "tool": "genjutsu",
+          "region": "以色列寓言"
+        },
+        {
+          "id": "I3",
+          "t": [
+            22,
+            26
+          ],
+          "src": "插入",
+          "zh": "沙漠裡一叢燃燒卻不被燒毀的灌木，枝條是發光的光纖；遠方一座由伺服器機櫃疊成的塔。",
+          "tool": "cs4",
+          "region": "以色列寓言",
+          "vo": [
+            "荊棘在燒，卻沒有燒盡。",
+            "The bush was burning, yet it was not consumed."
+          ],
+          "babel": true
+        },
+        {
+          "id": "A3",
+          "t": [
+            30,
+            45
+          ],
+          "src": "00:30–00:45（D→E，含 00:41.2 全黑）",
+          "zh": "他攤開手掌接光；燈閃，全黑 1.3 秒。",
+          "tool": "genjutsu",
+          "region": "深圳／棋盤"
+        },
+        {
+          "id": "I4",
+          "t": [
+            32,
+            35
+          ],
+          "src": "插入",
+          "zh": "人群圍著一頭金色晶片做成的小牛跳舞（金牛犢＝市值崇拜）。",
+          "tool": "cs4",
+          "region": "以色列寓言"
+        },
+        {
+          "id": "I5",
+          "t": [
+            36,
+            39
+          ],
+          "src": "插入",
+          "zh": "深圳：夜裡一座工廠自己點起另一盞紅色的光，跟他的光不同色。",
+          "tool": "cs4",
+          "region": "深圳",
+          "vo": [
+            "他們說，只落後幾奈秒。",
+            "They say it's only nanoseconds behind."
+          ]
+        },
+        {
+          "id": "I6",
+          "t": [
+            41,
+            43
+          ],
+          "src": "插入（全黑中的頻閃）",
+          "zh": "頻閃一下：巨大棋盤上三個王——金色的王守著收費閘門、玉色的王在紅漆屏風後、霜白的王坐在棋盤外結冰的格子上。",
+          "tool": "cs4",
+          "region": "大國棋局",
+          "vo": [
+            "（字幕）「我要兩成。」「一成五。」",
+            "(caption) \"I want twenty.\" \"Fifteen.\""
+          ]
+        },
+        {
+          "id": "A4",
+          "t": [
+            45,
+            58
+          ],
+          "src": "00:45–00:58（E→F）",
+          "zh": "他上前一步再抬頭；背後兩個剪影——一個穿舊歌劇院大衣、一個抱著泡水的鋼琴——由右往左走出畫面。",
+          "tool": "genjutsu",
+          "region": "歐洲與日本",
+          "vo": [
+            "有些人曾經救過這盞光，現在只能從旁邊走過。",
+            "Some once saved this light. Now they can only walk past it."
+          ],
+          "babel": true
+        },
+        {
+          "id": "I7",
+          "t": [
+            50,
+            53
+          ],
+          "src": "插入",
+          "zh": "日本：海邊一台泡水的鋼琴，缺了幾個鍵；歐洲：空蕩的歌劇院裡一排熄掉的舊燈泡。",
+          "tool": "cs4",
+          "region": "歐洲與日本"
+        },
+        {
+          "id": "T1",
+          "t": [
+            58,
+            62
+          ],
+          "src": "剪輯",
+          "zh": "水箱的水落下成雨，落進一片樹林；黑畫面上片名《非同步 ASYNC》，只剩一條正弦嗡聲。",
+          "tool": "edit",
+          "region": "結尾"
+        }
+      ],
+      "sound": "S:N:M 從 7:3:0（夜市）漸變到 2:6:2（棋盤），全黑那 1.3 秒 0:0:0，結尾 0:1:0 只剩正弦嗡聲。六條地區循環用質數秒長度互相錯開。原創四音五聲動機：夜市用玻璃杯、美國用 Rhodes、以色列用 shofar 般的低銅管、深圳用合成器、日本用泡水鋼琴、結尾回到單音鐘。旁白一句一語，最後一句七種語言同時疊念。",
+      "keyframes": [
+        {
+          "id": "J1-K1",
+          "model": "Seedream 5.0 Pro",
+          "plate": "P01",
+          "prompt": "9:16 vertical film still. Keep the reference pose and framing: one man centred, hands behind his back, head tilted up toward an overhead light. Replace the person with a fictional man (not the reference face) in a matte grey work jacket. The suspended light above him is now a dense canopy of hundreds of bare light bulbs from a Taiwanese night market, each bulb faintly showing a tiny glowing grid like a processor core inside. The dark floor reflects wok-oil shimmer. Night-market steam drifts at the edges, stalls out of focus. Deep blacks, warm tungsten against cool shadow, 24mm, strict symmetry. No text, no signs, no logos."
+        },
+        {
+          "id": "J1-K2",
+          "model": "Nano Banana Pro",
+          "plate": "P05",
+          "prompt": "9:16 vertical deadpan allegorical still. Keep the reference pose: one man centred, palm turned up under a suspended light. Behind him in the dark, a small crowd in plain modern clothes dances in a circle around a golden calf made entirely of stacked computer chips and heat sinks, glowing. The man ignores them and looks at the light in his palm. Fictional people only, faces small and unreadable. Near-monochrome with a single gold accent, hard top light, 35mm. No text, no logos, no flags."
+        },
+        {
+          "id": "J1-K3",
+          "model": "Seedream 5.0 Pro",
+          "plate": "P07",
+          "prompt": "9:16 vertical film still lit by a single strobe flash in total darkness. Keep the reference layout: a dim suspended tank above, a barely visible standing silhouette in the centre. On the floor around him is a giant chessboard. Three oversized king chess pieces stand at its edges: a gold king beside a small toll gate, a jade-green king half hidden behind a red lacquer screen, and a frost-white king on a frozen square outside the board. The pieces are abstract carved objects with no faces. Bleach-bypass, crushed blacks, hard flash, 24mm. No text, no flags, no national symbols, no real people."
+        },
+        {
+          "id": "J1-K4",
+          "model": "Seedream 5.0 Pro",
+          "plate": "P10",
+          "prompt": "9:16 vertical film still. Keep the reference composition: one man centred looking up at a suspended glowing tank, two small figures crossing the deep background from right to left. The two figures are fictional and faceless: one wears a long old-fashioned opera-house coat and carries an unlit antique light bulb, the other carries a water-damaged upright piano on a hand cart, seawater dripping. They are walking out of frame. Cool top light, deep blacks, caustic ripples on the floor, desaturated palette, 24mm. No text, no logos."
+        }
+      ],
+      "short_outline": [
+        "0:00–0:40 序：原片 00:00–00:10 拉長成 40 秒，七種語言輪流念同一句「光是從夜市開始的」。",
+        "0:40–1:20 台灣（7 秒循環）：夜市燈泡、行李箱、反諷霓虹被拆穿成真實攤販。",
+        "1:20–2:00 美國（11 秒循環）：肯塔基拖把水、Denny's 洗碗槽、桌球；三張餐墊上的草圖。",
+        "2:00–2:30 30 天：倒數計時只在字幕；一雙沒有臉的手遞來信封（不交代是誰）。",
+        "2:30–3:10 以色列寓言（13 秒循環）：燃燒的光纖荊棘、伺服器巴別塔、金牛犢；七語疊念。",
+        "3:10–3:50 深圳與棋盤（5 秒循環最急）：另一盞紅光；全黑 1.3 秒同步點；三個王。",
+        "3:50–4:30 歐洲與日本（17、19 秒循環最慢）：歌劇院熄燈、泡水鋼琴被推出畫面。",
+        "4:30–5:00 尾聲：水箱的水變成雨落進樹林，只剩正弦嗡聲直到消失。",
+        "估點：5 分鐘約為預告的 4–5 倍，粗估 3,500–4,500 點（佔月額度近一半），要另外核准。"
+      ]
+    },
+    {
+      "id": "J2",
+      "zh": "洗碗工",
+      "en": "THE DISHWASHER",
+      "recommended": false,
+      "contest": "portfolio-only",
+      "contest_note": "傳記寓言，黑皮衣背影與夜市場景會讓人認出原型，比賽規則禁可辨識真人，只能當作品集。",
+      "logline_zh": "一個在夜市長大、在美國洗碗的孩子，把一盞洗碗槽上的燈變成全世界搶的光；三十天的倒數，從來沒有停過。",
+      "logline_en": "A boy raised among night-market stalls, who washed dishes in America, turns the lamp over a sink into the light the whole world fights over. The thirty-day countdown never stopped.",
+      "structure": "照時間順序走的人生寓言，但每段都用「30 天」倒數字幕串起來（剪輯軟體加字）；原片六段分別代表人生六個時期。結尾回到夜市，一個穿黑皮衣的背影被手機燈海包圍。",
+      "spine": "Genjutsu Lite 五段：A 00:00–00:10、C 00:21–00:30、D 00:30–00:40、E 00:40–00:47、F 00:47–00:58。",
+      "shots": [
+        {
+          "id": "D1",
+          "t": [
+            0,
+            6
+          ],
+          "src": "新鏡",
+          "zh": "1970 年代台南巷口夜市，一個孩子提著舊行李箱站在燈泡下（背影）。",
+          "tool": "cs4",
+          "vo": [
+            "他九歲那年，被送到很遠的地方。",
+            "At nine, he was sent somewhere very far away."
+          ]
+        },
+        {
+          "id": "D2",
+          "t": [
+            6,
+            12
+          ],
+          "src": "新鏡",
+          "zh": "肯塔基鄉下宿舍走廊，一桶拖把水映著日光燈。",
+          "tool": "cs4"
+        },
+        {
+          "id": "D3",
+          "t": [
+            12,
+            22
+          ],
+          "src": "00:00–00:10（A）",
+          "zh": "他背手抬頭；水箱是 1980 年代餐館廚房的巨大洗碗槽燈。",
+          "tool": "genjutsu",
+          "vo": [
+            "每個晚上，他把盤子洗到發亮。",
+            "Every night he washed the plates until they shone."
+          ]
+        },
+        {
+          "id": "D4",
+          "t": [
+            22,
+            28
+          ],
+          "src": "新鏡",
+          "zh": "餐館雅座，三張餐墊上的草圖、三杯冷掉的咖啡（只拍手和桌面）。",
+          "tool": "cs4"
+        },
+        {
+          "id": "D5",
+          "t": [
+            28,
+            37
+          ],
+          "src": "00:21–00:30（C）",
+          "zh": "他伸手碰光；字幕「30」。",
+          "tool": "genjutsu",
+          "vo": [
+            "（字幕）離倒閉還有 30 天。",
+            "(caption) 30 days from going out of business."
+          ]
+        },
+        {
+          "id": "D6",
+          "t": [
+            37,
+            42
+          ],
+          "src": "新鏡",
+          "zh": "一雙西裝袖口的手把信封推過桌面（不露臉）。",
+          "tool": "cs4",
+          "vo": [
+            "有人在最後一刻，讓他們活下來。",
+            "At the last moment, someone let them live."
+          ]
+        },
+        {
+          "id": "D7",
+          "t": [
+            42,
+            52
+          ],
+          "src": "00:30–00:40（D）",
+          "zh": "他攤開手掌，上千顆微小的光點落進掌心（平行運算）。",
+          "tool": "genjutsu"
+        },
+        {
+          "id": "D8",
+          "t": [
+            52,
+            59
+          ],
+          "src": "新鏡",
+          "zh": "人群圍著金色小牛跳舞；股價只用音效（收銀機）表現。",
+          "tool": "cs4"
+        },
+        {
+          "id": "D9",
+          "t": [
+            59,
+            66
+          ],
+          "src": "00:40–00:47（E）",
+          "zh": "全黑 1.3 秒＝出口開關被拉下。",
+          "tool": "genjutsu",
+          "vo": [
+            "（字幕）「我要兩成。」「一成五。」",
+            "(caption) \"I want twenty.\" \"Fifteen.\""
+          ]
+        },
+        {
+          "id": "D10",
+          "t": [
+            66,
+            72
+          ],
+          "src": "新鏡",
+          "zh": "棋盤上金、玉、霜三個王，他的光被當成籌碼推來推去。",
+          "tool": "cs4"
+        },
+        {
+          "id": "D11",
+          "t": [
+            72,
+            83
+          ],
+          "src": "00:47–00:58（F）",
+          "zh": "他上前一步抬頭；背後歐洲與日本的剪影走出畫面。",
+          "tool": "genjutsu"
+        },
+        {
+          "id": "D12",
+          "t": [
+            83,
+            90
+          ],
+          "src": "新鏡",
+          "zh": "回到今天的夜市：一個黑皮衣背影坐在小吃攤，被一片手機燈海包圍。片名。",
+          "tool": "cs4",
+          "vo": [
+            "他還是覺得，只剩三十天。",
+            "He still thinks there are only thirty days left."
+          ]
+        }
+      ],
+      "sound": "以「30 天」為節拍器：每段結束一聲時鐘滴答，越到後面越快。原創五聲動機在 D1 用夜市玻璃杯、D3 用洗碗水滴、D7 用合成器琶音、D12 回到玻璃杯。S:N:M 前半 6:3:1，後半 2:4:4。",
+      "keyframes": [
+        {
+          "id": "J2-K1",
+          "model": "Seedream 5.0 Pro",
+          "plate": "P01",
+          "prompt": "9:16 vertical film still. Keep the reference pose and framing: one man centred, hands behind his back, looking up. Replace him with a fictional man (not the reference face) in a white 1980s diner kitchen apron. The suspended light above is now a huge stainless-steel dishwashing sink hanging overhead, water glowing inside it and casting rippling light onto a wet tiled kitchen floor stacked with plates. Late-night diner kitchen, steam, warm fluorescent and cool shadow, 24mm, symmetrical. No text, no logos, no brand names."
+        },
+        {
+          "id": "J2-K2",
+          "model": "Nano Banana Pro",
+          "plate": "P05",
+          "prompt": "9:16 vertical allegorical still. Keep the reference pose: one man centred with his palm turned up under a suspended glowing tank. Thousands of tiny points of light, each a minuscule glowing square like a processor core, are falling like snow and gathering in his palm. Fictional man, face in shadow, matte grey work jacket. Dark gallery, deep blacks, cool top light, 35mm. No text, no logos."
+        },
+        {
+          "id": "J2-K3",
+          "model": "GPT Image 2.6 Flare",
+          "plate": "P11",
+          "prompt": "9:16 vertical documentary still at a crowded Taiwanese night market. Seen strictly from behind: a grey-haired man in a black leather jacket sits on a plastic stool at a food stall, his face never visible. Around him, a crowd of fictional people raise glowing phones like a sea of small lights. Steam from the stall, warm bulbs, deep shadows, 35mm, shallow depth of field. No signs, no text, no logos, no identifiable faces."
+        }
+      ]
+    },
+    {
+      "id": "J3",
+      "zh": "棋盤",
+      "en": "THE BOARD",
+      "recommended": false,
+      "contest": "portfolio-only",
+      "contest_note": "直接諷刺三位在任領袖（雖然只用棋子與字幕），比賽與政治風險都高，只能當作品集；發布前需 Neon 自己判斷。",
+      "logline_zh": "深圳一座地下棋館，一個捧著光的小兵被推上巨大的棋盤；金、玉、霜三個王都想要他手上的光，歐洲和日本被掃到棋盤邊上。",
+      "logline_en": "In an underground chess hall in Shenzhen, a pawn holding a light is pushed onto a giant board. The gold, jade and frost kings all want what he carries; Europe and Japan are swept to the edge.",
+      "structure": "一局棋就是全片：開局（台灣與美國，光從哪裡來）、中局（以色列寓言的網路把棋子連起來、深圳另起一盞光）、全黑＝將軍、殘局（歐洲與日本出局）。棋子都是雕刻物件，沒有臉；領袖的話只以字幕出現。",
+      "spine": "Genjutsu Lite 四段：A 00:00–00:10、C+D 00:21–00:36、E 00:39–00:46、F 00:47–00:58；人換成棋盤上的「兵」。",
+      "shots": [
+        {
+          "id": "B1",
+          "t": [
+            0,
+            5
+          ],
+          "src": "新鏡",
+          "zh": "地下棋館大全景：巨大棋盤、正中吊著一盞水箱般的吊燈。",
+          "tool": "cs4"
+        },
+        {
+          "id": "B2",
+          "t": [
+            5,
+            15
+          ],
+          "src": "00:00–00:10（A）",
+          "zh": "他站在棋盤中央抬頭，腳下是夜市燈泡排成的格線。",
+          "tool": "genjutsu",
+          "vo": [
+            "每一局棋，都從一個小兵開始。",
+            "Every game begins with a pawn."
+          ]
+        },
+        {
+          "id": "B3",
+          "t": [
+            15,
+            20
+          ],
+          "src": "新鏡",
+          "zh": "金色的王：一座小收費閘門，閘口吐出寫著數字的紙條（數字後製加）。",
+          "tool": "cs4",
+          "vo": [
+            "（字幕）「我要兩成。」",
+            "(caption) \"I want twenty.\""
+          ]
+        },
+        {
+          "id": "B4",
+          "t": [
+            20,
+            25
+          ],
+          "src": "新鏡",
+          "zh": "玉色的王：紅漆屏風後面，自己點起另一盞紅光。",
+          "tool": "cs4",
+          "vo": [
+            "（字幕）「我們自己做。」",
+            "(caption) \"We'll make our own.\""
+          ]
+        },
+        {
+          "id": "B5",
+          "t": [
+            25,
+            30
+          ],
+          "src": "新鏡",
+          "zh": "霜白的王：坐在棋盤外一格結冰的方格上，只投下影子。",
+          "tool": "cs4"
+        },
+        {
+          "id": "B6",
+          "t": [
+            30,
+            45
+          ],
+          "src": "00:21–00:36（C+D）",
+          "zh": "他舉手、攤掌，光纖像荊棘一樣從腳下長出，把棋子連起來（網路＝以色列寓言）。",
+          "tool": "genjutsu",
+          "vo": [
+            "荊棘在燒，卻沒有燒盡。",
+            "The bush was burning, yet it was not consumed."
+          ]
+        },
+        {
+          "id": "B7",
+          "t": [
+            45,
+            52
+          ],
+          "src": "00:39–00:46（E）",
+          "zh": "全黑 1.3 秒＝將軍；再亮時，棋子全換了位置。",
+          "tool": "genjutsu"
+        },
+        {
+          "id": "B8",
+          "t": [
+            52,
+            57
+          ],
+          "src": "新鏡",
+          "zh": "一隻沒有臉的手把舊歌劇院的皇后和一枚泡水的白騎士掃到棋盤邊緣。",
+          "tool": "cs4",
+          "vo": [
+            "曾經下過棋的人，現在只能看。",
+            "Those who once played can only watch."
+          ]
+        },
+        {
+          "id": "B9",
+          "t": [
+            57,
+            68
+          ],
+          "src": "00:47–00:58（F）",
+          "zh": "他上前一步抬頭；背後兩個剪影走出棋盤。",
+          "tool": "genjutsu"
+        },
+        {
+          "id": "B10",
+          "t": [
+            68,
+            75
+          ],
+          "src": "新鏡",
+          "zh": "俯拍：棋盤重新排好，他手上的光小得像一粒米。片名。",
+          "tool": "cs4",
+          "vo": [
+            "光不屬於任何一個王。",
+            "The light belongs to no king."
+          ]
+        }
+      ],
+      "sound": "棋子落盤的木頭聲就是節拍；三個王各有一個不同步的循環（金 5 秒收銀機、玉 7 秒鑼、霜 11 秒冰裂）。全黑時三條循環同時中斷。原創五聲動機用鐘琴，底下延伸和弦逐漸走音。",
+      "keyframes": [
+        {
+          "id": "J3-K1",
+          "model": "Seedream 5.0 Pro",
+          "plate": "P04",
+          "prompt": "9:16 vertical film still. Keep the reference pose: one man centred with his right arm raised toward an overhead light. Replace him with a fictional man (not the reference face) in a plain grey work jacket. He stands on the centre square of a giant chessboard in a vast underground hall; above him hangs a glowing glass tank like a chandelier. Glowing fibre-optic strands grow from his feet like a thorn bush, burning with light without being consumed, linking the squares. Bleach-bypass palette, crushed blacks, 24mm, strict symmetry. No text, no flags, no logos."
+        },
+        {
+          "id": "J3-K2",
+          "model": "Nano Banana Pro",
+          "plate": "P10",
+          "prompt": "9:16 vertical deadpan allegorical still. Keep the reference composition: one man centred looking up, two small figures in the deep background. The floor is a giant chessboard. At its edges stand three faceless carved king pieces taller than a person: a gold king beside a miniature toll gate, a jade-green king behind a red lacquer folding screen glowing with its own red light, and a frost-white king sitting on a frozen square outside the board. In the background, an antique opera-house queen piece and a water-damaged white knight piece are being pushed off the board. No faces, no text, no flags, no national emblems. Hard top light, 35mm."
+        }
+      ]
+    }
+  ]
+}
