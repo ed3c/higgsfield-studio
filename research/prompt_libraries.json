@@ -1,0 +1,74 @@
+{
+  "as_of": "2026-11-21",
+  "best_five": [
+    {
+      "rank": 1,
+      "name": "higgsfield-ai/skills（官方 skill.md 庫）",
+      "url": "https://github.com/higgsfield-ai/skills",
+      "quality": "最高優先。官方、MIT、v0.14.0，含 9 個 agent skills：generate、soul-id、product-photoshoot、brandkit、marketplace-cards、websites、faceless-video、video-explainer、youtube-thumbnail。另有 COOKBOOK.md 工作流食譜。可用 npx skills add higgsfield-ai/skills 安裝。這是個人 GitHub 製作環境應首先導入的庫。"
+    },
+    {
+      "rank": 2,
+      "name": "Cinema Studio Prompt Guide（官方 100+ 鏡頭／燈光／運動提示）",
+      "url": "https://higgsfield.ai/blog/cinema-studio-3.0",
+      "quality": "官方實作級提示，從 Cast 角色表、場景、多鏡動作、產品廣告到 2D 動畫，可直接改寫。品質高、與產品一致。"
+    },
+    {
+      "rank": 3,
+      "name": "How to Master AI Filmmaking + Cinema Studio 4.0 完整指南",
+      "url": "https://higgsfield.ai/blog/how-to-master-ai-filmmaking",
+      "also": "https://higgsfield.ai/blog/cinema-studio-4-0-complete-guide",
+      "quality": "官方端到端工作流：先寫一句故事與分鏡，再用 Seedream / Soul Cinema 做角色與場景參考，Supercomputer 擴寫提示，Cinema Studio 4.0 多鏡含聲音，再 Relight、調色、Trim/Extend、Reframe、Upscale 到 4K。強調先規劃再生成以節省點數。"
+    },
+    {
+      "rank": 4,
+      "name": "官方 API／模型文件 + Soul 2.0 風格目錄",
+      "url": "https://docs.higgsfield.ai/docs/models/soul-cinema/generate",
+      "also": "https://github.com/higgsfield-ai/skills/blob/main/higgsfield-generate/references/model-catalog.md",
+      "quality": "正確的模型參數與限制（例如 soul_cinematic 不吃 style_id；Soul 2.0 可用 style_id）。本次只讀瀏覽官方 Soul 2.0 風格目錄，共 33 個風格（含 Flash editorial、Y2K street、Asian nostalgia、80s horror 等），適合日常生活與趨勢 remix 的靜態形象。未執行任何生成、未消耗點數。"
+    },
+    {
+      "rank": 5,
+      "name": "OSideMedia/higgsfield-ai-prompt-skill（社群 skill 庫）",
+      "url": "https://github.com/OSideMedia/higgsfield-ai-prompt-skill",
+      "quality": "目前最深的非官方 Higgsfield 提示 skill 庫：32 個子 skill，涵蓋 MCSLA 提示結構、Cinema Studio、Soul ID、Seedance、鏡頭語言、演技系統、Hell Grind 長片管線等。README 註明不再維護（最終版 v3.42.0），部分模型名稱可能過時，應與官方 skills 對照後使用，不要當成唯一依據。"
+    }
+  ],
+  "also_useful": [
+    {
+      "name": "官方 COOKBOOK.md",
+      "url": "https://github.com/higgsfield-ai/skills/blob/main/COOKBOOK.md",
+      "quality": "官方食譜：創辦人頭像訓練 Soul → 產品生活照 → Seedance 短片；從產品 URL 批量做 UGC。"
+    },
+    {
+      "name": "官方 Creator Hub / Cinema Studio 說明",
+      "url": "https://higgsfield.ai/creator-hub/help-center/tools/how-do-i-use-cinema-studio",
+      "quality": "產品說明，適合對照介面。"
+    },
+    {
+      "name": "JOEY 公開 Claude skills",
+      "url": "https://tinyurl.com/joey-skills",
+      "quality": "官方社群高評創作者公開的分鏡／角色／鏡頭 skill。以 TinyURL 發佈，穩定性和版本管理不如 GitHub 官方庫，使用前先備份。"
+    },
+    {
+      "name": "Higgsfield AI Cinematic Prompt Pack（Gumroad，付費）",
+      "url": "https://apop.gumroad.com/l/higgsfield-prompts",
+      "quality": "第三方付費包（宣稱 280+ 提示）。未獨立審核內容品質，可當參考，不優先於官方指南。"
+    },
+    {
+      "name": "Higgsfield AI Complete Bundle（Gumroad，付費）",
+      "url": "https://glowwithriya.gumroad.com/l/Higgsfieldai",
+      "quality": "第三方付費教學＋UGC 提示包。品質未審核。"
+    },
+    {
+      "name": "Higgsfield Discord",
+      "url": "https://discord.com/invite/higgsfield",
+      "quality": "官方社群，常見流程討論與競賽公告；不是結構化 prompt 庫。"
+    },
+    {
+      "name": "官方開放專案範例（Cully Hill Boys、Hell Grind、Zephyr）",
+      "url": "https://laurelume.com/festivals/higgsfield-ai-film-competition",
+      "quality": "Laurelume 指向官方公開畫布、素材與提示的學習專案，適合拆工業級流程。請以 Higgsfield 平台內的實際專案頁為準。"
+    }
+  ]
+}
