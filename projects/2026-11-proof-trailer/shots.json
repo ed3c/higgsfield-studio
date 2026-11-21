@@ -1,0 +1,490 @@
+[
+  {
+    "shot_id": "S01",
+    "act": 1,
+    "start_s": 0,
+    "duration_s": 4,
+    "purpose": "Hook：一張辦公椅立在暴風前的水田中央，世界出錯了",
+    "action": "風吹稻浪，椅子一動不動",
+    "framing": "大遠景，低地平線，椅子置中很小，天空占三分之二；18mm 固定鏡",
+    "camera_move": "locked-off",
+    "lighting": "遠方片狀閃電當主光",
+    "characters": [],
+    "location": "宜蘭水田",
+    "props": [
+      "辦公椅"
+    ],
+    "style_refs": [
+      "S02",
+      "PURGA"
+    ],
+    "audio": "風聲、遠雷；無音樂",
+    "tool": "cinema-studio-4.0",
+    "estimate": {
+      "model": "Cinema Studio 4.0",
+      "settings": "5 秒，720p",
+      "units": 1,
+      "takes": 2
+    },
+    "free_stage": "關鍵幀：網站 Unlimited（Nano Banana Pro / Seedream 5.0 Pro / GPT Image 2.6 Flare，2K，9:16）"
+  },
+  {
+    "shot_id": "S02",
+    "act": 1,
+    "start_s": 4,
+    "duration_s": 5,
+    "purpose": "人物入場：阿誠與椅子像決鬥一樣對峙，面無表情",
+    "action": "阿誠站在二十步外，雨水從帽簷滴下",
+    "framing": "中遠景側拍，兩造分在左右三分線，35mm",
+    "camera_move": "極慢推近",
+    "lighting": "閃電一亮一暗",
+    "characters": [
+      "阿誠"
+    ],
+    "location": "宜蘭水田",
+    "props": [
+      "辦公椅"
+    ],
+    "style_refs": [
+      "S02"
+    ],
+    "audio": "一聲雷；Cinema Studio 原生環境音",
+    "tool": "cinema-studio-4.0",
+    "estimate": {
+      "model": "Cinema Studio 4.0",
+      "settings": "5 秒，720p",
+      "units": 1,
+      "takes": 2
+    },
+    "free_stage": "關鍵幀：網站 Unlimited（Nano Banana Pro / Seedream 5.0 Pro / GPT Image 2.6 Flare，2K，9:16）"
+  },
+  {
+    "shot_id": "S03",
+    "act": 1,
+    "start_s": 9,
+    "duration_s": 5,
+    "purpose": "異常擴散：夜市收攤巷屋脊上蹲著一顆巨大饅頭",
+    "action": "閃電一亮，剪影定格",
+    "framing": "低角度仰拍，近乎單色剪影，木刻感",
+    "camera_move": "locked-off",
+    "lighting": "單一道閃電為唯一主光",
+    "characters": [
+      "夜市廚師（臨演）"
+    ],
+    "location": "夜市收攤巷",
+    "props": [
+      "巨型饅頭"
+    ],
+    "style_refs": [
+      "S01",
+      "PURGA"
+    ],
+    "audio": "雷、雨打鐵皮",
+    "tool": "cinema-studio-4.0",
+    "estimate": {
+      "model": "Cinema Studio 4.0",
+      "settings": "5 秒，720p",
+      "units": 1,
+      "takes": 2
+    },
+    "free_stage": "關鍵幀：網站 Unlimited（Nano Banana Pro / Seedream 5.0 Pro / GPT Image 2.6 Flare，2K，9:16）"
+  },
+  {
+    "shot_id": "S04",
+    "act": 1,
+    "start_s": 14,
+    "duration_s": 6,
+    "purpose": "第一個問題：香煙往水田的方向橫著飄，林廟公知道這不是第一次",
+    "action": "林廟公手中的香，煙橫向被吸走；他抬眼",
+    "framing": "近景到特寫，香頭橘火是唯一暖色",
+    "camera_move": "緩推特寫",
+    "lighting": "廟內油燈、冷藍窗光",
+    "characters": [
+      "林廟公"
+    ],
+    "location": "小廟",
+    "props": [
+      "香"
+    ],
+    "style_refs": [
+      "S13v2"
+    ],
+    "audio": "旁白（AI 人聲）：「雷打下來的地方，就是門。」",
+    "tool": "cinema-studio-4.0",
+    "estimate": {
+      "model": "Cinema Studio 4.0",
+      "settings": "5 秒，720p",
+      "units": 1.2,
+      "takes": 2
+    },
+    "free_stage": "關鍵幀：網站 Unlimited（Nano Banana Pro / Seedream 5.0 Pro / GPT Image 2.6 Flare，2K，9:16）",
+    "notes": "Emotion Wheel：fear → trust"
+  },
+  {
+    "shot_id": "S05",
+    "act": 2,
+    "start_s": 20,
+    "duration_s": 5,
+    "purpose": "第二條線：小芸在舊鐵道工場夜巡，聽見低頻嗡鳴",
+    "action": "手電筒掃過鐵桁架",
+    "framing": "中景跟拍，走廊縱深",
+    "camera_move": "tracking",
+    "lighting": "手電筒、遠端藍光滲出",
+    "characters": [
+      "小芸"
+    ],
+    "location": "舊鐵道工場",
+    "props": [
+      "手電筒"
+    ],
+    "style_refs": [
+      "S13v2"
+    ],
+    "audio": "嗡鳴漸強",
+    "tool": "cinema-studio-4.0",
+    "estimate": {
+      "model": "Cinema Studio 4.0",
+      "settings": "5 秒，720p",
+      "units": 1,
+      "takes": 2
+    },
+    "free_stage": "關鍵幀：網站 Unlimited（Nano Banana Pro / Seedream 5.0 Pro / GPT Image 2.6 Flare，2K，9:16）"
+  },
+  {
+    "shot_id": "S06",
+    "act": 2,
+    "start_s": 25,
+    "duration_s": 6,
+    "purpose": "奇觀揭示：1940 年代軍人列隊站在巨大光環前，旁邊一位清代廟公拿著香",
+    "action": "無人移動，只有霧在流",
+    "framing": "正中對稱大全景，巨物壓小人物，bleach bypass",
+    "camera_move": "locked-off",
+    "lighting": "光環給輪廓光，神光穿霧",
+    "characters": [
+      "軍人群（無徽章，臨演）",
+      "清代廟公（臨演）"
+    ],
+    "location": "舊鐵道工場",
+    "props": [
+      "光環"
+    ],
+    "style_refs": [
+      "S13v2",
+      "NUREMBERG 拆解"
+    ],
+    "audio": "低頻轟鳴、靜默",
+    "tool": "cinema-studio-4.0",
+    "estimate": {
+      "model": "Cinema Studio 4.0",
+      "settings": "5 秒，720p",
+      "units": 1.2,
+      "takes": 2
+    },
+    "free_stage": "關鍵幀：網站 Unlimited（Nano Banana Pro / Seedream 5.0 Pro / GPT Image 2.6 Flare，2K，9:16）"
+  },
+  {
+    "shot_id": "S07",
+    "act": 2,
+    "start_s": 31,
+    "duration_s": 5,
+    "purpose": "反應：小芸的臉被藍白光照亮",
+    "action": "她退一步，又停住",
+    "framing": "特寫，背景虛化",
+    "camera_move": "微手持",
+    "lighting": "光環藍白輪廓光",
+    "characters": [
+      "小芸"
+    ],
+    "location": "舊鐵道工場",
+    "props": [],
+    "style_refs": [
+      "S03 AIST 臉上的災難"
+    ],
+    "audio": "心跳低音",
+    "tool": "cinema-studio-4.0",
+    "estimate": {
+      "model": "Cinema Studio 4.0",
+      "settings": "5 秒，720p",
+      "units": 1,
+      "takes": 2
+    },
+    "free_stage": "關鍵幀：網站 Unlimited（Nano Banana Pro / Seedream 5.0 Pro / GPT Image 2.6 Flare，2K，9:16）",
+    "notes": "Emotion Wheel：fear"
+  },
+  {
+    "shot_id": "S08",
+    "act": 2,
+    "start_s": 36,
+    "duration_s": 5,
+    "purpose": "時代滲漏蒙太奇：清代牛車慢慢穿過無招牌的便利商店停車場，店員面無表情",
+    "action": "牛車經過自動門，門打開又關上",
+    "framing": "中遠景固定鏡，日光燈冷白",
+    "camera_move": "locked-off",
+    "lighting": "便利商店日光燈",
+    "characters": [
+      "店員（臨演）"
+    ],
+    "location": "便利商店停車場",
+    "props": [
+      "牛車"
+    ],
+    "style_refs": [
+      "PURGA 荒謬對峙"
+    ],
+    "audio": "自動門提示音（非品牌）",
+    "tool": "kling-4.0",
+    "estimate": {
+      "model": "Kling 4.0",
+      "settings": "5 秒，720p",
+      "units": 1,
+      "takes": 2
+    },
+    "free_stage": "關鍵幀：網站 Unlimited（Nano Banana Pro / Seedream 5.0 Pro / GPT Image 2.6 Flare，2K，9:16）",
+    "notes": "插入鏡用較便宜的模型"
+  },
+  {
+    "shot_id": "S09",
+    "act": 2,
+    "start_s": 41,
+    "duration_s": 5,
+    "purpose": "衝突：阿誠衝進廟裡要答案；林廟公只說今年神明要過境",
+    "action": "兩人對站，林廟公不抬頭",
+    "framing": "雙人中景，廟柱分割畫面",
+    "camera_move": "locked-off",
+    "lighting": "油燈",
+    "characters": [
+      "阿誠",
+      "林廟公"
+    ],
+    "location": "小廟",
+    "props": [
+      "神轎"
+    ],
+    "style_refs": [
+      "S02"
+    ],
+    "audio": "對白（AI 人聲）：「今年，神明要過境。」",
+    "tool": "cinema-studio-4.0",
+    "estimate": {
+      "model": "Cinema Studio 4.0",
+      "settings": "5 秒，720p",
+      "units": 1,
+      "takes": 2
+    },
+    "free_stage": "關鍵幀：網站 Unlimited（Nano Banana Pro / Seedream 5.0 Pro / GPT Image 2.6 Flare，2K，9:16）"
+  },
+  {
+    "shot_id": "S10",
+    "act": 2,
+    "start_s": 46,
+    "duration_s": 6,
+    "purpose": "準備：抬轎人的搖轎步伐，節奏開始加速",
+    "action": "神轎左右搖擺前進",
+    "framing": "中景，轎身占畫面上半",
+    "camera_move": "跟拍",
+    "lighting": "火把",
+    "characters": [
+      "抬轎人（臨演）"
+    ],
+    "location": "廟埕",
+    "props": [
+      "神轎",
+      "火把"
+    ],
+    "style_refs": [
+      "S14v2"
+    ],
+    "audio": "鑼鼓（AI 音樂）",
+    "tool": "genjutsu-lite",
+    "estimate": {
+      "model": "Genjutsu Lite",
+      "settings": "15 秒，720p",
+      "units": 1,
+      "takes": 2
+    },
+    "free_stage": "Neon 自己拍 10 秒搖擺步伐當參考影片（0 點）；關鍵幀走 Unlimited",
+    "notes": "Genjutsu 參考影片 4–30 秒；只用自己拍的動作"
+  },
+  {
+    "shot_id": "S11",
+    "act": 2,
+    "start_s": 52,
+    "duration_s": 6,
+    "purpose": "升級：一道雷打進水田，辦公椅一整排一整排出現到地平線",
+    "action": "閃光後椅子已經在那裡",
+    "framing": "大遠景，對稱，低地平線",
+    "camera_move": "緩慢升鏡",
+    "lighting": "閃電",
+    "characters": [
+      "阿誠"
+    ],
+    "location": "宜蘭水田",
+    "props": [
+      "辦公椅"
+    ],
+    "style_refs": [
+      "S02",
+      "PURGA"
+    ],
+    "audio": "雷、然後完全靜音",
+    "tool": "cinema-studio-4.0",
+    "estimate": {
+      "model": "Cinema Studio 4.0",
+      "settings": "5 秒，720p",
+      "units": 1.2,
+      "takes": 2
+    },
+    "free_stage": "關鍵幀：網站 Unlimited（Nano Banana Pro / Seedream 5.0 Pro / GPT Image 2.6 Flare，2K，9:16）"
+  },
+  {
+    "shot_id": "S12",
+    "act": 2,
+    "start_s": 58,
+    "duration_s": 7,
+    "purpose": "最大奇觀：東海岸斷崖下的夜間遶境，巨大黑色圓盤破雲而出",
+    "action": "隊伍停步，火把一齊抬頭",
+    "framing": "超廣角正中對稱，隊伍在下三分之一，圓盤在上三分之一，中間留標題黑帶",
+    "camera_move": "極慢下搖",
+    "lighting": "火把橘光從下方打亮圓盤底部",
+    "characters": [
+      "遶境隊伍（臨演）"
+    ],
+    "location": "東海岸斷崖公路",
+    "props": [
+      "神轎",
+      "黑色圓盤"
+    ],
+    "style_refs": [
+      "S14v2",
+      "NUREMBERG 拆解"
+    ],
+    "audio": "管弦重擊（AI 音樂）",
+    "tool": "cinema-studio-4.0",
+    "estimate": {
+      "model": "Cinema Studio 4.0",
+      "settings": "5 秒，720p",
+      "units": 1.4,
+      "takes": 2
+    },
+    "free_stage": "關鍵幀：網站 Unlimited（Nano Banana Pro / Seedream 5.0 Pro / GPT Image 2.6 Flare，2K，9:16）"
+  },
+  {
+    "shot_id": "S13",
+    "act": 3,
+    "start_s": 65,
+    "duration_s": 6,
+    "purpose": "高潮：神轎走進光環，林廟公搖鈴，抬轎人的臉",
+    "action": "鈴聲一下，所有人邁步",
+    "framing": "推近，從大全景到林廟公特寫",
+    "camera_move": "push-in",
+    "lighting": "光環逆光",
+    "characters": [
+      "林廟公",
+      "抬轎人（臨演）"
+    ],
+    "location": "東海岸斷崖公路",
+    "props": [
+      "神轎",
+      "光環"
+    ],
+    "style_refs": [
+      "S13v2"
+    ],
+    "audio": "鈴聲，音樂抽空",
+    "tool": "cinema-studio-4.0",
+    "estimate": {
+      "model": "Cinema Studio 4.0",
+      "settings": "5 秒，720p",
+      "units": 1.2,
+      "takes": 2
+    },
+    "free_stage": "關鍵幀：網站 Unlimited（Nano Banana Pro / Seedream 5.0 Pro / GPT Image 2.6 Flare，2K，9:16）",
+    "notes": "Emotion Wheel：trust"
+  },
+  {
+    "shot_id": "S14",
+    "act": 3,
+    "start_s": 71,
+    "duration_s": 6,
+    "purpose": "情緒轉折：白光後，清晨水田，椅子不見了；阿誠終於笑出來",
+    "action": "阿誠看空蕩的田，笑",
+    "framing": "中景到近景",
+    "camera_move": "locked-off",
+    "lighting": "晨光",
+    "characters": [
+      "阿誠"
+    ],
+    "location": "宜蘭水田",
+    "props": [],
+    "style_refs": [
+      "S02"
+    ],
+    "audio": "鳥叫、風",
+    "tool": "cinema-studio-4.0",
+    "estimate": {
+      "model": "Cinema Studio 4.0",
+      "settings": "5 秒，720p",
+      "units": 1.2,
+      "takes": 2
+    },
+    "free_stage": "關鍵幀：網站 Unlimited（Nano Banana Pro / Seedream 5.0 Pro / GPT Image 2.6 Flare，2K，9:16）",
+    "notes": "Emotion Wheel：joy"
+  },
+  {
+    "shot_id": "S15",
+    "act": 3,
+    "start_s": 77,
+    "duration_s": 7,
+    "purpose": "片名：《過境 CROSSING》",
+    "action": "靜幀緩推",
+    "framing": "圓盤破雲靜幀，中央黑帶上字",
+    "camera_move": "剪輯軟體推近",
+    "lighting": "同 S12",
+    "characters": [],
+    "location": "東海岸斷崖公路",
+    "props": [
+      "黑色圓盤"
+    ],
+    "style_refs": [
+      "S14v2"
+    ],
+    "audio": "主題音樂收尾",
+    "tool": "editor-only",
+    "estimate": {
+      "model": "free",
+      "settings": "",
+      "units": 0,
+      "takes": 0
+    },
+    "free_stage": "整鏡免費：Unlimited 靜幀 + Resolve 推近 + 手打片名",
+    "notes": "字不讓模型生成"
+  },
+  {
+    "shot_id": "S16",
+    "act": 3,
+    "start_s": 84,
+    "duration_s": 6,
+    "purpose": "彩蛋：台北空辦公室，清晨，一張椅子被推回桌前，輪子上全是水田的泥；椅子自己轉了半圈",
+    "action": "椅子停下，又轉半圈",
+    "framing": "中景固定鏡，冷白辦公室",
+    "camera_move": "locked-off",
+    "lighting": "清晨窗光",
+    "characters": [],
+    "location": "台北辦公室",
+    "props": [
+      "辦公椅"
+    ],
+    "style_refs": [
+      "PURGA 冷面"
+    ],
+    "audio": "椅輪聲，切黑",
+    "tool": "cinema-studio-4.0",
+    "estimate": {
+      "model": "Cinema Studio 4.0",
+      "settings": "5 秒，720p",
+      "units": 1.2,
+      "takes": 2
+    },
+    "free_stage": "關鍵幀：網站 Unlimited（Nano Banana Pro / Seedream 5.0 Pro / GPT Image 2.6 Flare，2K，9:16）"
+  }
+]

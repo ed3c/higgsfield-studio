@@ -1,0 +1,9 @@
+{
+  "_note": "Planning targets as of 2026-11-22. Platforms change limits; check the upload page before delivery. safe_area_px is an approximate UI-free zone for text, measured on the target frame.",
+  "tiktok": {"width": 1080, "height": 1920, "video_codecs": ["h264", "hevc"], "pix_fmt": "yuv420p", "fps": [23.9, 60], "audio_codecs": ["aac"], "sample_rates": [44100, 48000], "min_s": 1, "max_s": 600, "safe_area_px": {"top": 150, "bottom": 420, "left": 60, "right": 140}},
+  "instagram-reels": {"width": 1080, "height": 1920, "video_codecs": ["h264", "hevc"], "pix_fmt": "yuv420p", "fps": [23.9, 60], "audio_codecs": ["aac"], "sample_rates": [44100, 48000], "min_s": 3, "max_s": 180, "safe_area_px": {"top": 220, "bottom": 420, "left": 60, "right": 120}},
+  "x-vertical": {"width": 1080, "height": 1920, "video_codecs": ["h264"], "pix_fmt": "yuv420p", "fps": [23.9, 60], "audio_codecs": ["aac"], "sample_rates": [44100, 48000], "min_s": 0.5, "max_s": 140, "safe_area_px": {"top": 120, "bottom": 300, "left": 60, "right": 60}},
+  "youtube-shorts": {"width": 1080, "height": 1920, "video_codecs": ["h264", "hevc", "vp9", "av1"], "pix_fmt": "yuv420p", "fps": [23.9, 60], "audio_codecs": ["aac", "opus"], "sample_rates": [44100, 48000], "min_s": 1, "max_s": 180, "safe_area_px": {"top": 180, "bottom": 380, "left": 60, "right": 160}},
+  "youtube-master-4k": {"width": 3840, "height": 2160, "video_codecs": ["h264", "hevc", "prores"], "pix_fmt": "yuv420p", "fps": [23.9, 60], "audio_codecs": ["aac", "pcm_s16le", "pcm_s24le"], "sample_rates": [48000], "min_s": 1, "max_s": 43200, "safe_area_px": {"top": 108, "bottom": 108, "left": 192, "right": 192}},
+  "higgsfield-contest": {"width": null, "height": null, "max_long_edge": 3840, "video_codecs": ["h264", "hevc", "prores"], "pix_fmt": null, "fps": [23.9, 60], "audio_codecs": ["aac", "pcm_s16le", "pcm_s24le"], "sample_rates": [44100, 48000], "min_s": 180, "max_s": 420, "safe_area_px": null}
+}

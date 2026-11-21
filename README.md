@@ -18,7 +18,13 @@
 | `research/` | 79 位創作者與公開提示庫的原始研究，保留不動 |
 | `templates/` | 分鏡、口播、字幕、平台輸出、每週趨勢偵察 |
 | `tests/image-prompt-test/` | 免費 2K 圖像提示詞測試包。只在 higgsfield.ai 網站跑，通過後再進影片 |
-| `projects/_template/` | 一支片的資料夾。複製後再開始 |
+| `projects/_template/` | 一支短影的資料夾。複製後再開始 |
+| `pipeline/` | 工業級八階段電影流程、階段門與 `scheduler.py`（Draft→Select→Render→Repair→Promote，逐 take 記點） |
+| `schemas/` | Shot IR JSON schema、take registry 欄位、Story／Character／Location／Prop／Style Bible 範本 |
+| `qc/` | 六維創意評分（平均 ≥ 8、每項 ≥ 7）與 ffmpeg 機械檢查 |
+| `delivery/` | TikTok、IG Reels、X、YouTube、比賽的交付規格 |
+| `projects/_film-template/` | 八階段電影專案模板 |
+| `projects/2026-11-proof-trailer/` | 第一支驗證片：《過境 CROSSING》90 秒預告（提案，未核准預算） |
 
 ## 快速開始
 
@@ -41,6 +47,23 @@
 結束碼 2 表示某個桶或當月合計已達 80%。這時停止新增定稿。
 
 官方技能若要更新，照 [skills/UPSTREAM.md](skills/UPSTREAM.md)。不要把 API key 或 `credentials.json` 放進這個倉庫。
+
+## 工業級電影流程（`industrial-pipeline` 分支）
+
+依 Neon 2026-11-22 的需求建立，原文在 [plan/neon-industrial-pipeline-brief.md](plan/neon-industrial-pipeline-brief.md)，查核結果在 [plan/fact-check-2026-11-22.md](plan/fact-check-2026-11-22.md)，缺口在 [plan/gap-analysis.md](plan/gap-analysis.md)。
+
+八個階段：逆向工程 → 故事 → 視覺開發 → 預演 → 鏡頭製作 → 後製 → QC → 交付。前四階段只用網站 Unlimited 靜幀與剪輯軟體，0 點。Animatic Gate（階段 04）通過前，`pipeline/scheduler.py` 拒絕登記任何 render。
+
+```bash
+cp -a projects/_film-template projects/YYYY-MM-slug
+python3 pipeline/scheduler.py plan projects/2026-11-proof-trailer
+python3 pipeline/scheduler.py gate projects/YYYY-MM-slug 01 --by Neon
+python3 qc/mech_check.py exports/final.mp4 --profile tiktok
+python3 -m unittest discover -s pipeline -p 'test_*.py'
+python3 -m unittest discover -s qc -p 'test_*.py'
+```
+
+詳細見 [pipeline/README.md](pipeline/README.md)。比賽可行性見 [plan/talent-contest-feasibility.md](plan/talent-contest-feasibility.md)。
 
 ## 點數
 

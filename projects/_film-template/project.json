@@ -1,0 +1,12 @@
+{
+  "id": "YYYY-MM-slug",
+  "title": "",
+  "bucket": "methodology",
+  "aspect_ratio": "9:16",
+  "target_seconds": 90,
+  "budget_credits": 0,
+  "monthly_cap": 9000,
+  "repair_reserve_ratio": 0.15,
+  "extras": [],
+  "stages": {}
+}

@@ -1,0 +1,35 @@
+{
+  "id": "2026-11-proof-trailer",
+  "title": "過境 CROSSING（90 秒原創預告）",
+  "bucket": "methodology",
+  "aspect_ratio": "9:16",
+  "target_seconds": 90,
+  "budget_credits": 1500,
+  "monthly_cap": 9000,
+  "repair_reserve_ratio": 0.15,
+  "extras": [
+    {
+      "label": "Soul ID ×3（阿誠、林廟公、小芸）",
+      "model": "Soul ID 訓練",
+      "settings": "一次性",
+      "units": 3,
+      "takes": 1
+    },
+    {
+      "label": "影片放大 4K ×15",
+      "model": "ByteDance 影片放大",
+      "settings": "4K，帶 5 秒時長參數，未帶來源影片",
+      "units": 15,
+      "takes": 1
+    },
+    {
+      "label": "AI 旁白 10 句",
+      "model": "Seed Audio 1.0",
+      "settings": "語音預設",
+      "units": 10,
+      "takes": 1
+    }
+  ],
+  "stages": {},
+  "_note": "budget_credits 是提案值，尚未經 Neon 核准；核准前不做任何付費生成。"
+}
