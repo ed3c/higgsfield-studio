@@ -205,6 +205,16 @@ def stage_passed(data: dict, stage_id: str) -> bool:
     return data["stages"].get(stage_id, {}).get("status") == "passed"
 
 
+def selected_keyframes(project: Path) -> set[str]:
+    """Shots whose keyframe in selects.csv points at a still that exists on disk."""
+    path = project / "selects.csv"
+    if not path.exists():
+        return set()
+    with path.open(newline="", encoding="utf-8") as handle:
+        return {row["shot_id"] for row in csv.DictReader(handle)
+                if row.get("keyframe") and (project / row["keyframe"]).exists()}
+
+
 def check_gate(project: Path, stage_id: str) -> list[str]:
     if stage_id not in STAGE_BY_ID:
         return [f"沒有階段 {stage_id}"]
@@ -219,7 +229,9 @@ def check_gate(project: Path, stage_id: str) -> list[str]:
     if stage_id == "04" and (project / "shots.json").exists():
         shots = load_shots(project)
         problems.extend(validate_shots(shots))
-        missing = [shot.get("shot_id", "?") for shot in shots if not shot.get("keyframe")]
+        selected = selected_keyframes(project)
+        missing = [shot.get("shot_id", "?") for shot in shots
+                   if not shot.get("keyframe") and shot.get("shot_id") not in selected]
         if missing:
             problems.append(f"這些鏡頭沒有關鍵幀：{', '.join(missing)}")
         target = float(data.get("target_seconds", 0))

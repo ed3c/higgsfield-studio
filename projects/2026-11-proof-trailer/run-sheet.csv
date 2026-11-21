@@ -1,0 +1,42 @@
+order,id,model,aspect,resolution,refs_to_upload,filename,filename_2nd,credits_shown,status,note
+1,C01,Nano Banana Pro,16:9,2K,,stills/CR_C01_lock_nbpro.png,stills/CR_C01_lock_nbpro_2.png,,,
+2,C02,Nano Banana Pro,16:9,2K,,stills/CR_C02_lock_nbpro.png,stills/CR_C02_lock_nbpro_2.png,,,
+3,C03,Nano Banana Pro,16:9,2K,,stills/CR_C03_lock_nbpro.png,stills/CR_C03_lock_nbpro_2.png,,,
+4,C04,GPT Image 2.6 Flare,16:9,2K,,stills/CR_C04_lock_flare.png,stills/CR_C04_lock_flare_2.png,,,
+5,C05,GPT Image 2.6 Flare,16:9,2K,,stills/CR_C05_lock_flare.png,stills/CR_C05_lock_flare_2.png,,,
+6,L01,Seedream 5.0 Pro,9:16,2K,,stills/CR_L01_lock_seedream.png,stills/CR_L01_lock_seedream_2.png,,,
+7,L02,GPT Image 2.6 Flare,9:16,2K,,stills/CR_L02_lock_flare.png,stills/CR_L02_lock_flare_2.png,,,
+8,L03,GPT Image 2.6 Flare,9:16,2K,stills/CR_L02_lock_flare.png,stills/CR_L03_lock_flare.png,stills/CR_L03_lock_flare_2.png,,,
+9,L04,Seedream 5.0 Pro,9:16,2K,,stills/CR_L04_lock_seedream.png,stills/CR_L04_lock_seedream_2.png,,,
+10,L05,GPT Image 2.6 Flare,9:16,2K,,stills/CR_L05_lock_flare.png,stills/CR_L05_lock_flare_2.png,,,
+11,L06,Nano Banana Pro,9:16,2K,,stills/CR_L06_lock_nbpro.png,stills/CR_L06_lock_nbpro_2.png,,,
+12,L07,Seedream 5.0 Pro,9:16,2K,,stills/CR_L07_lock_seedream.png,stills/CR_L07_lock_seedream_2.png,,,
+13,L08,Nano Banana Pro,9:16,2K,,stills/CR_L08_lock_nbpro.png,stills/CR_L08_lock_nbpro_2.png,,,
+14,P01,Nano Banana Pro,16:9,2K,,stills/CR_P01_lock_nbpro.png,stills/CR_P01_lock_nbpro_2.png,,,
+15,P02,Seedream 5.0 Pro,16:9,2K,,stills/CR_P02_lock_seedream.png,stills/CR_P02_lock_seedream_2.png,,,
+16,P03,GPT Image 2.6 Flare,16:9,2K,,stills/CR_P03_lock_flare.png,stills/CR_P03_lock_flare_2.png,,,
+17,P04,GPT Image 2.6 Flare,16:9,2K,,stills/CR_P04_lock_flare.png,stills/CR_P04_lock_flare_2.png,,,
+18,P05,Seedream 5.0 Pro,16:9,2K,,stills/CR_P05_lock_seedream.png,stills/CR_P05_lock_seedream_2.png,,,
+19,P06,Nano Banana Pro,16:9,2K,,stills/CR_P06_lock_nbpro.png,stills/CR_P06_lock_nbpro_2.png,,,
+20,S01_kf,Seedream 5.0 Pro,9:16,2K,stills/CR_L01_lock_seedream.png | stills/CR_P01_lock_nbpro.png,stills/CR_S01_kf_seedream.png,stills/CR_S01_kf_seedream_2.png,,,
+21,S02_kf,Nano Banana Pro,9:16,2K,stills/CR_C02_lock_nbpro.png | stills/CR_L01_lock_seedream.png | stills/CR_P01_lock_nbpro.png,stills/CR_S02_kf_nbpro.png,stills/CR_S02_kf_nbpro_2.png,,,極慢推近，用 Ken Burns 即可
+22,S03_kf,Seedream 5.0 Pro,9:16,2K,stills/CR_L04_lock_seedream.png | stills/CR_P02_lock_seedream.png,stills/CR_S03_kf_seedream.png,stills/CR_S03_kf_seedream_2.png,,,
+23,S04_kf,GPT Image 2.6 Flare,9:16,2K,stills/CR_C01_lock_nbpro.png | stills/CR_L02_lock_flare.png,stills/CR_S04_kf_flare.png,stills/CR_S04_kf_flare_2.png,,,
+24,S04_ef,GPT Image 2.6 Flare,9:16,2K,stills/CR_C01_lock_nbpro.png | stills/CR_S04_kf_flare.png,stills/CR_S04_ef_flare.png,stills/CR_S04_ef_flare_2.png,,,推到特寫
+25,S05_kf,GPT Image 2.6 Flare,9:16,2K,stills/CR_C03_lock_nbpro.png | stills/CR_L05_lock_flare.png,stills/CR_S05_kf_flare.png,stills/CR_S05_kf_flare_2.png,,,
+26,S06_kf,GPT Image 2.6 Flare,9:16,2K,stills/CR_C05_lock_flare.png | stills/CR_L05_lock_flare.png | stills/CR_P04_lock_flare.png,stills/CR_S06_kf_flare.png,stills/CR_S06_kf_flare_2.png,,,
+27,S07_kf,GPT Image 2.6 Flare,9:16,2K,stills/CR_C03_lock_nbpro.png | stills/CR_P04_lock_flare.png,stills/CR_S07_kf_flare.png,stills/CR_S07_kf_flare_2.png,,,
+28,S08_kf,Nano Banana Pro,9:16,2K,stills/CR_L06_lock_nbpro.png | stills/CR_P06_lock_nbpro.png,stills/CR_S08_kf_nbpro.png,stills/CR_S08_kf_nbpro_2.png,,,
+29,S09_kf,Nano Banana Pro,9:16,2K,stills/CR_C01_lock_nbpro.png | stills/CR_C02_lock_nbpro.png | stills/CR_L02_lock_flare.png | stills/CR_P03_lock_flare.png,stills/CR_S09_kf_nbpro.png,stills/CR_S09_kf_nbpro_2.png,,,
+30,S10_kf,GPT Image 2.6 Flare,9:16,2K,stills/CR_C04_lock_flare.png | stills/CR_L03_lock_flare.png | stills/CR_P03_lock_flare.png,stills/CR_S10_kf_flare.png,stills/CR_S10_kf_flare_2.png,,,Genjutsu 版本之後再做；animatic 只用靜幀
+31,S11_kf,Seedream 5.0 Pro,9:16,2K,stills/CR_L01_lock_seedream.png | stills/CR_P01_lock_nbpro.png | stills/CR_C02_lock_nbpro.png,stills/CR_S11_kf_seedream.png,stills/CR_S11_kf_seedream_2.png,,,
+32,S11_ef,Seedream 5.0 Pro,9:16,2K,stills/CR_S11_kf_seedream.png | stills/CR_P01_lock_nbpro.png,stills/CR_S11_ef_seedream.png,stills/CR_S11_ef_seedream_2.png,,,閃光前後兩格，升鏡
+33,S12_kf,Seedream 5.0 Pro,9:16,2K,stills/CR_L07_lock_seedream.png | stills/CR_P05_lock_seedream.png,stills/CR_S12_kf_seedream.png,stills/CR_S12_kf_seedream_2.png,,,
+34,S12_ef,Seedream 5.0 Pro,9:16,2K,stills/CR_S12_kf_seedream.png | stills/CR_C04_lock_flare.png | stills/CR_P03_lock_flare.png,stills/CR_S12_ef_seedream.png,stills/CR_S12_ef_seedream_2.png,,,由圓盤下搖到隊伍
+35,S13_kf,GPT Image 2.6 Flare,9:16,2K,stills/CR_C01_lock_nbpro.png | stills/CR_C04_lock_flare.png | stills/CR_P03_lock_flare.png | stills/CR_P04_lock_flare.png,stills/CR_S13_kf_flare.png,stills/CR_S13_kf_flare_2.png,,,
+36,S13_ef,GPT Image 2.6 Flare,9:16,2K,stills/CR_C01_lock_nbpro.png | stills/CR_S13_kf_flare.png,stills/CR_S13_ef_flare.png,stills/CR_S13_ef_flare_2.png,,,推近到特寫
+37,S14_kf,Nano Banana Pro,9:16,2K,stills/CR_C02_lock_nbpro.png | stills/CR_L01_lock_seedream.png,stills/CR_S14_kf_nbpro.png,stills/CR_S14_kf_nbpro_2.png,,,
+38,S14_ef,Nano Banana Pro,9:16,2K,stills/CR_C02_lock_nbpro.png | stills/CR_S14_kf_nbpro.png,stills/CR_S14_ef_nbpro.png,stills/CR_S14_ef_nbpro_2.png,,,中景到近景
+39,S15_kf,Seedream 5.0 Pro,9:16,2K,stills/CR_S12_kf_seedream.png | stills/CR_P05_lock_seedream.png,stills/CR_S15_kf_seedream.png,stills/CR_S15_kf_seedream_2.png,,,片名在剪輯軟體上字
+40,S15_title,GPT Image 2.6 Flare,9:16,2K,stills/CR_S15_kf_seedream.png,stills/CR_S15_title_flare.png,stills/CR_S15_title_flare_2.png,,,選做：唯一允許有字的一張
+41,S16_kf,Nano Banana Pro,9:16,2K,stills/CR_L08_lock_nbpro.png | stills/CR_P01_lock_nbpro.png,stills/CR_S16_kf_nbpro.png,stills/CR_S16_kf_nbpro_2.png,,,椅子自己轉半圈要等影片階段

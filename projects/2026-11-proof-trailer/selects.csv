@@ -1,0 +1,17 @@
+shot_id,keyframe,endframe
+S01,stills/CR_S01_kf_seedream.png,
+S02,stills/CR_S02_kf_nbpro.png,
+S03,stills/CR_S03_kf_seedream.png,
+S04,stills/CR_S04_kf_flare.png,stills/CR_S04_ef_flare.png
+S05,stills/CR_S05_kf_flare.png,
+S06,stills/CR_S06_kf_flare.png,
+S07,stills/CR_S07_kf_flare.png,
+S08,stills/CR_S08_kf_nbpro.png,
+S09,stills/CR_S09_kf_nbpro.png,
+S10,stills/CR_S10_kf_flare.png,
+S11,stills/CR_S11_kf_seedream.png,stills/CR_S11_ef_seedream.png
+S12,stills/CR_S12_kf_seedream.png,stills/CR_S12_ef_seedream.png
+S13,stills/CR_S13_kf_flare.png,stills/CR_S13_ef_flare.png
+S14,stills/CR_S14_kf_nbpro.png,stills/CR_S14_ef_nbpro.png
+S15,stills/CR_S15_kf_seedream.png,
+S16,stills/CR_S16_kf_nbpro.png,

@@ -33,3 +33,7 @@ __pycache__/
 
 # Image-prompt test renders. Score in results.csv; do not commit stills.
 tests/**/outputs/
+
+# Free stills for animatics. Picks live in selects.csv; images stay out of git.
+projects/*/stills/*
+!projects/*/stills/.gitkeep

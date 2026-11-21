@@ -1,0 +1,658 @@
+{
+  "project": "2026-11-proof-trailer",
+  "resolution": "2K",
+  "max_candidates": 2,
+  "output_dir": "stills/",
+  "items": [
+    {
+      "order": 1,
+      "id": "C01",
+      "group": "lock",
+      "kind": "character",
+      "title": "林廟公（Elder Lin）",
+      "aspect": "16:9",
+      "model_key": "nbpro",
+      "model": "Nano Banana Pro",
+      "prompt": "Character reference sheet on a plain mid-grey seamless backdrop, soft even studio light, three views side by side at the same scale: front full body, left profile full body, and a front head-and-shoulders close-up. Same person, same clothes in all three views. Photoreal, neutral expression. Elder Lin, a fictional Taiwanese temple caretaker in his late sixties, lean, close-cropped grey hair, deep-set tired eyes, thin grey stubble, faded indigo mandarin-collar cotton jacket over a white undershirt, dark loose trousers, black cloth shoes, a small brass hand bell on a red cord at his waist. All people are fictional adults. No logos, no flags, no insignia, no badges, no readable text or signage characters, no watermark.",
+      "refs": [],
+      "filename": "CR_C01_lock_nbpro.png",
+      "note": ""
+    },
+    {
+      "order": 2,
+      "id": "C02",
+      "group": "lock",
+      "kind": "character",
+      "title": "阿誠（Cheng）",
+      "aspect": "16:9",
+      "model_key": "nbpro",
+      "model": "Nano Banana Pro",
+      "prompt": "Character reference sheet on a plain mid-grey seamless backdrop, soft even studio light, three views side by side at the same scale: front full body, left profile full body, and a front head-and-shoulders close-up. Same person, same clothes in all three views. Photoreal, neutral expression. Cheng, a fictional Taiwanese rice farmer in his mid forties, sunburnt and stocky, short black hair under a wide conical bamboo hat, soaked olive work shirt with rolled sleeves, black knee-high rubber rain boots. All people are fictional adults. No logos, no flags, no insignia, no badges, no readable text or signage characters, no watermark.",
+      "refs": [],
+      "filename": "CR_C02_lock_nbpro.png",
+      "note": ""
+    },
+    {
+      "order": 3,
+      "id": "C03",
+      "group": "lock",
+      "kind": "character",
+      "title": "小芸（Yun）",
+      "aspect": "16:9",
+      "model_key": "nbpro",
+      "model": "Nano Banana Pro",
+      "prompt": "Character reference sheet on a plain mid-grey seamless backdrop, soft even studio light, three views side by side at the same scale: front full body, left profile full body, and a front head-and-shoulders close-up. Same person, same clothes in all three views. Photoreal, neutral expression. Yun, a fictional Taiwanese woman aged 29, night security guard, shoulder-length black hair tied low, plain navy guard jacket with a blank patch area and no lettering, black trousers, a long black flashlight, small silver ear studs. All people are fictional adults. No logos, no flags, no insignia, no badges, no readable text or signage characters, no watermark.",
+      "refs": [],
+      "filename": "CR_C03_lock_nbpro.png",
+      "note": ""
+    },
+    {
+      "order": 4,
+      "id": "C04",
+      "group": "lock",
+      "kind": "ensemble",
+      "title": "遶境抬轎隊伍",
+      "aspect": "16:9",
+      "model_key": "flare",
+      "model": "GPT Image 2.6 Flare",
+      "prompt": "Wide ensemble reference still on a dark empty temple courtyard at night: eight adult temple-procession bearers in plain white cotton tunics, black trousers, red waist sashes and straw sandals, carrying a carved dark-wood palanquin with closed red curtains on long bamboo poles, some holding orange torches, standing in two rows facing camera, evenly lit by torches, every costume detail readable. cinematic trailer still, bleach-bypass grade, desaturated cold slate grey and icy blue, the only warm accent is orange firelight and the only cool accent is blue-white ring light, perfectly symmetrical center-weighted composition, volumetric fog and god rays, heavy organic film grain, subdued micro-contrast, no plastic AI sheen. All people are fictional adults. No logos, no flags, no insignia, no badges, no readable text or signage characters, no watermark.",
+      "refs": [],
+      "filename": "CR_C04_lock_flare.png",
+      "note": ""
+    },
+    {
+      "order": 5,
+      "id": "C05",
+      "group": "lock",
+      "kind": "ensemble",
+      "title": "1940 年代軍人列＋清代廟公",
+      "aspect": "16:9",
+      "model_key": "flare",
+      "model": "GPT Image 2.6 Flare",
+      "prompt": "Wide ensemble reference still in fog: a line of adult soldiers in plain olive 1940s-style field uniforms with no insignia, no badges, blank caps, standing at attention in a straight row, and beside them an elderly man in a dark Qing-dynasty-style long robe and black skullcap holding a single lit incense stick. Even cold light, every costume detail readable, faces generic and non-identifiable. cinematic trailer still, bleach-bypass grade, desaturated cold slate grey and icy blue, the only warm accent is orange firelight and the only cool accent is blue-white ring light, perfectly symmetrical center-weighted composition, volumetric fog and god rays, heavy organic film grain, subdued micro-contrast, no plastic AI sheen. All people are fictional adults. No logos, no flags, no insignia, no badges, no readable text or signage characters, no watermark.",
+      "refs": [],
+      "filename": "CR_C05_lock_flare.png",
+      "note": ""
+    },
+    {
+      "order": 6,
+      "id": "L01",
+      "group": "lock",
+      "kind": "location",
+      "title": "宜蘭水田（暴風前）",
+      "aspect": "9:16",
+      "model_key": "seedream",
+      "model": "Seedream 5.0 Pro",
+      "prompt": "Vertical 9:16 location plate, flooded Yilan rice paddies at the edge of a storm, distant low mountains, a single narrow raised earth path, empty of people, almost monochrome cinematic film still, deadpan magical realism, storm light as the key light, low horizon, enormous sky, subjects small in frame, locked-off 35mm, heavy organic film grain, no plastic AI sheen. All people are fictional adults. No logos, no flags, no insignia, no badges, no readable text or signage characters, no watermark.",
+      "refs": [],
+      "filename": "CR_L01_lock_seedream.png",
+      "note": ""
+    },
+    {
+      "order": 7,
+      "id": "L02",
+      "group": "lock",
+      "kind": "location",
+      "title": "小廟內殿",
+      "aspect": "9:16",
+      "model_key": "flare",
+      "model": "GPT Image 2.6 Flare",
+      "prompt": "Vertical 9:16 location plate, interior of a small old Taiwanese village temple at night, carved wooden beams, oil lamps, incense haze, altar with a veiled statue, wooden plaques left blank with no characters, cold blue window light, empty of people, cinematic trailer still, bleach-bypass grade, desaturated cold slate grey and icy blue, the only warm accent is orange firelight and the only cool accent is blue-white ring light, perfectly symmetrical center-weighted composition, volumetric fog and god rays, heavy organic film grain, subdued micro-contrast, no plastic AI sheen. All people are fictional adults. No logos, no flags, no insignia, no badges, no readable text or signage characters, no watermark.",
+      "refs": [],
+      "filename": "CR_L02_lock_flare.png",
+      "note": ""
+    },
+    {
+      "order": 8,
+      "id": "L03",
+      "group": "lock",
+      "kind": "location",
+      "title": "廟埕（夜）",
+      "aspect": "9:16",
+      "model_key": "flare",
+      "model": "GPT Image 2.6 Flare",
+      "prompt": "Vertical 9:16 location plate, stone courtyard in front of the same small village temple at night, curved swallowtail roof ridge, rows of orange torches in iron stands, wet flagstones, empty of people, cinematic trailer still, bleach-bypass grade, desaturated cold slate grey and icy blue, the only warm accent is orange firelight and the only cool accent is blue-white ring light, perfectly symmetrical center-weighted composition, volumetric fog and god rays, heavy organic film grain, subdued micro-contrast, no plastic AI sheen. All people are fictional adults. No logos, no flags, no insignia, no badges, no readable text or signage characters, no watermark.",
+      "refs": [
+        "L02"
+      ],
+      "filename": "CR_L03_lock_flare.png",
+      "note": ""
+    },
+    {
+      "order": 9,
+      "id": "L04",
+      "group": "lock",
+      "kind": "location",
+      "title": "夜市收攤巷",
+      "aspect": "9:16",
+      "model_key": "seedream",
+      "model": "Seedream 5.0 Pro",
+      "prompt": "Vertical 9:16 location plate, narrow Taiwan night-market alley after closing time, shuttered stalls with corrugated metal roofs, wet ground, no neon, no signs, empty, a single lightning flash as the only light, almost monochrome cinematic film still, deadpan magical realism, storm light as the key light, low horizon, enormous sky, subjects small in frame, locked-off 35mm, heavy organic film grain, no plastic AI sheen. All people are fictional adults. No logos, no flags, no insignia, no badges, no readable text or signage characters, no watermark.",
+      "refs": [],
+      "filename": "CR_L04_lock_seedream.png",
+      "note": ""
+    },
+    {
+      "order": 10,
+      "id": "L05",
+      "group": "lock",
+      "kind": "location",
+      "title": "舊鐵道工場機庫",
+      "aspect": "9:16",
+      "model_key": "flare",
+      "model": "GPT Image 2.6 Flare",
+      "prompt": "Vertical 9:16 location plate, vast Japanese-era railway workshop hangar, rows of riveted steel trusses vanishing into fog, old rail tracks in the floor, high clerestory windows, empty, cinematic trailer still, bleach-bypass grade, desaturated cold slate grey and icy blue, the only warm accent is orange firelight and the only cool accent is blue-white ring light, perfectly symmetrical center-weighted composition, volumetric fog and god rays, heavy organic film grain, subdued micro-contrast, no plastic AI sheen. All people are fictional adults. No logos, no flags, no insignia, no badges, no readable text or signage characters, no watermark.",
+      "refs": [],
+      "filename": "CR_L05_lock_flare.png",
+      "note": ""
+    },
+    {
+      "order": 11,
+      "id": "L06",
+      "group": "lock",
+      "kind": "location",
+      "title": "便利商店停車場（無品牌）",
+      "aspect": "9:16",
+      "model_key": "nbpro",
+      "model": "Nano Banana Pro",
+      "prompt": "Vertical 9:16 location plate, a generic small-town Taiwanese convenience store at night seen from its parking lot, cold white fluorescent light, glass doors, scooters parked, the store has no brand, no logo and no readable signage, empty, cinematic film still, naturalistic light, 35mm, organic film grain, subdued micro-contrast, no plastic AI sheen. All people are fictional adults. No logos, no flags, no insignia, no badges, no readable text or signage characters, no watermark.",
+      "refs": [],
+      "filename": "CR_L06_lock_nbpro.png",
+      "note": ""
+    },
+    {
+      "order": 12,
+      "id": "L07",
+      "group": "lock",
+      "kind": "location",
+      "title": "東海岸斷崖公路",
+      "aspect": "9:16",
+      "model_key": "seedream",
+      "model": "Seedream 5.0 Pro",
+      "prompt": "Vertical 9:16 location plate, coastal road at the foot of sheer east-coast Taiwan sea cliffs at night under a low overcast ceiling, grey sea, ultra-wide 18mm, slight low angle, empty road, cinematic trailer still, bleach-bypass grade, desaturated cold slate grey and icy blue, the only warm accent is orange firelight and the only cool accent is blue-white ring light, perfectly symmetrical center-weighted composition, volumetric fog and god rays, heavy organic film grain, subdued micro-contrast, no plastic AI sheen. All people are fictional adults. No logos, no flags, no insignia, no badges, no readable text or signage characters, no watermark.",
+      "refs": [],
+      "filename": "CR_L07_lock_seedream.png",
+      "note": ""
+    },
+    {
+      "order": 13,
+      "id": "L08",
+      "group": "lock",
+      "kind": "location",
+      "title": "台北空辦公室（清晨）",
+      "aspect": "9:16",
+      "model_key": "nbpro",
+      "model": "Nano Banana Pro",
+      "prompt": "Vertical 9:16 location plate, an empty open-plan Taipei office at dawn, rows of plain desks, cold white light mixing with pale window light, no screens on, no logos, no readable text, cinematic film still, naturalistic light, 35mm, organic film grain, subdued micro-contrast, no plastic AI sheen. All people are fictional adults. No logos, no flags, no insignia, no badges, no readable text or signage characters, no watermark.",
+      "refs": [],
+      "filename": "CR_L08_lock_nbpro.png",
+      "note": ""
+    },
+    {
+      "order": 14,
+      "id": "P01",
+      "group": "lock",
+      "kind": "prop",
+      "title": "辦公椅",
+      "aspect": "16:9",
+      "model_key": "nbpro",
+      "model": "Nano Banana Pro",
+      "prompt": "Prop reference sheet on a plain mid-grey seamless backdrop, soft even studio light, three views side by side at the same scale: front, side, three-quarter. Photoreal, true-to-scale, same object in all views. A perfectly ordinary black mesh office swivel chair with five chrome caster wheels and grey armrests, slightly too clean. All people are fictional adults. No logos, no flags, no insignia, no badges, no readable text or signage characters, no watermark.",
+      "refs": [],
+      "filename": "CR_P01_lock_nbpro.png",
+      "note": ""
+    },
+    {
+      "order": 15,
+      "id": "P02",
+      "group": "lock",
+      "kind": "prop",
+      "title": "巨型饅頭",
+      "aspect": "16:9",
+      "model_key": "seedream",
+      "model": "Seedream 5.0 Pro",
+      "prompt": "Prop reference sheet on a plain mid-grey seamless backdrop, soft even studio light, three views side by side at the same scale: front, side, three-quarter. Photoreal, true-to-scale, same object in all views. One giant plain white steamed bun the size of a stray dog, soft matte dough with a faint spiral top, realistic texture. All people are fictional adults. No logos, no flags, no insignia, no badges, no readable text or signage characters, no watermark.",
+      "refs": [],
+      "filename": "CR_P02_lock_seedream.png",
+      "note": ""
+    },
+    {
+      "order": 16,
+      "id": "P03",
+      "group": "lock",
+      "kind": "prop",
+      "title": "神轎",
+      "aspect": "16:9",
+      "model_key": "flare",
+      "model": "GPT Image 2.6 Flare",
+      "prompt": "Prop reference sheet on a plain mid-grey seamless backdrop, soft even studio light, three views side by side at the same scale: front, side, three-quarter. Photoreal, true-to-scale, same object in all views. A carved dark-wood Taiwanese temple palanquin on two long bamboo poles, swallowtail roof, gilded carvings of clouds, closed red curtains, no deity visible, no characters or text. All people are fictional adults. No logos, no flags, no insignia, no badges, no readable text or signage characters, no watermark.",
+      "refs": [],
+      "filename": "CR_P03_lock_flare.png",
+      "note": ""
+    },
+    {
+      "order": 17,
+      "id": "P04",
+      "group": "lock",
+      "kind": "prop",
+      "title": "巨大光環",
+      "aspect": "16:9",
+      "model_key": "flare",
+      "model": "GPT Image 2.6 Flare",
+      "prompt": "Reference still on black: a colossal upright ring of blue-white energy, thin and perfectly circular, crackling edges, casting blue-white rim light into fog, shown front-on, edge-on, and three-quarter, same scale. cinematic trailer still, bleach-bypass grade, desaturated cold slate grey and icy blue, the only warm accent is orange firelight and the only cool accent is blue-white ring light, perfectly symmetrical center-weighted composition, volumetric fog and god rays, heavy organic film grain, subdued micro-contrast, no plastic AI sheen. All people are fictional adults. No logos, no flags, no insignia, no badges, no readable text or signage characters, no watermark.",
+      "refs": [],
+      "filename": "CR_P04_lock_flare.png",
+      "note": ""
+    },
+    {
+      "order": 18,
+      "id": "P05",
+      "group": "lock",
+      "kind": "prop",
+      "title": "黑色圓盤",
+      "aspect": "16:9",
+      "model_key": "seedream",
+      "model": "Seedream 5.0 Pro",
+      "prompt": "Reference still: a colossal matte-black disc-shaped craft, smooth seamless hull, faint ribbing underneath, no lights, no markings, shown from below, side-on and three-quarter against overcast sky, same scale. cinematic trailer still, bleach-bypass grade, desaturated cold slate grey and icy blue, the only warm accent is orange firelight and the only cool accent is blue-white ring light, perfectly symmetrical center-weighted composition, volumetric fog and god rays, heavy organic film grain, subdued micro-contrast, no plastic AI sheen. All people are fictional adults. No logos, no flags, no insignia, no badges, no readable text or signage characters, no watermark.",
+      "refs": [],
+      "filename": "CR_P05_lock_seedream.png",
+      "note": ""
+    },
+    {
+      "order": 19,
+      "id": "P06",
+      "group": "lock",
+      "kind": "prop",
+      "title": "清代牛車",
+      "aspect": "16:9",
+      "model_key": "nbpro",
+      "model": "Nano Banana Pro",
+      "prompt": "Prop reference sheet on a plain mid-grey seamless backdrop, soft even studio light, three views side by side at the same scale: front, side, three-quarter. Photoreal, true-to-scale, same object in all views. A Qing-era wooden ox cart with two large spoked wheels pulled by one grey water buffalo, worn timber, rope harness. All people are fictional adults. No logos, no flags, no insignia, no badges, no readable text or signage characters, no watermark.",
+      "refs": [],
+      "filename": "CR_P06_lock_nbpro.png",
+      "note": ""
+    },
+    {
+      "order": 20,
+      "id": "S01_kf",
+      "group": "shot",
+      "kind": "kf",
+      "title": "S01",
+      "aspect": "9:16",
+      "model_key": "seedream",
+      "model": "Seedream 5.0 Pro",
+      "prompt": "Vertical 9:16 almost monochrome cinematic film still, deadpan magical realism, storm light as the key light, low horizon, enormous sky, subjects small in frame, locked-off 35mm, heavy organic film grain, no plastic AI sheen. In the center of a flooded Yilan rice paddy stands one perfectly ordinary black office swivel chair, upright and unmoving, tiny in frame. Low horizon, sky fills two thirds, a distant sheet of lightning is the key light, wind bends the rice. No people. All people are fictional adults. No logos, no flags, no insignia, no badges, no readable text or signage characters, no watermark.",
+      "refs": [
+        "L01",
+        "P01"
+      ],
+      "filename": "CR_S01_kf_seedream.png",
+      "note": ""
+    },
+    {
+      "order": 21,
+      "id": "S02_kf",
+      "group": "shot",
+      "kind": "kf",
+      "title": "S02",
+      "aspect": "9:16",
+      "model_key": "nbpro",
+      "model": "Nano Banana Pro",
+      "prompt": "Vertical 9:16 almost monochrome cinematic film still, deadpan magical realism, storm light as the key light, low horizon, enormous sky, subjects small in frame, locked-off 35mm, heavy organic film grain, no plastic AI sheen. Cheng, a fictional Taiwanese rice farmer in his mid forties, sunburnt and stocky, short black hair under a wide conical bamboo hat, soaked olive work shirt with rolled sleeves, black knee-high rubber rain boots stands twenty paces from the black office chair in the flooded paddy and stares at it as if in a duel, rain dripping from his hat brim. Side-on medium wide, he is on the left third, the chair on the right third, lightning flash. No smile. All people are fictional adults. No logos, no flags, no insignia, no badges, no readable text or signage characters, no watermark.",
+      "refs": [
+        "C02",
+        "L01",
+        "P01"
+      ],
+      "filename": "CR_S02_kf_nbpro.png",
+      "note": "極慢推近，用 Ken Burns 即可"
+    },
+    {
+      "order": 22,
+      "id": "S03_kf",
+      "group": "shot",
+      "kind": "kf",
+      "title": "S03",
+      "aspect": "9:16",
+      "model_key": "seedream",
+      "model": "Seedream 5.0 Pro",
+      "prompt": "Vertical 9:16 almost monochrome cinematic film still, deadpan magical realism, storm light as the key light, low horizon, enormous sky, subjects small in frame, locked-off 35mm, heavy organic film grain, no plastic AI sheen. Low-angle view up at the corrugated roof ridge of a closed night-market stall; on the ridge sits one giant steamed bun, cut out against the storm sky like a woodblock print. A lone adult cook in his fifties looks up from the doorway, face unreadable. A single lightning bolt is the only light. All people are fictional adults. No logos, no flags, no insignia, no badges, no readable text or signage characters, no watermark.",
+      "refs": [
+        "L04",
+        "P02"
+      ],
+      "filename": "CR_S03_kf_seedream.png",
+      "note": ""
+    },
+    {
+      "order": 23,
+      "id": "S04_kf",
+      "group": "shot",
+      "kind": "kf",
+      "title": "S04",
+      "aspect": "9:16",
+      "model_key": "flare",
+      "model": "GPT Image 2.6 Flare",
+      "prompt": "Vertical 9:16 cinematic trailer still, bleach-bypass grade, desaturated cold slate grey and icy blue, the only warm accent is orange firelight and the only cool accent is blue-white ring light, perfectly symmetrical center-weighted composition, volumetric fog and god rays, heavy organic film grain, subdued micro-contrast, no plastic AI sheen. Inside the small village temple, Elder Lin, a fictional Taiwanese temple caretaker in his late sixties, lean, close-cropped grey hair, deep-set tired eyes, thin grey stubble, faded indigo mandarin-collar cotton jacket over a white undershirt, dark loose trousers, black cloth shoes, a small brass hand bell on a red cord at his waist holds a lit incense stick; its smoke streams sideways toward the window as if pulled. Medium close-up, the orange ember is the only warm color, cold blue window light. All people are fictional adults. No logos, no flags, no insignia, no badges, no readable text or signage characters, no watermark.",
+      "refs": [
+        "C01",
+        "L02"
+      ],
+      "filename": "CR_S04_kf_flare.png",
+      "note": ""
+    },
+    {
+      "order": 24,
+      "id": "S04_ef",
+      "group": "shot",
+      "kind": "ef",
+      "title": "S04",
+      "aspect": "9:16",
+      "model_key": "flare",
+      "model": "GPT Image 2.6 Flare",
+      "prompt": "Vertical 9:16 cinematic trailer still, bleach-bypass grade, desaturated cold slate grey and icy blue, the only warm accent is orange firelight and the only cool accent is blue-white ring light, perfectly symmetrical center-weighted composition, volumetric fog and god rays, heavy organic film grain, subdued micro-contrast, no plastic AI sheen. Tight close-up of Elder Lin, a fictional Taiwanese temple caretaker in his late sixties, lean, close-cropped grey hair, deep-set tired eyes, thin grey stubble, faded indigo mandarin-collar cotton jacket over a white undershirt, dark loose trousers, black cloth shoes, a small brass hand bell on a red cord at his waist's eyes lifting toward the window, sideways incense smoke crossing the frame, orange ember out of focus in the foreground. Quiet dread turning to resolve. All people are fictional adults. No logos, no flags, no insignia, no badges, no readable text or signage characters, no watermark.",
+      "refs": [
+        "C01",
+        "S04_kf"
+      ],
+      "filename": "CR_S04_ef_flare.png",
+      "note": "推到特寫"
+    },
+    {
+      "order": 25,
+      "id": "S05_kf",
+      "group": "shot",
+      "kind": "kf",
+      "title": "S05",
+      "aspect": "9:16",
+      "model_key": "flare",
+      "model": "GPT Image 2.6 Flare",
+      "prompt": "Vertical 9:16 cinematic trailer still, bleach-bypass grade, desaturated cold slate grey and icy blue, the only warm accent is orange firelight and the only cool accent is blue-white ring light, perfectly symmetrical center-weighted composition, volumetric fog and god rays, heavy organic film grain, subdued micro-contrast, no plastic AI sheen. Yun, a fictional Taiwanese woman aged 29, night security guard, shoulder-length black hair tied low, plain navy guard jacket with a blank patch area and no lettering, black trousers, a long black flashlight, small silver ear studs walks a fog-filled corridor of riveted steel trusses in the old railway workshop, her flashlight beam cutting the haze, a faint blue glow leaking from the far end. Medium tracking shot from behind her shoulder. All people are fictional adults. No logos, no flags, no insignia, no badges, no readable text or signage characters, no watermark.",
+      "refs": [
+        "C03",
+        "L05"
+      ],
+      "filename": "CR_S05_kf_flare.png",
+      "note": ""
+    },
+    {
+      "order": 26,
+      "id": "S06_kf",
+      "group": "shot",
+      "kind": "kf",
+      "title": "S06",
+      "aspect": "9:16",
+      "model_key": "flare",
+      "model": "GPT Image 2.6 Flare",
+      "prompt": "Vertical 9:16 cinematic trailer still, bleach-bypass grade, desaturated cold slate grey and icy blue, the only warm accent is orange firelight and the only cool accent is blue-white ring light, perfectly symmetrical center-weighted composition, volumetric fog and god rays, heavy organic film grain, subdued micro-contrast, no plastic AI sheen. Inside the vast railway workshop hangar, a line of adult soldiers in plain olive 1940s-style field uniforms with no insignia, no badges, blank caps stand at attention, dwarfed by a colossal upright ring of blue-white energy at the far end, its light rim-lighting their silhouettes through the fog. Beside them an elderly man in a dark Qing-dynasty-style long robe and black skullcap holding a single lit incense stick; his orange ember is the only warm accent. Perfectly symmetrical wide shot, eye level, 35mm, locked-off. All people are fictional adults. No logos, no flags, no insignia, no badges, no readable text or signage characters, no watermark.",
+      "refs": [
+        "C05",
+        "L05",
+        "P04"
+      ],
+      "filename": "CR_S06_kf_flare.png",
+      "note": ""
+    },
+    {
+      "order": 27,
+      "id": "S07_kf",
+      "group": "shot",
+      "kind": "kf",
+      "title": "S07",
+      "aspect": "9:16",
+      "model_key": "flare",
+      "model": "GPT Image 2.6 Flare",
+      "prompt": "Vertical 9:16 cinematic trailer still, bleach-bypass grade, desaturated cold slate grey and icy blue, the only warm accent is orange firelight and the only cool accent is blue-white ring light, perfectly symmetrical center-weighted composition, volumetric fog and god rays, heavy organic film grain, subdued micro-contrast, no plastic AI sheen. Close-up of Yun, a fictional Taiwanese woman aged 29, night security guard, shoulder-length black hair tied low, plain navy guard jacket with a blank patch area and no lettering, black trousers, a long black flashlight, small silver ear studs's face lit hard from the front by blue-white ring light, one step back, breath visible, background dissolved in fog. Disaster written on her face, not in effects. All people are fictional adults. No logos, no flags, no insignia, no badges, no readable text or signage characters, no watermark.",
+      "refs": [
+        "C03",
+        "P04"
+      ],
+      "filename": "CR_S07_kf_flare.png",
+      "note": ""
+    },
+    {
+      "order": 28,
+      "id": "S08_kf",
+      "group": "shot",
+      "kind": "kf",
+      "title": "S08",
+      "aspect": "9:16",
+      "model_key": "nbpro",
+      "model": "Nano Banana Pro",
+      "prompt": "Vertical 9:16 cinematic film still, naturalistic light, 35mm, organic film grain, subdued micro-contrast, no plastic AI sheen, deadpan. A Qing-era ox cart pulled by a grey water buffalo crawls slowly across the parking lot of an unbranded convenience store at night under cold fluorescent light; an adult store clerk in a plain apron watches through the glass door with no expression. Locked-off medium wide. All people are fictional adults. No logos, no flags, no insignia, no badges, no readable text or signage characters, no watermark.",
+      "refs": [
+        "L06",
+        "P06"
+      ],
+      "filename": "CR_S08_kf_nbpro.png",
+      "note": ""
+    },
+    {
+      "order": 29,
+      "id": "S09_kf",
+      "group": "shot",
+      "kind": "kf",
+      "title": "S09",
+      "aspect": "9:16",
+      "model_key": "nbpro",
+      "model": "Nano Banana Pro",
+      "prompt": "Vertical 9:16 cinematic trailer still, bleach-bypass grade, desaturated cold slate grey and icy blue, the only warm accent is orange firelight and the only cool accent is blue-white ring light, perfectly symmetrical center-weighted composition, volumetric fog and god rays, heavy organic film grain, subdued micro-contrast, no plastic AI sheen. In the temple, Cheng, a fictional Taiwanese rice farmer in his mid forties, sunburnt and stocky, short black hair under a wide conical bamboo hat, soaked olive work shirt with rolled sleeves, black knee-high rubber rain boots confronts Elder Lin, a fictional Taiwanese temple caretaker in his late sixties, lean, close-cropped grey hair, deep-set tired eyes, thin grey stubble, faded indigo mandarin-collar cotton jacket over a white undershirt, dark loose trousers, black cloth shoes, a small brass hand bell on a red cord at his waist; Cheng leans forward demanding, the elder does not look up, polishing the palanquin pole. Two-shot medium, a temple pillar splits the frame between them, oil-lamp light. All people are fictional adults. No logos, no flags, no insignia, no badges, no readable text or signage characters, no watermark.",
+      "refs": [
+        "C01",
+        "C02",
+        "L02",
+        "P03"
+      ],
+      "filename": "CR_S09_kf_nbpro.png",
+      "note": ""
+    },
+    {
+      "order": 30,
+      "id": "S10_kf",
+      "group": "shot",
+      "kind": "kf",
+      "title": "S10",
+      "aspect": "9:16",
+      "model_key": "flare",
+      "model": "GPT Image 2.6 Flare",
+      "prompt": "Vertical 9:16 cinematic trailer still, bleach-bypass grade, desaturated cold slate grey and icy blue, the only warm accent is orange firelight and the only cool accent is blue-white ring light, perfectly symmetrical center-weighted composition, volumetric fog and god rays, heavy organic film grain, subdued micro-contrast, no plastic AI sheen. adult temple-procession bearers in plain white cotton tunics, black trousers, red waist sashes and straw sandals, carrying a carved dark-wood palanquin with closed red curtains on long bamboo poles, some holding orange torches sway the palanquin side to side as they step forward across the torch-lit temple courtyard, motion blur on the curtains, the palanquin fills the upper half of the frame. Medium tracking shot. All people are fictional adults. No logos, no flags, no insignia, no badges, no readable text or signage characters, no watermark.",
+      "refs": [
+        "C04",
+        "L03",
+        "P03"
+      ],
+      "filename": "CR_S10_kf_flare.png",
+      "note": "Genjutsu 版本之後再做；animatic 只用靜幀"
+    },
+    {
+      "order": 31,
+      "id": "S11_kf",
+      "group": "shot",
+      "kind": "kf",
+      "title": "S11",
+      "aspect": "9:16",
+      "model_key": "seedream",
+      "model": "Seedream 5.0 Pro",
+      "prompt": "Vertical 9:16 almost monochrome cinematic film still, deadpan magical realism, storm light as the key light, low horizon, enormous sky, subjects small in frame, locked-off 35mm, heavy organic film grain, no plastic AI sheen. A lightning bolt strikes the middle of the flooded paddy behind the single black office chair; Cheng, a fictional Taiwanese rice farmer in his mid forties, sunburnt and stocky, short black hair under a wide conical bamboo hat, soaked olive work shirt with rolled sleeves, black knee-high rubber rain boots small in the foreground, back to camera. Symmetrical extreme wide, low horizon. All people are fictional adults. No logos, no flags, no insignia, no badges, no readable text or signage characters, no watermark.",
+      "refs": [
+        "L01",
+        "P01",
+        "C02"
+      ],
+      "filename": "CR_S11_kf_seedream.png",
+      "note": ""
+    },
+    {
+      "order": 32,
+      "id": "S11_ef",
+      "group": "shot",
+      "kind": "ef",
+      "title": "S11",
+      "aspect": "9:16",
+      "model_key": "seedream",
+      "model": "Seedream 5.0 Pro",
+      "prompt": "Vertical 9:16 almost monochrome cinematic film still, deadpan magical realism, storm light as the key light, low horizon, enormous sky, subjects small in frame, locked-off 35mm, heavy organic film grain, no plastic AI sheen. After the flash: identical black office chairs stand in perfect rows across the entire flooded paddy all the way to the horizon, Cheng, a fictional Taiwanese rice farmer in his mid forties, sunburnt and stocky, short black hair under a wide conical bamboo hat, soaked olive work shirt with rolled sleeves, black knee-high rubber rain boots small in the foreground, back to camera, frozen. Symmetrical extreme wide, slightly higher camera. All people are fictional adults. No logos, no flags, no insignia, no badges, no readable text or signage characters, no watermark.",
+      "refs": [
+        "S11_kf",
+        "P01"
+      ],
+      "filename": "CR_S11_ef_seedream.png",
+      "note": "閃光前後兩格，升鏡"
+    },
+    {
+      "order": 33,
+      "id": "S12_kf",
+      "group": "shot",
+      "kind": "kf",
+      "title": "S12",
+      "aspect": "9:16",
+      "model_key": "seedream",
+      "model": "Seedream 5.0 Pro",
+      "prompt": "Vertical 9:16 cinematic trailer still, bleach-bypass grade, desaturated cold slate grey and icy blue, the only warm accent is orange firelight and the only cool accent is blue-white ring light, perfectly symmetrical center-weighted composition, volumetric fog and god rays, heavy organic film grain, subdued micro-contrast, no plastic AI sheen. Ultra-wide 18mm, slight low angle: in the upper third a colossal matte-black disc-shaped craft breaks through the low cloud above sheer east-coast sea cliffs, fog pouring off its edge, its underside faintly rim-lit by orange torches far below. A dark empty band across the exact center of the frame. All people are fictional adults. No logos, no flags, no insignia, no badges, no readable text or signage characters, no watermark.",
+      "refs": [
+        "L07",
+        "P05"
+      ],
+      "filename": "CR_S12_kf_seedream.png",
+      "note": ""
+    },
+    {
+      "order": 34,
+      "id": "S12_ef",
+      "group": "shot",
+      "kind": "ef",
+      "title": "S12",
+      "aspect": "9:16",
+      "model_key": "seedream",
+      "model": "Seedream 5.0 Pro",
+      "prompt": "Vertical 9:16 cinematic trailer still, bleach-bypass grade, desaturated cold slate grey and icy blue, the only warm accent is orange firelight and the only cool accent is blue-white ring light, perfectly symmetrical center-weighted composition, volumetric fog and god rays, heavy organic film grain, subdued micro-contrast, no plastic AI sheen. Tilted down: the night-time temple procession of adult temple-procession bearers in plain white cotton tunics, black trousers, red waist sashes and straw sandals, carrying a carved dark-wood palanquin with closed red curtains on long bamboo poles, some holding orange torches stopped on the coastal road at the foot of the cliffs, small and center-weighted, every torch raised toward the sky, the black disc's underside filling the top edge of the frame. All people are fictional adults. No logos, no flags, no insignia, no badges, no readable text or signage characters, no watermark.",
+      "refs": [
+        "S12_kf",
+        "C04",
+        "P03"
+      ],
+      "filename": "CR_S12_ef_seedream.png",
+      "note": "由圓盤下搖到隊伍"
+    },
+    {
+      "order": 35,
+      "id": "S13_kf",
+      "group": "shot",
+      "kind": "kf",
+      "title": "S13",
+      "aspect": "9:16",
+      "model_key": "flare",
+      "model": "GPT Image 2.6 Flare",
+      "prompt": "Vertical 9:16 cinematic trailer still, bleach-bypass grade, desaturated cold slate grey and icy blue, the only warm accent is orange firelight and the only cool accent is blue-white ring light, perfectly symmetrical center-weighted composition, volumetric fog and god rays, heavy organic film grain, subdued micro-contrast, no plastic AI sheen. On the coastal road, the procession carries the palanquin into a colossal upright ring of blue-white energy; Elder Lin, a fictional Taiwanese temple caretaker in his late sixties, lean, close-cropped grey hair, deep-set tired eyes, thin grey stubble, faded indigo mandarin-collar cotton jacket over a white undershirt, dark loose trousers, black cloth shoes, a small brass hand bell on a red cord at his waist walks in front ringing his brass hand bell. Symmetrical wide shot from behind, the ring backlights everyone. All people are fictional adults. No logos, no flags, no insignia, no badges, no readable text or signage characters, no watermark.",
+      "refs": [
+        "C01",
+        "C04",
+        "P03",
+        "P04"
+      ],
+      "filename": "CR_S13_kf_flare.png",
+      "note": ""
+    },
+    {
+      "order": 36,
+      "id": "S13_ef",
+      "group": "shot",
+      "kind": "ef",
+      "title": "S13",
+      "aspect": "9:16",
+      "model_key": "flare",
+      "model": "GPT Image 2.6 Flare",
+      "prompt": "Vertical 9:16 cinematic trailer still, bleach-bypass grade, desaturated cold slate grey and icy blue, the only warm accent is orange firelight and the only cool accent is blue-white ring light, perfectly symmetrical center-weighted composition, volumetric fog and god rays, heavy organic film grain, subdued micro-contrast, no plastic AI sheen. Close-up of Elder Lin, a fictional Taiwanese temple caretaker in his late sixties, lean, close-cropped grey hair, deep-set tired eyes, thin grey stubble, faded indigo mandarin-collar cotton jacket over a white undershirt, dark loose trousers, black cloth shoes, a small brass hand bell on a red cord at his waist ringing the brass bell, blue-white light flooding his face, eyes calm, trust replacing fear, bearers' shoulders blurred behind him. All people are fictional adults. No logos, no flags, no insignia, no badges, no readable text or signage characters, no watermark.",
+      "refs": [
+        "C01",
+        "S13_kf"
+      ],
+      "filename": "CR_S13_ef_flare.png",
+      "note": "推近到特寫"
+    },
+    {
+      "order": 37,
+      "id": "S14_kf",
+      "group": "shot",
+      "kind": "kf",
+      "title": "S14",
+      "aspect": "9:16",
+      "model_key": "nbpro",
+      "model": "Nano Banana Pro",
+      "prompt": "Vertical 9:16 cinematic film still, naturalistic light, 35mm, organic film grain, subdued micro-contrast, no plastic AI sheen, soft dawn after a white-out. The flooded Yilan paddy at sunrise, completely empty, no chairs anywhere; Cheng, a fictional Taiwanese rice farmer in his mid forties, sunburnt and stocky, short black hair under a wide conical bamboo hat, soaked olive work shirt with rolled sleeves, black knee-high rubber rain boots small in the middle distance, staring. Pale gold mist, birds. All people are fictional adults. No logos, no flags, no insignia, no badges, no readable text or signage characters, no watermark.",
+      "refs": [
+        "C02",
+        "L01"
+      ],
+      "filename": "CR_S14_kf_nbpro.png",
+      "note": ""
+    },
+    {
+      "order": 38,
+      "id": "S14_ef",
+      "group": "shot",
+      "kind": "ef",
+      "title": "S14",
+      "aspect": "9:16",
+      "model_key": "nbpro",
+      "model": "Nano Banana Pro",
+      "prompt": "Vertical 9:16 cinematic film still, naturalistic light, 35mm, organic film grain, subdued micro-contrast, no plastic AI sheen, soft dawn. Medium close-up of Cheng, a fictional Taiwanese rice farmer in his mid forties, sunburnt and stocky, short black hair under a wide conical bamboo hat, soaked olive work shirt with rolled sleeves, black knee-high rubber rain boots finally laughing, hat pushed back, mud on his face, empty paddy behind him in soft focus. All people are fictional adults. No logos, no flags, no insignia, no badges, no readable text or signage characters, no watermark.",
+      "refs": [
+        "C02",
+        "S14_kf"
+      ],
+      "filename": "CR_S14_ef_nbpro.png",
+      "note": "中景到近景"
+    },
+    {
+      "order": 39,
+      "id": "S15_kf",
+      "group": "shot",
+      "kind": "kf",
+      "title": "S15",
+      "aspect": "9:16",
+      "model_key": "seedream",
+      "model": "Seedream 5.0 Pro",
+      "prompt": "Vertical 9:16 cinematic trailer still, bleach-bypass grade, desaturated cold slate grey and icy blue, the only warm accent is orange firelight and the only cool accent is blue-white ring light, perfectly symmetrical center-weighted composition, volumetric fog and god rays, heavy organic film grain, subdued micro-contrast, no plastic AI sheen. Same composition as the disc-over-cliffs shot: the colossal matte-black disc in the upper third, cliffs and fog below, a wide clean dark band across the exact center left empty for a title. No text. All people are fictional adults. No logos, no flags, no insignia, no badges, no readable text or signage characters, no watermark.",
+      "refs": [
+        "S12_kf",
+        "P05"
+      ],
+      "filename": "CR_S15_kf_seedream.png",
+      "note": "片名在剪輯軟體上字"
+    },
+    {
+      "order": 40,
+      "id": "S15_title",
+      "group": "shot",
+      "kind": "title",
+      "title": "S15",
+      "aspect": "9:16",
+      "model_key": "flare",
+      "model": "GPT Image 2.6 Flare",
+      "prompt": "Vertical 9:16 cinematic trailer still, bleach-bypass grade, desaturated cold slate grey and icy blue, the only warm accent is orange firelight and the only cool accent is blue-white ring light, perfectly symmetrical center-weighted composition, volumetric fog and god rays, heavy organic film grain, subdued micro-contrast, no plastic AI sheen. Same composition as the disc-over-cliffs shot. Across the exact center, a clean title in wide-tracked white sans-serif: \"過境\" on the first line and \"CROSSING\" smaller on the second line, perfectly legible, nothing else written. All people are fictional adults. No logos, no flags, no insignia, no watermark.",
+      "refs": [
+        "S15_kf"
+      ],
+      "filename": "CR_S15_title_flare.png",
+      "note": "選做：唯一允許有字的一張"
+    },
+    {
+      "order": 41,
+      "id": "S16_kf",
+      "group": "shot",
+      "kind": "kf",
+      "title": "S16",
+      "aspect": "9:16",
+      "model_key": "nbpro",
+      "model": "Nano Banana Pro",
+      "prompt": "Vertical 9:16 cinematic film still, naturalistic light, 35mm, organic film grain, subdued micro-contrast, no plastic AI sheen, deadpan. An empty open-plan Taipei office at dawn; one black mesh office chair stands pushed back to its desk, its five caster wheels caked with wet rice-paddy mud, a trail of muddy wheel tracks across the grey carpet. Locked-off medium shot, cold window light. No people. All people are fictional adults. No logos, no flags, no insignia, no badges, no readable text or signage characters, no watermark.",
+      "refs": [
+        "L08",
+        "P01"
+      ],
+      "filename": "CR_S16_kf_nbpro.png",
+      "note": "椅子自己轉半圈要等影片階段"
+    }
+  ]
+}

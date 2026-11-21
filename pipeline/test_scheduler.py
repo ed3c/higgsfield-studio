@@ -81,6 +81,19 @@ class SchedulerTest(unittest.TestCase):
         (self.project / "shots.json").write_text(json.dumps(shots, ensure_ascii=False), encoding="utf-8")
         self.assertEqual(s.check_gate(self.project, "04"), [])
 
+    def test_animatic_gate_accepts_existing_selects(self):
+        for stage in ("01", "02", "03"):
+            pass_stage(self.project, stage)
+        (self.project / "animatic.md").write_text("x", encoding="utf-8")
+        (self.project / "stills").mkdir()
+        (self.project / "stills" / "a.png").write_bytes(b"x")
+        (self.project / "selects.csv").write_text(
+            "shot_id,keyframe,endframe\nS01,stills/a.png,\nS02,stills/missing.png,\n", encoding="utf-8")
+        problems = s.check_gate(self.project, "04")
+        self.assertTrue(any("S02" in p and "S01" not in p for p in problems))
+        (self.project / "stills" / "missing.png").write_bytes(b"x")
+        self.assertEqual(s.check_gate(self.project, "04"), [])
+
     def test_draft_blocked_before_script_lock(self):
         with self.assertRaises(s.GateError):
             self.take()

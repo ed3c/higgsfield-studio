@@ -51,6 +51,8 @@ python3 pipeline/scheduler.py select projects/<slug> T0001
 python3 pipeline/scheduler.py take projects/<slug> --shot S01 --phase render --surface web --model "Cinema Studio 4.0" --settings "5 秒，720p" --credits 35 --generation-id <id> --bucket methodology
 python3 pipeline/scheduler.py qc projects/<slug> T0002 --result fail --reason "手指多一隻"
 python3 pipeline/scheduler.py promote projects/<slug> T0003
+python3 pipeline/render_stills_plan.py projects/<slug>                 # stills-plan.json → 提示詞文件、執行表、selects.csv
+python3 pipeline/build_animatic.py projects/<slug> [--placeholder]    # 免費靜幀 → renders/animatic.mp4
 python3 -m unittest discover -s pipeline -p 'test_*.py'
 ```
 
