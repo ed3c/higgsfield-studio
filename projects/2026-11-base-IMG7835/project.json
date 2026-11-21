@@ -1,0 +1,11 @@
+{
+  "id": "2026-11-base-IMG7835",
+  "title": "以 IMG_7835 為基底：五種風格與劇本",
+  "bucket": "methodology",
+  "aspect_ratio": "9:16",
+  "source": "Neon Drive IMG_7835.MOV（不進 git）",
+  "status": "提案；0 點。任何付費生成都要 Neon 核准，並先在 AI Video Production Service 房間貼估點。",
+  "recommended": ["D5", "D1"],
+  "monthly_cap": 9000,
+  "repair_reserve_ratio": 0.15
+}

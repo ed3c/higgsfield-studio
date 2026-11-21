@@ -1,0 +1,6 @@
+direction,name_zh,name_en,seconds,video,upscale,vo,soul_id,subtotal,total_with_15pct_reserve,contest
+D1,光環,HALO,49,480.0,28.0,0.6,0,508.6,585,safe-if-replaced
+D2,水田之箱,PADDY TANK,30,358.0,20.0,0.4,0,378.4,436,safe
+D3,廟燈,LANTERN,45,338.0,20.0,0.4,0,358.4,413,safe-if-replaced
+D4,海在上面,THE SEA ABOVE,41,360.0,20.0,0.4,25.0,405.4,467,portfolio-only
+D5,停電 1.3 秒,BLACKOUT 1.3s,42,402.0,24.0,0.6,0,426.6,491,safe-if-replaced

@@ -37,3 +37,10 @@ tests/**/outputs/
 # Free stills for animatics. Picks live in selects.csv; images stay out of git.
 projects/*/stills/*
 !projects/*/stills/.gitkeep
+
+# Base footage from Neon (IMG_7835). Raw camera files and plates stay out of the public repo.
+*.MOV
+*.MP4
+*.HEIC
+projects/2026-11-base-IMG7835/plates/
+projects/2026-11-base-IMG7835/plates_sheet.jpg
