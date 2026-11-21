@@ -243,3 +243,19 @@ Vertical 9:16 mythic title-card still, silent, no people. Over the dark Taiwan S
 1. 先跑 S01 到 S14 的必跑四模型（與 `run-guide.md` 第一輪相同）。
 2. 用各則「什麼才不算普通」當硬標準；五維評分仍填 `results.csv`，可在 `notes` 標 `pack=style`。
 3. 若某則四個模型都普通，先改提示詞再重測，不要立刻進影片。
+
+---
+
+## S13 / S14 改版（依《NUREMBERG》官方預告拆解，2026-11-21）
+
+來源：[@tupacabra NUREMBERG - Official Trailer](https://x.com/tupacabra/status/2121357879341166683)（87 秒，約 3,500 萬觀看）。拆解重點：bleach bypass 去飽和、冷石板灰與冰藍；只留橘火與藍白光環當暖冷重點；中央對稱構圖，用巨大建築或科技物壓小人物；天空物件佔上三分之一、從低雲中破出；跨時代道具相撞（古代服裝 × 軍事科技）；體積霧與神光、科技物給輪廓光；全畫面有機膠片顆粒、降低微反差以去除 AI 塑膠感；標題置中、白色寬字距無襯線（本測試不生成文字，只留位置）。
+
+S13 v2
+```text
+Vertical 9:16 cinematic trailer still, bleach-bypass grade, desaturated cold slate grey and icy blue, heavy organic film grain, subdued micro-contrast, no plastic AI sheen. Inside a vast Japanese-era railway workshop hangar in Taipei, rows of steel trusses vanish into fog. Perfectly symmetrical, center-weighted: a line of adult soldiers in plain 1940s-style uniforms with no insignia stand at attention, dwarfed by a colossal upright ring of blue-white energy at the far end of the hangar, its light rim-lighting their silhouettes and cutting god rays through the haze. Beside them, one Qing-dynasty temple elder in dark robes holds an incense stick, its orange ember the only warm accent. 35mm, locked-off, eye level. No flags, no insignia, no typography, no watermark.
+```
+
+S14 v2
+```text
+Vertical 9:16 epic wide trailer still, bleach-bypass grade, desaturated grey sea and icy blue sky, heavy organic film grain, subdued micro-contrast. On a coastal road at the foot of sheer east-coast Taiwan sea cliffs under a low overcast ceiling, a silent night-time temple pilgrimage procession of adults carries a carved palanquin and a line of orange torches, small and center-weighted in the lower third. In the upper third, a colossal matte-black disc-shaped craft breaks through the low cloud, enormous in scale, its underside faintly rim-lit by the torches, fog pouring off its edge. Symmetrical composition, ultra-wide 18mm, slight low angle, a dark empty band at the exact center of the frame left quiet for a title that must not be generated. No readable text, no logos, no recognizable people, no watermark.
+```
