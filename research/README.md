@@ -1,5 +1,7 @@
 # Higgsfield creator research (raw data)
 
+閱讀用的領域索引與十人學習隊列在 `creators/`，由 `creators/generate_index.py` 從 `creators.json` 產生。此目錄維持原始研究，不搬檔。
+
 As of 2026-11-21, Asia/Taipei.
 
 ## Counts

@@ -1,0 +1,30 @@
+# Secrets. Never commit Higgsfield credentials, tokens, or API keys.
+.env
+.env.*
+credentials.json
+**/*credentials*
+**/*secret*
+*.pem
+
+# Renders and audio stay out of git. Shot logs stay in CSV and Markdown.
+*.mp4
+*.mov
+*.m4v
+*.webm
+*.mkv
+*.avi
+*.wav
+*.aif
+*.aiff
+*.flac
+*.mp3
+*.aac
+*.m4a
+
+# Reference stills and exports for a production. Keep the placeholder.
+projects/*/renders/
+projects/*/exports/
+projects/*/refs/*
+!projects/*/refs/.gitkeep
+
+.DS_Store
