@@ -10,7 +10,7 @@
 - 設定固定為 **9:16、2K**。不要選 4K。
 - 按下生成前，必須確認生成鍵顯示 0、Unlimited、無限或免費。出現任何點數就停止，見 `run-guide.md`。
 
-本目錄檔案：`prompts.md`（本檔）、`rubric.md`、`results.csv`、`run-guide.md`。成品圖放 `outputs/`，不要提交進 git。
+本目錄檔案：`prompts.md`（本檔）、`style-pack.md`（14 則風格包，向頂尖創作者借技法）、`rubric.md`、`results.csv`、`run-guide.md`。成品圖放 `outputs/`，不要提交進 git。
 
 說明用繁體中文。送給模型的提示詞用英文，請整段複製，第一輪不要自行加修飾或負面清單。
 
