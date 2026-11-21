@@ -30,3 +30,6 @@ projects/*/refs/*
 .DS_Store
 __pycache__/
 *.pyc
+
+# Image-prompt test renders. Score in results.csv; do not commit stills.
+tests/**/outputs/

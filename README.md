@@ -17,6 +17,7 @@
 | `creators/` | 由 `research/creators.json` 產生的領域索引與十人學習隊列 |
 | `research/` | 79 位創作者與公開提示庫的原始研究，保留不動 |
 | `templates/` | 分鏡、口播、字幕、平台輸出、每週趨勢偵察 |
+| `tests/image-prompt-test/` | 免費 2K 圖像提示詞測試包。只在 higgsfield.ai 網站跑，通過後再進影片 |
 | `projects/_template/` | 一支片的資料夾。複製後再開始 |
 
 ## 快速開始
