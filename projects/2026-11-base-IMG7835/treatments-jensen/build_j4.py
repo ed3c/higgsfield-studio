@@ -31,6 +31,29 @@ portfolio = math.ceil((raw - gj_raw - 4 * sum(1 for s in shots if s["tool"] == "
 per_s = total / 90
 n_gen = sum(1 for s in shots if s["tool"] != "edit")
 
+# Contest cut: no IMG_7835 plates (Neon is identifiable) -> every plate shot becomes a full Cinema Studio 4.0
+# generation of a fictional AI lead; portfolio-only shots are replaced by same-length contest-safe alternates;
+# dropped dialogue is not voiced.
+SOUL_ID = 25
+CONTEST_VO = {"S02": 1, "S04": 1, "S05": 1, "S06": 1, "S09": 1, "S13": 1, "S21": 1, "S23": 7}
+c_v = c_u = c_vo = 0
+for s in shots:
+    if s["tool"] == "edit":
+        s["contest_credits"] = 0
+        continue
+    v = max(s["dur"], CS_MIN) * CS_PER_S * TAKES
+    vo = CONTEST_VO.get(s["id"], 0) * VO_LINE
+    c_v += v; c_u += UPSCALE; c_vo += vo
+    s["contest_credits"] = round((v + UPSCALE + vo) * RESERVE, 1)
+contest_raw = c_v + c_u + c_vo + SOUL_ID
+contest_total = math.ceil(contest_raw * RESERVE)
+soul_res = math.ceil(SOUL_ID * RESERVE)
+contest_per_s = (contest_total - soul_res) / 90
+def contest_len(sec):
+    return f"{math.ceil((contest_per_s * sec + soul_res) / 100) * 100:,}"
+from collections import Counter
+cc = Counter(s["contest"] for s in shots)
+
 def tc(x):
     return f"{int(x//60)}:{x%60:04.1f}"
 
@@ -40,6 +63,35 @@ W(f"""# J4《非同步：繼承 ASYNC: SUCCESSION》— Higgsfield 工業級預�
 
 > 由 `build_j4.py` 從 `j4_shots.json` 產生（2026-11-22，台北時間）。**這份文件 0 點**：只寫提示詞，沒有任何生成、沒有 MCP／CLI／Canvas 呼叫。
 > 生成前必須：(1) Neon 明確批准；(2) Director 先把估點貼到「AI Video Production Service」聊天室；(3) 確認當月 9,000 點上限還夠。
+
+## 0A. 比賽資格（Higgsfield Talent Contest）先看這裡
+
+已查證的取消資格條件：第三方受保護 IP（角色、系列作品、品牌、商標、音樂、美術作品）；政治聲明、背書、宣傳或不實資訊；宗教聲明或貶抑；誹謗；任何可辨識的真人（**包含參賽者本人**與公眾人物，不論用什麼方式，包括實拍影片），以及模仿真人的聲音。
+
+所以本文件有兩個版本：**作品集版**（完整寓言，不投稿）與**比賽版**（照下表抽象化）。比賽版原則：不把任何國家或宗教主張寫成陳述，只留曖昧；不借任何品牌、系列或電影角色的外型；不出現任何真人，也不出現 Neon 本人。
+
+| 劇本元素（Neon 的原始要求） | 比賽資格 | 比賽版的安全抽象化 |
+| --- | --- | --- |
+| 黃仁勳／NVIDIA 的故事、黑皮衣 | 不可（可辨識的公眾人物、品牌） | 虛構創辦人；無特徵的深色舊工作外套；拿掉傳記線索（桌球、Denny's） |
+| CFO 繼任 CEO、「長得像飢餓遊戲角色」 | 不可（真人＋系列作品 IP＋可能構成不實資訊） | 虛構公司裡的虛構交接；管家只借「篡位的管家」故事功能，不借柯茵的外型、服裝、演員 |
+| Mockingjay／#BringJensenBack | 不可（系列 IP；對真人的呼籲） | 自創的鎢絲光鳥；人群舉起的是無特徵的外套；畫面與字幕都沒有 hashtag |
+| 川普、普丁、習近平；深圳接待的大國座次 | 不可（真人、政治陳述） | 三個抽象彩色光柱或無冠幾何棋子；一般會議桌與被推開的椅子；不出現城市地標、國家配色、真實事件引語 |
+| 美國、以色列爭 AI 霸權的宗教隱喻 | 不可（宗教與政治陳述） | 沙漠裡發光的光纖灌木與未完成的機櫃塔；不引經文、不出現宗教典故或國家 |
+| 金牛犢（市值崇拜） | 不可（宗教典故） | 晶片鑄的巨大金燈泡 |
+| 中國情婦 | 不可（族群／性別刻板、政治影射） | 只在作品集版；比賽版改成一條橫過空宴會廳的紅色電話線 |
+| 華人不接受猶太人的受害心理 | 不可（宗教／族群陳述） | 只在作品集版；比賽版改成兩個走速不同的時鐘 |
+| 美國左派女權 vs 男性被邊緣化（坂本眼鏡＋皮衣） | 不可（政治陳述；眼鏡＋皮衣可辨識真人） | 不出現口號與立場台詞；普通眼鏡、普通外套被關進鐵籠，只留畫面 |
+| 女性回歸家庭、AI 取代女性勞動、中國體制壓制女權 | 不可（政治陳述） | 空凳子的廠房（不配主張）；手在圍裙與實驗袍之間猶豫、不做選擇 |
+| 移民不再是資產；單一文化生育＝國家穩定 | 不可（政治陳述） | 閘門與機器人並行、兩人用不同節奏織線；都不配台詞 |
+| 日本半導體衰落、歐洲邊緣化 | 可，只要不陳述事實 | 泡水鋼琴、白色無塵衣、空歌劇院；不出現國旗、地名、數據 |
+| 台灣夜市的日常與安全感 | 可 | 通用夜市；不加國名字卡 |
+| AI 開源 vs 閉源 | 可，只要不點名 | 共享的紙燈籠 vs 上鎖的黃銅燈；不寫任何公司或模型名 |
+| 坂本龍一的音樂理論 | 可（只借理論） | 不用他的錄音、旋律、取樣、肖像、聲音；配樂全部 AI 原創 |
+| Neon 的 IMG_7835 原片（S03、S17、S18、S23） | 不可（參賽者本人可辨識，含實拍影片） | 比賽版不用任何 plate；這四鏡改用 Cinema Studio 4.0 生成虛構 AI 主角（Soul ID 鎖臉），S18 全黑段也純生成 |
+
+每鏡的 `contest` 欄位（見第 5 節）：contest-safe {cc['contest-safe']} 鏡、needs-abstraction {cc['needs-abstraction']} 鏡、portfolio-only {cc['portfolio-only']} 鏡。比賽版 90 秒估點 **{contest_total} 點**（見第 7 節）。
+
+比賽版改提示詞時：Master Prompt 裡的 "black leather jacket" 全部換成 "worn dark work coat with no distinctive features"，"round black eyeglass frames" 換成 "ordinary reading glasses"，三王換成 "three abstract light pillars in gold, green and white"。
 
 ## 0. 一鍵複製：Master Prompt（風格鎖＋角色鎖＋負面提示詞）
 
@@ -65,7 +117,7 @@ NEGATIVE PROMPT: real person, celebrity, politician, lookalike, likeness of any 
 
 - **片名（建議）**：《非同步：繼承》ASYNC: SUCCESSION。備選：《奈秒之後》AFTER THE NANOSECOND、《光稅》THE LIGHT TAX。
 - **Logline**：一盞從台灣夜市燈泡開始的光，被美國、聖地、深圳棋盤上的三個王爭奪；創辦人把鑰匙交給霜白制服的管家，留下一件空皮衣——而夜市裡的人，把那件空外套舉了起來。
-- **片長**：預告 90 秒（{len(shots)} 鏡）。比賽版要 3–5 分鐘，見第 7 節。
+- **片長**：預告 90 秒（{len(shots)} 鏡）。比賽片長規定 3–7 分鐘；比賽版的抽象化見第 0A 節，估點見第 7 節。
 - **一句話的立場**：片子不下結論。所有爭議主張（女性回歸家庭、移民不再是資產、單一文化生育、拒絕受害敘事、男性被邊緣化）都是**角色的立場**，在片中被另一個角色反駁或留白。旁白只講光、時間、聲音。
 - **開頭字卡**（剪輯時打字，不讓模型生成）："A fictional allegory. All characters are invented."
 
@@ -121,11 +173,11 @@ NEGATIVE PROMPT: real person, celebrity, politician, lookalike, likeness of any 
 
 ### 5a. 總表
 
-| 鏡 | 時間 | 秒 | 幕 | 節拍 | 原片 | 模型 | 風險 | 估點 |
-| --- | --- | ---: | :-: | --- | --- | --- | --- | ---: |""")
+| 鏡 | 時間 | 秒 | 幕 | 節拍 | 原片 | 模型 | 風險 | 比賽 | 估點 | 比賽版估點 |
+| --- | --- | ---: | :-: | --- | --- | --- | --- | --- | ---: | ---: |""")
 for s in shots:
-    W(f"| {s['id']} | {tc(s['start'])}–{tc(s['start']+s['dur'])} | {s['dur']} | {s['act']} | {s['beat']} | {s['plate'] or '—'} | {s['model']} | {s['risk'].split('：')[0]} | {s['credits']} |")
-W(f"| **合計** | | **90.0** | | | | | | **{total}** |")
+    W(f"| {s['id']} | {tc(s['start'])}–{tc(s['start']+s['dur'])} | {s['dur']} | {s['act']} | {s['beat']} | {s['plate'] or '—'} | {s['model']} | {s['risk'].split('：')[0]} | {s['contest']} | {s['credits']} | {s['contest_credits']} |")
+W(f"| **合計** | | **90.0** | | | | | | | **{total}** | **{contest_total - soul_res}**（另加 Soul ID {soul_res}） |")
 W("""
 ### 5b. 逐鏡提示詞（貼上時前面先貼第 0 節的 Master Prompt）
 
@@ -147,6 +199,7 @@ for s in shots:
 - English subtitle: `{s['sub']}`
 - 時事核對：{s['fact']}　**verify：source / date ＿＿＿＿**{('　（' + s['verify'] + '）') if s['verify'] else ''}
 - 風險：{s['risk']}
+- 比賽（contest）：**{s['contest']}**{('：' + s['contest_how']) if s['contest_how'] else ''}
 """)
 W(f"""## 6. 點數估算（0 點已花）
 
@@ -164,11 +217,24 @@ W(f"""## 6. 點數估算（0 點已花）
 - 對照每月 9,000 點上限：預告片約占 {total/9000:.0%}。本月已用多少點**要先查帳戶**再決定。
 - 生成前流程：Neon 批准 → Director 在「AI Video Production Service」聊天室貼估點 → 才按生成。
 
-## 7. 3–5 分鐘比賽版擴充
+## 7. 比賽版（contest cut）估點與擴充
 
-- 每秒成本約 {per_s:.1f} 點 → 3 分鐘約 {math.ceil(per_s*180/100)*100:,} 點、4 分鐘約 {math.ceil(per_s*240/100)*100:,} 點、5 分鐘約 {math.ceil(per_s*300/100)*100:,} 點。
-- 擴充方式：每個地區循環從 1 鏡擴成 3–4 鏡（夜市、美國、聖地、深圳、歐洲、日本各一段 20–30 秒）；三王的全黑頻閃保持只出現一次；高潮與片尾不加長。
-- 比賽限制（Talent Contest，截止 11/27 03:00 台北時間）：所有影像在 Contest Project 內、11/12–11/26 生成；音樂與人聲必須 AI；不可有可辨識真人；英文字幕；交 YouTube 連結。**政治與宗教敏感度高，是否投稿要 Neon 自己決定**；作品集版較安全。
+- 比賽版不能用 Neon 的 IMG_7835 原片：S03、S17、S18、S23 都要換成虛構 AI 主角，而且不拿 plate 當底，全部用 Cinema Studio 4.0 重新生成。用 Genjutsu 換掉他、但保留他實拍的動作，算不算「以實拍影片呈現參賽者」不確定，所以這裡採保守的全生成估點。
+- portfolio-only 的 S12、S20 換成同長度的替代鏡（點數相同）；被拿掉的台詞不配音。
+- 虛構主角的 Soul ID 訓練一次 {SOUL_ID} 點。
+
+| 項目 | 點數 |
+| --- | ---: |
+| 影片（{n_gen} 鏡 Cinema Studio 4.0，每鏡 2 take） | {c_v:.0f} |
+| 放大 | {c_u:.0f} |
+| 旁白 | {c_vo:.1f} |
+| Soul ID | {SOUL_ID} |
+| **比賽版 90 秒合計（含 15%）** | **{contest_total}** |
+
+- 比賽片長規定 3–7 分鐘，90 秒預告本身不夠長。每秒約 {contest_per_s:.1f} 點 → 3 分鐘約 {contest_len(180)} 點、4 分鐘約 {contest_len(240)} 點、5 分鐘約 {contest_len(300)} 點。
+- 擴充方式：每個地區循環從 1 鏡擴成 3–4 鏡；全黑頻閃仍只出現一次；高潮與片尾不加長。
+- 其他規則：截止 11/27 03:00（台北時間）；所有影像在 Contest Project 內、11/12–11/26 生成（網站 Unlimited 靜幀在 Contest Project 裡是否仍免費：to verify）；音樂與人聲必須 AI，且不可模仿真人聲音；英文字幕；交 YouTube 連結。
+- 是否投稿由 Neon 決定；作品集版保留完整寓言，不投稿。
 
 ## 8. 時事核對總表（Neon 用）
 
@@ -193,4 +259,4 @@ W("""
 - 「篡位的管家」：只借敘事角色功能，不借任何電影的服裝、髮型、演員或台詞。
 """)
 (HERE / "J4_trailer_master_prompt.md").write_text("\n".join(out))
-print(len(shots), total, portfolio, raw)
+print(len(shots), total, portfolio, raw, contest_total, dict(cc))
