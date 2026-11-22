@@ -143,6 +143,7 @@ def exercise(outdir:Path):
                     assert page.locator('.item-row').count()==1
                     assert 'G2-smoke' in page.locator('#item-name').inner_text()
                     assert page.locator('#preview-area img').count()==1
+                    assert page.locator('button[data-decision="PASS"]').is_disabled()
                     assert 'STATIC_REVIEW_COMPLETE_TEMPORAL_NOT_RUN' in page.locator('#preview-meta').inner_text()
                     page.screenshot(path=str(outdir/'g2-candidate-desktop.png'),full_page=False)
                     page.locator('#open-candidate-receipt').click()
@@ -157,6 +158,7 @@ def exercise(outdir:Path):
                     page.locator('#menu-toggle').click()
                     page.locator('button[data-tab="art"]').click()
                     assert page.locator('.item-row').count()==6
+                    assert page.locator('button[data-decision="PASS"]').is_disabled()
                     assert page.evaluate('document.documentElement.scrollWidth <= innerWidth+2')
                     page.screenshot(path=str(outdir/'g2-art-mobile.png'),full_page=False)
                     page.locator('#menu-toggle').click()
