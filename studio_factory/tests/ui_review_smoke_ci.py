@@ -12,10 +12,10 @@ import os
 import hashlib
 import struct
 import zlib
-from studio_factory.art_contracts import load_contract, compile_shot
 BASE=Path(__file__).resolve().parents[1]
 ROOT=(BASE/'review_site') if (BASE/'review_site').is_dir() else (BASE/'studio_factory'/'review_site')
 sys.path.insert(0,str(ROOT.parent.parent))
+from studio_factory.art_contracts import load_contract, compile_shot
 from studio_factory.review_web import Catalog
 
 
