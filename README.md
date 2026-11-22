@@ -71,3 +71,18 @@ git lfs track "projects/*/masters/*.mp4" "projects/*/stills/*.png"
 `skills/vendor/higgsfield-ai-skills/` 是 Higgsfield AI 的官方技能庫快照，MIT，Copyright (c) 2026 Higgsfield AI，commit `27000402070db19d958789d05b3b52b6f4718d7c`。許可全文在該目錄的 `LICENSE`。
 
 [OSideMedia/higgsfield-ai-prompt-skill](https://github.com/OSideMedia/higgsfield-ai-prompt-skill) 只當參考。上游寫明 2026 年 11 月起不再維護。本庫沒有收錄它的提示詞。
+
+
+## Reusable Creative Production Factory（多作品 Domain Managers）
+
+[studio_factory/README.md](studio_factory/README.md) 定義 17 個具有獨立責任、跨 Domain handoff/ACK、共享研究引用與不可變版本的 Manager。新作品不需要複製 J4 的角色、劇本或歷史產物。
+
+第一個工程案例：[J4《ASYNC: SUCCESSION》](projects/j4-async-succession/README.md)。原始文字提示詞、Shot/Sound IR 與歷代規格保留於其 archive；敏感影片與原始圖片仍遵守本 README「畫面不進 git」規則，僅以雜湊、來源及外部存放紀錄追蹤。
+
+\`\`\`bash
+python -m unittest discover -s studio_factory/tests -v
+python -m studio_factory.seed_archive projects/j4-async-succession --db .factory/registry.sqlite3
+python -m studio_factory.cli --db .factory/registry.sqlite3 manifest j4-async-succession
+\`\`\`
+
+**不會從以上指令觸發任何 Higgsfield 生成。** 真正的模型生成仍需 Owner、Director、預算與權利審核；現有點數帳和既有技能流程繼續有效。
