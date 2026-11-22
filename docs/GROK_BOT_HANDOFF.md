@@ -20,6 +20,7 @@ Take over the reusable creative factory and local review website, including J4 p
 - projects/j4-async-succession/archive/v2_6/ — eight canonical source-derived text files
 - projects/j4-async-succession/archive/v2_7/ through v4_0/ — 14 versioned text JSON archives, 124 recoverable items
 - projects/j4-async-succession/archive/conversation_attachment_index.json — catalog of 312 surfaced conversation entries
+- docs/GROK_BOT_SOURCE_MAP.csv — explicit version→source filename→Manager lookup; 31 high-priority J4 assets and sources
 - projects/j4-async-succession/archive/MEDIA_CUSTODY.md — media hashes and missing evidence
 - skills/creative-production-factory/SKILL.md — reusable manager workflow
 - budget/track.py, budget/ledger.csv, budget/allocation.csv — original cost authority
