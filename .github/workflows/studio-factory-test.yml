@@ -1,0 +1,18 @@
+name: Studio Factory contract tests
+on:
+  pull_request:
+    paths: ["studio_factory/**", ".github/workflows/studio-factory-test.yml"]
+  push:
+    paths: ["studio_factory/**", ".github/workflows/studio-factory-test.yml"]
+jobs:
+  unittest:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Offline immutable-registry and manager-contract tests
+        run: python -m unittest discover -s studio_factory/tests -v
+      - name: Verify historical repo budget tools remain usable
+        run: python budget/test_track.py
