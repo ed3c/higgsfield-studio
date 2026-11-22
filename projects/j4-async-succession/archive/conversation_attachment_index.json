@@ -1,0 +1,2509 @@
+{
+  "schema_version": "1.0",
+  "source": "chat-conversation-file-catalog",
+  "captured_at": "2026-11-22",
+  "items": [
+    {
+      "filename": "IMG_7870.jpeg",
+      "conversation_file_id": "file_00000000f76c8209b268a9ad67b5252a",
+      "kind": "imported",
+      "turn": 2,
+      "original_upload": true,
+      "size_bytes": 332874
+    },
+    {
+      "filename": "IMG_7836.mp4",
+      "conversation_file_id": "file_00000000a0108209a2b0afc9f911a303",
+      "kind": "imported",
+      "turn": 2,
+      "original_upload": true,
+      "size_bytes": 8882046
+    },
+    {
+      "filename": "IMG_7899.jpeg",
+      "conversation_file_id": "file_000000009bb48209b9067546001594a9",
+      "kind": "imported",
+      "turn": 2,
+      "original_upload": true,
+      "size_bytes": 242787
+    },
+    {
+      "filename": "IMG_7835.mp4",
+      "conversation_file_id": "file_0000000061c88209b9a57e0385f627c3",
+      "kind": "imported",
+      "turn": 2,
+      "original_upload": true,
+      "size_bytes": 36071278
+    },
+    {
+      "filename": "IMG_7876.mp4",
+      "conversation_file_id": "file_000000003800820991c68c97b7361ac5",
+      "kind": "imported",
+      "turn": 2,
+      "original_upload": true,
+      "size_bytes": 17788016
+    },
+    {
+      "filename": "imagegen.png",
+      "conversation_file_id": "file_00000000739c820998a0be370bedf098",
+      "kind": "generated",
+      "turn": 2,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "imagegen.png",
+      "conversation_file_id": "file_00000000ee588209b20266441425ed59",
+      "kind": "generated",
+      "turn": 2,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "j4_character_prop_bible.md",
+      "conversation_file_id": "file_00000000ca608209819a0f92923b9ee5",
+      "kind": "generated",
+      "turn": 18,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "j4_master_prompt_book.md",
+      "conversation_file_id": "file_00000000d9108211ac9781760a51ec33",
+      "kind": "generated",
+      "turn": 18,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "j4_master_spec.md",
+      "conversation_file_id": "file_00000000a5688209b2faafad170e1457",
+      "kind": "generated",
+      "turn": 18,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "j4_qc_matrix.csv",
+      "conversation_file_id": "file_00000000bed882119b3669d6ddb657dc",
+      "kind": "generated",
+      "turn": 18,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "j4_shotlist.csv",
+      "conversation_file_id": "file_000000003e388211b9bd039b94add682",
+      "kind": "generated",
+      "turn": 18,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "j4_museum_v2_6_bundle.zip",
+      "conversation_file_id": "file_000000008134821180ad02da75bbb2da",
+      "kind": "generated",
+      "turn": 18,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "j4_character_prop_bible.md",
+      "conversation_file_id": "file_00000000d83c820990eba39cc5fc1d9e",
+      "kind": "generated",
+      "turn": 18,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "j4_master_prompt_book.md",
+      "conversation_file_id": "file_00000000902c821182043dd19a49ca38",
+      "kind": "generated",
+      "turn": 18,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "j4_master_spec.md",
+      "conversation_file_id": "file_0000000092688211aab1fd046deb3c7d",
+      "kind": "generated",
+      "turn": 18,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "j4_qc_matrix.csv",
+      "conversation_file_id": "file_000000004cd08211ae92b3ddcccdbf24",
+      "kind": "generated",
+      "turn": 18,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "j4_shotlist.csv",
+      "conversation_file_id": "file_000000001e90821195f2587b30268262",
+      "kind": "generated",
+      "turn": 18,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "j4_museum_v2_6_bundle.zip",
+      "conversation_file_id": "file_00000000d0448209ac29ed7ec7314ff5",
+      "kind": "generated",
+      "turn": 18,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "j4_provenance_register.csv",
+      "conversation_file_id": "file_000000008c048211806589da4cfced2f",
+      "kind": "generated",
+      "turn": 18,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "j4_museum_v2_6_bundle.zip",
+      "conversation_file_id": "file_000000006da082119ae13940125669fe",
+      "kind": "generated",
+      "turn": 18,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "j4_shots.json",
+      "conversation_file_id": "file_0000000038948211b555c47605af69c2",
+      "kind": "generated",
+      "turn": 18,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "j4_sound_ir.json",
+      "conversation_file_id": "file_00000000ebd882118a1710b5e4ca76cd",
+      "kind": "generated",
+      "turn": 18,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "j4_shots.json",
+      "conversation_file_id": "file_000000008cac82118dba5315dee88926",
+      "kind": "generated",
+      "turn": 18,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "j4_sound_ir.json",
+      "conversation_file_id": "file_000000005bb48209ba38d61e99b92b40",
+      "kind": "generated",
+      "turn": 18,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "j4_editorial_timeline.csv",
+      "conversation_file_id": "file_000000008b8882118ab6cd0505fcf1ea",
+      "kind": "generated",
+      "turn": 19,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "j4_media_inventory.csv",
+      "conversation_file_id": "file_000000000bf48211a6ec4e61e346a6da",
+      "kind": "generated",
+      "turn": 19,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "j4_previs.html",
+      "conversation_file_id": "file_0000000076ac8209a5ebc97a369b2363",
+      "kind": "generated",
+      "turn": 19,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "j4_sound_events.csv",
+      "conversation_file_id": "file_000000000d608209a3063ada8d1f4d2d",
+      "kind": "generated",
+      "turn": 19,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "j4_transition_matrix.csv",
+      "conversation_file_id": "file_00000000d63482098e5d06702bdce976",
+      "kind": "generated",
+      "turn": 19,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "README_v2_7.md",
+      "conversation_file_id": "file_0000000003908209bb7a9633c0a8a5e0",
+      "kind": "generated",
+      "turn": 19,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "j4_adapter_contract.md",
+      "conversation_file_id": "file_0000000050a88209bd4106ab478b71cd",
+      "kind": "generated",
+      "turn": 19,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "j4_issues_and_review.csv",
+      "conversation_file_id": "file_0000000017f48211ab9c5c7e6d68e0f9",
+      "kind": "generated",
+      "turn": 19,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "j4_museum_v2_7_bundle.zip",
+      "conversation_file_id": "file_000000008bac82119a5b575b0b627a8a",
+      "kind": "generated",
+      "turn": 19,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "j4_generation_gate_check.py",
+      "conversation_file_id": "file_000000001f0c820997533162714b4461",
+      "kind": "generated",
+      "turn": 19,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "j4_generation_gate_check.py",
+      "conversation_file_id": "file_00000000b2908209a6958e94e6f91ea7",
+      "kind": "generated",
+      "turn": 19,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "README_v2_8.md",
+      "conversation_file_id": "file_00000000c7288211bfa7c09acf63b7bf",
+      "kind": "generated",
+      "turn": 20,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "j4_acceptance_matrix.csv",
+      "conversation_file_id": "file_000000002b5c8209b4d50a8fa4babb2c",
+      "kind": "generated",
+      "turn": 20,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "j4_previs_v2_7.html",
+      "conversation_file_id": "file_00000000319c821191c75349c7467eef",
+      "kind": "generated",
+      "turn": 20,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "j4_review_v2_8.html",
+      "conversation_file_id": "file_00000000e2a88211ba8acfd294708bfc",
+      "kind": "generated",
+      "turn": 20,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "README_v2_8.md",
+      "conversation_file_id": "file_00000000675882098c0e8d30d60f4382",
+      "kind": "generated",
+      "turn": 20,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "j4_acceptance_matrix.csv",
+      "conversation_file_id": "file_000000006bfc820993ded101559040d4",
+      "kind": "generated",
+      "turn": 20,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "j4_review_v2_8.html",
+      "conversation_file_id": "file_000000001b9082099e7930ffc291eaa3",
+      "kind": "generated",
+      "turn": 20,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "README_v2_8.md",
+      "conversation_file_id": "file_000000009490820982834b5a0c98e570",
+      "kind": "generated",
+      "turn": 20,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "j4_sound_events_v2_8.csv",
+      "conversation_file_id": "file_00000000bfd08211a6b5a3a20e03ce16",
+      "kind": "generated",
+      "turn": 20,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "j4_museum_v2_8_bundle.zip",
+      "conversation_file_id": "file_00000000b4208209935fc63ec740c90c",
+      "kind": "generated",
+      "turn": 20,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "README_v2_8.md",
+      "conversation_file_id": "file_00000000020082119b0c247520ca625d",
+      "kind": "generated",
+      "turn": 20,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "j4_museum_v2_8_bundle.zip",
+      "conversation_file_id": "file_000000004cd48209a54a01654f5b6765",
+      "kind": "generated",
+      "turn": 20,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "j4_shots_v2_8.json",
+      "conversation_file_id": "file_0000000080c48211b6cf423258620180",
+      "kind": "generated",
+      "turn": 20,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "j4_sound_ir_v2_8.json",
+      "conversation_file_id": "file_00000000bb0882099187a82874bd7790",
+      "kind": "generated",
+      "turn": 20,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "j4_revision_deltas.json",
+      "conversation_file_id": "file_00000000b4348209b8991f7d59fe63a4",
+      "kind": "generated",
+      "turn": 20,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "j4_shots_v2_8.json",
+      "conversation_file_id": "file_000000009cc08211af148aad7a084940",
+      "kind": "generated",
+      "turn": 20,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "j4_sound_ir_v2_8.json",
+      "conversation_file_id": "file_00000000a89c8211b428779d7fa45cc8",
+      "kind": "generated",
+      "turn": 20,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "j4_revision_deltas.json",
+      "conversation_file_id": "file_00000000bc0c8211ab5f49c86a1fa470",
+      "kind": "generated",
+      "turn": 20,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "user-QEyn7rgZ1MAEFfXlMAFGkX0t/f713ba5a9aed4e75ac946eb755613a8c/mnt/data/IMG_7870.jpeg",
+      "conversation_file_id": "file_0000000010748209989b5cabb9ec7853",
+      "kind": "upload",
+      "turn": 21,
+      "original_upload": false,
+      "size_bytes": 332874
+    },
+    {
+      "filename": "user-QEyn7rgZ1MAEFfXlMAFGkX0t/f713ba5a9aed4e75ac946eb755613a8c/mnt/data/IMG_7899.jpeg",
+      "conversation_file_id": "file_00000000fa2082119038332b6719e718",
+      "kind": "upload",
+      "turn": 21,
+      "original_upload": false,
+      "size_bytes": 242787
+    },
+    {
+      "filename": "README_v2_9.md",
+      "conversation_file_id": "file_00000000ff288211811a8645f180b50f",
+      "kind": "generated",
+      "turn": 21,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "j4_asset_lock_registry.csv",
+      "conversation_file_id": "file_00000000286c820990ed414ce3799a5b",
+      "kind": "generated",
+      "turn": 21,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "j4_composition_acceptance.csv",
+      "conversation_file_id": "file_00000000c2f08211bfead36dc19618a8",
+      "kind": "generated",
+      "turn": 21,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "j4_wireframe_board_v2_9.html",
+      "conversation_file_id": "file_0000000087848211b68f31c591bddc42",
+      "kind": "generated",
+      "turn": 21,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "j4_paste_ready_keyframe_cards.md",
+      "conversation_file_id": "file_0000000045e88211be576bbbb74a5c2d",
+      "kind": "generated",
+      "turn": 21,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "j4_museum_v2_9_bundle.zip",
+      "conversation_file_id": "file_0000000025c88209b0eaec0c89acc219",
+      "kind": "generated",
+      "turn": 21,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "j4_keyframe_composition_v2_9.json",
+      "conversation_file_id": "file_00000000608c82099088f334e7692d7e",
+      "kind": "generated",
+      "turn": 21,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "j4_shots_v2_9.json",
+      "conversation_file_id": "file_000000002f7c8211aeb1c795fcd61b3f",
+      "kind": "generated",
+      "turn": 21,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "j4_keyframe_composition_v2_9.json",
+      "conversation_file_id": "file_00000000242c8209be3f60c48a0e653f",
+      "kind": "generated",
+      "turn": 21,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "j4_shots_v2_9.json",
+      "conversation_file_id": "file_00000000e1988209b30ef57e3e0d17d4",
+      "kind": "generated",
+      "turn": 21,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "DIRECTOR_ADDENDUM_v3_0.md",
+      "conversation_file_id": "file_000000002c048211b2678c9cc0fee9d0",
+      "kind": "generated",
+      "turn": 22,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "README_v3_0.md",
+      "conversation_file_id": "file_000000005aa082099fe94b5e84ef2996",
+      "kind": "generated",
+      "turn": 22,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "j4_transition_acceptance_v3_0.csv",
+      "conversation_file_id": "file_000000007fe482118ec84e836fe924e5",
+      "kind": "generated",
+      "turn": 22,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "j4_visual_acceptance_v3_0.csv",
+      "conversation_file_id": "file_00000000736482098b574fdbd9b6df4c",
+      "kind": "generated",
+      "turn": 22,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "j4_visual_review_board_v3_0.html",
+      "conversation_file_id": "file_00000000cc94821189975a9ce9af86df",
+      "kind": "generated",
+      "turn": 22,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "j4_museum_v3_0_bundle.zip",
+      "conversation_file_id": "file_00000000e86c8211a26662a981017d20",
+      "kind": "generated",
+      "turn": 22,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "DIRECTOR_ADDENDUM_v3_0.md",
+      "conversation_file_id": "file_00000000978082098e4575dbc7c6fd73",
+      "kind": "generated",
+      "turn": 22,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "README_v3_0.md",
+      "conversation_file_id": "file_00000000c3ec8209b67fe9162013c676",
+      "kind": "generated",
+      "turn": 22,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "j4_transition_acceptance_v3_0.csv",
+      "conversation_file_id": "file_00000000ff608209965ffd94d31d1dfe",
+      "kind": "generated",
+      "turn": 22,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "j4_visual_acceptance_v3_0.csv",
+      "conversation_file_id": "file_00000000dcfc82099aefaf11b644e56c",
+      "kind": "generated",
+      "turn": 22,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "j4_visual_review_board_v3_0.html",
+      "conversation_file_id": "file_0000000056c8820997d140bb9a15c8d5",
+      "kind": "generated",
+      "turn": 22,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "j4_museum_v3_0_bundle.zip",
+      "conversation_file_id": "file_0000000084b48209a0e4038ae7d8d56b",
+      "kind": "generated",
+      "turn": 22,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "j4_visual_consistency_ir_v3_0.json",
+      "conversation_file_id": "file_000000006eb88211b63e3817d19522d3",
+      "kind": "generated",
+      "turn": 22,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "validate_v3_0.py",
+      "conversation_file_id": "file_00000000e3a0820981a135e2dc323daf",
+      "kind": "generated",
+      "turn": 22,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "j4_visual_consistency_ir_v3_0.json",
+      "conversation_file_id": "file_000000009d048211bfd6e11bab29d31f",
+      "kind": "generated",
+      "turn": 22,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "validate_v3_0.py",
+      "conversation_file_id": "file_00000000225c8209b1584d6ebf3ef782",
+      "kind": "generated",
+      "turn": 22,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "DIRECTOR_G1_ADDENDUM_v3_1.md",
+      "conversation_file_id": "file_00000000df9c820989f639f25bb5c073",
+      "kind": "generated",
+      "turn": 23,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "README_v3_1.md",
+      "conversation_file_id": "file_00000000c9dc8209a05a9b10dfa480c4",
+      "kind": "generated",
+      "turn": 23,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "j4_g1_30fps_action_beats.csv",
+      "conversation_file_id": "file_0000000097c88209bd8420bcd687bb40",
+      "kind": "generated",
+      "turn": 23,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "j4_g1_attention_audit.csv",
+      "conversation_file_id": "file_0000000009f48211aac0172641126426",
+      "kind": "generated",
+      "turn": 23,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "j4_g1_continuity_review.csv",
+      "conversation_file_id": "file_000000007e94820980f5cdb9c3486f78",
+      "kind": "generated",
+      "turn": 23,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "j4_g1_review_board_v3_1.html",
+      "conversation_file_id": "file_00000000648c8209aefb2c008a2abf0d",
+      "kind": "generated",
+      "turn": 23,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "j4_g1_review_matrix.csv",
+      "conversation_file_id": "file_00000000353882099ce4182712d5d057",
+      "kind": "generated",
+      "turn": 23,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "j4_museum_v3_1_bundle.zip",
+      "conversation_file_id": "file_00000000617c8209a21824ee2156978b",
+      "kind": "generated",
+      "turn": 23,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "g1_review_smoketest.png",
+      "conversation_file_id": "file_00000000dd808209a5471ec761ac8727",
+      "kind": "generated",
+      "turn": 23,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "user-QEyn7rgZ1MAEFfXlMAFGkX0t/f713ba5a9aed4e75ac946eb755613a8c/mnt/data/j4_museum_v3_1/g1_review_smoketest.png",
+      "conversation_file_id": "file_0000000083288209aa6525dea243a806",
+      "kind": "upload",
+      "turn": 23,
+      "original_upload": false,
+      "size_bytes": 275570
+    },
+    {
+      "filename": "G1_BROWSER_SMOKE_TEST.md",
+      "conversation_file_id": "file_00000000c9448209a73e596b1f73fe8c",
+      "kind": "generated",
+      "turn": 23,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "README_v3_1.md",
+      "conversation_file_id": "file_0000000024108209b7089a13d616e902",
+      "kind": "generated",
+      "turn": 23,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "j4_museum_v3_1_bundle.zip",
+      "conversation_file_id": "file_00000000cefc82119cf66ced90467320",
+      "kind": "generated",
+      "turn": 23,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "j4_g1_review_board_v3_1.html",
+      "conversation_file_id": "file_00000000afd88209b57c302c2de2bf52",
+      "kind": "generated",
+      "turn": 23,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "j4_g1_layout_candidate_v3_1.json",
+      "conversation_file_id": "file_00000000cd508211af0240596c221564",
+      "kind": "generated",
+      "turn": 23,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "DIRECTOR_G1_ADDENDUM_v3_1.md",
+      "conversation_file_id": "file_000000004284820984755dd59ed3b58c",
+      "kind": "generated",
+      "turn": 23,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "j4_g1_30fps_action_beats.csv",
+      "conversation_file_id": "file_00000000e4648209a5594cc0d815dc76",
+      "kind": "generated",
+      "turn": 23,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "j4_g1_attention_audit.csv",
+      "conversation_file_id": "file_00000000903882119623b51600c8ae88",
+      "kind": "generated",
+      "turn": 23,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "j4_g1_review_matrix.csv",
+      "conversation_file_id": "file_0000000027c88209b159806208942b11",
+      "kind": "generated",
+      "turn": 23,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "j4_g1_review_board_v3_1.html",
+      "conversation_file_id": "file_0000000058fc82098d5d7b527209f6d0",
+      "kind": "generated",
+      "turn": 23,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "j4_g1_layout_candidate_v3_1.json",
+      "conversation_file_id": "file_00000000f5a08209ad01992af3e92af4",
+      "kind": "generated",
+      "turn": 23,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "DIRECTOR_G1_ADDENDUM_v3_1.md",
+      "conversation_file_id": "file_00000000167882098912ba85c4e11480",
+      "kind": "generated",
+      "turn": 23,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "j4_g1_30fps_action_beats.csv",
+      "conversation_file_id": "file_000000008bc08209842d03717b077b62",
+      "kind": "generated",
+      "turn": 23,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "j4_g1_attention_audit.csv",
+      "conversation_file_id": "file_00000000a3c08209ae868d0c63eb00d5",
+      "kind": "generated",
+      "turn": 23,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "j4_g1_review_matrix.csv",
+      "conversation_file_id": "file_00000000a578820990f8e97e76ecda31",
+      "kind": "generated",
+      "turn": 23,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "DIRECTOR_OBJECT_STATE_CONTRACT.md",
+      "conversation_file_id": "file_00000000201c820994466372780403ea",
+      "kind": "generated",
+      "turn": 24,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "DIRECTOR_REVIEW_v3_2.md",
+      "conversation_file_id": "file_000000005edc8209b90d00316c664f3a",
+      "kind": "generated",
+      "turn": 24,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "j4_25shot_dual_reading.csv",
+      "conversation_file_id": "file_00000000df188211b45f4dc41757ad0e",
+      "kind": "generated",
+      "turn": 24,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "j4_object_memory_board_v3_2.html",
+      "conversation_file_id": "file_00000000a99482119fcc999195589a0b",
+      "kind": "generated",
+      "turn": 24,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "j4_museum_v3_2_bundle.zip",
+      "conversation_file_id": "file_0000000016288209a85579bfb0441519",
+      "kind": "generated",
+      "turn": 24,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "board_smoketest.png",
+      "conversation_file_id": "file_0000000023008209a6feba136c9464ec",
+      "kind": "generated",
+      "turn": 24,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "user-QEyn7rgZ1MAEFfXlMAFGkX0t/f713ba5a9aed4e75ac946eb755613a8c/mnt/data/j4_museum_v3_2/board_smoketest.png",
+      "conversation_file_id": "file_0000000018708211b3f834604d84e116",
+      "kind": "upload",
+      "turn": 24,
+      "original_upload": false,
+      "size_bytes": 139466
+    },
+    {
+      "filename": "STATIC_AND_UI_TEST_REPORT.md",
+      "conversation_file_id": "file_00000000fda082099f03469b3c753c9e",
+      "kind": "generated",
+      "turn": 24,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "j4_object_state_occurrences_v3_2.csv",
+      "conversation_file_id": "file_00000000c0b882098a6cb0b32e1cb32f",
+      "kind": "generated",
+      "turn": 24,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "j4_museum_v3_2_bundle.zip",
+      "conversation_file_id": "file_00000000da488211b7b6f936ba94c951",
+      "kind": "generated",
+      "turn": 24,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "j4_object_memory_board_v3_2.html",
+      "conversation_file_id": "file_000000007e208211a5b04967a3cdd17e",
+      "kind": "generated",
+      "turn": 24,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "j4_object_registry_v3_2.json",
+      "conversation_file_id": "file_00000000b430820993d87be5f4a82f66",
+      "kind": "generated",
+      "turn": 24,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "j4_shot_optical_ir_v3_2.json",
+      "conversation_file_id": "file_00000000c97482099e0b4363d575449a",
+      "kind": "generated",
+      "turn": 24,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "j4_memory_arcs_v3_2.json",
+      "conversation_file_id": "file_00000000ccf88209916739c5f5463d4b",
+      "kind": "generated",
+      "turn": 24,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "j4_25shot_dual_reading.csv",
+      "conversation_file_id": "file_00000000ca348209a7a103a3e2bd8127",
+      "kind": "generated",
+      "turn": 24,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "DIRECTOR_REVIEW_v3_2.md",
+      "conversation_file_id": "file_0000000064dc8209869f6b3e882b8c4b",
+      "kind": "generated",
+      "turn": 24,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "DIRECTOR_OBJECT_STATE_CONTRACT.md",
+      "conversation_file_id": "file_0000000086f48209b5fcf654149f41d7",
+      "kind": "generated",
+      "turn": 24,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "j4_object_memory_board_v3_2.html",
+      "conversation_file_id": "file_000000002d608211845cb20963325435",
+      "kind": "generated",
+      "turn": 24,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "j4_object_registry_v3_2.json",
+      "conversation_file_id": "file_0000000008008211b43814e487b44742",
+      "kind": "generated",
+      "turn": 24,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "j4_shot_optical_ir_v3_2.json",
+      "conversation_file_id": "file_0000000063508209832db8fa8143fe3c",
+      "kind": "generated",
+      "turn": 24,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "j4_memory_arcs_v3_2.json",
+      "conversation_file_id": "file_00000000fa948211ba97590384f340db",
+      "kind": "generated",
+      "turn": 24,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "j4_25shot_dual_reading.csv",
+      "conversation_file_id": "file_00000000110c8211b3c930605e013758",
+      "kind": "generated",
+      "turn": 24,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "DIRECTOR_REVIEW_v3_2.md",
+      "conversation_file_id": "file_000000002ef882118d6ad1cdf63661cb",
+      "kind": "generated",
+      "turn": 24,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "DIRECTOR_OBJECT_STATE_CONTRACT.md",
+      "conversation_file_id": "file_0000000030fc8209b83e519f9f3c01c0",
+      "kind": "generated",
+      "turn": 24,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "ART_ILLUSION_REFERENCE_BIBLE_v3_3.md",
+      "conversation_file_id": "file_00000000af148209ae5f26c5fdfa3871",
+      "kind": "generated",
+      "turn": 25,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "README_v3_3.md",
+      "conversation_file_id": "file_000000002c2c8209b0f3239635d30f2a",
+      "kind": "generated",
+      "turn": 25,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "SOURCE_REGISTER_v3_3.csv",
+      "conversation_file_id": "file_00000000708482099b10ab1308ae43fd",
+      "kind": "generated",
+      "turn": 25,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "j4_25shot_illusion_references_v3_3.csv",
+      "conversation_file_id": "file_00000000d0c08211a32fa23a5b9b2055",
+      "kind": "generated",
+      "turn": 25,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "j4_art_illusion_review_board_v3_3.html",
+      "conversation_file_id": "file_000000006f108209b116776ba988e7fa",
+      "kind": "generated",
+      "turn": 25,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "j4_g2_art_illusion_qc_v3_3.csv",
+      "conversation_file_id": "file_00000000b6c48209b5e8c9a02a8c8d12",
+      "kind": "generated",
+      "turn": 25,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "j4_museum_v3_3_bundle.zip",
+      "conversation_file_id": "file_0000000048b48211bc32b8b263291770",
+      "kind": "generated",
+      "turn": 25,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "j4_museum_v3_3_bundle.zip",
+      "conversation_file_id": "file_0000000041688211996906e2dca81137",
+      "kind": "generated",
+      "turn": 25,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "j4_illusion_ir_v3_3.json",
+      "conversation_file_id": "file_000000001b788211b9b2eb545f7dd9ea",
+      "kind": "generated",
+      "turn": 25,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "j4_46asset_illusion_dependencies_v3_3.json",
+      "conversation_file_id": "file_00000000adc08209bae5e719df564feb",
+      "kind": "generated",
+      "turn": 25,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "j4_10memory_arc_evidence_v3_3.json",
+      "conversation_file_id": "file_0000000087788211a280ece7ffaa85f7",
+      "kind": "generated",
+      "turn": 25,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "j4_illusion_ir_v3_3.json",
+      "conversation_file_id": "file_00000000623482098900e5dfd745f3ea",
+      "kind": "generated",
+      "turn": 25,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "j4_46asset_illusion_dependencies_v3_3.json",
+      "conversation_file_id": "file_00000000a6d082118886f8b243a37098",
+      "kind": "generated",
+      "turn": 25,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "j4_10memory_arc_evidence_v3_3.json",
+      "conversation_file_id": "file_00000000713482099077e82d3deff136",
+      "kind": "generated",
+      "turn": 25,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "G2A_DOUBLE_VIEW_PROTOCOL.md",
+      "conversation_file_id": "file_00000000e52c8211ac428bb09c66b8bb",
+      "kind": "generated",
+      "turn": 26,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "README_v3_4.md",
+      "conversation_file_id": "file_000000001edc82098bdfd839fbb2c055",
+      "kind": "generated",
+      "turn": 26,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "j4_g2a_art_crosswalk.csv",
+      "conversation_file_id": "file_0000000025cc8209abb17816c20dd432",
+      "kind": "generated",
+      "turn": 26,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "j4_g2a_asset_invariants.csv",
+      "conversation_file_id": "file_00000000a7d48209bd1ef2db0a9a85de",
+      "kind": "generated",
+      "turn": 26,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "j4_g2a_viewer_lab_v3_4.html",
+      "conversation_file_id": "file_0000000071a48209923d111d0f059f31",
+      "kind": "generated",
+      "turn": 26,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "j4_museum_v3_4_bundle.zip",
+      "conversation_file_id": "file_0000000059008209835eeb556654e5bb",
+      "kind": "generated",
+      "turn": 26,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "README_v3_4.md",
+      "conversation_file_id": "file_00000000fb108209a6e96ebb98a53cef",
+      "kind": "generated",
+      "turn": 26,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "j4_g2a_viewer_lab_v3_4.html",
+      "conversation_file_id": "file_00000000ba248211b8074f521dfc922c",
+      "kind": "generated",
+      "turn": 26,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "ui_rehearsal_smoke.png",
+      "conversation_file_id": "file_0000000039a08211b4f1a47e2631097e",
+      "kind": "generated",
+      "turn": 26,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "j4_g2a_viewer_lab_v3_4.html",
+      "conversation_file_id": "file_00000000d96082099d28fbebf12eeaff",
+      "kind": "generated",
+      "turn": 26,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "ui_rehearsal_smoke.png",
+      "conversation_file_id": "file_00000000d8308207a0c60f5dce323c7c",
+      "kind": "generated",
+      "turn": 26,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "G2A_TEST_REPORT.md",
+      "conversation_file_id": "file_00000000495082119cb08ba59074661d",
+      "kind": "generated",
+      "turn": 26,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "README_v3_4.md",
+      "conversation_file_id": "file_00000000d74c821194246c48d5bfa182",
+      "kind": "generated",
+      "turn": 26,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "j4_g2a_blind_scorecard_template.csv",
+      "conversation_file_id": "file_00000000e2788209869f560d82d1d102",
+      "kind": "generated",
+      "turn": 26,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "j4_museum_v3_4_bundle.zip",
+      "conversation_file_id": "file_00000000ee388211b5a3e5f9596e5bd5",
+      "kind": "generated",
+      "turn": 26,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "G2A_CANDIDATE_PROMPT_DELTAS.md",
+      "conversation_file_id": "file_000000008a4482099e9ed4097b036f4b",
+      "kind": "generated",
+      "turn": 26,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "README_v3_4.md",
+      "conversation_file_id": "file_00000000ffa882118e48f89d5ef43517",
+      "kind": "generated",
+      "turn": 26,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "j4_museum_v3_4_bundle.zip",
+      "conversation_file_id": "file_0000000054f48211bf8dd37272c22bd2",
+      "kind": "generated",
+      "turn": 26,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "j4_g2a_trial_manifest_v3_4.json",
+      "conversation_file_id": "file_0000000030008211b10cd37c15f62e36",
+      "kind": "generated",
+      "turn": 26,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "j4_g2a_trial_manifest_v3_4.json",
+      "conversation_file_id": "file_0000000022e88211aacf7cf9cab1efd3",
+      "kind": "generated",
+      "turn": 26,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "DIRECTOR_OBJECT_STATE_LOCK_v3_5.md",
+      "conversation_file_id": "file_00000000592482118ca326027f01e2b5",
+      "kind": "generated",
+      "turn": 27,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "DIRECTOR_PROMPT_DELTAS_v3_5.md",
+      "conversation_file_id": "file_00000000caf88211aa2dadb454143645",
+      "kind": "generated",
+      "turn": 27,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "j4_g2a_art_optical_crosswalk_v3_5.csv",
+      "conversation_file_id": "file_0000000006348211bc471bbd05e3c1fc",
+      "kind": "generated",
+      "turn": 27,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "j4_g2a_frame_beats_v3_5.csv",
+      "conversation_file_id": "file_0000000030848209b804454b427e01d7",
+      "kind": "generated",
+      "turn": 27,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "j4_g2a_previs_board_v3_5.html",
+      "conversation_file_id": "file_00000000ca7c8211b9759a1a93570094",
+      "kind": "generated",
+      "turn": 27,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "j4_g2a_state_transitions_v3_5.csv",
+      "conversation_file_id": "file_00000000c27c8211a69fc7a366813ebd",
+      "kind": "generated",
+      "turn": 27,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "j4_museum_v3_5_bundle.zip",
+      "conversation_file_id": "file_000000006b108209b397ee9cb97c4807",
+      "kind": "generated",
+      "turn": 27,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "ui_smoke_desktop.png",
+      "conversation_file_id": "file_000000007dbc8209aa11cfa72140d0d6",
+      "kind": "generated",
+      "turn": 27,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "ui_smoke_mobile.png",
+      "conversation_file_id": "file_00000000d9a4821194bc54426b2a4807",
+      "kind": "generated",
+      "turn": 27,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "user-QEyn7rgZ1MAEFfXlMAFGkX0t/f713ba5a9aed4e75ac946eb755613a8c/mnt/data/j4_museum_v3_5/ui_smoke_desktop.png",
+      "conversation_file_id": "file_000000001bd08211aa60461b4941a517",
+      "kind": "upload",
+      "turn": 27,
+      "original_upload": false,
+      "size_bytes": 196053
+    },
+    {
+      "filename": "DIRECTOR_OBJECT_STATE_LOCK_v3_5.md",
+      "conversation_file_id": "file_0000000017dc8209bfba86b36089a9bf",
+      "kind": "generated",
+      "turn": 27,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "DIRECTOR_PROMPT_DELTAS_v3_5.md",
+      "conversation_file_id": "file_00000000e8ac8211a823b5fce0e2cef7",
+      "kind": "generated",
+      "turn": 27,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "j4_g2a_art_optical_crosswalk_v3_5.csv",
+      "conversation_file_id": "file_00000000eaa882119d63fabf7a762984",
+      "kind": "generated",
+      "turn": 27,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "j4_g2a_frame_beats_v3_5.csv",
+      "conversation_file_id": "file_00000000ac108209948179096e8e40d0",
+      "kind": "generated",
+      "turn": 27,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "j4_g2a_previs_board_v3_5.html",
+      "conversation_file_id": "file_000000001e5482118dc525b57352ae9e",
+      "kind": "generated",
+      "turn": 27,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "j4_g2a_state_transitions_v3_5.csv",
+      "conversation_file_id": "file_00000000dc0082098580aceb974f533d",
+      "kind": "generated",
+      "turn": 27,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "ui_smoke_desktop.png",
+      "conversation_file_id": "file_000000008d8c8211997333016fd567dd",
+      "kind": "generated",
+      "turn": 27,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "ui_smoke_mobile.png",
+      "conversation_file_id": "file_000000006b088211ab51a8708f67a76c",
+      "kind": "generated",
+      "turn": 27,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "j4_museum_v3_5_bundle.zip",
+      "conversation_file_id": "file_0000000070ac8211b234fa6be909249a",
+      "kind": "generated",
+      "turn": 27,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "DIRECTOR_OBJECT_STATE_LOCK_v3_5.md",
+      "conversation_file_id": "file_00000000dab882099a0c183c7f2bb85f",
+      "kind": "generated",
+      "turn": 27,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "DIRECTOR_PROMPT_DELTAS_v3_5.md",
+      "conversation_file_id": "file_00000000ea9482098205335ae1084e16",
+      "kind": "generated",
+      "turn": 27,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "README_v3_5.md",
+      "conversation_file_id": "file_00000000f9308211bcd03d803e50de3c",
+      "kind": "generated",
+      "turn": 27,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "j4_g2a_art_optical_crosswalk_v3_5.csv",
+      "conversation_file_id": "file_0000000066b882118d5e7c4302a005d9",
+      "kind": "generated",
+      "turn": 27,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "j4_g2a_frame_beats_v3_5.csv",
+      "conversation_file_id": "file_0000000000d882119a527a5b6a4cfeb3",
+      "kind": "generated",
+      "turn": 27,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "j4_g2a_previs_board_v3_5.html",
+      "conversation_file_id": "file_00000000a98c8211b987c3ce31968b16",
+      "kind": "generated",
+      "turn": 27,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "j4_g2a_state_transitions_v3_5.csv",
+      "conversation_file_id": "file_00000000fa608211ab7bbcdb1ab48af5",
+      "kind": "generated",
+      "turn": 27,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "ui_smoke_desktop.png",
+      "conversation_file_id": "file_000000008f4c82098a29db43dcdd0725",
+      "kind": "generated",
+      "turn": 27,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "ui_smoke_mobile.png",
+      "conversation_file_id": "file_0000000055cc8211854f71e7994f3533",
+      "kind": "generated",
+      "turn": 27,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "j4_museum_v3_5_bundle.zip",
+      "conversation_file_id": "file_000000007b388211873de08040d62b29",
+      "kind": "generated",
+      "turn": 27,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "j4_g2a_previs_lock_v3_5.json",
+      "conversation_file_id": "file_00000000fe608211b1a88f88d088119b",
+      "kind": "generated",
+      "turn": 27,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "j4_g2a_previs_lock_v3_5.json",
+      "conversation_file_id": "file_00000000a6188211b1e440bd4b751ac2",
+      "kind": "generated",
+      "turn": 27,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "G2A_PREREGISTRATION_v3_6.md",
+      "conversation_file_id": "file_00000000cd308209b5ac1224810be43f",
+      "kind": "generated",
+      "turn": 28,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "README_v3_6.md",
+      "conversation_file_id": "file_00000000ee588209bb92d490ba7d0d85",
+      "kind": "generated",
+      "turn": 28,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "j4_allocation_slots_v3_6.csv",
+      "conversation_file_id": "file_00000000ff9c8209a7baf660ba580646",
+      "kind": "generated",
+      "turn": 28,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "j4_blind_questions_v3_6.csv",
+      "conversation_file_id": "file_00000000fbf8821192226650caf4e8dc",
+      "kind": "generated",
+      "turn": 28,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "j4_blind_rating_template_v3_6.csv",
+      "conversation_file_id": "file_00000000e50482098092b366643ae722",
+      "kind": "generated",
+      "turn": 28,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "j4_confound_audit_v3_6.csv",
+      "conversation_file_id": "file_000000003bc48209bd734dfc31b49eb6",
+      "kind": "generated",
+      "turn": 28,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "j4_stimulus_manifest_v3_6.csv",
+      "conversation_file_id": "file_000000006fe882118a813f8c4987b308",
+      "kind": "generated",
+      "turn": 28,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "G2A_PREREGISTRATION_v3_6.md",
+      "conversation_file_id": "file_0000000098708209a317f10be1f8fe82",
+      "kind": "generated",
+      "turn": 28,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "README_v3_6.md",
+      "conversation_file_id": "file_0000000051248211a82a1436417a859f",
+      "kind": "generated",
+      "turn": 28,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "j4_allocation_slots_v3_6.csv",
+      "conversation_file_id": "file_00000000a8908209b9ef6751f25a39f3",
+      "kind": "generated",
+      "turn": 28,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "j4_blind_questions_v3_6.csv",
+      "conversation_file_id": "file_000000002b28820985b5e96fd19d1c07",
+      "kind": "generated",
+      "turn": 28,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "j4_blind_rating_template_v3_6.csv",
+      "conversation_file_id": "file_0000000037008209bcb7cb1e76bd2a08",
+      "kind": "generated",
+      "turn": 28,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "j4_confound_audit_v3_6.csv",
+      "conversation_file_id": "file_000000003558820995ac42610c44c217",
+      "kind": "generated",
+      "turn": 28,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "j4_g2a_prereg_board_v3_6.html",
+      "conversation_file_id": "file_00000000ac6482119ffc2575b66d2a52",
+      "kind": "generated",
+      "turn": 28,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "j4_stimulus_manifest_v3_6.csv",
+      "conversation_file_id": "file_00000000b3c48209b351902bf2c427db",
+      "kind": "generated",
+      "turn": 28,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "G2A_PREREGISTRATION_v3_6.md",
+      "conversation_file_id": "file_00000000ddbc8211a194ccc2822da09b",
+      "kind": "generated",
+      "turn": 28,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "README_v3_6.md",
+      "conversation_file_id": "file_0000000060508211a502278414980989",
+      "kind": "generated",
+      "turn": 28,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "j4_allocation_slots_v3_6.csv",
+      "conversation_file_id": "file_00000000e4a48211bd7fea44937ac316",
+      "kind": "generated",
+      "turn": 28,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "j4_blind_questions_v3_6.csv",
+      "conversation_file_id": "file_0000000068d4821180dcb08ca1b5406c",
+      "kind": "generated",
+      "turn": 28,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "j4_blind_rating_template_v3_6.csv",
+      "conversation_file_id": "file_00000000e4d88209a19bc4a8a38ae00e",
+      "kind": "generated",
+      "turn": 28,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "j4_confound_audit_v3_6.csv",
+      "conversation_file_id": "file_00000000b2008211be889a9da93ac614",
+      "kind": "generated",
+      "turn": 28,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "j4_g2a_prereg_board_v3_6.html",
+      "conversation_file_id": "file_000000002d008211ab25e975feadbc28",
+      "kind": "generated",
+      "turn": 28,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "j4_stimulus_manifest_v3_6.csv",
+      "conversation_file_id": "file_0000000019348211bc6b066e5fcbb406",
+      "kind": "generated",
+      "turn": 28,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "g2a_v3_6_desktop_smoketest.png",
+      "conversation_file_id": "file_0000000099bc8209b92a87320b76e0be",
+      "kind": "generated",
+      "turn": 28,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "g2a_v3_6_mobile_smoketest.png",
+      "conversation_file_id": "file_0000000038248209bd98364d1a56bec6",
+      "kind": "generated",
+      "turn": 28,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "user-QEyn7rgZ1MAEFfXlMAFGkX0t/f713ba5a9aed4e75ac946eb755613a8c/mnt/data/j4_museum_v3_6/g2a_v3_6_desktop_smoketest.png",
+      "conversation_file_id": "file_00000000ad948211a78fe048008297b6",
+      "kind": "upload",
+      "turn": 28,
+      "original_upload": false,
+      "size_bytes": 256750
+    },
+    {
+      "filename": "G2A_PREREGISTRATION_v3_6.md",
+      "conversation_file_id": "file_0000000033348211802de2cbe178ae8c",
+      "kind": "generated",
+      "turn": 28,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "README_v3_6.md",
+      "conversation_file_id": "file_00000000b7988211a2145b0016f62a6a",
+      "kind": "generated",
+      "turn": 28,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "j4_allocation_slots_v3_6.csv",
+      "conversation_file_id": "file_00000000be888211aa370debdc3c5773",
+      "kind": "generated",
+      "turn": 28,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "j4_blind_questions_v3_6.csv",
+      "conversation_file_id": "file_0000000069f08209aeb8b4c1757c3144",
+      "kind": "generated",
+      "turn": 28,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "j4_blind_rating_template_v3_6.csv",
+      "conversation_file_id": "file_0000000066788209abf06b7bfff9d3dc",
+      "kind": "generated",
+      "turn": 28,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "j4_confound_audit_v3_6.csv",
+      "conversation_file_id": "file_00000000fff88211b3eca4cb87e15212",
+      "kind": "generated",
+      "turn": 28,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "j4_g2a_prereg_board_v3_6.html",
+      "conversation_file_id": "file_000000006d6c8211ad4c0997eab8205e",
+      "kind": "generated",
+      "turn": 28,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "j4_stimulus_manifest_v3_6.csv",
+      "conversation_file_id": "file_0000000030588211a05c120020f20cc1",
+      "kind": "generated",
+      "turn": 28,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "README_v3_6.md",
+      "conversation_file_id": "file_000000003af08211bb655252c573db04",
+      "kind": "generated",
+      "turn": 28,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "TEST_REPORT_v3_6.md",
+      "conversation_file_id": "file_00000000d17c821193a452512d44b030",
+      "kind": "generated",
+      "turn": 28,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "g2a_v3_6_desktop_smoketest.png",
+      "conversation_file_id": "file_00000000f8c08209a1c08fd633d8a730",
+      "kind": "generated",
+      "turn": 28,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "g2a_v3_6_mobile_smoketest.png",
+      "conversation_file_id": "file_0000000073dc8211819e27248cc0884f",
+      "kind": "generated",
+      "turn": 28,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "j4_museum_v3_6_bundle.zip",
+      "conversation_file_id": "file_000000006e24821186d75dd1536a667b",
+      "kind": "generated",
+      "turn": 28,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "j4_g2a_preregistration_v3_6.json",
+      "conversation_file_id": "file_00000000e3988209b831d17a3ff2b71c",
+      "kind": "generated",
+      "turn": 28,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "j4_stimulus_media_qa_v3_6.py",
+      "conversation_file_id": "file_00000000f8c8820987b71417f1295519",
+      "kind": "generated",
+      "turn": 28,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "j4_g2a_preregistration_v3_6.json",
+      "conversation_file_id": "file_00000000d0c882098c3f6d3c27776cfc",
+      "kind": "generated",
+      "turn": 28,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "j4_stimulus_media_qa_v3_6.py",
+      "conversation_file_id": "file_00000000a9408209bb085bd28c2a7574",
+      "kind": "generated",
+      "turn": 28,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "README_v3_7.md",
+      "conversation_file_id": "file_00000000e30c8209996123f74025f150",
+      "kind": "generated",
+      "turn": 29,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "SOUND_DRAMATURGY_v3_7.md",
+      "conversation_file_id": "file_000000006174820980f847e6ae67028f",
+      "kind": "generated",
+      "turn": 29,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "j4_25shot_voice_sound_matrix_v3_7.csv",
+      "conversation_file_id": "file_00000000211882098c3f96f007a718fd",
+      "kind": "generated",
+      "turn": 29,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "j4_sonic_recall_arcs_v3_7.csv",
+      "conversation_file_id": "file_0000000064d882119a65b43dffc2d571",
+      "kind": "generated",
+      "turn": 29,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "j4_museum_v3_7_bundle.zip",
+      "conversation_file_id": "file_00000000c26c8211ac0e5e7c87e4b3c0",
+      "kind": "generated",
+      "turn": 29,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "j4_sound_dramaturgy_overlay_v3_7.json",
+      "conversation_file_id": "file_0000000039748209893018e08d2bba1a",
+      "kind": "generated",
+      "turn": 29,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "j4_mix_delivery_profiles_v3_7.json",
+      "conversation_file_id": "file_00000000b9e8820992b9e04ac29febdf",
+      "kind": "generated",
+      "turn": 29,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "j4_sound_dramaturgy_overlay_v3_7.json",
+      "conversation_file_id": "file_0000000090ac82119bb3178619049673",
+      "kind": "generated",
+      "turn": 29,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "j4_mix_delivery_profiles_v3_7.json",
+      "conversation_file_id": "file_000000005c80821198a0e5a632584886",
+      "kind": "generated",
+      "turn": 29,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "G2B_SOUND_GATE.md",
+      "conversation_file_id": "file_000000004170821184fcb4a0b0f8dd30",
+      "kind": "generated",
+      "turn": 30,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "README_v3_8.md",
+      "conversation_file_id": "file_000000006a888211a3be6cacfd81122f",
+      "kind": "generated",
+      "turn": 30,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "SOUND_CUE_PATCHES_v3_8.md",
+      "conversation_file_id": "file_00000000a90c8211b7d372b0367c8c44",
+      "kind": "generated",
+      "turn": 30,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "j4_g2b_ab_conditions_v3_8.csv",
+      "conversation_file_id": "file_0000000054c0820994e3bf3769dcb5d6",
+      "kind": "generated",
+      "turn": 30,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "j4_g2b_scoring_sheet_v3_8.csv",
+      "conversation_file_id": "file_00000000084482118b53ed8fcb167978",
+      "kind": "generated",
+      "turn": 30,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "j4_g2b_listening_lab_v3_8.html",
+      "conversation_file_id": "file_0000000013a4820789c16ce77a8164df",
+      "kind": "generated",
+      "turn": 30,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "ui_smoke_desktop.png",
+      "conversation_file_id": "file_0000000019a0821198db646c20e69d12",
+      "kind": "generated",
+      "turn": 30,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "ui_smoke_mobile.png",
+      "conversation_file_id": "file_0000000075848209adaf443c7f11d582",
+      "kind": "generated",
+      "turn": 30,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "TEST_REPORT_v3_8.md",
+      "conversation_file_id": "file_000000004694821193e1373c3e0da2fd",
+      "kind": "generated",
+      "turn": 30,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "j4_museum_v3_8_bundle.zip",
+      "conversation_file_id": "file_000000009a688211bf04d42d485c263d",
+      "kind": "generated",
+      "turn": 30,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "j4_g2b_trial_manifest_v3_8.json",
+      "conversation_file_id": "file_0000000094d88211afabd0beea9f28d9",
+      "kind": "generated",
+      "turn": 30,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "media_qa_v3_8.py",
+      "conversation_file_id": "file_00000000bd9082119fad824b18c35ff9",
+      "kind": "generated",
+      "turn": 30,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "j4_g2b_trial_manifest_v3_8.json",
+      "conversation_file_id": "file_00000000e0c48207ac6e65947a0cb22d",
+      "kind": "generated",
+      "turn": 30,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "media_qa_v3_8.py",
+      "conversation_file_id": "file_0000000093748211bbfa1b0848ff3c11",
+      "kind": "generated",
+      "turn": 30,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "README_v3_9.md",
+      "conversation_file_id": "file_00000000472c8209a3ef7f1fbb87446e",
+      "kind": "generated",
+      "turn": 31,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "SONIC_OBJECT_DIRECTOR_CONTRACT_v3_9.md",
+      "conversation_file_id": "file_00000000a4ac8211a988bd2b4f1c7dc6",
+      "kind": "generated",
+      "turn": 31,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "TEST_REPORT_v3_9.md",
+      "conversation_file_id": "file_00000000c2248211b6a057d23da54b22",
+      "kind": "generated",
+      "turn": 31,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "j4_sonic_art_crosswalk_v3_9.csv",
+      "conversation_file_id": "file_000000003178820995f1002eb17e7e1b",
+      "kind": "generated",
+      "turn": 31,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "j4_sonic_object_board_v3_9.html",
+      "conversation_file_id": "file_00000000c5dc8209b78c045ae889ee48",
+      "kind": "generated",
+      "turn": 31,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "j4_sound_object_cues_v3_9.csv",
+      "conversation_file_id": "file_00000000df208211990916a2c262c7f6",
+      "kind": "generated",
+      "turn": 31,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "j4_museum_v3_9_bundle.zip",
+      "conversation_file_id": "file_000000000b3c82098f35e07a71a14d8b",
+      "kind": "generated",
+      "turn": 31,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "ui_smoke_desktop.png",
+      "conversation_file_id": "file_00000000d840821187adc3d5191d0092",
+      "kind": "generated",
+      "turn": 31,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "ui_smoke_mobile.png",
+      "conversation_file_id": "file_00000000cef082099df775e5766ed470",
+      "kind": "generated",
+      "turn": 31,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "PASTE_READY_SOUND_DELTAS_v3_9.md",
+      "conversation_file_id": "file_0000000033648209b63f1c0d1ddc7c44",
+      "kind": "generated",
+      "turn": 31,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "README_v3_9.md",
+      "conversation_file_id": "file_00000000ac1082099a36234dac7ca957",
+      "kind": "generated",
+      "turn": 31,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "TEST_REPORT_v3_9.md",
+      "conversation_file_id": "file_00000000762c8211b339c893a0a04359",
+      "kind": "generated",
+      "turn": 31,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "j4_museum_v3_9_bundle.zip",
+      "conversation_file_id": "file_00000000618c82118296c19f515c617d",
+      "kind": "generated",
+      "turn": 31,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "j4_sonic_object_registry_v3_9.json",
+      "conversation_file_id": "file_00000000341c8209b5acc56a881ef092",
+      "kind": "generated",
+      "turn": 31,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "j4_recall_trials_v3_9.json",
+      "conversation_file_id": "file_0000000035248211aa6e8cc623a41893",
+      "kind": "generated",
+      "turn": 31,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "j4_sonic_object_registry_v3_9.json",
+      "conversation_file_id": "file_000000006c6c821182eda97b34a49961",
+      "kind": "generated",
+      "turn": 31,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "j4_recall_trials_v3_9.json",
+      "conversation_file_id": "file_00000000dbb082119d0761e3677eee4d",
+      "kind": "generated",
+      "turn": 31,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "JOINT_SOUND_VISUAL_DIRECTOR_CONTRACT_v4_0.md",
+      "conversation_file_id": "file_00000000362c82118ac56917348d4097",
+      "kind": "generated",
+      "turn": 32,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "PASTE_READY_JOINT_DELTAS_v4_0.md",
+      "conversation_file_id": "file_0000000088288211b116b8433b0b7a6d",
+      "kind": "generated",
+      "turn": 32,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "README_v4_0.md",
+      "conversation_file_id": "file_0000000065988211bb7cbad6287cdc60",
+      "kind": "generated",
+      "turn": 32,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "STATUS_v4_0.md",
+      "conversation_file_id": "file_00000000fd9c821183b89dd76697b551",
+      "kind": "generated",
+      "turn": 32,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "j4_blind_scorecard_v4_0.csv",
+      "conversation_file_id": "file_00000000766c8211ba28719da36035ba",
+      "kind": "generated",
+      "turn": 32,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "j4_confound_checklist_v4_0.csv",
+      "conversation_file_id": "file_00000000f628821186e9d79c3b3631da",
+      "kind": "generated",
+      "turn": 32,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "j4_cross_modal_review_board_v4_0.html",
+      "conversation_file_id": "file_00000000bab08211849c8f1cbbcdc83d",
+      "kind": "generated",
+      "turn": 32,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "j4_factorial_conditions_v4_0.csv",
+      "conversation_file_id": "file_00000000d3ec82119e98e1aa5047a707",
+      "kind": "generated",
+      "turn": 32,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "j4_pilot_allocation_v4_0.csv",
+      "conversation_file_id": "file_00000000500c8209b6f7790fafcfd010",
+      "kind": "generated",
+      "turn": 32,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "j4_scoring_rubric_v4_0.csv",
+      "conversation_file_id": "file_000000001fdc821194fa83a466cf36df",
+      "kind": "generated",
+      "turn": 32,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "j4_stimulus_manifest_v4_0.csv",
+      "conversation_file_id": "file_0000000033b48211945bf68d7740771c",
+      "kind": "generated",
+      "turn": 32,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "j4_cross_modal_review_board_v4_0.html",
+      "conversation_file_id": "file_000000007d9882118e421c9ec3b02545",
+      "kind": "generated",
+      "turn": 32,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "ui_smoke_desktop.png",
+      "conversation_file_id": "file_00000000ea1c8211bf024a8dfda5a16e",
+      "kind": "generated",
+      "turn": 32,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "ui_smoke_mobile.png",
+      "conversation_file_id": "file_000000004d548211ab66dc73d6303635",
+      "kind": "generated",
+      "turn": 32,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "JOINT_SOUND_VISUAL_DIRECTOR_CONTRACT_v4_0.md",
+      "conversation_file_id": "file_0000000009708209a1dc97a6dcdfa76b",
+      "kind": "generated",
+      "turn": 32,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "PASTE_READY_JOINT_DELTAS_v4_0.md",
+      "conversation_file_id": "file_00000000cd4482098c8c13f577d6e984",
+      "kind": "generated",
+      "turn": 32,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "README_v4_0.md",
+      "conversation_file_id": "file_00000000c5b08211bc7e337434ea0a46",
+      "kind": "generated",
+      "turn": 32,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "STATUS_v4_0.md",
+      "conversation_file_id": "file_00000000b3608211aa4804e4eb4e3550",
+      "kind": "generated",
+      "turn": 32,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "j4_blind_scorecard_v4_0.csv",
+      "conversation_file_id": "file_000000000b7082099bbdb98e255e17fd",
+      "kind": "generated",
+      "turn": 32,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "j4_confound_checklist_v4_0.csv",
+      "conversation_file_id": "file_000000007a808211a51ed8ad9bdcd408",
+      "kind": "generated",
+      "turn": 32,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "j4_cross_modal_review_board_v4_0.html",
+      "conversation_file_id": "file_0000000019508211a2b079b038ee8084",
+      "kind": "generated",
+      "turn": 32,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "j4_factorial_conditions_v4_0.csv",
+      "conversation_file_id": "file_000000006ad48209be04d5007b90840d",
+      "kind": "generated",
+      "turn": 32,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "j4_pilot_allocation_v4_0.csv",
+      "conversation_file_id": "file_00000000ff10820983607c8e0b96b070",
+      "kind": "generated",
+      "turn": 32,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "j4_scoring_rubric_v4_0.csv",
+      "conversation_file_id": "file_0000000011f88211be22f90767dc4089",
+      "kind": "generated",
+      "turn": 32,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "j4_stimulus_manifest_v4_0.csv",
+      "conversation_file_id": "file_00000000b86c8211a39400ac275d536a",
+      "kind": "generated",
+      "turn": 32,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "ui_smoke_desktop.png",
+      "conversation_file_id": "file_00000000f0a88209bf77e178a24b36f3",
+      "kind": "generated",
+      "turn": 32,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "ui_smoke_mobile.png",
+      "conversation_file_id": "file_0000000066f08211b2b57f34deb7a080",
+      "kind": "generated",
+      "turn": 32,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "ART_METHOD_SOURCES_v4_0.csv",
+      "conversation_file_id": "file_00000000cb608211814a6fe8be0b02c2",
+      "kind": "generated",
+      "turn": 32,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "STATUS_v4_0.md",
+      "conversation_file_id": "file_00000000a47c821188b4b533624cff36",
+      "kind": "generated",
+      "turn": 32,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "TEST_REPORT_v4_0.md",
+      "conversation_file_id": "file_0000000001008211812b9789e35479f2",
+      "kind": "generated",
+      "turn": 32,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "j4_museum_v4_0_bundle.zip",
+      "conversation_file_id": "file_00000000cdf08211aab5aa8f036c2606",
+      "kind": "generated",
+      "turn": 32,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "j4_cross_modal_ir_v4_0.json",
+      "conversation_file_id": "file_00000000b3b08209bd764f25137d7dc6",
+      "kind": "generated",
+      "turn": 32,
+      "original_upload": false,
+      "size_bytes": null
+    },
+    {
+      "filename": "j4_cross_modal_ir_v4_0.json",
+      "conversation_file_id": "file_0000000014288211a05d0ab759dec617",
+      "kind": "generated",
+      "turn": 32,
+      "original_upload": false,
+      "size_bytes": null
+    }
+  ],
+  "notes": [
+    "This catalog is metadata, not the source bytes.",
+    "Version-final text from 132 surfaced artifacts is committed separately.",
+    "Repeated filenames/earlier versions may have different contents; see off-repo lossless mounted-asset archive.",
+    "Raw text transcript of all messages is unavailable; no verbatim completeness claim."
+  ]
+}
