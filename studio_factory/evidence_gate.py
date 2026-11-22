@@ -87,7 +87,9 @@ def verify_receipt(registry: dict, asset_root: Path, receipt: dict) -> dict:
     for key in ("model", "model_version", "provider", "provider_run_id",
                 "generated_at"):
         _require_str(receipt, key)
-    if "seed" not in receipt or receipt["seed"] not in (None,) and not isinstance(receipt["seed"], (str, int)):
+    if ("seed" not in receipt or
+            (receipt["seed"] is not None and
+             (isinstance(receipt["seed"], bool) or not isinstance(receipt["seed"], (str,int))))):
         raise EvidenceGateError("seed must be explicit (null if unavailable)")
     if receipt.get("settings") is None or not isinstance(receipt["settings"], dict):
         raise EvidenceGateError("settings object required")
@@ -205,6 +207,14 @@ def review_candidate(registry: dict, asset_root: Path,
         if not isinstance(reviewer,str) or not reviewer.strip():
             errors.append("reviewer identity missing");continue
         ids.append(reviewer)
+        observations=review.get("observations")
+        if not isinstance(observations,dict):
+            errors.append(f"{reviewer}: observations must be a map")
+            continue
+        allowed={c["id"] for c in static}
+        extras=set(observations) - allowed
+        if extras:
+            errors.append(f"{reviewer}: unknown or non-still check IDs: {sorted(extras)}")
         for field,expected in (
           ("candidate_id",bound["candidate_id"]),
           ("shot_id",sid),
