@@ -998,3 +998,35 @@
     {
       "id": "S25",
       "start_ms": 87000,
+      "end_ms": 90000,
+      "duration_ms": 3000,
+      "act": 3,
+      "title_zh": "尚未結束的時間",
+      "title_en": "The Unfinished Duration",
+      "art_reference": {
+        "artist": "On Kawara",
+        "work": "One Million Years (Future), audio realization 1993",
+        "transfer_method": "Duration outlives image; no year reading or original audio.",
+        "do_not_copy": true
+      },
+      "generation_mode": "editorial",
+      "image_prompt": "EDITOR ONLY. Absolute black frame with restrained original typography ASYNC: SUCCESSION placed in post at centre-safe area; licensed typeface, static title, no animated glints, particles, digital texture, logo or visuals. Title disappears to pure black before file boundary.",
+      "motion_prompt": "0–0.5 hard-cut black; 0.5–1.0 title fades on minimally; 1.0–2.5 fixed title; 2.5–3.0 title fades off. 90.000s hard picture finish. No extra motion.",
+      "sound_prompt": "At 87.000 remove all S24 ambience and motif fragments, preserve only the single sine that began at 0.500 s, phase-continuously. No final chord or spoken years. Finish at 90.000 s with technically de-clicked edit; artistic impression of persistence, not audible digital pop.",
+      "global_image_lock_ref": "MASTER_IMAGE_V2_6",
+      "global_sound_lock_ref": "MASTER_SOUND_V2_6",
+      "negative_prompt_ref": "GLOBAL_NEGATIVE_V2_6",
+      "props": [],
+      "characters": [],
+      "in_transition": "S24 rain and crowd disappear",
+      "out_transition": "Playback ends at 90.000s; tone conceptually continues",
+      "contest_override": "Use fully fictional, non-identifiable subjects; copyright/IP/legal review required. Not a guaranteed contest eligibility determination.",
+      "review_state": "TEXT_DRAFT_NORMALIZED_NOT_GENERATED",
+      "generation_recipe": {
+        "render_provider": "editor",
+        "billable_generation": false,
+        "planned_takes": 0
+      }
+    }
+  ]
+}
