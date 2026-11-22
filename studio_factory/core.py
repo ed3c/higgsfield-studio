@@ -248,7 +248,7 @@ class Factory:
             raise FactoryError("unknown project")
         return {"project":project,"exported_at":_now(),"artifacts":[
              {**dict(r),"payload":json.loads(r["payload"])} for r in rows],
-             "links":[dict(r) for r in self.db.execute("SELECT * FROM links")],
+             "links":[dict(r) for r in self.db.execute("SELECT l.* FROM links l JOIN artifacts a ON a.id=l.source_id WHERE a.namespace=?", (f"projects/{project}",))],
              "handoffs":[dict(r) for r in self.db.execute(
                  "SELECT * FROM handoffs WHERE project=?", (project,))],
              "gates":[dict(r) for r in self.db.execute(
