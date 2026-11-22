@@ -1,3 +1,19 @@
+# 2026-11-22 custody status correction (verified connector readback)
+
+This section supersedes the earlier statements below saying the archive and original media were not independently persisted. **The historical manifest and SHA values remain unchanged.**
+
+- The complete 76,407,296-byte ZIP is now uploaded to the private connected Google Drive folder named `Higgsfield-Studio-Private-Assets/J4-ASYNC-SUCCESSION` (Drive confirmed the correct filename, byte size, parent and `shared=false` through metadata readback).
+- The three original MP4 files and two original JPEG files listed below have also been uploaded independently to the same private folder; their correct names, sizes, parent and `shared=false` were read back.
+- The 267-item inventory JSON is uploaded to the private parent folder.
+- The local ZIP and original files had known source SHA-256 values before upload. A **download-after-upload full SHA-256 readback from Drive is NOT_RUN**, so do not claim Drive byte equivalence from metadata alone.
+- This public repository deliberately excludes the private Drive IDs/URLs, credentials, and any media bytes. Grok Bot access is **NOT_VERIFIED**; authenticated Drive sharing/connection must be approved separately.
+- Original Mac `reviews.sqlite3` evidence, the Mac runtime/permissions, all verbatim conversation turns, art/rights clearance and local end-to-end media playback are not captured by the Drive upload.
+- Handoff authority and missing-evidence owners: `docs/GROK_BOT_HANDOFF.md`.
+
+---
+
+## Historical custody snapshot prior to Google Drive upload
+
 # Media custody, rights and completeness — J4
 
 The GitHub repository is **public** and explicitly keeps rendered video/audio, user refs and personal footage out of Git. This document accounts for the actual uploads without silently publishing sensitive originals.
