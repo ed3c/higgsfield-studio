@@ -163,6 +163,57 @@ class EvidenceGateTests(unittest.TestCase):
         self.assertEqual(review_candidate(self.registry,self.root,self.receipt,
                          [a,b])["state"],"BLOCKED_EVIDENCE_INVALID")
 
+    def test_local_review_catalog_surfaces_bound_candidate_and_denies_pass(self):
+        import threading
+        import urllib.error
+        import urllib.request
+        from http.server import ThreadingHTTPServer
+        from studio_factory.review_web import Catalog, Handler
+        receipts_dir = self.root / "extra" / "g2_receipts"
+        review_dir = self.root / "extra" / "g2_reviews" / "S14-001"
+        receipts_dir.mkdir(parents=True)
+        review_dir.mkdir(parents=True)
+        (receipts_dir / "S14-001.json").write_text(
+            json.dumps(self.receipt), encoding="utf-8")
+        for name, review in (("a", self.review("Reviewer-A")),
+                             ("b", self.review("Reviewer-B"))):
+            (review_dir / (name + ".json")).write_text(
+                json.dumps(review), encoding="utf-8")
+        from pathlib import Path
+        catalog = Catalog(self.root, ROOT, self.root / "review.sqlite3")
+        try:
+            candidates = [c for c in catalog.entries.values()
+                          if c["group"] == "candidate"]
+            self.assertEqual(len(candidates), 1)
+            item = candidates[0]
+            self.assertEqual(item["meta"]["report"]["state"],
+                             "STATIC_REVIEW_COMPLETE_TEMPORAL_NOT_RUN")
+            self.assertIsNotNone(item["meta"]["media_resource_id"])
+            self.assertIsNotNone(item["meta"]["receipt_resource_id"])
+            self.assertEqual(item["meta"]["generation_gate"], "BLOCKED")
+            server = ThreadingHTTPServer(("127.0.0.1", 0), Handler)
+            server.app = catalog
+            server.csrf = "only-test"
+            thread = threading.Thread(target=server.serve_forever, daemon=True)
+            thread.start()
+            try:
+                uri = f"http://127.0.0.1:{server.server_port}/api/review"
+                body = {"item_id": item["id"], "decision":"PASS",
+                        "note":"attempted gate bypass", "reviewer":"test", "evidence":""}
+                request = urllib.request.Request(
+                    uri, data=json.dumps(body).encode(), method="POST",
+                    headers={"X-Review-CSRF": "only-test",
+                             "Content-Type":"application/json"})
+                with self.assertRaises(urllib.error.HTTPError) as err:
+                    urllib.request.urlopen(request,timeout=5)
+                self.assertEqual(err.exception.code,400)
+            finally:
+                server.shutdown()
+                server.server_close()
+                thread.join(timeout=5)
+        finally:
+            catalog.store.connection.close()
+
     def test_reference_hash_must_match(self):
         reference=self.root/"reference.png";reference.write_bytes(pixel_png())
         data=json.loads(json.dumps(self.receipt))
