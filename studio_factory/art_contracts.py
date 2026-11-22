@@ -110,7 +110,7 @@ def load_contract(repo_root: Path, relative: Path = DEFAULT_CONTRACT) -> dict:
             raise ArtContractError(f"{sid}: no keyframe acceptance")
         if not any(c["modality"] != "still" for c in s["checks"]):
             raise ArtContractError(f"{sid}: no time/cross-shot proof")
-    return {"contract": contract, "canonical": canonical,
+    return {"contract": contract, "canonical": canonical, "master": shots_source,
             "optical": optical, "contract_sha256": hashlib.sha256(content).hexdigest(),
             "checks_total": len(all_ids)}
 
@@ -136,7 +136,8 @@ def compile_shot(registry: dict, shot_id: str) -> dict:
         "The shot must be an independently plausible original physical scene.",
         "Styling or beauty cannot substitute for action, evidence, material physics or object identity.",
         "BASE SCENE GUIDANCE (lower priority than the specific G2 contract): " + base["image_prompt"],
-        "GLOBAL VISUAL SAFETY: " + registry["canonical"]["S02"].get("global_negative_prompt_ref", "GLOBAL_NEGATIVE_V2_6")
+        "GLOBAL IMAGE LOCK (inherited from original canonical source): " + registry["master"]["master_image_lock"],
+        "GLOBAL NEGATIVE PROMPT (inherited, never omitted): " + registry["master"]["global_negative_prompt"]
     ])
     envelope = {
         "schema": "studio.art-prompt-compiled.v1",
@@ -151,7 +152,8 @@ def compile_shot(registry: dict, shot_id: str) -> dict:
         "duration_ms": base["duration_ms"],
         "prompt": priority,
         "negative_constraints": p["negative_constraints"],
-        "image_lock": registry["canonical"]["S02"].get("global_image_lock_ref", "MASTER_IMAGE_V2_6"),
+        "image_lock": registry["master"]["master_image_lock"],
+        "global_negative_prompt": registry["master"]["global_negative_prompt"],
         "required_check_ids": [c["id"] for c in p["checks"]],
         "evidence_oracle": "independent human observations + actual media SHA-256 + director signoff",
         "state": "COMPILED_NOT_SUBMITTED",
