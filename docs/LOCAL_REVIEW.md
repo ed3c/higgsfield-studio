@@ -76,3 +76,24 @@ Directly synced original videos can be placed under `extra/`, or use the SHA-ver
 ## Work across many films
 
 Each new `projects/<slug>/PROJECT.json` remains a separate production. Generic research, art method, sound technique, optical principles, tests and Manager skill contracts can be promoted to immutable shared records via `studio_factory`; media, paid budgets, personal identities, story and licensing rights remain project-private. A second film never inherits the J4 owner approval.
+
+## v4.2 Candidate Evidence (source-locked generation receipts)
+
+Six pilot shots S02/S04/S06/S11/S13/S14 have 33 Art Mechanism P0 obligations. The G2 art tab shows rejected original contact-sheet observations; those observations are not equivalent to provider media receipts.
+
+To review a **future, separately authorized actual output**, follow [G2 v4.2 Evidence Gate](G2_EVIDENCE_GATE_V4_2.md). Put the original candidate media and JSON under the private local asset root:
+
+~~~text
+$HOME/Higgsfield-Private/J4/extra/
+├── candidates/S14-take-001.png
+├── g2_receipts/S14-take-001.json
+├── g2_reviews/S14-take-001/reviewer-A.json
+├── g2_reviews/S14-take-001/reviewer-B.json
+└── g2_reports/S14-take-001.json
+~~~
+
+Run the read-only evaluator with `python3 -m studio_factory.evidence_gate --repo . --assets "$HOME/Higgsfield-Private/J4" --receipt <path> --review <path> --review <path> --output <path>`. Restart the localhost server to re-index added files. The **候選證據** tab then presents original still/video preview, source hashes, independent reviewer consensus and unresolved checks. This site never sends the original media to an external service.
+
+**Results are only evidence classifications:** even `STATIC_REVIEW_COMPLETE_TEMPORAL_NOT_RUN` means human-reported static cues agree; visual facts are not machine-detected, reviewer identity and paid approvals are not independently authenticated, and optical time/sound/rights/Director signoffs are still NOT_RUN. Generic PASS on G2 art/candidate items is blocked by the server; it cannot authorize generation.
+
+Historical unreceipted six-panel imagery is still forensic and may only be displayed as an unapproved reference. Do not manufacture an exact sent prompt, model/version, provider run ID or authorization to make historical material pass this path.
