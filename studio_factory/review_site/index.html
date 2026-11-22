@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="dark"><title>Higgsfield Studio · Local Review</title>
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<div id="app">
+  <aside id="sidebar" class="sidebar">
+    <div class="brand"><div class="brand-icon"><i></i><i></i><i></i><i></i></div><div><strong>HIGGSFIELD</strong><small>STUDIO / REVIEW</small></div></div>
+    <div class="project-block"><div class="eyebrow">CURRENT PRODUCTION</div><div class="project-name" id="project-title">J4 <span>ASYNC: SUCCESSION</span></div><div class="project-meta" id="project-meta">25 SHOTS · 90 SEC · 30 FPS</div></div>
+    <nav id="nav-tabs" class="nav-tabs" aria-label="資源類別">
+      <button data-tab="shot" class="active"><span>◫</span> 鏡頭 Shot IR <b id="count-shot">—</b></button>
+      <button data-tab="resource"><span>◈</span> 素材與文件 <b id="count-resource">—</b></button>
+      <button data-tab="media"><span>▷</span> 可播放媒體 <b id="count-media">—</b></button>
+      <button data-tab="html"><span>◇</span> 審核實驗頁 <b id="count-html">—</b></button>
+      <button data-tab="manager"><span>▦</span> Domain Managers <b id="count-manager">17</b></button>
+      <button data-tab="test"><span>✓</span> 測試執行 <b id="count-test">4</b></button>
+      <button data-tab="all"><span>≡</span> 全部項目 <b id="count-all">—</b></button>
+    </nav>
+    <div class="search-wrap"><label for="item-search" class="eyebrow">SEARCH / FILTER</label><input id="item-search" type="search" placeholder="搜尋 Shot、檔名、版本…" autocomplete="off"></div>
+    <div class="list-head"><span id="list-title">SHOTS</span><span id="list-count">0 ITEMS</span></div>
+    <div id="item-list" class="item-list" role="listbox" aria-label="項目清單"></div>
+    <div class="sidebar-foot"><span class="dot"></span> 本機驗收 · 零生成執行<br><small>只在 127.0.0.1 運行 / 來源資訊不公開</small></div>
+  </aside>
+  <div class="main-wrap">
+    <header class="topbar"><button class="menu-toggle" id="menu-toggle" aria-label="切換項目選單">☰</button><div class="breadcrumb">STUDIO <span>/</span> <span id="project-code">J4</span> <span>/</span> <strong id="breadcrumb-current">SHOT REVIEW</strong></div><div class="top-right"><span class="lock">● GENERATION BLOCKED</span><a id="drive-folder" target="_blank" rel="noopener noreferrer" hidden>Google Drive ↗</a></div></header>
+    <main class="workspace">
+      <section class="headline"><div><div class="eyebrow" id="item-kicker">CANONICAL SHOT</div><h1 id="item-name">讀取製作資料…</h1><p id="item-subtitle">J4 Museum Cinema · Original references and source-locked review</p></div><div class="head-count"><span id="position-index">—</span><small id="position-total">—</small></div></section>
+      <section class="metrics" aria-label="進度摘要">
+        <div><span>REGISTERED FILES</span><strong id="metric-files">—</strong><small id="metric-files-meta">Inventory</small></div>
+        <div><span>LOCAL MEDIA READY</span><strong id="metric-media">—</strong><small>Video / Audio / Image</small></div>
+        <div><span>HUMAN REVIEWED</span><strong id="metric-review">0</strong><small>Local feedback only</small></div>
+        <div><span>PRODUCTION</span><strong class="warning">BLOCKED</strong><small>No paid generation</small></div>
+      </section>
+      <div class="content-grid"><section class="content-col">
+        <section class="panel preview-panel"><div class="panel-top"><span class="section-index">01</span><h2 id="preview-title">Scene preview</h2><div class="panel-controls"><button id="prev-item" aria-label="上一項">←</button><button id="next-item" aria-label="下一項">→</button></div></div><div id="preview-area" class="preview-area"><div class="empty-preview">載入媒體預覽…</div></div><div id="preview-meta" class="preview-meta"></div></section>
+        <section id="timeline-panel" class="panel timeline-panel"><div class="panel-top"><span class="section-index">02</span><h2 id="timeline-title">Editorial Timeline</h2><span class="mono" id="timeline-frames">FRAMES</span></div><div id="timeline" class="timeline" aria-label="90 秒鏡頭時間軸"></div><div class="timeline-key"><span><em class="key-current"></em> 當前 Shot</span><span><em class="key-other"></em> 其餘 24 鏡</span><span>63.700s · S18 全局斷點</span></div></section>
+        <section class="panel details-panel"><div class="panel-top"><span class="section-index">03</span><h2>Full Source / Evidence</h2><span class="mono" id="source-status">SOURCE LOCKED</span></div><div id="details-area" class="details-area"></div></section>
+      </section><aside class="inspector"><section class="panel review-panel"><div class="panel-top"><span class="section-index">R</span><h2>Director Review</h2></div><div class="review-note">逐項人工標註，只更新本機 SQLite；不會自動批准 G1／G2 或生成作業。</div><div class="eyebrow">LOCAL DECISION</div><div class="decision-buttons"><button data-decision="PASS" class="pass">✓ Pass</button><button data-decision="FAIL" class="fail">× Fail</button><button data-decision="DEFER" class="defer">◷ Defer</button></div><button data-decision="NOT_RUN" id="reset-review" class="reset">清除標註 / Not Run</button><label for="reviewer">REVIEWER</label><input id="reviewer" value="local-reviewer" autocomplete="off"><label for="review-notes">EVIDENCE / NOTES</label><textarea id="review-notes" rows="6" placeholder="具體指出哪一個影格、聲音或道具不符合驗收條件…"></textarea><label for="review-evidence">EVIDENCE URI（選填）</label><input id="review-evidence" placeholder="file:// / commit / local report"><div id="save-state" class="save-state">未執行人工驗收</div><div class="kbd-help">← → 切鏡 / 1 Pass / 2 Fail / D Defer<br>U Undo / ⌘S 儲存 / ⌘↵ 儲存後前進</div></section>
+        <section class="panel provenance-panel"><div class="panel-top"><span class="section-index">P</span><h2>Origin / Asset</h2></div><div id="provenance-area" class="provenance-area"></div></section>
+      </aside></div>
+      <footer class="footer">REVIEW INTERFACE METHOD · ed3c/medium-compiler · build-review-interface&nbsp;&nbsp; / &nbsp;&nbsp; No automatic production actions</footer>
+    </main>
+  </div>
+</div>
+<div id="toast" role="status" aria-live="polite"></div>
+<script src="/app.js" defer></script>
+</body></html>

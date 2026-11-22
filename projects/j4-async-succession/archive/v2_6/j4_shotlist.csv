@@ -1,0 +1,26 @@
+shot_id,act,start_seconds,end_seconds,duration_seconds,title_zh,title_en,artist,artwork,mode,props,characters,text_status
+S01,1,0.0,3.0,3.0,第一束光之前,Before the First Light,Ryoji Ikeda,test pattern [nº1] (2008),editorial,,,TEXT_DRAFT_NORMALIZED_NOT_GENERATED
+S02,1,3.0,7.0,4.0,被分享的光,A Light Shared,Rirkrit Tiravanija,untitled 1990 (pad thai) (1990),video,market_bulb; warm_reflection,market_ensemble,TEXT_DRAFT_NORMALIZED_NOT_GENERATED
+S03,1,7.0,12.0,5.0,光的源頭,The Source,Ryuichi Sakamoto × Shiro Takatani,water state 1 (2013),video,optical_membranes; warm_reflection; founder_coat_A,founder,TEXT_DRAFT_NORMALIZED_NOT_GENERATED
+S04,1,12.0,16.0,4.0,脆弱的離開,Fragile Departure,Studio DRIFT,Fragile Future III,video,filament_bird_v1; child_suitcase; market_bulb,,TEXT_DRAFT_NORMALIZED_NOT_GENERATED
+S05,1,16.0,20.0,4.0,維持世界的人,Maintenance of the World,Mierle Laderman Ukeles,Washing/Tracks/Maintenance: Inside (1973),video,sink_water; warm_reflection,dishwasher_hands,TEXT_DRAFT_NORMALIZED_NOT_GENERATED
+S06,2,20.0,24.0,4.0,使用光的權利,The Right to Light,Felix Gonzalez-Torres,“Untitled” (Placebo) (1991),video,shared_paper_lamps; sealed_lamp; warm_reflection,workshop_adults,TEXT_DRAFT_NORMALIZED_NOT_GENERATED
+S07,2,24.0,28.0,4.0,人造氣候,A Manufactured Climate,Olafur Eliasson,The weather project (2003),video,compute_facility; sensing_fibre; artificial_air,,TEXT_DRAFT_NORMALIZED_NOT_GENERATED
+S08,2,28.0,32.0,4.0,共識製造機,The Consent Machine,Tino Sehgal,This Situation (2007),video,empty_podium,ceremony_ensemble,TEXT_DRAFT_NORMALIZED_NOT_GENERATED
+S09,2,32.0,35.5,3.5,無人接收的頻率,The Unheard Frequency,Tania Bruguera,Tatlin’s Whisper #6 (Havana Version) (2009),video,marcher_coat; fan_horn,marcher,TEXT_DRAFT_NORMALIZED_NOT_GENERATED
+S10,2,35.5,39.0,3.5,缺席的創造者,The Absent Author,Doris Salcedo,Atrabilious (1992–93),video,archive_coat_B; plain_glasses; mesh_enclosure,archive_hand,TEXT_DRAFT_NORMALIZED_NOT_GENERATED
+S11,2,39.0,43.0,4.0,沒有交班的工廠,The Factory Without a Shift,Cao Fei,Whose Utopia (2006),video,paper_house_v1; empty_blue_stools; folded_gloves; factory_arms,,TEXT_DRAFT_NORMALIZED_NOT_GENERATED
+S12,2,43.0,46.0,3.0,看不見的協議,The Invisible Agreement,Chiharu Shiota,Uncertain Journey (2016),video,red_phone_cord,,TEXT_DRAFT_NORMALIZED_NOT_GENERATED
+S13,2,46.0,50.0,4.0,失去音準的文明,The Untuned,Ryuichi Sakamoto × Shiro Takatani,IS YOUR TIME (2017),video,untuned_piano; silicon_wafer; coastal_lab,lithographer,TEXT_DRAFT_NORMALIZED_NOT_GENERATED
+S14,2,50.0,53.0,3.0,最後的喝采,The Last Ovation,Janet Cardiff × George Bures Miller,The Murder of Crows (2008),video,opera_coat; empty_music_stand; acoustic_reflector,opera_audience,TEXT_DRAFT_NORMALIZED_NOT_GENERATED
+S15,2,53.0,57.0,4.0,兩種編織未來的方法,Two Ways of Weaving,Chiharu Shiota,The Key in the Hand (2015),video,single_thread_textile; multicolour_textile; empty_cradle; paper_offcut,weaver_left; weaver_right,TEXT_DRAFT_NORMALIZED_NOT_GENERATED
+S16,2,57.0,60.5,3.5,平行通道,Parallel Passage,Rafael Lozano-Hemmer,Border Tuner (2019),video,child_suitcase; transport_lane; human_lane,travellers,TEXT_DRAFT_NORMALIZED_NOT_GENERATED
+S17,2,60.5,63.7,3.2,資訊的重量,The Weight of Information,Ryoji Ikeda,data-verse 1 (2019),video,optical_membranes; founder_coat_A; warm_reflection,founder,TEXT_DRAFT_NORMALIZED_NOT_GENERATED
+S18,2,63.7,65.0,1.3,被強制的同步,The Forced Consensus,Carsten Nicolai (alva noto),unidisplay (2011/2012),editorial,three_abstract_light_volumes,,TEXT_DRAFT_NORMALIZED_NOT_GENERATED
+S19,3,65.0,69.0,4.0,峰會前的放送,The Broadcast Before the Summit,Hito Steyerl,Factory of the Sun (2015),video,fictional_news_roundtable; five_chairs; virtual_skyline,,TEXT_DRAFT_NORMALIZED_NOT_GENERATED
+S20,3,69.0,72.5,3.5,缺席者的檔案,The Archive of Absence,Walid Raad,The Atlas Group (1989–2004),video,paper_archive; translucent_glass_record,archivist_left_hand; archivist_right_hand,TEXT_DRAFT_NORMALIZED_NOT_GENERATED
+S21,3,72.5,76.5,4.0,時間的交接,The Transfer of Time,Felix Gonzalez-Torres,“Untitled” (Perfect Lovers) (1987–90),video,handover_key; founder_coat_A; empty_chair,founder_hand; steward_hand,TEXT_DRAFT_NORMALIZED_NOT_GENERATED
+S22,3,76.5,79.5,3.0,紙的海岸,The Paper Shore,Thomas Demand,Office (1996),video,paper_landscape; paper_house_v1; compact_local_compute,salaryman,TEXT_DRAFT_NORMALIZED_NOT_GENERATED
+S23,3,79.5,84.0,4.5,遲到的倒影,The Delayed Reflection,Bill Viola,The Reflecting Pool (1977–79),video,optical_membranes; delayed_reflection; untuned_piano; opera_coat,founder; distant_workers,TEXT_DRAFT_NORMALIZED_NOT_GENERATED
+S24,3,84.0,87.0,3.0,不同步的生命,The Return,Rafael Lozano-Hemmer,Pulse Room (2006),video,founder_coat_A; filament_bird_v1; market_bulb; warm_reflection,market_ensemble,TEXT_DRAFT_NORMALIZED_NOT_GENERATED
+S25,3,87.0,90.0,3.0,尚未結束的時間,The Unfinished Duration,On Kawara,"One Million Years (Future), audio realization 1993",editorial,,,TEXT_DRAFT_NORMALIZED_NOT_GENERATED

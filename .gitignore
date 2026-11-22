@@ -30,3 +30,9 @@ projects/*/refs/*
 .DS_Store
 __pycache__/
 *.pyc
+
+# Runtime manager registry and review evidence (not source-controlled)
+.factory/
+*.sqlite3
+*.sqlite3-wal
+*.sqlite3-shm
