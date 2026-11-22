@@ -159,6 +159,7 @@ def exercise(outdir:Path):
                     assert page.locator('.item-row').count()==6
                     assert page.evaluate('document.documentElement.scrollWidth <= innerWidth+2')
                     page.screenshot(path=str(outdir/'g2-art-mobile.png'),full_page=False)
+                    page.locator('#menu-toggle').click()
                     page.locator('button[data-tab="candidate"]').click()
                     assert page.locator('.item-row').count()==1
                     assert page.evaluate('document.documentElement.scrollWidth <= innerWidth+2')
