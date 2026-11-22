@@ -1,5 +1,16 @@
 # Grok Bot takeover — Higgsfield Studio / J4 (2026-11-22)
 
+## G2 v4.2 candidate evidence — private local workflows
+
+- Git source: studio_factory/evidence_gate.py; studio_factory/tests/test_evidence_gate.py.
+- Contract and runbook: docs/G2_EVIDENCE_GATE_V4_2.md; docs/LOCAL_REVIEW.md.
+- On the Mac: $HOME/Higgsfield-Private/J4/extra/candidates/, g2_receipts/, g2_reviews/, g2_reports/.
+- Local review UI candidate tab: media preview, exact receipt and two independently attested static review records.
+- Never claim an uploaded six-panel montage is six authenticated provider outputs. For each shot, the exact provider prompt, output bytes, model, seed and run ID remain unknown until recovered.
+- Two reviewer names are self-attested, not cryptographically verified; neither source/hash check nor report completion is an art/rights/human Director approval.
+- Any missing provider receipt, image digest, model permission or reviewer evidence is BLOCKED. Never fabricate a provider-run ID or claim historical external approvals.
+
+---
 ## G2 failed-keyframe repair — newer proposed branch (2026-11-23)
 
 - Separate Draft PR #3: https://github.com/ed3c/higgsfield-studio/pull/3
