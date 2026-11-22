@@ -32,7 +32,8 @@ def exercise(outdir:Path):
             'image_prompt':'Image original','motion_prompt':'Camera locked',
             'sound_prompt':'Original room tone','props':[],'characters':[]} for i in range(1,26)]}
         (project/'j4_shots.json').write_text(json.dumps(shots),encoding='utf-8')
-        catalog=Catalog(folder/'asset-root',folder/'project',folder/'review.sqlite3')
+        # Read actual source-locked J4 IR/contracts; retain isolated fixture media.
+        catalog=Catalog(folder/'asset-root',BASE.parent,folder/'review.sqlite3')
         data=catalog.public();data['csrf']='test-ephemeral'
         pagehtml=(ROOT/'index.html').read_text(encoding='utf-8')
         pagehtml=pagehtml.replace('<link rel="stylesheet" href="/style.css">',
@@ -79,6 +80,12 @@ def exercise(outdir:Path):
                     page.locator('button[data-tab="test"]').click()
                     page.locator('#run-verified-test').click()
                     page.wait_for_function("document.querySelector('#test-result').textContent.includes('PASS')")
+                    page.locator('button[data-tab="art"]').click()
+                    assert page.locator('.item-row').count()==6
+                    assert 'S02' in page.locator('#item-name').inner_text()
+                    assert 'REJECTED_BY_OBSERVATION' in page.locator('#details-area').inner_text() or 'REJECTED' in page.locator('#details-area').inner_text()
+                    assert 'P0 semantic acceptance' in page.locator('#details-area').inner_text()
+                    page.screenshot(path=str(outdir/'g2-art-desktop.png'),full_page=False)
                     page.locator('button[data-tab="shot"]').click()
                 else:
                     page.locator('#menu-toggle').click()
@@ -86,6 +93,11 @@ def exercise(outdir:Path):
                     page.locator('.item-row').nth(1).click()
                     assert 'S02' in page.locator('#item-name').inner_text()
                     assert page.evaluate('document.documentElement.scrollWidth <= innerWidth+2')
+                    page.locator('#menu-toggle').click()
+                    page.locator('button[data-tab="art"]').click()
+                    assert page.locator('.item-row').count()==6
+                    assert page.evaluate('document.documentElement.scrollWidth <= innerWidth+2')
+                    page.screenshot(path=str(outdir/'g2-art-mobile.png'),full_page=False)
                 page.screenshot(path=str(outdir/f'review-{device}.png'),full_page=False)
                 assert not errors,errors
                 page.close()
