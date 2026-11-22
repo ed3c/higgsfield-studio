@@ -47,6 +47,13 @@ class ArtRepairTests(unittest.TestCase):
             self.assertIn(self.registry["canonical"][shot_id]["image_prompt"], payload["prompt"])
             self.assertIn(self.registry["master"]["master_image_lock"], payload["prompt"])
             self.assertIn(self.registry["master"]["global_negative_prompt"], payload["prompt"])
+            for key, source in (("source_motion_prompt", "motion_prompt"),
+                                ("source_sound_prompt", "sound_prompt"),
+                                ("in_transition", "in_transition"),
+                                ("out_transition", "out_transition")):
+                self.assertEqual(payload[key], self.registry["canonical"][shot_id][source])
+            self.assertEqual(payload["props"], self.registry["canonical"][shot_id]["props"])
+            self.assertEqual(payload["characters"], self.registry["canonical"][shot_id]["characters"])
             self.assertEqual(payload, compile_shot(self.registry, shot_id))
             self.assertEqual(len(payload["payload_sha256"]), 64)
 
