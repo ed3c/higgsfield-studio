@@ -1,0 +1,211 @@
+{
+  "schema": "j4.reviewed-six-rejections.v1",
+  "state": "FORENSIC_NOT_MEDIA_VERIFIED",
+  "target": "six-panel user-submitted contact sheet",
+  "cases": [
+    {
+      "shot_id": "S02",
+      "candidate_id": "contact-sheet-2026-11-23-S02",
+      "producer": "UNKNOWN_EXTERNAL_GENERATOR",
+      "reviewer": "initial_visual_review_from_user_supplied_contact_sheet",
+      "media_type": "still",
+      "media_path": null,
+      "media_sha256": null,
+      "data_origin": "annotated_visual_observations_from_uploaded_six_panel_image_not_persisted_in_Git",
+      "source_image_integrity": "NOT_VERIFIED_BY_MACHINE",
+      "model": "UNKNOWN",
+      "seed": "UNKNOWN",
+      "exact_sent_prompt": "NOT_AVAILABLE",
+      "notes": "These annotations document visible rejection cues, not certified output provenance or an automated visual detector. Never count as a completed visual QA PASS.",
+      "observations": {
+        "S02.BOWL_TRANSFER": {
+          "observed": false,
+          "evidence_uri": "user-chat-image:2026-11-23/panel-S02",
+          "observed_by": "human_guided_review",
+          "confidence": "qualitative"
+        },
+        "S02.CROWD_ONLY": {
+          "observed": true,
+          "evidence_uri": "user-chat-image:2026-11-23/panel-S02",
+          "observed_by": "human_guided_review",
+          "confidence": "qualitative"
+        }
+      }
+    },
+    {
+      "shot_id": "S04",
+      "candidate_id": "contact-sheet-2026-11-23-S04",
+      "producer": "UNKNOWN_EXTERNAL_GENERATOR",
+      "reviewer": "initial_visual_review_from_user_supplied_contact_sheet",
+      "media_type": "still",
+      "media_path": null,
+      "media_sha256": null,
+      "data_origin": "annotated_visual_observations_from_uploaded_six_panel_image_not_persisted_in_Git",
+      "source_image_integrity": "NOT_VERIFIED_BY_MACHINE",
+      "model": "UNKNOWN",
+      "seed": "UNKNOWN",
+      "exact_sent_prompt": "NOT_AVAILABLE",
+      "notes": "These annotations document visible rejection cues, not certified output provenance or an automated visual detector. Never count as a completed visual QA PASS.",
+      "observations": {
+        "S04.METAL_FIRST": {
+          "observed": false,
+          "evidence_uri": "user-chat-image:2026-11-23/panel-S04",
+          "observed_by": "human_guided_review",
+          "confidence": "qualitative"
+        },
+        "S04.ORNATE_FULL_BIRD": {
+          "observed": true,
+          "evidence_uri": "user-chat-image:2026-11-23/panel-S04",
+          "observed_by": "human_guided_review",
+          "confidence": "qualitative"
+        }
+      }
+    },
+    {
+      "shot_id": "S06",
+      "candidate_id": "contact-sheet-2026-11-23-S06",
+      "producer": "UNKNOWN_EXTERNAL_GENERATOR",
+      "reviewer": "initial_visual_review_from_user_supplied_contact_sheet",
+      "media_type": "still",
+      "media_path": null,
+      "media_sha256": null,
+      "data_origin": "annotated_visual_observations_from_uploaded_six_panel_image_not_persisted_in_Git",
+      "source_image_integrity": "NOT_VERIFIED_BY_MACHINE",
+      "model": "UNKNOWN",
+      "seed": "UNKNOWN",
+      "exact_sent_prompt": "NOT_AVAILABLE",
+      "notes": "These annotations document visible rejection cues, not certified output provenance or an automated visual detector. Never count as a completed visual QA PASS.",
+      "observations": {
+        "S06.ONE_CONTIGUOUS_SPACE": {
+          "observed": false,
+          "evidence_uri": "user-chat-image:2026-11-23/panel-S06",
+          "observed_by": "human_guided_review",
+          "confidence": "qualitative"
+        },
+        "S06.SPLIT_COMPOSITION": {
+          "observed": true,
+          "evidence_uri": "user-chat-image:2026-11-23/panel-S06",
+          "observed_by": "human_guided_review",
+          "confidence": "qualitative"
+        },
+        "S06.LAMP_HANDOFF": {
+          "observed": false,
+          "evidence_uri": "user-chat-image:2026-11-23/panel-S06",
+          "observed_by": "human_guided_review",
+          "confidence": "qualitative"
+        }
+      }
+    },
+    {
+      "shot_id": "S11",
+      "candidate_id": "contact-sheet-2026-11-23-S11",
+      "producer": "UNKNOWN_EXTERNAL_GENERATOR",
+      "reviewer": "initial_visual_review_from_user_supplied_contact_sheet",
+      "media_type": "still",
+      "media_path": null,
+      "media_sha256": null,
+      "data_origin": "annotated_visual_observations_from_uploaded_six_panel_image_not_persisted_in_Git",
+      "source_image_integrity": "NOT_VERIFIED_BY_MACHINE",
+      "model": "UNKNOWN",
+      "seed": "UNKNOWN",
+      "exact_sent_prompt": "NOT_AVAILABLE",
+      "notes": "These annotations document visible rejection cues, not certified output provenance or an automated visual detector. Never count as a completed visual QA PASS.",
+      "observations": {
+        "S11.PAPER_HOUSE": {
+          "observed": false,
+          "evidence_uri": "user-chat-image:2026-11-23/panel-S11",
+          "observed_by": "human_guided_review",
+          "confidence": "qualitative"
+        },
+        "S11.NO_HOUSE_IN_FRAME": {
+          "observed": true,
+          "evidence_uri": "user-chat-image:2026-11-23/panel-S11",
+          "observed_by": "human_guided_review",
+          "confidence": "qualitative"
+        },
+        "S11.ROOF_WINDOW_GRAMMAR": {
+          "observed": false,
+          "evidence_uri": "user-chat-image:2026-11-23/panel-S11",
+          "observed_by": "human_guided_review",
+          "confidence": "qualitative"
+        }
+      }
+    },
+    {
+      "shot_id": "S13",
+      "candidate_id": "contact-sheet-2026-11-23-S13",
+      "producer": "UNKNOWN_EXTERNAL_GENERATOR",
+      "reviewer": "initial_visual_review_from_user_supplied_contact_sheet",
+      "media_type": "still",
+      "media_path": null,
+      "media_sha256": null,
+      "data_origin": "annotated_visual_observations_from_uploaded_six_panel_image_not_persisted_in_Git",
+      "source_image_integrity": "NOT_VERIFIED_BY_MACHINE",
+      "model": "UNKNOWN",
+      "seed": "UNKNOWN",
+      "exact_sent_prompt": "NOT_AVAILABLE",
+      "notes": "These annotations document visible rejection cues, not certified output provenance or an automated visual detector. Never count as a completed visual QA PASS.",
+      "observations": {
+        "S13.INDOOR_LAB": {
+          "observed": false,
+          "evidence_uri": "user-chat-image:2026-11-23/panel-S13",
+          "observed_by": "human_guided_review",
+          "confidence": "qualitative"
+        },
+        "S13.OUTDOOR_BEACH_PIANO": {
+          "observed": true,
+          "evidence_uri": "user-chat-image:2026-11-23/panel-S13",
+          "observed_by": "human_guided_review",
+          "confidence": "qualitative"
+        },
+        "S13.KEY_PRESS": {
+          "observed": false,
+          "evidence_uri": "user-chat-image:2026-11-23/panel-S13",
+          "observed_by": "human_guided_review",
+          "confidence": "qualitative"
+        }
+      }
+    },
+    {
+      "shot_id": "S14",
+      "candidate_id": "contact-sheet-2026-11-23-S14",
+      "producer": "UNKNOWN_EXTERNAL_GENERATOR",
+      "reviewer": "initial_visual_review_from_user_supplied_contact_sheet",
+      "media_type": "still",
+      "media_path": null,
+      "media_sha256": null,
+      "data_origin": "annotated_visual_observations_from_uploaded_six_panel_image_not_persisted_in_Git",
+      "source_image_integrity": "NOT_VERIFIED_BY_MACHINE",
+      "model": "UNKNOWN",
+      "seed": "UNKNOWN",
+      "exact_sent_prompt": "NOT_AVAILABLE",
+      "notes": "These annotations document visible rejection cues, not certified output provenance or an automated visual detector. Never count as a completed visual QA PASS.",
+      "observations": {
+        "S14.AUDIENCE_PRESENT": {
+          "observed": false,
+          "evidence_uri": "user-chat-image:2026-11-23/panel-S14",
+          "observed_by": "human_guided_review",
+          "confidence": "qualitative"
+        },
+        "S14.APPLAUSE_VISIBLE": {
+          "observed": false,
+          "evidence_uri": "user-chat-image:2026-11-23/panel-S14",
+          "observed_by": "human_guided_review",
+          "confidence": "qualitative"
+        },
+        "S14.EMPTY_AUDITORIUM": {
+          "observed": true,
+          "evidence_uri": "user-chat-image:2026-11-23/panel-S14",
+          "observed_by": "human_guided_review",
+          "confidence": "qualitative"
+        },
+        "S14.HERO_COSTUME": {
+          "observed": true,
+          "evidence_uri": "user-chat-image:2026-11-23/panel-S14",
+          "observed_by": "human_guided_review",
+          "confidence": "qualitative"
+        }
+      }
+    }
+  ]
+}

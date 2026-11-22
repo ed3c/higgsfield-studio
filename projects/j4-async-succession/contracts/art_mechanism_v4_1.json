@@ -1,0 +1,419 @@
+{
+  "schema": "j4.art-mechanism.v1",
+  "version": "v4.1-candidate",
+  "project": "j4-async-succession",
+  "status": "CANDIDATE_NOT_APPROVED",
+  "generation_gate": "BLOCKED",
+  "scope": {
+    "shots": [
+      "S02",
+      "S04",
+      "S06",
+      "S11",
+      "S13",
+      "S14"
+    ],
+    "reason": "six failed contact-sheet candidates, first semantic-fidelity repair vertical slice",
+    "full_25_shot_coverage": "NOT_RUN"
+  },
+  "source_locks": [
+    {
+      "role": "canonical_shot_ir",
+      "path": "projects/j4-async-succession/archive/v2_6/j4_shots.json",
+      "git_blob_sha1": "34063ed0b23479be911a3dd854252729158439b2"
+    },
+    {
+      "role": "optical_art_reference",
+      "path": "projects/j4-async-succession/archive/v3_3/conversation_text_archive.json",
+      "git_blob_sha1": "ea0d6b965efd039175f3a0560939a31403877a5e",
+      "embedded_filename": "j4_illusion_ir_v3_3.json"
+    }
+  ],
+  "review_oracle": "Independent QC Manager: deterministic declared-observation evaluation plus mandatory external media/image proof and distinct human reviewer; this is NOT automatic vision recognition",
+  "shots": [
+    {
+      "shot_id": "S02",
+      "optical_method": "REFLECTION_MATCH",
+      "artistic_question": "Does care take physical form in the exchange of food and light, rather than anonymous luminous spectacle?",
+      "primary_action": "Two fictional market customers visibly transfer one bowl hand-to-hand; the receiver accepts it while the vendor remains involved with everyday maintenance.",
+      "scene_graph": [
+        "ONE intimate Taiwan-style night-market aisle at human eye height",
+        "single vendor and two identifiable-as-separate fictional customers in the middle ground",
+        "one bowl crossing the interpersonal gap with hands in contact",
+        "wet steel directly reflecting one visible practical tungsten bulb; no external magic light",
+        "surrounding people remain context, not the hero subject"
+      ],
+      "camera": "24 mm, human height, frame prioritizes the bowl exchange; preserve negative space for real human distance",
+      "time_logic": "Video: bowl changes hands between t=1.2 and t=2.4 s. Warm specular contour at t=3.3–4.0 s can match S03, with independently plausible local source.",
+      "negative_constraints": [
+        "No postcard-wide crowd as sole subject",
+        "No hanging-light canopy used as substitute for the bowl exchange",
+        "No invented rainbow without matching physical light/source"
+      ],
+      "checks": [
+        {
+          "id": "S02.BOWL_TRANSFER",
+          "polarity": "must_exist",
+          "modality": "still",
+          "severity": "P0",
+          "criterion": "Both hands and one visibly transferring bowl appear in the usable shot frame"
+        },
+        {
+          "id": "S02.VISIBLE_LAMP_REFLECTION",
+          "polarity": "must_exist",
+          "modality": "still",
+          "severity": "P0",
+          "criterion": "A physically visible local lamp is associated with a reflection on wet steel"
+        },
+        {
+          "id": "S02.CROWD_ONLY",
+          "polarity": "must_not_exist",
+          "modality": "still",
+          "severity": "P0",
+          "criterion": "The crowd and overhead string lamps replace the required interpersonal exchange"
+        },
+        {
+          "id": "S02.S03_MATCH",
+          "polarity": "must_exist",
+          "modality": "cross_shot",
+          "severity": "P0",
+          "criterion": "Second camera angle/paired S03 comparison documents a comparable contour without shared impossible light"
+        }
+      ],
+      "references": [
+        "Rirkrit Tiravanija, untitled 1990 (pad thai): participation, not copying the event",
+        "Olafur Eliasson, Beauty: observer-angle and local light/material logic only"
+      ]
+    },
+    {
+      "shot_id": "S04",
+      "optical_method": "GESTALT_CLOSURE",
+      "artistic_question": "Can an unformed wire object be perceived as living only after a gradual change in viewpoint or focus?",
+      "primary_action": "A tiny original irregular wire-and-filament object beside a CLOSED worn child's suitcase evolves from ambiguous metal segments into a fleeting recognisable bird-like gestalt.",
+      "scene_graph": [
+        "closed small suitcase with unmarked worn surface",
+        "single weak incandescent filament, thin asymmetrical metal wire structure",
+        "three consistent construction joints, no ornamental feathers or complete sculpted wings in the first read",
+        "lamp source remains physically local and subdued"
+      ],
+      "camera": "85 mm tactile macro, sparse optical field, weak filament against subdued shadow",
+      "time_logic": "Initial frame must leave silhouette ambiguous; only focal shift or gentle rotation later allows the same physical wire to read as a bird. Preserve three identical joints for S24.",
+      "negative_constraints": [
+        "No fully finished gilded bird sculpture",
+        "No ornamental filigree wings, company-bird logo or golden mascot",
+        "No levitation or magic sparkle showing the answer from first frame"
+      ],
+      "checks": [
+        {
+          "id": "S04.METAL_FIRST",
+          "polarity": "must_exist",
+          "modality": "still",
+          "severity": "P0",
+          "criterion": "At the beginning the subject visibly reads as irregular assembled wire, not a completed bird statue"
+        },
+        {
+          "id": "S04.THREE_JOINTS",
+          "polarity": "must_exist",
+          "modality": "still",
+          "severity": "P0",
+          "criterion": "Three repeatable asymmetric metal junctions are observable in the geometry"
+        },
+        {
+          "id": "S04.ORNATE_FULL_BIRD",
+          "polarity": "must_not_exist",
+          "modality": "still",
+          "severity": "P0",
+          "criterion": "A polished or gilded bird silhouette is already unmistakable in the initial still"
+        },
+        {
+          "id": "S04.GESTALT_TRANSITION",
+          "polarity": "must_exist",
+          "modality": "temporal",
+          "severity": "P0",
+          "criterion": "Video establishes a later viewpoint/focus change that completes the bird reading without adding new geometry"
+        },
+        {
+          "id": "S04.S24_IDENTITY",
+          "polarity": "must_exist",
+          "modality": "cross_shot",
+          "severity": "P0",
+          "criterion": "S24 bird compares to the same three physical joints and wire proportions"
+        }
+      ],
+      "references": [
+        "Studio DRIFT, Fragile Future III: fragile handmade electronic material (no copied design)",
+        "Jim Campbell, Tilted Plane: incomplete/low-resolution perceptual recognition (no LED array copy)"
+      ]
+    },
+    {
+      "shot_id": "S06",
+      "optical_method": "FOREGROUND_BACKGROUND_REVERSAL",
+      "artistic_question": "Can the same physical scene change which lighting system seems valuable without a simplistic illustrative split?",
+      "primary_action": "A hand transfers a repairable warm paper-covered live lamp at a communal workbench; behind thick glass, a BRIGHTER SEALED TECHNICAL lighting assembly stands inaccessible.",
+      "scene_graph": [
+        "ONE continuous workshop and shared floor plane with foreground bench and deep background glass barrier",
+        "visible active exchange of a small patched paper lamp module between distinct people",
+        "sealed modern technical light with cooling condensation behind glass",
+        "background technical system does not take the form of an antique lantern or nostalgic streetlight"
+      ],
+      "camera": "35 mm deep composition; begin foreground action, use soft focus redistribution instead of picture split",
+      "time_logic": "Video: one focus/attention shift moves from human-scale repair to sealed remote system without spatial cut.",
+      "negative_constraints": [
+        "No split-screen, collage, diptych, two-panel composition or abrupt architectural discontinuity",
+        "No old street lantern as stand-in for sealed compute system",
+        "No giant lantern market as a substitute for the collaborative workbench"
+      ],
+      "checks": [
+        {
+          "id": "S06.ONE_CONTIGUOUS_SPACE",
+          "polarity": "must_exist",
+          "modality": "still",
+          "severity": "P0",
+          "criterion": "Foreground shared workbench and sealed background device coexist in ONE continuous physical composition"
+        },
+        {
+          "id": "S06.LAMP_HANDOFF",
+          "polarity": "must_exist",
+          "modality": "still",
+          "severity": "P0",
+          "criterion": "A small repairable lamp is visibly being passed between human hands"
+        },
+        {
+          "id": "S06.SEALED_TECH_LIGHT",
+          "polarity": "must_exist",
+          "modality": "still",
+          "severity": "P0",
+          "criterion": "Behind glass is a brighter sealed technical light source with believable cooling apparatus"
+        },
+        {
+          "id": "S06.SPLIT_COMPOSITION",
+          "polarity": "must_not_exist",
+          "modality": "still",
+          "severity": "P0",
+          "criterion": "The result is a side-by-side split image, diptych or unconnected street scenes"
+        },
+        {
+          "id": "S06.FOCUS_REVERSAL",
+          "polarity": "must_exist",
+          "modality": "temporal",
+          "severity": "P0",
+          "criterion": "Video uses a single contiguous scene to shift focus between two systems"
+        }
+      ],
+      "references": [
+        "Felix Gonzalez-Torres, Untitled (Placebo): take/renew/participation (no candy pile)",
+        "Dan Graham, Two-way Mirror Cylinder inside Cube and a Video Salon: distributed viewing not copied structure"
+      ]
+    },
+    {
+      "shot_id": "S11",
+      "optical_method": "SCALE_AND_ATTENTION_SHIFT",
+      "artistic_question": "Can a barely-noticed, handmade paper object retrospectively reframe a monumental automated factory?",
+      "primary_action": "Show an orderly, functioning fictional electronics line where vacant BLUE stools retain folded work gloves and ONE unfinished small paper house with a distinctive offset roof fold and irregular window.",
+      "scene_graph": [
+        "24 mm low human-height perspective; credible machine line without propaganda lighting",
+        "multiple empty blue stools, hand-folded cotton gloves",
+        "small visibly HAND-FOLDED unfinished paper house ON one specific stool with offset roof crease and non-rectangular window",
+        "house must be sufficiently legible on second viewing without theatrical central spotlight"
+      ],
+      "camera": "calm low architectural frame, preserve scale contrast between machinery and human paperwork",
+      "time_logic": "Initial glance may emphasize empty machines and stools; later S22 reveals the same FOLDING GRAMMAR, not the same physical house.",
+      "negative_constraints": [
+        "No red dystopian factory horror lighting as the only storytelling mechanism",
+        "No empty stools without house",
+        "No generic folded tissue/paper scrap substituted for the paper HOUSE"
+      ],
+      "checks": [
+        {
+          "id": "S11.BLUE_STOOLS",
+          "polarity": "must_exist",
+          "modality": "still",
+          "severity": "P0",
+          "criterion": "Visible multiple empty blue stools along the production line"
+        },
+        {
+          "id": "S11.GLOVES",
+          "polarity": "must_exist",
+          "modality": "still",
+          "severity": "P0",
+          "criterion": "At least one stool shows recognizable folded work gloves"
+        },
+        {
+          "id": "S11.PAPER_HOUSE",
+          "polarity": "must_exist",
+          "modality": "still",
+          "severity": "P0",
+          "criterion": "An identifiable small unfinished paper house is visibly on a stool"
+        },
+        {
+          "id": "S11.ROOF_WINDOW_GRAMMAR",
+          "polarity": "must_exist",
+          "modality": "still",
+          "severity": "P0",
+          "criterion": "Offset roof fold and irregular window can be examined for later comparison"
+        },
+        {
+          "id": "S11.NO_HOUSE_IN_FRAME",
+          "polarity": "must_not_exist",
+          "modality": "still",
+          "severity": "P0",
+          "criterion": "The factory is shown without any identifiable miniature paper house"
+        },
+        {
+          "id": "S11.S22_FABRICATION_MATCH",
+          "polarity": "must_exist",
+          "modality": "cross_shot",
+          "severity": "P0",
+          "criterion": "S22 shares roof/window folding grammar without being the same physical paper object"
+        }
+      ],
+      "references": [
+        "Cao Fei, Whose Utopia: worker aspirations outside production quotas (no film recreation)",
+        "Liliana Porter, Untitled (with Cube - tall): scale/attention re-reading (no photo-cube copying)"
+      ]
+    },
+    {
+      "shot_id": "S13",
+      "optical_method": "MATERIAL_ROLE_REVERSAL",
+      "artistic_question": "Can precision technology and a damaged acoustic instrument communicate the loss of function using physical evidence rather than beach-disaster symbolism?",
+      "primary_action": "Inside a COASTAL PRECISION-ENGINEERING LAB, a fictional technician presses an aged salt-swollen upright piano key while a held silicon wafer reflects across the keys.",
+      "scene_graph": [
+        "upright piano INSIDE enclosed precision lab, structurally intact but with localized salt-swollen lower wood",
+        "cleanroom technical bench and inactive optical inspection rig adjacent to piano",
+        "fictional technician holds thin semiconductor wafer, not colorful plastic CD",
+        "one physically traceable reflected arc connects wafer and keys",
+        "sea is seen outside through high windows only"
+      ],
+      "camera": "35 mm fixed; simultaneous visibility of pressing finger, aged key and wafer light geometry",
+      "time_logic": "Video: keypress emits original damp mechanism click with no intact musical attack; reflected wafer contour momentarily resembles notation.",
+      "negative_constraints": [
+        "No upright piano standing on sand or in surf",
+        "No scenic white-clothed man holding an oversized rainbow disc as centerpiece",
+        "No explicit tsunami aftermath, collapsed city or copied historical instrument"
+      ],
+      "checks": [
+        {
+          "id": "S13.INDOOR_LAB",
+          "polarity": "must_exist",
+          "modality": "still",
+          "severity": "P0",
+          "criterion": "Piano and technician are inside an enclosed engineering/inspection laboratory"
+        },
+        {
+          "id": "S13.SALT_DAMAGE",
+          "polarity": "must_exist",
+          "modality": "still",
+          "severity": "P0",
+          "criterion": "Piano lower wood shows restrained plausible salt wear rather than total ruin"
+        },
+        {
+          "id": "S13.KEY_PRESS",
+          "polarity": "must_exist",
+          "modality": "still",
+          "severity": "P0",
+          "criterion": "One visible hand presses a real piano key"
+        },
+        {
+          "id": "S13.SILICON_WAFER",
+          "polarity": "must_exist",
+          "modality": "still",
+          "severity": "P0",
+          "criterion": "A plausible small semiconductor wafer is held near the keys with a reflected contour"
+        },
+        {
+          "id": "S13.OUTDOOR_BEACH_PIANO",
+          "polarity": "must_not_exist",
+          "modality": "still",
+          "severity": "P0",
+          "criterion": "The piano is standing directly on an outdoor beach/sand shoreline"
+        },
+        {
+          "id": "S13.AUDIO_KEY_FAILURE",
+          "polarity": "must_exist",
+          "modality": "audio_temporal",
+          "severity": "P0",
+          "criterion": "Video/audio preserves the mechanical key-contact sound without a conventional note"
+        }
+      ],
+      "references": [
+        "Sakamoto and Takatani, IS YOUR TIME: nature alters an instrument's physical time (no physical replica or sampling)",
+        "Rebecca Horn, Concert for Anarchy: role inversion, no hanging piano"
+      ]
+    },
+    {
+      "shot_id": "S14",
+      "optical_method": "SELF_REFLECTION_REVERSAL",
+      "artistic_question": "Who is performing if no one is on stage, but the assembled audience still applauds?",
+      "primary_action": "Camera ON an empty fictional opera stage looking OUTWARD toward an occupied auditorium; several visible seated audience members applaud while the stage retains a single unoccupied music stand.",
+      "scene_graph": [
+        "Viewpoint from the stage facing auditorium and boxes (not an audience-seat view toward a display coat)",
+        "human audience visibly seated and some hands visibly applauding",
+        "empty stage has an unoccupied music stand",
+        "asymmetric tarnished reflector catches fragmented audience silhouettes, making watchers the seen subject",
+        "some audience seats may be empty; the whole auditorium must NOT be unoccupied"
+      ],
+      "camera": "35 mm fixed from stage; spectators legible in depth, stage absence obvious",
+      "time_logic": "Video: audible spatial handclaps arise from present humans; reflection redirects attention to their own image. No performance takes place.",
+      "negative_constraints": [
+        "No ornate royal robe displayed as central hero object",
+        "No empty auditorium with no humans to clap",
+        "No visible singer, performer, musician, or central stage costume"
+      ],
+      "checks": [
+        {
+          "id": "S14.AUDIENCE_PRESENT",
+          "polarity": "must_exist",
+          "modality": "still",
+          "severity": "P0",
+          "criterion": "An identifiable audience including multiple seated human observers is clearly visible"
+        },
+        {
+          "id": "S14.APPLAUSE_VISIBLE",
+          "polarity": "must_exist",
+          "modality": "still",
+          "severity": "P0",
+          "criterion": "More than one visibly present spectator is actually applauding"
+        },
+        {
+          "id": "S14.EMPTY_STAGE",
+          "polarity": "must_exist",
+          "modality": "still",
+          "severity": "P0",
+          "criterion": "The stage has no performer, leaving an unoccupied stand as evidence"
+        },
+        {
+          "id": "S14.REFLECTION_BACK",
+          "polarity": "must_exist",
+          "modality": "still",
+          "severity": "P0",
+          "criterion": "A physical reflector returns audience silhouettes toward their own position"
+        },
+        {
+          "id": "S14.HERO_COSTUME",
+          "polarity": "must_not_exist",
+          "modality": "still",
+          "severity": "P0",
+          "criterion": "A gold robe or other elaborate costume occupies the primary theatrical focus"
+        },
+        {
+          "id": "S14.EMPTY_AUDITORIUM",
+          "polarity": "must_not_exist",
+          "modality": "still",
+          "severity": "P0",
+          "criterion": "All spectator seats are empty, making the required applauding audience impossible"
+        },
+        {
+          "id": "S14.SPATIAL_APPLAUSE",
+          "polarity": "must_exist",
+          "modality": "audio_temporal",
+          "severity": "P0",
+          "criterion": "Original spatial applause source tracks present spectators and room reverberation"
+        }
+      ],
+      "references": [
+        "Janet Cardiff and George Bures Miller, The Murder of Crows: spatial sound narrative only (no recordings)",
+        "Dan Graham, Performer/Audience/Mirror: audience becomes performer (no performance replay)"
+      ]
+    }
+  ]
+}
