@@ -1,0 +1,142 @@
+{
+ "desktop": {
+  "markdown": {
+   "item": "j4_character_prop_bible.md",
+   "details_text_len": 3790,
+   "h": 21,
+   "pre": 1,
+   "tr": 0,
+   "th": 0,
+   "script_tags_in_details": 0,
+   "snippet": "J4 Character & Prop Bible v2.6\n所有角色皆為虛構；藝術史參考只借方法，不重製。以下條目供 Shot IR、關鍵幀種子、剪輯與 QC 交叉比對。\n角色鎖\nfounder\n\nFictional adult, back/hand views only; plain charcoal coat A"
+  },
+  "json": {
+   "item": "j4_shots.json",
+   "details_text_len": 65136,
+   "h": 0,
+   "pre": 2,
+   "tr": 0,
+   "th": 0,
+   "script_tags_in_details": 0,
+   "snippet": "格式化 JSON / 10 keys\n{\n  \"project\": \"J4 ASYNC: SUCCESSION\",\n  \"version\": \"v2.6-normalized\",\n  \"status\": \"text-only draft no generation\",\n  \"aspect_ratio\": \"9:16\","
+  },
+  "csv": {
+   "item": "j4_qc_matrix.csv",
+   "details_text_len": 3610,
+   "h": 0,
+   "pre": 1,
+   "tr": 24,
+   "th": 7,
+   "script_tags_in_details": 0,
+   "snippet": "scope\tcriterion\tverification_method\tthreshold_or_gate\towner\tstatus\tevidence_uri\nGLOBAL\tContinuous 90s timeline\tParse and sum milliseconds in JSON\tEnd 90,000ms, "
+  },
+  "markdown2": {
+   "item": "j4_master_prompt_book.md",
+   "details_text_len": 41273,
+   "h": 104,
+   "pre": 79,
+   "tr": 0,
+   "th": 0,
+   "script_tags_in_details": 0,
+   "snippet": "J4《非同步：繼承》— Master Prompt Book v2.6\n25 鏡定稿內容之標準化、非逐字轉錄版本，對應本對話 v2.0–v2.5 的創作決策。此文件為 0 點文字製作；沒有生成任何媒體。\n全片影像鎖\nJ4 ASYNC: SUCCESSION — ORIGINAL MUSEUM CINEMA\n9:16 v"
+  },
+  "html_list": 14,
+  "html_items": [
+   [
+    "j4_art_illusion_review_board_v3_3.html",
+    {
+     "iframe": 1,
+     "sandbox": "allow-scripts",
+     "body_text_len": 1556
+    }
+   ],
+   [
+    "j4_cross_modal_review_board_v4_0.html",
+    {
+     "iframe": 1,
+     "sandbox": "allow-scripts",
+     "body_text_len": 1016
+    }
+   ],
+   [
+    "j4_g1_review_board_v3_1.html",
+    {
+     "iframe": 1,
+     "sandbox": "allow-scripts",
+     "body_text_len": 1094
+    }
+   ]
+  ],
+  "test_list": 4
+ },
+ "mobile": {
+  "markdown": {
+   "item": "j4_character_prop_bible.md",
+   "details_text_len": 3790,
+   "h": 21,
+   "pre": 1,
+   "tr": 0,
+   "th": 0,
+   "script_tags_in_details": 0,
+   "snippet": "J4 Character & Prop Bible v2.6\n所有角色皆為虛構；藝術史參考只借方法，不重製。以下條目供 Shot IR、關鍵幀種子、剪輯與 QC 交叉比對。\n角色鎖\nfounder\n\nFictional adult, back/hand views only; plain charcoal coat A"
+  },
+  "json": {
+   "item": "j4_shots.json",
+   "details_text_len": 65136,
+   "h": 0,
+   "pre": 2,
+   "tr": 0,
+   "th": 0,
+   "script_tags_in_details": 0,
+   "snippet": "格式化 JSON / 10 keys\n{\n  \"project\": \"J4 ASYNC: SUCCESSION\",\n  \"version\": \"v2.6-normalized\",\n  \"status\": \"text-only draft no generation\",\n  \"aspect_ratio\": \"9:16\","
+  },
+  "csv": {
+   "item": "j4_qc_matrix.csv",
+   "details_text_len": 3610,
+   "h": 0,
+   "pre": 1,
+   "tr": 24,
+   "th": 7,
+   "script_tags_in_details": 0,
+   "snippet": "scope\tcriterion\tverification_method\tthreshold_or_gate\towner\tstatus\tevidence_uri\nGLOBAL\tContinuous 90s timeline\tParse and sum milliseconds in JSON\tEnd 90,000ms, "
+  },
+  "markdown2": {
+   "item": "j4_master_prompt_book.md",
+   "details_text_len": 41273,
+   "h": 104,
+   "pre": 79,
+   "tr": 0,
+   "th": 0,
+   "script_tags_in_details": 0,
+   "snippet": "J4《非同步：繼承》— Master Prompt Book v2.6\n25 鏡定稿內容之標準化、非逐字轉錄版本，對應本對話 v2.0–v2.5 的創作決策。此文件為 0 點文字製作；沒有生成任何媒體。\n全片影像鎖\nJ4 ASYNC: SUCCESSION — ORIGINAL MUSEUM CINEMA\n9:16 v"
+  },
+  "html_list": 14,
+  "html_items": [
+   [
+    "j4_art_illusion_review_board_v3_3.html",
+    {
+     "iframe": 1,
+     "sandbox": "allow-scripts",
+     "body_text_len": 1556
+    }
+   ],
+   [
+    "j4_cross_modal_review_board_v4_0.html",
+    {
+     "iframe": 1,
+     "sandbox": "allow-scripts",
+     "body_text_len": 1016
+    }
+   ],
+   [
+    "j4_g1_review_board_v3_1.html",
+    {
+     "iframe": 1,
+     "sandbox": "allow-scripts",
+     "body_text_len": 1094
+    }
+   ]
+  ],
+  "test_list": 4
+ }
+}

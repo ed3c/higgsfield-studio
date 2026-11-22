@@ -1,0 +1,189 @@
+{
+ "health": [
+  200,
+  {
+   "state": "READY",
+   "backend": "stdlib",
+   "bind": "loopback",
+   "generation": "DISABLED"
+  }
+ ],
+ "bootstrap_keys": [
+  "available_files",
+  "counts",
+  "csrf",
+  "drive_folder",
+  "duration_ms",
+  "expected_files",
+  "frame_rate",
+  "generation_state",
+  "items",
+  "media_policy",
+  "project",
+  "provenance",
+  "server_time",
+  "shots",
+  "title"
+ ],
+ "group_counts": {
+  "resource": 267,
+  "shot": 25,
+  "manager": 17,
+  "test": 4
+ },
+ "resource_available": 267,
+ "resource_ext": {
+  "mp4": 3,
+  "jpeg": 2,
+  "py": 42,
+  "png": 16,
+  "json": 72,
+  "md": 47,
+  "csv": 50,
+  "zip": 15,
+  "html": 14,
+  "srt": 1,
+  "js": 3,
+  "txt": 2
+ },
+ "media_full": {
+  "mp4": {
+   "id": "494a1f9bdf298ccbd0",
+   "name": "IMG_7835.mp4",
+   "status": 200,
+   "ctype": "video/mp4",
+   "len": 36071278,
+   "sha256": "2bafa5fe49906c07d7c362de42924b0ba57f71b43c9257bc78512a8c4508e698",
+   "expected_sha": "2bafa5fe49906c07d7c362de42924b0ba57f71b43c9257bc78512a8c4508e698",
+   "match": true
+  },
+  "jpeg": {
+   "id": "41d9d7a744f8311328",
+   "name": "IMG_7870.jpeg",
+   "status": 200,
+   "ctype": "image/jpeg",
+   "len": 332874,
+   "sha256": "3cc06d6e55eeb086fd6cc8aae1c85b0d4e33975cd30d3f3a2573559e7c844798",
+   "expected_sha": "3cc06d6e55eeb086fd6cc8aae1c85b0d4e33975cd30d3f3a2573559e7c844798",
+   "match": true
+  },
+  "png": {
+   "id": "d10411343e2a4505b9",
+   "name": "imagegen.png",
+   "status": 200,
+   "ctype": "image/png",
+   "len": 2159471,
+   "sha256": "bf754c3ce91c1e1f483328f314e75669a706a1b69aceffa2d5b7cbdf3a7b8b32",
+   "expected_sha": "bf754c3ce91c1e1f483328f314e75669a706a1b69aceffa2d5b7cbdf3a7b8b32",
+   "match": true
+  },
+  "md": {
+   "id": "aaba94ca86f39f40ea",
+   "name": "j4_character_prop_bible.md",
+   "status": 200,
+   "ctype": "text/plain",
+   "len": 4616,
+   "sha256": "afcef0e4d27990040cadf31e83616d37432418a69fc1ceabc610523964143af5",
+   "expected_sha": "afcef0e4d27990040cadf31e83616d37432418a69fc1ceabc610523964143af5",
+   "match": true
+  },
+  "json": {
+   "id": "3dfb15710bfb3d40d1",
+   "name": "j4_budget_audit.json",
+   "status": 200,
+   "ctype": "application/json",
+   "len": 1102,
+   "sha256": "d31c6c06557b761e3bbe0f6079dd18c754d6c365b621c35a12a97110f831a01f",
+   "expected_sha": "d31c6c06557b761e3bbe0f6079dd18c754d6c365b621c35a12a97110f831a01f",
+   "match": true
+  },
+  "csv": {
+   "id": "7bba457060035d37b4",
+   "name": "j4_provenance_register.csv",
+   "status": 200,
+   "ctype": "text/csv",
+   "len": 4020,
+   "sha256": "08abdde2f3ba4438ea70ebfec45969a5dc8141452533400a3610658e6b90c525",
+   "expected_sha": "08abdde2f3ba4438ea70ebfec45969a5dc8141452533400a3610658e6b90c525",
+   "match": true
+  },
+  "html": {
+   "id": "fc864d88540494e4b4",
+   "name": "j4_previs.html",
+   "status": 200,
+   "ctype": "text/html",
+   "len": 48723,
+   "sha256": "720a19ed6866a107e60574c0e9639e2a9a8d7f459432a6dc16e3914ccf4108fa",
+   "expected_sha": "720a19ed6866a107e60574c0e9639e2a9a8d7f459432a6dc16e3914ccf4108fa",
+   "match": true
+  },
+  "zip": {
+   "id": "c786e6e314e56a2013",
+   "name": "j4_museum_v2_6_bundle.zip",
+   "status": 200,
+   "ctype": "application/zip",
+   "len": 51109,
+   "sha256": "596d86a17271e1859eaa58333ed0b29794c75724915b323cfaa6f5519c0bf4d7",
+   "expected_sha": "596d86a17271e1859eaa58333ed0b29794c75724915b323cfaa6f5519c0bf4d7",
+   "match": true
+  }
+ },
+ "range": [
+  [
+   "bytes=0-1023",
+   206,
+   "bytes 0-1023/36071278",
+   1024
+  ],
+  [
+   "bytes=20000000-20001023",
+   206,
+   "bytes 20000000-20001023/36071278",
+   1024
+  ],
+  [
+   "bytes=-1024",
+   206,
+   "bytes 36070254-36071277/36071278",
+   1024
+  ],
+  [
+   "bytes=999999999-",
+   416,
+   "bytes */36071278",
+   0
+  ]
+ ],
+ "bad_host": 403,
+ "post_no_csrf": 403,
+ "post_bad_origin": 403,
+ "writes": [],
+ "reviews_now": {
+  "494a1f9bdf298ccbd0": {
+   "item_id": "494a1f9bdf298ccbd0",
+   "decision": "DEFER",
+   "note": "grok-bot audit probe 2026-11-22",
+   "reviewer": "grok-bot-audit",
+   "timestamp": "2026-11-22T07:23:54.895554+00:00",
+   "evidence": "docs/audits"
+  },
+  "8c55f1e95b3159c56a": {
+   "item_id": "8c55f1e95b3159c56a",
+   "decision": "FAIL",
+   "note": "grok-bot audit probe 2026-11-22",
+   "reviewer": "grok-bot-audit",
+   "timestamp": "2026-11-22T07:23:54.893766+00:00",
+   "evidence": "docs/audits"
+  },
+  "9f8912ff09d703a370": {
+   "item_id": "9f8912ff09d703a370",
+   "decision": "PASS",
+   "note": "grok-bot audit probe 2026-11-22",
+   "reviewer": "grok-bot-audit",
+   "timestamp": "2026-11-22T07:23:54.891772+00:00",
+   "evidence": "docs/audits"
+  }
+ },
+ "shots": 25,
+ "managers": 17
+}
