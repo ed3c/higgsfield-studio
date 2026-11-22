@@ -214,6 +214,59 @@ class Catalog:
                     self._add('resource','extra/'+rel,extra.name,'Additional local candidate',self._type(extra),extra,
                               {'source_kind':'supplemental_candidate','source_path':'extra/'+rel,
                                'evidence_status':'NOT_RUN'})
+        # Runtime G2 candidate receipts: private/local-only, no API provider calls.
+        # The paired reviews are independent input JSON files, NOT UI PASS labels.
+        self.candidate_intake_issue=None
+        receipts_dir=extra_dir/'g2_receipts'
+        if receipts_dir.is_dir():
+            try:
+                from .art_contracts import load_contract
+                from .evidence_gate import review_candidate
+                art_registry=load_contract(self.repo)
+                for receipt_file in sorted(receipts_dir.glob('*.json'))[:200]:
+                    try:
+                        receipt=json.loads(receipt_file.read_text(encoding='utf-8'))
+                        if not isinstance(receipt,dict):
+                            raise ValueError('receipt must be JSON object')
+                        candidate_id=receipt.get('candidate_id')
+                        if (not isinstance(candidate_id,str) or
+                                not re.fullmatch(r'[A-Za-z0-9][A-Za-z0-9._-]{0,99}',candidate_id) or
+                                '..' in candidate_id):
+                            raise ValueError('unsafe candidate ID')
+                        review_dir=extra_dir/'g2_reviews'/candidate_id
+                        reports=[]
+                        if review_dir.is_dir():
+                            reports=[json.loads(p.read_text(encoding='utf-8'))
+                                     for p in sorted(review_dir.glob('*.json'))[:3]]
+                        result=review_candidate(art_registry,self.assets,receipt,reports)
+                        out=receipt.get('output',{})
+                        rel=out.get('relative_path') if isinstance(out,dict) else None
+                        media=next((entry for entry in self.entries.values()
+                                    if entry['group']=='resource' and entry['key']==rel),None)
+                        receipt_ref=next((entry for entry in self.entries.values()
+                                         if entry['group']=='resource' and entry.get('path')==receipt_file),None)
+                        self._add('candidate',candidate_id,
+                            str(receipt.get('shot_id','?'))+' · '+candidate_id,
+                            result.get('state','BLOCKED'),'candidate',None,{
+                              'candidate_id':candidate_id,
+                              'shot_id':receipt.get('shot_id'),
+                              'model':receipt.get('model'),
+                              'provider':receipt.get('provider'),
+                              'media_resource_id':media['id'] if media else None,
+                              'receipt_resource_id':receipt_ref['id'] if receipt_ref else None,
+                              'report':result,
+                              'candidate_media_type':out.get('media_type') if isinstance(out,dict) else None,
+                              'generation_gate':'BLOCKED'})
+                    except (ValueError,KeyError,OSError) as exc:
+                        self._add('candidate','invalid-'+receipt_file.name,
+                            'Invalid receipt · '+receipt_file.name,
+                            'BLOCKED / cannot decode evidence',
+                            'candidate',None,{
+                              'candidate_id':receipt_file.name,
+                              'report':{'state':'BLOCKED_INVALID_RECEIPT',
+                                        'errors':[str(exc)]},'generation_gate':'BLOCKED'})
+            except (ValueError,KeyError,OSError) as exc:
+                self.candidate_intake_issue=str(exc)
         self.reviews=self.store.get_all()
 
     def _find_shots(self):
@@ -419,7 +472,7 @@ class Handler(BaseHTTPRequestHandler):
             if self.path=='/api/review':
                 item_id=body.get('item_id','')
                 if item_id not in self.app.entries:raise ValueError('unknown item')
-                if self.app.entries[item_id]['group']=='art' and body.get('decision')=='PASS':
+                if self.app.entries[item_id]['group'] in ('art','candidate') and body.get('decision')=='PASS':
                     raise ValueError('G2 art contract cannot be marked PASS without independent image and director evidence')
                 result=self.app.store.put(item_id,body.get('decision','NOT_RUN'),
                     body.get('note',''),body.get('reviewer','local-reviewer'),body.get('evidence',''))
