@@ -13,6 +13,7 @@ import io
 import json
 import mimetypes
 import os
+import re
 import secrets
 import shutil
 import sqlite3
@@ -179,9 +180,32 @@ class Catalog:
             sid=s['id'];title=s.get('title_zh',sid)
             self._add('shot',sid,f'{sid} · {title}',f"{s['start_ms']/1000:.1f}–{s['end_ms']/1000:.1f}s · {s.get('title_en','')}",'shot',None,
                       {'shot':s,'time':s['start_ms'],'art':s.get('art_reference',{}),'status':s.get('review_state','NOT_RUN')})
+        # Art contract review is a distinct evidence layer, never a source of
+        # generation authority or pixel-recognition PASS.
+        self.art_contract_error = None
+        art_contract = (self.repo/'projects'/self.project/'contracts'/'art_mechanism_v4_1.json')
+        if art_contract.is_file():
+            try:
+                from .art_contracts import load_contract, compile_shot, judge_observations
+                r = load_contract(self.repo)
+                report_path=(self.repo/'projects'/self.project/'qc'/'six_panel_observations_v4_1.json')
+                cases=json.loads(report_path.read_text(encoding='utf-8'))['cases']
+                observed={c['shot_id']:c for c in cases}
+                for p in r['contract']['shots']:
+                    sid=p['shot_id']
+                    report=judge_observations(r,observed[sid])
+                    compiled=compile_shot(r,sid)
+                    self._add('art',sid,'G2 Optical · '+sid+' · '+p['optical_method'],
+                        'Source-locked art mechanism; human observation, no media proof',
+                        'art_contract',None,{
+                          'shot_id':sid,'profile':p,'compiled':compiled,
+                          'report':report,'art_url':r['optical'][sid]['source_url'],
+                          'source_contract_sha256':r['contract_sha256']})
+            except (ValueError,KeyError,FileNotFoundError) as exc:
+                self.art_contract_error=str(exc)
         for m in MANAGERS:
             self._add('manager',m,m.replace('_',' ').title()+' Manager','Independent domain authority and handoff','manager',None,{'domain':m})
-        for tid,label in [('core_contract','Manager contract tests'),('budget','Existing budget regression'),('inventory','Local media inventory SHA-256'),('shot_timeline','Shot timecode and continuity')]:
+        for tid,label in [('core_contract','Manager contract tests'),('budget','Existing budget regression'),('inventory','Local media inventory SHA-256'),('shot_timeline','Shot timecode and continuity'),('art_contract','Six-shot G2 art mechanism and expected-rejection contract')]:
             self._add('test',tid,label,'Read-only test, no media generation','test',None,{'test_id':tid})
         extra_dir=self.assets/'extra'
         if extra_dir.is_dir():
@@ -191,6 +215,59 @@ class Catalog:
                     self._add('resource','extra/'+rel,extra.name,'Additional local candidate',self._type(extra),extra,
                               {'source_kind':'supplemental_candidate','source_path':'extra/'+rel,
                                'evidence_status':'NOT_RUN'})
+        # Runtime G2 candidate receipts: private/local-only, no API provider calls.
+        # The paired reviews are independent input JSON files, NOT UI PASS labels.
+        self.candidate_intake_issue=None
+        receipts_dir=extra_dir/'g2_receipts'
+        if receipts_dir.is_dir():
+            try:
+                from .art_contracts import load_contract
+                from .evidence_gate import review_candidate
+                art_registry=load_contract(self.repo)
+                for receipt_file in sorted(receipts_dir.glob('*.json'))[:200]:
+                    try:
+                        receipt=json.loads(receipt_file.read_text(encoding='utf-8'))
+                        if not isinstance(receipt,dict):
+                            raise ValueError('receipt must be JSON object')
+                        candidate_id=receipt.get('candidate_id')
+                        if (not isinstance(candidate_id,str) or
+                                not re.fullmatch(r'[A-Za-z0-9][A-Za-z0-9._-]{0,99}',candidate_id) or
+                                '..' in candidate_id):
+                            raise ValueError('unsafe candidate ID')
+                        review_dir=extra_dir/'g2_reviews'/candidate_id
+                        reports=[]
+                        if review_dir.is_dir():
+                            reports=[json.loads(p.read_text(encoding='utf-8'))
+                                     for p in sorted(review_dir.glob('*.json'))[:3]]
+                        result=review_candidate(art_registry,self.assets,receipt,reports)
+                        out=receipt.get('output',{})
+                        rel=out.get('relative_path') if isinstance(out,dict) else None
+                        media=next((entry for entry in self.entries.values()
+                                    if entry['group']=='resource' and entry['key']==rel),None)
+                        receipt_ref=next((entry for entry in self.entries.values()
+                                         if entry['group']=='resource' and entry.get('path')==receipt_file),None)
+                        self._add('candidate',candidate_id,
+                            str(receipt.get('shot_id','?'))+' · '+candidate_id,
+                            result.get('state','BLOCKED'),'candidate',None,{
+                              'candidate_id':candidate_id,
+                              'shot_id':receipt.get('shot_id'),
+                              'model':receipt.get('model'),
+                              'provider':receipt.get('provider'),
+                              'media_resource_id':media['id'] if media else None,
+                              'receipt_resource_id':receipt_ref['id'] if receipt_ref else None,
+                              'report':result,
+                              'candidate_media_type':out.get('media_type') if isinstance(out,dict) else None,
+                              'generation_gate':'BLOCKED'})
+                    except (ValueError,KeyError,OSError) as exc:
+                        self._add('candidate','invalid-'+receipt_file.name,
+                            'Invalid receipt · '+receipt_file.name,
+                            'BLOCKED / cannot decode evidence',
+                            'candidate',None,{
+                              'candidate_id':receipt_file.name,
+                              'report':{'state':'BLOCKED_INVALID_RECEIPT',
+                                        'errors':[str(exc)]},'generation_gate':'BLOCKED'})
+            except (ValueError,KeyError,OSError) as exc:
+                self.candidate_intake_issue=str(exc)
         self.reviews=self.store.get_all()
 
     def _find_shots(self):
@@ -220,6 +297,11 @@ class Catalog:
             clean={k:v for k,v in rec.items() if k!='path'}
             clean['review_state']=reviews.get(rec['id'],{}).get('decision','NOT_RUN')
             clean['note']=reviews.get(rec['id'],{}).get('note','')
+            if rec['group'] in ('art','candidate') and clean['review_state']=='PASS':
+                # Do not erase historical review DB records, but never display an
+                # old generic button click as real G2 evidence/rights approval.
+                clean['review_state']='DEFER'
+                clean['note']='[Historical unverified PASS suppressed] '+clean['note']
             clean['reviewer']=reviews.get(rec['id'],{}).get('reviewer','local-reviewer')
             clean['evidence']=reviews.get(rec['id'],{}).get('evidence','')
             clean['timestamp']=reviews.get(rec['id'],{}).get('timestamp','')
@@ -236,6 +318,19 @@ class Catalog:
                 'generation_state':'BLOCKED'}
 
     def run_test(self,test_id):
+        if test_id=='art_contract':
+            if self.art_contract_error:
+                return {'test':test_id,'state':'BLOCKED','reason':self.art_contract_error}
+            entries=[e for e in self.entries.values() if e['group']=='art']
+            if not entries:
+                return {'test':test_id,'state':'BLOCKED','reason':'no art mechanism contract'}
+            rejected=[e for e in entries if e['meta']['report']['state']=='REJECTED_BY_OBSERVATION']
+            ok=len(entries)==6 and len(rejected)==6
+            return {'test':test_id,'state':'PASS_STATIC' if ok else 'FAIL',
+                    'profiles':len(entries),'expected_rejected_reports':len(rejected),
+                    'visual_media_verified':0,
+                    'note':'PASS_STATIC means six supplied negative observations were rejected; it is NOT image or artwork approval.',
+                    'creative_qc':'NOT_RUN','generation':'BLOCKED'}
         if test_id=='inventory':
             errors=[];count=0
             for item in self.entries.values():
@@ -383,6 +478,8 @@ class Handler(BaseHTTPRequestHandler):
             if self.path=='/api/review':
                 item_id=body.get('item_id','')
                 if item_id not in self.app.entries:raise ValueError('unknown item')
+                if self.app.entries[item_id]['group'] in ('art','candidate') and body.get('decision')=='PASS':
+                    raise ValueError('G2 art contract cannot be marked PASS without independent image and director evidence')
                 result=self.app.store.put(item_id,body.get('decision','NOT_RUN'),
                     body.get('note',''),body.get('reviewer','local-reviewer'),body.get('evidence',''))
             elif self.path=='/api/tests/run':

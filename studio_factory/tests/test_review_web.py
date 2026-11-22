@@ -57,7 +57,7 @@ class LocalReviewTests(unittest.TestCase):
         self.assertEqual(d['counts']['manager'],17)
         self.assertEqual(d['available_files'],1)
         self.assertEqual(d['counts']['resource'],1)
-        self.assertEqual(d['counts']['test'],4)
+        self.assertEqual(d['counts']['test'],5)
         self.assertEqual(d['generation_state'],'BLOCKED')
 
     def test_range_playback_and_text(self):

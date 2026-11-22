@@ -1,5 +1,31 @@
 # Grok Bot takeover — Higgsfield Studio / J4 (2026-11-22)
 
+## G2 v4.2 candidate evidence — private local workflows
+
+- Git source: studio_factory/evidence_gate.py; studio_factory/tests/test_evidence_gate.py.
+- Contract and runbook: docs/G2_EVIDENCE_GATE_V4_2.md; docs/LOCAL_REVIEW.md.
+- On the Mac: $HOME/Higgsfield-Private/J4/extra/candidates/, g2_receipts/, g2_reviews/, g2_reports/.
+- Local review UI candidate tab: media preview, exact receipt and two independently attested static review records.
+- Never claim an uploaded six-panel montage is six authenticated provider outputs. For each shot, the exact provider prompt, output bytes, model, seed and run ID remain unknown until recovered.
+- Two reviewer names are self-attested, not cryptographically verified; neither source/hash check nor report completion is an art/rights/human Director approval.
+- Any missing provider receipt, image digest, model permission or reviewer evidence is BLOCKED. Never fabricate a provider-run ID or claim historical external approvals.
+
+---
+## G2 failed-keyframe repair — newer proposed branch (2026-11-23)
+
+- Separate Draft PR #3: https://github.com/ed3c/higgsfield-studio/pull/3
+- Repair branch: fix/j4-art-mechanism-compiler-g2-20261123 (built on PR #1, NOT main).
+- Root-cause and test contract: docs/G2_ART_REPAIR.md.
+- Six executable Art/Optical scene graphs + 33 P0 cues: projects/j4-async-succession/contracts/art_mechanism_v4_1.json.
+- Forensic observation fixture (manually labeled, NOT pixel-CV-verified): projects/j4-async-succession/qc/six_panel_observations_v4_1.json.
+- Compiler and fail-closed reported-observation oracle: studio_factory/art_contracts.py.
+- Local review site G2 tab; manual PASS blocked server-side, but actual media and Director acceptance NOT_RUN.
+- Six-panel image stored in the existing private Google Drive J4 folder under name j4_G2_failed_six_panel_2026-11-23.jpg; its original attachment SHA-256 is 262fb1137db9f29154eae611c23935885c8facfc012d3349fc9001f6195c57d9. Drive metadata/name/size/private confirmed; download hash NOT_RUN. Never publicly copy that media.
+- Actual sent prompts, model/seed, six original image outputs and individual take hashes remain unavailable. Do NOT infer exact producer cause from the human-annotated contact sheet.
+- Validate with python3 -m studio_factory.art_contracts --repo . validate and python3 -m unittest discover -s studio_factory/tests -v.
+
+---
+
 ## Scope and authority
 
 Take over the reusable creative factory and local review website, including J4 provenance and all currently available sources. This is an inspection, testing and evidence-collection handoff, not approval to pay for AI generation, publish, share private assets, or merge PR #1.
