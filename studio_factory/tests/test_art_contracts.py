@@ -97,6 +97,46 @@ class ArtRepairTests(unittest.TestCase):
             b"blob " + str(len(original) + 1).encode() + b"\x00"
             + original + b"\n").hexdigest(), expected)
 
+    def test_local_review_site_exposes_six_art_cases_with_blocked_pass(self):
+        import threading
+        import urllib.error
+        import urllib.request
+        from http.server import ThreadingHTTPServer
+        from studio_factory.review_web import Catalog, Handler
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            catalog = Catalog(root / "assets", ROOT, root / "reviews.sqlite3")
+            art = [entry for entry in catalog.entries.values() if entry["group"] == "art"]
+            self.assertEqual(len(art), 6)
+            run = catalog.run_test("art_contract")
+            self.assertEqual(run["state"], "PASS_STATIC")
+            self.assertEqual(run["expected_rejected_reports"], 6)
+            self.assertEqual(run["visual_media_verified"], 0)
+            self.assertTrue(all(a["meta"]["report"]["state"] == "REJECTED_BY_OBSERVATION"
+                                for a in art))
+            server = ThreadingHTTPServer(("127.0.0.1", 0), Handler)
+            server.app = catalog
+            server.csrf = "test-csrf"
+            worker = threading.Thread(target=server.serve_forever, daemon=True)
+            worker.start()
+            try:
+                url = f"http://127.0.0.1:{server.server_port}/api/review"
+                payload = {"item_id": art[0]["id"], "decision": "PASS",
+                           "note": "attempt to bypass independent QC",
+                           "reviewer": "fixture", "evidence": ""}
+                request = urllib.request.Request(url,
+                    data=json.dumps(payload).encode("utf-8"), method="POST",
+                    headers={"Content-Type": "application/json",
+                             "X-Review-CSRF": server.csrf})
+                with self.assertRaises(urllib.error.HTTPError) as error:
+                    urllib.request.urlopen(request, timeout=5)
+                self.assertEqual(error.exception.code, 400)
+                self.assertEqual(catalog.store.get_all(), {})
+            finally:
+                server.shutdown()
+                server.server_close()
+                worker.join(timeout=5)
+
     def test_static_still_cannot_prove_temporal_optical_success(self):
         case = dict(self.cases[1])
         case["observations"] = {}
