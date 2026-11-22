@@ -45,9 +45,11 @@ Candidate review JSON: shot_id, candidate_id, producer, independent reviewer, me
 - Negative cues from the user contact sheet: human-reported REJECTED_BY_OBSERVATION. This is a reason to stop candidate promotion, NOT an assertion that the program performed image recognition.
 - Missing real media: media_sha256_verified=false. Human image observations are not cryptographically bound to this screenshot until original bytes are provided.
 - Static image: useful to reject missing paper house, split screen, beach piano, empty seats, decorative full bird; cannot prove gradual movement, two-shot identity, audio or viewer recall. Such checks remain pending.
-- A full positive evidence package is only READY_FOR_DIRECTOR_REVIEW; it is never artistic PASS, licensing approval, or paid generation permission.
+- **Superseded by v4.2:** the original v4.1 single-observer positive review is now always `BLOCKED_V4_2_INDEPENDENT_EVIDENCE_REQUIRED`, even when its output media digest matches. Use `studio_factory/evidence_gate.py` with two independent media-bound reviewers instead. Its best possible outcome `STATIC_REVIEW_COMPLETE_TEMPORAL_NOT_RUN` also does NOT mean artistic, rights, Director or generation approval.
 - Actual producer and reviewer identity are presently self-asserted strings, not authenticated signatures. A dedicated identity/evidence layer is required before enterprise approval.
 - Rights, generated originality, director acceptance, IP similarity, model credits and actual audiovisual validation remain NOT_RUN/BLOCKED.
+
+For the exact v4.2 receipt/reviewer schemas and private local file paths, see [G2_EVIDENCE_GATE_V4_2.md](G2_EVIDENCE_GATE_V4_2.md). No web UI review PASS can approve the failed six-shot contract.
 
 ## Non-goals
 No Canonical IR overwrite, historical prompt deletion, reference-artwork copying, image upscaling, image/video generation, provider spend, real audience test, or automatic merge to main.
