@@ -214,6 +214,22 @@ class EvidenceGateTests(unittest.TestCase):
         finally:
             catalog.store.connection.close()
 
+    def test_unknown_observation_or_wrong_type_is_rejected(self):
+        a,b=self.review("A"),self.review("B")
+        a["observations"]["S14.UNDEFINED_RULE"]={"observed":True}
+        self.assertEqual(review_candidate(self.registry,self.root,self.receipt,
+                         [a,b])["state"],"BLOCKED_EVIDENCE_INVALID")
+        a,b=self.review("A"),self.review("B")
+        a["observations"]=["not","a","map"]
+        self.assertEqual(review_candidate(self.registry,self.root,self.receipt,
+                         [a,b])["state"],"BLOCKED_EVIDENCE_INVALID")
+
+    def test_boolean_seed_is_not_provenance(self):
+        data=json.loads(json.dumps(self.receipt))
+        data["seed"]=True
+        self.assertEqual(review_candidate(self.registry,self.root,data,
+                         [self.review("A"),self.review("B")])["state"],"BLOCKED_INVALID_RECEIPT")
+
     def test_reference_hash_must_match(self):
         reference=self.root/"reference.png";reference.write_bytes(pixel_png())
         data=json.loads(json.dumps(self.receipt))
