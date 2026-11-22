@@ -297,6 +297,11 @@ class Catalog:
             clean={k:v for k,v in rec.items() if k!='path'}
             clean['review_state']=reviews.get(rec['id'],{}).get('decision','NOT_RUN')
             clean['note']=reviews.get(rec['id'],{}).get('note','')
+            if rec['group'] in ('art','candidate') and clean['review_state']=='PASS':
+                # Do not erase historical review DB records, but never display an
+                # old generic button click as real G2 evidence/rights approval.
+                clean['review_state']='DEFER'
+                clean['note']='[Historical unverified PASS suppressed] '+clean['note']
             clean['reviewer']=reviews.get(rec['id'],{}).get('reviewer','local-reviewer')
             clean['evidence']=reviews.get(rec['id'],{}).get('evidence','')
             clean['timestamp']=reviews.get(rec['id'],{}).get('timestamp','')
