@@ -178,3 +178,53 @@ sw_vers; python3 --version
 | `hof05_backup_restore.log`、`hof07_zip_vs_git.log`、`parsed_sheet_csv_slots.txt`、`hof09_isolation_demo.log` | 各 HOF 佐證 |
 
 box 私有檔雜湊（未提交）：`reviews.sqlite3` `352a9bb23c329c5a9bf235baf56917358b5b64b03f1a11d261fadae9c3cdb721`、`registry.sqlite3`（seed 後）`5f06fcdfeee20eb6ed5e56f603dc56426d79062ae7d39daf00e444ca88fe346f`。box 審核 DB 中有 5 筆稽核探針決策（reviewer=`grok-bot-audit*`），只存在 box，不代表任何真實人審。
+
+---
+
+## Addendum 3：在 box 上用 Linux Chrome 做 GUI 稽核（2026-11-22 22:45–22:52 Asia/Taipei）
+
+> 這段是追加內容，前面各節都沒有改。測試是在 Grok Bot 電腦（box）上用 **Linux Chrome** 做的，**不是 Safari**，也不是 Neon 的 Mac。截圖裡有 Neon 的原始影像，所以沒有提交。
+
+**伺服器設定**
+- 程式：worktree `/workspace/hs-pr1`，HEAD `f564073f64bf1298ae82e08167b474a97a87496b`
+- 素材：`/workspace/j4-assets/J4`，267 個檔，已驗證雜湊
+- 審核資料庫：`/workspace/j4-assets/reviews.gui-audit.sqlite3`，稽核前是全新的空資料庫
+- 位址：只綁本機 `127.0.0.1:8765`
+- 第一階段 PID 439057；第二階段重啟後 PID 448077
+
+### 第一階段：GUI 操作（全部 PASS）
+
+| # | 檢查 | 結果 | 狀態 |
+| --- | --- | --- | --- |
+| 1 | 計數 | 25 鏡、267 素材、21 可播放媒體、14 審核頁、17 Managers、4 個測試、全部 313 | PASS |
+| 2 | 影片 | IMG_7835（0:58）可以播放，拖到 0:42 正常。IMG_7836（0:14）和 IMG_7876（0:29）可以播放。影片沒有靜音，但 agent 聽不到聲音。小問題：播放時時間顯示有時會停在 0:00 | PASS |
+| 3 | 檔案檢視 | jpeg 完整顯示、沒有裁切；Markdown 的標題和 pre 區塊正常；JSON 有格式化（30 個鍵）；CSV 顯示為表格 | PASS |
+| 4 | 歷史 HTML | `j4_art_illusion_review_board_v3_3.html` 在 iframe 裡顯示，S01–S05 下拉選單能用 | PASS |
+| 5 | 審核寫入 | S02 標 PASS、art_direction 標 FAIL、IMG_7835.mp4 標 DEFER，備註都填 `gui-audit`；重新整理後三筆都還在 | PASS |
+| 6 | 手機寬度 400px | 漢堡選單能用、影片能播、沒有水平捲動 | PASS |
+
+Console 只有一個錯誤：`favicon.ico` 回 404。
+
+### 第二階段：伺服器重啟後的持久化（PASS）
+
+伺服器重啟後（新 PID 448077）做強制重新整理。「已審核」計數顯示 3，三筆決策都還在，時間戳是 14:49:15Z、14:49:29Z、14:49:37Z（台北時間 22:49:15、22:49:29、22:49:37）。
+
+另外用 sqlite 直接查 `reviews` 資料表，確認有這 3 列：
+
+| item_id | 決策 | 備註 | 時間（UTC） |
+| --- | --- | --- | --- |
+| `6bbe131773f31f3bee` | PASS | gui-audit | 2026-11-22T14:49:15.508644+00:00 |
+| `72f41faf9c21cb1bb5` | FAIL | gui-audit | 2026-11-22T14:49:29.226947+00:00 |
+| `494a1f9bdf298ccbd0` | DEFER | gui-audit | 2026-11-22T14:49:37.010735+00:00 |
+
+這 3 筆都是稽核用的測試決策，不代表有人真的審過。
+
+### 對 HOF 矩陣的影響
+
+這次的結果記為 **box Chrome 的 GUI 與持久化證據**，HOF 狀態都不變：
+- **HOF-03：** 仍是 BLOCKED。機器能驗的部分現在有三份證據：box 的 Playwright、Mac 的 headless Chrome、box 的 GUI Chrome。還缺 Safari 實測，以及 Neon 本人在 Mac 上確認畫面和聲音。
+- **HOF-12：** 仍是 BLOCKED。Linux Chrome 和 macOS Chrome 的 H.264/AAC 播放都正常，但 Safari 和 iPhone 還沒測，也還沒有人確認聲音。
+
+計數（同附錄 2）：PASS 3（01、02、04）· FAIL 2（07、09）· BLOCKED 4（03、05、06、12）· NOT_RUN 3（08、10、11）。新缺陷 G-13、G-14 仍是 FAIL。
+
+新增兩個小的 UI 改善項：播放中時間顯示偶爾停在 0:00、缺少 favicon。
