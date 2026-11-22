@@ -45,6 +45,8 @@ class ArtRepairTests(unittest.TestCase):
             self.assertIn("PRIMARY ACTION:", payload["prompt"])
             self.assertIn("FORBIDDEN:", payload["prompt"])
             self.assertIn(self.registry["canonical"][shot_id]["image_prompt"], payload["prompt"])
+            self.assertIn(self.registry["master"]["master_image_lock"], payload["prompt"])
+            self.assertIn(self.registry["master"]["global_negative_prompt"], payload["prompt"])
             self.assertEqual(payload, compile_shot(self.registry, shot_id))
             self.assertEqual(len(payload["payload_sha256"]), 64)
 
