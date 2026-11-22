@@ -179,9 +179,32 @@ class Catalog:
             sid=s['id'];title=s.get('title_zh',sid)
             self._add('shot',sid,f'{sid} · {title}',f"{s['start_ms']/1000:.1f}–{s['end_ms']/1000:.1f}s · {s.get('title_en','')}",'shot',None,
                       {'shot':s,'time':s['start_ms'],'art':s.get('art_reference',{}),'status':s.get('review_state','NOT_RUN')})
+        # Art contract review is a distinct evidence layer, never a source of
+        # generation authority or pixel-recognition PASS.
+        self.art_contract_error = None
+        art_contract = (self.repo/'projects'/self.project/'contracts'/'art_mechanism_v4_1.json')
+        if art_contract.is_file():
+            try:
+                from .art_contracts import load_contract, compile_shot, judge_observations
+                r = load_contract(self.repo)
+                report_path=(self.repo/'projects'/self.project/'qc'/'six_panel_observations_v4_1.json')
+                cases=json.loads(report_path.read_text(encoding='utf-8'))['cases']
+                observed={c['shot_id']:c for c in cases}
+                for p in r['contract']['shots']:
+                    sid=p['shot_id']
+                    report=judge_observations(r,observed[sid])
+                    compiled=compile_shot(r,sid)
+                    self._add('art',sid,'G2 Optical · '+sid+' · '+p['optical_method'],
+                        'Source-locked art mechanism; human observation, no media proof',
+                        'art_contract',None,{
+                          'shot_id':sid,'profile':p,'compiled':compiled,
+                          'report':report,'art_url':r['optical'][sid]['source_url'],
+                          'source_contract_sha256':r['contract_sha256']})
+            except (ValueError,KeyError,FileNotFoundError) as exc:
+                self.art_contract_error=str(exc)
         for m in MANAGERS:
             self._add('manager',m,m.replace('_',' ').title()+' Manager','Independent domain authority and handoff','manager',None,{'domain':m})
-        for tid,label in [('core_contract','Manager contract tests'),('budget','Existing budget regression'),('inventory','Local media inventory SHA-256'),('shot_timeline','Shot timecode and continuity')]:
+        for tid,label in [('core_contract','Manager contract tests'),('budget','Existing budget regression'),('inventory','Local media inventory SHA-256'),('shot_timeline','Shot timecode and continuity'),('art_contract','Six-shot G2 art mechanism and expected-rejection contract')]:
             self._add('test',tid,label,'Read-only test, no media generation','test',None,{'test_id':tid})
         extra_dir=self.assets/'extra'
         if extra_dir.is_dir():
@@ -236,6 +259,19 @@ class Catalog:
                 'generation_state':'BLOCKED'}
 
     def run_test(self,test_id):
+        if test_id=='art_contract':
+            if self.art_contract_error:
+                return {'test':test_id,'state':'BLOCKED','reason':self.art_contract_error}
+            entries=[e for e in self.entries.values() if e['group']=='art']
+            if not entries:
+                return {'test':test_id,'state':'BLOCKED','reason':'no art mechanism contract'}
+            rejected=[e for e in entries if e['meta']['report']['state']=='REJECTED_BY_OBSERVATION']
+            ok=len(entries)==6 and len(rejected)==6
+            return {'test':test_id,'state':'PASS_STATIC' if ok else 'FAIL',
+                    'profiles':len(entries),'expected_rejected_reports':len(rejected),
+                    'visual_media_verified':0,
+                    'note':'PASS_STATIC means six supplied negative observations were rejected; it is NOT image or artwork approval.',
+                    'creative_qc':'NOT_RUN','generation':'BLOCKED'}
         if test_id=='inventory':
             errors=[];count=0
             for item in self.entries.values():
