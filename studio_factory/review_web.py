@@ -419,6 +419,8 @@ class Handler(BaseHTTPRequestHandler):
             if self.path=='/api/review':
                 item_id=body.get('item_id','')
                 if item_id not in self.app.entries:raise ValueError('unknown item')
+                if self.app.entries[item_id]['group']=='art' and body.get('decision')=='PASS':
+                    raise ValueError('G2 art contract cannot be marked PASS without independent image and director evidence')
                 result=self.app.store.put(item_id,body.get('decision','NOT_RUN'),
                     body.get('note',''),body.get('reviewer','local-reviewer'),body.get('evidence',''))
             elif self.path=='/api/tests/run':
