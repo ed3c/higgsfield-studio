@@ -244,7 +244,7 @@ def judge_observations(registry: dict, candidate: dict) -> dict:
     elif pending or not media_verified:
         state = "BLOCKED_INCOMPLETE_EVIDENCE"
     else:
-        state = "READY_FOR_DIRECTOR_REVIEW"  # not an artistic PASS
+        state = "BLOCKED_V4_2_INDEPENDENT_EVIDENCE_REQUIRED"  # v4.1 single attestation never promotes
     return {
         "schema":"studio.art-qc-review.v1",
         "shot_id":sid,"candidate_id":candidate.get("candidate_id", "unnamed"),
