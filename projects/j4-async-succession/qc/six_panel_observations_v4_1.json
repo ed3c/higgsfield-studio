@@ -207,5 +207,23 @@
         }
       }
     }
-  ]
+  ],
+  "contact_sheet_receipt": {
+    "filename": "j4_G2_failed_six_panel_2026-11-23.jpg",
+    "size_bytes": 323323,
+    "sha256": "262fb1137db9f29154eae611c23935885c8facfc012d3349fc9001f6195c57d9",
+    "storage": "private Google Drive/J4-ASYNC-SUCCESSION (unshared)",
+    "local_source_hash": "VERIFIED",
+    "drive_metadata": "NAME_SIZE_PRIVATE_CONFIRMED",
+    "drive_download_hash": "NOT_RUN",
+    "panel_to_shot": [
+      "S02",
+      "S04",
+      "S06",
+      "S11",
+      "S13",
+      "S14"
+    ],
+    "note": "Hash is for six-image contact sheet only, not individual provider render outputs. Observation cues are human text, not pixel machine detection."
+  }
 }
