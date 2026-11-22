@@ -1,0 +1,1000 @@
+{
+  "project": "J4 ASYNC: SUCCESSION",
+  "version": "v2.6-normalized",
+  "status": "text-only draft no generation",
+  "aspect_ratio": "9:16",
+  "duration_ms": 90000,
+  "master_image_lock": "J4 ASYNC: SUCCESSION — ORIGINAL MUSEUM CINEMA\n9:16 vertical fictional narrative art film; centre-safe composition for alternate widescreen.\nPhysical causality before visual spectacle. Human gestures are restrained and dignified. Camera is generally locked; 24mm architectural, 35mm relational, 50–85mm tactile. Cold mineral grey, aged ivory, charcoal, oxidised metal, weathered tungsten. Authentic water, paper, fabric, glass, optical refraction and analogue grain. Silence and negative space are constructive elements. Keep characters and recurring objects consistent with Character/Prop Bible. Never replicate uploaded image compositions, referenced art installations, film/game characters, actual politicians, identifiable real faces, brands, trademarks or real news broadcast formats. No readable in-frame writing; all titles/captions in post. No pseudo-technical floating code, choreographed spectacle, dystopian explosions or gratuitous strobes. Each shot should stand alone as a plausible gallery installation frame while carrying a causal trace from its adjacent shots.",
+  "master_sound_lock": "ORIGINAL SOUND PRINCIPLE: separate five stems (sine/electrical constant; nature/water/air; tactile labour and machines; sparse original pitched motif; voice/space). Spatial location, phase-continuous non-synchronised cycles and natural decay matter more than a conventional score. Never copy a Ryuichi Sakamoto melody, recording, chord sequence, sample or distinctive sonic signature, nor any contemporary-art installation audio. No artist names in audio-generation prompts. Distinct ambience can cross picture cuts; preserve the phase of an active/gated loop. The only intentional global interruption is at 63.700 s (S18); the sine survives. S10 deliberately interrupts one unfinished piano-like tail. Final digital boundary at 90 s must be de-clicked.",
+  "global_negative_prompt": "real person, celebrity, politician likeness, film/game character, IP costume, actual stock exchange or television network, company brand, logo, trademark, watermark, political flags and symbols, copied sculpture, copied art installation, captions, sign text, floating UI, rapid flashing, gore, weapons, overacting, bad hands, extra fingers, morphing architecture, unreal fluid dynamics, default sci-fi neon",
+  "governance": {
+    "no_paid_generation_without": "Neon explicit approval, Director posted credits estimate to AI Video Production Service, and live monthly headroom confirmation",
+    "contest": "Not eligible yet: 90s teaser < claimed 3-minute minimum; all contest permission/IP/real-person/current rules must be reverified",
+    "reference_rule": "25 contemporary-art methods are research only, not license to replicate images/audio"
+  },
+  "shots": [
+    {
+      "id": "S01",
+      "start_ms": 0,
+      "end_ms": 3000,
+      "duration_ms": 3000,
+      "act": 1,
+      "title_zh": "第一束光之前",
+      "title_en": "Before the First Light",
+      "art_reference": {
+        "artist": "Ryoji Ikeda",
+        "work": "test pattern [nº1] (2008)",
+        "transfer_method": "Signal precedes image; use no original optical patterns.",
+        "do_not_copy": true
+      },
+      "generation_mode": "editorial",
+      "image_prompt": "EDITOR ONLY. Pure absolute-black frame, with optional short fictional-allegory disclaimer composed only in editing software. No grain, particles, glowing borders, interface, or visible apparatus. The darkness is the withheld image, not a depiction of space.",
+      "motion_prompt": "0.0–0.5 absolute black and silence. 0.5–1.5 introduce low original sine. 1.5–2.5 optional tiny disclaimer; clear it before 3.0. Keep black. Human market ambience enters just before the next picture cut.",
+      "sound_prompt": "Start a continuously phase-stable sine at 0.500 s; layer distant utensils, room air and indistinct conversation just before 3.000 s. No melody, impact, or electronic startup sound.",
+      "global_image_lock_ref": "MASTER_IMAGE_V2_6",
+      "global_sound_lock_ref": "MASTER_SOUND_V2_6",
+      "negative_prompt_ref": "GLOBAL_NEGATIVE_V2_6",
+      "props": [],
+      "characters": [],
+      "in_transition": "Film opens in acoustic near-zero",
+      "out_transition": "Market audio J-cut by ~0.3 s into S02",
+      "contest_override": "Use fully fictional, non-identifiable subjects; copyright/IP/legal review required. Not a guaranteed contest eligibility determination.",
+      "review_state": "TEXT_DRAFT_NORMALIZED_NOT_GENERATED",
+      "generation_recipe": {
+        "render_provider": "editor",
+        "billable_generation": false,
+        "planned_takes": 0
+      }
+    },
+    {
+      "id": "S02",
+      "start_ms": 3000,
+      "end_ms": 7000,
+      "duration_ms": 4000,
+      "act": 1,
+      "title_zh": "被分享的光",
+      "title_en": "A Light Shared",
+      "art_reference": {
+        "artist": "Rirkrit Tiravanija",
+        "work": "untitled 1990 (pad thai) (1990)",
+        "transfer_method": "Human encounter as the artwork; do not recreate original participation scene.",
+        "do_not_copy": true
+      },
+      "generation_mode": "video",
+      "image_prompt": "A small, physically real fictional Taiwan-style night market on a humid evening. An adult vendor cooks quietly under worn awnings and irregular tungsten lamps; a bowl passes between two customers; a child rests asleep against a parent. Wet steel, steam, plastic stools and modest food stalls form layers of ordinary shared life. The camera sees relationships, not spectacular neon tourism. 24mm at human height, subdued amber and charcoal, slight moisture and authentic wear. Fictional non-identifiable people; no market signs or text.",
+      "motion_prompt": "0–1.2 vendor makes one small cooking gesture; 1.2–2.4 a bowl passes hand to hand; 2.4–3.3 steam briefly crosses a lamp; 3.3–4.0 a warm reflection travels across wet steel. Minimal forward move, horizon locked.",
+      "sound_prompt": "Seven-second market ambience cycle begins at absolute 3.0 s: bowls, food friction, steps and indistinct conversation. Phase continues across cuts while active. Persistent low sine remains beneath; no metered percussion.",
+      "global_image_lock_ref": "MASTER_IMAGE_V2_6",
+      "global_sound_lock_ref": "MASTER_SOUND_V2_6",
+      "negative_prompt_ref": "GLOBAL_NEGATIVE_V2_6",
+      "props": [
+        "market_bulb",
+        "warm_reflection"
+      ],
+      "characters": [
+        "market_ensemble"
+      ],
+      "in_transition": "Black opens on human activity",
+      "out_transition": "Warm water-light match-cuts into S03 cold optical reflection",
+      "contest_override": "Use fully fictional, non-identifiable subjects; copyright/IP/legal review required. Not a guaranteed contest eligibility determination.",
+      "review_state": "TEXT_DRAFT_NORMALIZED_NOT_GENERATED",
+      "generation_recipe": {
+        "render_provider": "Cinema Studio 4.0 720p candidate",
+        "minimum_billable_ms": 5000,
+        "planned_takes": 2,
+        "render_then_trim": true,
+        "portfolio_genjutsu_plate_candidate": false,
+        "contest_requires_original_generation": true
+      }
+    },
+    {
+      "id": "S03",
+      "start_ms": 7000,
+      "end_ms": 12000,
+      "duration_ms": 5000,
+      "act": 1,
+      "title_zh": "光的源頭",
+      "title_en": "The Source",
+      "art_reference": {
+        "artist": "Ryuichi Sakamoto × Shiro Takatani",
+        "work": "water state 1 (2013)",
+        "transfer_method": "Water-light timing and physical response; explicitly not the original water installation.",
+        "do_not_copy": true
+      },
+      "generation_mode": "video",
+      "image_prompt": "Vast silent mineral-stone chamber. Several thin, curved translucent optical membranes hang independently at irregular angles, openly spaced, with accumulating condensation. A hidden pale white source refracts through droplets into fractured floor caustics. One fictional adult founder figure appears tiny, from behind, wearing a plain charcoal work coat, hands loosely clasped. A single warm reflection touches a shoulder. No rectangular suspended water tank, cube, gallery replica, hologram or hardware billboard. 35mm locked, severe negative space and precise optical physics.",
+      "motion_prompt": "0–1.5 figure still as droplets form; 1.5–3.5 one droplet descends and its floor reflection follows with slight delay; 3.5–4.5 light reaches the person's shadow; 4.5–5.0 a warm thread appears. Cut before it stabilises.",
+      "sound_prompt": "Market ambience retreats as a distant acoustic memory; introduce isolated soft original piano tone and low room resonance. Separate droplet contact from delayed reflection cue. Leave acoustic decay crossing into S04.",
+      "global_image_lock_ref": "MASTER_IMAGE_V2_6",
+      "global_sound_lock_ref": "MASTER_SOUND_V2_6",
+      "negative_prompt_ref": "GLOBAL_NEGATIVE_V2_6",
+      "props": [
+        "optical_membranes",
+        "warm_reflection",
+        "founder_coat_A"
+      ],
+      "characters": [
+        "founder"
+      ],
+      "in_transition": "S02 reflected bulb becomes refraction",
+      "out_transition": "The warm light thread becomes S04 delicate filament",
+      "contest_override": "Use fully fictional, non-identifiable subjects; copyright/IP/legal review required. Not a guaranteed contest eligibility determination.",
+      "review_state": "TEXT_DRAFT_NORMALIZED_NOT_GENERATED",
+      "generation_recipe": {
+        "render_provider": "Cinema Studio 4.0 720p candidate",
+        "minimum_billable_ms": 5000,
+        "planned_takes": 2,
+        "render_then_trim": true,
+        "portfolio_genjutsu_plate_candidate": true,
+        "contest_requires_original_generation": true
+      }
+    },
+    {
+      "id": "S04",
+      "start_ms": 12000,
+      "end_ms": 16000,
+      "duration_ms": 4000,
+      "act": 1,
+      "title_zh": "脆弱的離開",
+      "title_en": "Fragile Departure",
+      "art_reference": {
+        "artist": "Studio DRIFT",
+        "work": "Fragile Future III",
+        "transfer_method": "Fragility of handmade electronic life; no copying dandelion LEDs.",
+        "do_not_copy": true
+      },
+      "generation_mode": "video",
+      "image_prompt": "In a dim corner beneath the market practicals, a worn 1970s-style unmarked child suitcase sits closed. An ordinary bulb hangs above; beside it a tiny irregular bird-like original wire object, handmade from sparse metal curves, with one weak incandescent filament. No ornamental wing pattern or emblem silhouette. Condensation softens the glass and a warm glint touches the suitcase clasp. 85mm macro, extraordinarily sparse material realism, handmade imperfections; avoid logo-bird resemblance or magical creature treatment.",
+      "motion_prompt": "0–1.1 tiny filament glows; 1.1–2.2 warm air gently moves the wire; 2.2–3.2 its nearly invisible support allows slight lift/rotation; 3.2–4.0 object moves just beyond frame. Do not show transformative wings or flight spectacle.",
+      "sound_prompt": "Continue S03 decay; add minute electrical crackle and wire resonance; place second isolated original motif pitch. Sink water from S05 begins underneath final tail.",
+      "global_image_lock_ref": "MASTER_IMAGE_V2_6",
+      "global_sound_lock_ref": "MASTER_SOUND_V2_6",
+      "negative_prompt_ref": "GLOBAL_NEGATIVE_V2_6",
+      "props": [
+        "filament_bird_v1",
+        "child_suitcase",
+        "market_bulb"
+      ],
+      "characters": [],
+      "in_transition": "S03 narrow warm reflection becomes heated wire",
+      "out_transition": "Wire leaves frame; water sound reveals diner sink",
+      "contest_override": "Use fully fictional, non-identifiable subjects; copyright/IP/legal review required. Not a guaranteed contest eligibility determination.",
+      "review_state": "TEXT_DRAFT_NORMALIZED_NOT_GENERATED",
+      "generation_recipe": {
+        "render_provider": "Cinema Studio 4.0 720p candidate",
+        "minimum_billable_ms": 5000,
+        "planned_takes": 2,
+        "render_then_trim": true,
+        "portfolio_genjutsu_plate_candidate": false,
+        "contest_requires_original_generation": true
+      }
+    },
+    {
+      "id": "S05",
+      "start_ms": 16000,
+      "end_ms": 20000,
+      "duration_ms": 4000,
+      "act": 1,
+      "title_zh": "維持世界的人",
+      "title_en": "Maintenance of the World",
+      "art_reference": {
+        "artist": "Mierle Laderman Ukeles",
+        "work": "Washing/Tracks/Maintenance: Inside (1973)",
+        "transfer_method": "Reveal dignity of maintenance work; not original performance documentation.",
+        "do_not_copy": true
+      },
+      "generation_mode": "video",
+      "image_prompt": "Fictional unbranded late-night roadside restaurant back kitchen. Tactile close view of anonymous adult gloved hands washing a ceramic bowl in a worn stainless sink; a clean stack and a few remaining used bowls imply an endless necessary task. Cool fluorescent water ripples reflect a small warm dining-room glow and a fractured linear highlight associated with S03. Real labour, neither heroic nor degrading; realistic wet metal, ceramic and gloves; 50mm static, no Denny’s or biographical ping-pong detail.",
+      "motion_prompt": "0–1.0 lift bowl; 1.0–2.1 turn once as water drains; 2.1–3.1 place it onto clean stack; 3.1–4.0 hands return and the water continues moving. One locked camera.",
+      "sound_prompt": "Start eleven-second maintenance ambience phase at 16 s: running water, ceramic on metal, gloves, ventilation. Third isolated motif tone enters very softly. Let ripple decay cross into S06.",
+      "global_image_lock_ref": "MASTER_IMAGE_V2_6",
+      "global_sound_lock_ref": "MASTER_SOUND_V2_6",
+      "negative_prompt_ref": "GLOBAL_NEGATIVE_V2_6",
+      "props": [
+        "sink_water",
+        "warm_reflection"
+      ],
+      "characters": [
+        "dishwasher_hands"
+      ],
+      "in_transition": "S04 fine electrical sound thins into water",
+      "out_transition": "Hand performs maintenance; S06 hand passes maintained lamp",
+      "contest_override": "Use fully fictional, non-identifiable subjects; copyright/IP/legal review required. Not a guaranteed contest eligibility determination.",
+      "review_state": "TEXT_DRAFT_NORMALIZED_NOT_GENERATED",
+      "generation_recipe": {
+        "render_provider": "Cinema Studio 4.0 720p candidate",
+        "minimum_billable_ms": 5000,
+        "planned_takes": 2,
+        "render_then_trim": true,
+        "portfolio_genjutsu_plate_candidate": false,
+        "contest_requires_original_generation": true
+      }
+    },
+    {
+      "id": "S06",
+      "start_ms": 20000,
+      "end_ms": 24000,
+      "duration_ms": 4000,
+      "act": 2,
+      "title_zh": "使用光的權利",
+      "title_en": "The Right to Light",
+      "art_reference": {
+        "artist": "Felix Gonzalez-Torres",
+        "work": "“Untitled” (Placebo) (1991)",
+        "transfer_method": "Participation, take-and-renew; no candy pile or installation form.",
+        "do_not_copy": true
+      },
+      "generation_mode": "video",
+      "image_prompt": "Fictional communal illumination workshop. At a worn worktable, fictional adults repair small individually patched paper-covered electric lamps and pass a single live lamp module between them. In deep background, behind thick glass, stands a precise sealed brighter technical light source with condensation along cooling surfaces. Both systems give useful light, but have distinct access and maintenance rules. Depth composition, not a simplistic split-screen. 35mm, aged paper, brass, mineral grey, restrained warm/cold light. No branded hardware or moral propaganda.",
+      "motion_prompt": "0–1.0 one person finishes repair; 1.0–2.0 passes module; 2.0–3.1 second person installs module in a dark paper lamp; 3.1–4.0 it glows gently, while sealed apparatus remains steady. Locked camera.",
+      "sound_prompt": "Start five-second compute/cooling phase at 20 s, maintained thereafter without phase reset. Foreground paper and contacts are irregular, background cooling a steady note. Fourth fragmentary original motif note may appear; no resolved tune.",
+      "global_image_lock_ref": "MASTER_IMAGE_V2_6",
+      "global_sound_lock_ref": "MASTER_SOUND_V2_6",
+      "negative_prompt_ref": "GLOBAL_NEGATIVE_V2_6",
+      "props": [
+        "shared_paper_lamps",
+        "sealed_lamp",
+        "warm_reflection"
+      ],
+      "characters": [
+        "workshop_adults"
+      ],
+      "in_transition": "Washing hands become lamp-passing hands",
+      "out_transition": "Technical cooling air becomes S07 artificial weather",
+      "contest_override": "Use fully fictional, non-identifiable subjects; copyright/IP/legal review required. Not a guaranteed contest eligibility determination.",
+      "review_state": "TEXT_DRAFT_NORMALIZED_NOT_GENERATED",
+      "generation_recipe": {
+        "render_provider": "Cinema Studio 4.0 720p candidate",
+        "minimum_billable_ms": 5000,
+        "planned_takes": 2,
+        "render_then_trim": true,
+        "portfolio_genjutsu_plate_candidate": false,
+        "contest_requires_original_generation": true
+      }
+    },
+    {
+      "id": "S07",
+      "start_ms": 24000,
+      "end_ms": 28000,
+      "duration_ms": 4000,
+      "act": 2,
+      "title_zh": "人造氣候",
+      "title_en": "A Manufactured Climate",
+      "art_reference": {
+        "artist": "Olafur Eliasson",
+        "work": "The weather project (2003)",
+        "transfer_method": "Manufactured atmosphere; do not recreate artificial sun/mirror.",
+        "do_not_copy": true
+      },
+      "generation_mode": "video",
+      "image_prompt": "Wide fictional high-desert compute research site in blue hour. Low elongated modules and cooling apertures track the edge of a mineral basin; small environmental sensor fibres emerge from a buried conduit, with weak travelling indicator points. Dust moves with the natural wind, while a slim condensation ribbon moves in a different direction under cooling exhaust. Tiny isolated technician far away; physically credible energy, water and weather dependence. 24mm static and desaturated, vast negative space. No sun disc, Babel tower, burning bush, flags or religious reference.",
+      "motion_prompt": "0–1.1 dust drifts; 1.1–2.2 artificial moist air emerges close to floor; 2.2–3.2 faint point travels within a sensor fibre; 3.2–4.0 cooling airflow dominates. No camera motion or storm spectacle.",
+      "sound_prompt": "Start separate thirteen-second environmental phase at 24 s. Cool-air noise from S06 becomes ambiguous desert wind; weak structural vibration, not epic desert score. Air continues as ventilation under S08.",
+      "global_image_lock_ref": "MASTER_IMAGE_V2_6",
+      "global_sound_lock_ref": "MASTER_SOUND_V2_6",
+      "negative_prompt_ref": "GLOBAL_NEGATIVE_V2_6",
+      "props": [
+        "compute_facility",
+        "sensing_fibre",
+        "artificial_air"
+      ],
+      "characters": [],
+      "in_transition": "Cooling sound reveals landscape scale",
+      "out_transition": "Exterior airflow becomes S08 institutional ventilation",
+      "contest_override": "Use fully fictional, non-identifiable subjects; copyright/IP/legal review required. Not a guaranteed contest eligibility determination.",
+      "review_state": "TEXT_DRAFT_NORMALIZED_NOT_GENERATED",
+      "generation_recipe": {
+        "render_provider": "Cinema Studio 4.0 720p candidate",
+        "minimum_billable_ms": 5000,
+        "planned_takes": 2,
+        "render_then_trim": true,
+        "portfolio_genjutsu_plate_candidate": false,
+        "contest_requires_original_generation": true
+      }
+    },
+    {
+      "id": "S08",
+      "start_ms": 28000,
+      "end_ms": 32000,
+      "duration_ms": 4000,
+      "act": 2,
+      "title_zh": "共識製造機",
+      "title_en": "The Consent Machine",
+      "art_reference": {
+        "artist": "Tino Sehgal",
+        "work": "This Situation (2007)",
+        "transfer_method": "Social consensus produced by participant behaviour; no recreation of the performance.",
+        "do_not_copy": true
+      },
+      "generation_mode": "video",
+      "image_prompt": "An austere fictional institutional rehearsal chamber, not a stock exchange. Narrow isolated acoustic alcoves hold different fictional adults in plain formal garments facing an empty low oval presentation floor. A few 1970s broadcast controls appear beyond smoked panels. One person is poised to clap; others wait, without knowing what is being celebrated. Muted ivory stone, charcoal, isolated amber lamps, 35mm fixed architectural framing, no actual podium/ceremonial bell, brand, ticker, or group photo.",
+      "motion_prompt": "0–0.9 one dry clap; 0.9–2.0 two delayed responses; 2.0–3.2 others join but do not fully synchronise; 3.2–4.0 one person remains silent briefly. No smiling or celebration. Locked camera.",
+      "sound_prompt": "Exterior S07 wind becomes enclosed ventilation. Separate human claps enter at slightly different times and spatial locations, with faint unresolved low note. Last clap decay passes into S09 fan/urban sound.",
+      "global_image_lock_ref": "MASTER_IMAGE_V2_6",
+      "global_sound_lock_ref": "MASTER_SOUND_V2_6",
+      "negative_prompt_ref": "GLOBAL_NEGATIVE_V2_6",
+      "props": [
+        "empty_podium"
+      ],
+      "characters": [
+        "ceremony_ensemble"
+      ],
+      "in_transition": "Exterior air turns into rehearsal-room HVAC",
+      "out_transition": "Institutional applause becomes individual's struggling voice",
+      "contest_override": "Use fully fictional, non-identifiable subjects; copyright/IP/legal review required. Not a guaranteed contest eligibility determination.",
+      "review_state": "TEXT_DRAFT_NORMALIZED_NOT_GENERATED",
+      "generation_recipe": {
+        "render_provider": "Cinema Studio 4.0 720p candidate",
+        "minimum_billable_ms": 5000,
+        "planned_takes": 2,
+        "render_then_trim": true,
+        "portfolio_genjutsu_plate_candidate": false,
+        "contest_requires_original_generation": true
+      }
+    },
+    {
+      "id": "S09",
+      "start_ms": 32000,
+      "end_ms": 35500,
+      "duration_ms": 3500,
+      "act": 2,
+      "title_zh": "無人接收的頻率",
+      "title_en": "The Unheard Frequency",
+      "art_reference": {
+        "artist": "Tania Bruguera",
+        "work": "Tatlin’s Whisper #6 (Havana Version) (2009)",
+        "transfer_method": "Speech as a spatial right; no direct staging or political event replay.",
+        "do_not_copy": true
+      },
+      "generation_mode": "video",
+      "image_prompt": "Fictional adult woman in a weathered deep-crimson coat under an urban concrete overhang on a wet night. She holds an original handmade acoustic horn integrated with a small computer cooling-fan housing; face wholly fictional and unrecognizable. A few distant pedestrians, one momentarily listening, occupy a quiet street without banners. 50mm human-level, faded sodium reflections on damp concrete, restrained dignity and uncertainty. No protest logos or recognizable megaphone style.",
+      "motion_prompt": "0–0.8 rain edges move; 0.8–1.7 woman raises device as fan starts; 1.7–2.7 lips move quietly and wind touches hair; 2.7–3.5 voice increasingly obscured by fan. No shouting or slogans.",
+      "sound_prompt": "S08 last clap echoes into rain and small fan whir; original fictional voice becomes indistinct under rotating air noise. Metallic fan resonance leads into S10 mesh.",
+      "global_image_lock_ref": "MASTER_IMAGE_V2_6",
+      "global_sound_lock_ref": "MASTER_SOUND_V2_6",
+      "negative_prompt_ref": "GLOBAL_NEGATIVE_V2_6",
+      "props": [
+        "marcher_coat",
+        "fan_horn"
+      ],
+      "characters": [
+        "marcher"
+      ],
+      "in_transition": "Social unison cuts to solitary speech",
+      "out_transition": "Fan housing metal contact becomes S10 sliding enclosure",
+      "contest_override": "Use fully fictional, non-identifiable subjects; copyright/IP/legal review required. Not a guaranteed contest eligibility determination.",
+      "review_state": "TEXT_DRAFT_NORMALIZED_NOT_GENERATED",
+      "generation_recipe": {
+        "render_provider": "Cinema Studio 4.0 720p candidate",
+        "minimum_billable_ms": 5000,
+        "planned_takes": 2,
+        "render_then_trim": true,
+        "portfolio_genjutsu_plate_candidate": false,
+        "contest_requires_original_generation": true
+      }
+    },
+    {
+      "id": "S10",
+      "start_ms": 35500,
+      "end_ms": 39000,
+      "duration_ms": 3500,
+      "act": 2,
+      "title_zh": "缺席的創造者",
+      "title_en": "The Absent Author",
+      "art_reference": {
+        "artist": "Doris Salcedo",
+        "work": "Atrabilious (1992–93)",
+        "transfer_method": "Absence through objects, without equating business exit with violence victims.",
+        "do_not_copy": true
+      },
+      "generation_mode": "video",
+      "image_prompt": "Institutional storage corridor. Mesh steel enclosure contains an empty plain charcoal archival work coat, variant B (shorter cut and distinctly different cuff wear from founder coat A), and ordinary undistinguished glasses. Warm lamp over aged textile; one large blurred coat shadow falls across cold wall. No portraits, ID labels, political or celebrity cues. This is an archive copy of an earlier garment, NOT the founder coat that will be worn in S17 and passed through S21. 50mm fixed, severe quiet geometry.",
+      "motion_prompt": "0–0.9 still; 0.9–1.8 gloved hand slides mesh door; 1.8–2.7 mesh shadow crosses textile; 2.7–3.5 door closes and one sleeve moves in displaced air. No ghost effect.",
+      "sound_prompt": "Thin metallic residue from S09; quiet mesh slide, fabric and small door contact. Intentional interruption of any unfinished short piano-like tail here (exception to natural decay). Metallic contact becomes S11 actuator.",
+      "global_image_lock_ref": "MASTER_IMAGE_V2_6",
+      "global_sound_lock_ref": "MASTER_SOUND_V2_6",
+      "negative_prompt_ref": "GLOBAL_NEGATIVE_V2_6",
+      "props": [
+        "archive_coat_B",
+        "plain_glasses",
+        "mesh_enclosure"
+      ],
+      "characters": [
+        "archive_hand"
+      ],
+      "in_transition": "Individual voice leaves room; only archived object remains",
+      "out_transition": "Sliding steel becomes robotic actuator",
+      "contest_override": "Use fully fictional, non-identifiable subjects; copyright/IP/legal review required. Not a guaranteed contest eligibility determination.",
+      "review_state": "TEXT_DRAFT_NORMALIZED_NOT_GENERATED",
+      "generation_recipe": {
+        "render_provider": "Cinema Studio 4.0 720p candidate",
+        "minimum_billable_ms": 5000,
+        "planned_takes": 2,
+        "render_then_trim": true,
+        "portfolio_genjutsu_plate_candidate": false,
+        "contest_requires_original_generation": true
+      }
+    },
+    {
+      "id": "S11",
+      "start_ms": 39000,
+      "end_ms": 43000,
+      "duration_ms": 4000,
+      "act": 2,
+      "title_zh": "沒有交班的工廠",
+      "title_en": "The Factory Without a Shift",
+      "art_reference": {
+        "artist": "Cao Fei",
+        "work": "Whose Utopia (2006)",
+        "transfer_method": "Worker dreams beyond factory standardization; do not reproduce the film.",
+        "do_not_copy": true
+      },
+      "generation_mode": "video",
+      "image_prompt": "Vast fictional electronics line with precise robotic arms and one-point perspective. Row of empty blue stools holds folded cotton gloves; on one stool is a tiny unfinished folded paper house (PAPER_HOUSE_ID), with pencil and offcut. No evidence of panic—work may have moved elsewhere. Cold ventilation bead slowly forms above polished concrete; muted mechanical indicator, restrained mineral tones and credible manufacturing detail. 24mm low human height. Human hopes are not described as obsolete.",
+      "motion_prompt": "0–1.0 robotic joints cycle; 1.0–2.1 assembly repeats as droplet gathers; 2.1–3.0 droplet falls; 3.0–4.0 subtle lateral camera move reveals paper house. No shutdown or alarm.",
+      "sound_prompt": "Reuse five-second compute phase from S06, without reset. Convey actuators, belt and air as layered physically timed sounds; droplet falls outside machine rhythm. Thin overtone moves into S12.",
+      "global_image_lock_ref": "MASTER_IMAGE_V2_6",
+      "global_sound_lock_ref": "MASTER_SOUND_V2_6",
+      "negative_prompt_ref": "GLOBAL_NEGATIVE_V2_6",
+      "props": [
+        "paper_house_v1",
+        "empty_blue_stools",
+        "folded_gloves",
+        "factory_arms"
+      ],
+      "characters": [],
+      "in_transition": "Storage mesh contact becomes actuator sound",
+      "out_transition": "Mechanical high overtone becomes tensioned telephone cable",
+      "contest_override": "Use fully fictional, non-identifiable subjects; copyright/IP/legal review required. Not a guaranteed contest eligibility determination.",
+      "review_state": "TEXT_DRAFT_NORMALIZED_NOT_GENERATED",
+      "generation_recipe": {
+        "render_provider": "Cinema Studio 4.0 720p candidate",
+        "minimum_billable_ms": 5000,
+        "planned_takes": 2,
+        "render_then_trim": true,
+        "portfolio_genjutsu_plate_candidate": false,
+        "contest_requires_original_generation": true
+      }
+    },
+    {
+      "id": "S12",
+      "start_ms": 43000,
+      "end_ms": 46000,
+      "duration_ms": 3000,
+      "act": 2,
+      "title_zh": "看不見的協議",
+      "title_en": "The Invisible Agreement",
+      "art_reference": {
+        "artist": "Chiharu Shiota",
+        "work": "Uncertain Journey (2016)",
+        "transfer_method": "Invisible human links visualized via one line; no red-thread nets or boats.",
+        "do_not_copy": true
+      },
+      "generation_mode": "video",
+      "image_prompt": "Empty narrow private institutional dining chamber. Two dark wood tables sit far apart. An aged muted-red lacquer telephone receiver rests on one, with one taut, physically plausible red cable crossing open floor through discrete guide loops to a destination outside frame. Unused napkin, cold teacup, one thin cable shadow, cool high-window light. 50mm static architectural emptiness. No companion character, sex/ethnic stereotype, real political meeting, dense yarn installation, or lettering.",
+      "motion_prompt": "0–0.8 still; 0.8–1.7 unseen tension pulls receiver a few millimetres; 1.7–2.4 a small vibration travels along cable; 2.4–3.0 receiver stops, cable residual movement continues.",
+      "sound_prompt": "S11 high metallic resonance leads into dry cord friction and near-empty room. Cable's small inharmonic tail is transformed by editing into S13 piano mechanism, not thriller score.",
+      "global_image_lock_ref": "MASTER_IMAGE_V2_6",
+      "global_sound_lock_ref": "MASTER_SOUND_V2_6",
+      "negative_prompt_ref": "GLOBAL_NEGATIVE_V2_6",
+      "props": [
+        "red_phone_cord"
+      ],
+      "characters": [],
+      "in_transition": "Machine vibration becomes private cable tension",
+      "out_transition": "Cable resonance becomes untuned piano mechanism",
+      "contest_override": "Use fully fictional, non-identifiable subjects; copyright/IP/legal review required. Not a guaranteed contest eligibility determination.",
+      "review_state": "TEXT_DRAFT_NORMALIZED_NOT_GENERATED",
+      "generation_recipe": {
+        "render_provider": "Cinema Studio 4.0 720p candidate",
+        "minimum_billable_ms": 5000,
+        "planned_takes": 2,
+        "render_then_trim": true,
+        "portfolio_genjutsu_plate_candidate": false,
+        "contest_requires_original_generation": true
+      }
+    },
+    {
+      "id": "S13",
+      "start_ms": 46000,
+      "end_ms": 50000,
+      "duration_ms": 4000,
+      "act": 2,
+      "title_zh": "失去音準的文明",
+      "title_en": "The Untuned",
+      "art_reference": {
+        "artist": "Ryuichi Sakamoto × Shiro Takatani",
+        "work": "IS YOUR TIME (2017)",
+        "transfer_method": "Nature and time re-tune a technical object; no literal tsunami instrument replica.",
+        "do_not_copy": true
+      },
+      "generation_mode": "video",
+      "image_prompt": "Fictional coastal precision-engineering test hall. A structurally elegant upright piano has slowly swollen at its lower woodwork through years of salt air; its aged keys face a dormant optical inspection bench. Dignified fictional elderly technician in unbranded pale cleanroom garment holds one silicon wafer; its reflected circle crosses the keys. A single tiny indicator remains alive among dormant instruments. Sea visible through tall windows, no ruined city or explicit natural-disaster reconstruction. 35mm cold mineral daylight, subtle salt marks, authentic restraint.",
+      "motion_prompt": "0–1.2 engineer tilts wafer; 1.2–2.4 presses a key that fails to return fully; 2.4–3.4 mechanism shifts faintly; 3.4–4.0 hand still as sea air moves a small strand. Locked camera.",
+      "sound_prompt": "Original wind, swollen wood, quiet key mechanism and unstable overtone, NOT a recognizable piano melody. Mechanical after-sound carries into S14 applause—a deliberate contrast between failed tone and abundant acclaim.",
+      "global_image_lock_ref": "MASTER_IMAGE_V2_6",
+      "global_sound_lock_ref": "MASTER_SOUND_V2_6",
+      "negative_prompt_ref": "GLOBAL_NEGATIVE_V2_6",
+      "props": [
+        "untuned_piano",
+        "silicon_wafer",
+        "coastal_lab"
+      ],
+      "characters": [
+        "lithographer"
+      ],
+      "in_transition": "Cable vibration becomes imperfect string overtone",
+      "out_transition": "Absent piano note juxtaposed with abundant applause",
+      "contest_override": "Use fully fictional, non-identifiable subjects; copyright/IP/legal review required. Not a guaranteed contest eligibility determination.",
+      "review_state": "TEXT_DRAFT_NORMALIZED_NOT_GENERATED",
+      "generation_recipe": {
+        "render_provider": "Cinema Studio 4.0 720p candidate",
+        "minimum_billable_ms": 5000,
+        "planned_takes": 2,
+        "render_then_trim": true,
+        "portfolio_genjutsu_plate_candidate": false,
+        "contest_requires_original_generation": true
+      }
+    },
+    {
+      "id": "S14",
+      "start_ms": 50000,
+      "end_ms": 53000,
+      "duration_ms": 3000,
+      "act": 2,
+      "title_zh": "最後的喝采",
+      "title_en": "The Last Ovation",
+      "art_reference": {
+        "artist": "Janet Cardiff × George Bures Miller",
+        "work": "The Murder of Crows (2008)",
+        "transfer_method": "Speakerless spatial narrative via sound; no borrowed 98-speaker arrangement or audio.",
+        "do_not_copy": true
+      },
+      "generation_mode": "video",
+      "image_prompt": "View from abandoned stage into monumental fictional old opera theatre: gilded private boxes with sparse composed spectators, weathered velvet, oxidized metal and an empty orchestra pit. A solitary vacant music stand receives warm spotlight; a tarnished irregular acoustic reflector distorts light in the upper wall without becoming a literal mirror of an existing artwork. Some fictional audience members begin applauding despite no performance. 35mm fixed architectural view, quiet beautiful decay, no recognizable Hunger Games Capitol design, characters, or real opera venue.",
+      "motion_prompt": "0–0.8 silent empty music stand; 0.8–1.8 applause starts in separated boxes, including audio positions with no visible people; 1.8–2.5 clapping gestures lessen as reverberation dominates; 2.5–3.0 chandelier dims fractionally. No sudden horror effect.",
+      "sound_prompt": "S13 imperfect key resonance underneath location-distant original claps, independently located balcony/empty-stage responses. Room decay outlasts bodies. Acoustic claps crossfade into S15 wood and textile shuttle sounds.",
+      "global_image_lock_ref": "MASTER_IMAGE_V2_6",
+      "global_sound_lock_ref": "MASTER_SOUND_V2_6",
+      "negative_prompt_ref": "GLOBAL_NEGATIVE_V2_6",
+      "props": [
+        "opera_coat",
+        "empty_music_stand",
+        "acoustic_reflector"
+      ],
+      "characters": [
+        "opera_audience"
+      ],
+      "in_transition": "Piano cannot properly sound, but the audience applauds",
+      "out_transition": "Applause tail is reinterpreted as weaving shuttle contact",
+      "contest_override": "Use fully fictional, non-identifiable subjects; copyright/IP/legal review required. Not a guaranteed contest eligibility determination.",
+      "review_state": "TEXT_DRAFT_NORMALIZED_NOT_GENERATED",
+      "generation_recipe": {
+        "render_provider": "Cinema Studio 4.0 720p candidate",
+        "minimum_billable_ms": 5000,
+        "planned_takes": 2,
+        "render_then_trim": true,
+        "portfolio_genjutsu_plate_candidate": false,
+        "contest_requires_original_generation": true
+      }
+    },
+    {
+      "id": "S15",
+      "start_ms": 53000,
+      "end_ms": 57000,
+      "duration_ms": 4000,
+      "act": 2,
+      "title_zh": "兩種編織未來的方法",
+      "title_en": "Two Ways of Weaving",
+      "art_reference": {
+        "artist": "Chiharu Shiota",
+        "work": "The Key in the Hand (2015)",
+        "transfer_method": "Care and memory via unfinished joining; no giant thread web/key boats.",
+        "do_not_copy": true
+      },
+      "generation_mode": "video",
+      "image_prompt": "Two fictional adult women in quiet conservation workshop work separately at a single long table. One reinforces muted terracotta fabric with one strand; the other joins several natural fibres in ivory, ochre, faded blue and mineral grey. Both incomplete pieces approach a small worn empty wooden cradle but do not meet. Fine material tension and hand skill; a tiny folded paper offcut previews S22. 50mm locked, warm sliver at cradle, natural realism. No national/ethnic symbols, birth-policy slogan or imitation of red-thread installation.",
+      "motion_prompt": "0–0.9 left hand completes one small thread pass; 0.9–1.8 right hand works separately; 1.8–2.9 independent movement with air lifting one loose strand; 2.9–4.0 textiles remain separated by a narrow gap. Locked camera.",
+      "sound_prompt": "S14 applause tail becomes textile and wood contact. Two internally different phrases can loosely refer to 7 and 13 second phases, but use local clipped fragments only. Do not restart global sound loops on shot boundary.",
+      "global_image_lock_ref": "MASTER_IMAGE_V2_6",
+      "global_sound_lock_ref": "MASTER_SOUND_V2_6",
+      "negative_prompt_ref": "GLOBAL_NEGATIVE_V2_6",
+      "props": [
+        "single_thread_textile",
+        "multicolour_textile",
+        "empty_cradle",
+        "paper_offcut"
+      ],
+      "characters": [
+        "weaver_left",
+        "weaver_right"
+      ],
+      "in_transition": "Cultural applause becomes real material work",
+      "out_transition": "Two lines of textile match-cut to two transit paths",
+      "contest_override": "Use fully fictional, non-identifiable subjects; copyright/IP/legal review required. Not a guaranteed contest eligibility determination.",
+      "review_state": "TEXT_DRAFT_NORMALIZED_NOT_GENERATED",
+      "generation_recipe": {
+        "render_provider": "Cinema Studio 4.0 720p candidate",
+        "minimum_billable_ms": 5000,
+        "planned_takes": 2,
+        "render_then_trim": true,
+        "portfolio_genjutsu_plate_candidate": false,
+        "contest_requires_original_generation": true
+      }
+    },
+    {
+      "id": "S16",
+      "start_ms": 57000,
+      "end_ms": 60500,
+      "duration_ms": 3500,
+      "act": 2,
+      "title_zh": "平行通道",
+      "title_en": "Parallel Passage",
+      "art_reference": {
+        "artist": "Rafael Lozano-Hemmer",
+        "work": "Border Tuner (2019)",
+        "transfer_method": "Human connection needs consent/participation; no existing searchlight composition.",
+        "do_not_copy": true
+      },
+      "generation_mode": "video",
+      "image_prompt": "Fictional modern logistics/transit hall with two parallel open routes. One floor-guided lane conveys compact unbranded non-humanoid autonomous parcel carriers at stable intervals. In adjacent human corridor, a few fictional adult travellers carry bags and wait for one another; one holds an old suitcase linked to S04, another studies a blank wayfinding panel. Nobody is stopped by state agents. Both lanes tend toward same distant opening but do not merge on-screen. 35mm locked, worn stone, pale ceiling strips. No borders, passports, visa claims, flags or real checkpoint.",
+      "motion_prompt": "0–0.8 one carrier passes; 0.8–1.8 second carrier follows while human pauses for companion; 1.8–2.8 suitcase handle is adjusted; 2.8–3.5 two travellers acknowledge and start walking together. No confrontation.",
+      "sound_prompt": "Transform textile phases into two kinetic pathways: mechanical motor regularity vs footsteps/breath/suitcase-wheels variation. Human-route ambience may reference eleven-second family while current phase continues. All layers accumulate into S17.",
+      "global_image_lock_ref": "MASTER_IMAGE_V2_6",
+      "global_sound_lock_ref": "MASTER_SOUND_V2_6",
+      "negative_prompt_ref": "GLOBAL_NEGATIVE_V2_6",
+      "props": [
+        "child_suitcase",
+        "transport_lane",
+        "human_lane"
+      ],
+      "characters": [
+        "travellers"
+      ],
+      "in_transition": "Thread lines become two routes",
+      "out_transition": "Ceiling route strips become light reflections",
+      "contest_override": "Use fully fictional, non-identifiable subjects; copyright/IP/legal review required. Not a guaranteed contest eligibility determination.",
+      "review_state": "TEXT_DRAFT_NORMALIZED_NOT_GENERATED",
+      "generation_recipe": {
+        "render_provider": "Cinema Studio 4.0 720p candidate",
+        "minimum_billable_ms": 5000,
+        "planned_takes": 2,
+        "render_then_trim": true,
+        "portfolio_genjutsu_plate_candidate": false,
+        "contest_requires_original_generation": true
+      }
+    },
+    {
+      "id": "S17",
+      "start_ms": 60500,
+      "end_ms": 63700,
+      "duration_ms": 3200,
+      "act": 2,
+      "title_zh": "資訊的重量",
+      "title_en": "The Weight of Information",
+      "art_reference": {
+        "artist": "Ryoji Ikeda",
+        "work": "data-verse 1 (2019)",
+        "transfer_method": "Scale and overload via physical optics and independent audio, not data graphics.",
+        "do_not_copy": true
+      },
+      "generation_mode": "video",
+      "image_prompt": "Return to S03 mineral-stone chamber, same fictional founder, same plain charcoal work coat A. Curved open optical membranes have expanded to layers and droplets react at independent rates; fractured cold reflections converge with small warm market-memory trace. Founder seen from behind opens both palms cautiously, no worship or superhero pose. Light appears complex only through real moisture/surface interactions, not codes or holograms. 35mm static, profound negative space, original optical installation distinct from uploaded water-tank reference.",
+      "motion_prompt": "0–0.7 weak reflections; 0.7–1.5 hands open as line approaches; 1.5–2.4 delayed second line arrives; 2.4–3.0 brightness becomes irregular; 3.0–3.2 subtle instability, hard cut. No flash barrage.",
+      "sound_prompt": "Highest concurrent sound density, not highest loudness: extant 7/11/5/13/19/17 second phase families masked/unmasked independently, never restart. Incomplete original motif fragments and sine below. At 63.700 s stop every independent environmental/tonal loop on single master cut, not by waiting for alignment.",
+      "global_image_lock_ref": "MASTER_IMAGE_V2_6",
+      "global_sound_lock_ref": "MASTER_SOUND_V2_6",
+      "negative_prompt_ref": "GLOBAL_NEGATIVE_V2_6",
+      "props": [
+        "optical_membranes",
+        "founder_coat_A",
+        "warm_reflection"
+      ],
+      "characters": [
+        "founder"
+      ],
+      "in_transition": "Transit light routes become delayed membrane caustics",
+      "out_transition": "All active non-sine loops forced off at 63.700s",
+      "contest_override": "Use fully fictional, non-identifiable subjects; copyright/IP/legal review required. Not a guaranteed contest eligibility determination.",
+      "review_state": "TEXT_DRAFT_NORMALIZED_NOT_GENERATED",
+      "generation_recipe": {
+        "render_provider": "Cinema Studio 4.0 720p candidate",
+        "minimum_billable_ms": 5000,
+        "planned_takes": 2,
+        "render_then_trim": true,
+        "portfolio_genjutsu_plate_candidate": true,
+        "contest_requires_original_generation": true
+      }
+    },
+    {
+      "id": "S18",
+      "start_ms": 63700,
+      "end_ms": 65000,
+      "duration_ms": 1300,
+      "act": 2,
+      "title_zh": "被強制的同步",
+      "title_en": "The Forced Consensus",
+      "art_reference": {
+        "artist": "Carsten Nicolai (alva noto)",
+        "work": "unidisplay (2011/2012)",
+        "transfer_method": "Exact negative-space perception and interruption; no monochrome pattern/installation.",
+        "do_not_copy": true
+      },
+      "generation_mode": "editorial",
+      "image_prompt": "EDITORIAL COMPOSITE rather than paid video generation. Near-black abstract original space, briefly revealing three soft low-intensity vertical light volumes at differing depths: warm ivory, neutral mineral-white and silver-grey. No people, chess kings, city, flags, national colours, grid, high-frequency flashing or throne. The volumes hint at a future unequal three-seat configuration in S19. Main image remains almost completely black.",
+      "motion_prompt": "0.00–0.25 black; 0.25–0.40 first low-intensity reveal; 0.40–0.83 black; 0.83–1.00 second dimmer reveal; 1.00–1.30 black. An accessibility alternative uses one gentle fade instead of two reveals. Cut to S19 at exactly 65.000s.",
+      "sound_prompt": "At 63.700s simultaneously stop six phase-independent sound families with micro-declick envelopes; do NOT align their phases. Continuous sine continues from S01. No impact, bass drop or sound effect for reveals. At 65s allow new quiet S19 electronics ambience.",
+      "global_image_lock_ref": "MASTER_IMAGE_V2_6",
+      "global_sound_lock_ref": "MASTER_SOUND_V2_6",
+      "negative_prompt_ref": "GLOBAL_NEGATIVE_V2_6",
+      "props": [
+        "three_abstract_light_volumes"
+      ],
+      "characters": [],
+      "in_transition": "Forced interruption, not natural 7/11/5/13/19/17s alignment",
+      "out_transition": "Match three light volumes to S19 illuminated chair positions",
+      "contest_override": "Use fully fictional, non-identifiable subjects; copyright/IP/legal review required. Not a guaranteed contest eligibility determination.",
+      "review_state": "TEXT_DRAFT_NORMALIZED_NOT_GENERATED",
+      "generation_recipe": {
+        "render_provider": "editor",
+        "billable_generation": false,
+        "planned_takes": 0
+      }
+    },
+    {
+      "id": "S19",
+      "start_ms": 65000,
+      "end_ms": 69000,
+      "duration_ms": 4000,
+      "act": 3,
+      "title_zh": "峰會前的放送",
+      "title_en": "The Broadcast Before the Summit",
+      "art_reference": {
+        "artist": "Hito Steyerl",
+        "work": "Factory of the Sun (2015)",
+        "transfer_method": "Media constructs reality; no blue-grid/game/video replication.",
+        "do_not_copy": true
+      },
+      "generation_mode": "video",
+      "image_prompt": "Entirely fictional empty late-night news-analysis studio. Smoked glass/aluminium circular discussion table with five unoccupied chairs, three near camera-axis in pale shafts and two dim at periphery. Behind, curved virtual scene shows a deliberate 3D reconstruction of Shenzhen Futian city skyline at blue hour, with obvious mild projected depth flaws and analogue noise—not a real broadcast or event. Obsolete 1970s control desk behind partition; delayed water-reflection echo along table. 35mm near symmetry, cold mineral palette, no presenter, network graphic, political leader or headline. Contest version replaces Shenzhen with a wholly fictional coastal technology city.",
+      "motion_prompt": "0–0.7 projection resolves from dark; 0.7–1.8 three pools of light rise; 1.8–3.1 skyline reflection moves a fraction later than architecture; 3.1–3.7 projected image freezes gently; 3.7–4.0 chair distribution remains unequal. No seats move, people enter or announcement occurs.",
+      "sound_prompt": "Sine persists; faint broadcast electronics and two soft original unresolved piano events, with no city ambience. Projection freeze briefly gates noise; move into close paper/glass room sound S20. No fake newscast ident.",
+      "global_image_lock_ref": "MASTER_IMAGE_V2_6",
+      "global_sound_lock_ref": "MASTER_SOUND_V2_6",
+      "negative_prompt_ref": "GLOBAL_NEGATIVE_V2_6",
+      "props": [
+        "fictional_news_roundtable",
+        "five_chairs",
+        "virtual_skyline"
+      ],
+      "characters": [],
+      "in_transition": "Three S18 light volumes become chair pool locations",
+      "out_transition": "Broadcast's constructed image becomes two incompletely preserved records",
+      "contest_override": "Replace Shenzhen with an entirely fictional unnamed coastal technology city. Remove recognizable topography and any interpretation of actual political events; do not represent as true news.",
+      "review_state": "TEXT_DRAFT_NORMALIZED_NOT_GENERATED",
+      "generation_recipe": {
+        "render_provider": "Cinema Studio 4.0 720p candidate",
+        "minimum_billable_ms": 5000,
+        "planned_takes": 2,
+        "render_then_trim": true,
+        "portfolio_genjutsu_plate_candidate": false,
+        "contest_requires_original_generation": true
+      }
+    },
+    {
+      "id": "S20",
+      "start_ms": 69000,
+      "end_ms": 72500,
+      "duration_ms": 3500,
+      "act": 3,
+      "title_zh": "缺席者的檔案",
+      "title_en": "The Archive of Absence",
+      "art_reference": {
+        "artist": "Walid Raad",
+        "work": "The Atlas Group (1989–2004)",
+        "transfer_method": "Fiction/archive ambiguity without copying war documents or testimonies.",
+        "do_not_copy": true
+      },
+      "generation_mode": "video",
+      "image_prompt": "Quiet fictional archive conservation room: at one aged oak table, left an opened folded paper archive bearing physical impressions without legible text; right a translucent upright glass pane with a different faint light-sensitive imprint. Only two careful anonymous archivists' hands visible, holding paper and glass. The light-reflection trace resembles the paper impression but never exactly matches. 50mm balanced frame, subdued warm and mineral-white light, no candles, religious ritual, cultural stereotyping, war documents or actual historical photos.",
+      "motion_prompt": "0–0.9 left hand opens paper; 0.9–1.8 glass takes reflection; 1.8–2.8 reflection crosses physical impression without alignment; 2.8–3.5 hands pause while light trace changes. No digital reconstruction.",
+      "sound_prompt": "S19 electronics recedes; dry paper, modest glass support vibration, two independent close spatial layers and soft inharmonic piano. Keep sine beneath. Paper fold decays toward S21 fabric/key.",
+      "global_image_lock_ref": "MASTER_IMAGE_V2_6",
+      "global_sound_lock_ref": "MASTER_SOUND_V2_6",
+      "negative_prompt_ref": "GLOBAL_NEGATIVE_V2_6",
+      "props": [
+        "paper_archive",
+        "translucent_glass_record"
+      ],
+      "characters": [
+        "archivist_left_hand",
+        "archivist_right_hand"
+      ],
+      "in_transition": "Constructed live city vs incomplete historical archive",
+      "out_transition": "Archive paper contact shifts into handover hands",
+      "contest_override": "Use fully fictional, non-identifiable subjects; copyright/IP/legal review required. Not a guaranteed contest eligibility determination.",
+      "review_state": "TEXT_DRAFT_NORMALIZED_NOT_GENERATED",
+      "generation_recipe": {
+        "render_provider": "Cinema Studio 4.0 720p candidate",
+        "minimum_billable_ms": 5000,
+        "planned_takes": 2,
+        "render_then_trim": true,
+        "portfolio_genjutsu_plate_candidate": false,
+        "contest_requires_original_generation": true
+      }
+    },
+    {
+      "id": "S21",
+      "start_ms": 72500,
+      "end_ms": 76500,
+      "duration_ms": 4000,
+      "act": 3,
+      "title_zh": "時間的交接",
+      "title_en": "The Transfer of Time",
+      "art_reference": {
+        "artist": "Felix Gonzalez-Torres",
+        "work": "“Untitled” (Perfect Lovers) (1987–90)",
+        "transfer_method": "Inescapable time drift, not paired clocks.",
+        "do_not_copy": true
+      },
+      "generation_mode": "video",
+      "image_prompt": "Close tactile dark fictional boardroom. An adult founder hand in a plain charcoal SHIRT sleeve passes one original undecorated brass key to a second fictional adult hand emerging from a structured frost-white formal sleeve. Both faces remain out of frame. Beyond, the empty chair already bears the founder coat A, removed off-screen during the time gap between S17 and S21. The founder is NOT wearing the coat at this moment, preventing any object teleportation. Two slightly mismatched reflections approach across the key. 85mm close focus, dark quiet table, no real-world identities.",
+      "motion_prompt": "0–0.8 key supported by founder hand; 0.8–1.8 receiving hand opens below; 1.8–2.6 handover contact; 2.6–3.3 founder sleeve withdraws; 3.3–4.0 rack focus to empty chair and coat. Founder remains in charcoal shirt sleeves throughout S21; coat A has been on chair from the start of this shot. No garment movement or teleportation.",
+      "sound_prompt": "Paper archive residual sound fades; two independent quiet breath/fabric pulses, single close brass-metal contact with decay. No clocks/ticking, victorious music or vocal narration. Metal decay leads to S22 dry paper.",
+      "global_image_lock_ref": "MASTER_IMAGE_V2_6",
+      "global_sound_lock_ref": "MASTER_SOUND_V2_6",
+      "negative_prompt_ref": "GLOBAL_NEGATIVE_V2_6",
+      "props": [
+        "handover_key",
+        "founder_coat_A",
+        "empty_chair"
+      ],
+      "characters": [
+        "founder_hand",
+        "steward_hand"
+      ],
+      "in_transition": "Two methods of archive become two human temporal rhythms",
+      "out_transition": "Hands on key match hands building paper bridge",
+      "contest_override": "Use two clearly fictional non-identifiable adult hands and generic neutral sleeves; no biographical CEO cues or company references.",
+      "review_state": "TEXT_DRAFT_NORMALIZED_NOT_GENERATED",
+      "generation_recipe": {
+        "render_provider": "Cinema Studio 4.0 720p candidate",
+        "minimum_billable_ms": 5000,
+        "planned_takes": 2,
+        "render_then_trim": true,
+        "portfolio_genjutsu_plate_candidate": false,
+        "contest_requires_original_generation": true
+      }
+    },
+    {
+      "id": "S22",
+      "start_ms": 76500,
+      "end_ms": 79500,
+      "duration_ms": 3000,
+      "act": 3,
+      "title_zh": "紙的海岸",
+      "title_en": "The Paper Shore",
+      "art_reference": {
+        "artist": "Thomas Demand",
+        "work": "Office (1996)",
+        "transfer_method": "Hand-built plausible paper reconstruction; do not reproduce his office.",
+        "do_not_copy": true
+      },
+      "generation_mode": "video",
+      "image_prompt": "Huge nearly empty fictional Japanese corporate office at night. One dignified middle-aged salaryman in a worn charcoal suit kneels to make a detailed miniature coastline, mountains, little settlements and a fragile crossing bridge using real office paper, binder clips, glue and stamps. Paper terrain spreads from table across floor; far tiny paper house (same origami method as S11, not necessarily identical physical piece) has warm unoccupied window, while real city outside is dark. A distant unbranded compact local compute device is scarcely noticed. All handmade fibres/folds credible; 35mm slightly elevated three-quarter, quiet scale and human isolation. Never replicate Death Stranding game objects, characters, or physical art models.",
+      "motion_prompt": "0–0.8 hand secures final fold of narrow paper bridge; 0.8–1.7 ventilation gently moves paper; 1.7–2.5 man steadies the crossing; 2.5–3.0 bridge stands but empty house remains distant. No paper world magical transformation.",
+      "sound_prompt": "S21 key's metal tail disappears into close paper/fingernail friction and HVAC. Original quiet felt-muted piano tone near 1.7s, intentionally off physical hand gesture; distant compute overtone not triumphant. Paper residue J-cuts S23.",
+      "global_image_lock_ref": "MASTER_IMAGE_V2_6",
+      "global_sound_lock_ref": "MASTER_SOUND_V2_6",
+      "negative_prompt_ref": "GLOBAL_NEGATIVE_V2_6",
+      "props": [
+        "paper_landscape",
+        "paper_house_v1",
+        "compact_local_compute"
+      ],
+      "characters": [
+        "salaryman"
+      ],
+      "in_transition": "Brass key transfers in a second; paper bridge remains unfinished",
+      "out_transition": "Paper friction thins into large optical chamber ambience",
+      "contest_override": "Entirely original paper geography, no game-inspired iconic cargo rigs, BB pod, porter costume, proprietary logos or real person plates.",
+      "review_state": "TEXT_DRAFT_NORMALIZED_NOT_GENERATED",
+      "generation_recipe": {
+        "render_provider": "Cinema Studio 4.0 720p candidate",
+        "minimum_billable_ms": 5000,
+        "planned_takes": 2,
+        "render_then_trim": true,
+        "portfolio_genjutsu_plate_candidate": false,
+        "contest_requires_original_generation": true
+      }
+    },
+    {
+      "id": "S23",
+      "start_ms": 79500,
+      "end_ms": 84000,
+      "duration_ms": 4500,
+      "act": 3,
+      "title_zh": "遲到的倒影",
+      "title_en": "The Delayed Reflection",
+      "art_reference": {
+        "artist": "Bill Viola",
+        "work": "The Reflecting Pool (1977–79)",
+        "transfer_method": "Human action and material reflection have different time states; no pool/jump imagery.",
+        "do_not_copy": true
+      },
+      "generation_mode": "video",
+      "image_prompt": "Final return to same S03/S17 mineral chamber. Suspended translucent optical membranes are now mostly dark, one slight refracted light remaining. Same fictional founder from behind, now in plain charcoal shirt, no coat. A narrow floor reflection retains the previous position after he steps. Two small anonymous workers in very distant passages withdraw separate cultural/technical objects: old piano on practical dolly and empty antique opera coat on rolling rack. They are background elements, not personifications of countries. 35mm locked and generous negative space; no face or copied art video.",
+      "motion_prompt": "0–1.0 founder stands and distant workers move; 1.0–2.0 one small step, light reflection lingers; 2.0–3.1 delayed reflection moves toward new position as figure lifts gaze; 3.1–4.0 objects disappear through exits; 4.0–4.5 reflection catches up, hold.",
+      "sound_prompt": "S22 paper friction decays; large chamber tone, one honest footstep, a second original electroacoustic resonance later than movement. Old Japan/Europe timbral residue may appear as new one-shots but NEVER restart pre-S18 19/17-second loops. Sine persists into S24.",
+      "global_image_lock_ref": "MASTER_IMAGE_V2_6",
+      "global_sound_lock_ref": "MASTER_SOUND_V2_6",
+      "negative_prompt_ref": "GLOBAL_NEGATIVE_V2_6",
+      "props": [
+        "optical_membranes",
+        "delayed_reflection",
+        "untuned_piano",
+        "opera_coat"
+      ],
+      "characters": [
+        "founder",
+        "distant_workers"
+      ],
+      "in_transition": "Human paper work vs quiet former creator, same hand-to-light motif",
+      "out_transition": "Delayed floor light becomes wet-pavement reflection in S24",
+      "contest_override": "Generate all fictional people and motion from scratch; no use of identifiable participant real footage or reference plate in contest master.",
+      "review_state": "TEXT_DRAFT_NORMALIZED_NOT_GENERATED",
+      "generation_recipe": {
+        "render_provider": "Cinema Studio 4.0 720p candidate",
+        "minimum_billable_ms": 5000,
+        "planned_takes": 2,
+        "render_then_trim": true,
+        "portfolio_genjutsu_plate_candidate": true,
+        "contest_requires_original_generation": true
+      }
+    },
+    {
+      "id": "S24",
+      "start_ms": 84000,
+      "end_ms": 87000,
+      "duration_ms": 3000,
+      "act": 3,
+      "title_zh": "不同步的生命",
+      "title_en": "The Return",
+      "art_reference": {
+        "artist": "Rafael Lozano-Hemmer",
+        "work": "Pulse Room (2006)",
+        "transfer_method": "Collective light from different life rhythms; no hanging heart-rate grid.",
+        "do_not_copy": true
+      },
+      "generation_mode": "video",
+      "image_prompt": "Return to same fictional intimate Taiwan-style night market as S02, rainy now. A few ordinary fictional adults gently raise the SAME plain charcoal founder work coat A, while the unique irregular small incandescent filament bird from S04 rests on its shoulder. People move at different rhythms; some continue selling food; no mass choreography or political demonstration. Bare lamps vary naturally in brightness, not biometric synchronisation. Warm reflections on rain-dark pavement echo S03/S23 optical geometry in human-scale world. 35mm low moderate wide, intimate, physical, dignified, bittersweet. No celebrity leather-jacket cues, emblem-bird, slogans, flags or lookalike crowds.",
+      "motion_prompt": "0–0.8 multiple hands lift coat separately; 0.8–1.7 delicate bird settles on shoulder; 1.7–2.5 one rain droplet hits puddle, bulbs remain independent; 2.5–3.0 coat steadies as people breathe naturally, hard cut black at 87.0. No triumphal camera crane.",
+      "sound_prompt": "Bring back new near-market room tone (not restart original seven-second loop), restrained rain, fabric and original four-note idea only as unresolved fragments. At 87.0 simultaneously remove all non-sine sounds, sine continues unchanged into S25. No victory chord.",
+      "global_image_lock_ref": "MASTER_IMAGE_V2_6",
+      "global_sound_lock_ref": "MASTER_SOUND_V2_6",
+      "negative_prompt_ref": "GLOBAL_NEGATIVE_V2_6",
+      "props": [
+        "founder_coat_A",
+        "filament_bird_v1",
+        "market_bulb",
+        "warm_reflection"
+      ],
+      "characters": [
+        "market_ensemble"
+      ],
+      "in_transition": "S23 delayed optical reflection becomes natural wet-market reflection",
+      "out_transition": "All images disappear, original persistent sine remains",
+      "contest_override": "Use fully fictional, non-identifiable subjects; copyright/IP/legal review required. Not a guaranteed contest eligibility determination.",
+      "review_state": "TEXT_DRAFT_NORMALIZED_NOT_GENERATED",
+      "generation_recipe": {
+        "render_provider": "Cinema Studio 4.0 720p candidate",
+        "minimum_billable_ms": 5000,
+        "planned_takes": 2,
+        "render_then_trim": true,
+        "portfolio_genjutsu_plate_candidate": false,
+        "contest_requires_original_generation": true
+      }
+    },
+    {
+      "id": "S25",
+      "start_ms": 87000,
