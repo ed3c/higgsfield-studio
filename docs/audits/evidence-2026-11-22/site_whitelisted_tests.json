@@ -1,0 +1,30 @@
+{
+ "core_contract": {
+  "test": "core_contract",
+  "state": "PASS",
+  "exit_code": 0,
+  "stdout": "",
+  "stderr": "test_path_traversal_blocked (test_archive.ArchiveTests.test_path_traversal_blocked) ... ok\ntest_roundtrip (test_archive.ArchiveTests.test_roundtrip) ... ok\ntest_all_managers_and_immutable_revisions (test_factory.FactoryTests.test_all_managers_and_immutable_revisions) ... ok\ntest_owner_only_handoff_idempotence_and_ack (test_factory.FactoryTests.test_owner_only_handoff_idempotence_and_ack) ... ok\ntest_paid_generation_denied_by_default (test_factory.FactoryTests.test_paid_generation_denied_by_default) ... ok\ntest_project_isolation_and_shared_references (test_factory.FactoryTests.test_project_isolation_and_shared_references) ... ok\ntest_shared_requires_rights_source (test_factory.FactoryTests.test_shared_requires_rights_source) ... ok\ntest_seed_creates_project_local_catalog_without_text_loss (test_j4_archive.J4ArchiveTests.test_seed_creates_project_local_catalog_without_text_loss) ... ok\ntest_version_corpus_fully_parseable (test_j4_archive.J4ArchiveTests.test_version_corpus_fully_parseable) ... ok\ntest_catalog_contains_shots_managers_and_assets (test_review_web.LocalReviewTests.test_catalog_contains_shots_managers_and_assets) ... ok\ntest_range_playback_and_text (test_review_web.LocalReviewTests.test_range_playback_and_text) ... ok\ntest_review_persists_and_origin_protection (test_review_web.LocalReviewTests.test_review_persists_and_origin_protection) ... ok\ntest_safe_extract_rejects_traversal (test_review_web.LocalReviewTests.test_safe_extract_rejects_traversal) ... ok\ntest_tests_are_whitelisted_and_no_real_generation (test_review_web.LocalReviewTests.test_tests_are_whitelisted_and_no_real_generation) ... ok\ntest_idempotent_versioned_import (test_seed.SeedTests.test_idempotent_versioned_import) ... ok\n\n----------------------------------------------------------------------\nRan 15 tests in 2.853s\n\nOK\n"
+ },
+ "budget": {
+  "test": "budget",
+  "state": "PASS",
+  "exit_code": 0,
+  "stdout": "月份 2026-11（Asia/Taipei）\n警戒線 80%\n\n桶                       已用         分配       占比 狀態\n方法論系列                0       2520     0.0% 正常\n日常再創作                0       2250     0.0% 正常\n趨勢二創               1584       1980    80.0% 警告\n重試預備                  0       1620     0.0% 正常\n實驗研發                  0        630     0.0% 正常\n合計                     1584       9000    17.6% 正常\n",
+  "stderr": "..已達分配額的 80%。停止新增定稿，改查 budget/ledger.csv。\n....\n----------------------------------------------------------------------\nRan 6 tests in 0.003s\n\nOK\n"
+ },
+ "inventory": {
+  "test": "inventory",
+  "state": "PASS",
+  "checked": 267,
+  "expected": 267,
+  "failures": []
+ },
+ "shot_timeline": {
+  "test": "shot_timeline",
+  "state": "PASS",
+  "failures": [],
+  "duration_ms": 90000,
+  "shot_count": 25
+ }
+}

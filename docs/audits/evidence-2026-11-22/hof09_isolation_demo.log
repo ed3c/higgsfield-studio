@@ -1,0 +1,6 @@
+tables ['projects', 'artifacts', 'links', 'handoffs', 'gates']
+namespaces [<sqlite3.Row object at 0x7f140aaaae00>]
+film-two -> shared reference OK
+cross-project reference blocked: cross-project reuse requires promoting the source to shared
+j4 gate: ELIGIBLE_FOR_SEPARATE_HUMAN_EXECUTION
+film-two generation still blocked: generation BLOCKED: owner_approval

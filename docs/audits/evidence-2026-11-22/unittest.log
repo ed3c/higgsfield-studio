@@ -1,0 +1,20 @@
+test_path_traversal_blocked (test_archive.ArchiveTests.test_path_traversal_blocked) ... ok
+test_roundtrip (test_archive.ArchiveTests.test_roundtrip) ... ok
+test_all_managers_and_immutable_revisions (test_factory.FactoryTests.test_all_managers_and_immutable_revisions) ... ok
+test_owner_only_handoff_idempotence_and_ack (test_factory.FactoryTests.test_owner_only_handoff_idempotence_and_ack) ... ok
+test_paid_generation_denied_by_default (test_factory.FactoryTests.test_paid_generation_denied_by_default) ... ok
+test_project_isolation_and_shared_references (test_factory.FactoryTests.test_project_isolation_and_shared_references) ... ok
+test_shared_requires_rights_source (test_factory.FactoryTests.test_shared_requires_rights_source) ... ok
+test_seed_creates_project_local_catalog_without_text_loss (test_j4_archive.J4ArchiveTests.test_seed_creates_project_local_catalog_without_text_loss) ... ok
+test_version_corpus_fully_parseable (test_j4_archive.J4ArchiveTests.test_version_corpus_fully_parseable) ... ok
+test_catalog_contains_shots_managers_and_assets (test_review_web.LocalReviewTests.test_catalog_contains_shots_managers_and_assets) ... ok
+test_range_playback_and_text (test_review_web.LocalReviewTests.test_range_playback_and_text) ... ok
+test_review_persists_and_origin_protection (test_review_web.LocalReviewTests.test_review_persists_and_origin_protection) ... ok
+test_safe_extract_rejects_traversal (test_review_web.LocalReviewTests.test_safe_extract_rejects_traversal) ... ok
+test_tests_are_whitelisted_and_no_real_generation (test_review_web.LocalReviewTests.test_tests_are_whitelisted_and_no_real_generation) ... ok
+test_idempotent_versioned_import (test_seed.SeedTests.test_idempotent_versioned_import) ... ok
+
+----------------------------------------------------------------------
+Ran 15 tests in 2.722s
+
+OK

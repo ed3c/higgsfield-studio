@@ -1,0 +1,171 @@
+{
+ "desktop": {
+  "title": "Higgsfield Studio · Local Review",
+  "meta": "25 SHOTS · 90 SEC · 30 FPS",
+  "counts": {
+   "shot": "25",
+   "resource": "267",
+   "media": "21",
+   "html": "14",
+   "manager": "17",
+   "test": "4",
+   "all": "313"
+  },
+  "shot_list": 25,
+  "timeline_blocks": 25,
+  "manager_list": 17,
+  "video_present": 1,
+  "video_after_play": {
+   "t": 2.464581,
+   "paused": false,
+   "rs": 4,
+   "dur": 58.133333,
+   "w": 512,
+   "h": 910,
+   "err": null
+  },
+  "video_after_seek42": {
+   "t": 42,
+   "paused": true,
+   "rs": 4,
+   "seeking": false
+  },
+  "image": {
+   "img": 1,
+   "table_rows": 0,
+   "pre": 0,
+   "h": 0,
+   "text_len": 0,
+   "img_natural": [
+    864,
+    1536,
+    true
+   ]
+  },
+  "markdown": {
+   "img": 0,
+   "table_rows": 0,
+   "pre": 0,
+   "h": 1,
+   "text_len": 77
+  },
+  "json": {
+   "img": 0,
+   "table_rows": 0,
+   "pre": 0,
+   "h": 1,
+   "text_len": 60
+  },
+  "csv": {
+   "img": 0,
+   "table_rows": 24,
+   "pre": 0,
+   "h": 1,
+   "text_len": 64
+  },
+  "html_list": 2,
+  "html_iframe": 0,
+  "save_state_after_click": "DEFER · 2026-11-22T07:26:45.978467+00:00",
+  "review_target": "S05 · 維持世界的人",
+  "after_reload_state": "DEFER · 2026-11-22T07:26:45.978467+00:00",
+  "after_reload_notes": "UI probe desktop 2026-11-22",
+  "horizontal_overflow": false,
+  "errors": [
+   "console.error: Failed to load resource: the server responded with a status of 404 (Not Found)",
+   "console.error: Applying inline style violates the following Content Security Policy directive 'style-src 'self''. Either the 'unsafe-inline' keyword, a hash ('sha256-bzD3XGomuJ6EQAMA97n2j+fa0JfKmu6D25jmRrDiqVs='), or a nonce ('nonce-...') is required to enable inline execution. Note that hashes do not apply to event handlers, style attributes and javascript: navigations unless the 'unsafe-hashes' keyword is present. The action has been blocked.",
+   "console.error: Applying inline style violates the following Content Security Policy directive 'style-src 'self''. Either the 'unsafe-inline' keyword, a hash ('sha256-bzD3XGomuJ6EQAMA97n2j+fa0JfKmu6D25jmRrDiqVs='), or a nonce ('nonce-...') is required to enable inline execution. Note that hashes do not apply to event handlers, style attributes and javascript: navigations unless the 'unsafe-hashes' keyword is present. The action has been blocked.",
+   "console.error: Applying inline style violates the following Content Security Policy directive 'style-src 'self''. Either the 'unsafe-inline' keyword, a hash ('sha256-bzD3XGomuJ6EQAMA97n2j+fa0JfKmu6D25jmRrDiqVs='), or a nonce ('nonce-...') is required to enable inline execution. Note that hashes do not apply to event handlers, style attributes and javascript: navigations unless the 'unsafe-hashes' keyword is present. The action has been blocked.",
+   "console.error: Applying inline style violates the following Content Security Policy directive 'style-src 'self''. Either the 'unsafe-inline' keyword, a hash ('sha256-bzD3XGomuJ6EQAMA97n2j+fa0JfKmu6D25jmRrDiqVs='), or a nonce ('nonce-...') is required to enable inline execution. Note that hashes do not apply to event handlers, style attributes and javascript: navigations unless the 'unsafe-hashes' keyword is present. The action has been blocked.",
+   "console.error: Applying inline style violates the following Content Security Policy directive 'style-src 'self''. Either the 'unsafe-inline' keyword, a hash ('sha256-bzD3XGomuJ6EQAMA97n2j+fa0JfKmu6D25jmRrDiqVs='), or a nonce ('nonce-...') is required to enable inline execution. Note that hashes do not apply to event handlers, style attributes and javascript: navigations unless the 'unsafe-hashes' keyword is present. The action has been blocked.",
+   "console.error: Applying inline style violates the following Content Security Policy directive 'style-src 'self''. Either the 'unsafe-inline' keyword, a hash ('sha256-bzD3XGomuJ6EQAMA97n2j+fa0JfKmu6D25jmRrDiqVs='), or a nonce ('nonce-...') is required to enable inline execution. Note that hashes do not apply to event handlers, style attributes and javascript: navigations unless the 'unsafe-hashes' keyword is present. The action has been blocked.",
+   "console.error: Applying inline style violates the following Content Security Policy directive 'style-src 'self''. Either the 'unsafe-inline' keyword, a hash ('sha256-bzD3XGomuJ6EQAMA97n2j+fa0JfKmu6D25jmRrDiqVs='), or a nonce ('nonce-...') is required to enable inline execution. Note that hashes do not apply to event handlers, style attributes and javascript: navigations unless the 'unsafe-hashes' keyword is present. The action has been blocked.",
+   "console.error: Applying inline style violates the following Content Security Policy directive 'style-src 'self''. Either the 'unsafe-inline' keyword, a hash ('sha256-bzD3XGomuJ6EQAMA97n2j+fa0JfKmu6D25jmRrDiqVs='), or a nonce ('nonce-...') is required to enable inline execution. Note that hashes do not apply to event handlers, style attributes and javascript: navigations unless the 'unsafe-hashes' keyword is present. The action has been blocked.",
+   "console.error: Applying inline style violates the following Content Security Policy directive 'style-src 'self''. Either the 'unsafe-inline' keyword, a hash ('sha256-bzD3XGomuJ6EQAMA97n2j+fa0JfKmu6D25jmRrDiqVs='), or a nonce ('nonce-...') is required to enable inline execution. Note that hashes do not apply to event handlers, style attributes and javascript: navigations unless the 'unsafe-hashes' keyword is present. The action has been blocked."
+  ]
+ },
+ "mobile": {
+  "title": "Higgsfield Studio · Local Review",
+  "meta": "25 SHOTS · 90 SEC · 30 FPS",
+  "menu_toggle_visible": true,
+  "counts": {
+   "shot": "25",
+   "resource": "267",
+   "media": "21",
+   "html": "14",
+   "manager": "17",
+   "test": "4",
+   "all": "313"
+  },
+  "shot_list": 25,
+  "timeline_blocks": 25,
+  "manager_list": 17,
+  "video_present": 1,
+  "video_after_play": {
+   "t": 2.46388,
+   "paused": false,
+   "rs": 4,
+   "dur": 58.133333,
+   "w": 512,
+   "h": 910,
+   "err": null
+  },
+  "video_after_seek42": {
+   "t": 42,
+   "paused": true,
+   "rs": 4,
+   "seeking": false
+  },
+  "image": {
+   "img": 1,
+   "table_rows": 0,
+   "pre": 0,
+   "h": 0,
+   "text_len": 0,
+   "img_natural": [
+    864,
+    1536,
+    true
+   ]
+  },
+  "markdown": {
+   "img": 0,
+   "table_rows": 0,
+   "pre": 0,
+   "h": 1,
+   "text_len": 77
+  },
+  "json": {
+   "img": 0,
+   "table_rows": 0,
+   "pre": 0,
+   "h": 1,
+   "text_len": 60
+  },
+  "csv": {
+   "img": 0,
+   "table_rows": 24,
+   "pre": 0,
+   "h": 1,
+   "text_len": 64
+  },
+  "html_list": 2,
+  "html_iframe": 0,
+  "save_state_after_click": "DEFER · 2026-11-22T07:27:22.875437+00:00",
+  "review_target": "S06 · 使用光的權利",
+  "after_reload_state": "DEFER · 2026-11-22T07:27:22.875437+00:00",
+  "after_reload_notes": "UI probe mobile 2026-11-22",
+  "horizontal_overflow": false,
+  "errors": [
+   "console.error: Applying inline style violates the following Content Security Policy directive 'style-src 'self''. Either the 'unsafe-inline' keyword, a hash ('sha256-bzD3XGomuJ6EQAMA97n2j+fa0JfKmu6D25jmRrDiqVs='), or a nonce ('nonce-...') is required to enable inline execution. Note that hashes do not apply to event handlers, style attributes and javascript: navigations unless the 'unsafe-hashes' keyword is present. The action has been blocked.",
+   "console.error: Applying inline style violates the following Content Security Policy directive 'style-src 'self''. Either the 'unsafe-inline' keyword, a hash ('sha256-bzD3XGomuJ6EQAMA97n2j+fa0JfKmu6D25jmRrDiqVs='), or a nonce ('nonce-...') is required to enable inline execution. Note that hashes do not apply to event handlers, style attributes and javascript: navigations unless the 'unsafe-hashes' keyword is present. The action has been blocked.",
+   "console.error: Applying inline style violates the following Content Security Policy directive 'style-src 'self''. Either the 'unsafe-inline' keyword, a hash ('sha256-bzD3XGomuJ6EQAMA97n2j+fa0JfKmu6D25jmRrDiqVs='), or a nonce ('nonce-...') is required to enable inline execution. Note that hashes do not apply to event handlers, style attributes and javascript: navigations unless the 'unsafe-hashes' keyword is present. The action has been blocked.",
+   "console.error: Applying inline style violates the following Content Security Policy directive 'style-src 'self''. Either the 'unsafe-inline' keyword, a hash ('sha256-bzD3XGomuJ6EQAMA97n2j+fa0JfKmu6D25jmRrDiqVs='), or a nonce ('nonce-...') is required to enable inline execution. Note that hashes do not apply to event handlers, style attributes and javascript: navigations unless the 'unsafe-hashes' keyword is present. The action has been blocked.",
+   "console.error: Applying inline style violates the following Content Security Policy directive 'style-src 'self''. Either the 'unsafe-inline' keyword, a hash ('sha256-bzD3XGomuJ6EQAMA97n2j+fa0JfKmu6D25jmRrDiqVs='), or a nonce ('nonce-...') is required to enable inline execution. Note that hashes do not apply to event handlers, style attributes and javascript: navigations unless the 'unsafe-hashes' keyword is present. The action has been blocked.",
+   "console.error: Applying inline style violates the following Content Security Policy directive 'style-src 'self''. Either the 'unsafe-inline' keyword, a hash ('sha256-bzD3XGomuJ6EQAMA97n2j+fa0JfKmu6D25jmRrDiqVs='), or a nonce ('nonce-...') is required to enable inline execution. Note that hashes do not apply to event handlers, style attributes and javascript: navigations unless the 'unsafe-hashes' keyword is present. The action has been blocked.",
+   "console.error: Applying inline style violates the following Content Security Policy directive 'style-src 'self''. Either the 'unsafe-inline' keyword, a hash ('sha256-bzD3XGomuJ6EQAMA97n2j+fa0JfKmu6D25jmRrDiqVs='), or a nonce ('nonce-...') is required to enable inline execution. Note that hashes do not apply to event handlers, style attributes and javascript: navigations unless the 'unsafe-hashes' keyword is present. The action has been blocked.",
+   "console.error: Applying inline style violates the following Content Security Policy directive 'style-src 'self''. Either the 'unsafe-inline' keyword, a hash ('sha256-bzD3XGomuJ6EQAMA97n2j+fa0JfKmu6D25jmRrDiqVs='), or a nonce ('nonce-...') is required to enable inline execution. Note that hashes do not apply to event handlers, style attributes and javascript: navigations unless the 'unsafe-hashes' keyword is present. The action has been blocked.",
+   "console.error: Applying inline style violates the following Content Security Policy directive 'style-src 'self''. Either the 'unsafe-inline' keyword, a hash ('sha256-bzD3XGomuJ6EQAMA97n2j+fa0JfKmu6D25jmRrDiqVs='), or a nonce ('nonce-...') is required to enable inline execution. Note that hashes do not apply to event handlers, style attributes and javascript: navigations unless the 'unsafe-hashes' keyword is present. The action has been blocked.",
+   "console.error: Applying inline style violates the following Content Security Policy directive 'style-src 'self''. Either the 'unsafe-inline' keyword, a hash ('sha256-bzD3XGomuJ6EQAMA97n2j+fa0JfKmu6D25jmRrDiqVs='), or a nonce ('nonce-...') is required to enable inline execution. Note that hashes do not apply to event handlers, style attributes and javascript: navigations unless the 'unsafe-hashes' keyword is present. The action has been blocked."
+  ]
+ }
+}

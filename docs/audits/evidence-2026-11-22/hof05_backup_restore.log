@@ -1,0 +1,3 @@
+rows src 5 rows restored 5 identical True
+integrity ('ok',)
+served from restored db: 5 ['DEFER', 'DEFER', 'DEFER', 'FAIL', 'PASS']

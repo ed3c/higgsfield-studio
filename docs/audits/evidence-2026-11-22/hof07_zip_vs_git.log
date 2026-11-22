@@ -1,0 +1,23 @@
+kinds Counter({'text_or_code': 231, 'binary_generated': 31, 'user_original': 5})
+('csv', False) 50
+('html', False) 14
+('jpeg', False) 2
+('js', False) 3
+('json', False) 72
+('md', False) 47
+('mp4', False) 3
+('png', False) 16
+('py', False) 42
+('srt', False) 1
+('txt', False) 2
+('zip', False) 15
+text/code files in ZIP not byte-identical in Git: 231
+py 42 ['build_j4_v2_9.py', 'build_j4_v3_0.py', 'build_j4_v3_1.py', 'build_j4_v3_2.py', 'build_j4_v3_3.py', 'build_j4_v3_4.py']
+json 72 ['j4_museum_v2_6/j4_budget_audit.json', 'j4_museum_v2_6/j4_shots.json', 'j4_museum_v2_6/j4_sound_ir.json', 'j4_museum_v2_7/j4_authorization_template.json', 'j4_museum_v2_7/j4_preflight_report.json', 'j4_museum_v2_7/j4_timeline_v2_7.json']
+md 47 ['j4_museum_v2_6/j4_character_prop_bible.md', 'j4_museum_v2_6/j4_master_prompt_book.md', 'j4_museum_v2_6/j4_master_spec.md', 'j4_museum_v2_7/README_v2_7.md', 'j4_museum_v2_7/j4_adapter_contract.md', 'j4_museum_v2_7/source_v2_6/j4_character_prop_bible.md']
+csv 50 ['j4_museum_v2_6/j4_provenance_register.csv', 'j4_museum_v2_6/j4_qc_matrix.csv', 'j4_museum_v2_6/j4_shotlist.csv', 'j4_museum_v2_7/j4_editorial_timeline.csv', 'j4_museum_v2_7/j4_issues_and_review.csv', 'j4_museum_v2_7/j4_media_inventory.csv']
+html 14 ['j4_museum_v2_7/j4_previs.html', 'j4_museum_v2_8/j4_previs_v2_7.html', 'j4_museum_v2_8/j4_review_v2_8.html', 'j4_museum_v2_9/j4_wireframe_board_v2_9.html', 'j4_museum_v3_0/j4_visual_review_board_v3_0.html', 'j4_museum_v3_1/j4_g1_review_board_v3_1.html']
+srt 1 ['j4_museum_v2_7/j4_review_slates.srt']
+js 3 ['j4_museum_v3_4/check_html_script.js', 'j4_museum_v3_5/check_ui.js', 'j4_museum_v3_8/_ui_syntax.js']
+txt 2 ['j4_museum_v3_6/qa_missing_media_output.txt', 'j4_museum_v3_8/media_qa_blocked_output.txt']
+legacy pipeline/build_animatic.py in PR head: ABSENT
