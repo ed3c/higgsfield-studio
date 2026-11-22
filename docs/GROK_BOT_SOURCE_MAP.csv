@@ -1,0 +1,32 @@
+version,file_name,archive_path,manager,reuse_policy,meaning
+v2_6,j4_shots.json,projects/j4-async-succession/archive/v2_6/j4_shots.json,shot,project-canonical,25 shots 90000ms baseline
+v2_6,j4_sound_ir.json,projects/j4-async-succession/archive/v2_6/j4_sound_ir.json,sound,project-canonical,"Five stems, asynchronous global 63.700s cut"
+v2_6,j4_master_prompt_book.md,projects/j4-async-succession/archive/v2_6/j4_master_prompt_book.md,prompt,project-canonical,Normalized original image/motion/sound prompts; NOT verbatim chat
+v2_6,j4_character_prop_bible.md,projects/j4-async-succession/archive/v2_6/j4_character_prop_bible.md,character,project-canonical,"Main coat A and archival B, characters, objects"
+v2_6,j4_master_spec.md,projects/j4-async-succession/archive/v2_6/j4_master_spec.md,story,project-canonical,Director story/design scope
+v2_6,j4_qc_matrix.csv,projects/j4-async-succession/archive/v2_6/j4_qc_matrix.csv,qc,project-canonical,Original acceptance matrix
+v2_6,j4_shotlist.csv,projects/j4-async-succession/archive/v2_6/j4_shotlist.csv,shot,project-canonical,Legacy shot timeline
+v2_6,j4_provenance_register.csv,projects/j4-async-succession/archive/v2_6/j4_provenance_register.csv,provenance,project-canonical,Claim/source chain
+v2_7,j4_editorial_timeline.csv,projects/j4-async-succession/archive/v2_7/conversation_text_archive.json#j4_editorial_timeline.csv,shot,project-overlay,Animatic editorial time
+v2_7,j4_previs.html,projects/j4-async-succession/archive/v2_7/conversation_text_archive.json#j4_previs.html,experiment,project-overlay,Offline text animatic
+v2_8,j4_acceptance_matrix.csv,projects/j4-async-succession/archive/v2_8/conversation_text_archive.json#j4_acceptance_matrix.csv,qc,project-overlay,Gates and acceptance
+v2_8,j4_shots_v2_8.json,projects/j4-async-succession/archive/v2_8/conversation_text_archive.json#j4_shots_v2_8.json,shot,project-overlay,Shot IR revision
+v2_9,j4_asset_lock_registry.csv,projects/j4-async-succession/archive/v2_9/conversation_text_archive.json#j4_asset_lock_registry.csv,asset,project-overlay,Asset identity locks
+v2_9,j4_shots_v2_9.json,projects/j4-async-succession/archive/v2_9/conversation_text_archive.json#j4_shots_v2_9.json,shot,project-overlay,Shot IR revised baseline
+v3_0,j4_visual_consistency_ir_v3_0.json,projects/j4-async-succession/archive/v3_0/conversation_text_archive.json#j4_visual_consistency_ir_v3_0.json,art_direction,project-overlay,Cross-shot continuity
+v3_1,j4_g1_layout_candidate_v3_1.json,projects/j4-async-succession/archive/v3_1/conversation_text_archive.json#j4_g1_layout_candidate_v3_1.json,art_direction,project-overlay,Director G1 layout proposals
+v3_2,j4_object_registry_v3_2.json,projects/j4-async-succession/archive/v3_2/conversation_text_archive.json#j4_object_registry_v3_2.json,asset,project-overlay,46 swappable identity slots
+v3_2,j4_shot_optical_ir_v3_2.json,projects/j4-async-succession/archive/v3_2/conversation_text_archive.json#j4_shot_optical_ir_v3_2.json,optical,project-overlay,25 dual-read optical shots
+v3_2,j4_memory_arcs_v3_2.json,projects/j4-async-succession/archive/v3_2/conversation_text_archive.json#j4_memory_arcs_v3_2.json,optical,project-overlay,Ten narrative memory arcs
+v3_3,SOURCE_REGISTER_v3_3.csv,projects/j4-async-succession/archive/v3_3/conversation_text_archive.json#SOURCE_REGISTER_v3_3.csv,research,shared-candidate,Source/artwork method references; rights not automatically granted
+v3_3,j4_illusion_ir_v3_3.json,projects/j4-async-succession/archive/v3_3/conversation_text_archive.json#j4_illusion_ir_v3_3.json,optical,project-overlay,25 art illusion counterparts
+v3_3,j4_46asset_illusion_dependencies_v3_3.json,projects/j4-async-succession/archive/v3_3/conversation_text_archive.json#j4_46asset_illusion_dependencies_v3_3.json,asset,project-overlay,Asset-to-illusion dependency map
+v3_4,j4_g2a_viewer_lab_v3_4.html,projects/j4-async-succession/archive/v3_4/conversation_text_archive.json#j4_g2a_viewer_lab_v3_4.html,experiment,project-overlay,Double-view local trial interface
+v3_5,j4_g2a_previs_lock_v3_5.json,projects/j4-async-succession/archive/v3_5/conversation_text_archive.json#j4_g2a_previs_lock_v3_5.json,shot,project-overlay,Six-shot frame/identity proof proposals
+v3_6,j4_g2a_preregistration_v3_6.json,projects/j4-async-succession/archive/v3_6/conversation_text_archive.json#j4_g2a_preregistration_v3_6.json,experiment,project-overlay,Blind pre-registration and confound controls
+v3_7,j4_sound_dramaturgy_overlay_v3_7.json,projects/j4-async-succession/archive/v3_7/conversation_text_archive.json#j4_sound_dramaturgy_overlay_v3_7.json,sound,project-overlay,Nolan/Sakamoto method adaptation original audio only
+v3_8,j4_g2b_trial_manifest_v3_8.json,projects/j4-async-succession/archive/v3_8/conversation_text_archive.json#j4_g2b_trial_manifest_v3_8.json,experiment,project-overlay,Four listening illusion trials
+v3_9,j4_sonic_object_registry_v3_9.json,projects/j4-async-succession/archive/v3_9/conversation_text_archive.json#j4_sonic_object_registry_v3_9.json,sound,project-overlay,Seven sonic object families
+v3_9,j4_recall_trials_v3_9.json,projects/j4-async-succession/archive/v3_9/conversation_text_archive.json#j4_recall_trials_v3_9.json,experiment,project-overlay,Three identity sound memory hypotheses
+v4_0,j4_cross_modal_ir_v4_0.json,projects/j4-async-succession/archive/v4_0/conversation_text_archive.json#j4_cross_modal_ir_v4_0.json,experiment,project-overlay,Visual/audio 2x2 factorial trials
+v4_0,ART_METHOD_SOURCES_v4_0.csv,projects/j4-async-succession/archive/v4_0/conversation_text_archive.json#ART_METHOD_SOURCES_v4_0.csv,research,shared-candidate,"Cross-modal contemporary-art methods, copyright unreviewed"
