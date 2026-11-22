@@ -88,6 +88,30 @@ class ArtRepairTests(unittest.TestCase):
         self.assertEqual(report["state"], "BLOCKED_INCOMPLETE_EVIDENCE")
         self.assertEqual(report["director_gate"], "NOT_RUN")
 
+    def test_legacy_single_observer_cannot_produce_ready_for_director(self):
+        import hashlib
+        with tempfile.TemporaryDirectory() as directory:
+            p = Path(directory)/"legacy-image.png"
+            p.write_bytes(b"not a decoded image; arbitrary bytes")
+            digest = hashlib.sha256(p.read_bytes()).hexdigest()
+            profile = next(s for s in self.registry["contract"]["shots"]
+                           if s["shot_id"] == "S02")
+            case = dict(self.cases[0])
+            case["media_type"] = "video"  # historical oracle's weakest assumption
+            case["media_path"] = str(p)
+            case["media_sha256"] = digest
+            case["reviewer"] = "sole-human-observer"
+            case["observations"] = {
+                c["id"]: {"observed": c["polarity"] == "must_exist",
+                          "evidence_uri": "self-attested://not-verified"}
+                for c in profile["checks"]
+            }
+            report = judge_observations(self.registry,case)
+            self.assertEqual(report["state"],
+                "BLOCKED_V4_2_INDEPENDENT_EVIDENCE_REQUIRED")
+            self.assertTrue(report["media_sha256_verified"])
+            self.assertEqual(report["director_gate"],"NOT_RUN")
+
     def test_unknown_id_must_not_be_ignored(self):
         case = dict(self.cases[0])
         case["observations"] = dict(case["observations"])
