@@ -13,6 +13,7 @@ import io
 import json
 import mimetypes
 import os
+import re
 import secrets
 import shutil
 import sqlite3
