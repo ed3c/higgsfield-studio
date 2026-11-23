@@ -1,0 +1,46 @@
+name: Studio Factory contract tests
+on:
+  pull_request:
+    paths: ["studio_factory/**", "budget/**", "projects/**", ".github/workflows/studio-factory-test.yml"]
+  push:
+    paths: ["studio_factory/**", "budget/**", "projects/**", ".github/workflows/studio-factory-test.yml"]
+jobs:
+  unittest:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        # 3.15 catches stricter argparse/stdlib behaviour seen on the owner's Mac (G-13).
+        python-version: ["3.12", "3.15"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+          allow-prereleases: true
+      - name: Offline immutable-registry and manager-contract tests
+        run: python -m unittest discover -s studio_factory/tests -v
+      - name: Verify historical repo budget tools remain usable
+        run: python budget/test_track.py
+      - name: Review UI JavaScript syntax
+        run: node --check studio_factory/review_site/app.js
+
+  browser-review:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install headless Chromium for medium-compiler guided review UI
+        run: |
+          python -m pip install playwright==1.57.0
+          python -m playwright install --with-deps chromium
+      - name: Playwright desktop/mobile review interactions
+        run: python studio_factory/tests/ui_review_smoke_ci.py --out /tmp/j4-review-screens
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: local-review-ui-smoke
+          path: /tmp/j4-review-screens/
+          if-no-files-found: ignore

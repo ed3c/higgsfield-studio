@@ -1,0 +1,48 @@
+﻿shot_id,zone,prior_area_pct,candidate_area_pct,prior_priority,candidate_priority,required_first_frame,changed,note
+S02,market_lamps,18.04,18.04,2,2,True,False,未修改；維持 v3.0 位置
+S02,vendor,12.95,12.95,1,1,True,False,未修改；維持 v3.0 位置
+S02,bowl_exchange,4.76,4.76,1,1,True,False,未修改；維持 v3.0 位置
+S02,ordinary_market,17.63,17.63,2,2,True,False,未修改；維持 v3.0 位置
+S02,wet_reflection,5.5,5.5,2,2,True,False,未修改；維持 v3.0 位置
+S03,optical_membranes,30.0,30.0,1,1,True,False,未修改；維持 v3.0 位置
+S03,fictional_founder,4.68,4.68,1,1,True,False,未修改；維持 v3.0 位置
+S03,floor_caustic,7.68,7.68,2,2,True,False,未修改；維持 v3.0 位置
+S03,warm_trace,0.56,0.56,3,3,False,False,未修改；維持 v3.0 位置
+S04,practical_bulb,11.31,11.31,2,2,True,False,未修改；維持 v3.0 位置
+S04,small_wire_bird,3.04,3.04,1,1,True,False,未修改；維持 v3.0 位置
+S04,closed_suitcase,12.19,12.19,1,1,True,False,未修改；維持 v3.0 位置
+S04,warm_glint,1.84,1.84,2,2,True,False,未修改；維持 v3.0 位置
+S11,automated_line,37.72,37.72,1,1,True,False,未修改；維持 v3.0 位置
+S11,empty_stools,18.96,18.96,1,1,True,False,未修改；維持 v3.0 位置
+S11,paper_house_hint,2.28,2.28,1,2,True,True,紙屋 priority 1→2；空凳與機器仍是第一視覺層
+S11,condensation,1.54,1.54,3,3,False,False,未修改；維持 v3.0 位置
+S12,near_table,10.6,10.6,2,2,True,False,未修改；維持 v3.0 位置
+S12,far_table,4.06,4.06,2,2,True,False,未修改；維持 v3.0 位置
+S12,red_phone_cord,11.8,11.8,1,1,True,False,未修改；維持 v3.0 位置
+S12,receiver,1.8,1.8,1,1,True,False,未修改；維持 v3.0 位置
+S12,negative_space,9.36,9.36,2,2,True,False,未修改；維持 v3.0 位置
+S13,sea_window,30.96,30.96,2,2,True,False,未修改；維持 v3.0 位置
+S13,weathered_piano,15.98,15.98,1,1,True,False,未修改；維持 v3.0 位置
+S13,technician,11.88,11.88,1,1,True,False,未修改；維持 v3.0 位置
+S13,wafer,1.3,1.3,2,2,True,False,未修改；維持 v3.0 位置
+S21,founder_hand_shirt,7.98,7.98,1,1,True,False,未修改；維持 v3.0 位置
+S21,steward_hand,7.48,7.48,1,1,True,False,未修改；維持 v3.0 位置
+S21,single_brass_key,1.43,1.92,1,1,True,True,鑰匙辨識區微幅提高；雙手先後接觸須明確
+S21,chair_with_coat_A,8.4,8.4,2,2,True,False,未修改；維持 v3.0 位置
+S22,real_city_window,25.42,20.5,3,3,True,True,略增紙橋與空屋區域、減少城市窗比重；不加第二動作
+S22,salaryman,14.52,13.95,1,1,True,True,略增紙橋與空屋區域、減少城市窗比重；不加第二動作
+S22,paper_geography,22.68,22.68,1,1,True,False,未修改；維持 v3.0 位置
+S22,fragile_bridge,2.53,3.51,1,1,True,True,略增紙橋與空屋區域、減少城市窗比重；不加第二動作
+S22,empty_paper_house,2.88,3.42,1,1,True,True,略增紙橋與空屋區域、減少城市窗比重；不加第二動作
+S22,local_compute,0.88,0.63,3,3,False,True,略增紙橋與空屋區域、減少城市窗比重；不加第二動作
+S23,optical_membranes_dormant,29.25,29.25,1,1,True,False,未修改；維持 v3.0 位置
+S23,founder_shirt_back,6.46,6.46,1,1,True,False,未修改；維持 v3.0 位置
+S23,delayed_floor_reflection,4.1,4.1,2,2,True,False,未修改；維持 v3.0 位置
+S23,piano_worker_distant,2.24,2.24,3,3,True,False,未修改；維持 v3.0 位置
+S23,opera_coat_distant,2.24,2.24,3,3,True,False,未修改；維持 v3.0 位置
+S24,market_bulbs,16.8,16.8,2,2,True,False,未修改；維持 v3.0 位置
+S24,coat_A,10.8,13.6,1,1,True,True,外套增大，鳥靠近肩部；雨自 0 秒已存在
+S24,supporting_hands,12.2,12.2,2,2,True,False,未修改；維持 v3.0 位置
+S24,bird_entry,1.82,1.95,1,1,False,True,外套增大，鳥靠近肩部；雨自 0 秒已存在
+S24,market_ensemble,20.7,20.7,2,2,True,False,未修改；維持 v3.0 位置
+S24,rain_pavement,7.36,7.36,3,3,True,False,未修改；維持 v3.0 位置

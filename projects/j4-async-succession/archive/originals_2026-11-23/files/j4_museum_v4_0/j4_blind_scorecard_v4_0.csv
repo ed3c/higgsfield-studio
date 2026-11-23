@@ -1,0 +1,4 @@
+﻿participant_code,arc,condition_code,origin_response,after_reveal_response,replay_response,evidence_phrase,reinterpretation_rater1,reinterpretation_rater2,accuracy_rater1,accuracy_rater2,evidence_rater1,evidence_rater2,emotional_before,emotional_after,confidence_before,confidence_after,test_state
+,R1_BIRD,,,,,,,,,,,,,,,,NOT_RUN
+,R2_COAT,,,,,,,,,,,,,,,,NOT_RUN
+,R3_PAPER,,,,,,,,,,,,,,,,NOT_RUN

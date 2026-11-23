@@ -1,0 +1,7 @@
+﻿trial_id,shot_id,role,illusion_category,mechanism,artist,reference_work,reference_url,method_transfer,not_to_copy,source_status,viewer_status
+G2A_COAT,S10,A_first,PERCEPTUAL,SHADOW_FIGURE_GROUND,Tim Noble × Sue Webster,Dirty White Trash (with Gulls),https://www.moma.org/calendar/exhibitions/4798,檔案外套B、衣架與網格影子似一個人，細看卻非主線外套A,不重製垃圾堆人像或原作投影角度,PRIMARY_OR_INSTITUTIONAL_VERIFIED,NOT_RUN
+G2A_COAT,S21,B_reveal,PERCEPTUAL,REFLECTION_SINGLE_OBJECT,Michelangelo Pistoletto,Man with Yellow Pants,https://www.moma.org/collection/works/79435,交接鑰匙產生短暫雙影，物理世界仍只有一把,不重製真人等比例鏡畫構圖,PRIMARY_OR_INSTITUTIONAL_VERIFIED,NOT_RUN
+G2A_PAPER,S11,A_first,NARRATIVE_RECONTEXT,SCALE_AND_ATTENTION_SHIFT,Liliana Porter,Untitled (with Cube – tall),https://whitney.org/collection/works/39006,廠房小紙屋第二次觀看成為工人世界的預告,不重製原作的照片立方體加線框,PRIMARY_OR_INSTITUTIONAL_VERIFIED,NOT_RUN
+G2A_PAPER,S22,B_reveal,PERCEPTUAL,SCALE_DUAL_READING,Thomas Demand,Office,https://www.guggenheim.org/artwork/artist/thomas-demand,紙海岸同時像巨大地景又明顯是小型辦公室作品,不重製史塔西辦公室或遊戲場景,PRIMARY_OR_INSTITUTIONAL_VERIFIED,NOT_RUN
+G2A_AUTHORITY,S18,A_first,NARRATIVE_RECONTEXT,RETROSPECTIVE_SHAPE_MATCH,Jim Campbell,Exploded Views,https://www.sfmoma.org/exhibition/jim-campbell/,三個低亮光形先無意義，S19 三張核心座位重新賦義,不重製 LED 空間矩陣與閃爍人物,PRIMARY_OR_INSTITUTIONAL_VERIFIED,NOT_RUN
+G2A_AUTHORITY,S19,B_reveal,PERCEPTUAL,ILLUMINATED_HIERARCHY,James Turrell,Afrum I (White),https://web.guggenheim.org/exhibitions/turrell/,新聞台裡三座光錐像先於椅子存在的權力體積,不重製角落光立方或真實新聞畫面,PRIMARY_OR_INSTITUTIONAL_VERIFIED,NOT_RUN

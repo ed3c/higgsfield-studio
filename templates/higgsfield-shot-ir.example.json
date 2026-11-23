@@ -1,0 +1,95 @@
+{
+  "schema_version": "1.0",
+  "project_slug": "example-studio-project",
+  "scene_id": "SC-001",
+  "shot_id": "SH-001",
+  "source_folder_id": null,
+  "source_folder_name": null,
+  "production_context": {
+    "act_id": "ACT-01",
+    "aspect_ratio": "9:16",
+    "duration_seconds": 6,
+    "world_bible_ref": "bibles/world.md",
+    "style_bible_ref": "bibles/art-style.md"
+  },
+  "artwork_branch": {
+    "prompt_id": "ART-SC001-v1",
+    "version": 1,
+    "status": "DRAFT",
+    "text": "Original gallery installation study: one translucent sheet suspended in a quiet space; a narrow beam of light shifts the perceived object boundary. Establish the optical mechanism, not an imitation of a named artwork.",
+    "sha256": null,
+    "source_ids": [],
+    "qc_status": "NOT_RUN"
+  },
+  "shot_branch": {
+    "prompt_id": "SHOT-SH001-v1",
+    "version": 1,
+    "status": "DRAFT",
+    "text": "A technician approaches the hanging translucent sheet and moves a handheld light slowly across it. Locked 50 mm camera; one uninterrupted 6-second action; finger-light-sheet spatial relationship must remain legible.",
+    "sha256": null,
+    "source_ids": [
+      "SC-001"
+    ],
+    "qc_status": "NOT_RUN"
+  },
+  "fusion_branch": {
+    "prompt_id": "FUSED-SH001-v1",
+    "version": 1,
+    "status": "DRAFT",
+    "text": "",
+    "sha256": null,
+    "source_ids": [
+      "ART-SC001-v1",
+      "SHOT-SH001-v1"
+    ],
+    "qc_status": "NOT_RUN"
+  },
+  "reference_bindings": [],
+  "spatial_invariants": [
+    "handheld light, technician and suspended sheet remain in one coherent gallery space"
+  ],
+  "physical_invariants": [
+    "light moves continuously; sheet remains physically suspended"
+  ],
+  "forbidden_outcomes": [
+    "sheet changes into a solid sculpture",
+    "camera cuts to an unrelated location"
+  ],
+  "oracle_plan": {
+    "artwork": [
+      {
+        "id": "ART-001",
+        "observable": "light creates a visible and plausible perceptual edge change on the sheet",
+        "hard_fail": true
+      }
+    ],
+    "shot": [
+      {
+        "id": "SHOT-001",
+        "observable": "technician's hand visibly moves the light across the same hanging sheet",
+        "hard_fail": true
+      }
+    ],
+    "fused": [
+      {
+        "id": "FUSED-001",
+        "observable": "both artwork optical mechanism and shot action are independently legible in one composition",
+        "hard_fail": true
+      }
+    ]
+  },
+  "execution_policy": {
+    "website_only": false,
+    "require_zero_credit_preflight": false,
+    "generation_authorized": false,
+    "max_credit_spend": null,
+    "required_human_reviewers": 2
+  },
+  "audit": {
+    "ir_sha256": null,
+    "compiler_version": null,
+    "compiled_prompt_sha256": null,
+    "submitted_prompt_sha256": null,
+    "last_verified_at": null
+  }
+}

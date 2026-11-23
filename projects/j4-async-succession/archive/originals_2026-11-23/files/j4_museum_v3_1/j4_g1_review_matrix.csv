@@ -1,0 +1,41 @@
+﻿check_id,shot_id,start_ms,end_ms,dimension,question,status,reviewer,evidence_uri,notes,scope
+V31-S02-G1-01,S02,3000,7000,first_frame_500ms,首秒看出人與人交換食物，不只是觀光夜市,NOT_RUN,,,,G1 composition only; never generation approval
+V31-S02-G1-02,S02,3000,7000,single_action_at_1x,普通夜市燈泡有可見物理光源,NOT_RUN,,,,G1 composition only; never generation approval
+V31-S02-G1-03,S02,3000,7000,physical_and_ip_distance,水紋可與 S03 的光學反射剪接,NOT_RUN,,,,G1 composition only; never generation approval
+V31-S02-G1-04,S02,3000,7000,transition_coherence,以 1× 正常速度連續播放前後鏡，能否辨識 Black opens on human activity → Warm water-light match-cuts into S03 cold optical reflection，且不靠字幕解說？,NOT_RUN,,,,G1 composition only; never generation approval
+V31-S03-G1-01,S03,7000,12000,first_frame_500ms,一眼看出背影人物與開放式薄膜的尺度差,NOT_RUN,,,,G1 composition only; never generation approval
+V31-S03-G1-02,S03,7000,12000,single_action_at_1x,結構不能是方形懸浮水箱,NOT_RUN,,,,G1 composition only; never generation approval
+V31-S03-G1-03,S03,7000,12000,physical_and_ip_distance,水滴與反射的延時有後製設計，不宣稱光速變慢,NOT_RUN,,,,G1 composition only; never generation approval
+V31-S03-G1-04,S03,7000,12000,transition_coherence,以 1× 正常速度連續播放前後鏡，能否辨識 S02 reflected bulb becomes refraction → The warm light thread becomes S04 delicate filament，且不靠字幕解說？,NOT_RUN,,,,G1 composition only; never generation approval
+V31-S04-G1-01,S04,12000,16000,first_frame_500ms,細金屬造物與行李箱都在首影格,NOT_RUN,,,,G1 composition only; never generation approval
+V31-S04-G1-02,S04,12000,16000,single_action_at_1x,光鳥不可長成電影鳥徽,NOT_RUN,,,,G1 composition only; never generation approval
+V31-S04-G1-03,S04,12000,16000,physical_and_ip_distance,鎢絲反射能接到 S24 的原創道具,NOT_RUN,,,,G1 composition only; never generation approval
+V31-S04-G1-04,S04,12000,16000,transition_coherence,以 1× 正常速度連續播放前後鏡，能否辨識 S03 narrow warm reflection becomes heated wire → Wire leaves frame; water sound reveals diner sink，且不靠字幕解說？,NOT_RUN,,,,G1 composition only; never generation approval
+V31-S11-G1-01,S11,39000,43000,first_frame_500ms,觀眾先注意機器與空凳,NOT_RUN,,,,G1 composition only; never generation approval
+V31-S11-G1-02,S11,39000,43000,single_action_at_1x,紙屋是第二層伏筆,NOT_RUN,,,,G1 composition only; never generation approval
+V31-S11-G1-03,S11,39000,43000,physical_and_ip_distance,人類勞動不被刻畫成沒有價值,NOT_RUN,,,,G1 composition only; never generation approval
+V31-S11-G1-04,S11,39000,43000,transition_coherence,以 1× 正常速度連續播放前後鏡，能否辨識 Storage mesh contact becomes actuator sound → Mechanical high overtone becomes tensioned telephone cable，且不靠字幕解說？,NOT_RUN,,,,G1 composition only; never generation approval
+V31-S12-G1-01,S12,43000,46000,first_frame_500ms,紅線可追到電話聽筒與遠端方向,NOT_RUN,,,,G1 composition only; never generation approval
+V31-S12-G1-02,S12,43000,46000,single_action_at_1x,紅線不是魔法蛛網,NOT_RUN,,,,G1 composition only; never generation approval
+V31-S12-G1-03,S12,43000,46000,physical_and_ip_distance,兩張桌子都無人但存在拉力,NOT_RUN,,,,G1 composition only; never generation approval
+V31-S12-G1-04,S12,43000,46000,transition_coherence,以 1× 正常速度連續播放前後鏡，能否辨識 Machine vibration becomes private cable tension → Cable resonance becomes untuned piano mechanism，且不靠字幕解說？,NOT_RUN,,,,G1 composition only; never generation approval
+V31-S13-G1-01,S13,46000,50000,first_frame_500ms,第一影格有舊鋼琴、技師與臨海測試廳,NOT_RUN,,,,G1 composition only; never generation approval
+V31-S13-G1-02,S13,46000,50000,single_action_at_1x,晶圓反光可被看見但非畫面中心,NOT_RUN,,,,G1 composition only; never generation approval
+V31-S13-G1-03,S13,46000,50000,physical_and_ip_distance,畫面不複製真實受災鋼琴或裝置藝術,NOT_RUN,,,,G1 composition only; never generation approval
+V31-S13-G1-04,S13,46000,50000,transition_coherence,以 1× 正常速度連續播放前後鏡，能否辨識 Cable vibration becomes imperfect string overtone → Absent piano note juxtaposed with abundant applause，且不靠字幕解說？,NOT_RUN,,,,G1 composition only; never generation approval
+V31-S21-G1-01,S21,72500,76500,first_frame_500ms,鑰匙僅一把且不被手指遮斷,NOT_RUN,,,,G1 composition only; never generation approval
+V31-S21-G1-02,S21,72500,76500,single_action_at_1x,外套 A 已掛在椅上，不能瞬間移動,NOT_RUN,,,,G1 composition only; never generation approval
+V31-S21-G1-03,S21,72500,76500,physical_and_ip_distance,布料與手掌自然接觸,NOT_RUN,,,,G1 composition only; never generation approval
+V31-S21-G1-04,S21,72500,76500,transition_coherence,以 1× 正常速度連續播放前後鏡，能否辨識 Two methods of archive become two human temporal rhythms → Hands on key match hands building paper bridge，且不靠字幕解說？,NOT_RUN,,,,G1 composition only; never generation approval
+V31-S22-G1-01,S22,76500,79500,first_frame_500ms,0 秒有人、紙橋、紙屋同時存在,NOT_RUN,,,,G1 composition only; never generation approval
+V31-S22-G1-02,S22,76500,79500,single_action_at_1x,唯一動作是一根指頭扶住橋,NOT_RUN,,,,G1 composition only; never generation approval
+V31-S22-G1-03,S22,76500,79500,physical_and_ip_distance,空屋沒有居民；遠端本地 AI 不搶焦點,NOT_RUN,,,,G1 composition only; never generation approval
+V31-S22-G1-04,S22,76500,79500,transition_coherence,以 1× 正常速度連續播放前後鏡，能否辨識 Brass key transfers in a second; paper bridge remains unfinished → Paper friction thins into large optical chamber ambience，且不靠字幕解說？,NOT_RUN,,,,G1 composition only; never generation approval
+V31-S23-G1-01,S23,79500,84000,first_frame_500ms,同一人物與光學建築可辨認,NOT_RUN,,,,G1 composition only; never generation approval
+V31-S23-G1-02,S23,79500,84000,single_action_at_1x,人物已脫下主線外套,NOT_RUN,,,,G1 composition only; never generation approval
+V31-S23-G1-03,S23,79500,84000,physical_and_ip_distance,反射滯後不形成超自然分身,NOT_RUN,,,,G1 composition only; never generation approval
+V31-S23-G1-04,S23,79500,84000,transition_coherence,"以 1× 正常速度連續播放前後鏡，能否辨識 Human paper work vs quiet former creator, same hand-to-light motif → Delayed floor light becomes wet-pavement reflection in S24，且不靠字幕解說？",NOT_RUN,,,,G1 composition only; never generation approval
+V31-S24-G1-01,S24,84000,87000,first_frame_500ms,0 秒外套已舉起且明顯是空的,NOT_RUN,,,,G1 composition only; never generation approval
+V31-S24-G1-02,S24,84000,87000,single_action_at_1x,雨在第一影格已出現,NOT_RUN,,,,G1 composition only; never generation approval
+V31-S24-G1-03,S24,84000,87000,physical_and_ip_distance,光鳥降落軌跡獨立可辨，不變成徽章,NOT_RUN,,,,G1 composition only; never generation approval
+V31-S24-G1-04,S24,84000,87000,transition_coherence,"以 1× 正常速度連續播放前後鏡，能否辨識 S23 delayed optical reflection becomes natural wet-market reflection → All images disappear, original persistent sine remains，且不靠字幕解說？",NOT_RUN,,,,G1 composition only; never generation approval

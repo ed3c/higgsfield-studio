@@ -1,0 +1,18 @@
+{
+  "skill": "build-review-interface",
+  "repository": "ed3c/medium-compiler",
+  "path": ".agents/skills/build-review-interface/SKILL.md",
+  "commit": "6235a905bb552ce82ff7f239327c5f271c7dc446",
+  "adopted": [
+    "one-item-at-a-time review",
+    "PASS FAIL DEFER",
+    "autosave labels",
+    "prev-next and keyboard shortcuts",
+    "native media/Markdown/JSON/CSV rendering",
+    "reference and provenance panel",
+    "Playwright desktop/mobile smoke"
+  ],
+  "scope": "methodology-only; no copied medium-compiler runtime, writing CLI, or code",
+  "source_url": "https://github.com/ed3c/medium-compiler/blob/6235a905bb552ce82ff7f239327c5f271c7dc446/.agents/skills/build-review-interface/SKILL.md",
+  "media_generation": "DISABLED"
+}

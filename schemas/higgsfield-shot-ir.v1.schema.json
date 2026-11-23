@@ -1,0 +1,345 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:higgsfield-studio:shot-ir:v1",
+  "title": "Higgsfield Studio Shot IR v1",
+  "description": "ART-only, SHOT-only and fused prompts are separately versioned; generated media and review evidence are external run records.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "project_slug",
+    "scene_id",
+    "shot_id",
+    "production_context",
+    "artwork_branch",
+    "shot_branch",
+    "fusion_branch",
+    "reference_bindings",
+    "oracle_plan",
+    "execution_policy"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "1.0"
+    },
+    "project_slug": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+    },
+    "scene_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "shot_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "source_folder_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "source_folder_name": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "production_context": {
+      "type": "object",
+      "additionalProperties": true,
+      "required": [
+        "act_id",
+        "aspect_ratio",
+        "duration_seconds"
+      ],
+      "properties": {
+        "act_id": {
+          "type": "string"
+        },
+        "aspect_ratio": {
+          "type": "string"
+        },
+        "duration_seconds": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "world_bible_ref": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "style_bible_ref": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    },
+    "artwork_branch": {
+      "$ref": "#/$defs/branch"
+    },
+    "shot_branch": {
+      "$ref": "#/$defs/branch"
+    },
+    "fusion_branch": {
+      "$ref": "#/$defs/branch"
+    },
+    "reference_bindings": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": true,
+        "required": [
+          "reference_id",
+          "kind",
+          "role",
+          "rights_status"
+        ],
+        "properties": {
+          "reference_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "kind": {
+            "enum": [
+              "artwork",
+              "character",
+              "location",
+              "prop",
+              "style",
+              "generation",
+              "other"
+            ]
+          },
+          "role": {
+            "type": "string",
+            "minLength": 1
+          },
+          "higgsfield_element_id": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "higgsfield_media_id": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "source_url": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "source_sha256": {
+            "$ref": "#/$defs/nullableSha"
+          },
+          "rights_status": {
+            "enum": [
+              "CLEARED",
+              "RESEARCH_ONLY",
+              "UNKNOWN",
+              "RESTRICTED"
+            ]
+          }
+        }
+      }
+    },
+    "spatial_invariants": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "physical_invariants": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "forbidden_outcomes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "oracle_plan": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "artwork",
+        "shot",
+        "fused"
+      ],
+      "properties": {
+        "artwork": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/criterion"
+          }
+        },
+        "shot": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/criterion"
+          }
+        },
+        "fused": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/criterion"
+          }
+        }
+      }
+    },
+    "execution_policy": {
+      "type": "object",
+      "additionalProperties": true,
+      "required": [
+        "website_only",
+        "require_zero_credit_preflight",
+        "generation_authorized"
+      ],
+      "properties": {
+        "website_only": {
+          "type": "boolean"
+        },
+        "require_zero_credit_preflight": {
+          "type": "boolean"
+        },
+        "generation_authorized": {
+          "type": "boolean"
+        },
+        "max_credit_spend": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "required_human_reviewers": {
+          "type": "integer",
+          "minimum": 0
+        }
+      }
+    },
+    "audit": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "ir_sha256": {
+          "$ref": "#/$defs/nullableSha"
+        },
+        "compiler_version": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "compiled_prompt_sha256": {
+          "$ref": "#/$defs/nullableSha"
+        },
+        "submitted_prompt_sha256": {
+          "$ref": "#/$defs/nullableSha"
+        },
+        "last_verified_at": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date-time"
+        }
+      }
+    }
+  },
+  "$defs": {
+    "nullableSha": {
+      "oneOf": [
+        {
+          "type": "null"
+        },
+        {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        }
+      ]
+    },
+    "branch": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "prompt_id",
+        "version",
+        "status",
+        "text",
+        "sha256",
+        "source_ids"
+      ],
+      "properties": {
+        "prompt_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "version": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "status": {
+          "enum": [
+            "DRAFT",
+            "APPROVED",
+            "REJECTED"
+          ]
+        },
+        "text": {
+          "type": "string"
+        },
+        "sha256": {
+          "$ref": "#/$defs/nullableSha"
+        },
+        "source_ids": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "qc_status": {
+          "enum": [
+            "NOT_RUN",
+            "PASS",
+            "FAIL",
+            "INCONCLUSIVE"
+          ]
+        }
+      }
+    },
+    "criterion": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "observable",
+        "hard_fail"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "observable": {
+          "type": "string",
+          "minLength": 1
+        },
+        "hard_fail": {
+          "type": "boolean"
+        }
+      }
+    }
+  }
+}
