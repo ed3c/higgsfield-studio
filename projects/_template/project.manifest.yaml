@@ -1,0 +1,77 @@
+# Copy with projects/_template. Replace placeholders before any production run.
+schema_version: "1.0"
+project_slug: "replace-me"
+title: "Untitled production"
+production_type: film # film | series | carousel
+state: DRAFT
+higgsfield:
+  surface: cinematic_studio
+  workspace_id: null
+  project_id: null
+  root_folder_id: null
+  # Canonical folders in the owned project, not foreign example folder IDs.
+  folder_bindings:
+    preprod: null
+    act_01: null
+    act_02: null
+    act_03: null
+    epilogue: null
+    regenerations: null
+    selected_deliverables: null
+brief:
+  file: brief.md
+  sections: [Context, Narrative, Visuals, Production, Status, Resources, Notes]
+  revision: null
+bibles:
+  world: null
+  style: null
+  characters: null
+  audio: null
+scene_index: []
+elements_index: []
+assets:
+  manifest: assets/manifest.jsonl
+  external_store: google_drive
+  root_folder_id: null
+  require_sha256_when_bytes_available: true
+prompts:
+  ir_schema: schemas/higgsfield-shot-ir.v1.schema.json
+  branch_types: [artwork, shot, fusion]
+  require_independent_branch_qc: true
+  immutable_submitted_text: true
+generation:
+  require_explicit_preflight_approval: true
+  website_only: false
+  require_zero_credit_preflight: false
+  model_allowlist: []
+  max_credit_spend: null
+  legacy_generation_ledger: generations.csv
+  shared_budget_ledger: budget/ledger.csv
+review:
+  independent_human_reviewers: 2
+  selected_requires_qc_approved: true
+publication:
+  status: DRAFT
+  type: film
+  show_prompts: false
+  show_canvas: false
+  is_discoverable: false
+  public_slug: null
+  public_url: null
+  rights_approval: NOT_RUN
+migration:
+  preserve_existing_files: true
+  legacy_prompt_log: prompts-used.md
+  legacy_notes: edit-notes.md
+  legacy_publish_log: published.md
+acceptance:
+  TREE-01: NOT_RUN
+  BRIEF-01: NOT_RUN
+  PROMPT-01: NOT_RUN
+  ASSET-01: NOT_RUN
+  ELEMENT-01: NOT_RUN
+  QC-01: NOT_RUN
+  COST-01: NOT_RUN
+  RIGHTS-01: NOT_RUN
+  PUBLISH-01: NOT_RUN
+  MIGRATE-01: NOT_RUN
