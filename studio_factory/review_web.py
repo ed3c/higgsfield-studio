@@ -514,7 +514,7 @@ def run_server(assets:Path,repo:Path,db:Path,drive_manifest:Path|None,port:int,p
     server=ThreadingHTTPServer(('127.0.0.1',port),Handler)
     server.app=catalog
     server.csrf=secrets.token_urlsafe(24)
-    print(f'J4 local review: http://127.0.0.1:{server.server_port}',flush=True)
+    print(f'{project} local review: http://127.0.0.1:{server.server_port}',flush=True)
     print(f'assets available {sum(x.get("available",False) for x in catalog.entries.values() if x["group"]=="resource")}/{catalog.expected}',flush=True)
     if not catalog.manifest_present:
         print(f'WARNING: {catalog.assets}/MANIFEST/inventory.json missing; inventory test will report BLOCKED, not PASS',flush=True)
