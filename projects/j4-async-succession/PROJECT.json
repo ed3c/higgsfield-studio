@@ -41,5 +41,13 @@
     "original-audio-only",
     "object-state-recall"
   ],
-  "created_at": "2026-11-22"
+  "created_at": "2026-11-22",
+  "expected_asset_files": 267,
+  "asset_archive": {
+    "name": "j4_all_available_resources_lossless_2026-11-22.zip",
+    "bytes": 76407296,
+    "sha256": "4efe79aa309c193382a82e6c4c56654881df5dbba66df7cfc45df84f0ca3011e",
+    "inventory_sha256": "40ad5010a5e5ae88dc1dab3f912c3968d5d98260a0e82711574d93312b0b095b",
+    "location": "private Google Drive vault; never in Git"
+  }
 }

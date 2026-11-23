@@ -151,6 +151,11 @@ class Catalog:
 
     def _build(self):
         inventory=self.assets/'MANIFEST'/'inventory.json'
+        self.manifest_present=inventory.exists()
+        # Expected count comes from the project contract when declared, so a
+        # missing or empty asset root can never look like a complete one (G-14).
+        declared=self.config.get('expected_asset_files')
+        self.declared_expected=int(declared) if isinstance(declared,int) and declared>0 else None
         if inventory.exists():
             inv=json.loads(inventory.read_text(encoding='utf-8'))
             self.expected=inv.get('files_count',len(inv.get('files',[])))
@@ -163,13 +168,15 @@ class Catalog:
                            'source_kind':row.get('kind'), 'drive':d, 'source_path':rel})
         else:
             self.expected=0
-            if self.assets.exists():
+            if self.assets.exists() and self.declared_expected is None:
                 for p in sorted(self.assets.rglob('*')):
                     if p.is_file() and not p.name.startswith('.') and 'MANIFEST' not in p.parts:
                         rel=str(p.relative_to(self.assets))
                         self._add('resource',rel,p.name,str(p.parent.relative_to(self.assets)),self._type(p),p,
                                   {'source_path':rel})
                         self.expected+=1
+        if self.declared_expected is not None:
+            self.expected=self.declared_expected
         shotsfile=self._find_shots()
         self.shots=[]
         if shotsfile:
@@ -229,7 +236,7 @@ class Catalog:
         return {'project':self.project,'title':self.config.get('title',self.project),
                 'duration_ms':self.config.get('duration_ms',0),'frame_rate':self.config.get('frame_rate',30),
                 'items':items,'shots':len(self.shots),
-                'counts':groups,'expected_files':self.expected,'available_files':sum(x['available'] for x in items if x['group']=='resource'),
+                'counts':groups,'expected_files':self.expected,'manifest_present':self.manifest_present,'available_files':sum(x['available'] for x in items if x['group']=='resource'),
                 'drive_folder':self.drive_folder,'server_time':datetime.now(timezone.utc).isoformat(),
                 'media_policy':'private; never publish unreviewed footage to public Git',
                 'provenance':'medium-compiler build-review-interface skill',
@@ -237,6 +244,14 @@ class Catalog:
 
     def run_test(self,test_id):
         if test_id=='inventory':
+            if not self.manifest_present and self.declared_expected is not None:
+                return {'test':'inventory','state':'BLOCKED','checked':0,'expected':self.expected,
+                        'failures':['MANIFEST/inventory.json missing under '+str(self.assets)+'; run import-archive first'],
+                        'reason':'asset manifest missing'}
+            if self.expected<=0:
+                return {'test':'inventory','state':'BLOCKED','checked':0,'expected':0,
+                        'failures':['no expected asset count (no manifest and no expected_asset_files in PROJECT.json)'],
+                        'reason':'nothing to verify; an empty inventory is not a PASS'}
             errors=[];count=0
             for item in self.entries.values():
                 if item['group']!='resource':continue
@@ -244,6 +259,8 @@ class Catalog:
                 if not p or not p.is_file():errors.append(item['key']+' MISSING');continue
                 if expected and sha256_file(p)!=expected:errors.append(item['key']+' CORRUPT')
                 else:count+=1
+            if count!=self.expected:
+                errors.append(f'verified {count} of expected {self.expected}')
             return {'test':'inventory','state':'PASS' if not errors else 'FAIL',
                     'checked':count,'expected':self.expected,'failures':errors[:50]}
         if test_id=='shot_timeline':
@@ -400,6 +417,8 @@ def run_server(assets:Path,repo:Path,db:Path,drive_manifest:Path|None,port:int,p
     server.csrf=secrets.token_urlsafe(24)
     print(f'J4 local review: http://127.0.0.1:{server.server_port}',flush=True)
     print(f'assets available {sum(x.get("available",False) for x in catalog.entries.values() if x["group"]=="resource")}/{catalog.expected}',flush=True)
+    if not catalog.manifest_present:
+        print(f'WARNING: {catalog.assets}/MANIFEST/inventory.json missing; inventory test will report BLOCKED, not PASS',flush=True)
     try:server.serve_forever()
     except KeyboardInterrupt:pass
     finally:server.server_close()
