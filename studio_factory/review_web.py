@@ -89,6 +89,52 @@ def safe_extract(zip_path: Path, destination: Path, verify: bool=True) -> dict:
     return result
 
 
+def backup_reviews(db: Path, out: Path) -> dict:
+    """Consistent online copy of a review DB (HOF-05). Never overwrites an existing backup."""
+    if not db.is_file():raise ValueError(f'review database not found: {db}')
+    if out.exists():raise ValueError(f'refusing to overwrite existing backup: {out}')
+    out.parent.mkdir(parents=True,exist_ok=True)
+    src=sqlite3.connect(db);dst=sqlite3.connect(out)
+    try:
+        src.backup(dst)
+        check=dst.execute('PRAGMA integrity_check').fetchone()[0]
+        rows=dst.execute('SELECT COUNT(*) FROM reviews').fetchone()[0]
+        meta=dst.execute("SELECT value FROM store_meta WHERE key='project'").fetchone() if dst.execute(
+            "SELECT 1 FROM sqlite_master WHERE name='store_meta'").fetchone() else None
+    finally:
+        dst.close();src.close()
+    if check!='ok':raise ValueError('backup integrity_check failed: '+str(check))
+    receipt={'backup':str(out),'source':str(db),'rows':rows,'project':meta[0] if meta else None,
+             'integrity':check,'sha256':sha256_file(out),'created_utc':datetime.now(timezone.utc).isoformat()}
+    out.with_name(out.name+'.receipt.json').write_text(json.dumps(receipt,indent=2),encoding='utf-8')
+    return receipt
+
+
+def restore_reviews(backup: Path, db: Path) -> dict:
+    """Restore a backup into db. An existing db is kept aside, never deleted."""
+    if not backup.is_file():raise ValueError(f'backup not found: {backup}')
+    receipt=backup.with_name(backup.name+'.receipt.json')
+    if receipt.is_file():
+        want=json.loads(receipt.read_text(encoding='utf-8')).get('sha256')
+        if want and sha256_file(backup)!=want:raise ValueError('backup SHA-256 does not match its receipt')
+    kept=None
+    if db.exists():
+        kept=db.with_name(db.name+'.pre-restore-'+datetime.now(timezone.utc).strftime('%Y%m%dT%H%M%SZ'))
+        src=sqlite3.connect(db);dst=sqlite3.connect(kept)
+        try:src.backup(dst)
+        finally:dst.close();src.close()
+    db.parent.mkdir(parents=True,exist_ok=True)
+    src=sqlite3.connect(backup);dst=sqlite3.connect(db)
+    try:
+        src.backup(dst)
+        check=dst.execute('PRAGMA integrity_check').fetchone()[0]
+        rows=dst.execute('SELECT COUNT(*) FROM reviews').fetchone()[0]
+    finally:
+        dst.close();src.close()
+    if check!='ok':raise ValueError('restored database failed integrity_check')
+    return {'restored':str(db),'from':str(backup),'rows':rows,'integrity':check,'previous_kept_at':str(kept) if kept else None}
+
+
 class ReviewStore:
     def __init__(self, dbfile: Path, project: str|None=None):
         dbfile.parent.mkdir(parents=True,exist_ok=True)
@@ -455,9 +501,19 @@ def main(argv=None):
     s.add_argument('--drive-manifest',type=Path)
     s.add_argument('--port',type=int,default=8765)
     s.add_argument('--project',default='j4-async-succession')
+    b=cmds.add_parser('backup-reviews',help='Copy the private review SQLite with integrity check and SHA receipt')
+    b.add_argument('--db',type=Path,required=True)
+    b.add_argument('--out',type=Path,required=True)
+    r=cmds.add_parser('restore-reviews',help='Restore a review backup; keeps any existing DB aside')
+    r.add_argument('--backup',type=Path,required=True)
+    r.add_argument('--db',type=Path,required=True)
     a=p.parse_args(argv)
     if a.command=='import-archive':
         print(json.dumps(safe_extract(a.archive,a.destination),indent=2))
+    elif a.command=='backup-reviews':
+        print(json.dumps(backup_reviews(a.db,a.out),indent=2))
+    elif a.command=='restore-reviews':
+        print(json.dumps(restore_reviews(a.backup,a.db),indent=2))
     else:run_server(a.assets,a.repo,a.db,a.drive_manifest,a.port,a.project)
 
 if __name__=='__main__':main()
