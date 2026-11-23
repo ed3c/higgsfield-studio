@@ -1,0 +1,117 @@
+{
+ "filter": {
+  "blocked": false,
+  "injection_flags": [],
+  "matches": []
+ },
+ "modality": "image",
+ "models": [
+  "gpt_image"
+ ],
+ "prompts": [
+  {
+   "display_name": "GPT Image 2.5",
+   "kind": "prompt",
+   "model": "gpt_image",
+   "sha256": "848f1263566aa30f7a67c6ceb55950946857eedab73e84f942d98bad3dcf9224",
+   "template_id": "gpt_image",
+   "text": "Create an image with the following specification.\n\nSubject: a young pale woman with copper-red hair and light freckles, solemn and still, eyes slightly wet, wearing an enormous white lace cartwheel ruff, a pearl-and-jewel studded headdress, small pearl drop earrings and a dark gown embroidered with gold and black beads\nPosition: centered, face in the upper-middle of the frame, looking straight at the camera\nScale: head and ruff fill about two thirds of the frame height; chest-up crop\nSpatial layout: foreground: the woman in sharp focus; background right: a bearded man in dark clothing, out of focus; upper left corner: a single lit candle as a soft glowing orb; dim wood-paneled interior falling into darkness\nScene: a dim candlelit palace chamber\nShot: medium close-up\nCamera angle: eye level, frontal\nStyle: cinematic historical drama film still, photorealistic\nLighting: soft diffuse key light from the front left, low contrast on the face, deep shadows, warm candle practical with slight halation\nColor: muted, desaturated ivory, pale skin, muted gold and near-black; neutral to slightly cool grade\nComposition: centered symmetrical portrait framing with the ruff spreading across the lower half; dark negative space in the upper corners\nCamera: long-lens portrait look, shallow depth of field, fine film grain\nMaterial: fine white lace, pearls, gold settings, black beaded embroidery, freckled skin\nConstraints: render all text exactly as written; no extra text, logos, or watermarks. no sharp background, no saturated colors, no additional people in focus",
+   "version": "2.5"
+  }
+ ],
+ "review_checklist": [
+  {
+   "detail": "必填视觉字段齐全",
+   "item": "核心视觉信息是否遗漏",
+   "key": "core_info",
+   "status": "pass"
+  },
+  {
+   "detail": "未发现完全相同字段/条目",
+   "item": "是否有重复描述",
+   "key": "duplicate",
+   "status": "pass"
+  },
+  {
+   "detail": "未发现互斥景别/机位",
+   "item": "是否有冲突指令",
+   "key": "conflict",
+   "status": "pass"
+  },
+  {
+   "detail": "未发现 uncertainty 项进入正文",
+   "item": "是否把推测当事实",
+   "key": "inference",
+   "status": "pass"
+  },
+  {
+   "detail": "无参考图",
+   "item": "参考图角色是否混淆",
+   "key": "reference_role",
+   "status": "pass"
+  },
+  {
+   "detail": "保留/禁止项已覆盖或非必需",
+   "item": "是否缺少保留约束",
+   "key": "preserve",
+   "status": "pass"
+  }
+ ],
+ "schema_version": "1.0",
+ "score_report": {
+  "approximate": true,
+  "dimensions": [
+   {
+    "key": "theme_clarity",
+    "name": "主题明确度",
+    "note": "",
+    "score": 85,
+    "weight": 20
+   },
+   {
+    "key": "scene_completeness",
+    "name": "场景完整度",
+    "note": "",
+    "score": 95,
+    "weight": 20
+   },
+   {
+    "key": "style_fit",
+    "name": "风格契合度",
+    "note": "",
+    "score": 80,
+    "weight": 20
+   },
+   {
+    "key": "structure_clarity",
+    "name": "结构清晰度",
+    "note": "",
+    "score": 60,
+    "weight": 15
+   },
+   {
+    "key": "param_reasonableness",
+    "name": "参数合理性",
+    "note": "",
+    "score": 90,
+    "weight": 15
+   },
+   {
+    "key": "adaptability",
+    "name": "可调性/复用性",
+    "note": "",
+    "score": 60,
+    "weight": 10
+   }
+  ],
+  "grade": "B",
+  "suggestions": [
+   "把具体样例中的可变项替换为 [变量] 占位",
+   "按六要素顺序重排（角色→任务→背景→要求→限制→输出格式）"
+  ],
+  "total": 80.5
+ },
+ "skipped": [],
+ "subcommand": "all",
+ "tool": "prompt_compiler.py"
+}

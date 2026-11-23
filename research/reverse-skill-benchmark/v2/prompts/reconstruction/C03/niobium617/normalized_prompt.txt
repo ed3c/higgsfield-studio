@@ -1,0 +1,16 @@
+Create an image with the following specification.
+
+Subject: a large dark grey tailless flying-wing aircraft with a small glass canopy bubble and boxy intake on top at the center, three engines glowing orange-white beneath the center trailing pale exhaust haze to the left, faint darker markings near the outer wings
+Position: centered horizontally just below the middle of the frame, nearly head-on and seen slightly from above
+Scale: wingspan covers about 80% of the frame width
+Spatial layout: foreground lower right: a dark out-of-focus cockpit frame intruding; midground: the aircraft low over the water; background: hazy horizon with distant pale cliffs about one third down; upper half: flat pale overcast sky
+Scene: a calm grey-green sea under an overcast sky near a coastline
+Shot: wide shot
+Camera angle: slightly high angle from a chase aircraft
+Style: cinematic documentary-style aerial film still, photorealistic
+Lighting: flat diffuse overcast daylight, no hard shadows, small hot engine glows
+Color: desaturated slate-teal, grey and cold green, low contrast
+Composition: strong horizontal silhouette across the center; large negative space of sky above and sea below
+Camera: telephoto compression, atmospheric haze, soft film grain
+Material: matte dark grey airframe, glass canopy, fine choppy water
+Constraints: render all text exactly as written; no extra text, logos, or watermarks. no blue sky, no bright sunlight, no extra aircraft

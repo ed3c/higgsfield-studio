@@ -1,0 +1,117 @@
+{
+ "filter": {
+  "blocked": false,
+  "injection_flags": [],
+  "matches": []
+ },
+ "modality": "image",
+ "models": [
+  "gpt_image"
+ ],
+ "prompts": [
+  {
+   "display_name": "GPT Image 2.5",
+   "kind": "prompt",
+   "model": "gpt_image",
+   "sha256": "2b310639a5099b1e1d24f18e0f6204740ff685f09479d587a732edfdfe17373a",
+   "template_id": "gpt_image",
+   "text": "Create an image with the following specification.\n\nSubject: a large dark grey tailless flying-wing aircraft with a small glass canopy bubble and boxy intake on top at the center, three engines glowing orange-white beneath the center trailing pale exhaust haze to the left, faint darker markings near the outer wings\nPosition: centered horizontally just below the middle of the frame, nearly head-on and seen slightly from above\nScale: wingspan covers about 80% of the frame width\nSpatial layout: foreground lower right: a dark out-of-focus cockpit frame intruding; midground: the aircraft low over the water; background: hazy horizon with distant pale cliffs about one third down; upper half: flat pale overcast sky\nScene: a calm grey-green sea under an overcast sky near a coastline\nShot: wide shot\nCamera angle: slightly high angle from a chase aircraft\nStyle: cinematic documentary-style aerial film still, photorealistic\nLighting: flat diffuse overcast daylight, no hard shadows, small hot engine glows\nColor: desaturated slate-teal, grey and cold green, low contrast\nComposition: strong horizontal silhouette across the center; large negative space of sky above and sea below\nCamera: telephoto compression, atmospheric haze, soft film grain\nMaterial: matte dark grey airframe, glass canopy, fine choppy water\nConstraints: render all text exactly as written; no extra text, logos, or watermarks. no blue sky, no bright sunlight, no extra aircraft",
+   "version": "2.5"
+  }
+ ],
+ "review_checklist": [
+  {
+   "detail": "必填视觉字段齐全",
+   "item": "核心视觉信息是否遗漏",
+   "key": "core_info",
+   "status": "pass"
+  },
+  {
+   "detail": "未发现完全相同字段/条目",
+   "item": "是否有重复描述",
+   "key": "duplicate",
+   "status": "pass"
+  },
+  {
+   "detail": "未发现互斥景别/机位",
+   "item": "是否有冲突指令",
+   "key": "conflict",
+   "status": "pass"
+  },
+  {
+   "detail": "未发现 uncertainty 项进入正文",
+   "item": "是否把推测当事实",
+   "key": "inference",
+   "status": "pass"
+  },
+  {
+   "detail": "无参考图",
+   "item": "参考图角色是否混淆",
+   "key": "reference_role",
+   "status": "pass"
+  },
+  {
+   "detail": "保留/禁止项已覆盖或非必需",
+   "item": "是否缺少保留约束",
+   "key": "preserve",
+   "status": "pass"
+  }
+ ],
+ "schema_version": "1.0",
+ "score_report": {
+  "approximate": true,
+  "dimensions": [
+   {
+    "key": "theme_clarity",
+    "name": "主题明确度",
+    "note": "",
+    "score": 85,
+    "weight": 20
+   },
+   {
+    "key": "scene_completeness",
+    "name": "场景完整度",
+    "note": "",
+    "score": 95,
+    "weight": 20
+   },
+   {
+    "key": "style_fit",
+    "name": "风格契合度",
+    "note": "",
+    "score": 80,
+    "weight": 20
+   },
+   {
+    "key": "structure_clarity",
+    "name": "结构清晰度",
+    "note": "",
+    "score": 60,
+    "weight": 15
+   },
+   {
+    "key": "param_reasonableness",
+    "name": "参数合理性",
+    "note": "",
+    "score": 90,
+    "weight": 15
+   },
+   {
+    "key": "adaptability",
+    "name": "可调性/复用性",
+    "note": "",
+    "score": 60,
+    "weight": 10
+   }
+  ],
+  "grade": "B",
+  "suggestions": [
+   "把具体样例中的可变项替换为 [变量] 占位",
+   "按六要素顺序重排（角色→任务→背景→要求→限制→输出格式）"
+  ],
+  "total": 80.5
+ },
+ "skipped": [],
+ "subcommand": "all",
+ "tool": "prompt_compiler.py"
+}

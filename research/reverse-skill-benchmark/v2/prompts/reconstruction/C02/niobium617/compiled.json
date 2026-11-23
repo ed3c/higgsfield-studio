@@ -1,0 +1,117 @@
+{
+ "filter": {
+  "blocked": false,
+  "injection_flags": [],
+  "matches": []
+ },
+ "modality": "image",
+ "models": [
+  "gpt_image"
+ ],
+ "prompts": [
+  {
+   "display_name": "GPT Image 2.5",
+   "kind": "prompt",
+   "model": "gpt_image",
+   "sha256": "2223f1b93f1f6521800e4463a2381453fc14d0faa1d09ee013736c9551addff2",
+   "template_id": "gpt_image",
+   "text": "Create an image with the following specification.\n\nSubject: the long polished silver hood of a retro-futuristic car with two rounded white fender pods, each carrying a small American flag on a thin staff\nPosition: hood spans the full width of the lower third; pods at the left and right edges; flags just above each pod\nScale: hood occupies about the bottom third of the frame\nSpatial layout: foreground: the hood and pods; midground: a wide empty avenue with a few vintage cars and small pedestrians on sidewalks with globe street lamps; background: a tall pale stone obelisk at the exact center of the horizon, flanked by neoclassical colonnaded buildings and tall white streamlined towers with ring-shaped platforms; a thin dark band of dashboard along the bottom edge\nScene: a ceremonial city avenue in an alternate retro-futurist mid-century capital, late afternoon\nShot: wide shot\nCamera angle: low eye level, straight ahead from behind the windshield\nStyle: cinematic retro-futurist film still, photorealistic\nLighting: soft hazy late-afternoon daylight from the upper left, gentle reflections on the hood\nColor: muted teal-grey, warm stone and silver, low saturation\nComposition: strict one-point perspective and left-right symmetry converging on the centered obelisk; empty asphalt corridor as negative space down the middle\nCamera: normal lens perspective, slightly soft distance, fine film grain\nMaterial: polished chrome hood with panel seams and rivets, glossy white pods, pale stone, glass towers, asphalt\nConstraints: render all text exactly as written; no extra text, logos, or watermarks. no off-center horizon, no modern cars, no saturated colors",
+   "version": "2.5"
+  }
+ ],
+ "review_checklist": [
+  {
+   "detail": "必填视觉字段齐全",
+   "item": "核心视觉信息是否遗漏",
+   "key": "core_info",
+   "status": "pass"
+  },
+  {
+   "detail": "未发现完全相同字段/条目",
+   "item": "是否有重复描述",
+   "key": "duplicate",
+   "status": "pass"
+  },
+  {
+   "detail": "未发现互斥景别/机位",
+   "item": "是否有冲突指令",
+   "key": "conflict",
+   "status": "pass"
+  },
+  {
+   "detail": "uncertainty 项出现在正文：late afternoon（inferred）",
+   "item": "是否把推测当事实",
+   "key": "inference",
+   "status": "warn"
+  },
+  {
+   "detail": "无参考图",
+   "item": "参考图角色是否混淆",
+   "key": "reference_role",
+   "status": "pass"
+  },
+  {
+   "detail": "保留/禁止项已覆盖或非必需",
+   "item": "是否缺少保留约束",
+   "key": "preserve",
+   "status": "pass"
+  }
+ ],
+ "schema_version": "1.0",
+ "score_report": {
+  "approximate": true,
+  "dimensions": [
+   {
+    "key": "theme_clarity",
+    "name": "主题明确度",
+    "note": "",
+    "score": 85,
+    "weight": 20
+   },
+   {
+    "key": "scene_completeness",
+    "name": "场景完整度",
+    "note": "",
+    "score": 95,
+    "weight": 20
+   },
+   {
+    "key": "style_fit",
+    "name": "风格契合度",
+    "note": "",
+    "score": 80,
+    "weight": 20
+   },
+   {
+    "key": "structure_clarity",
+    "name": "结构清晰度",
+    "note": "",
+    "score": 60,
+    "weight": 15
+   },
+   {
+    "key": "param_reasonableness",
+    "name": "参数合理性",
+    "note": "",
+    "score": 90,
+    "weight": 15
+   },
+   {
+    "key": "adaptability",
+    "name": "可调性/复用性",
+    "note": "",
+    "score": 60,
+    "weight": 10
+   }
+  ],
+  "grade": "B",
+  "suggestions": [
+   "把具体样例中的可变项替换为 [变量] 占位",
+   "按六要素顺序重排（角色→任务→背景→要求→限制→输出格式）"
+  ],
+  "total": 80.5
+ },
+ "skipped": [],
+ "subcommand": "all",
+ "tool": "prompt_compiler.py"
+}

@@ -56,3 +56,15 @@ PR #5 (unmerged) records a read-only website observation: GPT Image 2.6 Unlimite
 - C01–C03 **LOCKED** (owner t28s3): S30 / S16 / S06 from the 4K file; the same Telea-inpaint mask at native rect (1740,2035)-(2100,2095) for all three; masked and unmasked hashes recorded in `REFERENCE_LOCK.json`. G0 → sources + hashes + scope present.
 - **Correction to DECISIONS.json D-03** (the original is kept): the 18:04–18:07 check ran in the Grok Bot box's own browser, not in Neon's. Six screenshots were hashed (`ENTITLEMENT_EVIDENCE_20261123.json`) and kept private. Caveat: the NBP 2-credit screenshot was taken at 9:16 / 2K / 4 outputs, not at benchmark settings.
 - C02 sub-label swap in `C_CANDIDATES.md` noted as an erratum; nothing was erased.
+
+### 2026-11-23 ~19:05 Asia/Taipei — P0 prompt lock (reconstruction)
+
+- Skills cloned at the pinned SHAs into `/workspace/hs-bench-skills/` on the box. Nothing was installed. unimage's optional eval script and API helper, and Caph's `agents/openai.yaml`, were **not run**. niobium617's `analyze_image.py` and `prompt_compiler.py` ran with networking disabled (`unshare -rn`).
+- Invocation, per spec §5 P0 and the PR #5 dispositions:
+  - unimage: Reverse Prompt Mode, Scene Auditor → Detail Scanner → Spatial Architect → Prompt Engine. Stopped at the first draft; no Draft Validation and no QC/Repair.
+  - Caph: SKILL.md workflow, final prompt only.
+  - niobium617: image branch → `gpt_image`, kind `prompt`, `--auto` scoring. The step-5 rescore loop was not run.
+- **9 prompts = 3 cases × 3 Skills.** Spec: "One prompt per (case, skill, task), reused for both replicate renders", so the 18 P1 jobs use 9 prompts × 2 replicates. Each Skill was not run twice.
+- Interpreter for all 9 cells: Grok Bot (this agent), viewing a 1920×1080 downscale of the masked reference. The common brief is `P0_TASK_BRIEF.md`.
+- **Limitation:** the interpreter had already seen and described these frames during candidate selection, so its analysis is not naive. The exposure is equal across the three Skills.
+- Outputs: `v2/prompts/reconstruction/{C01,C02,C03}/{unimage,caph,niobium617}/`, index in `prompts.csv`. All normalizations are listed in each `prompt_diff.md`. No prompt was polished by hand.
