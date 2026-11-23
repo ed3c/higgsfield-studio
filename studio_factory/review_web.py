@@ -50,8 +50,15 @@ def sha256_file(path: Path) -> str:
     return h.hexdigest()
 
 
-def safe_extract(zip_path: Path, destination: Path, verify: bool=True) -> dict:
-    """Extract only known safe files; never overwrite bytes that disagree."""
+def safe_extract(zip_path: Path, destination: Path, verify: bool=True, expect_sha256: str|None=None) -> dict:
+    """Extract only known safe files; never overwrite bytes that disagree.
+
+    When expect_sha256 is given the ZIP digest is checked BEFORE anything is
+    written, as docs/GROK_BOT_HANDOFF.md requires.
+    """
+    zip_digest=sha256_file(zip_path)
+    if expect_sha256 and zip_digest!=expect_sha256.lower():
+        raise ValueError(f'archive SHA-256 {zip_digest} != expected {expect_sha256}; nothing extracted')
     destination.mkdir(parents=True,exist_ok=True)
     with zipfile.ZipFile(zip_path) as z:
         members=[m for m in z.infolist() if not m.is_dir()]
@@ -75,7 +82,8 @@ def safe_extract(zip_path: Path, destination: Path, verify: bool=True) -> dict:
             with z.open(m) as src,output.open('xb') as dst:
                 shutil.copyfileobj(src,dst,length=1024*1024)
     inventory=destination/'MANIFEST'/'inventory.json'
-    result={'members':len(members),'verified':0,'missing':[],'mismatch':[]}
+    result={'members':len(members),'verified':0,'missing':[],'mismatch':[],
+            'archive_sha256':zip_digest,'archive_sha256_checked':bool(expect_sha256)}
     if inventory.exists() and verify:
         d=json.loads(inventory.read_text(encoding='utf-8'))
         for item in d['files']:
@@ -87,6 +95,31 @@ def safe_extract(zip_path: Path, destination: Path, verify: bool=True) -> dict:
         if result['missing'] or result['mismatch']:
             raise ValueError('extracted archive failed SHA-256 verification: '+str(result))
     return result
+
+
+def verify_assets(destination: Path) -> dict:
+    """Re-hash an extracted asset root against its MANIFEST (checksum readback)."""
+    inventory=destination/'MANIFEST'/'inventory.json'
+    if not inventory.is_file():
+        return {'state':'BLOCKED','reason':f'{inventory} missing','verified':0,'expected':0,'missing':[],'mismatch':[]}
+    d=json.loads(inventory.read_text(encoding='utf-8'))
+    res={'verified':0,'expected':d.get('files_count',len(d['files'])),'missing':[],'mismatch':[],
+         'inventory_sha256':sha256_file(inventory)}
+    for item in d['files']:
+        p=destination/'files'/item['source_relative']
+        if not p.is_file():res['missing'].append(item['source_relative']);continue
+        if sha256_file(p)!=item['sha256']:res['mismatch'].append(item['source_relative'])
+        else:res['verified']+=1
+    ok=res['verified']==res['expected'] and not res['missing'] and not res['mismatch'] and res['expected']>0
+    res['state']='PASS' if ok else 'FAIL'
+    return res
+
+
+def _expected_archive_sha(repo: Path|None, project: str|None) -> str|None:
+    if not repo or not project:return None
+    pj=repo/'projects'/project/'PROJECT.json'
+    if not pj.is_file():return None
+    return (json.loads(pj.read_text(encoding='utf-8')).get('asset_archive') or {}).get('sha256')
 
 
 def backup_reviews(db: Path, out: Path) -> dict:
@@ -494,6 +527,11 @@ def main(argv=None):
     imp=cmds.add_parser('import-archive',help='Extract and SHA-verify private Google Drive ZIP')
     imp.add_argument('--archive',type=Path,required=True)
     imp.add_argument('--destination',type=Path,required=True)
+    imp.add_argument('--expect-sha256',help='Required ZIP digest; checked before extraction')
+    imp.add_argument('--repo',type=Path,help='Repo root; with --project reads PROJECT.json asset_archive.sha256')
+    imp.add_argument('--project')
+    v=cmds.add_parser('verify-assets',help='Re-hash an extracted asset root against MANIFEST/inventory.json')
+    v.add_argument('--assets',type=Path,required=True)
     s=cmds.add_parser('serve',help='Serve project/asset reviews from loopback only')
     s.add_argument('--assets',type=Path,required=True,help='Directory containing files/ and MANIFEST/')
     s.add_argument('--repo',type=Path,default=Path.cwd())
@@ -509,7 +547,13 @@ def main(argv=None):
     r.add_argument('--db',type=Path,required=True)
     a=p.parse_args(argv)
     if a.command=='import-archive':
-        print(json.dumps(safe_extract(a.archive,a.destination),indent=2))
+        expected=a.expect_sha256 or _expected_archive_sha(a.repo,a.project)
+        if not expected:
+            print('WARNING: archive SHA-256 not checked before extraction; pass --expect-sha256 or --repo/--project',file=sys.stderr)
+        print(json.dumps(safe_extract(a.archive,a.destination,expect_sha256=expected),indent=2))
+    elif a.command=='verify-assets':
+        res=verify_assets(a.assets);print(json.dumps(res,indent=2))
+        if res['state']!='PASS':sys.exit(1)
     elif a.command=='backup-reviews':
         print(json.dumps(backup_reviews(a.db,a.out),indent=2))
     elif a.command=='restore-reviews':
