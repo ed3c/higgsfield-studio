@@ -155,3 +155,17 @@ Facts below were reported by the orchestrating Grok Bot agent, which ran the gen
   - Paste files: `/workspace/hs-bench-jobs/p1b_prompts/NN_jobid.txt`, with mirror copies in `p1b_style_fix/prompts/`.
   - **Status: NOT GENERATED.**
 - **Risk note.** `P1b-C03-unimage-r1` starts with the same text that produced the moderation refusal for job 15. If it is refused, record it as MODERATION_REFUSED and do not retry without Neon.
+
+### 2026-11-23 19:46–19:58 Asia/Taipei — P1b-style-fix generated (ADDENDUM), stored, measured
+
+- **Operator report.** The generation was done by the orchestrating Grok Bot agent in its box browser. 9 of 9 generated, 0 refusals, all UNLIMITED at 0 credits, no image attached. The Unlimited toggle was initially OFF ("GENERATE 1") and was switched ON before any submit. Two accidental non-submit clicks (an image viewer and a nav hover) caused no charge and created no job.
+- **Verified by the executor:**
+  - Each PNG's embedded `hf-job-id` tEXt chunk equals the UUID reported from its download filename.
+  - Each pasted character count equals the prompt file's length.
+  - The sha256 hashes are recorded in `generations_p1b.csv`.
+  - P1b-C03-unimage-r1 was **not** refused this time.
+- **Drive.** Files are in the new private folder `output_p1b/` (`1Q8RQSKKuiBghbWmsmza0od-Ge-LIXwde`): 9 PNGs plus `p1b_compare.jpg`. The folder, 1 PNG, the comparison sheet and `eval/` were permission-checked and are owner-only. Drive sizes equal the box bytes. See `DRIVE_STORAGE_MANIFEST_addendum_03.json`.
+- **Metrics.** `p1b_style_fix/P1B_LOOK_METRICS.md` and `look_delta_summary_case_level.json`.
+  - Closed: the CG crispness gap (63–87% of the centre-sharpness gap closed), the C02 sunny/warm cast, and the exposure of C01 and C03.
+  - Remaining: highlights compressed in every case (p99 about 162 vs 187–195, which is why C01 still reads darker), C01 over-desaturated, C02 depth-of-field structure and camera distance unchanged, C03 blacks not crushed. Softness overshot.
+- P1b remains an **addendum** to the spec. It changes no P1 result, score or gate. **No regeneration.**
