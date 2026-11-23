@@ -1,0 +1,77 @@
+{
+ "round": "STYLE_DNA_EXTRACTION/style_v3",
+ "created": "2026-11-23T20:45+08:00",
+ "changed_variable": "Texture line of the style block only",
+ "style_block_sha256": "b6280876e5d08a6b06dc65c43a257293d8d0c3ef4fb617ce36329d287b133784",
+ "settings": "same as v1/v2 (GPT Image 2.6 Sunburst, 16:9, 1K, Medium, website Unlimited, no reference)",
+ "acceptance": "validation_v1/ACCEPTANCE.md, style_targets_v1.json unchanged; primary target 06 sharp_c <=200 without b* regression",
+ "box_copy": "/workspace/hs-bench-jobs/style_v3_prompts/",
+ "jobs": [
+  {
+   "order": 1,
+   "id": "night_market_cook",
+   "file": "01_night_market_cook.txt",
+   "chars": 3321,
+   "sha256": "920f85ad6218c5615d614e167d277ee97e3623b0e7bef0f0d1c4834c8b03f6bc",
+   "v2_sha256": "ed19cf282a12edeab1a363492f80422651391c48341c394afddd48d760c8bbc6",
+   "diff_vs_v2": "Texture line only (verified by diff: 1 line removed, 1 added)",
+   "shot_identical_to_v1": true,
+   "status": "DRAFT_NOT_GENERATED"
+  },
+  {
+   "order": 2,
+   "id": "desert_bicycle_repair",
+   "file": "02_desert_bicycle_repair.txt",
+   "chars": 3317,
+   "sha256": "ab136e4a757e5119204cd8047794dbb34c11b0e1979c48ebc0f3a013a3adfaa1",
+   "v2_sha256": "ed6e9cc2ee64fb12b2c05e19a854d2a3ec0bb7edcc2296f0f7ecb1c63bfecfbb",
+   "diff_vs_v2": "Texture line only (verified by diff: 1 line removed, 1 added)",
+   "shot_identical_to_v1": true,
+   "status": "DRAFT_NOT_GENERATED"
+  },
+  {
+   "order": 3,
+   "id": "bronze_age_potter",
+   "file": "03_bronze_age_potter.txt",
+   "chars": 3306,
+   "sha256": "289a0bd187d0264d88ff0ad3082a0b11e2b557d6bc2b991058a8d4bf48f03bdc",
+   "v2_sha256": "755a9286487a26f73b58bed95161441845b95381c895cd0b8d3a18efcc671b26",
+   "diff_vs_v2": "Texture line only (verified by diff: 1 line removed, 1 added)",
+   "shot_identical_to_v1": true,
+   "status": "DRAFT_NOT_GENERATED"
+  },
+  {
+   "order": 4,
+   "id": "highland_horses",
+   "file": "04_highland_horses.txt",
+   "chars": 3316,
+   "sha256": "093251831cd0ac32b5b662bea499a2610cfd08fdb4fee9738b681c2eb3f2f0eb",
+   "v2_sha256": "e80ef3b85e7662afb855d50399aff500727703e89493e73aa329904a8ddcf443",
+   "diff_vs_v2": "Texture line only (verified by diff: 1 line removed, 1 added)",
+   "shot_identical_to_v1": true,
+   "status": "DRAFT_NOT_GENERATED"
+  },
+  {
+   "order": 5,
+   "id": "subway_raincoat",
+   "file": "05_subway_raincoat.txt",
+   "chars": 3358,
+   "sha256": "1f6224736ec32f8c0719b684707b68540da795b1d7f065d126cde9a510cd3b08",
+   "v2_sha256": "75647be19adfb167a3ab4d624002acc86fcbf9cecaed90e11b9ddfc0a25cd56d",
+   "diff_vs_v2": "Texture line only (verified by diff: 1 line removed, 1 added)",
+   "shot_identical_to_v1": true,
+   "status": "DRAFT_NOT_GENERATED"
+  },
+  {
+   "order": 6,
+   "id": "pocket_watch_still_life",
+   "file": "06_pocket_watch_still_life.txt",
+   "chars": 3249,
+   "sha256": "6c0b1492be37705d53b715282390e9e77ec83aef0c458c77d6fa0a823099f1db",
+   "v2_sha256": "461bf64216c32cf6ab35a5e104da90cd4d2d4e60cffce81a7aaaf410640054e1",
+   "diff_vs_v2": "Texture line only (verified by diff: 1 line removed, 1 added)",
+   "shot_identical_to_v1": true,
+   "status": "DRAFT_NOT_GENERATED"
+  }
+ ]
+}

@@ -285,3 +285,6 @@ Facts below were reported by the orchestrating Grok Bot agent, which ran the gen
 - v3 is drafted with one variable changed (the `Texture:` line). Not generated.
 - New files: `generations_style_v2.csv`, and in `style_dna/validation_v2/`: `RESULTS_v2.md`, `A1_results_v2.json`, `A3_dof_v2.json`. Also `STYLE_PROMPT_v3.txt`, `style_block_v3.txt` and `style_block_v2_to_v3.diff`.
 - 20:55 Asia/Taipei: the 6 style v2 PNGs were uploaded to Drive `style_v2_output/` (1EOka7cebtm9DlFowvlEpiv3k25u8pfUd). The folder and every file are owner-only (verified). The Drive IDs are in `DRIVE_STORAGE_MANIFEST_addendum_06_style_v2.json`.
+- 20:45 Asia/Taipei: the style v3 prompt pack was built in `style_dna/validation_v3/` (box copy: `/workspace/hs-bench-jobs/style_v3_prompts/`).
+  - Each of the 6 files differs from its v2 file only in the Texture line (verified by diff). Each file is 196 characters longer.
+  - Status: DRAFT_NOT_GENERATED.
