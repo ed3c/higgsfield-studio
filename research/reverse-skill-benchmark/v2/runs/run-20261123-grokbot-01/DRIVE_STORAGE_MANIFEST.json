@@ -1,0 +1,193 @@
+{
+  "recorded_at": "2026-11-23T18:55+08:00",
+  "rule": "Neon t29u: store/read large files in Google Drive, keep PRIVATE, no sharing",
+  "connector": "user-Google-drive (Neon's account); uploads via Grok Bot UploadFile, bytes direct from box",
+  "folders": {
+    "Higgsfield-Studio": "13peU00S9WhtJXFoRWhGlpJBh5P9KQtU2",
+    "reverse-benchmark-v2": "1A8uV3DUaiNchWA0ljDARi3Q3nIYBhru-",
+    "run-20261123-grokbot-01": "1yN13jEwTEbsRsT616sGxRnBJ81bVab74",
+    "output": "1bcJXPFkFezIKyUFABEgVs80En8pFVYzR",
+    "refs": "1_pJ3_ut3NS90FYCi1CNrH-xfKBxntWoK"
+  },
+  "folder_note": "New folder path created 2026-11-23; no pre-existing 'Higgsfield-Studio' folder was found (an unrelated, app-unreadable 'Higgsfield-Studio-Private-Assets' folder exists and was not touched).",
+  "sharing_verification": {
+    "method": "Drive get_file_permissions",
+    "checked_ids": [
+      "13peU00S9WhtJXFoRWhGlpJBh5P9KQtU2",
+      "1bcJXPFkFezIKyUFABEgVs80En8pFVYzR",
+      "1_pJ3_ut3NS90FYCi1CNrH-xfKBxntWoK",
+      "15fsfQFNfYVRqc5_0U7i89PCgeoeCIuAM",
+      "1MPCGKd8UzT_HbRIKynHkN1vCUtGCnd7X"
+    ],
+    "result": "each returned exactly one permission: the owner (Neon). No 'anyone', domain, group or other user permissions. No share call was made."
+  },
+  "box_copies_kept": true,
+  "files": [
+    {
+      "drive_subfolder": "output",
+      "filename": "P1-C01-caph-r1.png",
+      "sha256": "d727cd46974429015491ce8f65e64940f0ecbad45794af78d841693d06a19b8e",
+      "bytes": 1462258,
+      "drive_file_id": "15fsfQFNfYVRqc5_0U7i89PCgeoeCIuAM",
+      "drive_size_bytes_matches": true,
+      "box_copy": "/workspace/hs-bench-private/run-20261123-grokbot-01/output/P1-C01-caph-r1.png",
+      "sharing": "private (owner only)",
+      "permissions_checked": "file"
+    },
+    {
+      "drive_subfolder": "output",
+      "filename": "P1-C01-caph-r2.png",
+      "sha256": "72dc7d4fb51b2b1dc5061042c79db4b038a476fa9de32afafe55d64104464a94",
+      "bytes": 1479611,
+      "drive_file_id": "1ZvXTtT-M3hbnIPqb_c025tv-iRcLMzNu",
+      "drive_size_bytes_matches": true,
+      "box_copy": "/workspace/hs-bench-private/run-20261123-grokbot-01/output/P1-C01-caph-r2.png",
+      "sharing": "private (owner only)",
+      "permissions_checked": "inherited from owner-only parent folder (checked)"
+    },
+    {
+      "drive_subfolder": "output",
+      "filename": "P1-C01-niobium617-r1.png",
+      "sha256": "aef7277ec3fef5e59e9aadf978343b2bb371c7642b20fa0ad115189e41240cce",
+      "bytes": 1451832,
+      "drive_file_id": "1tskJHpBJPG2w8FF2-wYlGgEHK5tGJV4V",
+      "drive_size_bytes_matches": true,
+      "box_copy": "/workspace/hs-bench-private/run-20261123-grokbot-01/output/P1-C01-niobium617-r1.png",
+      "sharing": "private (owner only)",
+      "permissions_checked": "inherited from owner-only parent folder (checked)"
+    },
+    {
+      "drive_subfolder": "output",
+      "filename": "P1-C01-niobium617-r2.png",
+      "sha256": "7392306dbdee04f07ecc8a42b4706bfa049287ccce3416fc2a166a8c229f1a8a",
+      "bytes": 1639991,
+      "drive_file_id": "1DxlndT8YBpX2oreBEoIX1OHuaC_t48HJ",
+      "drive_size_bytes_matches": true,
+      "box_copy": "/workspace/hs-bench-private/run-20261123-grokbot-01/output/P1-C01-niobium617-r2.png",
+      "sharing": "private (owner only)",
+      "permissions_checked": "inherited from owner-only parent folder (checked)"
+    },
+    {
+      "drive_subfolder": "output",
+      "filename": "P1-C01-unimage-r1.png",
+      "sha256": "e6f6e0a41aa76d0c540086209dc75916208e804eb823fb6c65223a51006dfa84",
+      "bytes": 1641172,
+      "drive_file_id": "1C1Tb8EI_U5dA0nB6t68PvjrN4u080pFj",
+      "drive_size_bytes_matches": true,
+      "box_copy": "/workspace/hs-bench-private/run-20261123-grokbot-01/output/P1-C01-unimage-r1.png",
+      "sharing": "private (owner only)",
+      "permissions_checked": "inherited from owner-only parent folder (checked)"
+    },
+    {
+      "drive_subfolder": "output",
+      "filename": "P1-C01-unimage-r2.png",
+      "sha256": "9acc39fdc888cedeebb89e81591ae823b3201f97b75db638bcbe89d9c98a1460",
+      "bytes": 1612581,
+      "drive_file_id": "1zzqgfBqn7elBBo-2uXIll4WnDGzmUegC",
+      "drive_size_bytes_matches": true,
+      "box_copy": "/workspace/hs-bench-private/run-20261123-grokbot-01/output/P1-C01-unimage-r2.png",
+      "sharing": "private (owner only)",
+      "permissions_checked": "inherited from owner-only parent folder (checked)"
+    },
+    {
+      "drive_subfolder": "output",
+      "filename": "P1-C02-caph-r1.png",
+      "sha256": "de2428aaf9c7736fd0a6cd06c4ee4b405fdd5494e07b3617c926c5d79ed072c3",
+      "bytes": 1623744,
+      "drive_file_id": "1cP9d9K5Wpsx5qx1A2_LCC7m8wVU_CnlO",
+      "drive_size_bytes_matches": true,
+      "box_copy": "/workspace/hs-bench-private/run-20261123-grokbot-01/output/P1-C02-caph-r1.png",
+      "sharing": "private (owner only)",
+      "permissions_checked": "inherited from owner-only parent folder (checked)"
+    },
+    {
+      "drive_subfolder": "output",
+      "filename": "P1-C02-unimage-r1.png",
+      "sha256": "674d86daf1eba0774811f65911c0d8d98f68d63bfb35e8bc3e24ad5bda68be50",
+      "bytes": 1664159,
+      "drive_file_id": "1H-aiNXSMqc4yRXqCACdgeXyY4_FOtCmO",
+      "drive_size_bytes_matches": true,
+      "box_copy": "/workspace/hs-bench-private/run-20261123-grokbot-01/output/P1-C02-unimage-r1.png",
+      "sharing": "private (owner only)",
+      "permissions_checked": "inherited from owner-only parent folder (checked)"
+    },
+    {
+      "drive_subfolder": "output",
+      "filename": "P1-C02-unimage-r2.png",
+      "sha256": "7fabcf87babfd58322bf56eae3a6aa117be067f38ae46a847fdf0f5df5ebd285",
+      "bytes": 1733586,
+      "drive_file_id": "13SFcRb2mdCxEqkn2vpaj7MY8xSU7dAr2",
+      "drive_size_bytes_matches": true,
+      "box_copy": "/workspace/hs-bench-private/run-20261123-grokbot-01/output/P1-C02-unimage-r2.png",
+      "sharing": "private (owner only)",
+      "permissions_checked": "inherited from owner-only parent folder (checked)"
+    },
+    {
+      "drive_subfolder": "refs",
+      "filename": "C01_S30_16x9_3840x2160_masked.png",
+      "sha256": "bd8e1abe5c11f094de5c5d44f68a00c2c3ca316594668865d7a934564dc716e5",
+      "bytes": 2816024,
+      "drive_file_id": "1Nbk7lYdvdt-kT2kjoimmAmDOMOR8dG2p",
+      "drive_size_bytes_matches": true,
+      "box_copy": "/workspace/hs-bench-private/run-20261123-grokbot-01/refs/masked/C01_S30_16x9_3840x2160_masked.png",
+      "sharing": "private (owner only)",
+      "permissions_checked": "inherited from owner-only parent folder (checked)"
+    },
+    {
+      "drive_subfolder": "refs",
+      "filename": "C01_S30_native3840x2150_masked.png",
+      "sha256": "72b8ad26f6dcfbafb2a6b1cc636f4db0cc3561fb03e1f79cfd7d7f854213994d",
+      "bytes": 4207725,
+      "drive_file_id": "1TZtYUPELy6uawyksAGVXo1eWWgHMbQID",
+      "drive_size_bytes_matches": true,
+      "box_copy": "/workspace/hs-bench-private/run-20261123-grokbot-01/refs/masked/C01_S30_native3840x2150_masked.png",
+      "sharing": "private (owner only)",
+      "permissions_checked": "inherited from owner-only parent folder (checked)"
+    },
+    {
+      "drive_subfolder": "refs",
+      "filename": "C02_S16_16x9_3840x2160_masked.png",
+      "sha256": "9f2a49aa4b4d9f38da0e58ede1656a8055812d72066426934a15bf3b1b159727",
+      "bytes": 2995350,
+      "drive_file_id": "1zx92BBrCBMfk9QN5LRBK_JkfeoPLtFC4",
+      "drive_size_bytes_matches": true,
+      "box_copy": "/workspace/hs-bench-private/run-20261123-grokbot-01/refs/masked/C02_S16_16x9_3840x2160_masked.png",
+      "sharing": "private (owner only)",
+      "permissions_checked": "inherited from owner-only parent folder (checked)"
+    },
+    {
+      "drive_subfolder": "refs",
+      "filename": "C02_S16_native3840x2150_masked.png",
+      "sha256": "65fe0de1c9d3cc20a4f15a36d22745ee4ddf3917f37cdfee9127c2052192f7dd",
+      "bytes": 4207301,
+      "drive_file_id": "14FY2XxaZ0VVP43T1NnGzFZLa59hK8D1w",
+      "drive_size_bytes_matches": true,
+      "box_copy": "/workspace/hs-bench-private/run-20261123-grokbot-01/refs/masked/C02_S16_native3840x2150_masked.png",
+      "sharing": "private (owner only)",
+      "permissions_checked": "inherited from owner-only parent folder (checked)"
+    },
+    {
+      "drive_subfolder": "refs",
+      "filename": "C03_S06_16x9_3840x2160_masked.png",
+      "sha256": "34c7d89f0b21320ade01b52b37049e9fe11e3427ffbe72b6c09a07686684229f",
+      "bytes": 1536808,
+      "drive_file_id": "1GRZhPLiqcbETVvu5_W-FHPPoJquSavop",
+      "drive_size_bytes_matches": true,
+      "box_copy": "/workspace/hs-bench-private/run-20261123-grokbot-01/refs/masked/C03_S06_16x9_3840x2160_masked.png",
+      "sharing": "private (owner only)",
+      "permissions_checked": "inherited from owner-only parent folder (checked)"
+    },
+    {
+      "drive_subfolder": "refs",
+      "filename": "C03_S06_native3840x2150_masked.png",
+      "sha256": "a098318c9a2827c97a7594b0d18591cb7b2a84d7c4a2fdfb3be5833253371d4d",
+      "bytes": 1862438,
+      "drive_file_id": "1MPCGKd8UzT_HbRIKynHkN1vCUtGCnd7X",
+      "drive_size_bytes_matches": true,
+      "box_copy": "/workspace/hs-bench-private/run-20261123-grokbot-01/refs/masked/C03_S06_native3840x2150_masked.png",
+      "sharing": "private (owner only)",
+      "permissions_checked": "file"
+    }
+  ],
+  "pending": "P1 jobs 10-18 not yet present in the box output folder at 18:55 Asia/Taipei"
+}
