@@ -207,7 +207,7 @@ def parse_args(argv: list[str]) -> argparse.Namespace:
     parser.add_argument(
         "--no-fail",
         action="store_true",
-        help="即使達到 80% 也以結束碼 0 離開",
+        help="即使達到 80%% 也以結束碼 0 離開",
     )
     return parser.parse_args(argv)
 

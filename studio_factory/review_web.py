@@ -50,8 +50,15 @@ def sha256_file(path: Path) -> str:
     return h.hexdigest()
 
 
-def safe_extract(zip_path: Path, destination: Path, verify: bool=True) -> dict:
-    """Extract only known safe files; never overwrite bytes that disagree."""
+def safe_extract(zip_path: Path, destination: Path, verify: bool=True, expect_sha256: str|None=None) -> dict:
+    """Extract only known safe files; never overwrite bytes that disagree.
+
+    When expect_sha256 is given the ZIP digest is checked BEFORE anything is
+    written, as docs/GROK_BOT_HANDOFF.md requires.
+    """
+    zip_digest=sha256_file(zip_path)
+    if expect_sha256 and zip_digest!=expect_sha256.lower():
+        raise ValueError(f'archive SHA-256 {zip_digest} != expected {expect_sha256}; nothing extracted')
     destination.mkdir(parents=True,exist_ok=True)
     with zipfile.ZipFile(zip_path) as z:
         members=[m for m in z.infolist() if not m.is_dir()]
@@ -75,7 +82,8 @@ def safe_extract(zip_path: Path, destination: Path, verify: bool=True) -> dict:
             with z.open(m) as src,output.open('xb') as dst:
                 shutil.copyfileobj(src,dst,length=1024*1024)
     inventory=destination/'MANIFEST'/'inventory.json'
-    result={'members':len(members),'verified':0,'missing':[],'mismatch':[]}
+    result={'members':len(members),'verified':0,'missing':[],'mismatch':[],
+            'archive_sha256':zip_digest,'archive_sha256_checked':bool(expect_sha256)}
     if inventory.exists() and verify:
         d=json.loads(inventory.read_text(encoding='utf-8'))
         for item in d['files']:
@@ -89,14 +97,94 @@ def safe_extract(zip_path: Path, destination: Path, verify: bool=True) -> dict:
     return result
 
 
+def verify_assets(destination: Path) -> dict:
+    """Re-hash an extracted asset root against its MANIFEST (checksum readback)."""
+    inventory=destination/'MANIFEST'/'inventory.json'
+    if not inventory.is_file():
+        return {'state':'BLOCKED','reason':f'{inventory} missing','verified':0,'expected':0,'missing':[],'mismatch':[]}
+    d=json.loads(inventory.read_text(encoding='utf-8'))
+    res={'verified':0,'expected':d.get('files_count',len(d['files'])),'missing':[],'mismatch':[],
+         'inventory_sha256':sha256_file(inventory)}
+    for item in d['files']:
+        p=destination/'files'/item['source_relative']
+        if not p.is_file():res['missing'].append(item['source_relative']);continue
+        if sha256_file(p)!=item['sha256']:res['mismatch'].append(item['source_relative'])
+        else:res['verified']+=1
+    ok=res['verified']==res['expected'] and not res['missing'] and not res['mismatch'] and res['expected']>0
+    res['state']='PASS' if ok else 'FAIL'
+    return res
+
+
+def _expected_archive_sha(repo: Path|None, project: str|None) -> str|None:
+    if not repo or not project:return None
+    pj=repo/'projects'/project/'PROJECT.json'
+    if not pj.is_file():return None
+    return (json.loads(pj.read_text(encoding='utf-8')).get('asset_archive') or {}).get('sha256')
+
+
+def backup_reviews(db: Path, out: Path) -> dict:
+    """Consistent online copy of a review DB (HOF-05). Never overwrites an existing backup."""
+    if not db.is_file():raise ValueError(f'review database not found: {db}')
+    if out.exists():raise ValueError(f'refusing to overwrite existing backup: {out}')
+    out.parent.mkdir(parents=True,exist_ok=True)
+    src=sqlite3.connect(db);dst=sqlite3.connect(out)
+    try:
+        src.backup(dst)
+        check=dst.execute('PRAGMA integrity_check').fetchone()[0]
+        rows=dst.execute('SELECT COUNT(*) FROM reviews').fetchone()[0]
+        meta=dst.execute("SELECT value FROM store_meta WHERE key='project'").fetchone() if dst.execute(
+            "SELECT 1 FROM sqlite_master WHERE name='store_meta'").fetchone() else None
+    finally:
+        dst.close();src.close()
+    if check!='ok':raise ValueError('backup integrity_check failed: '+str(check))
+    receipt={'backup':str(out),'source':str(db),'rows':rows,'project':meta[0] if meta else None,
+             'integrity':check,'sha256':sha256_file(out),'created_utc':datetime.now(timezone.utc).isoformat()}
+    out.with_name(out.name+'.receipt.json').write_text(json.dumps(receipt,indent=2),encoding='utf-8')
+    return receipt
+
+
+def restore_reviews(backup: Path, db: Path) -> dict:
+    """Restore a backup into db. An existing db is kept aside, never deleted."""
+    if not backup.is_file():raise ValueError(f'backup not found: {backup}')
+    receipt=backup.with_name(backup.name+'.receipt.json')
+    if receipt.is_file():
+        want=json.loads(receipt.read_text(encoding='utf-8')).get('sha256')
+        if want and sha256_file(backup)!=want:raise ValueError('backup SHA-256 does not match its receipt')
+    kept=None
+    if db.exists():
+        kept=db.with_name(db.name+'.pre-restore-'+datetime.now(timezone.utc).strftime('%Y%m%dT%H%M%SZ'))
+        src=sqlite3.connect(db);dst=sqlite3.connect(kept)
+        try:src.backup(dst)
+        finally:dst.close();src.close()
+    db.parent.mkdir(parents=True,exist_ok=True)
+    src=sqlite3.connect(backup);dst=sqlite3.connect(db)
+    try:
+        src.backup(dst)
+        check=dst.execute('PRAGMA integrity_check').fetchone()[0]
+        rows=dst.execute('SELECT COUNT(*) FROM reviews').fetchone()[0]
+    finally:
+        dst.close();src.close()
+    if check!='ok':raise ValueError('restored database failed integrity_check')
+    return {'restored':str(db),'from':str(backup),'rows':rows,'integrity':check,'previous_kept_at':str(kept) if kept else None}
+
+
 class ReviewStore:
-    def __init__(self, dbfile: Path):
+    def __init__(self, dbfile: Path, project: str|None=None):
         dbfile.parent.mkdir(parents=True,exist_ok=True)
         self.connection=sqlite3.connect(dbfile,check_same_thread=False,timeout=10)
         self.connection.execute('PRAGMA journal_mode=WAL')
         self.connection.execute('''CREATE TABLE IF NOT EXISTS reviews (
           item_id TEXT PRIMARY KEY, decision TEXT NOT NULL, note TEXT NOT NULL,
           reviewer TEXT NOT NULL, timestamp TEXT NOT NULL, evidence TEXT NOT NULL DEFAULT '')''')
+        self.connection.execute('CREATE TABLE IF NOT EXISTS store_meta (key TEXT PRIMARY KEY, value TEXT NOT NULL)')
+        if project:
+            # One review DB per production: refuse to mix another film's decisions (HOF-09).
+            row=self.connection.execute("SELECT value FROM store_meta WHERE key='project'").fetchone()
+            if row and row[0]!=project:
+                self.connection.close()
+                raise ValueError(f'review database {dbfile} belongs to project {row[0]!r}, not {project!r}')
+            if not row:
+                self.connection.execute("INSERT INTO store_meta VALUES('project',?)",(project,))
         self.connection.commit()
         self.lock=threading.Lock()
     def get_all(self):
@@ -119,7 +207,7 @@ class Catalog:
     def __init__(self, assets:Path, repo:Path, database:Path, drive_manifest:Path|None=None, project:str='j4-async-succession'):
         self.assets=assets.resolve();self.repo=repo.resolve();self.project=project
         self.config=self._project_config()
-        self.store=ReviewStore(database)
+        self.store=ReviewStore(database,project)
         self.entries={}
         self.sha_map={}
         self.drive={}
@@ -151,6 +239,11 @@ class Catalog:
 
     def _build(self):
         inventory=self.assets/'MANIFEST'/'inventory.json'
+        self.manifest_present=inventory.exists()
+        # Expected count comes from the project contract when declared, so a
+        # missing or empty asset root can never look like a complete one (G-14).
+        declared=self.config.get('expected_asset_files')
+        self.declared_expected=int(declared) if isinstance(declared,int) and declared>0 else None
         if inventory.exists():
             inv=json.loads(inventory.read_text(encoding='utf-8'))
             self.expected=inv.get('files_count',len(inv.get('files',[])))
@@ -163,13 +256,15 @@ class Catalog:
                            'source_kind':row.get('kind'), 'drive':d, 'source_path':rel})
         else:
             self.expected=0
-            if self.assets.exists():
+            if self.assets.exists() and self.declared_expected is None:
                 for p in sorted(self.assets.rglob('*')):
                     if p.is_file() and not p.name.startswith('.') and 'MANIFEST' not in p.parts:
                         rel=str(p.relative_to(self.assets))
                         self._add('resource',rel,p.name,str(p.parent.relative_to(self.assets)),self._type(p),p,
                                   {'source_path':rel})
                         self.expected+=1
+        if self.declared_expected is not None:
+            self.expected=self.declared_expected
         shotsfile=self._find_shots()
         self.shots=[]
         if shotsfile:
@@ -194,9 +289,17 @@ class Catalog:
         self.reviews=self.store.get_all()
 
     def _find_shots(self):
-        for p in [self.repo/'projects'/self.project/'shots.json',
-                  self.repo/'projects'/self.project/'archive'/'v2_6'/'j4_shots.json',
-                  self.assets/'files'/'j4_museum_v2_6'/'j4_shots.json']:
+        pdir=self.repo/'projects'/self.project
+        candidates=[pdir/'shots.json']
+        declared=self.config.get('shots_file')
+        if isinstance(declared,str) and declared:
+            cand=(pdir/declared).resolve()
+            if cand.is_relative_to(pdir.resolve()):candidates.append(cand)
+        if self.project=='j4-async-succession':
+            # Legacy J4-only locations; never used for another production (HOF-09).
+            candidates+=[pdir/'archive'/'v2_6'/'j4_shots.json',
+                         self.assets/'files'/'j4_museum_v2_6'/'j4_shots.json']
+        for p in candidates:
             if p.is_file():return p
         return None
 
@@ -228,8 +331,9 @@ class Catalog:
         for i in items:groups[i['group']]=groups.get(i['group'],0)+1
         return {'project':self.project,'title':self.config.get('title',self.project),
                 'duration_ms':self.config.get('duration_ms',0),'frame_rate':self.config.get('frame_rate',30),
+                'global_interrupt':self.config.get('global_interrupt'),
                 'items':items,'shots':len(self.shots),
-                'counts':groups,'expected_files':self.expected,'available_files':sum(x['available'] for x in items if x['group']=='resource'),
+                'counts':groups,'expected_files':self.expected,'manifest_present':self.manifest_present,'available_files':sum(x['available'] for x in items if x['group']=='resource'),
                 'drive_folder':self.drive_folder,'server_time':datetime.now(timezone.utc).isoformat(),
                 'media_policy':'private; never publish unreviewed footage to public Git',
                 'provenance':'medium-compiler build-review-interface skill',
@@ -237,6 +341,14 @@ class Catalog:
 
     def run_test(self,test_id):
         if test_id=='inventory':
+            if not self.manifest_present and self.declared_expected is not None:
+                return {'test':'inventory','state':'BLOCKED','checked':0,'expected':self.expected,
+                        'failures':['MANIFEST/inventory.json missing under '+str(self.assets)+'; run import-archive first'],
+                        'reason':'asset manifest missing'}
+            if self.expected<=0:
+                return {'test':'inventory','state':'BLOCKED','checked':0,'expected':0,
+                        'failures':['no expected asset count (no manifest and no expected_asset_files in PROJECT.json)'],
+                        'reason':'nothing to verify; an empty inventory is not a PASS'}
             errors=[];count=0
             for item in self.entries.values():
                 if item['group']!='resource':continue
@@ -244,6 +356,8 @@ class Catalog:
                 if not p or not p.is_file():errors.append(item['key']+' MISSING');continue
                 if expected and sha256_file(p)!=expected:errors.append(item['key']+' CORRUPT')
                 else:count+=1
+            if count!=self.expected:
+                errors.append(f'verified {count} of expected {self.expected}')
             return {'test':'inventory','state':'PASS' if not errors else 'FAIL',
                     'checked':count,'expected':self.expected,'failures':errors[:50]}
         if test_id=='shot_timeline':
@@ -276,7 +390,7 @@ class Catalog:
 def _json(data):return json.dumps(data,ensure_ascii=False).encode('utf-8')
 
 class Handler(BaseHTTPRequestHandler):
-    server_version='J4Review/1.0'
+    server_version='StudioReview/1.0'
     def log_message(self,*args):pass
     @property
     def app(self):return self.server.app
@@ -324,6 +438,8 @@ class Handler(BaseHTTPRequestHandler):
             item=self.app.entries.get(eid)
             if not item or not item.get('available') or item['group']!='resource':return self._deny(404,'Missing local asset')
             return self._stream(item)
+        if route=='/favicon.ico':
+            return self._headers(204,'image/x-icon',0)
         if route=='/':route='/index.html'
         full=(SITE/route.lstrip('/')).resolve()
         if not full.is_relative_to(SITE.resolve()) or not full.is_file():return self._deny(404,'Unknown route')
@@ -398,8 +514,10 @@ def run_server(assets:Path,repo:Path,db:Path,drive_manifest:Path|None,port:int,p
     server=ThreadingHTTPServer(('127.0.0.1',port),Handler)
     server.app=catalog
     server.csrf=secrets.token_urlsafe(24)
-    print(f'J4 local review: http://127.0.0.1:{server.server_port}',flush=True)
+    print(f'{project} local review: http://127.0.0.1:{server.server_port}',flush=True)
     print(f'assets available {sum(x.get("available",False) for x in catalog.entries.values() if x["group"]=="resource")}/{catalog.expected}',flush=True)
+    if not catalog.manifest_present:
+        print(f'WARNING: {catalog.assets}/MANIFEST/inventory.json missing; inventory test will report BLOCKED, not PASS',flush=True)
     try:server.serve_forever()
     except KeyboardInterrupt:pass
     finally:server.server_close()
@@ -411,6 +529,11 @@ def main(argv=None):
     imp=cmds.add_parser('import-archive',help='Extract and SHA-verify private Google Drive ZIP')
     imp.add_argument('--archive',type=Path,required=True)
     imp.add_argument('--destination',type=Path,required=True)
+    imp.add_argument('--expect-sha256',help='Required ZIP digest; checked before extraction')
+    imp.add_argument('--repo',type=Path,help='Repo root; with --project reads PROJECT.json asset_archive.sha256')
+    imp.add_argument('--project')
+    v=cmds.add_parser('verify-assets',help='Re-hash an extracted asset root against MANIFEST/inventory.json')
+    v.add_argument('--assets',type=Path,required=True)
     s=cmds.add_parser('serve',help='Serve project/asset reviews from loopback only')
     s.add_argument('--assets',type=Path,required=True,help='Directory containing files/ and MANIFEST/')
     s.add_argument('--repo',type=Path,default=Path.cwd())
@@ -418,9 +541,25 @@ def main(argv=None):
     s.add_argument('--drive-manifest',type=Path)
     s.add_argument('--port',type=int,default=8765)
     s.add_argument('--project',default='j4-async-succession')
+    b=cmds.add_parser('backup-reviews',help='Copy the private review SQLite with integrity check and SHA receipt')
+    b.add_argument('--db',type=Path,required=True)
+    b.add_argument('--out',type=Path,required=True)
+    r=cmds.add_parser('restore-reviews',help='Restore a review backup; keeps any existing DB aside')
+    r.add_argument('--backup',type=Path,required=True)
+    r.add_argument('--db',type=Path,required=True)
     a=p.parse_args(argv)
     if a.command=='import-archive':
-        print(json.dumps(safe_extract(a.archive,a.destination),indent=2))
+        expected=a.expect_sha256 or _expected_archive_sha(a.repo,a.project)
+        if not expected:
+            print('WARNING: archive SHA-256 not checked before extraction; pass --expect-sha256 or --repo/--project',file=sys.stderr)
+        print(json.dumps(safe_extract(a.archive,a.destination,expect_sha256=expected),indent=2))
+    elif a.command=='verify-assets':
+        res=verify_assets(a.assets);print(json.dumps(res,indent=2))
+        if res['state']!='PASS':sys.exit(1)
+    elif a.command=='backup-reviews':
+        print(json.dumps(backup_reviews(a.db,a.out),indent=2))
+    elif a.command=='restore-reviews':
+        print(json.dumps(restore_reviews(a.backup,a.db),indent=2))
     else:run_server(a.assets,a.repo,a.db,a.drive_manifest,a.port,a.project)
 
 if __name__=='__main__':main()

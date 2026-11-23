@@ -1,0 +1,9 @@
+trial,condition,mode,source_shots,target_duration_ms,edit,constants,allowed_difference,art_reference,human_status,rights_status
+A,T,audio,S09,3500,風扇在同一空間自然部分遮蔽虛構女性說話的子音；感受到發聲意圖，沒有不可替代的台詞資訊。,畫面與台詞文本 | 語音表演/聲線 | 人物距離與聲源數量 | 時長、聲道與規定的總響度檢查,風扇與語音的頻譜遮蔽程度,Christina Kubisch — Electrical Walks (2003–),NOT_RUN,NOT_RUN
+A,C,audio,S09,3500,同一原創聲線、相同時長與雨聲，風扇轉為不遮蔽語音的頻帶，保留其存在但語音較清晰。,畫面與台詞文本 | 語音表演/聲線 | 人物距離與聲源數量 | 時長、聲道與規定的總響度檢查,風扇與語音的頻譜遮蔽程度,Christina Kubisch — Electrical Walks (2003–),NOT_RUN,NOT_RUN
+B,T,audio,S14,3000,保持掌聲事件數量不變，將直接聲逐漸轉為高處/遠處的反射聲，讓空歌劇院彷彿自行鼓掌。,畫面、掌聲事件時刻 | 可見人數 | 人聲與環境基底 | 感知音量的安全匹配,直接聲/反射聲比例 | 空間方向與殘響,Janet Cardiff & George Bures Miller — The Murder of Crows (2008),NOT_RUN,NOT_RUN
+B,C,audio,S14,3000,同樣的鼓掌事件與持續時間，但聲源保持集中且近距離；不要假裝沒有觀眾。,畫面、掌聲事件時刻 | 可見人數 | 人聲與環境基底 | 感知音量的安全匹配,直接聲/反射聲比例 | 空間方向與殘響,Janet Cardiff & George Bures Miller — The Murder of Crows (2008),NOT_RUN,NOT_RUN
+C,T,audio,S17;S18,4500,在 63.700 秒使六個 phase family 同時停止，僅保留同一條自 0.500 秒延續的正弦聲。,S17 時序、聲部素材、事件起點 | 原始獨立 phase | 正弦波起始/相位/音量 | 畫面與輸出安全界限,63.700 秒以後的六組聲部終止方式,Ryoji Ikeda — data-verse 1 (2019); Carsten Nicolai — unidisplay (2011),NOT_RUN,NOT_RUN
+C,C,audio,S17;S18,4500,六個 phase family 分別自然尾音或淡出，不在同一時刻停止；正弦聲仍連續。,S17 時序、聲部素材、事件起點 | 原始獨立 phase | 正弦波起始/相位/音量 | 畫面與輸出安全界限,63.700 秒以後的六組聲部終止方式,Ryoji Ikeda — data-verse 1 (2019); Carsten Nicolai — unidisplay (2011),NOT_RUN,NOT_RUN
+D,T,audiovisual,S04;S21;S22;S23;S24,19000,S04 原創鎢絲微響在 S24 以同一音色指紋、不同時間包絡返場；外套與光鳥的視覺證據不變。,S04 與 S21–S24 相同畫面 | 外套/光鳥動作 | 環境與音樂片段 | S24 聲音出現時刻和安全響度,S24 微型鎢絲音色指紋是否繼承 S04,Studio DRIFT — Fragile Future series; Rafael Lozano-Hemmer — Pulse Room (2006),NOT_RUN,NOT_RUN
+D,C,audiovisual,S04;S21;S22;S23;S24,19000,S24 使用同類但非同一音色指紋的原創微響；其餘音景、亮度、剪輯皆不變。,S04 與 S21–S24 相同畫面 | 外套/光鳥動作 | 環境與音樂片段 | S24 聲音出現時刻和安全響度,S24 微型鎢絲音色指紋是否繼承 S04,Studio DRIFT — Fragile Future series; Rafael Lozano-Hemmer — Pulse Room (2006),NOT_RUN,NOT_RUN

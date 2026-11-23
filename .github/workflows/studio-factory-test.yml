@@ -1,17 +1,23 @@
 name: Studio Factory contract tests
 on:
   pull_request:
-    paths: ["studio_factory/**", ".github/workflows/studio-factory-test.yml"]
+    paths: ["studio_factory/**", "budget/**", "projects/**", ".github/workflows/studio-factory-test.yml"]
   push:
-    paths: ["studio_factory/**", ".github/workflows/studio-factory-test.yml"]
+    paths: ["studio_factory/**", "budget/**", "projects/**", ".github/workflows/studio-factory-test.yml"]
 jobs:
   unittest:
     runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        # 3.15 catches stricter argparse/stdlib behaviour seen on the owner's Mac (G-13).
+        python-version: ["3.12", "3.15"]
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
-          python-version: "3.12"
+          python-version: ${{ matrix.python-version }}
+          allow-prereleases: true
       - name: Offline immutable-registry and manager-contract tests
         run: python -m unittest discover -s studio_factory/tests -v
       - name: Verify historical repo budget tools remain usable
