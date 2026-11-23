@@ -69,3 +69,10 @@
 **C01 = C01a (S30), C02 = C02a (S16), C03 = C03a (S06).** Each is the closest fit to its spec criterion and has no legible text or insignia (watermark aside). The three cover different focal lengths (portrait tele, normal perspective, extreme tele) and lighting keys (practical warm low-key, flat daylight, overcast high-key). That spread stresses the reverse Skills on different properties.
 
 If you prefer no real landmark or flags in the set, swap C02 to C02b (S23), at the cost of a weaker vanishing point.
+
+---
+
+## Erratum and lock — 2026-11-23 ~18:45 Asia/Taipei (append-only)
+
+- **Label inconsistency:** in this document the C02 sub-labels are swapped relative to `c_candidates_measured.json` and the v1 contact sheet. There `C02a = S23` (redwoods, and the v1 sheet marked it "*REC") and `C02b = S16`. The recommendation text above always meant **S16** (DC avenue). The shot ID is the canonical identity. The v1 sheet (`c_candidates_sheet.jpg`, sha256 `e0a7ef12…dbc1`) is kept unchanged. A corrected private sheet, `c_candidates_sheet_v2_locked.jpg` (sha256 `3e7f2f05…946d`), labels by `candidates.json` keys and outlines the locked shots.
+- **Locked by owner (t28s3):** C01 = S30 @ 39.65 s, C02 = S16 @ 21.10 s (landmark/flag risk accepted), C03 = S06 @ 7.44 s, with a fixed watermark mask. Hashes and mask: `research/reverse-skill-benchmark/v2/runs/run-20261123-grokbot-01/REFERENCE_LOCK.json`.

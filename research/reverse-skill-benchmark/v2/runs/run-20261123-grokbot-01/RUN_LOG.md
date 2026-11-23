@@ -50,3 +50,9 @@ PR #5 (unmerged) records a read-only website observation: GPT Image 2.6 Unlimite
 
 - MS-005/007 closed; trailer obtained from X (720p) and YouTube (4K), private copies hashed (`research/live/creator-intelligence/2026-11-23-tupacabra/SOURCES.md`).
 - 55 shots scene-detected; 9 candidates (3 per case) analysed in `C_CANDIDATES.md`; recommendation C01a S30 / C02a S16 / C03a S06. **Not locked**, no prompts generated, job slots unchanged (`prompt=null`).
+
+### 2026-11-23 ~18:45 Asia/Taipei — reference lock + entitlement correction
+
+- C01–C03 **LOCKED** (owner t28s3): S30 / S16 / S06 from the 4K file; the same Telea-inpaint mask at native rect (1740,2035)-(2100,2095) for all three; masked and unmasked hashes recorded in `REFERENCE_LOCK.json`. G0 → sources + hashes + scope present.
+- **Correction to DECISIONS.json D-03** (the original is kept): the 18:04–18:07 check ran in the Grok Bot box's own browser, not in Neon's. Six screenshots were hashed (`ENTITLEMENT_EVIDENCE_20261123.json`) and kept private. Caveat: the NBP 2-credit screenshot was taken at 9:16 / 2K / 4 outputs, not at benchmark settings.
+- C02 sub-label swap in `C_CANDIDATES.md` noted as an erratum; nothing was erased.
