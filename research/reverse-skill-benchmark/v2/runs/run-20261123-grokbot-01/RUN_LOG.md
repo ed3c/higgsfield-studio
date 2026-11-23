@@ -273,3 +273,14 @@ Facts below were reported by the orchestrating Grok Bot agent, which ran the gen
   Earlier status files are kept unchanged.
 
 - 20:45 Asia/Taipei: the P1 score sheets and results were uploaded to Drive `eval/`. Each file is owner-only (verified). The record is `DRIVE_STORAGE_MANIFEST_addendum_05_p1_scores.json`.
+
+### 2026-11-23 20:30–20:50 Asia/Taipei — STYLE_DNA_EXTRACTION / style_v2 results
+
+- 6 of 6 generated, UNLIMITED at 0 credits. The UUIDs match the PNG `hf-job-id`.
+- **A1: set PASS** (v1 was FAIL). b\* median went from 5.71 to 2.99; 5 of 6 images pass.
+  - Remaining failures: 06 sharp_c 324; 05 sat 97.6 and b\* 6.87 (regressed; driven by the subject colour); 01 a\* +1.05.
+- **A3: PASS 5/6.** 04 is fixed (2.29 → 0.26); 02 fails at 0.64 because the background cells include the mid-ground fuel pump.
+- **B2:** 0 leaks.
+- **A2:** PENDING; Neon judges.
+- v3 is drafted with one variable changed (the `Texture:` line). Not generated.
+- New files: `generations_style_v2.csv`, and in `style_dna/validation_v2/`: `RESULTS_v2.md`, `A1_results_v2.json`, `A3_dof_v2.json`. Also `STYLE_PROMPT_v3.txt`, `style_block_v3.txt` and `style_block_v2_to_v3.diff`.
