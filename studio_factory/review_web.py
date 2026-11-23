@@ -90,13 +90,22 @@ def safe_extract(zip_path: Path, destination: Path, verify: bool=True) -> dict:
 
 
 class ReviewStore:
-    def __init__(self, dbfile: Path):
+    def __init__(self, dbfile: Path, project: str|None=None):
         dbfile.parent.mkdir(parents=True,exist_ok=True)
         self.connection=sqlite3.connect(dbfile,check_same_thread=False,timeout=10)
         self.connection.execute('PRAGMA journal_mode=WAL')
         self.connection.execute('''CREATE TABLE IF NOT EXISTS reviews (
           item_id TEXT PRIMARY KEY, decision TEXT NOT NULL, note TEXT NOT NULL,
           reviewer TEXT NOT NULL, timestamp TEXT NOT NULL, evidence TEXT NOT NULL DEFAULT '')''')
+        self.connection.execute('CREATE TABLE IF NOT EXISTS store_meta (key TEXT PRIMARY KEY, value TEXT NOT NULL)')
+        if project:
+            # One review DB per production: refuse to mix another film's decisions (HOF-09).
+            row=self.connection.execute("SELECT value FROM store_meta WHERE key='project'").fetchone()
+            if row and row[0]!=project:
+                self.connection.close()
+                raise ValueError(f'review database {dbfile} belongs to project {row[0]!r}, not {project!r}')
+            if not row:
+                self.connection.execute("INSERT INTO store_meta VALUES('project',?)",(project,))
         self.connection.commit()
         self.lock=threading.Lock()
     def get_all(self):
@@ -119,7 +128,7 @@ class Catalog:
     def __init__(self, assets:Path, repo:Path, database:Path, drive_manifest:Path|None=None, project:str='j4-async-succession'):
         self.assets=assets.resolve();self.repo=repo.resolve();self.project=project
         self.config=self._project_config()
-        self.store=ReviewStore(database)
+        self.store=ReviewStore(database,project)
         self.entries={}
         self.sha_map={}
         self.drive={}
@@ -201,9 +210,17 @@ class Catalog:
         self.reviews=self.store.get_all()
 
     def _find_shots(self):
-        for p in [self.repo/'projects'/self.project/'shots.json',
-                  self.repo/'projects'/self.project/'archive'/'v2_6'/'j4_shots.json',
-                  self.assets/'files'/'j4_museum_v2_6'/'j4_shots.json']:
+        pdir=self.repo/'projects'/self.project
+        candidates=[pdir/'shots.json']
+        declared=self.config.get('shots_file')
+        if isinstance(declared,str) and declared:
+            cand=(pdir/declared).resolve()
+            if cand.is_relative_to(pdir.resolve()):candidates.append(cand)
+        if self.project=='j4-async-succession':
+            # Legacy J4-only locations; never used for another production (HOF-09).
+            candidates+=[pdir/'archive'/'v2_6'/'j4_shots.json',
+                         self.assets/'files'/'j4_museum_v2_6'/'j4_shots.json']
+        for p in candidates:
             if p.is_file():return p
         return None
 
@@ -235,6 +252,7 @@ class Catalog:
         for i in items:groups[i['group']]=groups.get(i['group'],0)+1
         return {'project':self.project,'title':self.config.get('title',self.project),
                 'duration_ms':self.config.get('duration_ms',0),'frame_rate':self.config.get('frame_rate',30),
+                'global_interrupt':self.config.get('global_interrupt'),
                 'items':items,'shots':len(self.shots),
                 'counts':groups,'expected_files':self.expected,'manifest_present':self.manifest_present,'available_files':sum(x['available'] for x in items if x['group']=='resource'),
                 'drive_folder':self.drive_folder,'server_time':datetime.now(timezone.utc).isoformat(),
@@ -293,7 +311,7 @@ class Catalog:
 def _json(data):return json.dumps(data,ensure_ascii=False).encode('utf-8')
 
 class Handler(BaseHTTPRequestHandler):
-    server_version='J4Review/1.0'
+    server_version='StudioReview/1.0'
     def log_message(self,*args):pass
     @property
     def app(self):return self.server.app
