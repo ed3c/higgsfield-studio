@@ -76,3 +76,14 @@ Directly synced original videos can be placed under `extra/`, or use the SHA-ver
 ## Work across many films
 
 Each new `projects/<slug>/PROJECT.json` remains a separate production. Generic research, art method, sound technique, optical principles, tests and Manager skill contracts can be promoted to immutable shared records via `studio_factory`; media, paid budgets, personal identities, story and licensing rights remain project-private. A second film never inherits the J4 owner approval.
+
+## Addendum 2026-11-23: integrity, backup and per-production commands
+
+Appended by the handoff-breakpoint fix branch; nothing above is changed.
+
+- `import-archive --archive <zip> --destination <dir> --repo . --project <slug>` reads `asset_archive.sha256` from `PROJECT.json` and hashes the ZIP **before** extraction; on mismatch nothing is extracted. `--expect-sha256 <hex>` overrides. Without either, a warning is printed.
+- `verify-assets --assets <dir>` re-reads every file against `MANIFEST/inventory.json` and prints PASS / FAIL / BLOCKED (exit 1 unless PASS).
+- The inventory test is BLOCKED when the manifest is missing and FAIL when verified ≠ `PROJECT.json` `expected_asset_files`; a 0/0 PASS is no longer possible.
+- `backup-reviews --db <db> --out <new file>` makes an SQLite online backup, runs `integrity_check`, writes `<out>.receipt.json` with its SHA-256 and never overwrites. `restore-reviews --backup <file> --db <db>` verifies the receipt and keeps any existing DB as `<db>.pre-restore-<timestamp>`. Keep backups private, next to the assets, never in Git.
+- A review DB is bound to the first production that opens it (`store_meta`); opening it for another slug is refused. Use one DB per film.
+- A new production supplies `shots.json` (or `PROJECT.json` `shots_file`) and optionally `global_interrupt {shot, at_ms, label_zh}`; the UI no longer contains J4 names.
