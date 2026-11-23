@@ -1,0 +1,22 @@
+{
+ "r1_only_all_cases": {
+  "means": {
+   "niobium617": 3.425,
+   "unimage": 3.342,
+   "caph": 3.142
+  },
+  "niob_minus_unimage": 0.083,
+  "cases_led_by_niobium617": "2/3",
+  "rule_outcome": "INCONCLUSIVE"
+ },
+ "exclude_C03": {
+  "means": {
+   "niobium617": 3.175,
+   "unimage": 3.062,
+   "caph": 2.825
+  },
+  "niob_minus_unimage": 0.112,
+  "cases_led_by_niobium617": "2/2",
+  "rule_outcome": "INCONCLUSIVE"
+ }
+}

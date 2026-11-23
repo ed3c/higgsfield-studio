@@ -1,0 +1,212 @@
+{
+ "per_image": {
+  "B0001": {
+   "case_id": "C03",
+   "skill_id": "unimage",
+   "replicate": 1,
+   "R1": 4.0,
+   "R2": 4.0,
+   "mean": 4.0,
+   "hard_fail_any": false
+  },
+  "B0002": {
+   "case_id": "C01",
+   "skill_id": "caph",
+   "replicate": 2,
+   "R1": 3.25,
+   "R2": 3.35,
+   "mean": 3.3,
+   "hard_fail_any": false
+  },
+  "B0003": {
+   "case_id": "C02",
+   "skill_id": "caph",
+   "replicate": 1,
+   "R1": 2.55,
+   "R2": 2.15,
+   "mean": 2.35,
+   "hard_fail_any": false
+  },
+  "B0004": {
+   "case_id": "C02",
+   "skill_id": "niobium617",
+   "replicate": 2,
+   "R1": 2.8,
+   "R2": 2.4,
+   "mean": 2.6,
+   "hard_fail_any": false
+  },
+  "B0005": {
+   "case_id": "C01",
+   "skill_id": "niobium617",
+   "replicate": 1,
+   "R1": 3.75,
+   "R2": 3.75,
+   "mean": 3.75,
+   "hard_fail_any": false
+  },
+  "B0006": {
+   "case_id": "C01",
+   "skill_id": "niobium617",
+   "replicate": 2,
+   "R1": 3.75,
+   "R2": 3.75,
+   "mean": 3.75,
+   "hard_fail_any": false
+  },
+  "B0007": {
+   "case_id": "C01",
+   "skill_id": "caph",
+   "replicate": 1,
+   "R1": 3.25,
+   "R2": 3.35,
+   "mean": 3.3,
+   "hard_fail_any": false
+  },
+  "B0008": {
+   "case_id": "C03",
+   "skill_id": "niobium617",
+   "replicate": 2,
+   "R1": 4.25,
+   "R2": 4.25,
+   "mean": 4.25,
+   "hard_fail_any": false
+  },
+  "B0009": {
+   "case_id": "C02",
+   "skill_id": "unimage",
+   "replicate": 1,
+   "R1": 2.55,
+   "R2": 2.4,
+   "mean": 2.475,
+   "hard_fail_any": false
+  },
+  "B0010": {
+   "case_id": "C03",
+   "skill_id": "caph",
+   "replicate": 2,
+   "R1": 3.7,
+   "R2": 3.85,
+   "mean": 3.775,
+   "hard_fail_any": false
+  },
+  "B0011": {
+   "case_id": "C01",
+   "skill_id": "unimage",
+   "replicate": 1,
+   "R1": 3.55,
+   "R2": 3.55,
+   "mean": 3.55,
+   "hard_fail_any": false
+  },
+  "B0012": {
+   "case_id": "C03",
+   "skill_id": "caph",
+   "replicate": 1,
+   "R1": 3.7,
+   "R2": 3.85,
+   "mean": 3.775,
+   "hard_fail_any": false
+  },
+  "B0013": {
+   "case_id": "C02",
+   "skill_id": "unimage",
+   "replicate": 2,
+   "R1": 2.55,
+   "R2": 2.4,
+   "mean": 2.475,
+   "hard_fail_any": false
+  },
+  "B0014": {
+   "case_id": "C01",
+   "skill_id": "unimage",
+   "replicate": 2,
+   "R1": 3.75,
+   "R2": 3.75,
+   "mean": 3.75,
+   "hard_fail_any": false
+  },
+  "B0015": {
+   "case_id": "C02",
+   "skill_id": "niobium617",
+   "replicate": 1,
+   "R1": 2.8,
+   "R2": 2.4,
+   "mean": 2.6,
+   "hard_fail_any": false
+  },
+  "B0016": {
+   "case_id": "C02",
+   "skill_id": "caph",
+   "replicate": 2,
+   "R1": 2.55,
+   "R2": 2.15,
+   "mean": 2.35,
+   "hard_fail_any": false
+  },
+  "B0017": {
+   "case_id": "C03",
+   "skill_id": "niobium617",
+   "replicate": 1,
+   "R1": 4.0,
+   "R2": 3.85,
+   "mean": 3.925,
+   "hard_fail_any": false
+  }
+ },
+ "per_skill": {
+  "caph": {
+   "per_case": {
+    "C01": 3.3,
+    "C02": 2.35,
+    "C03": 3.775
+   },
+   "replicates_per_case": {
+    "C01": 2,
+    "C02": 2,
+    "C03": 2
+   },
+   "mean_over_cases": 3.142,
+   "range_over_cases": 1.425,
+   "hard_fail_count": 0
+  },
+  "niobium617": {
+   "per_case": {
+    "C01": 3.75,
+    "C02": 2.6,
+    "C03": 4.088
+   },
+   "replicates_per_case": {
+    "C01": 2,
+    "C02": 2,
+    "C03": 2
+   },
+   "mean_over_cases": 3.479,
+   "range_over_cases": 1.488,
+   "hard_fail_count": 0
+  },
+  "unimage": {
+   "per_case": {
+    "C01": 3.65,
+    "C02": 2.475,
+    "C03": 4.0
+   },
+   "replicates_per_case": {
+    "C01": 2,
+    "C02": 2,
+    "C03": 1
+   },
+   "mean_over_cases": 3.375,
+   "range_over_cases": 1.525,
+   "hard_fail_count": 0
+  }
+ },
+ "adjudication_required": [],
+ "p2_candidate_B": {
+  "candidate_B": "INCONCLUSIVE",
+  "rule": "leading non-Caph needs mean gap >=0.25 and to lead in >=2 of 3 cases; else INCONCLUSIVE",
+  "gap": 0.104,
+  "cases_led": 3,
+  "status": "PROVISIONAL (GAP-P1-01: C03/unimage single replicate)"
+ }
+}

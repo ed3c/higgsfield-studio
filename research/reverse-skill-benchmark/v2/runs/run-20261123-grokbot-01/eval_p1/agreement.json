@@ -1,0 +1,26 @@
+{
+ "n_ratings": 102,
+ "exact_agreement": 0.853,
+ "within_1": 1.0,
+ "mean_abs_diff": 0.147,
+ "max_abs_diff": 1,
+ "quadratic_weighted_kappa": 0.888,
+ "image_weighted_score_pearson": 0.981,
+ "image_weighted_score_spearman": 0.936,
+ "icc_2_1_absolute_single": 0.95,
+ "mean_R1_minus_R2_by_criterion": {
+  "artifact_control": 0.06,
+  "composition": 0.24,
+  "lighting": -0.12,
+  "material": 0.35,
+  "palette": -0.12,
+  "perspective": 0.0
+ },
+ "R1_mean_item": 3.275,
+ "R2_mean_item": 3.206,
+ "replicate_pairs_scored_identically_on_all_6_criteria": {
+  "R1": "6/8",
+  "R2": "6/8"
+ },
+ "adjudication_flags_diff_gt2": 0
+}

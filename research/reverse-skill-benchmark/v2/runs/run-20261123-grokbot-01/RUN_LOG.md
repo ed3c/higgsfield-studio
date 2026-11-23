@@ -248,3 +248,26 @@ Facts below were reported by the orchestrating Grok Bot agent, which ran the gen
 - **Style DNA:** `style_dna/TUPACABRA_STYLE_DNA_v1.1_NOTES.md`, append-only, citing each method resource at its pinned sha. v1 and v2 files are untouched.
 - **Status:** `STATUS_REPORT_20261123-2100.md` (DOT_HANDOFF format) and `GATES_snapshot_20261123-2100.json`. GATES.json (18:30) is kept as history.
 - **No generation, no credits.**
+
+### 2026-11-23 20:25–20:45 Asia/Taipei — P1 blind review scored; key unsealed; outcome INCONCLUSIVE
+
+- **Sheets.** `scores_R1.csv` and `scores_R2.csv` were reported by the orchestrator as produced by two independent reviewers who read only the blind packet. Reviewer identities were not supplied (GAP-EVAL-01).
+  - The sha256 values match the reported ones.
+  - The sheets were copied into `eval_p1/` and **committed before unsealing** (`31e5bd6`).
+  - The blank templates are untouched.
+- **Key.** sha256 `0a49df5e…` verified, then unsealed and published as `eval_p1/blind_key_UNSEALED.json`.
+- **Aggregation.** `compute_p1_scores.py` unchanged (sha256 `e3985503…`).
+  - Per-Skill means: niobium617 **3.479**, unimage **3.375**, caph **3.142**.
+  - Per case, niobium617 / unimage / caph: C01 3.75 / 3.65 / 3.30; C02 2.60 / 2.475 / 2.35; C03 4.088 / 4.00 (1 replicate) / 3.775.
+- **Pre-registered rule.** The gap is 0.104, below the required 0.25; niobium617 leads 3/3 cases.
+  - → **INCONCLUSIVE, no P1 winner.**
+  - Thresholds were not changed.
+- **Agreement.** Quadratic-weighted κ 0.888, ICC(2,1) 0.950, exact agreement 85.3%, 0 adjudication flags.
+  - Caveat: replicate pairs were scored identically in 6/8 cells by each reviewer.
+- **P2.** Per spec §5, candidate B is not established, so **P2 = NOT_RUN (P2_CANDIDATE_B_INCONCLUSIVE)**. The owner override options are listed in `eval_p1/P1_BLIND_RESULTS.md`. **No generation started.**
+- **New files:**
+  - `P1_STATUS_addendum_20261123-2040.json`
+  - `GATES_snapshot_20261123-2040_p1scored.json`
+  - `eval_p1/{P1_BLIND_RESULTS.md, P1_RESULT_compute_output.json, agreement.json, sensitivity_descriptive_only.json, blind_key_UNSEALED.json}`
+
+  Earlier status files are kept unchanged.
