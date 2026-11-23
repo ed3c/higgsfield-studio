@@ -1,0 +1,181 @@
+{
+ "targets": "style_targets_v1",
+ "n": 6,
+ "hard_pass_n": 1,
+ "results": [
+  {
+   "image": "01_night_market_cook.png",
+   "metrics": {
+    "luma": 57.29,
+    "black_p1": 2.0,
+    "white_p99": 210.0,
+    "sat": 88.01,
+    "a": 1.18,
+    "b": 7.9,
+    "sharp_c": 57.86
+   },
+   "hard": {
+    "white_p99": true,
+    "black_p1": true,
+    "luma": true,
+    "sat": false,
+    "a": false,
+    "b": false,
+    "sharp_c": true
+   },
+   "hard_pass": false,
+   "soft": {
+    "white_p99": true,
+    "black_p1": true,
+    "sat": false,
+    "sharp_c": true
+   },
+   "soft_pass_count": 3
+  },
+  {
+   "image": "02_desert_bicycle_repair.png",
+   "metrics": {
+    "luma": 107.63,
+    "black_p1": 19.0,
+    "white_p99": 224.0,
+    "sat": 43.05,
+    "a": -0.07,
+    "b": 4.21,
+    "sharp_c": 147.34
+   },
+   "hard": {
+    "white_p99": true,
+    "black_p1": true,
+    "luma": true,
+    "sat": true,
+    "a": true,
+    "b": true,
+    "sharp_c": true
+   },
+   "hard_pass": true,
+   "soft": {
+    "white_p99": true,
+    "black_p1": false,
+    "sat": false,
+    "sharp_c": true
+   },
+   "soft_pass_count": 2
+  },
+  {
+   "image": "03_bronze_age_potter.png",
+   "metrics": {
+    "luma": 53.9,
+    "black_p1": 5.0,
+    "white_p99": 241.0,
+    "sat": 85.68,
+    "a": 1.45,
+    "b": 6.9,
+    "sharp_c": 89.63
+   },
+   "hard": {
+    "white_p99": true,
+    "black_p1": true,
+    "luma": true,
+    "sat": false,
+    "a": false,
+    "b": false,
+    "sharp_c": true
+   },
+   "hard_pass": false,
+   "soft": {
+    "white_p99": true,
+    "black_p1": true,
+    "sat": false,
+    "sharp_c": true
+   },
+   "soft_pass_count": 3
+  },
+  {
+   "image": "04_highland_horses.png",
+   "metrics": {
+    "luma": 83.55,
+    "black_p1": 13.0,
+    "white_p99": 223.0,
+    "sat": 43.43,
+    "a": 0.29,
+    "b": 5.02,
+    "sharp_c": 157.74
+   },
+   "hard": {
+    "white_p99": true,
+    "black_p1": true,
+    "luma": true,
+    "sat": true,
+    "a": true,
+    "b": false,
+    "sharp_c": true
+   },
+   "hard_pass": false,
+   "soft": {
+    "white_p99": true,
+    "black_p1": false,
+    "sat": false,
+    "sharp_c": true
+   },
+   "soft_pass_count": 2
+  },
+  {
+   "image": "05_subway_raincoat.png",
+   "metrics": {
+    "luma": 59.37,
+    "black_p1": 7.0,
+    "white_p99": 233.0,
+    "sat": 79.54,
+    "a": -1.9,
+    "b": 6.39,
+    "sharp_c": 80.48
+   },
+   "hard": {
+    "white_p99": true,
+    "black_p1": true,
+    "luma": true,
+    "sat": true,
+    "a": true,
+    "b": false,
+    "sharp_c": true
+   },
+   "hard_pass": false,
+   "soft": {
+    "white_p99": true,
+    "black_p1": true,
+    "sat": false,
+    "sharp_c": true
+   },
+   "soft_pass_count": 3
+  },
+  {
+   "image": "06_pocket_watch_still_life.png",
+   "metrics": {
+    "luma": 74.13,
+    "black_p1": 18.0,
+    "white_p99": 206.0,
+    "sat": 45.34,
+    "a": -1.37,
+    "b": 4.23,
+    "sharp_c": 349.25
+   },
+   "hard": {
+    "white_p99": true,
+    "black_p1": true,
+    "luma": true,
+    "sat": true,
+    "a": true,
+    "b": true,
+    "sharp_c": false
+   },
+   "hard_pass": false,
+   "soft": {
+    "white_p99": true,
+    "black_p1": false,
+    "sat": true,
+    "sharp_c": false
+   },
+   "soft_pass_count": 2
+  }
+ ]
+}

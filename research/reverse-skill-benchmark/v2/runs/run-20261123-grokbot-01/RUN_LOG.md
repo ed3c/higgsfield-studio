@@ -187,3 +187,30 @@ Facts below were reported by the orchestrating Grok Bot agent, which ran the gen
   - Refs 6/6 pass; P1 0/17; P1b 0/9; trailer 28/55.
   - The gate rejects every known failure and accepts the refs.
 - **NOT generated.** No credits spent.
+
+### 2026-11-23 20:12–20:30 Asia/Taipei — STYLE_DNA_EXTRACTION: style_v1 validation results, style_v2 draft
+
+- **Operator report.** The generation was done by the orchestrating Grok Bot agent in its box browser.
+  - 6 of 6 generated, 0 refusals, UNLIMITED at 0 credits, no image upload.
+  - Unlimited was initially off ("Generate ⚡1") and was switched ON before any submit.
+  - One stale paste was caught and never submitted.
+  - The executor verified that each PNG `hf-job-id` equals its UUID and that pasted characters equal file characters.
+- **Storage.** Drive `style_v1_output/` (`1s3LlJF9sqaL2hcRUiC27XFJtKTLevz5E`) holds 6 PNGs and the sheet. The folder and 2 files were permission-checked and are owner-only; the rest inherit from the folder. See `DRIVE_STORAGE_MANIFEST_addendum_04.json`. Rows are in `generations_style_v1.csv`.
+- **Results** (`style_dna/validation_v1/RESULTS_v1.md`):
+
+  | gate | result |
+  | --- | --- |
+  | A1 | **FAIL**: b\* median 5.71 > 4.5; images 4/6 pass |
+  | A2 | **PENDING** (Neon and blind reviewers) |
+  | A3 | PASS 5/6 (04 fails); executor-chosen cells, provisional |
+  | B1 | PASS 5/6 (04: tiny horses, no lead-horse focus) |
+  | B2 | PASS (0 leaks) |
+  | B3 | NOT_RUN |
+
+  - Highlights and black point are fixed compared with P1b.
+- **style_v2 draft.** Exactly one variable changed: the `Colour:` line, setting neutral-to-cool white balance with warm light kept local.
+  - Files: `style_dna/STYLE_PROMPT_v2.txt`, `style_block_v2.txt`, `style_block_v1_to_v2.diff`, `validation_v2/`.
+  - The shot prompts are unchanged.
+  - Paste copies: `/workspace/hs-bench-jobs/style_v2_prompts/`.
+  - **NOT generated.**
+  - v1 files are untouched.
