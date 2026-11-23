@@ -1,0 +1,12 @@
+issue_id,shot_ids,severity,issue,proposed_nonrender_action,status
+REV-01,S22,HIGH,"3 seconds may not show salaryman, physical paper landscape and empty distant shelter clearly","Test with textual/placeholder animatic at normal speed; keep 3 seconds until Director timing review",OPEN
+REV-02,S24,HIGH,"3 seconds combine raised coat, delicate bird landing and rain onset","Choose the single dominant readable action during animatic review; let supporting states already exist at shot start",OPEN
+REV-03,S18,MEDIUM,"Low-light short reveals may still present an accessibility concern","Review reduced-flash one-reveal variant before video production",OPEN
+REV-04,S10,MEDIUM,"Sound IR records deliberate piano-tail interruption at 35.500, while door motion closes later in shot","Align actual sound cutoff to directed picture point or explicitly keep start-of-shot interruption; update Sound IR through sound owner",OPEN
+REV-05,S19,HIGH,"Shenzhen skyline in a fictional news studio could be mistaken for real news","Use fictional-studio labels in internal review, no real broadcast graphics; independent contest variant swaps city",OPEN
+REV-06,S03/S17/S23,MEDIUM,"Optical-membrane transformation and founder identity continuity untested","Lock prop keyframe/character seed and compare three compositions once approved",OPEN
+REV-07,S04/S24,MEDIUM,"Original filament bird not yet shape locked and must not resemble protected emblem","Approval of original silhouette and same prop ID before creative image generation",OPEN
+REV-08,S21,MEDIUM,"Key-hand physical contact and coat already on chair require frame continuity","Use practical start/end keyframes and detailed hand/coat check in future QC",OPEN
+REV-09,ALL,BLOCKER,"Original pipeline/build_animatic.py input schema unavailable","Read original pipeline and examples before writing compatibility adapter",OPEN
+REV-10,CONTEST,BLOCKER,"90-second teaser below 3-minute minimum recorded in v2.6","Treat as preview only; no claim of contest-ready delivery",OPEN
+REV-11,ALL,BLOCKER,"Music rights, actual monthly credits, current terms and asset likeness not reviewed","Maintain generation GO gate and human rights review",OPEN

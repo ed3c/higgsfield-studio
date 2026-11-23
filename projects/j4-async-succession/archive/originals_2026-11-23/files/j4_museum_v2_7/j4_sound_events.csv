@@ -1,0 +1,18 @@
+﻿at_ms,timecode,event,class,description,review_status
+500,00:00:00:15,START_SINE,absolute_event,{'phase_continuous': True},DESIGN_ONLY
+3000,00:00:03:00,START_COMMUNITY_7,phase_family,market/community / period 7000 ms; hard stop 63700 ms,DESIGN_ONLY
+7000,00:00:07:00,MOTIF_NOTE,absolute_event,{'index': 1},DESIGN_ONLY
+12000,00:00:12:00,MOTIF_NOTE,absolute_event,{'index': 2},DESIGN_ONLY
+16000,00:00:16:00,MOTIF_NOTE,absolute_event,{'index': 3},DESIGN_ONLY
+16000,00:00:16:00,START_MAINTENANCE_11,phase_family,human labour / period 11000 ms; hard stop 63700 ms,DESIGN_ONLY
+20000,00:00:20:00,MOTIF_NOTE,absolute_event,{'index': 4},DESIGN_ONLY
+20000,00:00:20:00,START_COMPUTE_5,phase_family,distributed/centralised compute / period 5000 ms; hard stop 63700 ms,DESIGN_ONLY
+24000,00:00:24:00,START_ENVIRONMENT_13,phase_family,artificial climate / period 13000 ms; hard stop 63700 ms,DESIGN_ONLY
+35500,00:00:35:15,DELIBERATE_EXCEPTION,absolute_event,S10 archival door interrupts unfinished piano-like decay,DESIGN_ONLY
+46000,00:00:46:00,START_JAPAN_19,phase_family,untuned instrument / period 19000 ms; hard stop 63700 ms,DESIGN_ONLY
+50000,00:00:50:00,START_EUROPE_17,phase_family,opera/architecture / period 17000 ms; hard stop 63700 ms,DESIGN_ONLY
+63700,00:01:03:21,FORCED_GLOBAL_CUT,absolute_event,"{'target': 'all six phase families plus secondary motif textures', 'preserve': ['STEM_01']}",DESIGN_ONLY
+65000,00:01:05:00,NEW_POST_CUT_AMBIENCE,absolute_event,S19 news-studio electronics; six phase families stay off,DESIGN_ONLY
+84000,00:01:24:00,NEW_MARKET_MEMORY,absolute_event,"S24 new short market ambience, not re-start of COMMUNITY_7 cycle",DESIGN_ONLY
+87000,00:01:27:00,STRIP_TO_SINE,absolute_event,{'preserve': ['STEM_01']},DESIGN_ONLY
+90000,00:01:30:00,END_FILE,absolute_event,"edit de-click at terminal; perceptual continuity, not raw pop",DESIGN_ONLY

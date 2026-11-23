@@ -1,0 +1,552 @@
+{
+  "schema": "j4-originals-v1",
+  "created": "2026-11-23",
+  "source_archive": {
+    "name": "j4_all_available_resources_lossless_2026-11-22.zip",
+    "sha256": "4efe79aa309c193382a82e6c4c56654881df5dbba66df7cfc45df84f0ca3011e",
+    "inventory_sha256": "40ad5010a5e5ae88dc1dab3f912c3968d5d98260a0e82711574d93312b0b095b"
+  },
+  "policy": "byte-exact text/code copied from the private archive inventory (kind=text_or_code). No media, screenshots, ZIPs or user originals. Existing parsed slots are kept unchanged; these files are additional, not replacements.",
+  "not_included": "json/md/html/txt/srt text originals remain represented by the versioned JSON archives (semantic, not byte-exact); media and ZIPs stay private (BLOCKED_PUBLIC_REPO_MEDIA_POLICY).",
+  "files": [
+    {
+      "source_relative": "build_j4_v2_9.py",
+      "sha256": "e2287c538b604b3fd55f74461cd9985434231ce405d674316f18ef7fb70dc2f8",
+      "size_bytes": 32671,
+      "reason": "auxiliary build/validation code only in private ZIP (HOF-07)",
+      "git_slot": null
+    },
+    {
+      "source_relative": "build_j4_v3_0.py",
+      "sha256": "e141db2417d4d157ae560f5744eb7a09584e46380a85419a2b9d1edac2078628",
+      "size_bytes": 30079,
+      "reason": "auxiliary build/validation code only in private ZIP (HOF-07)",
+      "git_slot": null
+    },
+    {
+      "source_relative": "build_j4_v3_1.py",
+      "sha256": "b7aceaaa29407fbee9455acfab913fcf09c6fa704ed2b75085f199c30746dbd3",
+      "size_bytes": 30259,
+      "reason": "auxiliary build/validation code only in private ZIP (HOF-07)",
+      "git_slot": null
+    },
+    {
+      "source_relative": "build_j4_v3_2.py",
+      "sha256": "c341cde4bbabfaaf4f9d1375ef1e8911dbbf3c2f081daa72c6c7a706dc4aafb6",
+      "size_bytes": 47884,
+      "reason": "auxiliary build/validation code only in private ZIP (HOF-07)",
+      "git_slot": null
+    },
+    {
+      "source_relative": "build_j4_v3_3.py",
+      "sha256": "e13b9d984b821f10a7aff2949cb6078bdb97e25a6431eb7a03af1b08ef9717ec",
+      "size_bytes": 31599,
+      "reason": "auxiliary build/validation code only in private ZIP (HOF-07)",
+      "git_slot": null
+    },
+    {
+      "source_relative": "build_j4_v3_4.py",
+      "sha256": "020c4ada6a2fe2a808ad357d0456f1ff13794c39a207dd9cec6141d21e1bc49f",
+      "size_bytes": 27181,
+      "reason": "auxiliary build/validation code only in private ZIP (HOF-07)",
+      "git_slot": null
+    },
+    {
+      "source_relative": "build_j4_v3_5.py",
+      "sha256": "3b5b13b0cbd8f5a9b5e54a0b861c028c55ccb531ed994223196c04dfe50a697a",
+      "size_bytes": 37200,
+      "reason": "auxiliary build/validation code only in private ZIP (HOF-07)",
+      "git_slot": null
+    },
+    {
+      "source_relative": "build_j4_v3_6.py",
+      "sha256": "049ac8c7c7a04804d4389aa7b34453dc3d1c3ae19554c016ed25064ed64f65a0",
+      "size_bytes": 38088,
+      "reason": "auxiliary build/validation code only in private ZIP (HOF-07)",
+      "git_slot": null
+    },
+    {
+      "source_relative": "build_j4_v3_7.py",
+      "sha256": "2bdf3e76476c5423470a6c5d416a9efd1abf84747a52491443e2fcd824098e07",
+      "size_bytes": 24790,
+      "reason": "auxiliary build/validation code only in private ZIP (HOF-07)",
+      "git_slot": null
+    },
+    {
+      "source_relative": "build_j4_v3_8.py",
+      "sha256": "63748d15390fda77c8b7a75c501a4e86687af1bb70f1199b69d2a76655c546b8",
+      "size_bytes": 14744,
+      "reason": "auxiliary build/validation code only in private ZIP (HOF-07)",
+      "git_slot": null
+    },
+    {
+      "source_relative": "build_j4_v3_9.py",
+      "sha256": "db1631eba29fdc5a1eb33f3d0f3d7ef57cf0eea2169f789344a56c5f6f50772d",
+      "size_bytes": 34486,
+      "reason": "auxiliary build/validation code only in private ZIP (HOF-07)",
+      "git_slot": null
+    },
+    {
+      "source_relative": "build_j4_v4_0.py",
+      "sha256": "2b01ba03fdf0dfc766cd7bccb0c1d2349b056caa4e9bf36f6ad153de5f2c7f2e",
+      "size_bytes": 34957,
+      "reason": "auxiliary build/validation code only in private ZIP (HOF-07)",
+      "git_slot": null
+    },
+    {
+      "source_relative": "j4_museum_v2_6/build_ir.py",
+      "sha256": "207fc99db2c2957da9e6ea51089978fb5aba241e67da6376becaa77c518a0e13",
+      "size_bytes": 60415,
+      "reason": "auxiliary build/validation code only in private ZIP (HOF-07)",
+      "git_slot": null
+    },
+    {
+      "source_relative": "j4_museum_v2_6/j4_qc_matrix.csv",
+      "sha256": "4d6a9435c75b3d84fed809f0ff9ffde9ca270d1bd9050663cdbb9094cbed4878",
+      "size_bytes": 3644,
+      "reason": "original bytes for parsed-sheet Git slot (HOF-07)",
+      "git_slot": "projects/j4-async-succession/archive/v2_6/j4_qc_matrix.csv"
+    },
+    {
+      "source_relative": "j4_museum_v2_6/validate_j4.py",
+      "sha256": "9c74ef5871b610ba7ebcbda50ac794182bf309269272bf1f530802958bb9ebf0",
+      "size_bytes": 2461,
+      "reason": "auxiliary build/validation code only in private ZIP (HOF-07)",
+      "git_slot": null
+    },
+    {
+      "source_relative": "j4_museum_v2_7/build_previs.py",
+      "sha256": "1edb979a32bb0e6dd39248fc52e3f56be97acd01e65687baf8693c2489c40d50",
+      "size_bytes": 17587,
+      "reason": "auxiliary build/validation code only in private ZIP (HOF-07)",
+      "git_slot": null
+    },
+    {
+      "source_relative": "j4_museum_v2_7/j4_editorial_timeline.csv",
+      "sha256": "c489e8cbd401efb64eff02832134ebb1a72a22196ff002b30edebbee594d2c51",
+      "size_bytes": 8090,
+      "reason": "original bytes for parsed-sheet Git slot (HOF-07)",
+      "git_slot": "projects/j4-async-succession/archive/v2_7/conversation_text_archive.json#j4_editorial_timeline.csv"
+    },
+    {
+      "source_relative": "j4_museum_v2_7/j4_generation_gate_check.py",
+      "sha256": "47595ed9d38f9b6c4952bd3f4f1e12107663c009ec1e84d0c8dcd0d5e99b9019",
+      "size_bytes": 1388,
+      "reason": "auxiliary build/validation code only in private ZIP (HOF-07)",
+      "git_slot": null
+    },
+    {
+      "source_relative": "j4_museum_v2_7/j4_issues_and_review.csv",
+      "sha256": "b24cf1738c2838d84f4756f0f08d95b2c5c0c70284025da22e3f79b399fbaa52",
+      "size_bytes": 2168,
+      "reason": "original bytes for parsed-sheet Git slot (HOF-07)",
+      "git_slot": "projects/j4-async-succession/archive/v2_7/conversation_text_archive.json#j4_issues_and_review.csv"
+    },
+    {
+      "source_relative": "j4_museum_v2_7/j4_sound_events.csv",
+      "sha256": "d4e2d83aef69cc1ab89cd323019a11db6c94583f7380c1c78fb0ee49c0f9f76f",
+      "size_bytes": 1876,
+      "reason": "original bytes for parsed-sheet Git slot (HOF-07)",
+      "git_slot": "projects/j4-async-succession/archive/v2_7/conversation_text_archive.json#j4_sound_events.csv"
+    },
+    {
+      "source_relative": "j4_museum_v2_7/j4_transition_matrix.csv",
+      "sha256": "b4a8fb3726b77697526db39733c42370f60ddfa48fd08be19db0ec3671f9bd3b",
+      "size_bytes": 4098,
+      "reason": "original bytes for parsed-sheet Git slot (HOF-07)",
+      "git_slot": "projects/j4-async-succession/archive/v2_7/conversation_text_archive.json#j4_transition_matrix.csv"
+    },
+    {
+      "source_relative": "j4_museum_v2_7/source_v2_6/validate_j4.py",
+      "sha256": "9c74ef5871b610ba7ebcbda50ac794182bf309269272bf1f530802958bb9ebf0",
+      "size_bytes": 2461,
+      "reason": "auxiliary build/validation code only in private ZIP (HOF-07)",
+      "git_slot": null
+    },
+    {
+      "source_relative": "j4_museum_v2_7/verify_previs.py",
+      "sha256": "40e357cbdae3d31b2aa438b0045ad96501495ce56ff43b4baa5364cc31bdaf25",
+      "size_bytes": 2075,
+      "reason": "auxiliary build/validation code only in private ZIP (HOF-07)",
+      "git_slot": null
+    },
+    {
+      "source_relative": "j4_museum_v2_8/build_v2_8.py",
+      "sha256": "90331e6c408e5577ff7a0e03827f09dde07c72f6d39c16b388f79167f9829791",
+      "size_bytes": 33875,
+      "reason": "auxiliary build/validation code only in private ZIP (HOF-07)",
+      "git_slot": null
+    },
+    {
+      "source_relative": "j4_museum_v2_8/j4_acceptance_matrix.csv",
+      "sha256": "f876562d62c030eaf49be20ef03c22f14c26c67b05bc6c49afbcb46fec0ffb4d",
+      "size_bytes": 18267,
+      "reason": "original bytes for parsed-sheet Git slot (HOF-07)",
+      "git_slot": "projects/j4-async-succession/archive/v2_8/conversation_text_archive.json#j4_acceptance_matrix.csv"
+    },
+    {
+      "source_relative": "j4_museum_v2_8/j4_sound_events_v2_8.csv",
+      "sha256": "474b754e83beb6a6baba981054ade228a25d96c5dee16e784cad09a5b606c733",
+      "size_bytes": 2028,
+      "reason": "original bytes for parsed-sheet Git slot (HOF-07)",
+      "git_slot": "projects/j4-async-succession/archive/v2_8/conversation_text_archive.json#j4_sound_events_v2_8.csv"
+    },
+    {
+      "source_relative": "j4_museum_v2_8/validate_v2_8.py",
+      "sha256": "0041dc9a8f13ad6bf98d64eaeb26f93df402f89c3d9f2441ddfe52e2c5d0992c",
+      "size_bytes": 2455,
+      "reason": "auxiliary build/validation code only in private ZIP (HOF-07)",
+      "git_slot": null
+    },
+    {
+      "source_relative": "j4_museum_v2_9/j4_asset_lock_registry.csv",
+      "sha256": "2bc9a4b30c2567d4e1146463c834eda398d7c2369c56caeabbff899bf26726e9",
+      "size_bytes": 2297,
+      "reason": "original bytes for parsed-sheet Git slot (HOF-07)",
+      "git_slot": "projects/j4-async-succession/archive/v2_9/conversation_text_archive.json#j4_asset_lock_registry.csv"
+    },
+    {
+      "source_relative": "j4_museum_v2_9/j4_composition_acceptance.csv",
+      "sha256": "92deb584b84a7621cae92a355f3ffe0e7f5486e8f01f47b818af7842bf1a3952",
+      "size_bytes": 6963,
+      "reason": "original bytes for parsed-sheet Git slot (HOF-07)",
+      "git_slot": "projects/j4-async-succession/archive/v2_9/conversation_text_archive.json#j4_composition_acceptance.csv"
+    },
+    {
+      "source_relative": "j4_museum_v2_9/validate_v2_9.py",
+      "sha256": "e9ab66ac63c541634a86d44a69e4c7b9e9ee2383fab05ca0317fb1790a1003ef",
+      "size_bytes": 2431,
+      "reason": "auxiliary build/validation code only in private ZIP (HOF-07)",
+      "git_slot": null
+    },
+    {
+      "source_relative": "j4_museum_v3_0/j4_transition_acceptance_v3_0.csv",
+      "sha256": "dd4294c49b6637fe47c7b486e282eedd5f6d660b2823657f7453c3ae480fd4f3",
+      "size_bytes": 3378,
+      "reason": "original bytes for parsed-sheet Git slot (HOF-07)",
+      "git_slot": "projects/j4-async-succession/archive/v3_0/conversation_text_archive.json#j4_transition_acceptance_v3_0.csv"
+    },
+    {
+      "source_relative": "j4_museum_v3_0/j4_visual_acceptance_v3_0.csv",
+      "sha256": "97acb11d8f25975d5d89154ab191b5ce0a323b980c41360eebfcdd8e72cf0f0a",
+      "size_bytes": 9716,
+      "reason": "original bytes for parsed-sheet Git slot (HOF-07)",
+      "git_slot": "projects/j4-async-succession/archive/v3_0/conversation_text_archive.json#j4_visual_acceptance_v3_0.csv"
+    },
+    {
+      "source_relative": "j4_museum_v3_0/validate_v3_0.py",
+      "sha256": "8421e01ab89f26316ee8a7392b7e5c7f92a941169ffb9a12406878d58fc546f4",
+      "size_bytes": 2284,
+      "reason": "auxiliary build/validation code only in private ZIP (HOF-07)",
+      "git_slot": null
+    },
+    {
+      "source_relative": "j4_museum_v3_1/j4_g1_30fps_action_beats.csv",
+      "sha256": "6e164b1fadcb111c7d9f06a0a132e736eb412c649508a518d3d8900138925509",
+      "size_bytes": 2452,
+      "reason": "original bytes for parsed-sheet Git slot (HOF-07)",
+      "git_slot": "projects/j4-async-succession/archive/v3_1/conversation_text_archive.json#j4_g1_30fps_action_beats.csv"
+    },
+    {
+      "source_relative": "j4_museum_v3_1/j4_g1_attention_audit.csv",
+      "sha256": "9c62866a9d794400483fa752d012952bf868cf688d7c8c5b4b54861d6fc86396",
+      "size_bytes": 4004,
+      "reason": "original bytes for parsed-sheet Git slot (HOF-07)",
+      "git_slot": "projects/j4-async-succession/archive/v3_1/conversation_text_archive.json#j4_g1_attention_audit.csv"
+    },
+    {
+      "source_relative": "j4_museum_v3_1/j4_g1_review_matrix.csv",
+      "sha256": "5a00a6dec61b0178cb7651be5beb356d57b9cc2759f4cc8ab06498752da0c390",
+      "size_bytes": 7633,
+      "reason": "original bytes for parsed-sheet Git slot (HOF-07)",
+      "git_slot": "projects/j4-async-succession/archive/v3_1/conversation_text_archive.json#j4_g1_review_matrix.csv"
+    },
+    {
+      "source_relative": "j4_museum_v3_1/validate_v3_1.py",
+      "sha256": "2e0b1bd6a53dc46faa50d3aa3ea09802fb02d4d841f7eb3ad38155a0919cfc03",
+      "size_bytes": 2847,
+      "reason": "auxiliary build/validation code only in private ZIP (HOF-07)",
+      "git_slot": null
+    },
+    {
+      "source_relative": "j4_museum_v3_2/j4_25shot_dual_reading.csv",
+      "sha256": "0da73ae4700192743427c0001cc80e24ed058ad33c87bffe758c1e57ba848c09",
+      "size_bytes": 6469,
+      "reason": "original bytes for parsed-sheet Git slot (HOF-07)",
+      "git_slot": "projects/j4-async-succession/archive/v3_2/conversation_text_archive.json#j4_25shot_dual_reading.csv"
+    },
+    {
+      "source_relative": "j4_museum_v3_2/j4_swap_dryrun.py",
+      "sha256": "ae195feb61563a98b157d2d9024e6c10058150dabf8ec41e7812370f258b7b06",
+      "size_bytes": 1329,
+      "reason": "auxiliary build/validation code only in private ZIP (HOF-07)",
+      "git_slot": null
+    },
+    {
+      "source_relative": "j4_museum_v3_2/validate_v3_2.py",
+      "sha256": "3bb600b6b7f600c10288b01f7179e6fd00dcc5c3c5356aeb7d3aca82260281d8",
+      "size_bytes": 2379,
+      "reason": "auxiliary build/validation code only in private ZIP (HOF-07)",
+      "git_slot": null
+    },
+    {
+      "source_relative": "j4_museum_v3_3/SOURCE_REGISTER_v3_3.csv",
+      "sha256": "514fc768589f8ef23efefee436b6b00e4ac6db17438f6a9b49847be689699de2",
+      "size_bytes": 4356,
+      "reason": "original bytes for parsed-sheet Git slot (HOF-07)",
+      "git_slot": "projects/j4-async-succession/archive/v3_3/conversation_text_archive.json#SOURCE_REGISTER_v3_3.csv"
+    },
+    {
+      "source_relative": "j4_museum_v3_3/j4_g2_art_illusion_qc_v3_3.csv",
+      "sha256": "07c7859e1b29101c6c8006f98c817c26683c70e6a3b2ca6fcc12755505abe2c7",
+      "size_bytes": 13168,
+      "reason": "original bytes for parsed-sheet Git slot (HOF-07)",
+      "git_slot": "projects/j4-async-succession/archive/v3_3/conversation_text_archive.json#j4_g2_art_illusion_qc_v3_3.csv"
+    },
+    {
+      "source_relative": "j4_museum_v3_3/validate_v3_3.py",
+      "sha256": "040320db30b54770aff7f9e0983e04dd89058d52120464e222892662a877a349",
+      "size_bytes": 1313,
+      "reason": "auxiliary build/validation code only in private ZIP (HOF-07)",
+      "git_slot": null
+    },
+    {
+      "source_relative": "j4_museum_v3_4/check_html_script.js",
+      "sha256": "7db75efea992b99b40028e9ef1cc8f8766b6e8cdfe3b5f4338acf3f0fc2e27c7",
+      "size_bytes": 8726,
+      "reason": "auxiliary build/validation code only in private ZIP (HOF-07)",
+      "git_slot": null
+    },
+    {
+      "source_relative": "j4_museum_v3_4/j4_g2a_art_crosswalk.csv",
+      "sha256": "f9cc56dac42161b5d2150cfdc9c9fdba390f09cbd5d212247b09a0c75f000b3c",
+      "size_bytes": 1927,
+      "reason": "original bytes for parsed-sheet Git slot (HOF-07)",
+      "git_slot": "projects/j4-async-succession/archive/v3_4/conversation_text_archive.json#j4_g2a_art_crosswalk.csv"
+    },
+    {
+      "source_relative": "j4_museum_v3_4/j4_g2a_asset_invariants.csv",
+      "sha256": "c385e6cc64922b72d4eed9b1e6c3280a3827da083b79659e09ab836d61bd71fa",
+      "size_bytes": 2280,
+      "reason": "original bytes for parsed-sheet Git slot (HOF-07)",
+      "git_slot": "projects/j4-async-succession/archive/v3_4/conversation_text_archive.json#j4_g2a_asset_invariants.csv"
+    },
+    {
+      "source_relative": "j4_museum_v3_4/j4_g2a_blind_scorecard_template.csv",
+      "sha256": "690074746e66e822edadd4e2da83c3d7eb38537f2dfec56e0c8df116a7107aeb",
+      "size_bytes": 330,
+      "reason": "original bytes for parsed-sheet Git slot (HOF-07)",
+      "git_slot": "projects/j4-async-succession/archive/v3_4/conversation_text_archive.json#j4_g2a_blind_scorecard_template.csv"
+    },
+    {
+      "source_relative": "j4_museum_v3_4/smoke_ui.py",
+      "sha256": "189cb30a20aa7b6cff478247efbf12c971569cf51e0d9db7284aa3e7ee51b24b",
+      "size_bytes": 2454,
+      "reason": "auxiliary build/validation code only in private ZIP (HOF-07)",
+      "git_slot": null
+    },
+    {
+      "source_relative": "j4_museum_v3_4/validate_g2a_v3_4.py",
+      "sha256": "b108bc6ad755d98de4f52fe6d8bed49a53762f22bdf8f0720e716a95a0b8d946",
+      "size_bytes": 1166,
+      "reason": "auxiliary build/validation code only in private ZIP (HOF-07)",
+      "git_slot": null
+    },
+    {
+      "source_relative": "j4_museum_v3_5/check_ui.js",
+      "sha256": "df5665a7bae995196f7944c672f1c85568763eae743f28ef13d9164072a66499",
+      "size_bytes": 19386,
+      "reason": "auxiliary build/validation code only in private ZIP (HOF-07)",
+      "git_slot": null
+    },
+    {
+      "source_relative": "j4_museum_v3_5/j4_g2a_art_optical_crosswalk_v3_5.csv",
+      "sha256": "49f823a3e13bc23119d1b1f6c5bc031212ef69480f09f0260fe09a9c88a185d5",
+      "size_bytes": 1850,
+      "reason": "original bytes for parsed-sheet Git slot (HOF-07)",
+      "git_slot": "projects/j4-async-succession/archive/v3_5/conversation_text_archive.json#j4_g2a_art_optical_crosswalk_v3_5.csv"
+    },
+    {
+      "source_relative": "j4_museum_v3_5/j4_g2a_frame_beats_v3_5.csv",
+      "sha256": "78d6b06db2b9908d0b1f83ef0e0294f1af0ec77d444d1cdd1f8d393ed6e40fc5",
+      "size_bytes": 2428,
+      "reason": "original bytes for parsed-sheet Git slot (HOF-07)",
+      "git_slot": "projects/j4-async-succession/archive/v3_5/conversation_text_archive.json#j4_g2a_frame_beats_v3_5.csv"
+    },
+    {
+      "source_relative": "j4_museum_v3_5/ui_smoke_v3_5.py",
+      "sha256": "f697a372bb73ef7e9df027d3986902b1e7d7a598acd55f649f8292745164ebda",
+      "size_bytes": 2108,
+      "reason": "auxiliary build/validation code only in private ZIP (HOF-07)",
+      "git_slot": null
+    },
+    {
+      "source_relative": "j4_museum_v3_5/validate_v3_5.py",
+      "sha256": "2fed0929f919138ae67b12b5bd8c91477736ff3b3a2b6dee631443ac6e0ab867",
+      "size_bytes": 1951,
+      "reason": "auxiliary build/validation code only in private ZIP (HOF-07)",
+      "git_slot": null
+    },
+    {
+      "source_relative": "j4_museum_v3_6/j4_allocation_slots_v3_6.csv",
+      "sha256": "1a1b755feb31ca3e4187fb09bbe45c0e72d90ff27ddbf0f19f620965dbc3c9f5",
+      "size_bytes": 2901,
+      "reason": "original bytes for parsed-sheet Git slot (HOF-07)",
+      "git_slot": "projects/j4-async-succession/archive/v3_6/conversation_text_archive.json#j4_allocation_slots_v3_6.csv"
+    },
+    {
+      "source_relative": "j4_museum_v3_6/j4_confound_audit_v3_6.csv",
+      "sha256": "66fcc51e0736474ba0737272bee58a067a5b0decd81fb2d1304fea365d522f98",
+      "size_bytes": 6293,
+      "reason": "original bytes for parsed-sheet Git slot (HOF-07)",
+      "git_slot": "projects/j4-async-succession/archive/v3_6/conversation_text_archive.json#j4_confound_audit_v3_6.csv"
+    },
+    {
+      "source_relative": "j4_museum_v3_6/j4_static_validate_v3_6.py",
+      "sha256": "5f0a9a4eb7c9d8313805f3c128cc4071ae65c94a2b145da7100c56dac9b78873",
+      "size_bytes": 3173,
+      "reason": "auxiliary build/validation code only in private ZIP (HOF-07)",
+      "git_slot": null
+    },
+    {
+      "source_relative": "j4_museum_v3_6/j4_stimulus_manifest_v3_6.csv",
+      "sha256": "e2b2dec1e5f05f7b56cc91915582e385ea3c9c1715b01e7ba640c14de1f9b3ca",
+      "size_bytes": 1367,
+      "reason": "original bytes for parsed-sheet Git slot (HOF-07)",
+      "git_slot": "projects/j4-async-succession/archive/v3_6/conversation_text_archive.json#j4_stimulus_manifest_v3_6.csv"
+    },
+    {
+      "source_relative": "j4_museum_v3_6/j4_stimulus_media_qa_v3_6.py",
+      "sha256": "f84317d79d49198d1816247cfda6261633472a10a9be8ceacf0dbb99cb56f6cd",
+      "size_bytes": 4780,
+      "reason": "auxiliary build/validation code only in private ZIP (HOF-07)",
+      "git_slot": null
+    },
+    {
+      "source_relative": "j4_museum_v3_6/j4_ui_smoke_v3_6.py",
+      "sha256": "9c551133165eaa50594650ddea5a45141d5bdb99b05d3ad2230763335f8b2a7c",
+      "size_bytes": 2029,
+      "reason": "auxiliary build/validation code only in private ZIP (HOF-07)",
+      "git_slot": null
+    },
+    {
+      "source_relative": "j4_museum_v3_7/j4_25shot_voice_sound_matrix_v3_7.csv",
+      "sha256": "1bff79018ce8a122c3c22a91c0a14c5eb54ac2037563f79092fa09e47f056dac",
+      "size_bytes": 10248,
+      "reason": "original bytes for parsed-sheet Git slot (HOF-07)",
+      "git_slot": "projects/j4-async-succession/archive/v3_7/conversation_text_archive.json#j4_25shot_voice_sound_matrix_v3_7.csv"
+    },
+    {
+      "source_relative": "j4_museum_v3_7/j4_sonic_recall_arcs_v3_7.csv",
+      "sha256": "b76e7594be7e5818eeaa70198cd04eae629df6255e1fea5e7bee4a3db7e62c4d",
+      "size_bytes": 1739,
+      "reason": "original bytes for parsed-sheet Git slot (HOF-07)",
+      "git_slot": "projects/j4-async-succession/archive/v3_7/conversation_text_archive.json#j4_sonic_recall_arcs_v3_7.csv"
+    },
+    {
+      "source_relative": "j4_museum_v3_7/validate_v3_7.py",
+      "sha256": "3d5c92e1896473b80ad94426e974a5439c53819187d812bce8dbfc1f1e0c8de5",
+      "size_bytes": 1556,
+      "reason": "auxiliary build/validation code only in private ZIP (HOF-07)",
+      "git_slot": null
+    },
+    {
+      "source_relative": "j4_museum_v3_8/_ui_syntax.js",
+      "sha256": "0ad17b2b91fb8c697b3170e4e1492b58fc88a98412e261653aee19e42f2617ea",
+      "size_bytes": 5647,
+      "reason": "auxiliary build/validation code only in private ZIP (HOF-07)",
+      "git_slot": null
+    },
+    {
+      "source_relative": "j4_museum_v3_8/j4_g2b_ab_conditions_v3_8.csv",
+      "sha256": "6b0b4d87983866ec55893065219e66f5e8a0fe90a699134dd43d4cd85dd0c537",
+      "size_bytes": 3187,
+      "reason": "original bytes for parsed-sheet Git slot (HOF-07)",
+      "git_slot": "projects/j4-async-succession/archive/v3_8/conversation_text_archive.json#j4_g2b_ab_conditions_v3_8.csv"
+    },
+    {
+      "source_relative": "j4_museum_v3_8/media_qa_v3_8.py",
+      "sha256": "9337ceb2f8204932c2d4c6666ddf8cda8c8e22dfa556da8ef4ddc27f4a6bb770",
+      "size_bytes": 3165,
+      "reason": "auxiliary build/validation code only in private ZIP (HOF-07)",
+      "git_slot": null
+    },
+    {
+      "source_relative": "j4_museum_v3_8/validate_v3_8.py",
+      "sha256": "5240972c6ec59ef1c9fd8086a32c255c6b2b6a081ce9a78b259f960b71893a92",
+      "size_bytes": 2409,
+      "reason": "auxiliary build/validation code only in private ZIP (HOF-07)",
+      "git_slot": null
+    },
+    {
+      "source_relative": "j4_museum_v3_9/j4_sonic_swap_dryrun.py",
+      "sha256": "a92db55c1010fd3babdd954b6efe82806caaa106762327ecbd6999d78c30fe0f",
+      "size_bytes": 1146,
+      "reason": "auxiliary build/validation code only in private ZIP (HOF-07)",
+      "git_slot": null
+    },
+    {
+      "source_relative": "j4_museum_v3_9/j4_sound_object_cues_v3_9.csv",
+      "sha256": "520aff363d5d42470cde1fdb31db1949557797aecab7c49215f49c0a408c6a23",
+      "size_bytes": 2692,
+      "reason": "original bytes for parsed-sheet Git slot (HOF-07)",
+      "git_slot": "projects/j4-async-succession/archive/v3_9/conversation_text_archive.json#j4_sound_object_cues_v3_9.csv"
+    },
+    {
+      "source_relative": "j4_museum_v3_9/run_ui_smoke_v3_9.py",
+      "sha256": "7926c91659de9c251617e4ab12a575381a718db63122b4b1aec6cf31af05594b",
+      "size_bytes": 2586,
+      "reason": "auxiliary build/validation code only in private ZIP (HOF-07)",
+      "git_slot": null
+    },
+    {
+      "source_relative": "j4_museum_v3_9/validate_v3_9.py",
+      "sha256": "532e96543506db16d562512229cefe83452055c70db0cef5bc609a062a8e5595",
+      "size_bytes": 2327,
+      "reason": "auxiliary build/validation code only in private ZIP (HOF-07)",
+      "git_slot": null
+    },
+    {
+      "source_relative": "j4_museum_v4_0/ART_METHOD_SOURCES_v4_0.csv",
+      "sha256": "9d49f8ca912c8dea999522c5ed0b45cc1da671eacbc5448cd70c7485545bf7e5",
+      "size_bytes": 1591,
+      "reason": "original bytes for parsed-sheet Git slot (HOF-07)",
+      "git_slot": "projects/j4-async-succession/archive/v4_0/conversation_text_archive.json#ART_METHOD_SOURCES_v4_0.csv"
+    },
+    {
+      "source_relative": "j4_museum_v4_0/j4_blind_scorecard_v4_0.csv",
+      "sha256": "5fe853f9ee58219d8ade2733bc9d98344d6d8d71471c22d2de7e99518568b0cc",
+      "size_bytes": 401,
+      "reason": "original bytes for parsed-sheet Git slot (HOF-07)",
+      "git_slot": "projects/j4-async-succession/archive/v4_0/conversation_text_archive.json#j4_blind_scorecard_v4_0.csv"
+    },
+    {
+      "source_relative": "j4_museum_v4_0/j4_stimulus_manifest_v4_0.csv",
+      "sha256": "19ee82a98584d75c91dec0e668eb18ab7e9bc5c2f9f281cd84c2a6ecb61b6cff",
+      "size_bytes": 1657,
+      "reason": "original bytes for parsed-sheet Git slot (HOF-07)",
+      "git_slot": "projects/j4-async-succession/archive/v4_0/conversation_text_archive.json#j4_stimulus_manifest_v4_0.csv"
+    },
+    {
+      "source_relative": "j4_museum_v4_0/media_qa_v4_0.py",
+      "sha256": "bbf2e7790893b827b88777efefe27bcdc6597cf6434999a22d855a0c1180bb8a",
+      "size_bytes": 2319,
+      "reason": "auxiliary build/validation code only in private ZIP (HOF-07)",
+      "git_slot": null
+    },
+    {
+      "source_relative": "j4_museum_v4_0/ui_smoke_v4_0.py",
+      "sha256": "2932f8728aec6644cf96a44374279ebabc083ad10aa2a1df757ef31fedc4ac17",
+      "size_bytes": 2271,
+      "reason": "auxiliary build/validation code only in private ZIP (HOF-07)",
+      "git_slot": null
+    },
+    {
+      "source_relative": "j4_museum_v4_0/validate_v4_0.py",
+      "sha256": "4933fb6ed95b6262b007b8e63393e2f73baf5864d96c0da3be116328796520fa",
+      "size_bytes": 2181,
+      "reason": "auxiliary build/validation code only in private ZIP (HOF-07)",
+      "git_slot": null
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+﻿from,to,cut_at_ms,cut_at_frame,outgoing_intent,incoming_intent,planned_mechanism,review_status,evidence,high_priority
+S01,S02,3000,90,Market audio J-cut by ~0.3 s into S02,Black opens on human activity,EDITORIAL_MATCH / SOUND_BRIDGE,NOT_RUN,,NO
+S02,S03,7000,210,Warm water-light match-cuts into S03 cold optical reflection,S02 reflected bulb becomes refraction,EDITORIAL_MATCH / SOUND_BRIDGE,NOT_RUN,,YES
+S03,S04,12000,360,The warm light thread becomes S04 delicate filament,S03 narrow warm reflection becomes heated wire,EDITORIAL_MATCH / SOUND_BRIDGE,NOT_RUN,,YES
+S04,S05,16000,480,Wire leaves frame; water sound reveals diner sink,S04 fine electrical sound thins into water,EDITORIAL_MATCH / SOUND_BRIDGE,NOT_RUN,,YES
+S05,S06,20000,600,Hand performs maintenance; S06 hand passes maintained lamp,Washing hands become lamp-passing hands,EDITORIAL_MATCH / SOUND_BRIDGE,NOT_RUN,,YES
+S06,S07,24000,720,Technical cooling air becomes S07 artificial weather,Cooling sound reveals landscape scale,EDITORIAL_MATCH / SOUND_BRIDGE,NOT_RUN,,NO
+S07,S08,28000,840,Exterior airflow becomes S08 institutional ventilation,Exterior air turns into rehearsal-room HVAC,EDITORIAL_MATCH / SOUND_BRIDGE,NOT_RUN,,YES
+S08,S09,32000,960,Institutional applause becomes individual's struggling voice,Social unison cuts to solitary speech,EDITORIAL_MATCH / SOUND_BRIDGE,NOT_RUN,,YES
+S09,S10,35500,1065,Fan housing metal contact becomes S10 sliding enclosure,Individual voice leaves room; only archived object remains,EDITORIAL_MATCH / SOUND_BRIDGE,NOT_RUN,,NO
+S10,S11,39000,1170,Sliding steel becomes robotic actuator,Storage mesh contact becomes actuator sound,EDITORIAL_MATCH / SOUND_BRIDGE,NOT_RUN,,YES
+S11,S12,43000,1290,Mechanical high overtone becomes tensioned telephone cable,Machine vibration becomes private cable tension,EDITORIAL_MATCH / SOUND_BRIDGE,NOT_RUN,,YES
+S12,S13,46000,1380,Cable resonance becomes untuned piano mechanism,Cable vibration becomes imperfect string overtone,EDITORIAL_MATCH / SOUND_BRIDGE,NOT_RUN,,YES
+S13,S14,50000,1500,Absent piano note juxtaposed with abundant applause,"Piano cannot properly sound, but the audience applauds",EDITORIAL_MATCH / SOUND_BRIDGE,NOT_RUN,,YES
+S14,S15,53000,1590,Applause tail is reinterpreted as weaving shuttle contact,Cultural applause becomes real material work,EDITORIAL_MATCH / SOUND_BRIDGE,NOT_RUN,,YES
+S15,S16,57000,1710,Two lines of textile match-cut to two transit paths,Thread lines become two routes,EDITORIAL_MATCH / SOUND_BRIDGE,NOT_RUN,,YES
+S16,S17,60500,1815,Ceiling route strips become light reflections,Transit light routes become delayed membrane caustics,EDITORIAL_MATCH / SOUND_BRIDGE,NOT_RUN,,YES
+S17,S18,63700,1911,All active non-sine loops forced off at 63.700s,"Forced interruption, not natural 7/11/5/13/19/17s alignment",EDITORIAL_MATCH / SOUND_BRIDGE,NOT_RUN,,YES
+S18,S19,65000,1950,Match three light volumes to S19 illuminated chair positions,Three S18 light volumes become chair pool locations,EDITORIAL_MATCH / SOUND_BRIDGE,NOT_RUN,,YES
+S19,S20,69000,2070,Broadcast's constructed image becomes two incompletely preserved records,Constructed live city vs incomplete historical archive,EDITORIAL_MATCH / SOUND_BRIDGE,NOT_RUN,,YES
+S20,S21,72500,2175,Archive paper contact shifts into handover hands,Two methods of archive become two human temporal rhythms,EDITORIAL_MATCH / SOUND_BRIDGE,NOT_RUN,,YES
+S21,S22,76500,2295,Hands on key match hands building paper bridge,Brass key transfers in a second; paper bridge remains unfinished,EDITORIAL_MATCH / SOUND_BRIDGE,NOT_RUN,,YES
+S22,S23,79500,2385,Paper friction thins into large optical chamber ambience,"Human paper work vs quiet former creator, same hand-to-light motif",EDITORIAL_MATCH / SOUND_BRIDGE,NOT_RUN,,YES
+S23,S24,84000,2520,Delayed floor light becomes wet-pavement reflection in S24,S23 delayed optical reflection becomes natural wet-market reflection,EDITORIAL_MATCH / SOUND_BRIDGE,NOT_RUN,,YES
+S24,S25,87000,2610,"All images disappear, original persistent sine remains",S24 rain and crowd disappear,EDITORIAL_MATCH / SOUND_BRIDGE,NOT_RUN,,YES
