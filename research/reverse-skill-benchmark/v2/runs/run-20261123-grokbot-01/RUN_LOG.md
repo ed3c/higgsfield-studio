@@ -214,3 +214,37 @@ Facts below were reported by the orchestrating Grok Bot agent, which ran the gen
   - Paste copies: `/workspace/hs-bench-jobs/style_v2_prompts/`.
   - **NOT generated.**
   - v1 files are untouched.
+
+### 2026-11-23 20:17–21:05 Asia/Taipei — Neon t35u: open-source resources applied (no generation)
+
+- **Trigger (verbatim):** 「用我給的開源資源來逆向執行 Industrial AI Creative Research & Higgsfield Reverse Benchmark v2.0」. The rest of the v2.0 brief is unchanged.
+- **SoT re-check.** The six SoT files are byte-identical to origin/main `d9eb999`:
+
+  | file | sha256 |
+  | --- | --- |
+  | CREATIVE_RESEARCH_SCOPE.md | `2bd7a906…` |
+  | DOT_HANDOFF.md | `b1d9425d…` |
+  | BENCHMARK_SPEC_V2.md | `6952d085…` |
+  | manifest_v2.json | `4117e9e1…` |
+  | EXECUTION_PROMPT.md | `6886f437…` |
+  | validate_spec.py | `618a3709…` |
+
+  - `validate_spec.py` → SPEC LINT PASS (`validate_spec_output_20261123-2100.txt`).
+- **Resources.** Both Notion pages were read with the Notion connector and **not edited**:
+  - `4213cec0-38da-81cc-beb4-d00869165eab`
+  - `4213cec0-38da-8121-b2fb-cfd30c6d14b7`
+- **Inventory:** `open_source_resources/open_source_resources_inventory.json`.
+  - 200 entries; 140 GitHub links (139 unique, 42 repos).
+  - **140/140 HTTP 200**; 0 MISSING_SOURCE.
+  - 60 artist cards with no URL by design, 60/60 found in the index data.js.
+  - Licences unverified: A006, A015, A018, A019, A037, A039.
+  - 1 archived repo (OSideMedia).
+- **Mapping:** `open_source_resources/BENCHMARK_MAPPING.md`.
+- **Addendum proposal:** `P1_EXT_PROPOSAL.json`.
+  - P1-ext: A007, A008, A009 × 3 cases × 2 replicates = 18 renders.
+  - Optional P2-ext: A010 and A009-template, 12 renders. A006 conditional, +6.
+  - **NOT_RUN.**
+  - The locked Skill set and the spec are unchanged.
+- **Style DNA:** `style_dna/TUPACABRA_STYLE_DNA_v1.1_NOTES.md`, append-only, citing each method resource at its pinned sha. v1 and v2 files are untouched.
+- **Status:** `STATUS_REPORT_20261123-2100.md` (DOT_HANDOFF format) and `GATES_snapshot_20261123-2100.json`. GATES.json (18:30) is kept as history.
+- **No generation, no credits.**
