@@ -1,6 +1,6 @@
 # Copy/paste handoff for Claude Code / Codex
 
-You are executing **Higgsfield Creator Image-Reverse Benchmark v2.0**. Read `BENCHMARK_SPEC_V2.md` and `manifest_v2.json` in full before any external operation. Project home: `ed3c/higgsfield-studio`. Continue from Draft PR #4; preserve original v1 evidence and all existing constraints. Do not edit or merge GitHub files unless authorized by the user for that operation.
+You are executing **Higgsfield Creator Image-Reverse Benchmark v2.0**. Also read `CREATIVE_RESEARCH_SCOPE.md` in full before any action; `DOT_HANDOFF.md` is the companion dot-specific handoff. Distinguish `RESEARCH_COMPLETE` from `BENCHMARK_COMPLETE`. Read `BENCHMARK_SPEC_V2.md` and `manifest_v2.json` in full before any external operation. Project home: `ed3c/higgsfield-studio`. Continue from Draft PR #4; preserve original v1 evidence and all existing constraints. Do not edit or merge GitHub files unless authorized by the user for that operation.
 
 **Mission:** Fairly compare `huanmu-team/unimage`, `Caph-dev/image-style-prompt-reverse-engineer`, and `niobium617/prompt-reverse-engineer-skill` using @tupacabra visual-research references, with Higgsfield **website-only 0-incremental-credit** Unlimited renders. Produce P1 reconstruction (18 images), then P2 style-transfer between Caph and the highest-scoring eligible other candidate (12 images), report strengths separately.
 

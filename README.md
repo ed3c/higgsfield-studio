@@ -78,3 +78,8 @@ git lfs track "projects/*/masters/*.mp4" "projects/*/stills/*.png"
 - [執行入口 Skill](skills/image-reverse-benchmark/SKILL.md)；[ScrapeCreators 情報入口](skills/social-creator-intelligence/SKILL.md)。
 - **目前：BLOCKED_ENTITLEMENT_RECHECK / NOT_RUN。** 2026-11-20 的網站 Subscription 截圖不代表 2026-11-23 仍有效；網站 UI 必須再確認 Unlimited ON 及 0 Credits 才能生成。API/MCP 免費資格不等於網站權益。
 - v1 原始紀錄保留在 [research/reverse-skill-benchmark/](research/reverse-skill-benchmark/)；不覆寫、不偽造測試成績，圖片素材不進 Git。
+
+## 全創作者研究與 dot 交接
+
+- [創作者與作品完整研究範圍](research/reverse-skill-benchmark/v2/CREATIVE_RESEARCH_SCOPE.md)：整合本對話提及的作品、既有 79 位創作者研究資料、跨領域 Managers、來源追溯與雙 Gate 驗收。
+- [dot 可直接貼上的交接指令](research/reverse-skill-benchmark/v2/DOT_HANDOFF.md)：先讀完整 Scope 與 Benchmark v2，再進行網站 Unlimited 零 Credits 驗證。**此檔案不代表已將任務實際發送給 dot。**

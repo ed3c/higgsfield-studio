@@ -3,6 +3,8 @@
 This pack is a ready-to-run **specification** and evidence schema, not a completed visual comparison.
 
 Files:
+- `CREATIVE_RESEARCH_SCOPE.md`: full multi-creator/artwork research scope, 79-creator coverage, Domain Managers and separate completion gates.
+- `DOT_HANDOFF.md`: copy/paste instruction for dot, linking this scope and the executable benchmark v2 contract.
 - `BENCHMARK_SPEC_V2.md`: full scope, gating, metrics and acceptance criteria.
 - `manifest_v2.json`: machine-readable proposed experiment; current state is NOT_RUN / entitlement recheck.
 - `EXECUTION_PROMPT.md`: paste into a code agent with access to your own repo, image-reference assets and browser/session.
