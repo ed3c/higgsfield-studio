@@ -271,3 +271,5 @@ Facts below were reported by the orchestrating Grok Bot agent, which ran the gen
   - `eval_p1/{P1_BLIND_RESULTS.md, P1_RESULT_compute_output.json, agreement.json, sensitivity_descriptive_only.json, blind_key_UNSEALED.json}`
 
   Earlier status files are kept unchanged.
+
+- 20:45 Asia/Taipei: the P1 score sheets and results were uploaded to Drive `eval/`. Each file is owner-only (verified). The record is `DRIVE_STORAGE_MANIFEST_addendum_05_p1_scores.json`.

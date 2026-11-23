@@ -1,0 +1,38 @@
+{
+ "recorded_at": "2026-11-23T20:45+08:00",
+ "drive_folder": "eval/ 1UqLL_TIN0ftynvlM9K2qDdyK-MYJtgB3",
+ "sharing": "owner-only verified per file (single owner permission, no anyone/domain)",
+ "note": "P1_BLIND_RESULTS.md was auto-converted to a Google Doc on upload; repo copy is canonical",
+ "files": [
+  {
+   "name": "scores_R1.csv",
+   "drive_id": "1CvGaKM4K29MCkBvH8Zpbmi4Frlfq-OCm",
+   "sha256": "be54f4583782a2324283a08cbfb96e91d3a494d59da5745f0038ec005dbe04f2"
+  },
+  {
+   "name": "scores_R2.csv",
+   "drive_id": "1kIK6yRiCauzr_kr4e_EBlnRZvxOvY63r",
+   "sha256": "b2e4a0f59faa7ac4925084eefc306b0c326d471cec776cab0167d4f82aaae1a7"
+  },
+  {
+   "name": "P1_BLIND_RESULTS.md",
+   "drive_id": "1AUoTyYlAZg2Q7MplWbiCHgA3xhEFx3Df",
+   "sha256": "19e5c99e0b7cebebc6748929b8632e01361cbf8510b4f18423850e9e9fd7ed78"
+  },
+  {
+   "name": "P1_RESULT_compute_output.json",
+   "drive_id": "1vWisWq8r49dKN7o8LuyHwi1h-s0BzbVX",
+   "sha256": "9955ca419b41807e93d118c49216f52de665473f8a8130b83f215621358d3b33"
+  },
+  {
+   "name": "agreement.json",
+   "drive_id": "1or00KTcJjDt0H5HhZcoGhY68n8qoYNGq",
+   "sha256": "ab5ad564b3c77bc12e234e0c7a3fbe3d64e982a7e3be400f3dee0ac9a7e47d85"
+  },
+  {
+   "name": "sensitivity_descriptive_only.json",
+   "drive_id": "1oEvL4F6IfqAM2hGRFXSDbBs4yc8g8Mof",
+   "sha256": "ca531520b0daac6e3b7656e9f86d0814c03dbd8c6b8d5925e11e68fa40a42c51"
+  }
+ ]
+}
