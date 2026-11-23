@@ -42,3 +42,23 @@
 | G-09 | Domain-manager outputs (Narrative, Art Direction, Character/World, Cinematography, Prompt Compiler, Video/Audio, Generation Ops, Evals, Knowledge, Distribution) | All `NOT_RUN` for this batch; contracts unchanged in scope §4 |
 | G-10 | Cross-domain coverage counts: historical tags film 68, ads 24, art 21, scifi 13, mv 12, shorts 11, fashion 8, tech 6, literature 2, sports 1 (from `research/README.md`) — literature and tech are thin | Scope must not shrink; flagged for future batches, no creators invented |
 | G-11 | User-supplied references from **Grok Bot conversations** (personal footage, J4 project files, a TV-news screenshot, a film-character still) | Exist only in private storage; contain identifiable/third-party media → **not committed**, not analyzed under this scope; should be registered privately by opaque ID |
+
+## Status update 2026-11-23 ~18:30 Asia/Taipei (append-only; table above is the original record)
+
+Authority: owner t27u「能，全面分析」 (full analysis incl. frame extraction and external vision processing, research only) and t28u「都要」.
+
+| ID | New status | Evidence |
+| --- | --- | --- |
+| MS-001 | still `MISSING_SOURCE` | original ChatGPT conversation not accessible |
+| MS-002 | still `MISSING_SOURCE` | its attachments not accessible |
+| MS-003 | `PRIVATE_BY_DESIGN` (unchanged) | billing evidence; live check 18:07 recorded in run `DECISIONS.json` D-03 |
+| MS-004 | `CANDIDATES_READY_NOT_LOCKED` | 9 candidate frames (3 per case) from SRC-T002; `research/live/creator-intelligence/2026-11-23-tupacabra/C_CANDIDATES.md`; owner pick pending |
+| MS-005 | **CLOSED** | SRC-T001 post + 720p MP4 sha256 `b4eec6fa…`; 4K SRC-T002 sha256 `f376471f…` (private copies) |
+| MS-006 | `PARTIAL` | X page 1 (25 posts) + 51 YouTube titles indexed; works not analyzed; "NUREMBERG - 1561 A.D." clip not found |
+| MS-007 | **CLOSED** | creator's X post 2122269057600885152 links youtu.be/Xeto4CMwvzA; channel @TupacabraVideos |
+| MS-008 | **CLOSED** | `p2_subjects_APPROVED.json` (owner t28u) |
+| MS-009 | still `NOT_RUN` | no ScrapeCreators key; not needed for G0 |
+| MS-010 | `PARTIAL` | reachability only: 95 historical source URLs probed → {'200': 92, '999': 1, '000': 1, '404': 1} (`source_reachability_20261123.jsonl`); HTTP 200 ≠ content verified; Instagram/TikTok/YouTube social links from `profiles_raw.json` not opened |
+| MS-011 | still `MISSING_SOURCE` | JOEY TinyURL pack not archived |
+| MS-012 | `PARTIAL` | Authors First / One of One / Boxel case-study URLs answer HTTP 200; pages not analyzed. Alterworld case-study URL returns 404; dreamslatepictures.com unreachable (timeout) |
+
