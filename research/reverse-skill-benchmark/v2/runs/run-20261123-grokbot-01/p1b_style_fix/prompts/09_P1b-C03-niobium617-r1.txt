@@ -1,0 +1,18 @@
+Create an image with the following specification.
+
+Subject: a large dark grey tailless flying-wing aircraft with a small glass canopy bubble and boxy intake on top at the center, three engines glowing orange-white beneath the center trailing pale exhaust haze to the left, faint darker markings near the outer wings
+Position: centered horizontally just below the middle of the frame, nearly head-on and seen slightly from above
+Scale: wingspan covers about 80% of the frame width
+Spatial layout: foreground lower right: a dark out-of-focus cockpit frame intruding; midground: the aircraft low over the water; background: hazy horizon with distant pale cliffs about one third down; upper half: flat pale overcast sky
+Scene: a calm grey-green sea under an overcast sky near a coastline
+Shot: wide shot
+Camera angle: slightly high angle from a chase aircraft
+Style: cinematic documentary-style aerial film still, photorealistic
+Lighting: flat diffuse overcast daylight, no hard shadows, small hot engine glows
+Color: desaturated slate-teal, grey and cold green, low contrast
+Composition: strong horizontal silhouette across the center; large negative space of sky above and sea below
+Camera: telephoto compression, atmospheric haze, soft film grain
+Material: matte dark grey airframe, glass canopy, fine choppy water
+Constraints: render all text exactly as written; no extra text, logos, or watermarks. no blue sky, no bright sunlight, no extra aircraft
+
+LOOK LOCK (overrides any conflicting style, lighting, colour or lens wording above): this must read as an unretouched frame grab from a live-action prestige feature film shot on a large-format digital cinema camera with vintage spherical prime lenses, not an illustration, painting, concept art or 3D render. Real optical behaviour: genuine shallow depth of field with smooth out-of-focus falloff, the slight overall softness of a 24 fps motion-picture frame, subtle natural motion softness, gentle highlight roll-off and soft halation around bright highlights. Exposure set by a cinematographer, with natural, slightly uneven light. No HDR look, no clarity or micro-contrast boost, no oversharpening, no airbrushed or waxy surfaces, no uniformly crisp detail from edge to edge, no painterly texture. Very fine, barely visible sensor noise rather than heavy film grain. Muted teal-slate prestige-drama grade. Case look: real air-to-air footage shot through a chase-plane window with a long lens. The out-of-focus cockpit frame at the lower right is a deep, true black, crushed rather than lifted. The sea is dark teal-green with visible wind texture. The overcast sky is pale and washed grey-green, with thick haze that swallows the horizon so that any coastline is barely visible. The aircraft is slightly soft, with subtle motion blur and heat shimmer behind the glowing engines, and a matte, weathered, non-glossy airframe. No CGI-clean edges and no crisp studio-lit surfaces.

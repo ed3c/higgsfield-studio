@@ -130,3 +130,28 @@ Facts below were reported by the orchestrating Grok Bot agent, which ran the gen
 - Job 15 `P1-C03-unimage-r2` is now **final MODERATION_REFUSED and will never be retried**.
 - **GAP-P1-01:** cell C03 × unimage has a single replicate (r1, job 18). Under spec §7/§8 no P1 winner can be declared, and G3 stays `PARTIAL_P1`. Any P1 ranking, including the choice of the P2 candidate B, is **PROVISIONAL**.
 - `P1_STATUS.json`: the refused-job entry was updated in place (`decision_pending` set to null and the decision referenced) and a `history` entry was appended. The earlier counts are unchanged.
+
+### 2026-11-23 19:20–19:45 Asia/Taipei — owner/oracle style verdict, P1 eval setup, P1b-style-fix addendum (DRAFT, not generated)
+
+- **Human owner/oracle observation.** Neon, t31u, 19:20, verbatim: 「圖片的電影風格具有攝影寫實的感覺，這批圖片風格只有構圖類似，需要修正」.
+  - Recorded as: **P1 style fidelity = FAIL (all 17 outputs); composition = similar**.
+  - This is an owner observation. It is not one of the two blind reviewer scores and does not replace them.
+- **P1 blind review is kept as baseline evidence.**
+  - Packet: `eval_p1/`, plus a private tar.gz and the sealed key in the private Drive `eval/` folder `1UqLL_TIN0ftynvlM9K2qDdyK-MYJtgB3`. Permissions checked: owner only.
+  - State `PARTIAL_EVAL`: **0 of 2 reviewers have scored.**
+  - This executor did not self-score, because it is neither blind nor independent (see `eval_p1/EVAL_SETUP.md`).
+  - No P1 output, prompt or hash was altered.
+- **Look-gap analysis.** `p1b_style_fix/LOOKGAP_ANALYSIS.md`, measured and inferred. Headline findings:
+  - (1) Deep-focus, edge-to-edge crispness and synthetic micro-texture are the dominant CG tells.
+  - (2) Each case is mis-exposed: C01 face about 1–1.5 stops dark with no high key; C02 bright golden-hour postcard against a dim, overcast reference (about +1.5 stops, wrong weather); C03 blacks lifted against crushed blacks in the reference.
+  - (3) Film, halation and shallow-DOF words were already in the P1 prompts and were ignored.
+- **SPEC DEVIATION — P1b-style-fix is an ADDENDUM, not a replacement.**
+  - It is not one of the 30 core images and does not change P1 results, scores or gates.
+  - Design: P1b prompt = the locked P1 normalized prompt, byte-identical (prefix sha verified for all 9), plus a per-case look lock shared by all three Skills (`p1b_style_fix/LOOK_LOCK_SPEC.json`).
+  - The look lock is human/executor-authored. It is therefore a controlled, documented prompt intervention and **not** a Skill output; P1b results must never be credited to a Skill on their own.
+  - Job list: `p1b_style_fix/p1b_jobs.json`. 9 jobs = 3 cases × 3 Skills × r1.
+  - Order: no blind scores exist, so a strongest-to-weakest order is not available. Submit order is a Latin square over Skills per case to spread position effects.
+  - Settings: GPT Image 2.6 Sunburst, 16:9, 1K, Medium, website Unlimited at 0 credits, no upload.
+  - Paste files: `/workspace/hs-bench-jobs/p1b_prompts/NN_jobid.txt`, with mirror copies in `p1b_style_fix/prompts/`.
+  - **Status: NOT GENERATED.**
+- **Risk note.** `P1b-C03-unimage-r1` starts with the same text that produced the moderation refusal for job 15. If it is refused, record it as MODERATION_REFUSED and do not retry without Neon.
