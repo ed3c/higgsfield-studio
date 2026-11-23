@@ -1,0 +1,132 @@
+{
+ "recorded_at": "2026-11-23T19:55+08:00",
+ "appends_to": [
+  "DRIVE_STORAGE_MANIFEST.json",
+  "DRIVE_STORAGE_MANIFEST_addendum_01.json",
+  "DRIVE_STORAGE_MANIFEST_addendum_02.json"
+ ],
+ "new_folder": {
+  "output_p1b": "1Q8RQSKKuiBghbWmsmza0od-Ge-LIXwde",
+  "parent": "run-20261123-grokbot-01 (1yN13jEwTEbsRsT616sGxRnBJ81bVab74)"
+ },
+ "eval_folder_recorded_here_too": {
+  "eval": "1UqLL_TIN0ftynvlM9K2qDdyK-MYJtgB3",
+  "contents": [
+   "p1-blind-packet.tar.gz 1yRev8ocdht0DufCBd88P7hRVaw8VKkdp",
+   "SEALED blind key 1ln5uKqO1LdArFDnLApZ2mJYuMB0no5ou"
+  ]
+ },
+ "sharing_verification": {
+  "method": "Drive get_file_permissions",
+  "checked_ids": [
+   "1Q8RQSKKuiBghbWmsmza0od-Ge-LIXwde",
+   "1QpLsP9Tc3413dnChaazwc3Pr1_RTGMMN",
+   "1rRrc1FIfX3GGo8CM5InRTENK51LRI7Ll",
+   "1UqLL_TIN0ftynvlM9K2qDdyK-MYJtgB3"
+  ],
+  "result": "each returned exactly one permission: owner (Neon). Others inherit from the owner-only folder. No share call made."
+ },
+ "list_folder_check": "10 files present; Drive sizes equal box byte counts",
+ "files": [
+  {
+   "drive_subfolder": "output_p1b",
+   "filename": "P1b-C01-caph-r1.png",
+   "job_submit_order": 1,
+   "sha256": "ce7cfd06cd789c5e6f9f3e6e3fdeb1286f43432378b4827f4138a296fa9f8639",
+   "bytes": 1376174,
+   "drive_file_id": "1QpLsP9Tc3413dnChaazwc3Pr1_RTGMMN",
+   "box_copy": "/workspace/hs-bench-private/run-20261123-grokbot-01/output_p1b/P1b-C01-caph-r1.png",
+   "sharing": "private (owner only)"
+  },
+  {
+   "drive_subfolder": "output_p1b",
+   "filename": "P1b-C01-niobium617-r1.png",
+   "job_submit_order": 2,
+   "sha256": "f5d890ed3b6f2f037a9691cb72033a9722d0c4cae2adbce74e295c3bb9b98127",
+   "bytes": 1311950,
+   "drive_file_id": "19wyHg9zQaPVZUPYSIV5ybHdy05bWBT-k",
+   "box_copy": "/workspace/hs-bench-private/run-20261123-grokbot-01/output_p1b/P1b-C01-niobium617-r1.png",
+   "sharing": "private (owner only)"
+  },
+  {
+   "drive_subfolder": "output_p1b",
+   "filename": "P1b-C01-unimage-r1.png",
+   "job_submit_order": 3,
+   "sha256": "b74e6562f676954576eda145afa6d09b7cb54e6a9b84bbc0cf8779f89c004490",
+   "bytes": 1308318,
+   "drive_file_id": "1k83r_hoQsX6y3pThSqj_Hk5shTkIPl3Q",
+   "box_copy": "/workspace/hs-bench-private/run-20261123-grokbot-01/output_p1b/P1b-C01-unimage-r1.png",
+   "sharing": "private (owner only)"
+  },
+  {
+   "drive_subfolder": "output_p1b",
+   "filename": "P1b-C02-niobium617-r1.png",
+   "job_submit_order": 4,
+   "sha256": "9522f01b4488ceb1601ff714ac39c8ea3f4f741c09ac9b58ca57a52efcba7ec5",
+   "bytes": 1258837,
+   "drive_file_id": "17NPU7jY9fVFANXPv45E4c4YTHkjMnMzm",
+   "box_copy": "/workspace/hs-bench-private/run-20261123-grokbot-01/output_p1b/P1b-C02-niobium617-r1.png",
+   "sharing": "private (owner only)"
+  },
+  {
+   "drive_subfolder": "output_p1b",
+   "filename": "P1b-C02-unimage-r1.png",
+   "job_submit_order": 5,
+   "sha256": "5640c793b836d620b3bb7ebd2e3e07615569e519432852c1c8eda669272a6649",
+   "bytes": 1169619,
+   "drive_file_id": "1N2CdY056PrpnitZ9L9XlBBBTBriy7T-5",
+   "box_copy": "/workspace/hs-bench-private/run-20261123-grokbot-01/output_p1b/P1b-C02-unimage-r1.png",
+   "sharing": "private (owner only)"
+  },
+  {
+   "drive_subfolder": "output_p1b",
+   "filename": "P1b-C02-caph-r1.png",
+   "job_submit_order": 6,
+   "sha256": "d213738c1f1c6d71c3dd3445de92b94f3cf25a2f862c489051596bbe739b2647",
+   "bytes": 1220328,
+   "drive_file_id": "1qABsxiPd_Gg2CE7un2MWRKar4aU1bXF9",
+   "box_copy": "/workspace/hs-bench-private/run-20261123-grokbot-01/output_p1b/P1b-C02-caph-r1.png",
+   "sharing": "private (owner only)"
+  },
+  {
+   "drive_subfolder": "output_p1b",
+   "filename": "P1b-C03-unimage-r1.png",
+   "job_submit_order": 7,
+   "sha256": "a6979c783b4901855389b5d48f21af64f74365e678ce25460cc609532df17a50",
+   "bytes": 1151321,
+   "drive_file_id": "1RYgktnotyoAqy1ksIYLzoa13vc52WEwD",
+   "box_copy": "/workspace/hs-bench-private/run-20261123-grokbot-01/output_p1b/P1b-C03-unimage-r1.png",
+   "sharing": "private (owner only)"
+  },
+  {
+   "drive_subfolder": "output_p1b",
+   "filename": "P1b-C03-caph-r1.png",
+   "job_submit_order": 8,
+   "sha256": "4339124be745bf966db86345ccbe8eafba630b8141462e598b03e4ce69ce97b5",
+   "bytes": 1165952,
+   "drive_file_id": "1abmz06FQGYanSgMfE4mKyrDo1_YsyOsW",
+   "box_copy": "/workspace/hs-bench-private/run-20261123-grokbot-01/output_p1b/P1b-C03-caph-r1.png",
+   "sharing": "private (owner only)"
+  },
+  {
+   "drive_subfolder": "output_p1b",
+   "filename": "P1b-C03-niobium617-r1.png",
+   "job_submit_order": 9,
+   "sha256": "b20095424bc67edbabe588107989241b0ddc1441d81e0121c8ea2fccce5b1d17",
+   "bytes": 1238421,
+   "drive_file_id": "1OS5s2_-ufCP6KTLWxNI7D_RxJX-pYsAI",
+   "box_copy": "/workspace/hs-bench-private/run-20261123-grokbot-01/output_p1b/P1b-C03-niobium617-r1.png",
+   "sharing": "private (owner only)"
+  },
+  {
+   "drive_subfolder": "output_p1b",
+   "filename": "p1b_compare.jpg",
+   "sha256": "7935362e5693597f2ff92648cf6d7bec5ebf33bf4f71247e94970b145abc9c90",
+   "bytes": 462474,
+   "drive_file_id": "1rRrc1FIfX3GGo8CM5InRTENK51LRI7Ll",
+   "box_copy": "/workspace/hs-bench-jobs/p1b_compare.jpg",
+   "sharing": "private (owner only)",
+   "note": "operator-made comparison sheet: REF | P1 unimage-r1 | P1b x3 per case"
+  }
+ ]
+}

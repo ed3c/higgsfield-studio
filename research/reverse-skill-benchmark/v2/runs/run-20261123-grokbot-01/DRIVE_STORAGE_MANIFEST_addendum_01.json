@@ -1,0 +1,19 @@
+{
+  "recorded_at": "2026-11-23T19:00+08:00",
+  "appends_to": "DRIVE_STORAGE_MANIFEST.json (unchanged)",
+  "files": [
+    {
+      "drive_subfolder": "output",
+      "filename": "P1-C02-niobium617-r2.png",
+      "job_submit_order": 10,
+      "sha256": "9667bb5ca5891666a9baee53a8294d1d24898fb8cdef2b117b2879541738301e",
+      "bytes": 1674914,
+      "drive_file_id": "1dmPfw5wkyu0f1r40p4NYEucDy58ZL0Os",
+      "box_copy": "/workspace/hs-bench-private/run-20261123-grokbot-01/output/P1-C02-niobium617-r2.png",
+      "box_mtime_asia_taipei": "18:52:23",
+      "sharing": "private (owner only)",
+      "permissions_checked": "file"
+    }
+  ],
+  "note": "Job 10 output arrived during the storage pass. Website job id and submit facts were not yet supplied; generations.csv row deferred until the operator reports them."
+}

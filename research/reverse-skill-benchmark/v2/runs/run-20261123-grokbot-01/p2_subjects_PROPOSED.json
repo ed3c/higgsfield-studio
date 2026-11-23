@@ -1,0 +1,11 @@
+{
+  "status": "PROPOSED_NOT_LOCKED",
+  "rule": "Spec §5 P2: replacement subject, story context, camera constraints and banned motifs must be fixed BEFORE P1 and are identical for both P2 entrants. Owner approval required; this file does not lock anything.",
+  "proposed_by": "Grok Bot, 2026-11-23",
+  "common_banned_motifs": ["any real or identifiable person", "source characters, costumes or insignia", "military/political/extremist insignia of any kind", "readable text, titles, logos, watermarks", "the source's specific sky objects, vehicles or relics"],
+  "cases": {
+    "C01_portrait": {"new_subject": "an invented elderly lighthouse keeper, weathered hands, plain wool coat with no markings, holding an unlit brass lantern", "story_context": "the night the lighthouse is decommissioned", "camera_constraints": "single subject, foreground-background separation preserved from source framing", "banned_extra": ["uniforms", "medals"]},
+    "C02_environment": {"new_subject": "an abandoned tidal salt-works: long wooden evaporation pans, a single conveyor gantry, low fog", "story_context": "dawn after a storm, no people", "camera_constraints": "keep the source's vanishing-point placement and horizon height", "banned_extra": ["city skylines", "aircraft", "ships"]},
+    "C03_prop_action": {"new_subject": "a hand releasing a large handmade paper kite shaped like a moth", "story_context": "a child's farewell ritual on a hill", "camera_constraints": "keep the source's silhouette/scale contrast", "banned_extra": ["weapons", "glowing portals", "spheres in the sky"]}
+  }
+}

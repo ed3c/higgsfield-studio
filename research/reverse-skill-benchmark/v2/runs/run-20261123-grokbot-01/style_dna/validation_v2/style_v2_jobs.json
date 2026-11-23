@@ -1,0 +1,63 @@
+{
+ "round": "STYLE_DNA_EXTRACTION/style_v2",
+ "changed_variable": "Colour line of the style block only",
+ "style_block_sha256": "93834e4dc71bba9256af65a0dc67317b6e7fe86f9671d15faf5807a8e11ea14c",
+ "settings": "same as v1",
+ "acceptance": "same as validation_v1/ACCEPTANCE.md, targets style_targets_v1.json unchanged",
+ "jobs": [
+  {
+   "order": 1,
+   "id": "night_market_cook",
+   "file": "01_night_market_cook.txt",
+   "chars": 3125,
+   "sha256": "ed19cf282a12edeab1a363492f80422651391c48341c394afddd48d760c8bbc6",
+   "shot_identical_to_v1": true,
+   "status": "DRAFT_NOT_GENERATED"
+  },
+  {
+   "order": 2,
+   "id": "desert_bicycle_repair",
+   "file": "02_desert_bicycle_repair.txt",
+   "chars": 3121,
+   "sha256": "ed6e9cc2ee64fb12b2c05e19a854d2a3ec0bb7edcc2296f0f7ecb1c63bfecfbb",
+   "shot_identical_to_v1": true,
+   "status": "DRAFT_NOT_GENERATED"
+  },
+  {
+   "order": 3,
+   "id": "bronze_age_potter",
+   "file": "03_bronze_age_potter.txt",
+   "chars": 3110,
+   "sha256": "755a9286487a26f73b58bed95161441845b95381c895cd0b8d3a18efcc671b26",
+   "shot_identical_to_v1": true,
+   "status": "DRAFT_NOT_GENERATED"
+  },
+  {
+   "order": 4,
+   "id": "highland_horses",
+   "file": "04_highland_horses.txt",
+   "chars": 3120,
+   "sha256": "e80ef3b85e7662afb855d50399aff500727703e89493e73aa329904a8ddcf443",
+   "shot_identical_to_v1": true,
+   "status": "DRAFT_NOT_GENERATED"
+  },
+  {
+   "order": 5,
+   "id": "subway_raincoat",
+   "file": "05_subway_raincoat.txt",
+   "chars": 3162,
+   "sha256": "75647be19adfb167a3ab4d624002acc86fcbf9cecaed90e11b9ddfc0a25cd56d",
+   "shot_identical_to_v1": true,
+   "status": "DRAFT_NOT_GENERATED"
+  },
+  {
+   "order": 6,
+   "id": "pocket_watch_still_life",
+   "file": "06_pocket_watch_still_life.txt",
+   "chars": 3053,
+   "sha256": "461bf64216c32cf6ab35a5e104da90cd4d2d4e60cffce81a7aaaf410640054e1",
+   "shot_identical_to_v1": true,
+   "status": "DRAFT_NOT_GENERATED"
+  }
+ ]
+}

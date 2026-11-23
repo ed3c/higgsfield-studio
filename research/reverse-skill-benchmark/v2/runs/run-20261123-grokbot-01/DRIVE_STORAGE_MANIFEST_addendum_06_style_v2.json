@@ -1,0 +1,48 @@
+{
+ "recorded_at": "2026-11-23T20:55+08:00",
+ "drive_folder": {
+  "name": "style_v2_output",
+  "id": "1EOka7cebtm9DlFowvlEpiv3k25u8pfUd",
+  "parent": "1yN13jEwTEbsRsT616sGxRnBJ81bVab74"
+ },
+ "sharing": "owner-only verified (folder + all 6 files: single owner permission)",
+ "supersedes_csv_field": "generations_style_v2.csv output_path 'gdrive:PENDING' -> ids below",
+ "files": [
+  {
+   "name": "01_night_market_cook.png",
+   "drive_id": "1mbHzpTSHJ_uEi2yXpB6ZSSjE6ul8PlSi",
+   "sha256": "2ba83f123686ce8ca741712fbf91f78fa5619db0ad845e7c8c66bbf694e28ef0",
+   "bytes": 1428986
+  },
+  {
+   "name": "02_desert_bicycle_repair.png",
+   "drive_id": "1WAOii8iF_hYRecuYyP1prPN1R3m96zET",
+   "sha256": "4d223a9db03491766e0b522e89b74e78f9e658ae1256ffa5e77d5f646211e84c",
+   "bytes": 1317599
+  },
+  {
+   "name": "03_bronze_age_potter.png",
+   "drive_id": "1uXsN4jQ5ONqrdXT7cyd-Nrj_UzmGOXcT",
+   "sha256": "0150f40fbdab87e6723d8258b985fdb530ac2f705397db690a7fde7fb6cf8e2e",
+   "bytes": 1235881
+  },
+  {
+   "name": "04_highland_horses.png",
+   "drive_id": "146tamsZcmRJL4d6lA3Xy5mhLm3L353zy",
+   "sha256": "b48b963fb6e9e134f8233edfac9e026c6b44e4cd26653bc1638ae8c3d6d9aabe",
+   "bytes": 1403457
+  },
+  {
+   "name": "05_subway_raincoat.png",
+   "drive_id": "1XIha03VeeoKOO8-ue_ClrskEsgePd4Pc",
+   "sha256": "5ac53389c21fc59744a997bca2c961af2a0786270ffb5828f81fcfe97fd6c412",
+   "bytes": 1201386
+  },
+  {
+   "name": "06_pocket_watch_still_life.png",
+   "drive_id": "1Zx0zeROsBT-3-Llg_DKnW2fCqrkBrNHn",
+   "sha256": "8e22745d4f8d599c41da7ecb8f9b79db6dd3d6fa51833c952489803e89c2dfa5",
+   "bytes": 1251410
+  }
+ ]
+}

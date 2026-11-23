@@ -1,0 +1,101 @@
+{
+ "addendum_id": "P1-ext (with optional P2-ext)",
+ "status": "NOT_RUN",
+ "proposed_at": "2026-11-23T20:50+08:00",
+ "relation_to_spec": "ADDENDUM ONLY. Does not change BENCHMARK_SPEC_V2, manifest_v2.json, the locked P1 Skill set (unimage, caph, niobium617), the 18+12 core images, the P2 candidate-B rule, or any score. P1-ext results are ranked in a SEPARATE table and can never become P2 candidate B under the v2 spec.",
+ "protocol_identical_to_P1": [
+  "same locked masked refs C01_S30, C02_S16, C03_S06 (REFERENCE_LOCK.json)",
+  "same P0_TASK_BRIEF.md, one Skill run per (case, skill), no human polishing, raw + normalized prompt + hashes saved",
+  "same render settings: GPT Image 2.6 Sunburst, 16:9, 1K, Medium, higgsfield.ai website, Unlimited ON and 0 credits confirmed live before the first submit, no reference upload",
+  "2 replicates per cell, Skill order randomized within case",
+  "blind review by 2 independent reviewers on the same 0-5 P1 rubric; packet built like eval_p1/"
+ ],
+ "eligibility_gates_before_any_run": [
+  "G2-ext: pin HEAD sha (below), static read of SKILL.md and any scripts; no network-enabled script execution, no installer, no paid external API",
+  "License: MIT confirmed for core candidates; LICENSE_UNVERIFIED candidates need owner OK",
+  "No image-to-image: output must be a text prompt only"
+ ],
+ "candidates_core": [
+  {
+   "osr_id": "OSR-A007",
+   "skill": "DaYePython/image-to-prompt-skill",
+   "path": "SKILL.md",
+   "head_sha": "28738e2e87438c65cdbb5d0555aeaa592848b910",
+   "license": "MIT",
+   "mode": "image -> detailed T2I prompt (tiered)",
+   "task": "P1-ext reconstruction"
+  },
+  {
+   "osr_id": "OSR-A008",
+   "skill": "MCamner/mq-image-analyze reverse-prompt",
+   "path": "skills/reverse-prompt/SKILL.md",
+   "head_sha": "28f0e021705cf0e7e4c932cef444b45e7a08c29d",
+   "license": "MIT",
+   "mode": "image_path -> prompt + tokens; relies on the repo's visual-reasoning skill and possibly a local model runtime",
+   "task": "P1-ext reconstruction",
+   "risk": "may need local model install; mark BLOCKED_SKILL if it requires a paid API or network-enabled script"
+  },
+  {
+   "osr_id": "OSR-A009",
+   "skill": "fluentlc/shiny-skills image-to-prompt-skill",
+   "path": "image-to-prompt-skill/SKILL.md",
+   "head_sha": "9f6363042deb644e4fc79a4739cd19e409ac6e84",
+   "license": "MIT",
+   "mode": "image -> Prompt Case (concrete) + Prompt Template ([PLACEHOLDER])",
+   "task": "P1-ext reconstruction uses the Prompt Case"
+  }
+ ],
+ "candidates_conditional": [
+  {
+   "osr_id": "OSR-A006",
+   "skill": "uyoujian/style-prompt-extractor",
+   "head_sha": "5a5c5c1f6984f59380677d3c4924de6b488b06f8",
+   "license": "NONE (GitHub API null)",
+   "mode": "image -> subject-free Chinese style template (15 dimensions)",
+   "why_conditional": "no license file; style-only output is a P2/style-transfer tool more than a reconstruction tool",
+   "task": "P2-ext only, if owner accepts research use without a license"
+  }
+ ],
+ "candidates_p2_ext": [
+  {
+   "osr_id": "OSR-A010",
+   "skill": "ajinnaaa/extract-visual-style-2",
+   "head_sha": "7b7d2c285e84805dd2f324dc815911573b5df6e6",
+   "license": "MIT",
+   "mode": "content/style separated modules + content-free prompt beginning with a subject slot",
+   "task": "P2-ext style transfer on the APPROVED P2 subjects (p2_subjects_APPROVED.json)"
+  },
+  {
+   "osr_id": "OSR-A009",
+   "skill": "fluentlc/shiny-skills (Prompt Template mode)",
+   "task": "P2-ext style transfer: fill [PLACEHOLDER] with the approved P2 subject"
+  }
+ ],
+ "excluded": [
+  {
+   "osr_id": "OSR-A020",
+   "reason": "image-to-image Flux Kontext wrapper (violates no-I2I) and needs a paid external provider"
+  },
+  {
+   "osr_id": "OSR-F046",
+   "reason": "video-input DNA analyzer; not a still-image reverse Skill. Use as method reference / future video-DNA phase"
+  },
+  {
+   "osr_id": "OSR-A005",
+   "reason": "= caph, already locked"
+  },
+  {
+   "osr_id": "OSR-A015",
+   "reason": "Cinematic Prompt Engine is a forward LOOK/preset prompter, not image-reverse; license NOASSERTION. Method reference only"
+  }
+ ],
+ "job_count": {
+  "P1-ext core": "3 Skills x 3 cases x 2 replicates = 18 renders",
+  "P2-ext (optional)": "2 Skills (A010, A009-template) x 3 cases x 2 replicates = 12 renders",
+  "P2-ext conditional A006": "+6 renders if owner approves",
+  "maximum_total": 36,
+  "credits": "0 additional (website Unlimited only); stop on any numeric price"
+ },
+ "blind_review_load": "P1-ext 18 images x 2 reviewers; P2-ext 12 x 2",
+ "state": "NOT_RUN — awaiting owner approval; Unlimited must be re-verified live (expiry observed 2026-11-27)"
+}

@@ -1,0 +1,38 @@
+{
+  "recorded_at": "2026-11-23T18:20+08:00",
+  "decisions": [
+    {
+      "id": "D-01",
+      "subject": "P2 replacement subjects",
+      "decision": "APPROVED as proposed (lighthouse keeper / tidal salt-works / moth kite)",
+      "authority": "Neon t28u '都要'",
+      "artifact": "p2_subjects_APPROVED.json",
+      "closes": "MS-008"
+    },
+    {
+      "id": "D-02",
+      "subject": "Primary image model",
+      "decision": "GPT Image 2.6, UI variant 'Sunburst', 16:9, 1K, higgsfield.ai website ordinary image page, Unlimited ON",
+      "authority": "Neon t28u '都要' (follow spec)",
+      "note": "Seedream 5.0 Pro is not a spec model and is not used in this benchmark even though Unlimited."
+    },
+    {
+      "id": "D-03",
+      "subject": "Live entitlement observation (G1 preflight)",
+      "observed_at": "2026-11-23T18:07+08:00",
+      "observer": "Grok Bot (orchestrating agent) in its own browser session; reported to this executor, evidence kept private and not seen by the executor",
+      "result": {
+        "GPT Image 2.6 (Sunburst) 16:9 1K": "Unlimited, 0 credits shown",
+        "Seedream 5.0 Pro": "Unlimited",
+        "Nano Banana Pro": "NOT Unlimited (2 credits) -> spec fallback unavailable at 0 credits"
+      },
+      "gate_effect": "G1 preflight observed; spec §4.6 still requires recheck at every submit"
+    },
+    {
+      "id": "D-04",
+      "subject": "C01-C03 reference frames",
+      "decision": "PENDING owner pick; not locked",
+      "authority": "Neon (via orchestrator): confirm frames first"
+    }
+  ]
+}

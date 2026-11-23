@@ -1,0 +1,36 @@
+{
+ "recorded_at": "2026-11-23T20:40+08:00",
+ "appends_to": "P1_STATUS.json (unchanged as history)",
+ "p1_generation": "17/18 GENERATED + 1 MODERATION_REFUSED (final)",
+ "p1_blind_eval": {
+  "state": "P1_SCORED_INCONCLUSIVE",
+  "reviewers": "2/2 (R1, R2; identity details not supplied, GAP-EVAL-01)",
+  "scored_images": 17,
+  "sheets_sha256": {
+   "R1": "be54f4583782a2324283a08cbfb96e91d3a494d59da5745f0038ec005dbe04f2",
+   "R2": "b2e4a0f59faa7ac4925084eefc306b0c326d471cec776cab0167d4f82aaae1a7"
+  },
+  "sheets_locked_commit": "31e5bd6",
+  "key_sha256_verified": "0a49df5e08f6ce106aefc227617c836dc62ddb078f4bbf161a9816e27d5d64fe",
+  "per_skill_mean": {
+   "niobium617": 3.479,
+   "unimage": 3.375,
+   "caph": 3.142
+  },
+  "rule": "gap>=0.25 AND leads>=2/3",
+  "gap": 0.104,
+  "cases_led": "3/3",
+  "candidate_B": "INCONCLUSIVE",
+  "p1_winner": null,
+  "provisional_reason": "GAP-P1-01"
+ },
+ "p2": {
+  "state": "NOT_RUN",
+  "reason": "P2_CANDIDATE_B_INCONCLUSIVE (spec \u00a75 'if none eligible, mark P2 NOT_RUN')",
+  "owner_options": [
+   "keep NOT_RUN",
+   "override: caph vs niobium617 (12, provisional)",
+   "override: caph+niobium617+unimage (18)"
+  ]
+ }
+}

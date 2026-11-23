@@ -1,0 +1,40 @@
+{
+ "run_id": "run-20261123-grokbot-01",
+ "as_of": "2026-11-23T20:40+08:00 (wall clock; filename-ordered snapshots: this follows GATES_snapshot_20261123-2100.json which was pre-labelled)",
+ "previous_snapshots_kept": [
+  "GATES.json",
+  "GATES_snapshot_20261123-2100.json"
+ ],
+ "research_completeness_G_R": {
+  "state": "PARTIAL_RESEARCH_SCOPE",
+  "open_source_resources": "200/200 inventoried; 140/140 links 200; 0 MISSING_SOURCE",
+  "domain_manager_outputs": "NOT_RUN",
+  "missing_source_open": [
+   "MS-001",
+   "MS-002",
+   "MS-011"
+  ]
+ },
+ "benchmark_completion_G_B": {
+  "G0_rights_source": "PASS (refs locked, REFERENCE_LOCK.json)",
+  "G1_web_entitlement": "PASS at 18:07 live; RECHECK REQUIRED before P2/P1-ext/style_v2",
+  "G2_skill_reproducibility": "PARTIAL (SHAs pinned, 9/9 prompts locked, scripts not audited)",
+  "G3_P1_generation": "PARTIAL_P1 (17/18 + 1 MODERATION_REFUSED final)",
+  "G4_P1_blind_eval": "P1_SCORED_INCONCLUSIVE (2/2 reviewers; gap 0.104 < 0.25)",
+  "G5_P2_generation_eval": "NOT_RUN (P2_CANDIDATE_B_INCONCLUSIVE; owner decision pending)",
+  "G6_final_report": "NOT_RUN",
+  "core_images": 17,
+  "addendum_images": {
+   "P1b": 9,
+   "style_v1": 6
+  },
+  "additional_credits_spent": 0,
+  "P1_winner": null,
+  "P2_winner_among_compared": null
+ },
+ "style_dna_extraction": {
+  "v1": "A1 FAIL, A2 PENDING, A3 PASS 5/6, B1 PASS 5/6, B2 PASS",
+  "v2": "DRAFT_NOT_GENERATED"
+ },
+ "p1_ext": "NOT_RUN (proposal: 18 + optional 12)"
+}

@@ -1,0 +1,209 @@
+{
+ "schema_version": "1.0",
+ "tool": "agent",
+ "modality": "image",
+ "input": {
+  "kind": "file",
+  "sha256": "9f2a49aa4b4d9f38da0e58ede1656a8055812d72066426934a15bf3b1b159727",
+  "size_bytes": 2995350,
+  "source": "/workspace/hs-bench-private/run-20261123-grokbot-01/refs/masked/C02_S16_16x9_3840x2160_masked.png"
+ },
+ "local_features": {
+  "color": {
+   "brightness_mean": 69.5192,
+   "brightness_std": 45.3137,
+   "color_temperature_hint": "中性",
+   "contrast": 97.25,
+   "dominant_colors": [
+    {
+     "hex": "#282828",
+     "ratio": 0.1099,
+     "rgb": [
+      40,
+      40,
+      40
+     ]
+    },
+    {
+     "hex": "#181818",
+     "ratio": 0.0884,
+     "rgb": [
+      24,
+      24,
+      24
+     ]
+    },
+    {
+     "hex": "#081818",
+     "ratio": 0.0854,
+     "rgb": [
+      8,
+      24,
+      24
+     ]
+    },
+    {
+     "hex": "#586868",
+     "ratio": 0.0671,
+     "rgb": [
+      88,
+      104,
+      104
+     ]
+    },
+    {
+     "hex": "#182828",
+     "ratio": 0.0557,
+     "rgb": [
+      24,
+      40,
+      40
+     ]
+    },
+    {
+     "hex": "#383838",
+     "ratio": 0.042,
+     "rgb": [
+      56,
+      56,
+      56
+     ]
+    },
+    {
+     "hex": "#283838",
+     "ratio": 0.0371,
+     "rgb": [
+      40,
+      56,
+      56
+     ]
+    },
+    {
+     "hex": "#383828",
+     "ratio": 0.032,
+     "rgb": [
+      56,
+      56,
+      40
+     ]
+    }
+   ],
+   "dominant_hue_name": "绿",
+   "is_grayscale": false,
+   "saturation_mean": 58.3443
+  },
+  "composition": {
+   "center_weight": 0.6905,
+   "edge_density": 0.0039,
+   "grid_luminance_3x3": [
+    [
+     105.0,
+     90.0,
+     83.0
+    ],
+    [
+     78.0,
+     48.0,
+     48.0
+    ],
+    [
+     49.0,
+     60.0,
+     64.0
+    ]
+   ],
+   "subject_bbox_center": [
+    0.3228,
+    0.7032
+   ]
+  },
+  "faces": {
+   "face_boxes": [],
+   "face_count": 0
+  },
+  "meta": {
+   "aspect_ratio": "16:9",
+   "exif": {},
+   "file_size": 2995350,
+   "format": "PNG",
+   "height": 2160,
+   "width": 3840
+  },
+  "quality": {
+   "laplacian_variance": 6.85,
+   "overexposed_ratio": 0.03,
+   "underexposed_ratio": 0.0
+  },
+  "shot_hints": {
+   "camera_angle": {
+    "basis": "none",
+    "confidence": "low",
+    "hint": null
+   },
+   "depth_of_field": {
+    "border_laplacian": 2.98,
+    "center_laplacian": 10.66,
+    "confidence": "medium",
+    "hint": "浅景深（中心清晰、边缘虚化）",
+    "ratio": 3.578
+   },
+   "key_light": {
+    "basis": "frame_quadrant_luminance",
+    "confidence": "low",
+    "direction": "左上偏亮，疑似主光来自左上"
+   },
+   "lens": {
+    "basis": "dof_inference",
+    "confidence": "low",
+    "focal_mm": null,
+    "hint": "疑似中长焦（浅景深）"
+   },
+   "letterbox": {
+    "bottom_px": 130,
+    "confidence": "high",
+    "content_aspect_ratio": "384:203",
+    "detected": true,
+    "left_px": 0,
+    "right_px": 0,
+    "top_px": 0
+   },
+   "notes": [
+    "景别/机位/焦段提示均来自确定性像素统计，只能作为初稿参考",
+    "无法从画面确认的镜头参数请省略，不要编造光圈、快门、ISO"
+   ],
+   "shot_size": {
+    "basis": "none",
+    "confidence": "low",
+    "hint": null
+   }
+  }
+ },
+ "semantic_analysis": {
+  "summary": [
+   "Low POV behind a long silver retro-futuristic car hood with two symmetric white pods carrying small US flags",
+   "Strict one-point perspective down an empty avenue to a centered obelisk",
+   "Retro-futurist towers and neoclassical buildings; hazy muted daylight"
+  ],
+  "task_type": "text_to_image",
+  "subject": "the long polished silver hood of a retro-futuristic car with two rounded white fender pods, each carrying a small American flag on a thin staff",
+  "subject_position": "hood spans the full width of the lower third; pods at the left and right edges; flags just above each pod",
+  "subject_scale": "hood occupies about the bottom third of the frame",
+  "spatial": "foreground: the hood and pods; midground: a wide empty avenue with a few vintage cars and small pedestrians on sidewalks with globe street lamps; background: a tall pale stone obelisk at the exact center of the horizon, flanked by neoclassical colonnaded buildings and tall white streamlined towers with ring-shaped platforms; a thin dark band of dashboard along the bottom edge",
+  "scene": "a ceremonial city avenue in an alternate retro-futurist mid-century capital, late afternoon",
+  "shot_type": "wide shot",
+  "camera_angle": "low eye level, straight ahead from behind the windshield",
+  "composition": "strict one-point perspective and left-right symmetry converging on the centered obelisk; empty asphalt corridor as negative space down the middle",
+  "lighting": "soft hazy late-afternoon daylight from the upper left, gentle reflections on the hood",
+  "color": "muted teal-grey, warm stone and silver, low saturation",
+  "style": "cinematic retro-futurist film still, photorealistic",
+  "material": "polished chrome hood with panel seams and rivets, glossy white pods, pale stone, glass towers, asphalt",
+  "photo_params": "normal lens perspective, slightly soft distance, fine film grain",
+  "negative_words": "no off-center horizon, no modern cars, no saturated colors",
+  "uncertainty": [
+   "inferred: late afternoon",
+   "inferred: motorcade context",
+   "unknown: real landmark identity (not named)",
+   "observed: dark band 130 px at bottom (script letterbox hint, high confidence)"
+  ]
+ }
+}

@@ -1,0 +1,11 @@
+{
+  "checked_at": "2026-11-23T18:10+08:00",
+  "method": "gh api repos/{repo}/commits/HEAD and repos/{repo} license (read-only). No clone-and-execute, no installer, no network-enabled script run.",
+  "static_review_reference": "Draft PR #5 (commit 079105b2a26f0403aa4c5a4005fdea2d715709d9, NOT merged) reviewed the same three revisions; this run did NOT re-audit SKILL.md/scripts line-by-line, so audited=false here.",
+  "skills": [
+    {"id": "unimage", "repo": "https://github.com/huanmu-team/unimage", "head_sha": "db916e7ea2764e99e8c379adcb63a8c32f06e7ee", "head_committed_at_utc": "2026-04-09T10:02:38Z", "license": "MIT", "matches_pr5_pin": true, "audited_this_run": false},
+    {"id": "caph", "repo": "https://github.com/Caph-dev/image-style-prompt-reverse-engineer", "head_sha": "27d248dceb71f19af5de39859dbada6cc779302f", "head_committed_at_utc": "2026-05-28T05:12:58Z", "license": "MIT", "matches_pr5_pin": true, "audited_this_run": false},
+    {"id": "niobium617", "repo": "https://github.com/niobium617/prompt-reverse-engineer-skill", "head_sha": "8eb9b0d385839992c8c45acf8c1aa7b382eb5a27", "head_committed_at_utc": "2026-11-21T06:33:39Z", "license": "MIT", "matches_pr5_pin": true, "audited_this_run": false}
+  ],
+  "optional_research_dependency": {"id": "scrapecreators", "repo": "https://github.com/ScrapeCreators/social-media-research-skills", "head_sha": "64ba7b4dea71e130d2712ffb6c1c1024b3b7c4b2", "license": "MIT", "api_key_available": false, "data_fetch_status": "NOT_RUN"}
+}

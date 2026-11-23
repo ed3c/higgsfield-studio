@@ -1,0 +1,51 @@
+{
+  "recorded_at": "2026-11-23T18:45+08:00",
+  "supersedes_field": "DECISIONS.json D-03.observer (kept unchanged as history)",
+  "correction": "The 18:04-18:07 check was performed in the Grok Bot computer's OWN browser (box desktop, logged-in higgsfield.ai session), not in Neon's browser. Evidence screenshots exist and were hashed by this executor.",
+  "screenshot_mtimes_asia_taipei": "18:04:02 - 18:06:56",
+  "executor_viewed": [
+    "56cae7a5 (confirmed: URL model=gpt-image-2-6-sunburst, 16:9, Medium, 1K, button UNLIMITED)",
+    "bdb43977 (confirmed: Nano Banana Pro, 9:16, 2K, 1/4, GENERATE 2)"
+  ],
+  "private_location": "/workspace/hs-bench-private/run-20261123-grokbot-01/entitlement-evidence/ (box only)",
+  "committed": "hashes only: screenshots show account avatar, plan UI and private gallery",
+  "evidence": [
+    {
+      "file_basename": "sand-subagent-4cdd0f69-383e-a7b6-579e-10cb95642097.56cae7a5-8988-42aa-b3a7-38f379ca306d.webp",
+      "sha256": "3feb016395f9d16d39c89f6bbf96eff19cdc37417852449d3bdb61c9ee66448e",
+      "observation": "GPT Image 2.6 Sunburst, 16:9, Medium, 1K: submit button reads UNLIMITED (18:06)",
+      "captured_by": "Grok Bot computer-use subagent sand-subagent-4cdd0f69 in the Grok Bot box browser"
+    },
+    {
+      "file_basename": "sand-subagent-4cdd0f69-383e-a7b6-579e-10cb95642097.570134de-6987-4d60-bf35-a426bd99d5c5.webp",
+      "sha256": "8a83d29925833b1ad9c825d858bc402d0d2905add5186064df438ae50b1b510e",
+      "observation": "GPT Image 2.6 Sunburst, Unlimited OFF: 1.75 credits shown",
+      "captured_by": "Grok Bot computer-use subagent sand-subagent-4cdd0f69 in the Grok Bot box browser"
+    },
+    {
+      "file_basename": "sand-subagent-4cdd0f69-383e-a7b6-579e-10cb95642097.7f74f630-420d-430c-adec-695145cb0717.webp",
+      "sha256": "690768b2c25b4473d808e641b8aaa63e7ab02abfa74deb7ef1199543d1796157",
+      "observation": "GPT Image 2.6 toggle step (intermediate)",
+      "captured_by": "Grok Bot computer-use subagent sand-subagent-4cdd0f69 in the Grok Bot box browser"
+    },
+    {
+      "file_basename": "sand-subagent-4cdd0f69-383e-a7b6-579e-10cb95642097.bdb43977-a482-459a-98b0-db4ccac3315a.webp",
+      "sha256": "b9c8dee0b910314f240d7651dcd58129bbe23a64944318dac29e76e18e91eb11",
+      "observation": "Nano Banana Pro: GENERATE 2 credits (at 9:16, 2K, 4 outputs settings - NOT re-checked at 16:9/1K/1 output)",
+      "captured_by": "Grok Bot computer-use subagent sand-subagent-4cdd0f69 in the Grok Bot box browser"
+    },
+    {
+      "file_basename": "sand-subagent-4cdd0f69-383e-a7b6-579e-10cb95642097.bf411f2a-e0a6-469e-a18b-00e0e5ac0e72.webp",
+      "sha256": "5d1089b2ce26112b458f4447015e57412d8f3e0bed55048ccb7f10e4b4921a39",
+      "observation": "GPT Image 2.6: Unlimited toggle ON",
+      "captured_by": "Grok Bot computer-use subagent sand-subagent-4cdd0f69 in the Grok Bot box browser"
+    },
+    {
+      "file_basename": "sand-subagent-4cdd0f69-383e-a7b6-579e-10cb95642097.df9258d2-fc73-4549-a1ea-9d91bf12ad0c.webp",
+      "sha256": "462043e6d94eef75340ffbcef7906a6116689c567869be5b474aab20c0ee6873",
+      "observation": "Seedream 5.0 Pro: button UNLIMITED",
+      "captured_by": "Grok Bot computer-use subagent sand-subagent-4cdd0f69 in the Grok Bot box browser"
+    }
+  ],
+  "G1_status": "PREFLIGHT_OBSERVED_0_CREDIT (spec §4.6: recheck toggle + amount on every filled submission)"
+}

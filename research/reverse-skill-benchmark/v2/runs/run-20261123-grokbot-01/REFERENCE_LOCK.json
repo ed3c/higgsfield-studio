@@ -1,0 +1,89 @@
+{
+  "recorded_at": "2026-11-23T18:45+08:00",
+  "state": "LOCKED",
+  "authority": "Neon t28s3 answer: C01=S30, C02=S16 (landmark/flag risk accepted), C03=S06; apply fixed documented watermark mask",
+  "mask": {
+    "target": "'TUPACABRA' watermark, bottom-centre",
+    "rect_native_xyxy_exclusive": [
+      1740,
+      2035,
+      2100,
+      2095
+    ],
+    "frame_space": "native 3840x2150 before crop",
+    "method": "OpenCV 5.1.0 cv2.inpaint INPAINT_TELEA radius 9 over the rectangle, then centre crop 3822x2150 -> Lanczos 3840x2160",
+    "applied_identically_to": [
+      "C01",
+      "C02",
+      "C03"
+    ],
+    "note": "In C01 (S30) the watermark is not visibly legible over the lace; mask applied anyway for uniformity."
+  },
+  "crop": "centre crop 3822x2150 (x0=9) -> Lanczos resize 3840x2160, same as candidate stage",
+  "cases": [
+    {
+      "id": "C01",
+      "class": "portrait",
+      "source_id": "SRC-T002",
+      "source_url": "https://www.youtube.com/watch?v=Xeto4CMwvzA",
+      "source_media_sha256": "f376471f71a6878c3d314795e38d736f16c4f52c606ec4f0d50eb6390d2d3687",
+      "shot": "S30",
+      "shot_in_s": 39.125,
+      "shot_out_s": 40.167,
+      "timestamp_in_video_ms": 39646,
+      "capture_method": "ffmpeg -ss <t> -frames:v 1 from 3840x2150 VP9 (yt-dlp format 313)",
+      "unmasked_native_sha256": "8abc24e07d1b308800ec4c207bcb4a1b7aa5f58932e7875a017930069aff302c",
+      "masked_native_sha256": "72b8ad26f6dcfbafb2a6b1cc636f4db0cc3561fb03e1f79cfd7d7f854213994d",
+      "unmasked_16x9_sha256": "cd0b226d5552aa458f0cd3bf1c8a36b174cd439e42fd7d0d3b700adf23654991",
+      "local_sha256": "bd8e1abe5c11f094de5c5d44f68a00c2c3ca316594668865d7a934564dc716e5",
+      "skill_input": "masked_16x9 (3840x2160 PNG)",
+      "aspect_ratio": "16:9 after deterministic crop",
+      "analysis_rights_scope": "research analysis authorized by owner t27u; third-party copyright, publication NO",
+      "third_party_upload_allowed": "YES for reverse-Skill vision processing only (t27u); NEVER to Higgsfield render (no I2I)",
+      "private_path": "/workspace/hs-bench-private/run-20261123-grokbot-01/refs/masked/C01_S30_16x9_3840x2160_masked.png"
+    },
+    {
+      "id": "C02",
+      "class": "environment",
+      "source_id": "SRC-T002",
+      "source_url": "https://www.youtube.com/watch?v=Xeto4CMwvzA",
+      "source_media_sha256": "f376471f71a6878c3d314795e38d736f16c4f52c606ec4f0d50eb6390d2d3687",
+      "shot": "S16",
+      "shot_in_s": 20.125,
+      "shot_out_s": 22.083,
+      "timestamp_in_video_ms": 21104,
+      "capture_method": "ffmpeg -ss <t> -frames:v 1 from 3840x2150 VP9 (yt-dlp format 313)",
+      "unmasked_native_sha256": "e66b8908b89c261e342fad227bad32fcd4e32813dd2d2928e9f9b8323e866c8f",
+      "masked_native_sha256": "65fe0de1c9d3cc20a4f15a36d22745ee4ddf3917f37cdfee9127c2052192f7dd",
+      "unmasked_16x9_sha256": "28de12007e525beaea34c595cf0589c70a063ec7c92fd7e56038c792889d5e41",
+      "local_sha256": "9f2a49aa4b4d9f38da0e58ede1656a8055812d72066426934a15bf3b1b159727",
+      "skill_input": "masked_16x9 (3840x2160 PNG)",
+      "aspect_ratio": "16:9 after deterministic crop",
+      "analysis_rights_scope": "research analysis authorized by owner t27u; third-party copyright, publication NO",
+      "third_party_upload_allowed": "YES for reverse-Skill vision processing only (t27u); NEVER to Higgsfield render (no I2I)",
+      "private_path": "/workspace/hs-bench-private/run-20261123-grokbot-01/refs/masked/C02_S16_16x9_3840x2160_masked.png"
+    },
+    {
+      "id": "C03",
+      "class": "prop_action",
+      "source_id": "SRC-T002",
+      "source_url": "https://www.youtube.com/watch?v=Xeto4CMwvzA",
+      "source_media_sha256": "f376471f71a6878c3d314795e38d736f16c4f52c606ec4f0d50eb6390d2d3687",
+      "shot": "S06",
+      "shot_in_s": 5.708,
+      "shot_out_s": 9.167,
+      "timestamp_in_video_ms": 7438,
+      "capture_method": "ffmpeg -ss <t> -frames:v 1 from 3840x2150 VP9 (yt-dlp format 313)",
+      "unmasked_native_sha256": "77012d910e9d90bf5ad9a1ab005cffcf6efb5a428c29414aa0812cb1f70c4c4c",
+      "masked_native_sha256": "a098318c9a2827c97a7594b0d18591cb7b2a84d7c4a2fdfb3be5833253371d4d",
+      "unmasked_16x9_sha256": "2274ae289d2ffbbede0bc93f801f72bf558418bd6bc6e2c8d6f7395edc8fffa7",
+      "local_sha256": "34c7d89f0b21320ade01b52b37049e9fe11e3427ffbe72b6c09a07686684229f",
+      "skill_input": "masked_16x9 (3840x2160 PNG)",
+      "aspect_ratio": "16:9 after deterministic crop",
+      "analysis_rights_scope": "research analysis authorized by owner t27u; third-party copyright, publication NO",
+      "third_party_upload_allowed": "YES for reverse-Skill vision processing only (t27u); NEVER to Higgsfield render (no I2I)",
+      "private_path": "/workspace/hs-bench-private/run-20261123-grokbot-01/refs/masked/C03_S06_16x9_3840x2160_masked.png"
+    }
+  ],
+  "media_in_git": false
+}

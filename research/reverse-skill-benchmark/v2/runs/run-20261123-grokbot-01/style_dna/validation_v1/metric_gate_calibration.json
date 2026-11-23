@@ -1,0 +1,52 @@
+{
+ "rule": "image passes metric gate if white_p99 AND black_p1 gates pass and at most 1 other hard gate fails",
+ "calibration": {
+  "refs": {
+   "n": 6,
+   "all_hard_pass": 6,
+   "image_rule_pass": 6,
+   "fail_reason_counts": {}
+  },
+  "trailer": {
+   "n": 55,
+   "all_hard_pass": 19,
+   "image_rule_pass": 28,
+   "fail_reason_counts": {
+    "white_p99": 9,
+    "b": 10,
+    "sharp_c": 14,
+    "black_p1": 12,
+    "sat": 13,
+    "luma": 5,
+    "a": 6
+   }
+  },
+  "P1": {
+   "n": 17,
+   "all_hard_pass": 0,
+   "image_rule_pass": 0,
+   "fail_reason_counts": {
+    "white_p99": 10,
+    "a": 7,
+    "b": 12,
+    "sharp_c": 10,
+    "luma": 4,
+    "sat": 7,
+    "black_p1": 5
+   }
+  },
+  "P1b": {
+   "n": 9,
+   "all_hard_pass": 0,
+   "image_rule_pass": 0,
+   "fail_reason_counts": {
+    "white_p99": 9,
+    "black_p1": 1,
+    "b": 1,
+    "sat": 6,
+    "a": 4
+   }
+  }
+ },
+ "note": "refs = 6 files (3 refs, 16:9 masked + native masked). trailer = 55 shot-midpoint frames incl. title card"
+}

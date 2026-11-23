@@ -1,0 +1,43 @@
+{
+  "recorded_at": "2026-11-23T19:15+08:00",
+  "phase": "P1",
+  "expected": 18,
+  "generated": 17,
+  "moderation_refused": 1,
+  "refused_jobs": [
+    {
+      "submit_order": 15,
+      "job_id": "P1-C03-unimage-r2",
+      "site_message": "NSFW — Credits refunded",
+      "retried": false,
+      "decision_pending": null,
+      "final": true,
+      "decision_ref": "history[-1]"
+    }
+  ],
+  "excluded_extra_submits": [
+    {
+      "anomaly": "A-01",
+      "website_id": "89e69711-ac06-4817-a75e-74dbcccf9405",
+      "reason": "unintended duplicate of job 01, not saved"
+    }
+  ],
+  "additional_credits_spent": 0,
+  "gate_G3": "PARTIAL_P1 (17/18). Spec §8: no P1 winner unless all 18 exist, so blind eval must either wait for a decision on job 15 or report C03/unimage with 1 replicate as a documented gap",
+  "P2": "NOT_RUN (0/12)",
+  "history": [
+    {
+      "recorded_at": "2026-11-23T19:22+08:00",
+      "event": "owner decision on job 15",
+      "decided_at": "2026-11-23T19:19+08:00",
+      "decided_by": "Neon (widget answer to t30s4)",
+      "verbatim": "Don't retry it; record it as a moderation refusal",
+      "effect": {
+        "job_15_final_status": "MODERATION_REFUSED (final, never retried)",
+        "C03_unimage_cell": "single replicate (r1 only) — documented gap GAP-P1-01",
+        "G3": "PARTIAL_P1 (final for this run)",
+        "P1_winner": "none possible under spec §8/§7 Decision; any P1-derived ranking is PROVISIONAL"
+      }
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+Create an image with the following specification.
+
+Subject: a young pale woman with copper-red hair and light freckles, solemn and still, eyes slightly wet, wearing an enormous white lace cartwheel ruff, a pearl-and-jewel studded headdress, small pearl drop earrings and a dark gown embroidered with gold and black beads
+Position: centered, face in the upper-middle of the frame, looking straight at the camera
+Scale: head and ruff fill about two thirds of the frame height; chest-up crop
+Spatial layout: foreground: the woman in sharp focus; background right: a bearded man in dark clothing, out of focus; upper left corner: a single lit candle as a soft glowing orb; dim wood-paneled interior falling into darkness
+Scene: a dim candlelit palace chamber
+Shot: medium close-up
+Camera angle: eye level, frontal
+Style: cinematic historical drama film still, photorealistic
+Lighting: soft diffuse key light from the front left, low contrast on the face, deep shadows, warm candle practical with slight halation
+Color: muted, desaturated ivory, pale skin, muted gold and near-black; neutral to slightly cool grade
+Composition: centered symmetrical portrait framing with the ruff spreading across the lower half; dark negative space in the upper corners
+Camera: long-lens portrait look, shallow depth of field, fine film grain
+Material: fine white lace, pearls, gold settings, black beaded embroidery, freckled skin
+Constraints: render all text exactly as written; no extra text, logos, or watermarks. no sharp background, no saturated colors, no additional people in focus
+
+LOOK LOCK (overrides any conflicting style, lighting, colour or lens wording above): this must read as an unretouched frame grab from a live-action prestige feature film shot on a large-format digital cinema camera with vintage spherical prime lenses, not an illustration, painting, concept art or 3D render. Real optical behaviour: genuine shallow depth of field with smooth out-of-focus falloff, the slight overall softness of a 24 fps motion-picture frame, subtle natural motion softness, gentle highlight roll-off and soft halation around bright highlights. Exposure set by a cinematographer, with natural, slightly uneven light. No HDR look, no clarity or micro-contrast boost, no oversharpening, no airbrushed or waxy surfaces, no uniformly crisp detail from edge to edge, no painterly texture. Very fine, barely visible sensor noise rather than heavy film grain. Muted teal-slate prestige-drama grade. Case look: a high-key face. Her pale, slightly overexposed skin and the white ruff are the brightest parts of the frame, and the lace highlights nearly clip and bloom softly. The skin is real, with an uneven pink flush around the nose and eyes, a soft natural complexion and only faint freckles, not a uniform stippled freckle pattern. Her eyes are moist and red-rimmed. The surroundings are much darker and heavily defocused, as if shot at 85 mm f/1.4: the bearded figure at the right is a soft, unrecognisable blur and the candle is a large bokeh orb with halation. The overall image is soft and gauzy, with low contrast on the face and a dark warm-neutral surround. It is not a polished, symmetrical portrait-painting look.

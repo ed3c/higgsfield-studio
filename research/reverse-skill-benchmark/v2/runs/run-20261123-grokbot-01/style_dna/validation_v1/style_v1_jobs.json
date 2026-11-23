@@ -1,0 +1,84 @@
+{
+ "round": "STYLE_DNA_EXTRACTION/style_v1 validation",
+ "settings": {
+  "model": "GPT Image 2.6 Sunburst",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "quality": "Medium",
+  "surface": "higgsfield.ai website",
+  "unlimited_required": true,
+  "reference_image_upload": "NONE"
+ },
+ "arms": {
+  "S1_required": "shot + style block (prompts/)",
+  "S0_optional_control": "shot only (controls_shot_only/) \u2014 proves the look comes from the style block, per the Notion Style/Shot split"
+ },
+ "jobs": [
+  {
+   "order": 1,
+   "id": "night_market_cook",
+   "test_axis": "people / night / practical-only light / steam",
+   "file": "01_night_market_cook.txt",
+   "chars": 2932,
+   "sha256": "dc0ef59794c212b11c3c9e11aaca210062625b7da462b4b9ca915c6ff51d9727",
+   "style_block_sha256": "23ad74da3f7f57ad1e08eb1d20343007f3fcc8bceb0974defb110161f54ea8e6",
+   "shot_only_control": "controls_shot_only/C01_night_market_cook_shot_only.txt",
+   "status": "DRAFT_NOT_GENERATED"
+  },
+  {
+   "order": 2,
+   "id": "desert_bicycle_repair",
+   "test_axis": "harsh daylight / bright exterior / highlight test",
+   "file": "02_desert_bicycle_repair.txt",
+   "chars": 2928,
+   "sha256": "ac581d432f85ec83554b1f67962e82e1f7467921cd0c039e8dd7c865a3dce8a3",
+   "style_block_sha256": "23ad74da3f7f57ad1e08eb1d20343007f3fcc8bceb0974defb110161f54ea8e6",
+   "shot_only_control": "controls_shot_only/C02_desert_bicycle_repair_shot_only.txt",
+   "status": "DRAFT_NOT_GENERATED"
+  },
+  {
+   "order": 3,
+   "id": "bronze_age_potter",
+   "test_axis": "ancient era / interior / warm fire key",
+   "file": "03_bronze_age_potter.txt",
+   "chars": 2917,
+   "sha256": "053504d39aec118f721ee16e7a5c06477f3ea1f1604aa42d4d0b5fb899f82907",
+   "style_block_sha256": "23ad74da3f7f57ad1e08eb1d20343007f3fcc8bceb0974defb110161f54ea8e6",
+   "shot_only_control": "controls_shot_only/C03_bronze_age_potter_shot_only.txt",
+   "status": "DRAFT_NOT_GENERATED"
+  },
+  {
+   "order": 4,
+   "id": "highland_horses",
+   "test_axis": "wide landscape / scale contrast / no hero close-up",
+   "file": "04_highland_horses.txt",
+   "chars": 2927,
+   "sha256": "2deccafd032bbcebb1267439e1a0bf64c1b780ccaf96b8cb57b4225339f2c6b5",
+   "style_block_sha256": "23ad74da3f7f57ad1e08eb1d20343007f3fcc8bceb0974defb110161f54ea8e6",
+   "shot_only_control": "controls_shot_only/C04_highland_horses_shot_only.txt",
+   "status": "DRAFT_NOT_GENERATED"
+  },
+  {
+   "order": 5,
+   "id": "subway_raincoat",
+   "test_axis": "present day / saturated colour accent / urban",
+   "file": "05_subway_raincoat.txt",
+   "chars": 2969,
+   "sha256": "195ff49613327003b583d19f249b1fe31dcf6744f800e8de3e637a1f286846d2",
+   "style_block_sha256": "23ad74da3f7f57ad1e08eb1d20343007f3fcc8bceb0974defb110161f54ea8e6",
+   "shot_only_control": "controls_shot_only/C05_subway_raincoat_shot_only.txt",
+   "status": "DRAFT_NOT_GENERATED"
+  },
+  {
+   "order": 6,
+   "id": "pocket_watch_still_life",
+   "test_axis": "object only / macro / no people",
+   "file": "06_pocket_watch_still_life.txt",
+   "chars": 2860,
+   "sha256": "6011a6adec68729e3ee5cfa4f5f8d9f63b462a3c0c4bae45f3d8bf123ba4a014",
+   "style_block_sha256": "23ad74da3f7f57ad1e08eb1d20343007f3fcc8bceb0974defb110161f54ea8e6",
+   "shot_only_control": "controls_shot_only/C06_pocket_watch_still_life_shot_only.txt",
+   "status": "DRAFT_NOT_GENERATED"
+  }
+ ]
+}

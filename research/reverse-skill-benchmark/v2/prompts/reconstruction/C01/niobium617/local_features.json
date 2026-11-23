@@ -1,0 +1,181 @@
+{
+ "input": {
+  "kind": "file",
+  "sha256": "bd8e1abe5c11f094de5c5d44f68a00c2c3ca316594668865d7a934564dc716e5",
+  "size_bytes": 2816024,
+  "source": "/workspace/hs-bench-private/run-20261123-grokbot-01/refs/masked/C01_S30_16x9_3840x2160_masked.png"
+ },
+ "local_features": {
+  "color": {
+   "brightness_mean": 74.1607,
+   "brightness_std": 63.1816,
+   "color_temperature_hint": "中性",
+   "contrast": 96.08,
+   "dominant_colors": [
+    {
+     "hex": "#181818",
+     "ratio": 0.1653,
+     "rgb": [
+      24,
+      24,
+      24
+     ]
+    },
+    {
+     "hex": "#080818",
+     "ratio": 0.1023,
+     "rgb": [
+      8,
+      8,
+      24
+     ]
+    },
+    {
+     "hex": "#A8A8A8",
+     "ratio": 0.0828,
+     "rgb": [
+      168,
+      168,
+      168
+     ]
+    },
+    {
+     "hex": "#081818",
+     "ratio": 0.0569,
+     "rgb": [
+      8,
+      24,
+      24
+     ]
+    },
+    {
+     "hex": "#B8B8B8",
+     "ratio": 0.0554,
+     "rgb": [
+      184,
+      184,
+      184
+     ]
+    },
+    {
+     "hex": "#080808",
+     "ratio": 0.0396,
+     "rgb": [
+      8,
+      8,
+      8
+     ]
+    },
+    {
+     "hex": "#282818",
+     "ratio": 0.0344,
+     "rgb": [
+      40,
+      40,
+      24
+     ]
+    },
+    {
+     "hex": "#282828",
+     "ratio": 0.0303,
+     "rgb": [
+      40,
+      40,
+      40
+     ]
+    }
+   ],
+   "dominant_hue_name": "红",
+   "is_grayscale": false,
+   "saturation_mean": 56.534
+  },
+  "composition": {
+   "center_weight": 1.5507,
+   "edge_density": 0.0007,
+   "grid_luminance_3x3": [
+    [
+     39.0,
+     75.0,
+     22.0
+    ],
+    [
+     77.0,
+     115.0,
+     69.0
+    ],
+    [
+     46.0,
+     156.0,
+     68.0
+    ]
+   ],
+   "subject_bbox_center": [
+    0.0371,
+    0.0889
+   ]
+  },
+  "faces": {
+   "face_boxes": [],
+   "face_count": 0
+  },
+  "meta": {
+   "aspect_ratio": "16:9",
+   "exif": {},
+   "file_size": 2816024,
+   "format": "PNG",
+   "height": 2160,
+   "width": 3840
+  },
+  "quality": {
+   "laplacian_variance": 2.92,
+   "overexposed_ratio": 0.1,
+   "underexposed_ratio": 0.0
+  },
+  "shot_hints": {
+   "camera_angle": {
+    "basis": "none",
+    "confidence": "low",
+    "hint": null
+   },
+   "depth_of_field": {
+    "border_laplacian": 2.68,
+    "center_laplacian": 2.71,
+    "confidence": "medium",
+    "hint": "深景深（前后景都较清晰）",
+    "ratio": 1.014
+   },
+   "key_light": {
+    "basis": "frame_quadrant_luminance",
+    "confidence": "low",
+    "direction": "右下偏亮，疑似主光来自右下"
+   },
+   "lens": {
+    "basis": "dof_inference",
+    "confidence": "low",
+    "focal_mm": null,
+    "hint": "疑似广角（深景深）"
+   },
+   "letterbox": {
+    "bottom_px": 0,
+    "confidence": "low",
+    "content_aspect_ratio": null,
+    "detected": false,
+    "left_px": 0,
+    "right_px": 0,
+    "top_px": 0
+   },
+   "notes": [
+    "景别/机位/焦段提示均来自确定性像素统计，只能作为初稿参考",
+    "无法从画面确认的镜头参数请省略，不要编造光圈、快门、ISO"
+   ],
+   "shot_size": {
+    "basis": "none",
+    "confidence": "low",
+    "hint": null
+   }
+  }
+ },
+ "modality": "image",
+ "schema_version": "1.0",
+ "tool": "analyze_image.py"
+}

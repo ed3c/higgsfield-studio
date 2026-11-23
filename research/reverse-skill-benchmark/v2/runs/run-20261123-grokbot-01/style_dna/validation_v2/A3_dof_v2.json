@@ -1,0 +1,297 @@
+{
+ "method": "same as A3_dof_v1 (Laplacian variance per cell, 6x8 grid, 1344x752); cells re-chosen per v2 image by executor from visual inspection because compositions moved (NOT blind)",
+ "results": {
+  "01_night_market_cook": {
+   "focus_cells": [
+    [
+     1,
+     2
+    ],
+    [
+     1,
+     3
+    ],
+    [
+     2,
+     3
+    ],
+    [
+     2,
+     4
+    ]
+   ],
+   "bg_cells": [
+    [
+     1,
+     6
+    ],
+    [
+     1,
+     7
+    ],
+    [
+     2,
+     6
+    ],
+    [
+     2,
+     7
+    ]
+   ],
+   "bg_desc": "blurred street/passers-by right",
+   "focus_var": 283.6,
+   "bg_var": 31.8,
+   "ratio": 0.112,
+   "limit": 0.35,
+   "pass_": true,
+   "v1_ratio": 0.212
+  },
+  "02_desert_bicycle_repair": {
+   "focus_cells": [
+    [
+     0,
+     2
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     1,
+     3
+    ],
+    [
+     3,
+     4
+    ]
+   ],
+   "bg_cells": [
+    [
+     1,
+     0
+    ],
+    [
+     1,
+     1
+    ],
+    [
+     1,
+     4
+    ]
+   ],
+   "bg_desc": "distant desert/road (low-texture caveat)",
+   "focus_var": 144.1,
+   "bg_var": 91.5,
+   "ratio": 0.635,
+   "limit": 0.35,
+   "pass_": false,
+   "v1_ratio": 0.03
+  },
+  "03_bronze_age_potter": {
+   "focus_cells": [
+    [
+     1,
+     1
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     2,
+     1
+    ],
+    [
+     3,
+     3
+    ]
+   ],
+   "bg_cells": [
+    [
+     0,
+     5
+    ],
+    [
+     0,
+     6
+    ],
+    [
+     0,
+     7
+    ],
+    [
+     1,
+     5
+    ],
+    [
+     1,
+     6
+    ],
+    [
+     1,
+     7
+    ]
+   ],
+   "bg_desc": "jar shelves behind",
+   "focus_var": 190.1,
+   "bg_var": 7.9,
+   "ratio": 0.042,
+   "limit": 0.35,
+   "pass_": true,
+   "v1_ratio": 0.042
+  },
+  "04_highland_horses": {
+   "focus_cells": [
+    [
+     3,
+     4
+    ],
+    [
+     3,
+     5
+    ],
+    [
+     3,
+     6
+    ],
+    [
+     4,
+     3
+    ]
+   ],
+   "bg_cells": [
+    [
+     0,
+     6
+    ],
+    [
+     0,
+     7
+    ],
+    [
+     1,
+     4
+    ],
+    [
+     1,
+     5
+    ],
+    [
+     1,
+     6
+    ],
+    [
+     1,
+     7
+    ]
+   ],
+   "bg_desc": "far hills/mist band",
+   "focus_var": 146.5,
+   "bg_var": 38.0,
+   "ratio": 0.26,
+   "limit": 0.6,
+   "pass_": true,
+   "v1_ratio": 2.286
+  },
+  "05_subway_raincoat": {
+   "focus_cells": [
+    [
+     1,
+     5
+    ],
+    [
+     2,
+     4
+    ],
+    [
+     2,
+     5
+    ]
+   ],
+   "bg_cells": [
+    [
+     1,
+     1
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     2,
+     1
+    ],
+    [
+     2,
+     2
+    ],
+    [
+     3,
+     1
+    ],
+    [
+     3,
+     2
+    ]
+   ],
+   "bg_desc": "passing train",
+   "focus_var": 60.6,
+   "bg_var": 16.7,
+   "ratio": 0.275,
+   "limit": 0.35,
+   "pass_": true,
+   "v1_ratio": 0.094
+  },
+  "06_pocket_watch_still_life": {
+   "focus_cells": [
+    [
+     3,
+     2
+    ],
+    [
+     3,
+     3
+    ],
+    [
+     3,
+     4
+    ],
+    [
+     4,
+     2
+    ],
+    [
+     4,
+     3
+    ]
+   ],
+   "bg_cells": [
+    [
+     0,
+     6
+    ],
+    [
+     0,
+     7
+    ],
+    [
+     1,
+     6
+    ],
+    [
+     1,
+     7
+    ]
+   ],
+   "bg_desc": "window/back wall",
+   "focus_var": 621.2,
+   "bg_var": 8.3,
+   "ratio": 0.013,
+   "limit": 0.35,
+   "pass_": true,
+   "v1_ratio": 0.017
+  }
+ },
+ "pass_n": 5,
+ "verdict": "PASS (5/6, need >=5)"
+}

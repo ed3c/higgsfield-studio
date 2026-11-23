@@ -1,0 +1,85 @@
+{
+ "recorded_at": "2026-11-23T20:20+08:00",
+ "appends_to": [
+  "DRIVE_STORAGE_MANIFEST.json",
+  "..._addendum_01..03"
+ ],
+ "new_folder": {
+  "style_v1_output": "1s3LlJF9sqaL2hcRUiC27XFJtKTLevz5E"
+ },
+ "sharing_verification": {
+  "method": "get_file_permissions",
+  "checked_ids": [
+   "1s3LlJF9sqaL2hcRUiC27XFJtKTLevz5E",
+   "1wwuc23AqE89w7JftZy0QVk7cofUsYFWD",
+   "1r79tQlZmD_d3hRjBoYnDC9E4X2gt5Cru"
+  ],
+  "result": "owner (Neon) only; others inherit; no share call"
+ },
+ "list_folder_check": "7 files; PNG sizes equal box bytes",
+ "files": [
+  {
+   "drive_subfolder": "style_v1_output",
+   "filename": "01_night_market_cook.png",
+   "sha256": "41a25bdbac7dbb62159f58d0a10585a4fdab149fc210e7f78cc2bc68c2e36e1b",
+   "bytes": 1337135,
+   "drive_file_id": "1wwuc23AqE89w7JftZy0QVk7cofUsYFWD",
+   "box_copy": "/workspace/hs-bench-private/run-20261123-grokbot-01/style_v1_output/01_night_market_cook.png",
+   "sharing": "private (owner only)"
+  },
+  {
+   "drive_subfolder": "style_v1_output",
+   "filename": "02_desert_bicycle_repair.png",
+   "sha256": "ea77a6a1d8c6dde5845eb36807c1fbbfc62fc4d92dbdba87b55bb5995056f489",
+   "bytes": 1309301,
+   "drive_file_id": "1hkAwGKjREvVo0QrspOkXv2WWX5fG-HmF",
+   "box_copy": "/workspace/hs-bench-private/run-20261123-grokbot-01/style_v1_output/02_desert_bicycle_repair.png",
+   "sharing": "private (owner only)"
+  },
+  {
+   "drive_subfolder": "style_v1_output",
+   "filename": "03_bronze_age_potter.png",
+   "sha256": "0f6feddf4ebb5f48334498e100d2a8d548975287e9b60c9c9da18e4b4fe90ecc",
+   "bytes": 1250368,
+   "drive_file_id": "1ZoCue_vDx5oAXP9WoaeGgnedZZilS0hf",
+   "box_copy": "/workspace/hs-bench-private/run-20261123-grokbot-01/style_v1_output/03_bronze_age_potter.png",
+   "sharing": "private (owner only)"
+  },
+  {
+   "drive_subfolder": "style_v1_output",
+   "filename": "04_highland_horses.png",
+   "sha256": "71ca8f5171da6817f0751c2fbdfad84c24c2b299b6970d05e0ec1e83632e3df6",
+   "bytes": 1371688,
+   "drive_file_id": "16CGk9XSuHtraWma6hHDRayYoTcUBcKUY",
+   "box_copy": "/workspace/hs-bench-private/run-20261123-grokbot-01/style_v1_output/04_highland_horses.png",
+   "sharing": "private (owner only)"
+  },
+  {
+   "drive_subfolder": "style_v1_output",
+   "filename": "05_subway_raincoat.png",
+   "sha256": "d38a486fdb52553cc33d5092c563d2d64d02aeb6996711f6fe10c19c69164a06",
+   "bytes": 1202289,
+   "drive_file_id": "14UlNWEB9filJJEMxBMYl_UyvuD7yFLC3",
+   "box_copy": "/workspace/hs-bench-private/run-20261123-grokbot-01/style_v1_output/05_subway_raincoat.png",
+   "sharing": "private (owner only)"
+  },
+  {
+   "drive_subfolder": "style_v1_output",
+   "filename": "06_pocket_watch_still_life.png",
+   "sha256": "86b8900a141355356c8448411fd0cbe8204ccd14e38e133e66e228c38cccaecb",
+   "bytes": 1254015,
+   "drive_file_id": "1fVLsYIj26L_1cIVVhk-Mco_YTe-IBd-J",
+   "box_copy": "/workspace/hs-bench-private/run-20261123-grokbot-01/style_v1_output/06_pocket_watch_still_life.png",
+   "sharing": "private (owner only)"
+  },
+  {
+   "drive_subfolder": "style_v1_output",
+   "filename": "style_v1_sheet.jpg",
+   "sha256": "223d450dd952243bd84b88d344098fff3103941f1845a7026fa44046fb711bc2",
+   "bytes": 323834,
+   "drive_file_id": "1r79tQlZmD_d3hRjBoYnDC9E4X2gt5Cru",
+   "sharing": "private (owner only)",
+   "note": "operator sheet, refs on top"
+  }
+ ]
+}
