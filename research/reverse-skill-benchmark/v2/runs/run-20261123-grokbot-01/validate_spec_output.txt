@@ -1,0 +1,3 @@
+SPEC LINT PASS: matrix, score weights, zero-credit gate and NOT_RUN semantics coherent.
+EXECUTION STATUS: BLOCKED_ENTITLEMENT_RECHECK — no images or scores produced by this spec pack.
+exit_code=0
