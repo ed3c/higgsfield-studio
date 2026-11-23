@@ -438,6 +438,8 @@ class Handler(BaseHTTPRequestHandler):
             item=self.app.entries.get(eid)
             if not item or not item.get('available') or item['group']!='resource':return self._deny(404,'Missing local asset')
             return self._stream(item)
+        if route=='/favicon.ico':
+            return self._headers(204,'image/x-icon',0)
         if route=='/':route='/index.html'
         full=(SITE/route.lstrip('/')).resolve()
         if not full.is_relative_to(SITE.resolve()) or not full.is_file():return self._deny(404,'Unknown route')
