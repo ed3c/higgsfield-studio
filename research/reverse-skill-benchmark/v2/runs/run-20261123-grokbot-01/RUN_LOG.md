@@ -98,3 +98,28 @@ Source of these facts: the orchestrating Grok Bot agent, which ran the website g
 - Per-job rows are in `generations.csv`: output sha256, Drive file id, website job id. Per-job submit and complete timestamps were not supplied and are left blank.
 - **Storage (Neon t29u):** 9 outputs and 6 masked reference frames were uploaded to Neon's Google Drive under `Higgsfield-Studio/reverse-benchmark-v2/run-20261123-grokbot-01/{output,refs}/`, which is **private (owner only, verified with get_file_permissions)**. Box copies are kept. Index: `DRIVE_STORAGE_MANIFEST.json`.
 - **Pending:** jobs 10–18 were not yet in the box output folder at 18:55. Status: P1 9/18, P2 0/12.
+
+### 2026-11-23 ~19:15 Asia/Taipei — P1 jobs 10–18 (reported by the generation operator) + Drive
+
+Facts below were reported by the orchestrating Grok Bot agent, which ran the generation in its own box browser. This executor verified the output files, their sha256, that the pasted lengths equal the locked prompt lengths, the Drive uploads and the Drive permissions.
+
+| # | job | submit (UTC) | done (UTC) | website id (UUID from downloaded filename) | pasted chars | status |
+| --- | --- | --- | --- | --- | --- | --- |
+| 10 | P1-C02-niobium617-r2 | 10:50:38 | ~10:52:05 | 4f987b45-02e7-4302-9022-3e789740a2ef | 1664/1664 | GENERATED |
+| 11 | P1-C02-caph-r2 | 10:52:50 | ~10:54:15 | 05bbafcd-79fa-4c53-9697-2ff2e6dffb89 | 1282 | GENERATED |
+| 12 | P1-C02-niobium617-r1 | 10:55:17 | ~10:56:45 | f228c112-bb3c-42ea-bec5-a73259130fdc | 1664 | GENERATED |
+| 13 | P1-C03-caph-r2 | 10:57:38 | ~10:58:55 | a00aaeb2-5534-41e4-a90b-ee43e5688c30 | 1098 | GENERATED |
+| 14 | P1-C03-caph-r1 | 10:59:45 | ~11:01:05 | 96410c13-4588-4472-a247-ee9994fcd372 | 1098 | GENERATED |
+| 15 | P1-C03-unimage-r2 | ~11:02 | — | — | 861 | **MODERATION_REFUSED** |
+| 16 | P1-C03-niobium617-r1 | 11:04:08 | ~11:05:35 | fd2f4c31-89bc-42d2-8628-b6e69acfec4e | 1450 | GENERATED |
+| 17 | P1-C03-niobium617-r2 | 11:06:37 | ~11:08:00 | 5b6b674d-c55b-426a-93d0-6698fd1b9027 | 1450 | GENERATED |
+| 18 | P1-C03-unimage-r1 | 11:09:09 | ~11:10:35 | 7750727c-a065-4018-924f-648321793bd0 | 861 | GENERATED |
+
+- **All jobs:** the button read UNLIMITED with no credit number, 0 credits, no image attached. Before the first submit of this batch the toggle was OFF and the button showed `✦1`. It was switched ON before any submit.
+- **Job 15 (anomaly A-02):** the site refused it with the tile "NSFW — Credits refunded" and produced no image. Its prompt is byte-identical to job 18's (same cell C03/unimage), and job 18 succeeded. **Not retried; pending Neon's decision.**
+- **Anomaly A-03:** two pastes failed and were caught by the length check, then redone. Nothing was submitted from a stale prompt.
+- **Anomaly A-04:** one stray Generate click did nothing (no job created).
+- Verified by the executor: the pasted lengths match `len(normalized prompt)` for every job.
+- Rows 10–18 are appended to `generations.csv`. Job 15's row has status MODERATION_REFUSED and no output.
+- **Drive:** the 7 new PNGs (jobs 11–14, 16–18) are in the private `output/` folder (`DRIVE_STORAGE_MANIFEST_addendum_02.json`). Job 10 was uploaded earlier (addendum 01). `output/` now holds 17 PNGs, owner only.
+- **P1 status: 17/18 generated, 1 moderation refusal, 0 credits** (`P1_STATUS.json`). Gate G3 = `PARTIAL_P1`. P2 0/12 NOT_RUN.

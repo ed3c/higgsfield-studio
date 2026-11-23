@@ -1,0 +1,12 @@
+{
+  "recorded_at": "2026-11-23T19:15+08:00",
+  "phase": "P1",
+  "expected": 18,
+  "generated": 17,
+  "moderation_refused": 1,
+  "refused_jobs": [{"submit_order": 15, "job_id": "P1-C03-unimage-r2", "site_message": "NSFW — Credits refunded", "retried": false, "decision_pending": "Neon"}],
+  "excluded_extra_submits": [{"anomaly": "A-01", "website_id": "89e69711-ac06-4817-a75e-74dbcccf9405", "reason": "unintended duplicate of job 01, not saved"}],
+  "additional_credits_spent": 0,
+  "gate_G3": "PARTIAL_P1 (17/18). Spec §8: no P1 winner unless all 18 exist, so blind eval must either wait for a decision on job 15 or report C03/unimage with 1 replicate as a documented gap",
+  "P2": "NOT_RUN (0/12)"
+}

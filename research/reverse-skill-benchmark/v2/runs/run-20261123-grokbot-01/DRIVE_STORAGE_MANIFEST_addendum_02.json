@@ -1,0 +1,90 @@
+{
+  "recorded_at": "2026-11-23T19:15+08:00",
+  "appends_to": [
+    "DRIVE_STORAGE_MANIFEST.json",
+    "DRIVE_STORAGE_MANIFEST_addendum_01.json"
+  ],
+  "files": [
+    {
+      "drive_subfolder": "output",
+      "filename": "P1-C02-caph-r2.png",
+      "job_submit_order": 11,
+      "sha256": "191583aec2097a0b5e30841e8ed0f1e4b7fb2d13916743e11bfd39c8ff66446c",
+      "bytes": 1605614,
+      "drive_file_id": "1YAUOUWJo6dZXEzIG3kq0r8w-SVw6mPcF",
+      "box_copy": "/workspace/hs-bench-private/run-20261123-grokbot-01/output/P1-C02-caph-r2.png",
+      "sharing": "private (owner only)",
+      "permissions_checked": "inherited from owner-only output folder (re-checked 2026-11-23 19:13)"
+    },
+    {
+      "drive_subfolder": "output",
+      "filename": "P1-C02-niobium617-r1.png",
+      "job_submit_order": 12,
+      "sha256": "b9e7e2cac21e12f2cf91ad7dcf867c88279f4bcd30a7757bd6800f85c39ba86e",
+      "bytes": 1730396,
+      "drive_file_id": "1Wkxi25DgOUNxC0mNaWOwW439YuP39aZi",
+      "box_copy": "/workspace/hs-bench-private/run-20261123-grokbot-01/output/P1-C02-niobium617-r1.png",
+      "sharing": "private (owner only)",
+      "permissions_checked": "inherited from owner-only output folder (re-checked 2026-11-23 19:13)"
+    },
+    {
+      "drive_subfolder": "output",
+      "filename": "P1-C03-caph-r2.png",
+      "job_submit_order": 13,
+      "sha256": "4b49c5f0df1a5174bc3a41890f78a0eff758fef09c61e7b84139d0b36a66fe14",
+      "bytes": 1295816,
+      "drive_file_id": "11H1Ln8_3W9I0KVxSdYSl-zgZMfvDHPZ0",
+      "box_copy": "/workspace/hs-bench-private/run-20261123-grokbot-01/output/P1-C03-caph-r2.png",
+      "sharing": "private (owner only)",
+      "permissions_checked": "inherited from owner-only output folder (re-checked 2026-11-23 19:13)"
+    },
+    {
+      "drive_subfolder": "output",
+      "filename": "P1-C03-caph-r1.png",
+      "job_submit_order": 14,
+      "sha256": "b0f30a428fc5ba367d961ecbbbc370fc784ff2592d95a53a07699126431f1b75",
+      "bytes": 1489063,
+      "drive_file_id": "175x9IgkaljMG0J3ihXUulwdb92gBz8ey",
+      "box_copy": "/workspace/hs-bench-private/run-20261123-grokbot-01/output/P1-C03-caph-r1.png",
+      "sharing": "private (owner only)",
+      "permissions_checked": "inherited from owner-only output folder (re-checked 2026-11-23 19:13)"
+    },
+    {
+      "drive_subfolder": "output",
+      "filename": "P1-C03-niobium617-r1.png",
+      "job_submit_order": 16,
+      "sha256": "5fa5174c7c70f7f4a208b340a56aad5a72e14a529e80b3161af37cfadfdd51f3",
+      "bytes": 1304882,
+      "drive_file_id": "1VvgdIcrRCo7rlSpb_mT3OXUzI0PxEM7j",
+      "box_copy": "/workspace/hs-bench-private/run-20261123-grokbot-01/output/P1-C03-niobium617-r1.png",
+      "sharing": "private (owner only)",
+      "permissions_checked": "inherited from owner-only output folder (re-checked 2026-11-23 19:13)"
+    },
+    {
+      "drive_subfolder": "output",
+      "filename": "P1-C03-niobium617-r2.png",
+      "job_submit_order": 17,
+      "sha256": "d0ff8f931ed819444b4d3d75ee71fdbfe6d7b27af2fdb733b7f1daf4b5ebfa50",
+      "bytes": 1291219,
+      "drive_file_id": "18eyW0oO5A1g1l4IrdcETnDOKnfaTvtrM",
+      "box_copy": "/workspace/hs-bench-private/run-20261123-grokbot-01/output/P1-C03-niobium617-r2.png",
+      "sharing": "private (owner only)",
+      "permissions_checked": "inherited from owner-only output folder (re-checked 2026-11-23 19:13)"
+    },
+    {
+      "drive_subfolder": "output",
+      "filename": "P1-C03-unimage-r1.png",
+      "job_submit_order": 18,
+      "sha256": "4bd06e1976ba99aee47eaf86c3d3a348a09818d383b76acbf80be1b0397a7916",
+      "bytes": 1394083,
+      "drive_file_id": "1mAOFCajSSW1mxDFek5J4hjwKr0VnLsvj",
+      "box_copy": "/workspace/hs-bench-private/run-20261123-grokbot-01/output/P1-C03-unimage-r1.png",
+      "sharing": "private (owner only)",
+      "permissions_checked": "file"
+    }
+  ],
+  "verification": "Drive list_folder of output/ shows 17 PNGs; every size equals the box byte count. get_file_permissions on output/ folder and on P1-C03-unimage-r1.png: owner only. No share call made.",
+  "not_uploaded": {
+    "P1-C03-unimage-r2.png": "does not exist: job 15 MODERATION_REFUSED"
+  }
+}
