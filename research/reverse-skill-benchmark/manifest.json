@@ -1,0 +1,65 @@
+{
+  "benchmark": "tupacabra-image-reverse-v1",
+  "date": "2026-11-23",
+  "status": "NOT_RUN",
+  "reason": "FREE_IMAGE_NOT_AVAILABLE",
+  "owner": "Image Research Manager",
+  "source_creator": "https://x.com/tupacabra",
+  "baseline_model": "cinematic_studio_2_5",
+  "baseline_settings": {
+    "aspect_ratio": "16:9",
+    "resolution": "1k",
+    "reference_as_generation_input": false
+  },
+  "candidates": [
+    {
+      "id": "unimage",
+      "url": "https://github.com/huanmu-team/unimage",
+      "commit": null
+    },
+    {
+      "id": "caph_style",
+      "url": "https://github.com/Caph-dev/image-style-prompt-reverse-engineer",
+      "commit": null
+    },
+    {
+      "id": "niobium_prompt",
+      "url": "https://github.com/niobium617/prompt-reverse-engineer-skill",
+      "commit": null
+    }
+  ],
+  "tasks": [
+    "reconstruction",
+    "style_transfer"
+  ],
+  "cases": [
+    {
+      "id": "C01",
+      "reference_path": null,
+      "sha256": null,
+      "rights_verified": false,
+      "subject_role": "portrait"
+    },
+    {
+      "id": "C02",
+      "reference_path": null,
+      "sha256": null,
+      "rights_verified": false,
+      "subject_role": "environment"
+    },
+    {
+      "id": "C03",
+      "reference_path": null,
+      "sha256": null,
+      "rights_verified": false,
+      "subject_role": "action_or_prop"
+    }
+  ],
+  "generations_per_candidate_case": 2,
+  "blinded_raters_per_output": 2,
+  "expected_images_for_complete_test": 36,
+  "confirmed_free_image_generations": 0,
+  "actual_generation_jobs": [],
+  "actual_generated_images": [],
+  "ranking": null
+}

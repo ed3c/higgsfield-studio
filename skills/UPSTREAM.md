@@ -39,3 +39,20 @@ rm -rf skills/vendor/higgsfield-ai-skills/.git
 [OSideMedia/higgsfield-ai-prompt-skill](https://github.com/OSideMedia/higgsfield-ai-prompt-skill) 是社群提示技能庫，最終版 v3.42.0。上游 README 寫明 2026 年 11 月起不再維護（archived），模型規格快照停在 2026-09-26。對方 MIT 只涵蓋其有權授權的貢獻，並指出倉庫內另有第三方材料，見該庫 `THIRD_PARTY_NOTICES.md`。
 
 本庫沒有複製該倉庫的提示詞、模板或規格表。方法論系列若要對照它公開描述過的 MCSLA 結構（Model、Camera、Subject、Look、Action），只把它當名詞表，並用官方 skills 與 `plan/monthly-usage-and-content-strategy.md` 的帳戶估價覆核。模型名稱以當下的 `higgsfield model get` 或生成鍵為準。
+
+
+## ScrapeCreators — 外部研究來源（非 vendored）
+
+- Repo: https://github.com/ScrapeCreators/social-media-research-skills
+- License: MIT (Copyright 2026 ScrapeCreators)，由使用者環境透過 `npx skills add ScrapeCreators/social-media-research-skills` 安裝。
+- 本庫只新增自有 `social-creator-intelligence` orchestration，不複製 13 個上游 Skill。
+- 上游 Skill 呼叫獨立的 ScrapeCreators API，要求 `SCRAPECREATORS_API_KEY`；執行前釘選上游 commit、審查工具權限、確認 API 定價與配額。不得將 API key、回應中的私人資料或未授權媒體提交。
+- 使用範圍是公開帳號、平台基線、留言/字幕與研究候選素材；無 key/配額時保留 NOT_RUN，不能猜數據。
+
+## 圖片逆向 Skill 候選（非 vendored）
+
+- https://github.com/huanmu-team/unimage — 忠實重製與 QC/repair
+- https://github.com/Caph-dev/image-style-prompt-reverse-engineer — 可移植的風格提取
+- https://github.com/niobium617/prompt-reverse-engineer-skill — 跨模型 Prompt 編譯
+
+只比較讀取到的 Skill 文件架構，尚**未用 Higgsfield 免費圖片完成 A/B**。請查閱 `research/reverse-skill-benchmark/README.md` 與 `manifest.json` 的 NOT_RUN 紀錄。
