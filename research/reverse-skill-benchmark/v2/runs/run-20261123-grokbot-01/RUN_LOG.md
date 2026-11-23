@@ -68,3 +68,8 @@ PR #5 (unmerged) records a read-only website observation: GPT Image 2.6 Unlimite
 - Interpreter for all 9 cells: Grok Bot (this agent), viewing a 1920×1080 downscale of the masked reference. The common brief is `P0_TASK_BRIEF.md`.
 - **Limitation:** the interpreter had already seen and described these frames during candidate selection, so its analysis is not naive. The exposure is equal across the three Skills.
 - Outputs: `v2/prompts/reconstruction/{C01,C02,C03}/{unimage,caph,niobium617}/`, index in `prompts.csv`. All normalizations are listed in each `prompt_diff.md`. No prompt was polished by hand.
+
+### 2026-11-23 ~19:10 Asia/Taipei — P1 jobs ready
+
+- `job_slots_v2_p1_ready.json` (supersedes `job_slots.json`, which is kept): **18 P1 jobs READY_TO_SUBMIT**, in seeded serial order, using 9 distinct prompts. Settings: GPT Image 2.6 Sunburst, 16:9, Medium, 1K, PNG, 1 output, Unlimited ON, no image attached. **12 P2 jobs NOT_RUN.**
+- Copy-paste list: `p1_submit.md`. 0 jobs submitted, 0 credits spent.
