@@ -73,3 +73,28 @@ PR #5 (unmerged) records a read-only website observation: GPT Image 2.6 Unlimite
 
 - `job_slots_v2_p1_ready.json` (supersedes `job_slots.json`, which is kept): **18 P1 jobs READY_TO_SUBMIT**, in seeded serial order, using 9 distinct prompts. Settings: GPT Image 2.6 Sunburst, 16:9, Medium, 1K, PNG, 1 output, Unlimited ON, no image attached. **12 P2 jobs NOT_RUN.**
 - Copy-paste list: `p1_submit.md`. 0 jobs submitted, 0 credits spent.
+
+### 2026-11-23 ~18:55 Asia/Taipei — P1 jobs 01–09 generated (reported by the generation operator) + Drive storage
+
+Source of these facts: the orchestrating Grok Bot agent, which ran the website generation in its own box browser. This executor did not observe the submissions. It verified the output files, hashes, Drive uploads and Drive permissions.
+
+- **Jobs 01–09: all submitted with the button reading UNLIMITED, 0 credits.** Submit window 2026-11-23 10:31–10:47 UTC (18:31–18:47 Asia/Taipei).
+
+  | # | job | website job id |
+  | --- | --- | --- |
+  | 01 | P1-C01-niobium617-r2 | 5a8fc498-489a-4245-a3df-f191e019226b |
+  | 02 | P1-C01-caph-r1 | ba37eaa2-3df5-4bba-b820-8a0900bdb6bb |
+  | 03 | P1-C01-unimage-r1 | ebee4b81-0f75-4c02-a7ef-96f3a7c82274 |
+  | 04 | P1-C01-unimage-r2 | a0b27911-4f0e-499c-b954-2757311ea597 |
+  | 05 | P1-C01-caph-r2 | 5ad97031-dcaf-4f70-a2de-5444b4b19b16 |
+  | 06 | P1-C01-niobium617-r1 | 63ae70f4-7b02-443a-976a-15813ee23863 |
+  | 07 | P1-C02-unimage-r2 | 21d67601-a4f6-444a-8df8-277f731f5f37 |
+  | 08 | P1-C02-unimage-r1 | 83cd6ca7-0e3f-4697-aca2-8ec4f7f100cd |
+  | 09 | P1-C02-caph-r1 | d0097f3f-59be-4f9a-9f0e-7198d70bbf7c |
+
+- **ANOMALY A-01:** at 10:34 UTC, job 01's prompt was submitted a second time by accident (website id `89e69711-ac06-4817-a75e-74dbcccf9405`). It was free and the image was not saved. It is **EXCLUDED** from the benchmark and from blind review, and does not replace job 01.
+- **UI note:** the batch display read `1/4`, but each job returned exactly 1 image.
+- **Prompt transport:** `file://` was blocked in the browser, so prompts were served from a local HTTP server. The pasted lengths matched the `normalized_prompt.txt` files.
+- Per-job rows are in `generations.csv`: output sha256, Drive file id, website job id. Per-job submit and complete timestamps were not supplied and are left blank.
+- **Storage (Neon t29u):** 9 outputs and 6 masked reference frames were uploaded to Neon's Google Drive under `Higgsfield-Studio/reverse-benchmark-v2/run-20261123-grokbot-01/{output,refs}/`, which is **private (owner only, verified with get_file_permissions)**. Box copies are kept. Index: `DRIVE_STORAGE_MANIFEST.json`.
+- **Pending:** jobs 10–18 were not yet in the box output folder at 18:55. Status: P1 9/18, P2 0/12.
