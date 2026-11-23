@@ -123,3 +123,10 @@ Facts below were reported by the orchestrating Grok Bot agent, which ran the gen
 - Rows 10–18 are appended to `generations.csv`. Job 15's row has status MODERATION_REFUSED and no output.
 - **Drive:** the 7 new PNGs (jobs 11–14, 16–18) are in the private `output/` folder (`DRIVE_STORAGE_MANIFEST_addendum_02.json`). Job 10 was uploaded earlier (addendum 01). `output/` now holds 17 PNGs, owner only.
 - **P1 status: 17/18 generated, 1 moderation refusal, 0 credits** (`P1_STATUS.json`). Gate G3 = `PARTIAL_P1`. P2 0/12 NOT_RUN.
+
+### 2026-11-23 19:19 Asia/Taipei — owner decision on job 15
+
+- Neon (widget answer to t30s4), verbatim: **"Don't retry it; record it as a moderation refusal"**.
+- Job 15 `P1-C03-unimage-r2` is now **final MODERATION_REFUSED and will never be retried**.
+- **GAP-P1-01:** cell C03 × unimage has a single replicate (r1, job 18). Under spec §7/§8 no P1 winner can be declared, and G3 stays `PARTIAL_P1`. Any P1 ranking, including the choice of the P2 candidate B, is **PROVISIONAL**.
+- `P1_STATUS.json`: the refused-job entry was updated in place (`decision_pending` set to null and the decision referenced) and a `history` entry was appended. The earlier counts are unchanged.
