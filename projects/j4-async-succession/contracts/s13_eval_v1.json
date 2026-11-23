@@ -1,0 +1,32 @@
+{
+  "schema": "studio.s13-diagnostic-replay.v1",
+  "source_pr_heads": {
+    "3": "e5b4c4157de7c275c712b294e7d5c5fdb9626160",
+    "9": "c28c4017fca48caf3e7623cde0b97b2cd830de12",
+    "10": "00a0f5e1510c35e2ecfe3d04fd9b03e5538473ad"
+  },
+  "run_sha256": "871ef434da050033882221d92d3f66a73625f91c311466025edb193204f93110",
+  "archive_sha256": "32a2f626052f43cd7308a655d0e1e4093503827db13af63d9631d8f9e830c20f",
+  "visible_criteria": {
+    "artwork": [
+      "S13.ART_ORIGINAL_METHOD",
+      "S13.ART_SALT_ON_MECHANISM",
+      "S13.ART_LEVER_AND_OBSTRUCTION"
+    ],
+    "shot": [
+      "S13.INDOOR_LAB",
+      "S13.SALT_DAMAGE",
+      "S13.KEY_PRESS",
+      "S13.SILICON_WAFER",
+      "S13.OUTDOOR_BEACH_PIANO"
+    ],
+    "fusion": [
+      "S13.FUSION_MATERIAL_ROLE_REVERSAL",
+      "S13.FUSION_WAFER_ARC_NO_NOTATION"
+    ]
+  },
+  "artwork_source_urls": [
+    "https://www.ntticc.or.jp/en/archive/works/is-your-time/",
+    "https://www.tate.org.uk/art/artworks/horn-concert-for-anarchy-t07517"
+  ]
+}

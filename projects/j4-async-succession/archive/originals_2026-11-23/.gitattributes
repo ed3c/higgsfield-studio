@@ -1,0 +1,2 @@
+# Keep original bytes exact (CRLF/BOM preserved).
+files/** -text

@@ -92,6 +92,14 @@ class TrackTests(unittest.TestCase):
         self.assertEqual(total, Decimal("10"))
         self.assertEqual(len(notes), 1)
 
+    def test_help_text_renders_on_strict_argparse(self) -> None:
+        # Python 3.14+/3.15 argparse validates %-formatting in help strings (G-13).
+        import contextlib, io
+        import track
+        out = io.StringIO()
+        with self.assertRaises(SystemExit), contextlib.redirect_stdout(out):
+            track.parse_args(["--help"])
+        self.assertIn("80%", out.getvalue())
 
 if __name__ == "__main__":
     unittest.main()

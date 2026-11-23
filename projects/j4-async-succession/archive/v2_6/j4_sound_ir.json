@@ -1,0 +1,293 @@
+{
+  "version": "J4-SOUND-IR-v2.6",
+  "duration_ms": 90000,
+  "sample_rate_hz": 48000,
+  "master_lufs_target": -14,
+  "max_true_peak_dbTP": -1,
+  "source_note": "Design targets only; not an audio master or measured compliance.",
+  "stems": [
+    {
+      "id": "STEM_01",
+      "name": "Continuous sine/electrical ground",
+      "rule": "One phase-stable tone starts at 500ms and persists until 90,000ms; de-click only at export boundary."
+    },
+    {
+      "id": "STEM_02",
+      "name": "Nature, water, airflow and physical ambience",
+      "rule": "Independent natural events, never over-musicalized."
+    },
+    {
+      "id": "STEM_03",
+      "name": "Labour, material, machines and gestures",
+      "rule": "Tactile sounds preserve microtiming."
+    },
+    {
+      "id": "STEM_04",
+      "name": "Original pitched material",
+      "rule": "Original sparse four-note motif introduced at S03/04/05/06; never copy artist melodies."
+    },
+    {
+      "id": "STEM_05",
+      "name": "Voice, space, room decay",
+      "rule": "Fictional intelligibility optional, spatial response important; no cloned voice."
+    }
+  ],
+  "phase_families": [
+    {
+      "id": "COMMUNITY_7",
+      "start_ms": 3000,
+      "period_ms": 7000,
+      "theme": "market/community",
+      "forced_stop_ms": 63700
+    },
+    {
+      "id": "MAINTENANCE_11",
+      "start_ms": 16000,
+      "period_ms": 11000,
+      "theme": "human labour",
+      "forced_stop_ms": 63700
+    },
+    {
+      "id": "COMPUTE_5",
+      "start_ms": 20000,
+      "period_ms": 5000,
+      "theme": "distributed/centralised compute",
+      "forced_stop_ms": 63700
+    },
+    {
+      "id": "ENVIRONMENT_13",
+      "start_ms": 24000,
+      "period_ms": 13000,
+      "theme": "artificial climate",
+      "forced_stop_ms": 63700
+    },
+    {
+      "id": "JAPAN_19",
+      "start_ms": 46000,
+      "period_ms": 19000,
+      "theme": "untuned instrument",
+      "forced_stop_ms": 63700
+    },
+    {
+      "id": "EUROPE_17",
+      "start_ms": 50000,
+      "period_ms": 17000,
+      "theme": "opera/architecture",
+      "forced_stop_ms": 63700
+    }
+  ],
+  "events": [
+    {
+      "at_ms": 500,
+      "kind": "start_sine",
+      "phase_continuous": true
+    },
+    {
+      "at_ms": 7000,
+      "kind": "motif_note",
+      "index": 1
+    },
+    {
+      "at_ms": 12000,
+      "kind": "motif_note",
+      "index": 2
+    },
+    {
+      "at_ms": 16000,
+      "kind": "motif_note",
+      "index": 3
+    },
+    {
+      "at_ms": 20000,
+      "kind": "motif_note",
+      "index": 4
+    },
+    {
+      "at_ms": 35500,
+      "kind": "deliberate_exception",
+      "detail": "S10 archival door interrupts unfinished piano-like decay"
+    },
+    {
+      "at_ms": 63700,
+      "kind": "forced_global_cut",
+      "target": "all six phase families plus secondary motif textures",
+      "preserve": [
+        "STEM_01"
+      ]
+    },
+    {
+      "at_ms": 65000,
+      "kind": "new_post_cut_ambience",
+      "detail": "S19 news-studio electronics; six phase families stay off"
+    },
+    {
+      "at_ms": 84000,
+      "kind": "new_market_memory",
+      "detail": "S24 new short market ambience, not re-start of COMMUNITY_7 cycle"
+    },
+    {
+      "at_ms": 87000,
+      "kind": "strip_to_sine",
+      "preserve": [
+        "STEM_01"
+      ]
+    },
+    {
+      "at_ms": 90000,
+      "kind": "end_file",
+      "detail": "edit de-click at terminal; perceptual continuity, not raw pop"
+    }
+  ],
+  "shot_sound_cues": [
+    {
+      "shot_id": "S01",
+      "start_ms": 0,
+      "end_ms": 3000,
+      "sound_prompt": "Start a continuously phase-stable sine at 0.500 s; layer distant utensils, room air and indistinct conversation just before 3.000 s. No melody, impact, or electronic startup sound."
+    },
+    {
+      "shot_id": "S02",
+      "start_ms": 3000,
+      "end_ms": 7000,
+      "sound_prompt": "Seven-second market ambience cycle begins at absolute 3.0 s: bowls, food friction, steps and indistinct conversation. Phase continues across cuts while active. Persistent low sine remains beneath; no metered percussion."
+    },
+    {
+      "shot_id": "S03",
+      "start_ms": 7000,
+      "end_ms": 12000,
+      "sound_prompt": "Market ambience retreats as a distant acoustic memory; introduce isolated soft original piano tone and low room resonance. Separate droplet contact from delayed reflection cue. Leave acoustic decay crossing into S04."
+    },
+    {
+      "shot_id": "S04",
+      "start_ms": 12000,
+      "end_ms": 16000,
+      "sound_prompt": "Continue S03 decay; add minute electrical crackle and wire resonance; place second isolated original motif pitch. Sink water from S05 begins underneath final tail."
+    },
+    {
+      "shot_id": "S05",
+      "start_ms": 16000,
+      "end_ms": 20000,
+      "sound_prompt": "Start eleven-second maintenance ambience phase at 16 s: running water, ceramic on metal, gloves, ventilation. Third isolated motif tone enters very softly. Let ripple decay cross into S06."
+    },
+    {
+      "shot_id": "S06",
+      "start_ms": 20000,
+      "end_ms": 24000,
+      "sound_prompt": "Start five-second compute/cooling phase at 20 s, maintained thereafter without phase reset. Foreground paper and contacts are irregular, background cooling a steady note. Fourth fragmentary original motif note may appear; no resolved tune."
+    },
+    {
+      "shot_id": "S07",
+      "start_ms": 24000,
+      "end_ms": 28000,
+      "sound_prompt": "Start separate thirteen-second environmental phase at 24 s. Cool-air noise from S06 becomes ambiguous desert wind; weak structural vibration, not epic desert score. Air continues as ventilation under S08."
+    },
+    {
+      "shot_id": "S08",
+      "start_ms": 28000,
+      "end_ms": 32000,
+      "sound_prompt": "Exterior S07 wind becomes enclosed ventilation. Separate human claps enter at slightly different times and spatial locations, with faint unresolved low note. Last clap decay passes into S09 fan/urban sound."
+    },
+    {
+      "shot_id": "S09",
+      "start_ms": 32000,
+      "end_ms": 35500,
+      "sound_prompt": "S08 last clap echoes into rain and small fan whir; original fictional voice becomes indistinct under rotating air noise. Metallic fan resonance leads into S10 mesh."
+    },
+    {
+      "shot_id": "S10",
+      "start_ms": 35500,
+      "end_ms": 39000,
+      "sound_prompt": "Thin metallic residue from S09; quiet mesh slide, fabric and small door contact. Intentional interruption of any unfinished short piano-like tail here (exception to natural decay). Metallic contact becomes S11 actuator."
+    },
+    {
+      "shot_id": "S11",
+      "start_ms": 39000,
+      "end_ms": 43000,
+      "sound_prompt": "Reuse five-second compute phase from S06, without reset. Convey actuators, belt and air as layered physically timed sounds; droplet falls outside machine rhythm. Thin overtone moves into S12."
+    },
+    {
+      "shot_id": "S12",
+      "start_ms": 43000,
+      "end_ms": 46000,
+      "sound_prompt": "S11 high metallic resonance leads into dry cord friction and near-empty room. Cable's small inharmonic tail is transformed by editing into S13 piano mechanism, not thriller score."
+    },
+    {
+      "shot_id": "S13",
+      "start_ms": 46000,
+      "end_ms": 50000,
+      "sound_prompt": "Original wind, swollen wood, quiet key mechanism and unstable overtone, NOT a recognizable piano melody. Mechanical after-sound carries into S14 applause—a deliberate contrast between failed tone and abundant acclaim."
+    },
+    {
+      "shot_id": "S14",
+      "start_ms": 50000,
+      "end_ms": 53000,
+      "sound_prompt": "S13 imperfect key resonance underneath location-distant original claps, independently located balcony/empty-stage responses. Room decay outlasts bodies. Acoustic claps crossfade into S15 wood and textile shuttle sounds."
+    },
+    {
+      "shot_id": "S15",
+      "start_ms": 53000,
+      "end_ms": 57000,
+      "sound_prompt": "S14 applause tail becomes textile and wood contact. Two internally different phrases can loosely refer to 7 and 13 second phases, but use local clipped fragments only. Do not restart global sound loops on shot boundary."
+    },
+    {
+      "shot_id": "S16",
+      "start_ms": 57000,
+      "end_ms": 60500,
+      "sound_prompt": "Transform textile phases into two kinetic pathways: mechanical motor regularity vs footsteps/breath/suitcase-wheels variation. Human-route ambience may reference eleven-second family while current phase continues. All layers accumulate into S17."
+    },
+    {
+      "shot_id": "S17",
+      "start_ms": 60500,
+      "end_ms": 63700,
+      "sound_prompt": "Highest concurrent sound density, not highest loudness: extant 7/11/5/13/19/17 second phase families masked/unmasked independently, never restart. Incomplete original motif fragments and sine below. At 63.700 s stop every independent environmental/tonal loop on single master cut, not by waiting for alignment."
+    },
+    {
+      "shot_id": "S18",
+      "start_ms": 63700,
+      "end_ms": 65000,
+      "sound_prompt": "At 63.700s simultaneously stop six phase-independent sound families with micro-declick envelopes; do NOT align their phases. Continuous sine continues from S01. No impact, bass drop or sound effect for reveals. At 65s allow new quiet S19 electronics ambience."
+    },
+    {
+      "shot_id": "S19",
+      "start_ms": 65000,
+      "end_ms": 69000,
+      "sound_prompt": "Sine persists; faint broadcast electronics and two soft original unresolved piano events, with no city ambience. Projection freeze briefly gates noise; move into close paper/glass room sound S20. No fake newscast ident."
+    },
+    {
+      "shot_id": "S20",
+      "start_ms": 69000,
+      "end_ms": 72500,
+      "sound_prompt": "S19 electronics recedes; dry paper, modest glass support vibration, two independent close spatial layers and soft inharmonic piano. Keep sine beneath. Paper fold decays toward S21 fabric/key."
+    },
+    {
+      "shot_id": "S21",
+      "start_ms": 72500,
+      "end_ms": 76500,
+      "sound_prompt": "Paper archive residual sound fades; two independent quiet breath/fabric pulses, single close brass-metal contact with decay. No clocks/ticking, victorious music or vocal narration. Metal decay leads to S22 dry paper."
+    },
+    {
+      "shot_id": "S22",
+      "start_ms": 76500,
+      "end_ms": 79500,
+      "sound_prompt": "S21 key's metal tail disappears into close paper/fingernail friction and HVAC. Original quiet felt-muted piano tone near 1.7s, intentionally off physical hand gesture; distant compute overtone not triumphant. Paper residue J-cuts S23."
+    },
+    {
+      "shot_id": "S23",
+      "start_ms": 79500,
+      "end_ms": 84000,
+      "sound_prompt": "S22 paper friction decays; large chamber tone, one honest footstep, a second original electroacoustic resonance later than movement. Old Japan/Europe timbral residue may appear as new one-shots but NEVER restart pre-S18 19/17-second loops. Sine persists into S24."
+    },
+    {
+      "shot_id": "S24",
+      "start_ms": 84000,
+      "end_ms": 87000,
+      "sound_prompt": "Bring back new near-market room tone (not restart original seven-second loop), restrained rain, fabric and original four-note idea only as unresolved fragments. At 87.0 simultaneously remove all non-sine sounds, sine continues unchanged into S25. No victory chord."
+    },
+    {
+      "shot_id": "S25",
+      "start_ms": 87000,
+      "end_ms": 90000,
+      "sound_prompt": "At 87.000 remove all S24 ambience and motif fragments, preserve only the single sine that began at 0.500 s, phase-continuously. No final chord or spoken years. Finish at 90.000 s with technically de-clicked edit; artistic impression of persistence, not audible digital pop."
+    }
+  ]
+}

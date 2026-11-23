@@ -1,0 +1,15 @@
+﻿event_id,shot_id,global_start_ms,global_end_ms,duration_ms,audio_start_sample_48k,audio_end_sample_48k,family_id,stem,event_kind,candidate_instruction,media_status,creative_gate,rights_status
+SIN_001,S01,500,3000,2500,24000,144000,SINE_GROUND,STEM_01,continuous_oscillator_start,phase stable; persists beyond this shot,NOT_RENDERED,PENDING,NOT_RUN
+BIRD_01,S04,13300,14000,700,638400,672000,BIRD_METAL,STEM_03,material_contact,tiny original wire micro-contact when wire sculpture lifts; no heroic wingbeat,NOT_RENDERED,PENDING,NOT_RUN
+CLAP_08,S08,29000,31950,2950,1392000,1533600,APPLAUSE_SPACE,STEM_03,human_gesture,gradually contagious handclaps; end in short room decay,NOT_RENDERED,PENDING,NOT_RUN
+COAT_B_10,S10,37800,38600,800,1814400,1852800,COAT_ARCHIVE,STEM_03,material_contact,mesh/fabric and local pitched tail; local tail cut exactly 38600,NOT_RENDERED,PENDING,NOT_RUN
+PAPER_11,S11,42100,42600,500,2020800,2044800,PAPER_FOLD,STEM_03,ambient_causality,paper-house loose edge gently moves due to ventilation; extremely subtle,NOT_RENDERED,PENDING,NOT_RUN
+CLAP_14,S14,50500,52950,2450,2424000,2541600,APPLAUSE_SPACE,STEM_05,spatial_recontextualization,the SAME kind of clap events now distributed in opera acoustics; not more volume,NOT_RENDERED,PENDING,NOT_RUN
+GLOBAL_18,S18,63700,63700,0,3057600,3057600,SINE_GROUND,CONTROL,global_cut,six phase families forced to stop; continuous sine untouched,NOT_RENDERED,PENDING,NOT_RUN
+KEY_21,S21,74550,74850,300,3578400,3592800,HANDOVER_KEY,STEM_03,ownership_contact,"one brass key click only, not doubling",NOT_RENDERED,PENDING,NOT_RUN
+COAT_A_21,S21,75200,76000,800,3609600,3648000,COAT_MAIN,STEM_03,material_contact,"left in chair, close dry textile brush; archive B fingerprint not reused",NOT_RENDERED,PENDING,NOT_RUN
+PAPER_22,S22,76900,77900,1000,3691200,3739200,PAPER_FOLD,STEM_03,close_material_fold,"close dry fold/fingernail, same material grammar as S11, not same physical house",NOT_RENDERED,PENDING,NOT_RUN
+PAPER_23,S23,79500,79800,300,3816000,3830400,PAPER_FOLD,STEM_03,short_residual,"single fading paper timbre, not a renewed paper-world loop",NOT_RENDERED,PENDING,NOT_RUN
+COAT_A_24,S24,84450,85150,700,4053600,4087200,COAT_MAIN,STEM_03,material_contact,"group hands support empty coat, wide outdoor fabric friction",NOT_RENDERED,PENDING,NOT_RUN
+BIRD_24,S24,85150,85850,700,4087200,4120800,BIRD_METAL,STEM_03,timbre_recall,"same bird material fingerprint as S04, softer attack and longer tail",NOT_RENDERED,PENDING,NOT_RUN
+SINE_ONLY_25,S25,87000,87000,0,4176000,4176000,SINE_GROUND,CONTROL,strip_to_sine,remove all other layers and preserve ONE phase-stable oscillator until 90000,NOT_RENDERED,PENDING,NOT_RUN

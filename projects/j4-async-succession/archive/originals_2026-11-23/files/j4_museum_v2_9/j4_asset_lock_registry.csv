@@ -1,0 +1,12 @@
+asset_id,shots,design_lock,continuity,forbidden,status
+optical_membranes,"S03,S17,S23",open separated curved translucent optical sheets,S03: sparse / S17: dense / S23: near-dormant,must not close into a suspended box or squared water vessel,DESIGN_ONLY
+founder_coat_A,"S03,S17,S21,S24","long charcoal, small repair at LEFT hem",S03/S17 worn; S21 hangs from chair at start; S24 crowd holds same empty coat,distinct from archive coat B; no leather-celebrity cues,DESIGN_ONLY
+archive_coat_B,S10,"short straight charcoal cotton, NO left-hem repair",archived earlier specimen; unrelated physical garment,never passed in S21 or raised in S24,DESIGN_ONLY
+filament_bird_v1,"S04,S24","one soft tungsten filament, three minute wire joins, asymmetric",leaves S04; in S24 starts outside central coat then settles,never iconic logo/feathers or known fictional emblem,DESIGN_ONLY
+paper_house_v1,"S11,S22",plain paper; irregular folded roof; one nonrectangular window,"same fabrication grammar, NOT transported from S11 to S22",S22 house is unoccupied; must be legible on first frame,DESIGN_ONLY
+paper_bridge_v1,S22,folded office-paper bridge with real load-bearing crease,stabilized by one fingertip in one dominant action,no game-specific engineering structures,DESIGN_ONLY
+untuned_piano,"S13,S23",aged upright with swollen lower timber; one slow returning key,S13 foreground original; S23 distant thematic echo on dolly,not the documented disaster-damaged instrument,DESIGN_ONLY
+market_environment,"S02,S24",humble warm practical bulbs; humid surfaces; ordinary stall wear,"same visual grammar, not same image or camera location",no copied original photo installation or news scene,DESIGN_ONLY
+warm_reflection,"S02,S03,S04,S05,S06,S17,S23,S24",thin nonuniform warm reflection from LOCAL practical light,"match in editorial form across scenes, not physically travelling",every scene must identify its own real source,DESIGN_ONLY
+handover_key,S21,one undecorated small brass key,hands share object at midpoint; founder already without coat,"no teleport, no duplicated key or malformed contact",DESIGN_ONLY
+sine_master,S01-S25,single continuous original low sine from 0.5s,survives 63.7s global interruption and 87.0s ambience strip,no borrowed Sakamoto audio; de-click terminal boundary,DESIGN_ONLY

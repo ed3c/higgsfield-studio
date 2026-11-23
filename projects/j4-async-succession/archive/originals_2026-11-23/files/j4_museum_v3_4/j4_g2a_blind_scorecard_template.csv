@@ -1,0 +1,7 @@
+﻿participant_id,trial_id,condition,reviewer_id,anchor_evidence_score,semantic_revision_score,unfounded_claim,media_legibility,status,evidence_note
+,G2A_COAT,,R1,,,,,NOT_RUN,
+,G2A_COAT,,R2,,,,,NOT_RUN,
+,G2A_PAPER,,R1,,,,,NOT_RUN,
+,G2A_PAPER,,R2,,,,,NOT_RUN,
+,G2A_AUTHORITY,,R1,,,,,NOT_RUN,
+,G2A_AUTHORITY,,R2,,,,,NOT_RUN,
