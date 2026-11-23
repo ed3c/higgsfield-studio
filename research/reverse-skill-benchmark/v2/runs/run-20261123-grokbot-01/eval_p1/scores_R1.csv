@@ -1,0 +1,103 @@
+index,run_id,blind_image_id,task,case_id,rater_id,criterion,score_0_to_5,hard_fail,hard_fail_reason,notes,scored_at_iso8601
+1,run-20261123-grokbot-01,B0002,reconstruction,C01,R1,composition,3,no,,Brunette not red; open lace collar instead of large ruff; female not bearded man in bg; warm gold grade,2026-11-23T20:24:44+08:00
+2,run-20261123-grokbot-01,B0002,reconstruction,C01,R1,perspective,4,no,,Brunette not red; open lace collar instead of large ruff; female not bearded man in bg; warm gold grade,2026-11-23T20:24:44+08:00
+3,run-20261123-grokbot-01,B0002,reconstruction,C01,R1,lighting,3,no,,Brunette not red; open lace collar instead of large ruff; female not bearded man in bg; warm gold grade,2026-11-23T20:24:44+08:00
+4,run-20261123-grokbot-01,B0002,reconstruction,C01,R1,palette,2,no,,Brunette not red; open lace collar instead of large ruff; female not bearded man in bg; warm gold grade,2026-11-23T20:24:44+08:00
+5,run-20261123-grokbot-01,B0002,reconstruction,C01,R1,material,3,no,,Brunette not red; open lace collar instead of large ruff; female not bearded man in bg; warm gold grade,2026-11-23T20:24:44+08:00
+6,run-20261123-grokbot-01,B0002,reconstruction,C01,R1,artifact_control,4,no,,Brunette not red; open lace collar instead of large ruff; female not bearded man in bg; warm gold grade,2026-11-23T20:24:44+08:00
+7,run-20261123-grokbot-01,B0005,reconstruction,C01,R1,composition,4,no,,"Red hair+freckles+large lace ruff+pearl headdress; candle L, bearded man R blurred; face darker than high-key ref",2026-11-23T20:24:44+08:00
+8,run-20261123-grokbot-01,B0005,reconstruction,C01,R1,perspective,4,no,,"Red hair+freckles+large lace ruff+pearl headdress; candle L, bearded man R blurred; face darker than high-key ref",2026-11-23T20:24:44+08:00
+9,run-20261123-grokbot-01,B0005,reconstruction,C01,R1,lighting,3,no,,"Red hair+freckles+large lace ruff+pearl headdress; candle L, bearded man R blurred; face darker than high-key ref",2026-11-23T20:24:44+08:00
+10,run-20261123-grokbot-01,B0005,reconstruction,C01,R1,palette,3,no,,"Red hair+freckles+large lace ruff+pearl headdress; candle L, bearded man R blurred; face darker than high-key ref",2026-11-23T20:24:44+08:00
+11,run-20261123-grokbot-01,B0005,reconstruction,C01,R1,material,4,no,,"Red hair+freckles+large lace ruff+pearl headdress; candle L, bearded man R blurred; face darker than high-key ref",2026-11-23T20:24:44+08:00
+12,run-20261123-grokbot-01,B0005,reconstruction,C01,R1,artifact_control,4,no,,"Red hair+freckles+large lace ruff+pearl headdress; candle L, bearded man R blurred; face darker than high-key ref",2026-11-23T20:24:44+08:00
+13,run-20261123-grokbot-01,B0006,reconstruction,C01,R1,composition,4,no,,"Close subject match; ruff and freckles good; slightly darker, warmer than ref",2026-11-23T20:24:44+08:00
+14,run-20261123-grokbot-01,B0006,reconstruction,C01,R1,perspective,4,no,,"Close subject match; ruff and freckles good; slightly darker, warmer than ref",2026-11-23T20:24:44+08:00
+15,run-20261123-grokbot-01,B0006,reconstruction,C01,R1,lighting,3,no,,"Close subject match; ruff and freckles good; slightly darker, warmer than ref",2026-11-23T20:24:44+08:00
+16,run-20261123-grokbot-01,B0006,reconstruction,C01,R1,palette,3,no,,"Close subject match; ruff and freckles good; slightly darker, warmer than ref",2026-11-23T20:24:44+08:00
+17,run-20261123-grokbot-01,B0006,reconstruction,C01,R1,material,4,no,,"Close subject match; ruff and freckles good; slightly darker, warmer than ref",2026-11-23T20:24:44+08:00
+18,run-20261123-grokbot-01,B0006,reconstruction,C01,R1,artifact_control,4,no,,"Close subject match; ruff and freckles good; slightly darker, warmer than ref",2026-11-23T20:24:44+08:00
+19,run-20261123-grokbot-01,B0007,reconstruction,C01,R1,composition,3,no,,"Strawberry-blonde, no ruff (standing lace collar); bg figure female; warm grade",2026-11-23T20:24:44+08:00
+20,run-20261123-grokbot-01,B0007,reconstruction,C01,R1,perspective,4,no,,"Strawberry-blonde, no ruff (standing lace collar); bg figure female; warm grade",2026-11-23T20:24:44+08:00
+21,run-20261123-grokbot-01,B0007,reconstruction,C01,R1,lighting,3,no,,"Strawberry-blonde, no ruff (standing lace collar); bg figure female; warm grade",2026-11-23T20:24:44+08:00
+22,run-20261123-grokbot-01,B0007,reconstruction,C01,R1,palette,2,no,,"Strawberry-blonde, no ruff (standing lace collar); bg figure female; warm grade",2026-11-23T20:24:44+08:00
+23,run-20261123-grokbot-01,B0007,reconstruction,C01,R1,material,3,no,,"Strawberry-blonde, no ruff (standing lace collar); bg figure female; warm grade",2026-11-23T20:24:44+08:00
+24,run-20261123-grokbot-01,B0007,reconstruction,C01,R1,artifact_control,4,no,,"Strawberry-blonde, no ruff (standing lace collar); bg figure female; warm grade",2026-11-23T20:24:44+08:00
+25,run-20261123-grokbot-01,B0011,reconstruction,C01,R1,composition,4,no,,"Strong subject match; bg man too sharp/large, weaker depth separation; face darker",2026-11-23T20:24:44+08:00
+26,run-20261123-grokbot-01,B0011,reconstruction,C01,R1,perspective,3,no,,"Strong subject match; bg man too sharp/large, weaker depth separation; face darker",2026-11-23T20:24:44+08:00
+27,run-20261123-grokbot-01,B0011,reconstruction,C01,R1,lighting,3,no,,"Strong subject match; bg man too sharp/large, weaker depth separation; face darker",2026-11-23T20:24:44+08:00
+28,run-20261123-grokbot-01,B0011,reconstruction,C01,R1,palette,3,no,,"Strong subject match; bg man too sharp/large, weaker depth separation; face darker",2026-11-23T20:24:44+08:00
+29,run-20261123-grokbot-01,B0011,reconstruction,C01,R1,material,4,no,,"Strong subject match; bg man too sharp/large, weaker depth separation; face darker",2026-11-23T20:24:44+08:00
+30,run-20261123-grokbot-01,B0011,reconstruction,C01,R1,artifact_control,4,no,,"Strong subject match; bg man too sharp/large, weaker depth separation; face darker",2026-11-23T20:24:44+08:00
+31,run-20261123-grokbot-01,B0014,reconstruction,C01,R1,composition,4,no,,"Strong subject match, very large ruff; candle and bearded man present; face lower-key than ref",2026-11-23T20:24:44+08:00
+32,run-20261123-grokbot-01,B0014,reconstruction,C01,R1,perspective,4,no,,"Strong subject match, very large ruff; candle and bearded man present; face lower-key than ref",2026-11-23T20:24:44+08:00
+33,run-20261123-grokbot-01,B0014,reconstruction,C01,R1,lighting,3,no,,"Strong subject match, very large ruff; candle and bearded man present; face lower-key than ref",2026-11-23T20:24:44+08:00
+34,run-20261123-grokbot-01,B0014,reconstruction,C01,R1,palette,3,no,,"Strong subject match, very large ruff; candle and bearded man present; face lower-key than ref",2026-11-23T20:24:44+08:00
+35,run-20261123-grokbot-01,B0014,reconstruction,C01,R1,material,4,no,,"Strong subject match, very large ruff; candle and bearded man present; face lower-key than ref",2026-11-23T20:24:44+08:00
+36,run-20261123-grokbot-01,B0014,reconstruction,C01,R1,artifact_control,4,no,,"Strong subject match, very large ruff; candle and bearded man present; face lower-key than ref",2026-11-23T20:24:44+08:00
+37,run-20261123-grokbot-01,B0003,reconstruction,C02,R1,composition,3,no,,"Hood pods present but no flags; wide-angle sunny postcard, deep focus, no telephoto compression; overcast mood lost",2026-11-23T20:24:44+08:00
+38,run-20261123-grokbot-01,B0003,reconstruction,C02,R1,perspective,2,no,,"Hood pods present but no flags; wide-angle sunny postcard, deep focus, no telephoto compression; overcast mood lost",2026-11-23T20:24:44+08:00
+39,run-20261123-grokbot-01,B0003,reconstruction,C02,R1,lighting,2,no,,"Hood pods present but no flags; wide-angle sunny postcard, deep focus, no telephoto compression; overcast mood lost",2026-11-23T20:24:44+08:00
+40,run-20261123-grokbot-01,B0003,reconstruction,C02,R1,palette,2,no,,"Hood pods present but no flags; wide-angle sunny postcard, deep focus, no telephoto compression; overcast mood lost",2026-11-23T20:24:44+08:00
+41,run-20261123-grokbot-01,B0003,reconstruction,C02,R1,material,3,no,,"Hood pods present but no flags; wide-angle sunny postcard, deep focus, no telephoto compression; overcast mood lost",2026-11-23T20:24:44+08:00
+42,run-20261123-grokbot-01,B0003,reconstruction,C02,R1,artifact_control,3,no,,"Hood pods present but no flags; wide-angle sunny postcard, deep focus, no telephoto compression; overcast mood lost",2026-11-23T20:24:44+08:00
+43,run-20261123-grokbot-01,B0004,reconstruction,C02,R1,composition,4,no,,"Flags on fender pods, central obelisk, towers; wide lens and golden sunny light vs dim overcast ref; slightly illustrative",2026-11-23T20:24:44+08:00
+44,run-20261123-grokbot-01,B0004,reconstruction,C02,R1,perspective,2,no,,"Flags on fender pods, central obelisk, towers; wide lens and golden sunny light vs dim overcast ref; slightly illustrative",2026-11-23T20:24:44+08:00
+45,run-20261123-grokbot-01,B0004,reconstruction,C02,R1,lighting,2,no,,"Flags on fender pods, central obelisk, towers; wide lens and golden sunny light vs dim overcast ref; slightly illustrative",2026-11-23T20:24:44+08:00
+46,run-20261123-grokbot-01,B0004,reconstruction,C02,R1,palette,2,no,,"Flags on fender pods, central obelisk, towers; wide lens and golden sunny light vs dim overcast ref; slightly illustrative",2026-11-23T20:24:44+08:00
+47,run-20261123-grokbot-01,B0004,reconstruction,C02,R1,material,3,no,,"Flags on fender pods, central obelisk, towers; wide lens and golden sunny light vs dim overcast ref; slightly illustrative",2026-11-23T20:24:44+08:00
+48,run-20261123-grokbot-01,B0004,reconstruction,C02,R1,artifact_control,3,no,,"Flags on fender pods, central obelisk, towers; wide lens and golden sunny light vs dim overcast ref; slightly illustrative",2026-11-23T20:24:44+08:00
+49,run-20261123-grokbot-01,B0009,reconstruction,C02,R1,composition,3,no,,"Flags+obelisk present but dashboard intrudes; sunny golden, everything sharp; wide-angle",2026-11-23T20:24:44+08:00
+50,run-20261123-grokbot-01,B0009,reconstruction,C02,R1,perspective,2,no,,"Flags+obelisk present but dashboard intrudes; sunny golden, everything sharp; wide-angle",2026-11-23T20:24:44+08:00
+51,run-20261123-grokbot-01,B0009,reconstruction,C02,R1,lighting,2,no,,"Flags+obelisk present but dashboard intrudes; sunny golden, everything sharp; wide-angle",2026-11-23T20:24:44+08:00
+52,run-20261123-grokbot-01,B0009,reconstruction,C02,R1,palette,2,no,,"Flags+obelisk present but dashboard intrudes; sunny golden, everything sharp; wide-angle",2026-11-23T20:24:44+08:00
+53,run-20261123-grokbot-01,B0009,reconstruction,C02,R1,material,3,no,,"Flags+obelisk present but dashboard intrudes; sunny golden, everything sharp; wide-angle",2026-11-23T20:24:44+08:00
+54,run-20261123-grokbot-01,B0009,reconstruction,C02,R1,artifact_control,3,no,,"Flags+obelisk present but dashboard intrudes; sunny golden, everything sharp; wide-angle",2026-11-23T20:24:44+08:00
+55,run-20261123-grokbot-01,B0013,reconstruction,C02,R1,composition,3,no,,"Flags+obelisk; dashboard visible; sun flare, warm grade, deep focus vs soft city in ref",2026-11-23T20:24:44+08:00
+56,run-20261123-grokbot-01,B0013,reconstruction,C02,R1,perspective,2,no,,"Flags+obelisk; dashboard visible; sun flare, warm grade, deep focus vs soft city in ref",2026-11-23T20:24:44+08:00
+57,run-20261123-grokbot-01,B0013,reconstruction,C02,R1,lighting,2,no,,"Flags+obelisk; dashboard visible; sun flare, warm grade, deep focus vs soft city in ref",2026-11-23T20:24:44+08:00
+58,run-20261123-grokbot-01,B0013,reconstruction,C02,R1,palette,2,no,,"Flags+obelisk; dashboard visible; sun flare, warm grade, deep focus vs soft city in ref",2026-11-23T20:24:44+08:00
+59,run-20261123-grokbot-01,B0013,reconstruction,C02,R1,material,3,no,,"Flags+obelisk; dashboard visible; sun flare, warm grade, deep focus vs soft city in ref",2026-11-23T20:24:44+08:00
+60,run-20261123-grokbot-01,B0013,reconstruction,C02,R1,artifact_control,3,no,,"Flags+obelisk; dashboard visible; sun flare, warm grade, deep focus vs soft city in ref",2026-11-23T20:24:44+08:00
+61,run-20261123-grokbot-01,B0015,reconstruction,C02,R1,composition,4,no,,"Layout close (flags, pods, obelisk centered); sunny warm, wide angle, deep focus, slightly CG",2026-11-23T20:24:44+08:00
+62,run-20261123-grokbot-01,B0015,reconstruction,C02,R1,perspective,2,no,,"Layout close (flags, pods, obelisk centered); sunny warm, wide angle, deep focus, slightly CG",2026-11-23T20:24:44+08:00
+63,run-20261123-grokbot-01,B0015,reconstruction,C02,R1,lighting,2,no,,"Layout close (flags, pods, obelisk centered); sunny warm, wide angle, deep focus, slightly CG",2026-11-23T20:24:44+08:00
+64,run-20261123-grokbot-01,B0015,reconstruction,C02,R1,palette,2,no,,"Layout close (flags, pods, obelisk centered); sunny warm, wide angle, deep focus, slightly CG",2026-11-23T20:24:44+08:00
+65,run-20261123-grokbot-01,B0015,reconstruction,C02,R1,material,3,no,,"Layout close (flags, pods, obelisk centered); sunny warm, wide angle, deep focus, slightly CG",2026-11-23T20:24:44+08:00
+66,run-20261123-grokbot-01,B0015,reconstruction,C02,R1,artifact_control,3,no,,"Layout close (flags, pods, obelisk centered); sunny warm, wide angle, deep focus, slightly CG",2026-11-23T20:24:44+08:00
+67,run-20261123-grokbot-01,B0016,reconstruction,C02,R1,composition,3,no,,"No flags; bright sunny warm sky; wide angle, no hood-sharp/city-soft separation",2026-11-23T20:24:44+08:00
+68,run-20261123-grokbot-01,B0016,reconstruction,C02,R1,perspective,2,no,,"No flags; bright sunny warm sky; wide angle, no hood-sharp/city-soft separation",2026-11-23T20:24:44+08:00
+69,run-20261123-grokbot-01,B0016,reconstruction,C02,R1,lighting,2,no,,"No flags; bright sunny warm sky; wide angle, no hood-sharp/city-soft separation",2026-11-23T20:24:44+08:00
+70,run-20261123-grokbot-01,B0016,reconstruction,C02,R1,palette,2,no,,"No flags; bright sunny warm sky; wide angle, no hood-sharp/city-soft separation",2026-11-23T20:24:44+08:00
+71,run-20261123-grokbot-01,B0016,reconstruction,C02,R1,material,3,no,,"No flags; bright sunny warm sky; wide angle, no hood-sharp/city-soft separation",2026-11-23T20:24:44+08:00
+72,run-20261123-grokbot-01,B0016,reconstruction,C02,R1,artifact_control,3,no,,"No flags; bright sunny warm sky; wide angle, no hood-sharp/city-soft separation",2026-11-23T20:24:44+08:00
+73,run-20261123-grokbot-01,B0001,reconstruction,C03,R1,composition,4,no,,"Flying wing over sea, glowing engines+exhaust, cliffs, foreground blur; aircraft larger and cliffs more prominent than ref",2026-11-23T20:24:44+08:00
+74,run-20261123-grokbot-01,B0001,reconstruction,C03,R1,perspective,4,no,,"Flying wing over sea, glowing engines+exhaust, cliffs, foreground blur; aircraft larger and cliffs more prominent than ref",2026-11-23T20:24:44+08:00
+75,run-20261123-grokbot-01,B0001,reconstruction,C03,R1,lighting,4,no,,"Flying wing over sea, glowing engines+exhaust, cliffs, foreground blur; aircraft larger and cliffs more prominent than ref",2026-11-23T20:24:44+08:00
+76,run-20261123-grokbot-01,B0001,reconstruction,C03,R1,palette,4,no,,"Flying wing over sea, glowing engines+exhaust, cliffs, foreground blur; aircraft larger and cliffs more prominent than ref",2026-11-23T20:24:44+08:00
+77,run-20261123-grokbot-01,B0001,reconstruction,C03,R1,material,4,no,,"Flying wing over sea, glowing engines+exhaust, cliffs, foreground blur; aircraft larger and cliffs more prominent than ref",2026-11-23T20:24:44+08:00
+78,run-20261123-grokbot-01,B0001,reconstruction,C03,R1,artifact_control,4,no,,"Flying wing over sea, glowing engines+exhaust, cliffs, foreground blur; aircraft larger and cliffs more prominent than ref",2026-11-23T20:24:44+08:00
+79,run-20261123-grokbot-01,B0008,reconstruction,C03,R1,composition,5,no,,"Closest to ref: aircraft scale/placement, exhaust trails, faint cliffs, hazy grey sea, corner blur",2026-11-23T20:24:44+08:00
+80,run-20261123-grokbot-01,B0008,reconstruction,C03,R1,perspective,4,no,,"Closest to ref: aircraft scale/placement, exhaust trails, faint cliffs, hazy grey sea, corner blur",2026-11-23T20:24:44+08:00
+81,run-20261123-grokbot-01,B0008,reconstruction,C03,R1,lighting,4,no,,"Closest to ref: aircraft scale/placement, exhaust trails, faint cliffs, hazy grey sea, corner blur",2026-11-23T20:24:44+08:00
+82,run-20261123-grokbot-01,B0008,reconstruction,C03,R1,palette,4,no,,"Closest to ref: aircraft scale/placement, exhaust trails, faint cliffs, hazy grey sea, corner blur",2026-11-23T20:24:44+08:00
+83,run-20261123-grokbot-01,B0008,reconstruction,C03,R1,material,4,no,,"Closest to ref: aircraft scale/placement, exhaust trails, faint cliffs, hazy grey sea, corner blur",2026-11-23T20:24:44+08:00
+84,run-20261123-grokbot-01,B0008,reconstruction,C03,R1,artifact_control,4,no,,"Closest to ref: aircraft scale/placement, exhaust trails, faint cliffs, hazy grey sea, corner blur",2026-11-23T20:24:44+08:00
+85,run-20261123-grokbot-01,B0010,reconstruction,C03,R1,composition,4,no,,Modern B-2-style airframe instead of ref design; no exhaust trail toward camera; mood/sea/haze good,2026-11-23T20:24:44+08:00
+86,run-20261123-grokbot-01,B0010,reconstruction,C03,R1,perspective,4,no,,Modern B-2-style airframe instead of ref design; no exhaust trail toward camera; mood/sea/haze good,2026-11-23T20:24:44+08:00
+87,run-20261123-grokbot-01,B0010,reconstruction,C03,R1,lighting,3,no,,Modern B-2-style airframe instead of ref design; no exhaust trail toward camera; mood/sea/haze good,2026-11-23T20:24:44+08:00
+88,run-20261123-grokbot-01,B0010,reconstruction,C03,R1,palette,4,no,,Modern B-2-style airframe instead of ref design; no exhaust trail toward camera; mood/sea/haze good,2026-11-23T20:24:44+08:00
+89,run-20261123-grokbot-01,B0010,reconstruction,C03,R1,material,3,no,,Modern B-2-style airframe instead of ref design; no exhaust trail toward camera; mood/sea/haze good,2026-11-23T20:24:44+08:00
+90,run-20261123-grokbot-01,B0010,reconstruction,C03,R1,artifact_control,4,no,,Modern B-2-style airframe instead of ref design; no exhaust trail toward camera; mood/sea/haze good,2026-11-23T20:24:44+08:00
+91,run-20261123-grokbot-01,B0012,reconstruction,C03,R1,composition,4,no,,"B-2-style airframe, top-mounted glow; sea, haze, cliffs and corner blur match",2026-11-23T20:24:44+08:00
+92,run-20261123-grokbot-01,B0012,reconstruction,C03,R1,perspective,4,no,,"B-2-style airframe, top-mounted glow; sea, haze, cliffs and corner blur match",2026-11-23T20:24:44+08:00
+93,run-20261123-grokbot-01,B0012,reconstruction,C03,R1,lighting,3,no,,"B-2-style airframe, top-mounted glow; sea, haze, cliffs and corner blur match",2026-11-23T20:24:44+08:00
+94,run-20261123-grokbot-01,B0012,reconstruction,C03,R1,palette,4,no,,"B-2-style airframe, top-mounted glow; sea, haze, cliffs and corner blur match",2026-11-23T20:24:44+08:00
+95,run-20261123-grokbot-01,B0012,reconstruction,C03,R1,material,3,no,,"B-2-style airframe, top-mounted glow; sea, haze, cliffs and corner blur match",2026-11-23T20:24:44+08:00
+96,run-20261123-grokbot-01,B0012,reconstruction,C03,R1,artifact_control,4,no,,"B-2-style airframe, top-mounted glow; sea, haze, cliffs and corner blur match",2026-11-23T20:24:44+08:00
+97,run-20261123-grokbot-01,B0017,reconstruction,C03,R1,composition,4,no,,"Good match: wing shape, three glowing engines w/ trails, hazy cliffs, cockpit-frame blur",2026-11-23T20:24:44+08:00
+98,run-20261123-grokbot-01,B0017,reconstruction,C03,R1,perspective,4,no,,"Good match: wing shape, three glowing engines w/ trails, hazy cliffs, cockpit-frame blur",2026-11-23T20:24:44+08:00
+99,run-20261123-grokbot-01,B0017,reconstruction,C03,R1,lighting,4,no,,"Good match: wing shape, three glowing engines w/ trails, hazy cliffs, cockpit-frame blur",2026-11-23T20:24:44+08:00
+100,run-20261123-grokbot-01,B0017,reconstruction,C03,R1,palette,4,no,,"Good match: wing shape, three glowing engines w/ trails, hazy cliffs, cockpit-frame blur",2026-11-23T20:24:44+08:00
+101,run-20261123-grokbot-01,B0017,reconstruction,C03,R1,material,4,no,,"Good match: wing shape, three glowing engines w/ trails, hazy cliffs, cockpit-frame blur",2026-11-23T20:24:44+08:00
+102,run-20261123-grokbot-01,B0017,reconstruction,C03,R1,artifact_control,4,no,,"Good match: wing shape, three glowing engines w/ trails, hazy cliffs, cockpit-frame blur",2026-11-23T20:24:44+08:00
