@@ -31,3 +31,10 @@ PR #5 (unmerged) records a read-only website observation: GPT Image 2.6 Unlimite
 ## 5. Entries appended later
 
 (append below; never rewrite earlier entries)
+
+### 2026-11-23 ~18:30 Asia/Taipei — registry, job slots, gates
+
+- Registry batch `research/creator-artwork-registry/batch-20261123-grokbot/`: 79/79 historical rows + 3 lower-confidence + new `CR-TUPACABRA`; 95 sources; 9 named artworks; 12 MISSING_SOURCE records.
+- 30 job slots emitted (`job_slots.json`, `jobs.md`); all `prompt=null`, 0 ready.
+- Gates recorded separately in `GATES.json`: G-R `PARTIAL_RESEARCH_SCOPE`; G-B `BLOCKED_SOURCE`.
+- P2 replacement subjects proposed, **not locked**.

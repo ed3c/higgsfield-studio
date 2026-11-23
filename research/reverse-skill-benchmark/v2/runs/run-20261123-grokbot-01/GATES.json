@@ -1,0 +1,29 @@
+{
+  "run_id": "run-20261123-grokbot-01",
+  "as_of": "2026-11-23T18:30+08:00",
+  "semantics": "PASS only on real verification. Research Completeness (G-R) and Benchmark Completion (G-B) are separate tracks and never pooled.",
+  "research_completeness_G_R": {
+    "state": "PARTIAL_RESEARCH_SCOPE",
+    "enumerate_79": "IMPLEMENTED (79/79 rows, not re-verified)",
+    "named_obligations_linked": "IMPLEMENTED (13/13 linked or newly recorded)",
+    "missing_source_records": 12,
+    "domain_manager_outputs": "NOT_RUN",
+    "evidence": "research/creator-artwork-registry/batch-20261123-grokbot/coverage_gaps.md"
+  },
+  "benchmark_completion_G_B": {
+    "state": "BLOCKED_SOURCE",
+    "G0_rights_source": "BLOCKED_SOURCE (MS-004: no C01-C03 stills, hashes or rights scope)",
+    "G1_web_entitlement": "NOT_RUN in this run. Prior read-only observation in unmerged Draft PR #5: GPT Image 2.6 Unlimited Active, Starts 2026-11-20, Expires 2026-11-27; must be rechecked live at each submit.",
+    "G2_skill_reproducibility": "PARTIAL: SHAs pinned (skill_pins.json); scripts not re-audited this run; 0/9 P1 prompts locked",
+    "G3_P1_generation": "NOT_RUN (0/18)",
+    "G4_P1_blind_eval": "NOT_RUN",
+    "G5_P2_generation_eval": "NOT_RUN (0/12)",
+    "G6_final_report": "NOT_RUN",
+    "actual_images": 0,
+    "additional_credits_spent": 0,
+    "P1_winner": null,
+    "P2_winner_among_compared": null
+  },
+  "creative_production_G_P": "NOT_RUN",
+  "validator": "validate_spec.py SPEC LINT PASS (schema coherence only)"
+}
