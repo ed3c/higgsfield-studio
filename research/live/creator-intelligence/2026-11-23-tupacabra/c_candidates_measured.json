@@ -1,0 +1,236 @@
+{
+ "C01a": {
+  "shot": "S30",
+  "shot_in_s": 39.125,
+  "shot_out_s": 40.167,
+  "frame_time_s": 39.646,
+  "source_frame_sha256": "8abc24e07d1b308800ec4c207bcb4a1b7aa5f58932e7875a017930069aff302c",
+  "crop": "center crop 3822x2150 from 3840x2150, Lanczos to 3840x2160",
+  "sha256": "cd0b226d5552aa458f0cd3bf1c8a36b174cd439e42fd7d0d3b700adf23654991",
+  "measured": {
+   "mean_luma": 74.2,
+   "luma_stddev": 63.2,
+   "mean_saturation": 56.1,
+   "mean_rgb": [
+    77,
+    74,
+    71
+   ],
+   "dominant_colors": [
+    "#a9a7a5",
+    "#0b0f11",
+    "#28241e",
+    "#181713",
+    "#5c524b"
+   ]
+  }
+ },
+ "C01b": {
+  "shot": "S28",
+  "shot_in_s": 33.583,
+  "shot_out_s": 34.375,
+  "frame_time_s": 33.979,
+  "source_frame_sha256": "ab8b388847662dfefccd6b38ff825bd792b77c92866cb4991121f68c4c00ca19",
+  "crop": "center crop 3822x2150 from 3840x2150, Lanczos to 3840x2160",
+  "sha256": "1e61d110fa9c9d430793b34f989f77aa3d69092ee3eab262879a9cdbc9b13d98",
+  "measured": {
+   "mean_luma": 72.9,
+   "luma_stddev": 76.3,
+   "mean_saturation": 74.6,
+   "mean_rgb": [
+    74,
+    73,
+    72
+   ],
+   "dominant_colors": [
+    "#c0c1c4",
+    "#10120e",
+    "#060908",
+    "#181611",
+    "#4b4242"
+   ]
+  }
+ },
+ "C01c": {
+  "shot": "S18",
+  "shot_in_s": 23.0,
+  "shot_out_s": 24.042,
+  "frame_time_s": 23.521,
+  "source_frame_sha256": "ec68f760a51a2b7a8727558e1fb3b136c87187cfe107262c195981087a05801f",
+  "crop": "center crop 3822x2150 from 3840x2150, Lanczos to 3840x2160",
+  "sha256": "150baa31c88484ef8b20d1145bd77223f9ed74ff5425a71bb4d7a566f3c89dfd",
+  "measured": {
+   "mean_luma": 66.3,
+   "luma_stddev": 74.5,
+   "mean_saturation": 91.7,
+   "mean_rgb": [
+    58,
+    69,
+    71
+   ],
+   "dominant_colors": [
+    "#111d1f",
+    "#080e0e",
+    "#243437",
+    "#e5e7e4",
+    "#6a7c81"
+   ]
+  }
+ },
+ "C02a": {
+  "shot": "S23",
+  "shot_in_s": 28.083,
+  "shot_out_s": 29.0,
+  "frame_time_s": 28.542,
+  "source_frame_sha256": "3fbbf0e5071d3fc958e1d2d21096b84e4e148719a3e580f05279a2cb99e8f82d",
+  "crop": "center crop 3822x2150 from 3840x2150, Lanczos to 3840x2160",
+  "sha256": "9c76ab09b4fd1f675982114a41a8233421bcc606e0468ee02eaab4987e3071a8",
+  "measured": {
+   "mean_luma": 43.9,
+   "luma_stddev": 41.7,
+   "mean_saturation": 49.6,
+   "mean_rgb": [
+    41,
+    46,
+    44
+   ],
+   "dominant_colors": [
+    "#191c1a",
+    "#111514",
+    "#222623",
+    "#333935",
+    "#727b7c"
+   ]
+  }
+ },
+ "C02b": {
+  "shot": "S16",
+  "shot_in_s": 20.125,
+  "shot_out_s": 22.083,
+  "frame_time_s": 21.104,
+  "source_frame_sha256": "e66b8908b89c261e342fad227bad32fcd4e32813dd2d2928e9f9b8323e866c8f",
+  "crop": "center crop 3822x2150 from 3840x2150, Lanczos to 3840x2160",
+  "sha256": "28de12007e525beaea34c595cf0589c70a063ec7c92fd7e56038c792889d5e41",
+  "measured": {
+   "mean_luma": 69.5,
+   "luma_stddev": 45.3,
+   "mean_saturation": 57.8,
+   "mean_rgb": [
+    67,
+    71,
+    68
+   ],
+   "dominant_colors": [
+    "#4b5150",
+    "#141b1b",
+    "#807f76",
+    "#32342e",
+    "#232b2b"
+   ]
+  }
+ },
+ "C02c": {
+  "shot": "S03",
+  "shot_in_s": 3.042,
+  "shot_out_s": 4.0,
+  "frame_time_s": 3.521,
+  "source_frame_sha256": "b26c2a6eb91ee71d2d90c1b800baff5b2f690ee7295ad06ee67dbf2292439063",
+  "crop": "center crop 3822x2150 from 3840x2150, Lanczos to 3840x2160",
+  "sha256": "d5606fbf98c99f33c2414f476a15ccb7f5f4192d4e22f16efd0e3131d182703c",
+  "measured": {
+   "mean_luma": 54.7,
+   "luma_stddev": 50.4,
+   "mean_saturation": 76.5,
+   "mean_rgb": [
+    49,
+    58,
+    52
+   ],
+   "dominant_colors": [
+    "#2a3731",
+    "#111915",
+    "#192421",
+    "#697065",
+    "#1f2924"
+   ]
+  }
+ },
+ "C03a": {
+  "shot": "S06",
+  "shot_in_s": 5.708,
+  "shot_out_s": 9.167,
+  "frame_time_s": 7.438,
+  "source_frame_sha256": "77012d910e9d90bf5ad9a1ab005cffcf6efb5a428c29414aa0812cb1f70c4c4c",
+  "crop": "center crop 3822x2150 from 3840x2150, Lanczos to 3840x2160",
+  "sha256": "2274ae289d2ffbbede0bc93f801f72bf558418bd6bc6e2c8d6f7395edc8fffa7",
+  "measured": {
+   "mean_luma": 114.6,
+   "luma_stddev": 56.3,
+   "mean_saturation": 42.2,
+   "mean_rgb": [
+    106,
+    118,
+    117
+   ],
+   "dominant_colors": [
+    "#415556",
+    "#25312e",
+    "#a8b0ae",
+    "#919d9d",
+    "#b4bab5"
+   ]
+  }
+ },
+ "C03b": {
+  "shot": "S48",
+  "shot_in_s": 60.958,
+  "shot_out_s": 61.958,
+  "frame_time_s": 61.458,
+  "source_frame_sha256": "0482578b941156a515597e47c700e045a3caae12e53acb49f26ea7c412a760e8",
+  "crop": "center crop 3822x2150 from 3840x2150, Lanczos to 3840x2160",
+  "sha256": "958dea440a4974a5731e06fa8e6515f7292bfba83751eeb20de0cc49d0cd5eaf",
+  "measured": {
+   "mean_luma": 82.5,
+   "luma_stddev": 51.7,
+   "mean_saturation": 51.5,
+   "mean_rgb": [
+    76,
+    85,
+    88
+   ],
+   "dominant_colors": [
+    "#485055",
+    "#262b2b",
+    "#8d9ca5",
+    "#3a3735",
+    "#2c373c"
+   ]
+  }
+ },
+ "C03c": {
+  "shot": "S11",
+  "shot_in_s": 13.292,
+  "shot_out_s": 14.292,
+  "frame_time_s": 13.792,
+  "source_frame_sha256": "a291b0731d79244d8e0c2af6e7bfd358ba0f8026e3b307d00056c1b61960c6d4",
+  "crop": "center crop 3822x2150 from 3840x2150, Lanczos to 3840x2160",
+  "sha256": "e4c28ae915a3cc42c8cfb2a8734956e2a51f7458de326ef3e23d58755bac0236",
+  "measured": {
+   "mean_luma": 62.1,
+   "luma_stddev": 68.7,
+   "mean_saturation": 86.3,
+   "mean_rgb": [
+    55,
+    65,
+    66
+   ],
+   "dominant_colors": [
+    "#212e30",
+    "#959fa5",
+    "#0a1410",
+    "#121d1c",
+    "#182120"
+   ]
+  }
+ }
+}

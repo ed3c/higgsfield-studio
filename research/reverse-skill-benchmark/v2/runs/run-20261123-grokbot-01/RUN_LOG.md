@@ -45,3 +45,8 @@ PR #5 (unmerged) records a read-only website observation: GPT Image 2.6 Unlimite
 - D-02: model fixed per spec: GPT Image 2.6 *Sunburst*, 16:9, 1K, website Unlimited.
 - D-03: live check at 18:07 (orchestrator, private evidence): GPT Image 2.6 Unlimited 0 credits; Seedream 5.0 Pro Unlimited (not used); **Nano Banana Pro 2 credits → fallback unavailable**.
 - D-04: C01–C03 not locked; awaiting owner pick. Full record: `DECISIONS.json`.
+
+### 2026-11-23 ~18:40 Asia/Taipei — sources and C-candidates (no lock)
+
+- MS-005/007 closed; trailer obtained from X (720p) and YouTube (4K), private copies hashed (`research/live/creator-intelligence/2026-11-23-tupacabra/SOURCES.md`).
+- 55 shots scene-detected; 9 candidates (3 per case) analysed in `C_CANDIDATES.md`; recommendation C01a S30 / C02a S16 / C03a S06. **Not locked**, no prompts generated, job slots unchanged (`prompt=null`).
