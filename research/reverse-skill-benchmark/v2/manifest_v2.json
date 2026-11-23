@@ -1,0 +1,69 @@
+{
+  "schema_version": "2.0",
+  "experiment_id": "tupacabra-image-reverse-v2",
+  "created_at": "2026-11-23",
+  "timezone": "Asia/Taipei",
+  "run_id": null,
+  "state": "BLOCKED_ENTITLEMENT_RECHECK",
+  "execution_surface": "higgsfield.ai website ordinary generation UI",
+  "not_allowed_surfaces": ["MCP", "CLI", "API", "Canvas", "Marketing Studio", "Supercomputer", "Presets"],
+  "cost_policy": {
+    "max_additional_higgsfield_credits": 0,
+    "external_paid_apis_allowed": false,
+    "must_show_unlimited_toggle": true,
+    "must_show_zero_credits_at_submit": true,
+    "post_generation_balance_reconciliation": true
+  },
+  "entitlement": {
+    "status": "UNVERIFIED_ON_2026-11-23",
+    "evidence": "User-provided Subscription screenshot in conversation",
+    "screenshot_label": "2026-11-20 (meaning of date column not confirmed)",
+    "effective_from": null,
+    "expires_at": null,
+    "verified_at": null,
+    "private_evidence_hash": null,
+    "mcp_free_trial_unlim_available": false,
+    "mcp_not_a_proxy_for_web_entitlement": true,
+    "ui_free_cost_confirmation": false
+  },
+  "primary_model": {
+    "display_name": "GPT Image 2.6 Unlimited",
+    "model_id_or_ui_variant": null,
+    "aspect_ratio": "16:9",
+    "resolution": "1K",
+    "quality": "medium_or_supported_zero_credit_setting",
+    "locked": false
+  },
+  "fallback_models_if_website_zero_credit_verified": ["Nano Banana Pro Unlimited", "Nano Banana Unlimited", "FLUX.2 Pro Unlimited"],
+  "source_creator_url": "https://x.com/tupacabra",
+  "source_discovery": {
+    "skill_repo": "https://github.com/ScrapeCreators/social-media-research-skills",
+    "api_key_available": false,
+    "data_fetch_status": "NOT_RUN",
+    "not_required_if_preselected_rights_scoped_references_exist": true
+  },
+  "skills": [
+    {"id": "unimage", "repo": "https://github.com/huanmu-team/unimage", "commit": null, "audited": false},
+    {"id": "caph", "repo": "https://github.com/Caph-dev/image-style-prompt-reverse-engineer", "commit": null, "audited": false},
+    {"id": "niobium617", "repo": "https://github.com/niobium617/prompt-reverse-engineer-skill", "commit": null, "audited": false}
+  ],
+  "reference_cases": [
+    {"id": "C01", "class": "portrait", "url": null, "sha256": null, "analysis_rights": "UNVERIFIED", "external_provider_transfer_allowed": false, "style_transfer_new_subject": null},
+    {"id": "C02", "class": "environment", "url": null, "sha256": null, "analysis_rights": "UNVERIFIED", "external_provider_transfer_allowed": false, "style_transfer_new_subject": null},
+    {"id": "C03", "class": "prop_action", "url": null, "sha256": null, "analysis_rights": "UNVERIFIED", "external_provider_transfer_allowed": false, "style_transfer_new_subject": null}
+  ],
+  "phases": [
+    {"id": "P1", "task": "reconstruction", "cases": 3, "candidates": ["unimage", "caph", "niobium617"], "replicates": 2, "expected_images": 18, "completed_images": 0},
+    {"id": "P2", "task": "style_transfer", "cases": 3, "candidates": ["caph", "best_eligible_non_caph_from_locked_P1"], "replicates": 2, "expected_images": 12, "completed_images": 0}
+  ],
+  "expected_core_images": 30,
+  "reviewers_per_image": 2,
+  "scoring": {
+    "min": 0, "max": 5,
+    "P1": {"composition": 0.25, "perspective": 0.20, "lighting": 0.15, "palette": 0.10, "material": 0.15, "artifact_control": 0.15},
+    "P2": {"style_dna": 0.25, "new_subject_integrity": 0.25, "composition": 0.15, "lighting": 0.15, "palette": 0.10, "artifact_control": 0.10}
+  },
+  "output_records": {"generations_csv": "generations_template.csv", "ratings_csv": "ratings_template.csv", "prompts_csv": "prompts_template.csv"},
+  "results": {"P1_winner": null, "P2_winner_among_compared": null, "quality_claim": "NOT_RUN", "actual_jobs": 0, "actual_images": 0, "additional_credits_spent": 0},
+  "base_repo_draft_pr": "https://github.com/ed3c/higgsfield-studio/pull/4"
+}

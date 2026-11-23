@@ -71,3 +71,10 @@ git lfs track "projects/*/masters/*.mp4" "projects/*/stills/*.png"
 `skills/vendor/higgsfield-ai-skills/` 是 Higgsfield AI 的官方技能庫快照，MIT，Copyright (c) 2026 Higgsfield AI，commit `27000402070db19d958789d05b3b52b6f4718d7c`。許可全文在該目錄的 `LICENSE`。
 
 [OSideMedia/higgsfield-ai-prompt-skill](https://github.com/OSideMedia/higgsfield-ai-prompt-skill) 只當參考。上游寫明 2026 年 11 月起不再維護。本庫沒有收錄它的提示詞。
+
+## Creator Image-Reverse Benchmark v2.0
+
+- [執行規格與驗證腳本](research/reverse-skill-benchmark/v2/README.md)：研究 @tupacabra 視覺語法，使用 3 參考案例、3 逆向 Skills；P1 18 張忠實重建，P2 12 張風格遷移。
+- [執行入口 Skill](skills/image-reverse-benchmark/SKILL.md)；[ScrapeCreators 情報入口](skills/social-creator-intelligence/SKILL.md)。
+- **目前：BLOCKED_ENTITLEMENT_RECHECK / NOT_RUN。** 2026-11-20 的網站 Subscription 截圖不代表 2026-11-23 仍有效；網站 UI 必須再確認 Unlimited ON 及 0 Credits 才能生成。API/MCP 免費資格不等於網站權益。
+- v1 原始紀錄保留在 [research/reverse-skill-benchmark/](research/reverse-skill-benchmark/)；不覆寫、不偽造測試成績，圖片素材不進 Git。

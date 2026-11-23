@@ -15,7 +15,7 @@
 
 送出任何生成之前先跑 `python3 budget/track.py`。任一桶或當月合計達到分配額的 80% 就停用貴模型。
 
-圖片逆向比較目前因「Higgsfield API 無可用免費圖片額度」標記 NOT_RUN；見 [實驗記錄](../research/reverse-skill-benchmark/README.md)。不可用 Ultra 的付費 Credits 假冒免費。
+圖片逆向 Benchmark v2 改用 **Higgsfield 網站 UI** 的零 Credits Unlimited 權益作為唯一可執行入口；網站權益仍需重新核對（`BLOCKED_ENTITLEMENT_RECHECK`）。API/MCP 不具同一免費資格。請以 [v2 規格](../research/reverse-skill-benchmark/v2/README.md) 為準；[v1 記錄](../research/reverse-skill-benchmark/README.md) 保留作歷史證據。
 
 ## 官方技能（vendored）
 
