@@ -169,3 +169,21 @@ Facts below were reported by the orchestrating Grok Bot agent, which ran the gen
   - Closed: the CG crispness gap (63–87% of the centre-sharpness gap closed), the C02 sunny/warm cast, and the exposure of C01 and C03.
   - Remaining: highlights compressed in every case (p99 about 162 vs 187–195, which is why C01 still reads darker), C01 over-desaturated, C02 depth-of-field structure and camera distance unchanged, C03 blacks not crushed. Softness overshot.
 - P1b remains an **addendum** to the spec. It changes no P1 result, score or gate. **No regeneration.**
+
+### 2026-11-23 19:54–20:20 Asia/Taipei — NEW PHASE `STYLE_DNA_EXTRACTION` (separate from the benchmark score)
+
+- **Trigger.** Neon t33u, 19:53, verbatim: 「逆向到提示詞生成圖片風格可以自由發揮為止，只學習風格不寫死對象」.
+- **Scope.** This phase does not feed into P1, P1b or P2 scores, gates or Skill rankings. Everything is new files under `style_dna/`. Nothing was overwritten.
+- **Method source.**
+  - Neon's Notion page "Higgsfield 電影風格逆向｜100 個開源 Prompt / Skills 與 14 部得獎作品（2026-11-23）" (`4213cec0-38da-81cc-beb4-d00869165eab`) was found and read via the Notion connector. It was **not edited**.
+  - Adopted from it: the Style vs Shot prompt split with independent acceptance, pixel-only QC (Oracle Validity), and its 6 metrics: Style, Narrative, Camera, Temporal, Creative Distance, Oracle.
+- **New evidence.** Look metrics over all 55 trailer shot-midpoint frames (`style_dna/trailer_55_look_stats.json`). Trailer p99 median is 224, so the highlights of the source clip routinely. This confirms that P1b's highlight compression was wrong.
+- **Deliverables:**
+  - `TUPACABRA_STYLE_DNA.md`
+  - `STYLE_PROMPT_v1.txt` and `style_block_v1.txt`. The block is 2,448 characters, with zero subject, place or ref-motif terms (word-boundary check).
+  - `style_targets_v1.json` and `check_style_v1.py`.
+  - `validation_v1/ACCEPTANCE.md`: 6 S1 prompts plus 6 optional S0 shot-only controls.
+- **Metric gate calibration.**
+  - Refs 6/6 pass; P1 0/17; P1b 0/9; trailer 28/55.
+  - The gate rejects every known failure and accepts the refs.
+- **NOT generated.** No credits spent.
