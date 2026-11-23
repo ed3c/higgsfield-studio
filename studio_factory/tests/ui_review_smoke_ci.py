@@ -28,14 +28,15 @@ def exercise(outdir:Path):
         (assets/'demo.mp4').write_bytes(b'video-fixture-not-for-decoding')
         (assets/'test-review.html').write_text('<h1>Test fixture</h1>',encoding='utf-8')
         (assets/'README.md').write_text('## Hello World\nSource markdown',encoding='utf-8')
-        project=folder/'project'/'projects'/'j4-async-succession'/'archive'/'v2_6'
-        project.mkdir(parents=True)
-        shots={'shots':[{'id':f'S{i:02}','start_ms':(i-1)*3600,'end_ms':i*3600,
-            'duration_ms':3600,'title_zh':f'Shot {i}','title_en':'Example',
-            'act':1,'art_reference':{'artist':'Method','work':'Original'},
-            'image_prompt':'Image original','motion_prompt':'Camera locked',
-            'sound_prompt':'Original room tone','props':[],'characters':[]} for i in range(1,26)]}
-        (project/'j4_shots.json').write_text(json.dumps(shots),encoding='utf-8')
+        manifest = assets.parent / "MANIFEST" / "inventory.json"
+        manifest.parent.mkdir()
+        entries = [
+            {"source_relative": path.name, "size_bytes": path.stat().st_size,
+             "sha256": hashlib.sha256(path.read_bytes()).hexdigest()}
+            for path in sorted(assets.iterdir())
+        ]
+        manifest.write_text(json.dumps({"files_count": len(entries), "files": entries}),
+                            encoding="utf-8")
         # One fully hash-bound synthetic 1-pixel image fixture. This is NOT
         # real generated J4 art, not a provider run, and not an artistic PASS.
         def png_chunk(tag,body):
