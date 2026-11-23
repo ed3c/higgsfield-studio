@@ -38,3 +38,10 @@ PR #5 (unmerged) records a read-only website observation: GPT Image 2.6 Unlimite
 - 30 job slots emitted (`job_slots.json`, `jobs.md`); all `prompt=null`, 0 ready.
 - Gates recorded separately in `GATES.json`: G-R `PARTIAL_RESEARCH_SCOPE`; G-B `BLOCKED_SOURCE`.
 - P2 replacement subjects proposed, **not locked**.
+
+### 2026-11-23 ~18:20 Asia/Taipei — owner decisions (t28u)
+
+- D-01: P2 subjects **APPROVED and locked before P1** → `p2_subjects_APPROVED.json` (PROPOSED file kept unchanged). Closes MS-008.
+- D-02: model fixed per spec: GPT Image 2.6 *Sunburst*, 16:9, 1K, website Unlimited.
+- D-03: live check at 18:07 (orchestrator, private evidence): GPT Image 2.6 Unlimited 0 credits; Seedream 5.0 Pro Unlimited (not used); **Nano Banana Pro 2 credits → fallback unavailable**.
+- D-04: C01–C03 not locked; awaiting owner pick. Full record: `DECISIONS.json`.
