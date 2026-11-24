@@ -94,7 +94,7 @@ def _criteria(repo: Path, manifest: dict, stage: str):
     spec = json.loads((repo / SPEC).read_text(encoding="utf-8"))
     artwork = {item: "must_exist" for item in spec["artwork_checks"]}
     fusion = {item: "must_exist" for item in spec["fusion_checks"]}
-    return artwork if stage == "artwork" else shot if stage == "shot" else (shot | fusion)
+    return artwork if stage == "artwork" else shot if stage == "shot" else (artwork | shot | fusion)
 
 
 def quote_allows_zero_credits(quote: dict, *, model_id: str, surface: str,
