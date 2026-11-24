@@ -221,13 +221,25 @@ def propose_repair(plan: dict, stage: str, root_cause_id: str, evidence_ref: str
     return result
 
 
-def approve_golden(plan: dict, owner_id: str) -> dict:
+def request_static_candidate(plan: dict, owner_id: str, evidence_ref: str) -> dict:
+    """Record an owner's *request* for formal review; never grant Golden or G2 PASS.
+
+    Existing G2 and S13 eval owners alone decide publication/reuse after real
+    independent review, rights and exact evidence. IDs are not authentication.
+    """
     require(all(plan["branches"][stage]["state"] == "QC_PASS" for stage in STAGES),
-            "cannot publish without three independent QC PASS branches")
-    require(isinstance(owner_id, str) and owner_id.strip(), "owner approval missing")
+            "cannot request release without three human QC PASS branches")
+    require(isinstance(owner_id, str) and owner_id.strip() and
+            isinstance(evidence_ref, str) and evidence_ref.strip(),
+            "owner/evidence attestation reference missing")
     result = deepcopy(plan)
-    result["owner_approval"] = {"owner_id": owner_id,
-                                 "fusion_media_sha256": result["branches"]["fusion"]["result"]["media_sha256"]}
-    result["golden"] = True
-    result["recipe_reusable"] = False  # A second independent verified success is required.
+    result["owner_approval"] = {
+        "claimed_owner_id": owner_id,
+        "evidence_ref": evidence_ref,
+        "plan_sha256": plan["plan_sha256"],
+        "fusion_media_sha256": result["branches"]["fusion"]["result"]["media_sha256"],
+        "status": "PENDING_FORMAL_G2",
+    }
+    result["golden"] = False
+    result["recipe_reusable"] = False
     return result
