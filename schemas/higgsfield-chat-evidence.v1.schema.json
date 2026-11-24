@@ -28,7 +28,10 @@
         "model",
         "cost",
         "unlimited_applied",
-        "quote_ref"
+        "quote_ref",
+        "aspect_ratio",
+        "use_unlim",
+        "quoted_prompt_sha256"
       ],
       "properties": {
         "model": {
@@ -57,6 +60,16 @@
         "quote_ref": {
           "type": "string",
           "minLength": 1
+        },
+        "aspect_ratio": {
+          "const": "9:16"
+        },
+        "use_unlim": {
+          "const": true
+        },
+        "quoted_prompt_sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
         }
       }
     },
