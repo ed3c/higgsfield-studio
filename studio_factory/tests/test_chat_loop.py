@@ -33,6 +33,7 @@ class ChatLoopTests(unittest.TestCase):
                       "aspect_ratio": "9:16", "use_unlim": True,
                       "quoted_prompt_sha256": item["prompt_sha256"]},
             "status": "completed", "job_id": "synthetic-job-" + stage,
+            "submitted_quote_ref": "quote:" + stage,
             "sent_prompt": item["prompt"], "aspect_ratio": "9:16",
             "model": "gpt_image_2_6", "charged_credits": cost,
             "media_path": stage + ".png",
@@ -149,6 +150,10 @@ class ChatLoopTests(unittest.TestCase):
         receipt=self.receipt("artwork")
         receipt["quote"]["quoted_prompt_sha256"]="0"*64
         with self.assertRaisesRegex(ValueError,"zero-credit"):
+            chat_loop.record_image(REPO,self.plan,"artwork",receipt,self.assets)
+        receipt=self.receipt("artwork")
+        receipt["submitted_quote_ref"]="quote:other"
+        with self.assertRaisesRegex(ValueError,"does not match approved quote"):
             chat_loop.record_image(REPO,self.plan,"artwork",receipt,self.assets)
         plan=chat_loop.record_image(REPO,self.plan,"artwork",self.receipt("artwork"),self.assets)
         # Reusing the exact output bytes as SHOT does not count as a second generation.
