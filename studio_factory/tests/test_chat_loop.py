@@ -29,7 +29,9 @@ class ChatLoopTests(unittest.TestCase):
         return {
             "surface": "higgsfield_chat",
             "quote": {"model": "gpt_image_2_6", "cost": {"credits": cost},
-                      "unlimited_applied": quote, "quote_ref": "quote:" + stage},
+                      "unlimited_applied": quote, "quote_ref": "quote:" + stage,
+                      "aspect_ratio": "9:16", "use_unlim": True,
+                      "quoted_prompt_sha256": item["prompt_sha256"]},
             "status": "completed", "job_id": "synthetic-job-" + stage,
             "sent_prompt": item["prompt"], "aspect_ratio": "9:16",
             "model": "gpt_image_2_6", "charged_credits": cost,
@@ -130,14 +132,31 @@ class ChatLoopTests(unittest.TestCase):
             chat_loop.propose_repair(repaired,"shot","beach-piano","review-evidence-02")
 
     def test_q15_fault_injection_preserves_frozen_artwork(self):
-        baseline=self.plan["branches"]["artwork"]["prompt_sha256"]
-        dry=chat_loop.dry_run_shot_change(self.plan,self.plan["branches"]["shot"]["prompt"]+"\nlocalized fix")
+        with self.assertRaisesRegex(ValueError,"artwork not frozen"):
+            chat_loop.dry_run_shot_change(self.plan,self.plan["branches"]["shot"]["prompt"]+" change")
+        plan=chat_loop.record_image(REPO,self.plan,"artwork",self.receipt("artwork"),self.assets)
+        plan=chat_loop.evaluate_human_qc(REPO,plan,"artwork",self.humans(plan,"artwork"),"producer")
+        baseline=plan["branches"]["artwork"]["prompt_sha256"]
+        dry=chat_loop.dry_run_shot_change(plan,plan["branches"]["shot"]["prompt"]+" change")
         self.assertEqual(dry["invalidated"],["shot","fusion"])
         self.assertEqual(dry["reused"],["artwork"])
-        self.assertEqual(self.plan["branches"]["artwork"]["prompt_sha256"],baseline)
+        self.assertEqual(plan["branches"]["artwork"]["prompt_sha256"],baseline)
         self.assertEqual(dry["provider_calls"],0)
-        noop=chat_loop.dry_run_shot_change(self.plan,self.plan["branches"]["shot"]["prompt"])
+        noop=chat_loop.dry_run_shot_change(plan,plan["branches"]["shot"]["prompt"])
         self.assertEqual(noop["invalidated"],[])
+
+    def test_quote_must_bind_prompt_and_output_cannot_reuse_other_stage(self):
+        receipt=self.receipt("artwork")
+        receipt["quote"]["quoted_prompt_sha256"]="0"*64
+        with self.assertRaisesRegex(ValueError,"zero-credit"):
+            chat_loop.record_image(REPO,self.plan,"artwork",receipt,self.assets)
+        plan=chat_loop.record_image(REPO,self.plan,"artwork",self.receipt("artwork"),self.assets)
+        # Reusing the exact output bytes as SHOT does not count as a second generation.
+        shot=self.receipt("shot")
+        (self.assets/"shot.png").write_bytes((self.assets/"artwork.png").read_bytes())
+        shot["media_sha256"]=sha256((self.assets/"shot.png").read_bytes()).hexdigest()
+        with self.assertRaisesRegex(ValueError,"separately evidenced"):
+            chat_loop.record_image(REPO,plan,"shot",shot,self.assets)
 
 
 if __name__=="__main__":
