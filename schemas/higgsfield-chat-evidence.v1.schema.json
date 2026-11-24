@@ -15,7 +15,8 @@
     "model",
     "charged_credits",
     "media_path",
-    "media_sha256"
+    "media_sha256",
+    "submitted_quote_ref"
   ],
   "properties": {
     "surface": {
@@ -102,6 +103,11 @@
     "media_sha256": {
       "type": "string",
       "pattern": "^[0-9a-f]{64}$"
+    },
+    "submitted_quote_ref": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Must be the exact quote_ref submitted to Higgsfield without modifying the quoted request"
     }
   },
   "examples": [],
