@@ -85,6 +85,11 @@ python -m studio_factory.archive projects/j4-async-succession/archive/v3_9/conve
 
 The project J4 approval remains **BLOCKED**, independent of stored prompt readiness. Existing 9,000 point allocation buckets and historical ledger remain authoritative.
 
+
+## Chat-first S13 pilot (no auto-render)
+
+For direct research → compiled ART/SHOT/FUSION prompts → Higgsfield chat generation → independent QC → frozen evidence, use [J4 S13 Chat Production Loop](../docs/J4_S13_CHAT_PRODUCTION_LOOP_V1.md) and the `studio_factory.chat_loop` helper. It reuses the pinned G2 compiler, S13 replay, existing two-human-review and formal publication gates; it does **not** add another Provider client or grant generation authority. The separate chat surface remains `NOT_RUN` while live Higgsfield zero-credit entitlement is unavailable. Tests: `python -m unittest studio_factory.tests.test_chat_loop -v`.
+
 ## Limits / next engineering steps
 
 Current implementation is a tested **offline metadata/control-plane minimum slice**, not a deployed agent swarm or production media store. Database concurrency, verified external signatures, server-side authentication, immutable object-store retention, encrypted private footage, GitHub Actions protection and provider integrations require separate owner-approved implementation. Do not label these \`PASS\` before real tests.
