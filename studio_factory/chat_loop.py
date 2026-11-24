@@ -134,6 +134,8 @@ def record_image(repo: Path, plan: dict, stage: str, evidence: dict, media_root:
     require(evidence.get("sent_prompt") == node["prompt"], "sent prompt drift")
     require(evidence.get("aspect_ratio") == "9:16", "aspect ratio drift")
     require(evidence.get("model") == result["model"]["id"], "model drift")
+    require(evidence.get("submitted_quote_ref") == evidence["quote"]["quote_ref"],
+            "submitted request does not match approved quote")
     require(isinstance(evidence.get("job_id"), str) and evidence["job_id"], "job ID missing")
     require(evidence.get("charged_credits") == 0 and
             type(evidence.get("charged_credits")) in (int, float), "credit delta unknown/nonzero")
