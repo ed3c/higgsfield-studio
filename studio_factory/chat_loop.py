@@ -97,12 +97,16 @@ def _criteria(repo: Path, manifest: dict, stage: str):
     return artwork if stage == "artwork" else shot if stage == "shot" else (shot | fusion)
 
 
-def quote_allows_zero_credits(quote: dict, *, model_id: str, surface: str) -> bool:
-    """A capability flag or a website screenshot is never a live chat entitlement."""
+def quote_allows_zero_credits(quote: dict, *, model_id: str, surface: str,
+                              prompt_sha256: str | None = None) -> bool:
+    """A capability flag or website screenshot is never a live chat entitlement."""
     if surface != "higgsfield_chat" or quote.get("error") or quote.get("unlim_choice"):
         return False
     cost = quote.get("cost")
     return (quote.get("model") == model_id and
+            quote.get("aspect_ratio") == "9:16" and
+            quote.get("use_unlim") is True and
+            (prompt_sha256 is None or quote.get("quoted_prompt_sha256") == prompt_sha256) and
             isinstance(cost, dict) and type(cost.get("credits")) in (int, float) and
             cost["credits"] == 0 and
             quote.get("unlimited_applied") is True and
@@ -124,7 +128,8 @@ def record_image(repo: Path, plan: dict, stage: str, evidence: dict, media_root:
     require(evidence.get("surface") == "higgsfield_chat", "wrong generation surface")
     require(quote_allows_zero_credits(evidence.get("quote", {}),
                                      model_id=result["model"]["id"],
-                                     surface=evidence.get("surface", "")), "zero-credit proof missing")
+                                     surface=evidence.get("surface", ""),
+                                     prompt_sha256=node["prompt_sha256"]), "zero-credit proof missing")
     require(evidence.get("status") == "completed", "not a completed job")
     require(evidence.get("sent_prompt") == node["prompt"], "sent prompt drift")
     require(evidence.get("aspect_ratio") == "9:16", "aspect ratio drift")
@@ -137,6 +142,9 @@ def record_image(repo: Path, plan: dict, stage: str, evidence: dict, media_root:
     require(_magic_matches(file, "still"), "invalid still media signature")
     actual_sha = file_sha256(file)
     require(actual_sha == evidence.get("media_sha256"), "output image bytes/hash mismatch")
+    require(all(other["result"] is None or other["result"]["media_sha256"] != actual_sha
+                for name, other in result["branches"].items() if name != stage),
+            "separate stages require separately evidenced media bytes")
     node["result"] = {
         "job_id": evidence["job_id"], "media_path": relative, "media_sha256": actual_sha,
         "sent_prompt_sha256": node["prompt_sha256"],
@@ -193,6 +201,8 @@ def evaluate_human_qc(repo: Path, plan: dict, stage: str,
 def dry_run_shot_change(plan: dict, changed_shot_prompt: str) -> dict:
     """Q15 fault injection. Does not mutate versions, call model, or spend credits."""
     require(isinstance(changed_shot_prompt, str) and changed_shot_prompt.strip(), "empty shot delta")
+    require(plan["branches"]["artwork"]["state"] == "QC_PASS",
+            "artwork not frozen; cannot claim reuse")
     old = plan["branches"]["shot"]["prompt_sha256"]
     new = sha256(changed_shot_prompt.encode()).hexdigest()
     changed = old != new
