@@ -97,8 +97,9 @@ class ChatLoopTests(unittest.TestCase):
             self.assertEqual(plan["branches"][stage]["state"],"EVIDENCE_INCOMPLETE")
             plan=chat_loop.evaluate_human_qc(REPO,plan,stage,self.humans(plan,stage),"producer")
             self.assertEqual(plan["branches"][stage]["state"],"QC_PASS")
-        frozen=chat_loop.approve_golden(plan,"final-owner")
-        self.assertTrue(frozen["golden"])
+        frozen=chat_loop.request_static_candidate(plan,"final-owner","signed-private-g2-ref")
+        self.assertFalse(frozen["golden"])
+        self.assertEqual(frozen["owner_approval"]["status"],"PENDING_FORMAL_G2")
         self.assertFalse(frozen["recipe_reusable"])
         self.assertFalse(plan["golden"])
         with self.assertRaisesRegex(ValueError,"overwritten"):
@@ -122,7 +123,7 @@ class ChatLoopTests(unittest.TestCase):
         plan=chat_loop.evaluate_human_qc(REPO,plan,"shot",self.humans(plan,"shot",beach=True),"producer")
         self.assertEqual(plan["branches"]["shot"]["state"],"QC_FAIL")
         with self.assertRaisesRegex(ValueError,"without three"):
-            chat_loop.approve_golden(plan,"owner")
+            chat_loop.request_static_candidate(plan,"owner","private-evidence")
         repaired=chat_loop.propose_repair(plan,"shot","beach-piano","review-evidence-01")
         self.assertEqual(repaired["repairs"]["shot:beach-piano"]["attempts"],1)
         with self.assertRaisesRegex(ValueError,"already repaired"):
