@@ -1,0 +1,99 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:higgsfield-studio:chat-generation-evidence:v1",
+  "title": "Higgsfield S13 Chat Generation Evidence v1",
+  "description": "Untrusted receipt payload captured from a real Higgsfield conversation tool result. Validation of fields is necessary but not proof of provider authenticity, rights, visual semantics or user identity.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "surface",
+    "quote",
+    "status",
+    "job_id",
+    "sent_prompt",
+    "aspect_ratio",
+    "model",
+    "charged_credits",
+    "media_path",
+    "media_sha256"
+  ],
+  "properties": {
+    "surface": {
+      "const": "higgsfield_chat"
+    },
+    "quote": {
+      "type": "object",
+      "additionalProperties": true,
+      "required": [
+        "model",
+        "cost",
+        "unlimited_applied",
+        "quote_ref"
+      ],
+      "properties": {
+        "model": {
+          "type": "string",
+          "minLength": 1
+        },
+        "cost": {
+          "type": "object",
+          "required": [
+            "credits"
+          ],
+          "properties": {
+            "credits": {
+              "const": 0
+            },
+            "credits_exact": {
+              "type": "number",
+              "minimum": 0
+            }
+          },
+          "additionalProperties": true
+        },
+        "unlimited_applied": {
+          "const": true
+        },
+        "quote_ref": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "status": {
+      "const": "completed"
+    },
+    "job_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "sent_prompt": {
+      "type": "string",
+      "minLength": 1
+    },
+    "aspect_ratio": {
+      "const": "9:16"
+    },
+    "model": {
+      "type": "string",
+      "minLength": 1
+    },
+    "charged_credits": {
+      "const": 0
+    },
+    "media_path": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Private authorized media-root-relative path; cannot point outside asset root."
+    },
+    "media_sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    }
+  },
+  "examples": [],
+  "notes": [
+    "For offline review only. Do not treat JSON created by an agent as a provider attestation.",
+    "S13 website-only historical A/B remains a different execution surface and cannot be backfilled using this schema."
+  ]
+}
