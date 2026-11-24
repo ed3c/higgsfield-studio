@@ -1,0 +1,31 @@
+{
+  "schema": "studio.s13-chat-loop-spec.v1",
+  "shot_id": "S13",
+  "artwork_source_urls": [
+    "https://www.ntticc.or.jp/en/archive/works/piano-20110311/",
+    "https://www.artfund.org/our-purpose/art-funded-by-you/concert-for-anarchy"
+  ],
+  "artwork_source_policy": "METHOD_STUDY_ONLY_NO_REFERENCE_IMAGE_UPLOAD",
+  "artwork_prompt": "Original contemporary installation still, not a recreation of any existing artwork. A structurally intact but aging upright piano action has been altered by years of salt air inside a quiet coastal precision-metrology workshop. Macro-to-medium framing makes the physics legible: powdery salt bloom concentrated on the lower wood, an obstructed mechanical lever and one ivory key failing to return fully. Cold mineral side light, quiet negative space, tactile metal oxidation and wood grain, restrained museum photographic sensibility. Its function has shifted from making music into an object of material study. No upside-down instrument, no suspended sculpture, no beach piano, no branded equipment, no text, no scenery that suggests a specific copyrighted installation.",
+  "artwork_checks": [
+    "S13.ART_ORIGINAL_METHOD",
+    "S13.ART_SALT_ON_MECHANISM",
+    "S13.ART_LEVER_AND_OBSTRUCTION"
+  ],
+  "fusion_checks": [
+    "S13.FUSION_MATERIAL_ROLE_REVERSAL",
+    "S13.FUSION_WAFER_ARC_NO_NOTATION"
+  ],
+  "execution": {
+    "surface": "higgsfield_chat",
+    "requires_live_quote_zero_credits": true,
+    "allow_unlimited_only_when_eligibility_proven": true,
+    "generation_autorun": false,
+    "model_fallback": false,
+    "artwork_ref_media_allowed": false
+  },
+  "required_human_reviewers": 2,
+  "repair_budget_per_root_cause": 1,
+  "max_image_credits": 0,
+  "state": "NOT_RUN"
+}
