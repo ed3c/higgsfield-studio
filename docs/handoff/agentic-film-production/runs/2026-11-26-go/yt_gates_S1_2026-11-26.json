@@ -1,0 +1,23 @@
+{
+  "YT0": {
+    "state": "BLOCKED",
+    "reason": "BLOCKED_SOURCE/RIGHTS: no rights.json (owner confirmation of source rights and permitted retrieval not recorded)"
+  },
+  "YT1": {
+    "state": "NOT_RUN",
+    "reason": "depends on YT0 which is not PASS"
+  },
+  "YT2": {
+    "state": "NOT_RUN",
+    "reason": "depends on YT1 which is not PASS"
+  },
+  "YT3": {
+    "state": "NOT_RUN",
+    "reason": "depends on YT1 which is not PASS"
+  },
+  "YT4": {
+    "state": "NOT_RUN",
+    "reason": "depends on YT0-YT3 which is not PASS"
+  },
+  "H01_acquisition_complete": false
+}
