@@ -1,0 +1,45 @@
+{
+  "yt-dlp": {
+    "version": "2026.11.23",
+    "license": "Unlicense",
+    "install": "uv venv /workspace/afp-tools/venv (PyPI yt-dlp[default])"
+  },
+  "yt-dlp-ejs": {
+    "version": "0.8.0",
+    "license": "Unlicense AND MIT AND ISC (PyPI License-Expression)",
+    "install": "PyPI"
+  },
+  "deno": {
+    "version": "deno 2.9.8 (stable, release, x86_64-unknown-linux-gnu)",
+    "license": "MIT",
+    "install": "https://deno.land/install.sh sha256 83f19ea13f6d7884f4dc0e2f92e7e08e7589204138d9b6edfcd53c3f07b3273b"
+  },
+  "ffmpeg": {
+    "version": "ffmpeg version 7.1.5-0+deb13u1 Copyright (c) 2000-2026 the FFmpeg developers",
+    "license": "GPL build (--enable-gpl); HF-Q01 Studio external-tool exception",
+    "install": "Debian package"
+  },
+  "openai-whisper": {
+    "version": "20250625",
+    "license": "MIT",
+    "model": "large-v3",
+    "weights_url": "https://openaipublic.azureedge.net/main/whisper/models/e5b1a55b89c1367dacf97e3e19bfd829a01529dbfdeefa8caeb59b3f1b81dadb/large-v3.pt",
+    "weights_sha256": "e5b1a55b89c1367dacf97e3e19bfd829a01529dbfdeefa8caeb59b3f1b81dadb",
+    "weights_bytes": 3087371615,
+    "weights_license": "MIT (openai/whisper repo covers code and model weights)",
+    "torch": "2.15.0+cpu",
+    "config": "--language ja --task transcribe --device cpu --fp16 False --temperature 0 --condition_on_previous_text False --threads 8"
+  },
+  "pytubefix": {
+    "status": "NOT_USED (yt-dlp succeeded)",
+    "license": "MIT"
+  },
+  "download": {
+    "command": "yt-dlp --no-playlist --no-overwrites --check-formats --write-info-json --write-description --write-thumbnail -f 'bv*+ba/b' --merge-output-format mkv --remux-video mkv -o '%(id)s.%(ext)s' URL",
+    "selected_format": "401+251",
+    "selected": "401 - 3840x2160 (2160p)+251 - audio only (medium)",
+    "retrieved_epoch": 1795708819,
+    "subtitles_available": false,
+    "automatic_captions_available": false
+  }
+}
