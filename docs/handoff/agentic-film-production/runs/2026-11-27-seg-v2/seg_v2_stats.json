@@ -1,0 +1,52 @@
+{
+ "v1": {
+  "hard_cuts": 83,
+  "SHOT": 199,
+  "BLACK": 120,
+  "shot_median_s": 4.972,
+  "shot_mean_s": 10.424,
+  "longest": 137.538
+ },
+ "v2": {
+  "candidates_after_merge": 305,
+  "raw_candidate_events": 801,
+  "dropped_inside_black": 28,
+  "confirmed_cuts": 211,
+  "new_vs_v1": 128,
+  "v1_not_reconfirmed": [],
+  "unconfirmed_candidates": 94,
+  "dissolve_spans": 20,
+  "SHOT": 285,
+  "BLACK": 120,
+  "DISSOLVE": 20,
+  "shot_median_s": 3.203,
+  "shot_mean_s": 7.127,
+  "longest": 80.914,
+  "new_cut_sources": {
+   "pysd_content": 97,
+   "pysd_adaptive": 110,
+   "ffmpeg_0.10": 104
+  },
+  "min_segment_s": 0.1006
+ },
+ "informational_reviewer_r2_dissolves_NOT_TRUTH": {
+  "1412.45": false,
+  "1759.12": false
+ },
+ "S2_controls": {
+  "v1_reconfirmed": "83/83",
+  "v1_reconfirmed_fraction": 1.0,
+  "negative_false_confirm": "0/211",
+  "negative_false_confirm_fraction": 0.0,
+  "PASS": true,
+  "decode_errors": 0
+ },
+ "S3_controls": {
+  "synthetic_positive_detected": "22/50 (skipped by A/B gates: 28)",
+  "synthetic_positive_rate_over_all": 0.44,
+  "negative_false_positive": "0/80",
+  "PASS": false
+ },
+ "elapsed_s": 181.6,
+ "S4_note": "boundaries within 2 frames merged (BLACK edge preferred) \u2014 fixes zero-length slivers/gaps of the first S4 pass"
+}
