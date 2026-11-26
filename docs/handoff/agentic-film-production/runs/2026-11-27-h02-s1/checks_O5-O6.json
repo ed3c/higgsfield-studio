@@ -1,0 +1,14 @@
+{
+ "prereg": "docs/handoff/agentic-film-production/runs/2026-11-27-h02-s1/ORACLE_PREREG_S1_H02.md",
+ "kind": "automated independent-algorithm checks; NOT a human Oracle; never marks V2",
+ "O5": {
+  "O5": "PASS",
+  "n_claims": 22,
+  "errors": []
+ },
+ "O6": {
+  "O6": "PASS",
+  "n_files": 19,
+  "errors": []
+ }
+}

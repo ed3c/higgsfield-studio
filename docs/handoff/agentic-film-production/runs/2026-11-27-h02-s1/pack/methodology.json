@@ -1,0 +1,50 @@
+{
+ "skill": {
+  "id": "s1-documentary-installation-cutting",
+  "version": "0.0.1-candidate",
+  "domain": "editorial/documentary",
+  "source": {
+   "evidence_refs": [
+    "S1-INF-001",
+    "S1-INF-002",
+    "S1-INF-003",
+    "S1-INF-004",
+    "S1-MEA-004",
+    "S1-MEA-008"
+   ],
+   "license_status": "HOLD (source is private_analysis only; no distillation from unapproved content)"
+  },
+  "applicability": {
+   "triggers": [],
+   "preconditions": [],
+   "exclusions": []
+  },
+  "methodology": {
+   "observations": [
+    "Interview anchor recurring across the film (S1-INF-001)",
+    "Installation light switching supplies rhythm inside takes (S1-INF-002)",
+    "Long takes for talks/performances vs short cuts for process (S1-INF-003)",
+    "Cuts on speech phrase edges (S1-INF-004)"
+   ],
+   "decisions": [],
+   "rationales": [],
+   "operations": [],
+   "failure_patterns": []
+  },
+  "compilation": {
+   "input_schema": null,
+   "output_schema": null,
+   "provider_independent": true
+  },
+  "verification": {
+   "reference_oracle": null,
+   "holdout_cases": [],
+   "regression_cases": [],
+   "status": "NOT_RUN"
+  },
+  "promotion": {
+   "human_approval": "required"
+  }
+ },
+ "note": "L1 observations only. No L2+ mechanism or reusable skill is claimed; V3 reference and V4 distillation are NOT_RUN."
+}

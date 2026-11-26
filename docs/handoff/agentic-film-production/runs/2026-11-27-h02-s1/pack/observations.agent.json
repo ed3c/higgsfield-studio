@@ -1,0 +1,35 @@
+{
+ "schema": "studio.reverse.agent_observations.v1",
+ "observer": "Grok Bot (producer agent; NOT independent; viewed 9 private contact sheets of mid-segment keyframes, display auto-gain on dark frames)",
+ "evidence": "keyframes/contact/sheet_01..09.jpg (private) ; keyframes/<segment_id>.jpg (private)",
+ "class": "INFERRED",
+ "identity_policy": "People are referred to by role labels only (Interviewee A, Speaker B, Speaker C, performers). No face-based identification. Credits come only from source metadata (SOURCE_EVIDENCE).",
+ "limits": "One mid-segment frame per segment; motion, camera movement and transitions are not visible in a still. Auto-gain changes perceived exposure. Labels are hypotheses for an independent reviewer.",
+ "role_shots": {
+  "interviewee_A_white_wall_title_lettering": ["S1-SH005","S1-SH008","S1-SH014","S1-SH017","S1-SH023","S1-SH028","S1-SH070","S1-SH113","S1-SH118","S1-SH123","S1-SH127","S1-SH139","S1-SH142","S1-SH149","S1-SH152","S1-SH155","S1-SH160","S1-SH162","S1-SH168","S1-SH172","S1-SH181","S1-SH183","S1-SH186","S1-SH193","S1-SH198"],
+  "speaker_B_with_microphone_white_wall": ["S1-SH029","S1-SH030","S1-SH031","S1-SH132","S1-SH133","S1-SH134"],
+  "speaker_C_seated_with_microphone": ["S1-SH128","S1-SH130"]
+ },
+ "sequences": [
+  {"id":"Q01","start":0.0,"end":38.872,"label":"Opening: dark hall with lamp rows and piano installation, institution logo, title card over black","shot_scale_hint":"wide / overhead + close detail","sound_hint":"non-speech until ~0:30"},
+  {"id":"Q02","start":38.872,"end":150.884,"label":"Interviewee A (MCU, static, white wall) intercut with exhibition documentation: catalogue/book insert, gallery displays, visitors","shot_scale_hint":"MCU interview / medium-wide gallery","sound_hint":"speech-led"},
+  {"id":"Q03","start":150.884,"end":227.928,"label":"Installation: piano mechanism close-ups, luminous white square in darkness, lamp row","shot_scale_hint":"close-up / wide","sound_hint":"non-speech"},
+  {"id":"Q04","start":227.928,"end":303.403,"label":"Installation set-up documentation (hands on hardware, crew) intercut with Interviewee A","shot_scale_hint":"close-up hands / medium group","sound_hint":"speech-led"},
+  {"id":"Q05","start":303.403,"end":410.243,"label":"Speaker B talk with microphone, three long takes","shot_scale_hint":"MCU, slight reframing between takes","sound_hint":"speech"},
+  {"id":"Q06","start":410.243,"end":492.525,"label":"Dark installation sequence: luminous square, lamps switching on/off in dark hall, piano in darkness, full-frame noise/static image; on-screen work caption","shot_scale_hint":"wide","sound_hint":"non-speech; segment fragmentation driven by light switching"},
+  {"id":"Q07","start":492.525,"end":606.94,"label":"Build/production: crew moving a piano, piano action details, Speaker B at instrument, technician at laptop; closes on Interviewee A","shot_scale_hint":"medium / close-up, handheld-looking","sound_hint":"speech-led"},
+  {"id":"Q08","start":606.94,"end":724.0,"label":"Dark hall lamp-pulse sequence; lamps flash in alternation, a piano on the floor appears in strobe light; very many sub-second luminance segments","shot_scale_hint":"wide, framing looks constant across pulses","sound_hint":"non-speech"},
+  {"id":"Q09","start":724.0,"end":781.0,"label":"Interviewee A + piano interior close-ups (manufacturer stamp visible) + Speaker B close-up","shot_scale_hint":"ECU / MCU","sound_hint":"speech-led"},
+  {"id":"Q10","start":781.0,"end":846.0,"label":"Dark: tilted luminous panel with caption, backlit silhouette, scattered points of light","shot_scale_hint":"wide / silhouette","sound_hint":"mixed"},
+  {"id":"Q11","start":846.0,"end":1111.0,"label":"Talk event: Speaker C seated, stage with ladder and lights, Speaker B long takes (80.9 s, 66.9 s, 44.8 s)","shot_scale_hint":"MCU long takes","sound_hint":"speech"},
+  {"id":"Q12","start":1111.0,"end":1242.0,"label":"Rehearsal/backstage: tools on table, Speaker B close-ups, piano playing, cellist with electronics, Interviewee A long take","shot_scale_hint":"close-up / medium","sound_hint":"mixed speech and instrument"},
+  {"id":"Q13","start":1242.0,"end":1537.0,"label":"Live performance: cello on dark stage, piano performance incl. 137.5 s long take, Speaker B gesturing/explaining, dark hall","shot_scale_hint":"medium / wide, long takes","sound_hint":"performance sound"},
+  {"id":"Q14","start":1537.0,"end":1736.0,"label":"Interviewee A intercut with violin performance, score reading at a table, musical-notation insert, dark stage","shot_scale_hint":"MCU / medium / insert","sound_hint":"speech + performance"},
+  {"id":"Q15","start":1736.0,"end":1915.0,"label":"Violin performance in dark hall incl. 108.4 s long take; lamp-pulse fragmentation","shot_scale_hint":"wide / medium over-shoulder","sound_hint":"performance sound"},
+  {"id":"Q16","start":1915.0,"end":1948.0,"label":"Daylight location: glass atrium with suspended spheres and screens; then Interviewee A","shot_scale_hint":"wide","sound_hint":"speech"},
+  {"id":"Q17","start":1948.0,"end":2006.0,"label":"Visitors crowd the dark lamp hall; flicker segments; edge-of-piano close-ups; Interviewee A; a vertical insert","shot_scale_hint":"wide crowd / ECU","sound_hint":"mixed"},
+  {"id":"Q18","start":2006.0,"end":2140.0,"label":"Two people seated in conversation in dark room; Speaker B moving in staging; Interviewee A 42.3 s; piano installation; scattered points","shot_scale_hint":"medium / wide","sound_hint":"speech-led"},
+  {"id":"Q19","start":2140.0,"end":2272.0,"label":"Projection of particle/points on tilted screen alternating with dark, piano mechanism, dark hall lamps, Interviewee A","shot_scale_hint":"wide / close-up","sound_hint":"mixed"},
+  {"id":"Q20","start":2272.0,"end":2333.388,"label":"Ending: piano installation with credit text overlay (51.4 s), final black (9.2 s)","shot_scale_hint":"medium-wide","sound_hint":"non-speech"}
+ ]
+}
