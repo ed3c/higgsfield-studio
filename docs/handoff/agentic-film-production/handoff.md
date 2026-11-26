@@ -350,4 +350,51 @@ Read-only observations: three Notion research pages retrieved in previous turn; 
 
 Fresh session instruction (paste with commit-pinned link): Read the full handoff and its original source references, preserve H01–H32 and HF-Q01–HF-Q06=A, original Oracle and historical states. You are in WAIT_FOR_EXPLICIT_GO until user authorizes implementation. Once GO, perform the shortest legal real evidence-to-original-film closure per §10, incrementally deliver complete goal, independently verify each layer, keep unauthorized paid/remote/publication actions blocked. Only ask genuinely new decisions that change scope/implementation/authority/acceptance; resolve factual source/capability questions yourself where authorized. Report actual evidence, blockers and lawful next; do not claim source/skill/film/model/runner PASS from handoff alone. No new Worker or spend before authorization.
 
+## 13. Addendum — mandatory YouTube media acquisition contract (user clarification)
+
+User: 「Youtube 的下載問題都解決了？需要影片、聲音、字幕SRT」
+H01/H02 clarification, not a replacement: source acquisition is complete only when the authorized source has verified video, independent audio, and usable timecoded SRT. This applies to S1 onNBysMf9WM and each required audiovisual research source individually. Keep all original H01–H32, HF-Q01–Q06=A and explicit fresh GO requirement. No acquisition or runtime verification occurred in this handoff. S1 remains BLOCKED_SOURCE / acquisition NOT_RUN; do not imply the specific source has audio/subtitles or is downloadable until inspected.
+
+### Required artifact bundle (private, not Git)
+- Original-quality available video and audio muxed into a playable master (MKV or MP4); preserve source identity, available resolution, timebase, selected streams and actual codec. No synthetic upscaling or false quality claim.
+- Independent audio track extracted from that same master, lossless PCM WAV for reverse audio analysis, preserving source sampling rate/channels; optionally derive mono 16 kHz PCM ASR input, distinguish from master. No need to download same stream twice.
+- Separate UTF-8 .srt file in original spoken language, prefer publisher-authored subtitles, then YouTube automatic captions, then locally generated ASR from the verified audio (Whisper, candidate subject to exact license/dependency/model review). Original subtitle and translation are separate artifacts; preserve available official target-language SRT (e.g. en/zh) when authorized/useful, never silently substitute translated captions for original. Save source subtitle format/language/provenance when available; label ASR and auto captions accurately, no fabricated captions. If silence/no speech, record verified no-speech evidence and explicitly resolve SRT requirement with owner rather than invent entries; missing/unusable captions leave subtitle gate open.
+- Manifest, metadata, actual downloader/FFmpeg/ASR version and configuration, SHA-256 for every artifact, source URL/ID and retrieval timestamp, source rights and permitted analysis/transfer, media probe, subtitle provenance and QA report. Keep original bytes immutable. Save failed attempts and scoped blocker/recovery, no secret cookies, tokens or private paths in public Git.
+
+### Candidate download route (not run; only after GO, rights/terms and dependency admission)
+yt-dlp upstream README: https://github.com/yt-dlp/yt-dlp/blob/master/README.md ; current upstream EJS setup: https://github.com/yt-dlp/yt-dlp/wiki/EJS . Official documentation describes FFmpeg/ffprobe for merging/extracting/converting, yt-dlp-ejs plus supported JS runtime (Deno recommended) for full YouTube support. Audit pinned versions and EJS components before execution. No unreviewed remote scripts, login/cookie sharing, CAPTCHA/DRM/access-control circumvention. If network/rights/access denied, use lawful owner-supplied originals or official permitted export; don't retry around restrictions. Use local Mac authorized execution first when available; other permitted runners only if their terms/rights allow. Existing Q01 scoped external FFmpeg exception applies, not a global Soodles change.
+
+Inspect format and subtitle inventory with yt-dlp -F and --list-subs, record exact source ID, available languages, and audio/video tracks before selecting. Prior §3 illustrative command lacked mandatory SRT conversion and independent audio; supersede only that command with this candidate (preserve historical text). Use a fresh per-source staging directory, pinned approved tools, no overwrite of validated assets. Select source language and any approved additional tags from the inventory; exclude live_chat.
+
+```bash
+# After GO, approved rights/tool versions, and successful inventory checks:
+URL="https://www.youtube.com/watch?v=onNBysMf9WM"
+SUB_LANGS="<actual-original-language-tag-and-approved-extra-tags>"
+yt-dlp --no-playlist --no-overwrites --check-formats \
+  --write-info-json --write-description --write-thumbnail \
+  --write-subs --write-auto-subs --sub-langs "$SUB_LANGS" \
+  --sub-format "srt/vtt/best" --convert-subs srt \
+  -f "bv*+ba/b" --merge-output-format mkv --remux-video mkv \
+  -o "%(id)s.%(ext)s" "$URL"
+# Resolve actual downloaded filename and ensure verified video+audio tracks.
+ffprobe -v error -show_format -show_streams -of json onNBysMf9WM.mkv > media-probe.json
+ffmpeg -n -v error -i onNBysMf9WM.mkv -map 0:a:0 -c:a pcm_s24le onNBysMf9WM.audio.wav
+# If no suitable original/auto SRT exists, use admitted local Whisper ASR;
+# select language from actual evidence, export srt, label ASR provenance.
+# Finalize SHA256SUMS only after all required outputs and QA report exist.
+```
+
+Download, mux, audio extraction and subtitle acquisition are independently retryable scoped stages, not reasons to re-fetch verified source bytes. If subtitle or audio step fails, preserve verified master, correct only missing stage. No silent success from exit code, filenames or metadata. Separate non-speech/music analysis uses actual independent audio.
+
+### Independent acceptance and recovery
+| Gate | Required evidence | Failure |
+|---|---|---|
+| YT0 Source | Authorized exact URL/video ID, source rights, actual version and permitted retrieval | BLOCKED_SOURCE/RIGHTS; preserve independent Passport Rush track |
+| YT1 Video | Nonempty master, correct identity, actual video+audio streams, decodable from start through end, duration/source consistency and source selection | Missing/corrupt/wrong file reject; no completion on metadata |
+| YT2 Audio | Nonempty standalone WAV, actual decode, source-linked duration/channel/sample-rate evidence; account for measured encoder delay/padding, sync checked | Fix extraction from existing verified master; no fabricated audio |
+| YT3 SRT | Parseable UTF-8 SRT, numbered cues, valid start/end within media duration (document tolerances), chronological start times, original language/provenance, sampled subtitle/audio alignment; manual vs auto vs local ASR distinct | Subtitle absent/empty/broken/wrong language or alignment fails; recover official allowed export or admitted ASR, no silent skip |
+| YT4 Evidence | All required paths, hashes, tool versions, rights, actual QA receipts and provenance; independent verifier can read and play/listen/parse | Partial only, no full H01 PASS |
+
+Producer SourceManager/approved local runner -> EvidenceManager -> independent Observer -> ReverseManager / ArtDirection / Editorial / Medium Compiler playback. Preserve verified partial artifacts and exact failed stage, owner, reason, next and bounded retry. H01 complete only if YT0–YT4 PASS for required source; H02 full reverse remains separate. No native run, no media bytes, no GPU/Credits spent; WAIT_FOR_EXPLICIT_GO unchanged. This is a clarified acceptance obligation, not proof that the download problem is solved.
+
 End of handoff.
