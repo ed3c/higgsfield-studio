@@ -79,25 +79,34 @@ def main():
                 add(stratum, centre=(c["start"] + c["end"]) / 2, span=c)
             else:
                 add(stratum, c)
-    fill("SEG2_CUT_NEW", cut_new, 7)
-    fill("SEG2_CUT_V1", cut_old, 8)
-    fill("SEG2_BLACK_EDGE", black_edges, 8)
-    fill("SEG2_DISSOLVE", [d for d in dss if d["end"] - d["start"] <= 3.0], 7, span=True)
-    while len(windows) < 60:
-        add("RANDOM")
-    windows.sort(key=lambda w: w["t_start"])
-    for i, w in enumerate(windows, 1):
-        w["window"] = f"Z{i:02d}"
+    # A3 spans first: 30 s free intervals are scarce once rounds 1-2 are excluded
     spans = []
-    while len(spans) < 6:
+    for _ in range(200000):
+        if len(spans) == 6:
+            break
         t0 = round(rng.uniform(0, dur - 30), 3); iv = (t0, t0 + 30)
         if free(iv):
             taken.append(iv)
             spans.append({"t_start": t0, "t_end": t0 + 30, "seg2_boundaries_inside": inside(iv),
                           "seg2_dissolves_inside": [d for d in dss if overlaps((d["start"], d["end"]), iv)]})
+    if len(spans) < 6:
+        raise SystemExit(f"only {len(spans)} free 30 s spans")
     spans.sort(key=lambda s: s["t_start"])
     for i, s in enumerate(spans, 1):
         s["span"] = f"V{i:02d}"
+    fill("SEG2_CUT_NEW", cut_new, 7)
+    fill("SEG2_CUT_V1", cut_old, 8)
+    fill("SEG2_BLACK_EDGE", black_edges, 8)
+    fill("SEG2_DISSOLVE", [d for d in dss if d["end"] - d["start"] <= 3.0], 7, span=True)
+    for _ in range(500):
+        if len(windows) >= 60:
+            break
+        add("RANDOM")
+    if len(windows) < 60:
+        raise SystemExit(f"only {len(windows)} A2 windows")
+    windows.sort(key=lambda w: w["t_start"])
+    for i, w in enumerate(windows, 1):
+        w["window"] = f"Z{i:02d}"
     # A1 timestamps: S2 SHOT wholly inside one v1 segment
     rmap = {"interviewee_A_white_wall_title_lettering": "SEATED_INTERVIEW_SINGLE", "speaker_B_with_microphone_white_wall": "SPEAKER_WITH_MIC",
             "speaker_C_seated_with_microphone": "SPEAKER_WITH_MIC"}
@@ -106,12 +115,19 @@ def main():
     ok1 = [s for s in segs2 if s["kind"] == "SHOT" and s["duration"] >= 1.5 and len(s["v1_overlap"]) == 1 and v1by[s["v1_overlap"][0]]["kind"] == "SHOT"]
     rs_ = [s for s in ok1 if s["v1_overlap"][0] in role_of]; ot_ = [s for s in ok1 if s["v1_overlap"][0] not in role_of]
     stamps = []
-    for s in rng.sample(rs_, 12) + rng.sample(ot_, 18):
-        for _ in range(50):
-            t = round(rng.uniform(s["start"] + 0.5, s["end"] - 0.5), 3)
-            if free((t - 0.5, t + 0.5), 0.0):
+    for pool_, n_ in ((rs_, 12), (ot_, 18)):
+        got = 0
+        for s in rng.sample(pool_, len(pool_)):
+            if got == n_:
                 break
-        stamps.append({"t": t, "seg2_id": s["id"], "v1_id": s["v1_overlap"][0], "author_role": role_of.get(s["v1_overlap"][0])})
+            for _ in range(50):
+                t = round(rng.uniform(s["start"] + 0.5, s["end"] - 0.5), 3)
+                if free((t - 0.5, t + 0.5), 0.0):
+                    taken.append((t - 0.5, t + 0.5)); got += 1
+                    stamps.append({"t": t, "seg2_id": s["id"], "v1_id": s["v1_overlap"][0], "author_role": role_of.get(s["v1_overlap"][0])})
+                    break
+        if got < n_:
+            raise SystemExit("not enough free A1 timestamps")
     stamps.sort(key=lambda x: x["t"])
     for i, s in enumerate(stamps, 1):
         s["sample"] = f"Q{i:02d}"
