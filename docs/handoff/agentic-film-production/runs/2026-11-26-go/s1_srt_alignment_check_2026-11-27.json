@@ -1,0 +1,133 @@
+{
+  "result": "PASS",
+  "method": "sampled re-transcription with a different Whisper checkpoint + shifted-window negative control",
+  "checker_model": "small",
+  "rule": {
+    "K": 8,
+    "min_chars": 6,
+    "pad_s": 0.3,
+    "shift_s": 15.0,
+    "thresh": 0.5,
+    "pass_min": 6,
+    "margin": 0.2,
+    "seed": 20261127
+  },
+  "aligned_pass": 8,
+  "mean_aligned": 0.931,
+  "mean_shifted": 0.16,
+  "samples": [
+    {
+      "cue": 19,
+      "start": 132.34,
+      "end": 136.92,
+      "text": "映像を一緒にして空間的に設置する",
+      "aligned": {
+        "hyp": "映像を一緒にして空間的に設置する",
+        "ratio": 1.0
+      },
+      "shifted": {
+        "hyp": "ということも決まっていった",
+        "ratio": 0.069
+      }
+    },
+    {
+      "cue": 81,
+      "start": 594.34,
+      "end": 597.64,
+      "text": "なので繰り返しとかではないし",
+      "aligned": {
+        "hyp": "なので繰り返しとかではないし",
+        "ratio": 1.0
+      },
+      "shifted": {
+        "hyp": "",
+        "ratio": 0.0
+      }
+    },
+    {
+      "cue": 91,
+      "start": 749.66,
+      "end": 755.76,
+      "text": "調律されてピアノじゃなくなったというのかな",
+      "aligned": {
+        "hyp": "調理されてピアノじゃなくなったっていうのかな",
+        "ratio": 0.884
+      },
+      "shifted": {
+        "hyp": "使い物にならないんだけれどもその代わりそういった自信というものを地球の",
+        "ratio": 0.25
+      }
+    },
+    {
+      "cue": 139,
+      "start": 994.56,
+      "end": 999.02,
+      "text": "僕らだけじゃなくて皆さんも多くなってきたと思うんですよ",
+      "aligned": {
+        "hyp": "僕らの中じゃなくて皆さんも多くなってきたと思います。",
+        "ratio": 0.808
+      },
+      "shifted": {
+        "hyp": "作った音でも、音である限りは絶対にあるものが",
+        "ratio": 0.083
+      }
+    },
+    {
+      "cue": 152,
+      "start": 1053.1,
+      "end": 1057.82,
+      "text": "遠くにあればゆっくり音が伝わってきますからね",
+      "aligned": {
+        "hyp": "遠くにあればゆっくり音がして泡ってきますからね。",
+        "ratio": 0.889
+      },
+      "shifted": {
+        "hyp": "環境できているからこそ物の音に就着しています。",
+        "ratio": 0.182
+      }
+    },
+    {
+      "cue": 161,
+      "start": 1094.8,
+      "end": 1100.62,
+      "text": "音がどういう空間に通って伝わっているかということもとても気になるし",
+      "aligned": {
+        "hyp": "音がどういう空間を通って伝わっているかということもとても気になるし",
+        "ratio": 0.97
+      },
+      "shifted": {
+        "hyp": "というのをとても気になるということなんですね",
+        "ratio": 0.364
+      }
+    },
+    {
+      "cue": 210,
+      "start": 1580.72,
+      "end": 1584.1,
+      "text": "CDで聴くのと全く違うように聴こえます",
+      "aligned": {
+        "hyp": "CDで聴くのと、また違うように聴こえます。",
+        "ratio": 0.895
+      },
+      "shifted": {
+        "hyp": "演奏家は2位にそれを選んで",
+        "ratio": 0.062
+      }
+    },
+    {
+      "cue": 286,
+      "start": 2061.18,
+      "end": 2063.92,
+      "text": "インスタレーションとして発表していく方が",
+      "aligned": {
+        "hyp": "インスタレーションとして発表していく方が",
+        "ratio": 1.0
+      },
+      "shifted": {
+        "hyp": "このイズやタイムになったかなという気がしています",
+        "ratio": 0.273
+      }
+    }
+  ],
+  "note": "automated check; not a human listening review"
+}
