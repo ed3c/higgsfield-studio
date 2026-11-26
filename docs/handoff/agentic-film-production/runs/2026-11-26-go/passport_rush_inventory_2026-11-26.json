@@ -1,0 +1,155 @@
+{
+  "schema": "full-project-inventory.v1",
+  "generated_at": "2026-11-26T15:43:29+00:00",
+  "source": {
+    "url": "https://higgsfield.ai/@higgsfield.studio/projects/passport-rush",
+    "source_id": null
+  },
+  "project": {
+    "platform": "higgsfield",
+    "publication_id": "5faf8c98-ab7b-4195-bfb6-073a6e985785",
+    "slug": "passport-rush",
+    "title": "Passport Rush",
+    "description": "Minutes from boarding, a young woman realizes her passport is across town. Ahead: a mad dash through an absurd apocalypse to make her flight.",
+    "type": "film",
+    "created_at": "2026-09-25T13:27:41.531937Z",
+    "owner_id": "user_3GNcyaSCltezE7ot4WtRdn0jfo0",
+    "author_username": "higgsfield.studio",
+    "snapshot_folder_id": "cc812686-3e0a-4334-aa24-f50eba31f56d",
+    "source_folder_id": null,
+    "root_folder_id": null,
+    "featured_episode_slug": "passport-rush/full-film",
+    "show_prompts": true,
+    "show_canvas": true,
+    "license": null,
+    "reported_counters": {
+      "views": "0",
+      "generations": "14 608",
+      "credits": "0",
+      "size": "0 B",
+      "created": "September 25, 13:27"
+    },
+    "id_kinds_note": "publication_id is the public Cinema publication; it is not a workspace project_id, Elements library ID or Editing Room ID until a source shows otherwise."
+  },
+  "coverage": {
+    "project": {
+      "state": "OBTAINED",
+      "reason": "public publication record parsed from server-rendered HTML",
+      "fields": [
+        "author_username",
+        "created_at",
+        "description",
+        "featured_episode_slug",
+        "id_kinds_note",
+        "owner_id",
+        "platform",
+        "publication_id",
+        "reported_counters",
+        "show_canvas",
+        "show_prompts",
+        "slug",
+        "snapshot_folder_id",
+        "title",
+        "type"
+      ],
+      "adapter": "higgsfield-publication-html"
+    },
+    "elements": {
+      "state": "BROWSER_REQUIRED",
+      "reason": "no elements records in server HTML; may live in canvas/snapshot folder rendered client-side",
+      "adapter": "higgsfield-publication-html"
+    },
+    "assets": {
+      "state": "PARTIAL",
+      "reason": "publication lists 1 asset(s) server-side; snapshot folder contents load client-side",
+      "listed": 1,
+      "snapshot_folder_id": "cc812686-3e0a-4334-aa24-f50eba31f56d",
+      "adapter": "higgsfield-publication-html"
+    },
+    "storyboard": {
+      "state": "BROWSER_REQUIRED",
+      "reason": "no storyboard records in server HTML; may live in canvas/snapshot folder rendered client-side",
+      "adapter": "higgsfield-publication-html"
+    },
+    "previs": {
+      "state": "BROWSER_REQUIRED",
+      "reason": "no previs records in server HTML; may live in canvas/snapshot folder rendered client-side",
+      "adapter": "higgsfield-publication-html"
+    },
+    "video": {
+      "state": "PARTIAL",
+      "reason": "final rendered film locator and probe fields recorded; bytes not downloaded (rights unresolved). A rendered MP4 is not a full project export.",
+      "count": 1,
+      "adapter": "higgsfield-publication-html"
+    },
+    "audio": {
+      "state": "UNKNOWN",
+      "reason": "no standalone audio listed; final film audio track unverified until bytes are probed",
+      "adapter": "higgsfield-publication-html"
+    },
+    "prompts": {
+      "state": "BROWSER_REQUIRED",
+      "reason": "publication sets showPrompts=true but prompt records are not in server HTML",
+      "adapter": "higgsfield-publication-html"
+    },
+    "model_params": {
+      "state": "BROWSER_REQUIRED",
+      "reason": "settings/model per placement expected alongside prompts; not in server HTML",
+      "adapter": "higgsfield-publication-html"
+    },
+    "timeline": {
+      "state": "BROWSER_REQUIRED",
+      "reason": "no timeline records in server HTML; may live in canvas/snapshot folder rendered client-side",
+      "adapter": "higgsfield-publication-html"
+    },
+    "canvas": {
+      "state": "BROWSER_REQUIRED",
+      "reason": "publication sets showCanvas=true but canvas graph is not in server HTML",
+      "adapter": "higgsfield-publication-html"
+    },
+    "rights": {
+      "state": "UNKNOWN",
+      "reason": "publication license field is null; public visibility is not a reuse grant (handoff §3)",
+      "adapter": "higgsfield-publication-html"
+    }
+  },
+  "items": [
+    {
+      "type": "video",
+      "id": "29e131bd-0ff6-4edd-ac17-d427c8ef3be7",
+      "title": "Passport Rush",
+      "duration_seconds": 287.541667,
+      "width": 1920,
+      "height": 1080,
+      "locators": {
+        "src": "https://cdn.higgsfield.ai/hls/video_input/29e131bd-0ff6-4edd-ac17-d427c8ef3be7/index.m3u8",
+        "originalSrc": "https://d2ol7oe51mr4n9.cloudfront.net/user_3GNcyaSCltezE7ot4WtRdn0jfo0/29e131bd-0ff6-4edd-ac17-d427c8ef3be7.mp4",
+        "thumbnail": "https://cdn.higgsfield.ai/hls/video_input/29e131bd-0ff6-4edd-ac17-d427c8ef3be7/thumbnail.webp"
+      },
+      "evidence_class": "OFFICIAL",
+      "bytes_obtained": false,
+      "role": "publication_media"
+    }
+  ],
+  "supplemental_items": [],
+  "adapters": [
+    {
+      "adapter": "higgsfield-publication-html",
+      "evidence_class": "OFFICIAL",
+      "source": {
+        "kind": "html_publication",
+        "url": "https://higgsfield.ai/@higgsfield.studio/projects/passport-rush",
+        "sha256": "1137454d3ef2d47ee504a5e845e12794f332acecb3de2470533f0a556cb7f5e4",
+        "bytes": 215404,
+        "retrieved_at": "2026-11-26T15:40:00Z",
+        "note": ""
+      }
+    }
+  ],
+  "errors": [],
+  "import_status": "PARTIAL",
+  "acceptance": {
+    "status": "NOT_RUN",
+    "note": "Importer output is producer evidence only. Full export PASS needs an independent Oracle check of the complete authorized inventory (handoff §14)."
+  }
+}
