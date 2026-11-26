@@ -1,0 +1,187 @@
+{
+ "scorer": "studio/reverse/v2_score.py (unchanged, rubric v1)",
+ "mechanical": {
+  "label": "agent review (not a human Oracle; cf. GAP-EVAL-01)",
+  "rubric": "RUBRIC.md v1 (pre-registered)",
+  "R1_decoys": {
+   "rejected": 4,
+   "of": 4,
+   "status": "VALID"
+  },
+  "R3_blind_agreement": {
+   "role_agreement": "30/30",
+   "sequence_boundary_f1_pm1": 0.78,
+   "status": "PASS"
+  },
+  "R4_cuts": {
+   "random_window_hard_cuts_seen_by_reviewer": 10,
+   "of_which_v1_has_boundary": 10,
+   "recall": 1.0,
+   "hard_cut_window_confirmed": "13/14",
+   "status": "PASS"
+  },
+  "R5_forbidden": {
+   "flagged_real_claims": [],
+   "status": "PASS"
+  },
+  "V2_verdict": "FAIL (agent review)",
+  "R2_claims": {
+   "inferred_supported_or_partial": "9/9",
+   "inferred_not_supported": [],
+   "measured_supported": "12/14",
+   "status": "FAIL",
+   "per_claim_verdicts": [
+    {
+     "original_id": "S1-UNK-mix",
+     "class": null,
+     "verdict": "SUPPORTED"
+    },
+    {
+     "original_id": "S1-EXT-INF-E4",
+     "class": null,
+     "verdict": "PARTIALLY_SUPPORTED"
+    },
+    {
+     "original_id": "S1-MEA-009",
+     "class": null,
+     "verdict": "SUPPORTED"
+    },
+    {
+     "original_id": "S1-UNK-camera",
+     "class": null,
+     "verdict": "SUPPORTED"
+    },
+    {
+     "original_id": "S1-MEA-002",
+     "class": null,
+     "verdict": "PARTIALLY_SUPPORTED"
+    },
+    {
+     "original_id": "S1-EXT-MEA-E4",
+     "class": null,
+     "verdict": "SUPPORTED"
+    },
+    {
+     "original_id": "S1-EXT-MEA-E1-adaptive",
+     "class": null,
+     "verdict": "SUPPORTED"
+    },
+    {
+     "original_id": "S1-EXT-MEA-E2",
+     "class": null,
+     "verdict": "SUPPORTED"
+    },
+    {
+     "original_id": "S1-EXT-INF-E2",
+     "class": null,
+     "verdict": "SUPPORTED"
+    },
+    {
+     "original_id": "S1-SRC-001",
+     "class": null,
+     "verdict": "CANNOT_DETERMINE"
+    },
+    {
+     "original_id": "S1-INF-003",
+     "class": null,
+     "verdict": "PARTIALLY_SUPPORTED"
+    },
+    {
+     "original_id": "S1-INF-001",
+     "class": null,
+     "verdict": "SUPPORTED"
+    },
+    {
+     "original_id": "S1-EXT-MEA-E1-content",
+     "class": null,
+     "verdict": "SUPPORTED"
+    },
+    {
+     "original_id": "S1-INF-005",
+     "class": null,
+     "verdict": "SUPPORTED"
+    },
+    {
+     "original_id": "S1-MEA-005",
+     "class": null,
+     "verdict": "SUPPORTED"
+    },
+    {
+     "original_id": "S1-UNK-credits",
+     "class": null,
+     "verdict": "SUPPORTED"
+    },
+    {
+     "original_id": "S1-UVC-001",
+     "class": null,
+     "verdict": "CANNOT_DETERMINE"
+    },
+    {
+     "original_id": "S1-INF-004",
+     "class": null,
+     "verdict": "PARTIALLY_SUPPORTED"
+    },
+    {
+     "original_id": "S1-EXT-INF-E3",
+     "class": null,
+     "verdict": "SUPPORTED"
+    },
+    {
+     "original_id": "S1-MEA-007",
+     "class": null,
+     "verdict": "SUPPORTED"
+    },
+    {
+     "original_id": "S1-MEA-006",
+     "class": null,
+     "verdict": "SUPPORTED"
+    },
+    {
+     "original_id": "S1-INF-002",
+     "class": null,
+     "verdict": "PARTIALLY_SUPPORTED"
+    },
+    {
+     "original_id": "S1-MEA-008",
+     "class": null,
+     "verdict": "SUPPORTED"
+    },
+    {
+     "original_id": "S1-MEA-004",
+     "class": null,
+     "verdict": "SUPPORTED"
+    },
+    {
+     "original_id": "S1-MEA-003",
+     "class": null,
+     "verdict": "SUPPORTED"
+    },
+    {
+     "original_id": "S1-EXT-MEA-E3",
+     "class": null,
+     "verdict": "SUPPORTED"
+    },
+    {
+     "original_id": "S1-UNK-lens",
+     "class": null,
+     "verdict": "SUPPORTED"
+    },
+    {
+     "original_id": "S1-UNK-grade",
+     "class": null,
+     "verdict": "SUPPORTED"
+    },
+    {
+     "original_id": "S1-INF-006",
+     "class": null,
+     "verdict": "PARTIALLY_SUPPORTED"
+    },
+    {
+     "original_id": "S1-MEA-001",
+     "class": null,
+     "verdict": "PARTIALLY_SUPPORTED"
+    }
+   ]
+  }
+ }
+}

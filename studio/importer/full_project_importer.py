@@ -282,8 +282,71 @@ class ThirdPartyArchiveAdapter:
         return res
 
 
+class ElementsCSVAdapter:
+    """Owner-exported Elements library listing (CSV with ID/Name/Category/Created at...).
+
+    Metadata rows only: no element media bytes are implied (bytes_obtained=False). Rows are
+    de-duplicated by ID across files, so a category subset export does not double count.
+    Free text (Name, Description) stays in the private inventory as a hash + length unless the
+    caller keeps the whole inventory private; ``redacted_summary`` gives counts/hashes only.
+    Coverage for ``elements`` is never OBTAINED: the library listing cannot prove it equals the
+    project's placed Elements, and the author may differ from the publication author."""
+
+    name = "elements-csv-owner-export"
+    REQUIRED = ("ID", "Name", "Category", "Created at")
+
+    def can_handle(self, src: SourceInput) -> bool:
+        return src.kind == "elements_csv" and src.path.is_file()
+
+    def collect(self, src: SourceInput) -> AdapterResult:
+        import csv
+        raw = src.path.read_bytes()
+        res = AdapterResult(adapter=self.name, evidence_class=OWNER_EXPORT,
+                            source={"kind": src.kind, "file_sha256": sha256_bytes(raw), "bytes": len(raw),
+                                    "retrieved_at": src.retrieved_at, "note": src.note})
+        rows = list(csv.DictReader(raw.decode("utf-8-sig").splitlines()))
+        missing = [c for c in self.REQUIRED if not rows or c not in rows[0]]
+        if missing:
+            res.errors.append(f"missing required columns {missing}")
+            return res
+        res.source["rows"] = len(rows)
+        for r in rows:
+            desc = r.get("Description") or ""
+            res.items.append({"type": "elements", "id": r["ID"], "title": r["Name"], "category": r["Category"],
+                              "created_at": r["Created at"], "author": r.get("Author") or None,
+                              "review_status": r.get("Review status") or None, "version": r.get("Version") or None,
+                              "description_sha256": sha256_bytes(desc.encode()), "description_chars": len(desc),
+                              "source_file_sha256": res.source["file_sha256"],
+                              "evidence_class": OWNER_EXPORT, "bytes_obtained": False})
+        res.coverage["elements"] = _cov(PARTIAL, "owner-exported Elements listing: metadata rows only, no element media; "
+                                        "not proven equal to the project's placed Elements", obtained=len(rows))
+        return res
+
+
+def redacted_summary(inv: dict[str, Any]) -> dict[str, Any]:
+    """Counts/hashes only view of an inventory (safe for git when free text may be non-public)."""
+    el = {}
+    for it in inv["items"]:
+        if it["type"] == "elements":
+            el[it["id"]] = it
+    from collections import Counter
+    return {"schema": "full-project-inventory-redacted.v1", "import_status": inv["import_status"],
+            "coverage": {k: {"state": v["state"], "reason": v["reason"]} for k, v in inv["coverage"].items()},
+            "elements_unique": len(el),
+            "elements_by_category": dict(Counter(i["category"] for i in el.values())),
+            "elements_authors_distinct": len({i["author"] for i in el.values()}),
+            "elements_with_review_status": sum(1 for i in el.values() if i["review_status"]),
+            "elements_created_range": [min(i["created_at"] for i in el.values()), max(i["created_at"] for i in el.values())] if el else None,
+            "elements_id_sha256": sorted(sha256_bytes(i.encode()) for i in el),
+            "elements_title_sha256": sorted(sha256_bytes((i["title"] or "").encode()) for i in el.values()),
+            "adapters": [{"adapter": a["adapter"], "evidence_class": a["evidence_class"],
+                          "source": {k: v for k, v in a["source"].items() if k in ("kind", "file_sha256", "bytes", "rows", "manifest_sha256")}}
+                         for a in inv["adapters"]],
+            "errors": inv["errors"], "acceptance": inv["acceptance"]}
+
+
 DEFAULT_ADAPTERS: tuple[Adapter, ...] = (
-    HiggsfieldPublicationHTMLAdapter(), LocalExportAdapter(), ThirdPartyArchiveAdapter(),
+    HiggsfieldPublicationHTMLAdapter(), LocalExportAdapter(), ThirdPartyArchiveAdapter(), ElementsCSVAdapter(),
 )
 
 _RANK = {OBTAINED: 5, PARTIAL: 4, BROWSER_REQUIRED: 3, NOT_EXPOSED: 2, UNKNOWN: 1, NOT_RUN: 0}
@@ -321,6 +384,10 @@ class FullProjectImporter:
                 if _RANK[c["state"]] > _RANK[coverage[t]["state"]]:
                     coverage[t] = dict(c, adapter=r.adapter)
 
+        uniq = {i["id"] for i in items if i["type"] == "elements"}
+        if uniq and coverage["elements"].get("obtained") is not None:
+            coverage["elements"]["obtained"] = len(uniq)
+            coverage["elements"]["note"] = "obtained = unique element IDs across all listed sources"
         required = [t for t in ITEM_TYPES if t != "rights"]
         complete = all(coverage[t]["state"] in (OBTAINED, NOT_EXPOSED) for t in required) \
             and coverage["rights"]["state"] == OBTAINED
@@ -344,15 +411,20 @@ def main(argv: list[str] | None = None) -> int:
     ap = argparse.ArgumentParser(description=__doc__.splitlines()[0])
     ap.add_argument("--html", action="append", default=[], help="saved publication HTML (repeatable)")
     ap.add_argument("--export-dir", action="append", default=[], help="owner/official export dir with export_manifest.json")
+    ap.add_argument("--elements-csv", action="append", default=[], help="owner-exported Elements listing CSV (metadata rows; repeatable)")
+    ap.add_argument("--redacted-out", help="also write a counts/hashes-only summary (safe for git)")
     ap.add_argument("--supplemental-archive", action="append", default=[], help="third-party archive path (supplemental only)")
     ap.add_argument("--url"); ap.add_argument("--source-id"); ap.add_argument("--retrieved-at")
     ap.add_argument("--out", required=True)
     a = ap.parse_args(argv)
     srcs = [SourceInput("html_publication", Path(p), a.url, a.retrieved_at) for p in a.html]
     srcs += [SourceInput("export_dir", Path(p), retrieved_at=a.retrieved_at) for p in a.export_dir]
+    srcs += [SourceInput("elements_csv", Path(p), retrieved_at=a.retrieved_at) for p in a.elements_csv]
     srcs += [SourceInput("third_party_archive", Path(p)) for p in a.supplemental_archive]
     inv = FullProjectImporter().run(srcs, source_url=a.url, source_id=a.source_id)
     Path(a.out).write_text(json.dumps(inv, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    if a.redacted_out:
+        Path(a.redacted_out).write_text(json.dumps(redacted_summary(inv), ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(json.dumps({"import_status": inv["import_status"],
                       "coverage": {k: v["state"] for k, v in inv["coverage"].items()},
                       "errors": inv["errors"]}, ensure_ascii=False))

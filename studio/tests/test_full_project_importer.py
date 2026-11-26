@@ -122,6 +122,39 @@ class ImporterTests(unittest.TestCase):
         self.assertTrue(all(c["state"] == "NOT_RUN" for c in inv["coverage"].values()))
 
 
+class ElementsCsvTests(unittest.TestCase):
+    CSV = "ID,Name,Display name,Version,Category,Description,Review status,Author,Performer,Created at\n"
+
+    def _write(self, d, name, rows):
+        p = Path(d) / name
+        p.write_text(self.CSV + "".join(rows), encoding="utf-8")
+        return p
+
+    def test_rows_dedup_partial_and_redaction(self):
+        from studio.importer.full_project_importer import redacted_summary
+        with tempfile.TemporaryDirectory() as d:
+            a = self._write(d, "all.csv", ["i1,n1,n1,,prop,secret desc,,au,,2026-01-01T00:00:00Z\n",
+                                           "i2,n2,n2,,character,other,,au,,2026-01-02T00:00:00Z\n"])
+            b = self._write(d, "props.csv", ["i1,n1,n1,,prop,secret desc,,au,,2026-01-01T00:00:00Z\n"])
+            inv = FullProjectImporter().run([SourceInput("elements_csv", a), SourceInput("elements_csv", b)])
+            self.assertEqual(inv["coverage"]["elements"]["state"], "PARTIAL")
+            self.assertEqual(inv["coverage"]["elements"]["obtained"], 2)
+            self.assertTrue(all(i["bytes_obtained"] is False for i in inv["items"]))
+            self.assertEqual(inv["import_status"], "PARTIAL")
+            validate(inv, SCHEMA)
+            red = json.dumps(redacted_summary(inv))
+            for leak in ("secret desc", "n1", "i1", "other"):
+                self.assertNotIn(leak, red)
+            self.assertEqual(json.loads(red)["elements_unique"], 2)
+
+    def test_missing_columns_is_error(self):
+        with tempfile.TemporaryDirectory() as d:
+            p = Path(d) / "x.csv"
+            p.write_text("A,B\n1,2\n")
+            inv = FullProjectImporter().run([SourceInput("elements_csv", p)])
+            self.assertTrue(any("missing required columns" in e for e in inv["errors"]))
+
+
 class SerovalTests(unittest.TestCase):
     def test_literals(self):
         v = parse_assignment_after('z project:$R[1]={a:!0,b:!1,c:void 0,d:null,e:"x\\"y",f:[1,2.5,-3],g:$R[2]={h:"\\u00e9"},i:$R[2]}', "project:")
