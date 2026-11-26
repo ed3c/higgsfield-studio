@@ -57,3 +57,7 @@ A1 timestamps are sampled only from S2 SHOT segments that lie wholly inside a si
 3. A protocol breach caps the reported verdict at **INCONCLUSIVE (agent review)**. Breaches are: same identity as the author (always true for Grok Bot reviewers); stage-A hash not logged before the passphrase is released; stage A edited after its hash; any read of a forbidden path. The uncapped gate-level verdict is reported next to the capped one.
 
 Scorer: `studio/reverse/v2r3_score.py`. Builder: `studio/reverse/v2r3_build_package.py`. Both are committed with this file.
+
+## Amendment 1 (2026-11-27, before any package was released or reviewed)
+
+The first build attempt hung (no free 30 s A3 span after A2 sampling) and the second produced only 3 A4 spans, because whole verified intervals rarely avoid every round-1/round-2 item. Both builds were discarded unreleased (never shown to a reviewer). Sampling order is now A3 → A4 → A2 → A1. An A4 span is the **largest sub-interval (≥ 3.0 s) of an S5-verified interval** that is free of round-1/round-2 items and earlier round-3 items; the exclusion checks (unconfirmed candidates, DISSOLVE, BLACK) still run on the whole verified interval, E2 is recomputed on the exact sub-span and the native-rate decode check runs on it. Gates and thresholds are unchanged.

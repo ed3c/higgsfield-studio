@@ -94,6 +94,48 @@ def main():
     spans.sort(key=lambda s: s["t_start"])
     for i, s in enumerate(spans, 1):
         s["span"] = f"V{i:02d}"
+    # A4 verified camera spans
+    from .seg_v2 import native_cut_free
+    from .ext_analyses import Gray5, camera_motion
+    g = Gray5(pack / "work/frames_5fps_320x180.gray")
+    pool = [s for s in segs2 if s["kind"] == "SHOT" and s["duration"] >= 3.5]
+    rng.shuffle(pool)
+    camspans, rejected = [], []
+    need = {"STATIC": 8, "MOVING": 12}
+    for s in pool:
+        if need["STATIC"] == 0 and need["MOVING"] == 0:
+            break
+        x0, x1 = round(s["start"] + 0.5, 3), round(s["end"] - 0.5, 3)
+        if any(x0 < u < x1 for u in unconf) or any(overlaps((d["start"], d["end"]), (x0, x1)) for d in dss) or any(overlaps(b, (x0, x1)) for b in blacks):
+            rejected.append({"seg2_id": s["id"], "reason": "candidate/dissolve/black inside"}); continue
+        # largest sub-interval of the verified interval that is free of rounds 1-2 and earlier round-3 items
+        cuts_ = sorted([(max(x0, t0 - 0.5), min(x1, t1 + 0.5)) for t0, t1 in taken] + [(max(x0, t0), min(x1, t1)) for t0, t1 in prev])
+        cuts_ = [c for c in cuts_ if c[0] < c[1]]
+        best, cur = (0, 0), x0
+        for c0, c1 in cuts_:
+            if c0 > cur and c0 - cur > best[1] - best[0]:
+                best = (cur, c0)
+            cur = max(cur, c1)
+        if x1 - cur > best[1] - best[0]:
+            best = (cur, x1)
+        if best[1] - best[0] < 3.0:
+            continue
+        x0, x1 = round(best[0] + 0.05, 3), round(best[1] - 0.05, 3)
+        lab = camera_motion(g, [{"id": s["id"], "kind": "SHOT", "start": x0, "end": x1, "duration": x1 - x0, "tc_in": tc(x0)}])
+        if not lab or lab[0]["label"] == "UNDETERMINED_LOW_TEXTURE":
+            rejected.append({"seg2_id": s["id"], "reason": "low texture"}); continue
+        cls = "STATIC" if lab[0]["label"] == "STATIC" else "MOVING"
+        if need[cls] == 0:
+            continue
+        ok, info = native_cut_free(mkv, x0, x1)
+        if not ok:
+            rejected.append({"seg2_id": s["id"], "reason": "native decode flagged", **(info or {})}); continue
+        need[cls] -= 1
+        taken.append((x0, x1))
+        camspans.append({"t_start": x0, "t_end": x1, "seg2_id": s["id"], "author_label": lab[0]["label"], "e2_span": lab[0], "native_check": info})
+    camspans.sort(key=lambda c: c["t_start"])
+    for i, c in enumerate(camspans, 1):
+        c["cam"] = f"N{i:02d}"
     fill("SEG2_CUT_NEW", cut_new, 7)
     fill("SEG2_CUT_V1", cut_old, 8)
     fill("SEG2_BLACK_EDGE", black_edges, 8)
@@ -131,37 +173,6 @@ def main():
     stamps.sort(key=lambda x: x["t"])
     for i, s in enumerate(stamps, 1):
         s["sample"] = f"Q{i:02d}"
-    # A4 verified camera spans
-    from .seg_v2 import native_cut_free
-    from .ext_analyses import Gray5, camera_motion
-    g = Gray5(pack / "work/frames_5fps_320x180.gray")
-    pool = [s for s in segs2 if s["kind"] == "SHOT" and s["duration"] >= 3.5]
-    rng.shuffle(pool)
-    camspans, rejected = [], []
-    need = {"STATIC": 8, "MOVING": 12}
-    for s in pool:
-        if need["STATIC"] == 0 and need["MOVING"] == 0:
-            break
-        x0, x1 = round(s["start"] + 0.5, 3), round(s["end"] - 0.5, 3)
-        if not free((x0, x1), 0.0):
-            continue
-        if any(x0 < u < x1 for u in unconf) or any(overlaps((d["start"], d["end"]), (x0, x1)) for d in dss) or any(overlaps(b, (x0, x1)) for b in blacks):
-            rejected.append({"seg2_id": s["id"], "reason": "candidate/dissolve/black inside"}); continue
-        lab = camera_motion(g, [{"id": s["id"], "kind": "SHOT", "start": x0, "end": x1, "duration": x1 - x0, "tc_in": tc(x0)}])
-        if not lab or lab[0]["label"] == "UNDETERMINED_LOW_TEXTURE":
-            rejected.append({"seg2_id": s["id"], "reason": "low texture"}); continue
-        cls = "STATIC" if lab[0]["label"] == "STATIC" else "MOVING"
-        if need[cls] == 0:
-            continue
-        ok, info = native_cut_free(mkv, x0, x1)
-        if not ok:
-            rejected.append({"seg2_id": s["id"], "reason": "native decode flagged", **(info or {})}); continue
-        need[cls] -= 1
-        taken.append((x0, x1))
-        camspans.append({"t_start": x0, "t_end": x1, "seg2_id": s["id"], "author_label": lab[0]["label"], "e2_span": lab[0], "native_check": info})
-    camspans.sort(key=lambda c: c["t_start"])
-    for i, c in enumerate(camspans, 1):
-        c["cam"] = f"N{i:02d}"
     author_seq_starts = [q["start"] for q in obs["sequences"] if q["start"] > 0]
 
     # ---- stage A
