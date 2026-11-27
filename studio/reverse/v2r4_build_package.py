@@ -261,6 +261,8 @@ def main():
         for k, v in pathmap:
             if p.startswith(k):
                 return v + p[len(k):]
+        if "/" not in p:  # top-level pack files (e.g. reverse-ir.json) live in evidence/
+            return "evidence/" + p
         return p
     fields = ["class", "source_id", "source_version", "media_sha256", "creator_statement", "locator", "observation", "inference",
               "alternative_explanation", "unknowns", "confidence_limits", "evidence_file"]
