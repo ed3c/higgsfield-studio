@@ -1,0 +1,20 @@
+{
+ "a": {
+  "tau_a": 0.6,
+  "tuning_balanced_accuracy": 0.984
+ },
+ "b": {
+  "rb": 8,
+  "Dmin": 0.2
+ },
+ "c": {
+  "rc": 5,
+  "Dmin_c": 0.3,
+  "smin": 0.8
+ },
+ "d": {
+  "tau_r": 0.25,
+  "tau_s": 0.5,
+  "rho": -0.9
+ }
+}

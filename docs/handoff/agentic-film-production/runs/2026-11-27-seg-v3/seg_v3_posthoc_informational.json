@@ -1,0 +1,16 @@
+{
+ "label": "informational author frame check AFTER the seg-v3 run; no threshold, rule or output changed",
+ "light_change_removals": {
+  "115.415": "REAL CUT (projection hall -> interview; author frame check in round 2/3 work) misclassified as LIGHT_CHANGE (Q 0.961)",
+  "1513.345": "same framing across the boundary: light change (correct)",
+  "2015.28": "interview, unchanged framing: exposure flicker (correct)"
+ },
+ "near_black_cuts": {
+  "654.654": "dark lamp hall, small lamp squares change: likely lamp pulse, not a cut",
+  "699.499": "dark -> lit hall at the same camera position: ambiguous (lights on vs cut)"
+ },
+ "dissolves": {
+  "942.0-944.0": "Speaker B talk, static shot, head motion against a plain wall fits the blend model: FALSE POSITIVE; same pattern likely for the 6 spans in 919-1000 s"
+ },
+ "reading": "Held-out synthetic controls passed for (a), (c), (d), but real footage shows failure modes the synthetic sets did not cover: dark-scene structure noise inflating Q in (a), lamp pulses in (c), and moving speakers on plain backgrounds in (d). Round 4 measures these through the SEG3_LIGHT, SEG3_DARK_NEW and SEG3_DISSOLVE strata."
+}
