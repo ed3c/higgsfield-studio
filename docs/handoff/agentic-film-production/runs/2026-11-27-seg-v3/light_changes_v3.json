@@ -1,0 +1,271 @@
+[
+ {
+  "t": 115.415,
+  "Q": 0.961,
+  "sources": [
+   "ffmpeg_0.10",
+   "pysd_adaptive"
+  ],
+  "tuning_item": false
+ },
+ {
+  "t": 462.8958,
+  "Q": 0.962,
+  "sources": [
+   "ffmpeg_0.10",
+   "pysd_adaptive",
+   "pysd_content"
+  ],
+  "tuning_item": false
+ },
+ {
+  "t": 466.933,
+  "Q": 0.972,
+  "sources": [
+   "ffmpeg_0.10",
+   "pysd_adaptive",
+   "pysd_content"
+  ],
+  "tuning_item": false
+ },
+ {
+  "t": 468.702,
+  "Q": 0.986,
+  "sources": [
+   "ffmpeg_0.10"
+  ],
+  "tuning_item": false
+ },
+ {
+  "t": 470.27,
+  "Q": 0.998,
+  "sources": [
+   "ffmpeg_0.10"
+  ],
+  "tuning_item": false
+ },
+ {
+  "t": 470.937,
+  "Q": 0.945,
+  "sources": [
+   "ffmpeg_0.10",
+   "pysd_adaptive",
+   "pysd_content"
+  ],
+  "tuning_item": false
+ },
+ {
+  "t": 474.7409,
+  "Q": 0.668,
+  "sources": [
+   "pysd_adaptive",
+   "pysd_content"
+  ],
+  "tuning_item": false
+ },
+ {
+  "t": 532.165,
+  "Q": 0.966,
+  "sources": [
+   "pysd_adaptive"
+  ],
+  "tuning_item": false
+ },
+ {
+  "t": 608.7081,
+  "Q": 0.791,
+  "sources": [
+   "pysd_adaptive"
+  ],
+  "tuning_item": false
+ },
+ {
+  "t": 639.3387,
+  "Q": 0.678,
+  "sources": [
+   "ffmpeg_0.10",
+   "pysd_adaptive",
+   "pysd_content"
+  ],
+  "tuning_item": false
+ },
+ {
+  "t": 644.7441,
+  "Q": 0.822,
+  "sources": [
+   "pysd_adaptive",
+   "pysd_content"
+  ],
+  "tuning_item": false
+ },
+ {
+  "t": 645.4782,
+  "Q": 0.734,
+  "sources": [
+   "pysd_adaptive",
+   "pysd_content"
+  ],
+  "tuning_item": false
+ },
+ {
+  "t": 650.7835,
+  "Q": 0.84,
+  "sources": [
+   "pysd_adaptive",
+   "pysd_content"
+  ],
+  "tuning_item": false
+ },
+ {
+  "t": 656.9897,
+  "Q": 0.713,
+  "sources": [
+   "ffmpeg_0.10",
+   "pysd_content"
+  ],
+  "tuning_item": false
+ },
+ {
+  "t": 716.7827,
+  "Q": 0.745,
+  "sources": [
+   "ffmpeg_0.10",
+   "pysd_adaptive",
+   "pysd_content"
+  ],
+  "tuning_item": false
+ },
+ {
+  "t": 722.789,
+  "Q": 0.877,
+  "sources": [
+   "ffmpeg_0.10"
+  ],
+  "tuning_item": false
+ },
+ {
+  "t": 797.5634,
+  "Q": 0.756,
+  "sources": [
+   "pysd_adaptive",
+   "pysd_content"
+  ],
+  "tuning_item": false
+ },
+ {
+  "t": 802.2348,
+  "Q": 0.637,
+  "sources": [
+   "ffmpeg_0.10",
+   "pysd_adaptive",
+   "pysd_content"
+  ],
+  "tuning_item": true
+ },
+ {
+  "t": 803.4026,
+  "Q": 0.807,
+  "sources": [
+   "pysd_adaptive",
+   "pysd_content"
+  ],
+  "tuning_item": false
+ },
+ {
+  "t": 1513.3452,
+  "Q": 0.913,
+  "sources": [
+   "pysd_adaptive",
+   "pysd_content"
+  ],
+  "tuning_item": false
+ },
+ {
+  "t": 1616.081,
+  "Q": 0.924,
+  "sources": [
+   "ffmpeg_0.10",
+   "pysd_adaptive",
+   "pysd_content"
+  ],
+  "tuning_item": false
+ },
+ {
+  "t": 1659.8916,
+  "Q": 0.961,
+  "sources": [
+   "ffmpeg_0.10",
+   "pysd_adaptive",
+   "pysd_content"
+  ],
+  "tuning_item": false
+ },
+ {
+  "t": 2015.2799,
+  "Q": 0.814,
+  "sources": [
+   "ffmpeg_0.10",
+   "pysd_adaptive",
+   "pysd_content"
+  ],
+  "tuning_item": false
+ },
+ {
+  "t": 2184.783,
+  "Q": 0.968,
+  "sources": [
+   "ffmpeg_0.10",
+   "pysd_content"
+  ],
+  "tuning_item": true
+ },
+ {
+  "t": 2186.685,
+  "Q": 0.946,
+  "sources": [
+   "ffmpeg_0.10"
+  ],
+  "tuning_item": false
+ },
+ {
+  "t": 2187.0849,
+  "Q": 0.929,
+  "sources": [
+   "pysd_adaptive"
+  ],
+  "tuning_item": false
+ },
+ {
+  "t": 2187.752,
+  "Q": 1.001,
+  "sources": [
+   "ffmpeg_0.10"
+  ],
+  "tuning_item": false
+ },
+ {
+  "t": 2189.587,
+  "Q": 0.997,
+  "sources": [
+   "ffmpeg_0.10"
+  ],
+  "tuning_item": false
+ },
+ {
+  "t": 2193.858,
+  "Q": 0.995,
+  "sources": [
+   "ffmpeg_0.10"
+  ],
+  "tuning_item": false
+ },
+ {
+  "t": 2195.393,
+  "Q": 0.996,
+  "sources": [
+   "ffmpeg_0.10",
+   "pysd_adaptive"
+  ],
+  "tuning_item": false
+ }
+]

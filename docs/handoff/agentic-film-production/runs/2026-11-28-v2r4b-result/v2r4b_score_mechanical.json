@@ -1,0 +1,258 @@
+{
+ "label": "agent review (not a human Oracle; cf. GAP-EVAL-01)",
+ "rubric": "RUBRIC_V2R4.md",
+ "R1": {
+  "decoys_rejected": "4/4",
+  "status": "VALID"
+ },
+ "R2": {
+  "inferred": "7/7",
+  "R2_inf": "PASS",
+  "measured": "19/20",
+  "R2_mea": "PASS",
+  "per_claim": [
+   {
+    "review_id": "L01",
+    "original_id": "S1-INF-005",
+    "class": "INFERRED",
+    "verdict": "SUPPORTED"
+   },
+   {
+    "review_id": "L02",
+    "original_id": "S1-MEA-005",
+    "class": "MEASURED",
+    "verdict": "PARTIALLY_SUPPORTED"
+   },
+   {
+    "review_id": "L03",
+    "original_id": "S1-MEA-007",
+    "class": "MEASURED",
+    "verdict": "SUPPORTED"
+   },
+   {
+    "review_id": "L04",
+    "original_id": "S1-EXT-MEA-E1-content",
+    "class": "MEASURED",
+    "verdict": "SUPPORTED"
+   },
+   {
+    "review_id": "L05",
+    "original_id": "S1-SEG2-MEA-004",
+    "class": "MEASURED",
+    "verdict": "SUPPORTED"
+   },
+   {
+    "review_id": "L07",
+    "original_id": "S1-INF-004",
+    "class": "INFERRED",
+    "verdict": "SUPPORTED"
+   },
+   {
+    "review_id": "L08",
+    "original_id": "S1-SEG3-MEA-004",
+    "class": "MEASURED",
+    "verdict": "SUPPORTED"
+   },
+   {
+    "review_id": "L09",
+    "original_id": "S1-SEG3-MEA-002",
+    "class": "MEASURED",
+    "verdict": "SUPPORTED"
+   },
+   {
+    "review_id": "L10",
+    "original_id": "S1-SEG3-MEA-003",
+    "class": "MEASURED",
+    "verdict": "SUPPORTED"
+   },
+   {
+    "review_id": "L11",
+    "original_id": "S1-MEA-001-decode",
+    "class": "MEASURED",
+    "verdict": "SUPPORTED"
+   },
+   {
+    "review_id": "L12",
+    "original_id": "S1-SRC-001",
+    "class": "SOURCE_EVIDENCE",
+    "verdict": "SUPPORTED"
+   },
+   {
+    "review_id": "L13",
+    "original_id": "S1-INF-003",
+    "class": "INFERRED",
+    "verdict": "SUPPORTED"
+   },
+   {
+    "review_id": "L14",
+    "original_id": "S1-UVC-001",
+    "class": "UNVERIFIED_CLAIM",
+    "verdict": "SUPPORTED"
+   },
+   {
+    "review_id": "L15",
+    "original_id": "S1-EXT-INF-E4",
+    "class": "INFERRED",
+    "verdict": "SUPPORTED"
+   },
+   {
+    "review_id": "L16",
+    "original_id": "S1-EXT-MEA-E3",
+    "class": "MEASURED",
+    "verdict": "SUPPORTED"
+   },
+   {
+    "review_id": "L17",
+    "original_id": "S1-INF-001",
+    "class": "INFERRED",
+    "verdict": "PARTIALLY_SUPPORTED"
+   },
+   {
+    "review_id": "L19",
+    "original_id": "S1-EXT-INF-E4-labels",
+    "class": "INFERRED",
+    "verdict": "SUPPORTED"
+   },
+   {
+    "review_id": "L20",
+    "original_id": "S1-MEA-003",
+    "class": "MEASURED",
+    "verdict": "SUPPORTED"
+   },
+   {
+    "review_id": "L21",
+    "original_id": "S1-UNK-mix",
+    "class": "UNKNOWN",
+    "verdict": "SUPPORTED"
+   },
+   {
+    "review_id": "L22",
+    "original_id": "S1-EXT-MEA-E2",
+    "class": "MEASURED",
+    "verdict": "SUPPORTED"
+   },
+   {
+    "review_id": "L23",
+    "original_id": "S1-INF-006",
+    "class": "INFERRED",
+    "verdict": "SUPPORTED"
+   },
+   {
+    "review_id": "L24",
+    "original_id": "S1-EXT-MEA-E1-adaptive",
+    "class": "MEASURED",
+    "verdict": "SUPPORTED"
+   },
+   {
+    "review_id": "L26",
+    "original_id": "S1-UNK-grade",
+    "class": "UNKNOWN",
+    "verdict": "SUPPORTED"
+   },
+   {
+    "review_id": "L28",
+    "original_id": "S1-EXT-MEA-E4",
+    "class": "MEASURED",
+    "verdict": "SUPPORTED"
+   },
+   {
+    "review_id": "L29",
+    "original_id": "S1-MEA-002-O3",
+    "class": "MEASURED",
+    "verdict": "SUPPORTED"
+   },
+   {
+    "review_id": "L30",
+    "original_id": "S1-MEA-001",
+    "class": "MEASURED",
+    "verdict": "SUPPORTED"
+   },
+   {
+    "review_id": "L31",
+    "original_id": "S1-MEA-009",
+    "class": "MEASURED",
+    "verdict": "SUPPORTED"
+   },
+   {
+    "review_id": "L32",
+    "original_id": "S1-UNK-lens",
+    "class": "UNKNOWN",
+    "verdict": "SUPPORTED"
+   },
+   {
+    "review_id": "L33",
+    "original_id": "S1-SEG2-MEA-002",
+    "class": "MEASURED",
+    "verdict": "SUPPORTED"
+   },
+   {
+    "review_id": "L34",
+    "original_id": "S1-UNK-camera",
+    "class": "UNKNOWN",
+    "verdict": "SUPPORTED"
+   },
+   {
+    "review_id": "L35",
+    "original_id": "S1-SEG3-MEA-001",
+    "class": "MEASURED",
+    "verdict": "SUPPORTED"
+   },
+   {
+    "review_id": "L36",
+    "original_id": "S1-MEA-008",
+    "class": "MEASURED",
+    "verdict": "SUPPORTED"
+   },
+   {
+    "review_id": "L37",
+    "original_id": "S1-MEA-006",
+    "class": "MEASURED",
+    "verdict": "SUPPORTED"
+   }
+  ],
+  "status": "PASS"
+ },
+ "R3": {
+  "role_agreement": "29/29",
+  "R3_role": "PASS",
+  "seq_f1_10s": 0.4,
+  "R3_seq": "FAIL",
+  "status": "FAIL"
+ },
+ "R4": {
+  "seg3_cut_windows_confirmed": "7/7",
+  "R4_prec": "PASS",
+  "new_cut_windows_confirmed": "3/3",
+  "R4_new": "INCONCLUSIVE",
+  "dark_cut_windows_confirmed": "2/7",
+  "R4_dark": "FAIL",
+  "reviewer_cut_events_matched": "3/6",
+  "R4_rec": "FAIL",
+  "info_reviewer_soft_events_matched_by_seg3_dissolves": "3/8",
+  "info_seg3_boundaries_in_A3_matched_by_reviewer": "20/30",
+  "status": "FAIL"
+ },
+ "R7": {
+  "dissolve_windows_confirmed": "1/2",
+  "dissolve_controls_pass": true,
+  "status": "INCONCLUSIVE"
+ },
+ "R8": {
+  "light_change_windows_without_reviewer_cut": "0/0",
+  "status": "INCONCLUSIVE"
+ },
+ "R5": {
+  "flagged_real_claims": [],
+  "status": "PASS"
+ },
+ "R6": {
+  "static_vs_moving": "11/17",
+  "info_type_agreement": "0/3",
+  "status": "FAIL"
+ },
+ "uncapped_gate_verdict": "FAIL",
+ "protocol_breaches": [
+  "F-12: reviewer is a Grok Bot reviewer agent, same identity as the author (owner standing rule)"
+ ],
+ "V2_verdict": "INCONCLUSIVE (agent review)"
+}

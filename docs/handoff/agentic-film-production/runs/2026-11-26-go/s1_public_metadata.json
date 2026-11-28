@@ -1,0 +1,23 @@
+{
+  "source_id": "S1",
+  "video_id": "onNBysMf9WM",
+  "url": "https://www.youtube.com/watch?v=onNBysMf9WM",
+  "observed_at": "2026-11-26T15:38:00Z",
+  "method": "anonymous public watch-page HTML (curl), ytInitialPlayerResponse; no media requested",
+  "title": "展覧会ドキュメント「坂本龍一 with 高谷史郎｜設置音楽2　IS YOUR TIME」",
+  "channel": "NTTインターコミュニケーション・センター [ICC]",
+  "channel_id": "UCc6CCp_Wig8hpX2p6lyR2MQ",
+  "length_seconds": 2333,
+  "publish_date": "2018-04-06T03:50:45-07:00",
+  "category": "Nonprofits & Activism",
+  "is_private": false,
+  "is_unlisted": false,
+  "playability_status": "OK",
+  "playable_in_embed": false,
+  "oembed_http_status": 401,
+  "caption_tracks_in_player_response": 0,
+  "captions_key_present": false,
+  "creative_commons_marker_in_page": false,
+  "description_excerpt": "ICC企画展「坂本龍一 with 高谷史郎｜設置音楽2　IS YOUR TIME」\n会期：2017年12月9日（土）—2018年3月11日（日）\n会場：NTTインターコミュニケーション・センター [ICC] ギャラリーA\nhttp://www.ntticc.or.jp/ja/exhibitions/2017/sakamoto-ryuichi-with-takatani-shiro-installation-music-2-is-your-time/",
+  "watch_page_sha256": "8eab978b2bcb54a4742ecf712b14b7e3655c796d0b1d9b27d760feaac14f4729"
+}

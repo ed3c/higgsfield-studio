@@ -1,0 +1,64 @@
+{
+ "a": {
+  "tuning": {
+   "v1_cuts_kept": "41/41",
+   "known_light_changes_flagged": "2/4",
+   "known_light_Q": [
+    0.637,
+    0.478,
+    0.968,
+    0.396
+   ],
+   "exposure_steps_flagged": "60/60"
+  },
+  "held_out": {
+   "v1_cuts_kept": "42/42",
+   "exposure_steps_flagged": "59/60"
+  },
+  "PASS": true
+ },
+ "b": {
+  "tuning": {
+   "recall_incl_known": 0.266,
+   "known_jump_cuts_hit": "1/4",
+   "static_FP": 0.01
+  },
+  "held_out": {
+   "synthetic_recall": "9/60",
+   "static_FP": "0/100"
+  },
+  "PASS": false
+ },
+ "c": {
+  "tuning": {
+   "recall_incl_known": 0.859,
+   "known_near_black_hit": "4/4",
+   "dark_FP": 0.03
+  },
+  "held_out": {
+   "dark_cut_recall": "55/60",
+   "dark_negative_FP": "1/100"
+  },
+  "PASS": true
+ },
+ "d": {
+  "tuning": {
+   "synthetic_recall": 0.833,
+   "static_FP": 0.03,
+   "ramp_FP": 0.04,
+   "real_tuning_items_detected": {
+    "pos_1412.45": true,
+    "pos_1759.12": true,
+    "pos_2247.3": true,
+    "neg_130.9-135.6": false,
+    "neg_1441.1-1442.7": false
+   }
+  },
+  "held_out": {
+   "synthetic_recall": 0.983,
+   "static_FP": 0.01,
+   "ramp_FP": 0.03
+  },
+  "PASS": true
+ }
+}

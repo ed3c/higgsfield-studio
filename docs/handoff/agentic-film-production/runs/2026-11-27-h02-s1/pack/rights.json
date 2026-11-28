@@ -1,0 +1,36 @@
+{
+ "source_url": "https://www.youtube.com/watch?v=onNBysMf9WM",
+ "video_id": "onNBysMf9WM",
+ "rights_holder": "NTTインターコミュニケーション・センター [ICC] (channel UCc6CCp_Wig8hpX2p6lyR2MQ); no licence from rights holder on record",
+ "permitted_operations": [
+  "download",
+  "private_analysis"
+ ],
+ "excluded_operations": [
+  "redistribution",
+  "publication",
+  "third_party_transfer",
+  "derivative_publication",
+  "commercial_reuse"
+ ],
+ "basis_type": "OWNER_DECISION_RISK_ACCEPTED",
+ "evidence": "Owner (Neon) decision, verbatim: '軟體可以下載就下載' — relayed by the parent Grok Bot session on 2026-11-26 23:59 UTC+8 in answer to the YT0 question in YT_S1_ACQUISITION_2026-11-26.md. Owner accepts the rights risk. Standard YouTube licence; no ICC permission; this is not a rights-holder grant.",
+ "scope": "private analysis only; media stays in owner's private Google Drive / box private dir; no redistribution",
+ "confirmed_by": "Neon (project owner), via parent session relay",
+ "confirmed_at": "2026-11-26T23:59:00+08:00",
+ "h02_scope": {
+  "operations": [
+   "frame extraction",
+   "audio measurement",
+   "transcript alignment"
+  ],
+  "outputs_private": [
+   "keyframes/*.jpg",
+   "keyframes/contact/*.jpg",
+   "transcript/*.srt",
+   "work/*"
+  ],
+  "outputs_git": "small derived JSON/MD without frames or transcript text",
+  "redistribution": "none"
+ }
+}

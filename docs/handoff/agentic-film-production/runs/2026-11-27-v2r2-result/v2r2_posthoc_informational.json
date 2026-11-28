@@ -1,0 +1,59 @@
+{
+ "schema": "v2r2-posthoc-informational.v1",
+ "note": "Run AFTER scoring; informational, does not change any gate. Method = O3 check from ORACLE_PREREG_S1_H02 (input-seek decode, 64x36 gray, d_cut>=8 and >=3x base).",
+ "reviewer_cuts_not_matched_by_author_boundaries_pm0.5s": [
+  {
+   "t": 2089.39,
+   "d_cut": 5.49,
+   "confirmed": false,
+   "author_scene_score_nearby": 0.0767
+  },
+  {
+   "t": 858.39,
+   "d_cut": 19.53,
+   "confirmed": true,
+   "author_scene_score_nearby": 0.1436,
+   "pyscenedetect_content_cut": true
+  },
+  {
+   "t": 864.46,
+   "d_cut": 26.24,
+   "confirmed": true,
+   "author_scene_score_nearby": 0.2407,
+   "pyscenedetect_content_cut": true
+  },
+  {
+   "t": 876.74,
+   "d_cut": 16.46,
+   "confirmed": true,
+   "author_scene_score_nearby": 0.1493,
+   "pyscenedetect_content_cut": false
+  },
+  {
+   "t": 2157.99,
+   "d_cut": 10.6,
+   "confirmed": true,
+   "author_scene_score_nearby": 0.0653,
+   "pyscenedetect_content_cut": false
+  },
+  {
+   "t": 2170.97,
+   "d_cut": 10.26,
+   "confirmed": true,
+   "author_scene_score_nearby": null,
+   "pyscenedetect_content_cut": true
+  }
+ ],
+ "reading": "5 of 6 unmatched reviewer cut events are confirmed picture cuts with scene scores below the pre-registered 0.30 threshold: the author hard-cut list is a lower bound, not complete. 20 of 21 reviewer cut events are real; author boundaries match 15 of those 20.",
+ "R6_clean_subset": {
+  "excluded": [
+   "M05",
+   "M09",
+   "M11",
+   "M13",
+   "M20"
+  ],
+  "static_vs_moving": "11/15 (73.3%)",
+  "all": "15/20 (75%)"
+ }
+}

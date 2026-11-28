@@ -1,0 +1,140 @@
+{
+  "schema": "full-project-inventory-redacted.v1",
+  "import_status": "PARTIAL",
+  "coverage": {
+    "project": {
+      "state": "OBTAINED",
+      "reason": "public publication record parsed from server-rendered HTML"
+    },
+    "elements": {
+      "state": "PARTIAL",
+      "reason": "owner-exported Elements listing: metadata rows only, no element media; not proven equal to the project's placed Elements"
+    },
+    "assets": {
+      "state": "PARTIAL",
+      "reason": "publication lists 1 asset(s) server-side; snapshot folder contents load client-side"
+    },
+    "storyboard": {
+      "state": "BROWSER_REQUIRED",
+      "reason": "no storyboard records in server HTML; may live in canvas/snapshot folder rendered client-side"
+    },
+    "previs": {
+      "state": "BROWSER_REQUIRED",
+      "reason": "no previs records in server HTML; may live in canvas/snapshot folder rendered client-side"
+    },
+    "video": {
+      "state": "PARTIAL",
+      "reason": "final rendered film locator and probe fields recorded; bytes not downloaded (rights unresolved). A rendered MP4 is not a full project export."
+    },
+    "audio": {
+      "state": "UNKNOWN",
+      "reason": "no standalone audio listed; final film audio track unverified until bytes are probed"
+    },
+    "prompts": {
+      "state": "BROWSER_REQUIRED",
+      "reason": "publication sets showPrompts=true but prompt records are not in server HTML"
+    },
+    "model_params": {
+      "state": "BROWSER_REQUIRED",
+      "reason": "settings/model per placement expected alongside prompts; not in server HTML"
+    },
+    "timeline": {
+      "state": "BROWSER_REQUIRED",
+      "reason": "no timeline records in server HTML; may live in canvas/snapshot folder rendered client-side"
+    },
+    "canvas": {
+      "state": "BROWSER_REQUIRED",
+      "reason": "publication sets showCanvas=true but canvas graph is not in server HTML"
+    },
+    "rights": {
+      "state": "UNKNOWN",
+      "reason": "publication license field is null; public visibility is not a reuse grant (handoff §3)"
+    }
+  },
+  "elements_unique": 17,
+  "elements_by_category": {
+    "prop": 6,
+    "character": 7,
+    "environment": 2,
+    "auto:character": 2
+  },
+  "elements_authors_distinct": 1,
+  "elements_with_review_status": 0,
+  "elements_created_range": [
+    "2026-08-20T22:58:01.375Z",
+    "2026-09-04T18:00:35.426Z"
+  ],
+  "elements_id_sha256": [
+    "0cc4ff723c98bd188b74678e54b35b9728fbc61486ba36fca693c92a71473e34",
+    "0d4489b9ffcce20cff6cccfd191b6572f7a895ab5f55641d9f8ccccd216669f6",
+    "1c6dc1eeeda48b4e07e65b9d831774279bf4afdc724e68e9bb766e065aee1192",
+    "1e5f0fe6e5946478c80324dafac90bd71c4103785d15b366fc4ba573afee1c3c",
+    "221f24be52b1041218fc24923d19c84e8f6cf20cfdd9dbb19d386598388c49dd",
+    "3846c35eb7699a0859fc153549350e9cb1474b22144b3025511d4b048adde010",
+    "3eb80c518edd9ccca0518dd0790c1f4dc20f818c7aba570e8f654baa5563a2c3",
+    "4801b1968a355383213aa0763cfb8685d25d6d233a235e5e8c124e1725159d8e",
+    "51538dd4badf5050610910991e208dfcd7b6e8bfdc5bcd4601560324f57ef897",
+    "7dd445dcb3a601f056450ef0fc1f30adb58f19fa8aeea3a48d6bed4e06c17001",
+    "95492784ad5932ffbee626cd2fb5ec9f267d9e9f7f225e98a242d3ace3cd1a76",
+    "962613e8ef1c9ff3fea9ca2d86ed532ace5ab8a89dbd66042e74995c4d137205",
+    "b77132430ed180838c367623b9f55d9d7bff7403c1613b36b3fde689530133ca",
+    "ce8622879cc9f0e3e80d77c22f3ecd488f1d5cdbcf1754c70549cdde68ce2690",
+    "d20856ef5d2d063adcb61e257a95218e2606f3e7da04482d0e4a06a4a03cc068",
+    "e976a511d7412f3661069605751e0ea66bd921c0f1bd0aa17093dcb8a13a544a",
+    "ec6087e05faf889662f2652edc175009c9c69304ca78573b33ea0736719c65d2"
+  ],
+  "elements_title_sha256": [
+    "0617fb56fc25f47fbbc4c925d0480e3c2cb867864e9e78d36667f4e51928861f",
+    "12796d3d5f4e132385f8af8e281efa211cdb2a05b8450039f037a6573e0bcb3f",
+    "31c9ae6a19e25e1db57eccb32ac003733ee88909a7d0a31e6bd0fd861cb25a73",
+    "32b327f816849e4b82cb620402be2aa52c996e8c805547966494f9336687b255",
+    "431ba1c6936744f659289a8ff5292f004a51ba6a96dcecc65ef8f0783018dd5f",
+    "50c0f46642ae972cfef998f493753ab4bfbc3e19b24ccd72112e706ff0b19b2c",
+    "5fa896b2fbacdfc6676d6e4f53028a9cc4b215ba7bfa9f341a4b5029e97d711f",
+    "9c67f25f0c56b19d5014acd09e0d14878d7137869cc1c88bd68997aea4d2ef7f",
+    "a1726cd48345f6ed09dc2fad9d84d202610dd6fa5cba971f7e119ad10f7add73",
+    "a8b3503a5bf52952b529d5d9a1bcd623948222a63a476995247954e3cba2e8b3",
+    "aa5f7d6692f93af8996c7e4de9db73224ce1dc1a826805f3ff6ea7e6c694e25b",
+    "b2ef1197cd31c6468809c77bbb604652a5feba41f0f8914f529c40c89f93f656",
+    "b4def8217cadae26d4da633fd2a4e58e326cbb5d570afdc3989484da07af3579",
+    "c47a58e12937ba7dd647290dcf599e5731801b4274acc462f202d59cffdb78bf",
+    "c7eb587323376dd101d2b88567117c9c61e3e81a9773eed967ff8e54dc3e1bdf",
+    "d592a0007825f28607e9bc728eab9a89b371042476778da5788d2c538f249055",
+    "da4b3ff1c6297947d1cc6041fdb4b1a44a76c80d7f4b637e5a76f3c3c12dacb5"
+  ],
+  "adapters": [
+    {
+      "adapter": "higgsfield-publication-html",
+      "evidence_class": "OFFICIAL",
+      "source": {
+        "kind": "html_publication",
+        "bytes": 6749
+      }
+    },
+    {
+      "adapter": "elements-csv-owner-export",
+      "evidence_class": "OWNER_EXPORT",
+      "source": {
+        "kind": "elements_csv",
+        "file_sha256": "9159d6c05f18a6369a0dcd05b82f0b7569b7996ea4d1a62b46cb075f19b89174",
+        "bytes": 5896,
+        "rows": 17
+      }
+    },
+    {
+      "adapter": "elements-csv-owner-export",
+      "evidence_class": "OWNER_EXPORT",
+      "source": {
+        "kind": "elements_csv",
+        "file_sha256": "94a1f256f8abe8ee28902fc58a44c7248162f001779266956b4e5ff727f4aa85",
+        "bytes": 2131,
+        "rows": 6
+      }
+    }
+  ],
+  "errors": [],
+  "acceptance": {
+    "status": "NOT_RUN",
+    "note": "Importer output is producer evidence only. Full export PASS needs an independent Oracle check of the complete authorized inventory (handoff §14)."
+  }
+}

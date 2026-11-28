@@ -1,0 +1,116 @@
+{
+ "label": "informational, run AFTER scoring; no gate/threshold/verdict changed",
+ "method": "O3 decode check (ffmpeg input seek \u00b10.25 s, 64x36 gray)",
+ "items": [
+  {
+   "t": 1211.143,
+   "what": "R4rec unmatched",
+   "o3": {
+    "d_cut": 5.302,
+    "d_base": 0.101,
+    "confirmed": false
+   },
+   "v3_cut_within_0.5s": false,
+   "v3_light_change_within_0.5s": false
+  },
+  {
+   "t": 1236.602,
+   "what": "R4rec unmatched",
+   "o3": {
+    "d_cut": 3.523,
+    "d_base": 0.101,
+    "confirmed": false
+   },
+   "v3_cut_within_0.5s": false,
+   "v3_light_change_within_0.5s": false
+  },
+  {
+   "t": 1937.202,
+   "what": "R4rec unmatched",
+   "o3": {
+    "d_cut": 6.061,
+    "d_base": 0.099,
+    "confirmed": false
+   },
+   "v3_cut_within_0.5s": false,
+   "v3_light_change_within_0.5s": false
+  },
+  {
+   "t": 449.3489,
+   "what": "dark target W18",
+   "o3": {
+    "d_cut": 2.939,
+    "d_base": 0.3,
+    "confirmed": false
+   },
+   "v3_cut_within_0.5s": true,
+   "v3_light_change_within_0.5s": false
+  },
+  {
+   "t": 627.3601,
+   "what": "dark W21",
+   "o3": {
+    "d_cut": 6.083,
+    "d_base": 1.084,
+    "confirmed": false
+   },
+   "v3_cut_within_0.5s": true,
+   "v3_light_change_within_0.5s": false
+  },
+  {
+   "t": 654.654,
+   "what": "dark W22",
+   "o3": {
+    "d_cut": 1.011,
+    "d_base": 0.004,
+    "confirmed": false
+   },
+   "v3_cut_within_0.5s": true,
+   "v3_light_change_within_0.5s": false
+  },
+  {
+   "t": 797.0629,
+   "what": "dark W25",
+   "o3": {
+    "d_cut": 11.115,
+    "d_base": 1.415,
+    "confirmed": true
+   },
+   "v3_cut_within_0.5s": true,
+   "v3_light_change_within_0.5s": false
+  },
+  {
+   "t": 1955.2199,
+   "what": "dark W48",
+   "o3": {
+    "d_cut": 0.98,
+    "d_base": 2.603,
+    "confirmed": false
+   },
+   "v3_cut_within_0.5s": true,
+   "v3_light_change_within_0.5s": false
+  },
+  {
+   "t": 2175.173,
+   "what": "dark W56",
+   "o3": {
+    "d_cut": 0.53,
+    "d_base": 0.172,
+    "confirmed": false
+   },
+   "v3_cut_within_0.5s": true,
+   "v3_light_change_within_0.5s": false
+  },
+  {
+   "t": 2111.1757,
+   "what": "dark W53 (reviewer HARD_CUT)",
+   "o3": {
+    "d_cut": 11.678,
+    "d_base": 0.31,
+    "confirmed": true
+   },
+   "v3_cut_within_0.5s": true,
+   "v3_light_change_within_0.5s": false
+  }
+ ]
+}

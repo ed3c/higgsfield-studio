@@ -1,0 +1,13 @@
+{
+  "file": "onNBysMf9WM.ja.srt",
+  "language": "ja",
+  "is_original_language": true,
+  "language_evidence": "Whisper large-v3 run with --language ja; spoken content checked in sampled cues (Japanese speech: Sakamoto Ryuichi, Takatani Shiro, ICC staff). Channel/page language Japanese.",
+  "provenance": "asr",
+  "asr": {"engine": "openai-whisper 20250625 (MIT)", "model": "large-v3", "weights_sha256": "e5b1a55b89c1367dacf97e3e19bfd829a01529dbfdeefa8caeb59b3f1b81dadb", "device": "cpu", "config": "--language ja --task transcribe --fp16 False --temperature 0 --condition_on_previous_text False", "input": "onNBysMf9WM.audio.wav"},
+  "official_subtitles": "none (yt-dlp: 'has no subtitles')",
+  "youtube_auto_captions": "none (yt-dlp: 'has no automatic captions')",
+  "raw_asr_files": ["onNBysMf9WM.ja.raw-asr.srt", "onNBysMf9WM.ja.raw-asr.whisper.json"],
+  "postfilter": {"tool": "studio/source/asr_postfilter.py", "log": "asr_postfilter_log.json", "input_segments": 326, "kept": 300, "dropped": 26},
+  "alignment_check": {"result": "PASS", "tool": "studio/source/srt_alignment_check.py", "report": "srt_alignment_check.json", "checker_model": "whisper small", "aligned_pass": "8/8", "mean_aligned": 0.931, "mean_shifted": 0.16, "note": "automated; not a human listening review"}
+}

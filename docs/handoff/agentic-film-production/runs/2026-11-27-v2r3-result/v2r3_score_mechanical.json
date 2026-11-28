@@ -1,0 +1,282 @@
+{
+ "label": "agent review (not a human Oracle; cf. GAP-EVAL-01)",
+ "rubric": "RUBRIC_V2R3.md",
+ "R1": {
+  "decoys_rejected": "4/4",
+  "status": "VALID"
+ },
+ "R2": {
+  "inferred": "11/11",
+  "R2_inf": "PASS",
+  "measured": "20/20",
+  "R2_mea": "PASS",
+  "per_claim": [
+   {
+    "review_id": "J01",
+    "original_id": "S1-EXT-INF-E4-labels",
+    "class": "INFERRED",
+    "verdict": "SUPPORTED"
+   },
+   {
+    "review_id": "J02",
+    "original_id": "S1-EXT-MEA-E4",
+    "class": "MEASURED",
+    "verdict": "SUPPORTED"
+   },
+   {
+    "review_id": "J03",
+    "original_id": "S1-EXT-INF-E2",
+    "class": "INFERRED",
+    "verdict": "SUPPORTED"
+   },
+   {
+    "review_id": "J04",
+    "original_id": "S1-EXT-MEA-E1-adaptive",
+    "class": "MEASURED",
+    "verdict": "SUPPORTED"
+   },
+   {
+    "review_id": "J05",
+    "original_id": "S1-MEA-006",
+    "class": "MEASURED",
+    "verdict": "SUPPORTED"
+   },
+   {
+    "review_id": "J06",
+    "original_id": "S1-EXT-MEA-E2",
+    "class": "MEASURED",
+    "verdict": "SUPPORTED"
+   },
+   {
+    "review_id": "J07",
+    "original_id": "S1-MEA-007",
+    "class": "MEASURED",
+    "verdict": "SUPPORTED"
+   },
+   {
+    "review_id": "J09",
+    "original_id": "S1-UVC-001",
+    "class": "UNVERIFIED_CLAIM",
+    "verdict": "SUPPORTED"
+   },
+   {
+    "review_id": "J10",
+    "original_id": "S1-INF-002",
+    "class": "INFERRED",
+    "verdict": "SUPPORTED"
+   },
+   {
+    "review_id": "J11",
+    "original_id": "S1-MEA-008",
+    "class": "MEASURED",
+    "verdict": "SUPPORTED"
+   },
+   {
+    "review_id": "J12",
+    "original_id": "S1-MEA-002",
+    "class": "MEASURED",
+    "verdict": "SUPPORTED"
+   },
+   {
+    "review_id": "J13",
+    "original_id": "S1-EXT-MEA-E1-content",
+    "class": "MEASURED",
+    "verdict": "SUPPORTED"
+   },
+   {
+    "review_id": "J14",
+    "original_id": "S1-SRC-001",
+    "class": "SOURCE_EVIDENCE",
+    "verdict": "SUPPORTED"
+   },
+   {
+    "review_id": "J15",
+    "original_id": "S1-MEA-005",
+    "class": "MEASURED",
+    "verdict": "SUPPORTED"
+   },
+   {
+    "review_id": "J16",
+    "original_id": "S1-INF-001",
+    "class": "INFERRED",
+    "verdict": "SUPPORTED"
+   },
+   {
+    "review_id": "J17",
+    "original_id": "S1-UNK-camera",
+    "class": "UNKNOWN",
+    "verdict": "SUPPORTED"
+   },
+   {
+    "review_id": "J19",
+    "original_id": "S1-UNK-credits",
+    "class": "SOURCE_EVIDENCE",
+    "verdict": "SUPPORTED"
+   },
+   {
+    "review_id": "J20",
+    "original_id": "S1-UNK-mix",
+    "class": "UNKNOWN",
+    "verdict": "SUPPORTED"
+   },
+   {
+    "review_id": "J21",
+    "original_id": "S1-INF-006",
+    "class": "INFERRED",
+    "verdict": "PARTIALLY_SUPPORTED"
+   },
+   {
+    "review_id": "J22",
+    "original_id": "S1-MEA-003",
+    "class": "MEASURED",
+    "verdict": "SUPPORTED"
+   },
+   {
+    "review_id": "J23",
+    "original_id": "S1-EXT-INF-E3",
+    "class": "INFERRED",
+    "verdict": "SUPPORTED"
+   },
+   {
+    "review_id": "J24",
+    "original_id": "S1-SEG2-MEA-002",
+    "class": "MEASURED",
+    "verdict": "SUPPORTED"
+   },
+   {
+    "review_id": "J25",
+    "original_id": "S1-UNK-grade",
+    "class": "UNKNOWN",
+    "verdict": "SUPPORTED"
+   },
+   {
+    "review_id": "J26",
+    "original_id": "S1-MEA-004",
+    "class": "MEASURED",
+    "verdict": "SUPPORTED"
+   },
+   {
+    "review_id": "J27",
+    "original_id": "S1-SEG2-MEA-003",
+    "class": "MEASURED",
+    "verdict": "SUPPORTED"
+   },
+   {
+    "review_id": "J28",
+    "original_id": "S1-SEG2-MEA-004",
+    "class": "MEASURED",
+    "verdict": "SUPPORTED"
+   },
+   {
+    "review_id": "J29",
+    "original_id": "S1-UNK-lens",
+    "class": "UNKNOWN",
+    "verdict": "SUPPORTED"
+   },
+   {
+    "review_id": "J30",
+    "original_id": "S1-EXT-INF-E4",
+    "class": "INFERRED",
+    "verdict": "PARTIALLY_SUPPORTED"
+   },
+   {
+    "review_id": "J31",
+    "original_id": "S1-INF-004",
+    "class": "INFERRED",
+    "verdict": "SUPPORTED"
+   },
+   {
+    "review_id": "J32",
+    "original_id": "S1-SEG2-MEA-001",
+    "class": "MEASURED",
+    "verdict": "SUPPORTED"
+   },
+   {
+    "review_id": "J33",
+    "original_id": "S1-MEA-002-O3",
+    "class": "MEASURED",
+    "verdict": "SUPPORTED"
+   },
+   {
+    "review_id": "J35",
+    "original_id": "S1-EXT-INF-E2-labels",
+    "class": "INFERRED",
+    "verdict": "SUPPORTED"
+   },
+   {
+    "review_id": "J36",
+    "original_id": "S1-MEA-009",
+    "class": "MEASURED",
+    "verdict": "SUPPORTED"
+   },
+   {
+    "review_id": "J37",
+    "original_id": "S1-MEA-001-decode",
+    "class": "MEASURED",
+    "verdict": "SUPPORTED"
+   },
+   {
+    "review_id": "J38",
+    "original_id": "S1-EXT-MEA-E3",
+    "class": "MEASURED",
+    "verdict": "SUPPORTED"
+   },
+   {
+    "review_id": "J39",
+    "original_id": "S1-MEA-001",
+    "class": "MEASURED",
+    "verdict": "SUPPORTED"
+   },
+   {
+    "review_id": "J40",
+    "original_id": "S1-INF-003",
+    "class": "INFERRED",
+    "verdict": "PARTIALLY_SUPPORTED"
+   },
+   {
+    "review_id": "J41",
+    "original_id": "S1-INF-005",
+    "class": "INFERRED",
+    "verdict": "PARTIALLY_SUPPORTED"
+   }
+  ],
+  "status": "PASS"
+ },
+ "R3": {
+  "role_agreement": "30/30",
+  "R3_role": "PASS",
+  "seq_f1_10s": 0.629,
+  "R3_seq": "PASS",
+  "status": "PASS"
+ },
+ "R4": {
+  "seg2_cut_windows_confirmed": "13/15",
+  "R4_prec": "FAIL",
+  "new_cut_windows_confirmed": "5/7",
+  "R4_new": "FAIL",
+  "reviewer_cut_events_matched": "11/14",
+  "R4_rec": "FAIL",
+  "info_reviewer_soft_events_matched_by_seg2_dissolves": "1/5",
+  "info_seg2_boundaries_in_A3_matched_by_reviewer": "10/10",
+  "status": "FAIL"
+ },
+ "R7": {
+  "dissolve_windows_confirmed": "1/3",
+  "dissolve_controls_pass": false,
+  "status": "INCONCLUSIVE"
+ },
+ "R5": {
+  "flagged_real_claims": [],
+  "status": "PASS"
+ },
+ "R6": {
+  "static_vs_moving": "18/20",
+  "info_type_agreement": "3/11",
+  "status": "PASS"
+ },
+ "uncapped_gate_verdict": "FAIL",
+ "protocol_breaches": [
+  "F-12: reviewer is a Grok Bot agent, same identity family as the author (owner standing rule)"
+ ],
+ "V2_verdict": "INCONCLUSIVE (agent review)"
+}

@@ -1,0 +1,45 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "full-project-inventory.v1",
+  "title": "Full Project Inventory v1 (HF-AGENTIC-FILM-2026-11-26 §4/§14)",
+  "description": "Producer evidence from studio/importer/full_project_importer.py. Coverage per item type; importer never asserts PASS. Third-party archives are supplemental only.",
+  "type": "object",
+  "required": ["schema", "generated_at", "source", "project", "coverage", "items", "supplemental_items", "adapters", "errors", "import_status", "acceptance"],
+  "properties": {
+    "schema": {"const": "full-project-inventory.v1"},
+    "generated_at": {"type": "string"},
+    "source": {"type": "object", "properties": {"url": {"type": ["string", "null"]}, "source_id": {"type": ["string", "null"]}}},
+    "project": {"type": "object"},
+    "coverage": {
+      "type": "object",
+      "required": ["project", "elements", "assets", "storyboard", "previs", "video", "audio", "prompts", "model_params", "timeline", "canvas", "rights"],
+      "additionalProperties": {
+        "type": "object",
+        "required": ["state", "reason"],
+        "properties": {
+          "state": {"enum": ["OBTAINED", "PARTIAL", "BROWSER_REQUIRED", "NOT_EXPOSED", "UNKNOWN", "NOT_RUN"]},
+          "reason": {"type": "string"}
+        }
+      }
+    },
+    "items": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["type", "id", "evidence_class", "bytes_obtained"],
+        "properties": {
+          "evidence_class": {"enum": ["OFFICIAL", "OWNER_EXPORT"]},
+          "bytes_obtained": {"type": "boolean"}
+        }
+      }
+    },
+    "supplemental_items": {
+      "type": "array",
+      "items": {"type": "object", "required": ["evidence_class"], "properties": {"evidence_class": {"const": "THIRD_PARTY_SUPPLEMENTAL"}}}
+    },
+    "adapters": {"type": "array"},
+    "errors": {"type": "array", "items": {"type": "string"}},
+    "import_status": {"enum": ["PARTIAL", "COMPLETE_CANDIDATE"]},
+    "acceptance": {"type": "object", "required": ["status"], "properties": {"status": {"enum": ["NOT_RUN", "PASS", "FAIL", "INCONCLUSIVE", "BLOCKED"]}}}
+  }
+}

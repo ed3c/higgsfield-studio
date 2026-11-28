@@ -1,0 +1,5 @@
+exit=0 secs=191
+frame=69931
+out_time=00:38:53.364367
+progress=end
+0 ../attempts/decode_err.txt

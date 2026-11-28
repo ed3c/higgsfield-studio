@@ -1,0 +1,74 @@
+{
+ "label": "informational, run AFTER scoring; no gate, threshold or verdict changed",
+ "method": "O3 decode check (ffmpeg input seek ±0.25 s, 64x36 gray; confirmed if d_cut>=8 and >=3x base) + author frame strips",
+ "R4_misses_author_cut_windows": [
+  {
+   "window": "Z26",
+   "stratum": "SEG2_CUT_NEW",
+   "author_t": 802.2348,
+   "reviewer": "LIGHT_CHANGE_SAME_SHOT at 802.235",
+   "o3": {
+    "d_cut": 15.941,
+    "d_base": 2.305,
+    "confirmed": true
+   },
+   "author_frame_check": "same camera position; projected panel dims and a backlit silhouette appears: an abrupt light change, not a cut. Seg v2 false positive likely."
+  },
+  {
+   "window": "Z58",
+   "stratum": "SEG2_CUT_NEW",
+   "author_t": 2184.783,
+   "reviewer": "LIGHT_CHANGE_SAME_SHOT at 2184.6 (and HARD_CUT 2182.647)",
+   "o3": {
+    "d_cut": 47.697,
+    "d_base": 3.502,
+    "confirmed": true
+   },
+   "seg2_confirmed_within_0.75s": [
+    2184.516,
+    2184.783,
+    2185.2497
+   ],
+   "author_frame_check": "three confirmed 'cuts' inside 0.75 s with unchanged framing: exposure/light flicker. Seg v2 false positives likely."
+  }
+ ],
+ "R4_rec_unmatched_reviewer_cuts": [
+  {
+   "t": 83.35,
+   "o3": {
+    "d_cut": 3.876,
+    "d_base": 0.162,
+    "confirmed": false
+   },
+   "seg2_candidate_within_0.5s": false
+  },
+  {
+   "t": 1723.755,
+   "o3": {
+    "d_cut": 2.277,
+    "d_base": 0.105,
+    "confirmed": false
+   },
+   "seg2_candidate_within_0.5s": false
+  },
+  {
+   "t": 1899.164,
+   "o3": {
+    "d_cut": 2.391,
+    "d_base": 0.177,
+    "confirmed": false
+   },
+   "seg2_candidate_within_0.5s": false
+  }
+ ],
+ "reviewer_near_black_cut": {
+  "t": 2182.647,
+  "o3": {
+   "d_cut": 9.172,
+   "d_base": 2.153,
+   "confirmed": true
+  },
+  "seg2_candidate_within_0.5s": false
+ },
+ "reading": "Two of the 9 R4 shortfalls point at author errors (light changes confirmed as cuts); three are low-contrast jump cuts the O3 absolute threshold (d_cut>=8) cannot confirm (d_cut 2.3-3.9 at >10x base). 2182.647 is O3-confirmed but was never a seg-v2 candidate (near-black). The pre-registered verdict stands."
+}

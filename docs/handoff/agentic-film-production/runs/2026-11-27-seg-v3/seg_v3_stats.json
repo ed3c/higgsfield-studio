@@ -1,0 +1,48 @@
+{
+ "v2": {
+  "confirmed_cut_events": 211,
+  "SHOT": 285,
+  "BLACK": 120,
+  "DISSOLVE_inconclusive": 20
+ },
+ "v3": {
+  "light_changes_removed": 30,
+  "light_changes_tuning_items": 2,
+  "cuts_kept_from_v2": 181,
+  "jump_cuts_added": 0,
+  "near_black_cuts_added": 53,
+  "cut_events": 234,
+  "tuning_hits": {
+   "jump": [],
+   "dark": [
+    2182.647,
+    2157.99,
+    2170.97,
+    437.837
+   ],
+   "other": [
+    858.39,
+    864.46,
+    876.74,
+    2089.39,
+    285.752,
+    136.2
+   ]
+  },
+  "dissolve_spans": 88,
+  "dissolves_used_as_segments": true,
+  "SHOT": 333,
+  "BLACK": 198,
+  "DISSOLVE": 39,
+  "shot_median_s": 3.259,
+  "shot_mean_s": 5.833,
+  "longest_s": 66.867
+ },
+ "detector_PASS": {
+  "a": true,
+  "b": false,
+  "c": true,
+  "d": true
+ },
+ "elapsed_s": 46.0
+}

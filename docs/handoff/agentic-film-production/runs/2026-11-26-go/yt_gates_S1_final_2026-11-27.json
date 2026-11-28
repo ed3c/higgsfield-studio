@@ -1,0 +1,53 @@
+{
+  "YT0": {
+    "state": "PASS",
+    "rights_holder": "NTTインターコミュニケーション・センター [ICC] (channel UCc6CCp_Wig8hpX2p6lyR2MQ); no licence from rights holder on record",
+    "permitted_operations": [
+      "download",
+      "private_analysis"
+    ],
+    "confirmed_by": "Neon (project owner), via parent session relay",
+    "confirmed_at": "2026-11-26T23:59:00+08:00"
+  },
+  "YT1": {
+    "state": "PASS",
+    "file": "onNBysMf9WM.mkv",
+    "duration_s": 2333.388,
+    "source_duration_s": 2333,
+    "video": "av1 3840x2160",
+    "audio": "opus 48000Hz ch=2"
+  },
+  "YT2": {
+    "state": "PASS",
+    "file": "onNBysMf9WM.audio.wav",
+    "codec": "pcm_s24le",
+    "sample_rate": 48000,
+    "channels": 2,
+    "duration_s": 2333.37325,
+    "master_audio_duration_s": 2333.388,
+    "delta_s": -0.0147
+  },
+  "YT3": {
+    "state": "PASS",
+    "file": "onNBysMf9WM.ja.srt",
+    "cues": 300,
+    "language": "ja",
+    "provenance": "asr",
+    "last_end_s": 2268.24,
+    "alignment": {
+      "result": "PASS",
+      "tool": "studio/source/srt_alignment_check.py",
+      "report": "srt_alignment_check.json",
+      "checker_model": "whisper small",
+      "aligned_pass": "8/8",
+      "mean_aligned": 0.931,
+      "mean_shifted": 0.16,
+      "note": "automated; not a human listening review"
+    }
+  },
+  "YT4": {
+    "state": "PASS",
+    "hashed": 23
+  },
+  "H01_acquisition_complete": true
+}

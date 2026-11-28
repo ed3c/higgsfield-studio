@@ -1,0 +1,263 @@
+{
+  "contract": "HF-AGENTIC-FILM-2026-11-26",
+  "handoff_commit": "5b35ce61e25e93447dc21c731214062605aeec08",
+  "readback_at": "2026-11-26T23:59+08:00",
+  "obligations": [
+    {
+      "id": "H01",
+      "obligation": "Download specified YouTube onNBysMf9WM",
+      "handoff_class": "CHECK",
+      "status": "BLOCKED",
+      "evidence": "YT0 BLOCKED_SOURCE/RIGHTS：來源為 NTT ICC 頻道展覽紀錄片（38:53，標準 YouTube 授權、無 CC 標記、embed 停用、player response 無字幕軌）；未記錄權利人許可。YT1–YT4 NOT_RUN。",
+      "pointer": "YT_S1_ACQUISITION_2026-11-26.md; s1_public_metadata.json; yt_gates_S1_2026-11-26.json"
+    },
+    {
+      "id": "H02",
+      "obligation": "Full multidimensional shot-by-shot reverse of S1",
+      "handoff_class": "UNWIRED",
+      "status": "NOT_RUN",
+      "evidence": "依賴 H01 位元組；H01 未 PASS。",
+      "pointer": "§4, §13"
+    },
+    {
+      "id": "H03",
+      "obligation": "Full Passport Rush project research",
+      "handoff_class": "CHECK",
+      "status": "PARTIAL / BLOCKED_BROWSER",
+      "evidence": "公開 publication record 已讀（publication_id、showPrompts=true、showCanvas=true、license=null、1 支成片 287.54s 1920x1080、Generations 14,608）。Elements/Prompts/Canvas/Storyboard/Previs/Timeline 只在 client-side 載入，需 Desktop Browser。",
+      "pointer": "PASSPORT_RUSH_S5_2026-11-26.md; passport_rush_inventory_2026-11-26.json"
+    },
+    {
+      "id": "H04",
+      "obligation": "Align film, breakdown, original prompts, Elements and assets",
+      "handoff_class": "UNWIRED",
+      "status": "NOT_RUN",
+      "evidence": "缺 S3 breakdown 讀取與 S5 prompts/Elements；依賴 H03。",
+      "pointer": "§4"
+    },
+    {
+      "id": "H05",
+      "obligation": "Full Project -> creative methodology reverse",
+      "handoff_class": "KEEP",
+      "status": "NOT_RUN",
+      "evidence": "依賴 H03/H04。",
+      "pointer": "§4–5"
+    },
+    {
+      "id": "H06",
+      "obligation": "Methodology -> reusable Skill distillation",
+      "handoff_class": "KEEP",
+      "status": "NOT_RUN",
+      "evidence": "無已驗 Reference；依 統一蒸餾架構 先驗 Reference。",
+      "pointer": "Soodles skills/reverse-route/library/統一蒸餾架構.md @939875f"
+    },
+    {
+      "id": "H07",
+      "obligation": "Methodology -> Shot IR -> Prompt compilation",
+      "handoff_class": "UNWIRED",
+      "status": "NOT_RUN",
+      "evidence": "Shot IR schema 只存在於未合併分支（docs/higgsfield-full-project-standard-v1、industrial-pipeline、PR #3）。",
+      "pointer": "§6; ENTRYPOINT_READINESS"
+    },
+    {
+      "id": "H08",
+      "obligation": "Select/replace/compose reverse methods, not hard-coded",
+      "handoff_class": "KEEP",
+      "status": "NOT_RUN",
+      "evidence": "無 registry/router 實作；importer 以 adapter 介面避免寫死。",
+      "pointer": "§5–6"
+    },
+    {
+      "id": "H09",
+      "obligation": "100 film reverse research entries (N1)",
+      "handoff_class": "MOVE",
+      "status": "SOURCE_RESOLVED / consumption NOT_RUN",
+      "evidence": "N1 以精確標題經授權 Notion 讀回（私有；sha256 a0681b31…）。含 2026-11-25 排名重整、14 部得獎作品、A–G 100 檔。",
+      "pointer": "私有：/workspace/afp-private/notion/N1.txt（不進 Git）"
+    },
+    {
+      "id": "H10",
+      "obligation": "100 contemporary art research entries (N2)",
+      "handoff_class": "MOVE",
+      "status": "SOURCE_RESOLVED / consumption NOT_RUN",
+      "evidence": "N2 讀回（sha256 9a9d4522…）：#1–20 Skills、#21–36 競賽、#37–40 Prompt Library、#41–100 風格卡、Artwork-first 流程。",
+      "pointer": "私有 N2.txt"
+    },
+    {
+      "id": "H11",
+      "obligation": "46 reverse engineering + universal distillation (N3)",
+      "handoff_class": "MOVE",
+      "status": "SOURCE_RESOLVED / consumption NOT_RUN",
+      "evidence": "N3 讀回（sha256 0d03c458…）：Permissive-only 准入、34 初篩、BLOCK/HOLD、Universal Main Session。",
+      "pointer": "私有 N3.txt; Soodles 安裝來源.md、統一蒸餾架構.md @939875f"
+    },
+    {
+      "id": "H12",
+      "obligation": "Frontier commercially usable OSS / license gate",
+      "handoff_class": "KEEP",
+      "status": "NOT_RUN（部分事實已記）",
+      "evidence": "yt-dlp 2026.10.26 Unlicense（pip metadata）；pytubefix 11.2.2 MIT（PyPI，未安裝）；FFmpeg 7.1.5 Debian build --enable-gpl（HF-Q01 Studio 外部工具例外）；Cobalt AGPL、LibreGet GPL 排除。逐依賴 SBOM 未做。",
+      "pointer": "YT_S1_ACQUISITION_2026-11-26.md §工具"
+    },
+    {
+      "id": "H13",
+      "obligation": "REA-Video, HyperFrames and all candidate tools",
+      "handoff_class": "CHECK",
+      "status": "NOT_RUN",
+      "evidence": "未安裝、未執行；§5 固定 commit 保留。",
+      "pointer": "§5"
+    },
+    {
+      "id": "H14",
+      "obligation": "Codex CLI execution",
+      "handoff_class": "UNWIRED",
+      "status": "BLOCKED（box 無 codex）",
+      "evidence": "Grok Bot box 上 `codex` 不存在；依 t25u 不在 Mac 上操作。",
+      "pointer": "ENTRYPOINT_READINESS"
+    },
+    {
+      "id": "H15",
+      "obligation": "Google Antigravity execution",
+      "handoff_class": "UNWIRED",
+      "status": "BLOCKED（box 無 antigravity）",
+      "evidence": "同上。",
+      "pointer": "ENTRYPOINT_READINESS"
+    },
+    {
+      "id": "H16",
+      "obligation": "Colab GPU Worker",
+      "handoff_class": "UNWIRED",
+      "status": "BLOCKED_BUDGET",
+      "evidence": "無核准預算；未啟動。",
+      "pointer": "§7"
+    },
+    {
+      "id": "H17",
+      "obligation": "Higgsfield GPU Worker",
+      "handoff_class": "UNWIRED",
+      "status": "BLOCKED_BUDGET",
+      "evidence": "MCP 目錄有 gpu_* 工具；未呼叫。",
+      "pointer": "§7"
+    },
+    {
+      "id": "H18",
+      "obligation": "Higgsfield MCP and official Skills",
+      "handoff_class": "UNWIRED",
+      "status": "PARTIAL（schema 讀取）/ native NOT_RUN",
+      "evidence": "本輪讀 get_project/get_project_publication/resolve_project_assets schema：皆需 workspace_id+project_id UUID，無公開 publication 讀取方法。未重複 list_projects search。官方 Skills vendor v0.14.0 在 repo。",
+      "pointer": "PASSPORT_RUSH_S5_2026-11-26.md"
+    },
+    {
+      "id": "H19",
+      "obligation": "MAGI-2 capabilities/limits/cost",
+      "handoff_class": "CHECK",
+      "status": "NOT_RUN（本輪未重讀）",
+      "evidence": "沿用 §7 先前目錄讀取；價格與參數衝突仍待權威確認。",
+      "pointer": "§7"
+    },
+    {
+      "id": "H20",
+      "obligation": "Blender previs",
+      "handoff_class": "UNWIRED",
+      "status": "BLOCKED（box 無 blender）",
+      "evidence": "HF-Q01 允許外部工具，但 box 未安裝；未安裝前須審核。",
+      "pointer": "ENTRYPOINT_READINESS"
+    },
+    {
+      "id": "H21",
+      "obligation": "Elements-first identity and consistency",
+      "handoff_class": "KEEP",
+      "status": "NOT_RUN",
+      "evidence": "Passport Rush Elements 需 Desktop Browser。",
+      "pointer": "§6"
+    },
+    {
+      "id": "H22",
+      "obligation": "20 domain-manager responsibility boundaries",
+      "handoff_class": "KEEP",
+      "status": "NOT_RUN",
+      "evidence": "studio_factory（PR #1/#9，未合併）有 17 個 DomainManager；不另建。",
+      "pointer": "origin/fix/handoff-breakpoints-20261123:studio_factory/managers.py"
+    },
+    {
+      "id": "H23",
+      "obligation": "Provider-independent Schema Compiler",
+      "handoff_class": "UNWIRED",
+      "status": "NOT_RUN",
+      "evidence": "—",
+      "pointer": "§6–7"
+    },
+    {
+      "id": "H24",
+      "obligation": "OTIO/HyperFrames editing & post",
+      "handoff_class": "UNWIRED",
+      "status": "NOT_RUN",
+      "evidence": "box 無 opentimelineio。",
+      "pointer": "ENTRYPOINT_READINESS"
+    },
+    {
+      "id": "H25",
+      "obligation": "Drive/local/GitHub/Notion storage separation",
+      "handoff_class": "KEEP",
+      "status": "IN_FORCE（無違規觀察）",
+      "evidence": "本輪原始 HTML、Notion 原文、S1 watch page 只存 box 私有目錄；Git 只放 metadata 與 hash。無媒體位元組，故未上傳 Drive。",
+      "pointer": "—"
+    },
+    {
+      "id": "H26",
+      "obligation": "Medium Compiler local playable review",
+      "handoff_class": "UNWIRED",
+      "status": "NOT_RUN",
+      "evidence": "ed3c/medium-compiler main 6235a90 存在；未整合。",
+      "pointer": "ENTRYPOINT_READINESS"
+    },
+    {
+      "id": "H27",
+      "obligation": "Soodles Reverse Route and Skill Composition with Eval",
+      "handoff_class": "MOVE",
+      "status": "SOURCE_READ（部分）",
+      "evidence": "Soodles main = 939875f（與 handoff 一致）。讀：routes/higgsfield-studio.md、library/安裝來源.md、library/統一蒸餾架構.md、contracts/state-machine-change.md。其餘 §11 路徑未逐檔讀。",
+      "pointer": "cursor-github get_file_contents @939875f"
+    },
+    {
+      "id": "H28",
+      "obligation": "Independent Oracle, Fresh Student, Holdout, Regression",
+      "handoff_class": "KEEP",
+      "status": "NOT_RUN",
+      "evidence": "—",
+      "pointer": "§5, §9"
+    },
+    {
+      "id": "H29",
+      "obligation": "Artwork-only -> Shot-only -> Composition",
+      "handoff_class": "KEEP",
+      "status": "NOT_RUN",
+      "evidence": "—",
+      "pointer": "§8–9"
+    },
+    {
+      "id": "H30",
+      "obligation": "J4/P1/S13 original evidence, failures, NOT_RUN",
+      "handoff_class": "MOVE",
+      "status": "PRESERVED",
+      "evidence": "P1：INCONCLUSIVE（PROVISIONAL），niobium617–unimage 差 0.104 < 0.25；兩位評審為分別派遣的 agent executor，不是 §8 要求的兩位人類 → GAP-EVAL-01。N4 位於 box /workspace/hs-bench-review/p1-blind 及 PR #8。S13 B1/B2 原始 UNKNOWN；N5 rerun 素材在 box 上 MISSING_SOURCE。A-05（11/23 20:41 1 credit 誤送）尚未寫入 repo anomaly log。",
+      "pointer": "§8; PR #4/#8/#3"
+    },
+    {
+      "id": "H31",
+      "obligation": "Bounded Convergence, Human Approval, Freeze",
+      "handoff_class": "KEEP",
+      "status": "NOT_RUN",
+      "evidence": "—",
+      "pointer": "§9"
+    },
+    {
+      "id": "H32",
+      "obligation": "Three flywheels / cumulative capacity",
+      "handoff_class": "KEEP",
+      "status": "OPEN",
+      "evidence": "Parent Goal 保持 OPEN。",
+      "pointer": "§0, §10"
+    }
+  ]
+}

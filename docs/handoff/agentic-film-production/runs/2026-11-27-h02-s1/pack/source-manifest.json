@@ -1,0 +1,69 @@
+{
+ "schema": "studio.source-manifest.v1",
+ "source_id": "S1",
+ "video_id": "onNBysMf9WM",
+ "url": "https://www.youtube.com/watch?v=onNBysMf9WM",
+ "title": "展覧会ドキュメント「坂本龍一 with 高谷史郎｜設置音楽2　IS YOUR TIME」",
+ "channel": "NTTインターコミュニケーション・センター [ICC]",
+ "upload_date": "20180406",
+ "duration_s": 2333.388,
+ "handoff_pin": "5b35ce61e25e93447dc21c731214062605aeec08",
+ "admission": {
+  "V0": "PASS (scoped: private_analysis)",
+  "basis": "rights.json OWNER_DECISION_RISK_ACCEPTED",
+  "H01_YT0_YT4": "PASS (yt_gates.py, docs/.../yt_gates_S1_final_2026-11-27.json)"
+ },
+ "media": {
+  "onNBysMf9WM.mkv": "7309020bcd547d4527f3fd9a36c585ac36fdb605b107b7b2242315b65b1ef45c",
+  "onNBysMf9WM.audio.wav": "df7d39d676c5875c4b0e2b033ec2e58b96c91799a708791f84b719b2557b86aa",
+  "onNBysMf9WM.ja.srt": "228d5a51faf7eb4f973c4abe466647c8696ce30c8d464c26468510cd738bb2bb",
+  "onNBysMf9WM.ja.raw-asr.srt": "2bc7b17dab59cdb678853aa44ed19a6b4787d31be2f1cca3caacc62efa3c8665"
+ },
+ "private_storage": {
+  "box": "/workspace/afp-private/sources/onNBysMf9WM",
+  "drive_folder": "https://drive.google.com/drive/folders/1dk5YtJ0LDUVx4Hn-lvVo9rYu2KRV3WOJ",
+  "drive_sharing": "owner only"
+ },
+ "tools": {
+  "yt-dlp": {
+   "version": "2026.11.23",
+   "license": "Unlicense"
+  },
+  "yt-dlp-ejs": {
+   "version": "0.8.0",
+   "license": "Unlicense AND MIT AND ISC (PyPI License-Expression)"
+  },
+  "deno": {
+   "version": "deno 2.9.8 (stable, release, x86_64-unknown-linux-gnu)",
+   "license": "MIT"
+  },
+  "ffmpeg": {
+   "version": "ffmpeg version 7.1.5-0+deb13u1 Copyright (c) 2000-2026 the FFmpeg developers",
+   "license": "GPL build (--enable-gpl); HF-Q01 Studio external-tool exception"
+  },
+  "openai-whisper": {
+   "version": "20250625",
+   "license": "MIT"
+  },
+  "pytubefix": {
+   "version": null,
+   "license": "MIT"
+  },
+  "download": {
+   "version": null,
+   "license": null
+  },
+  "numpy": {
+   "version": "2.5.5",
+   "license": "BSD-3-Clause"
+  },
+  "opentimelineio": {
+   "version": "0.18.1",
+   "license": "Apache-2.0"
+  },
+  "pillow": {
+   "version": "13.0.0",
+   "license": "MIT-CMU (contact sheets only)"
+  }
+ }
+}

@@ -1,0 +1,53 @@
+{
+ "schema": "studio.reverse.unknowns.v1",
+ "items": [
+  {
+   "id": "U-01",
+   "what": "Cut recall (dissolves, soft cuts, fades not reaching near-black)",
+   "status": "NOT_RUN",
+   "needs": "human frame-level review"
+  },
+  {
+   "id": "U-02",
+   "what": "Editorial vs luminance boundaries in Q06/Q08/Q15/Q19",
+   "status": "INCONCLUSIVE",
+   "needs": "human review or optical-flow check (OpenCV not admitted on box)"
+  },
+  {
+   "id": "U-03",
+   "what": "Shot scale / composition / blocking per segment",
+   "status": "INFERRED only",
+   "needs": "independent reviewer (V2)"
+  },
+  {
+   "id": "U-04",
+   "what": "Camera movement type (pan/tilt/dolly/handheld)",
+   "status": "NOT_RUN",
+   "needs": "optical-flow tool admission or human review"
+  },
+  {
+   "id": "U-05",
+   "what": "Music vs ambience vs installation sound in non-speech sections",
+   "status": "NOT_RUN",
+   "needs": "admitted audio analyser (librosa HOLD) or human listening"
+  },
+  {
+   "id": "U-06",
+   "what": "Lens, camera, grade, mix, credits",
+   "status": "UNKNOWN",
+   "needs": "creator statement"
+  },
+  {
+   "id": "U-07",
+   "what": "Transcript correctness",
+   "status": "INCONCLUSIVE",
+   "needs": "native-speaker review of SRT (private)"
+  },
+  {
+   "id": "U-08",
+   "what": "Reverse-method comparison (REA-Video vs HyperFrames vs film baseline)",
+   "status": "NOT_RUN",
+   "needs": "pin + licence audit + Neon approval for REA-Video/HyperFrames"
+  }
+ ]
+}
