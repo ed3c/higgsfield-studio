@@ -25,6 +25,8 @@ def main():
     ap.add_argument("--decoys", type=Path, required=True)
     ap.add_argument("--out", type=Path, required=True)
     ap.add_argument("--sealed", type=Path, required=True)
+    ap.add_argument("--exclude-stageA", type=Path, action="append", default=[],
+                    help="stage_A_answers.template.json of a voided round; its items are excluded from sampling (round 4b, exclusion only)")
     a = ap.parse_args()
     src, out = a.src, a.out
     pack, ext, seg2d, seg = src / "pack", src / "pack-ext", src / "pack-v2/seg", src / "pack-v3/seg"
@@ -61,6 +63,10 @@ def main():
         prev += [(c["t_start"], c["t_end"]) for c in rk["A4_camera"]] + [(p["t"] - 0.5, p["t"] + 0.5) for p in rk["A1_timestamps"]]
         del rk
     prev += tuning_exclusions(2.0)
+    for tp in a.exclude_stageA:  # voided-round stage-A items (public template; never answers)
+        vt = json.load(open(tp))
+        prev += [(w["t_start"], w["t_end"]) for k in ("A2_windows", "A3_spans", "A4_camera") for w in vt[k]]
+        prev += [(p["t"] - 0.5, p["t"] + 0.5) for p in vt["A1_timestamps"]]
     taken = []
     def free(iv, pad=0.5):
         return not any(overlaps(iv, t, pad) for t in taken) and not any(overlaps(iv, w, 0.0) for w in prev)
